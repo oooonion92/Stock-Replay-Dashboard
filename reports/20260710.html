@@ -232,6 +232,42 @@
   .score-table tr { padding: 4px 8px; }
 }
 </style>
+<style>
+/* Mobile flat reading mode: reduce nested-card visual noise without changing desktop. */
+@media (max-width: 680px) {
+  body { background: #fff; }
+  .page { padding: 8px 14px 18px; }
+  .panel { padding: 0; border: 0; border-radius: 0; box-shadow: none; background: transparent; }
+  .market-review-module { margin-top: 12px; padding: 0; border: 0; border-radius: 0; background: transparent; }
+  .market-score-panel, .market-overview, .market-ecology, .expert-digest {
+    margin: 0; padding: 14px 0; border: 0; border-top: 1px solid #e7ebf1;
+    border-radius: 0; background: transparent;
+  }
+  .market-score-main > div { border: 0; border-radius: 0; padding: 8px 0; background: transparent; }
+  .market-score-main > div + div { border-top: 1px solid #edf0f5; }
+  .market-score-components span { border: 0; background: #f2f5f8; }
+  .overview-grid { gap: 0; margin-top: 2px; }
+  .overview-grid section { padding: 11px 0; border: 0; border-top: 1px solid #edf0f5; border-radius: 0; background: transparent; }
+  .overview-grid section:first-child { border-top: 0; }
+  .path-mini-grid { gap: 8px; padding-top: 4px; }
+  .path-mini { padding: 10px; border-radius: 8px; }
+  .breadth-grid, .theme-grid { gap: 0 12px; }
+  .breadth-grid span, .theme-chip { padding: 9px 0; border: 0; border-bottom: 1px solid #edf0f5; border-radius: 0; background: transparent; }
+  .expert-metric-card, .expert-panel, .quote-card, .brief-card {
+    border: 0; border-radius: 0; box-shadow: none; background: transparent;
+  }
+  .expert-metric-card { padding: 9px 0; border-bottom: 1px solid #edf0f5; }
+  .expert-panel { padding: 12px 0; border-top: 1px solid #e7ebf1; }
+  .brief-card { padding: 9px 0; border-top: 1px solid #edf0f5; }
+  .quote-card { padding: 12px 0; border-top: 1px solid #e7ebf1; }
+  .score-table { border-spacing: 0; }
+  .score-table tr { padding: 6px 0; border: 0; border-top: 1px solid #e7ebf1; border-radius: 0; box-shadow: none; background: transparent; }
+  .stock-card { padding: 14px 0; border: 0; border-top: 4px solid var(--blue); border-radius: 0; box-shadow: none; background: transparent; }
+  .takeaway { border: 0; border-left: 3px solid #bfd7fb; border-radius: 0; background: #f7f9fc; }
+  .level-pill { border: 0; border-radius: 0; padding: 7px 0; border-bottom: 1px solid #edf0f5; }
+  .path { padding: 12px 0; border: 0; border-top: 1px solid #e7ebf1; border-radius: 0; background: transparent; }
+}
+</style>
 </head>
 <body>
   <main class="page">

@@ -1,0 +1,581 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2026-07-06 复盘看板</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --text: #17202a;
+      --muted: #667085;
+      --line: #d9e0ea;
+      --red: #d92d20;
+      --green: #16865a;
+      --blue: #245985;
+      --amber: #b7791f;
+      --shadow: 0 10px 28px rgba(31, 45, 61, .08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+      line-height: 1.45;
+    }
+    .page { max-width: 1280px; margin: 0 auto; padding: 22px; }
+    .hero { margin-bottom: 16px; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 16px;
+    }
+    .hero h1 { margin: 0 0 8px; font-size: 24px; }
+    .subtitle { color: var(--muted); margin: 0; }
+    .gate-red { background: #fff1ef; border-color: #ffc9c3; }
+    .gate-yellow { background: #fff8e8; border-color: #efd08d; }
+    .gate-blue { background: #eef5ff; border-color: #bfd7fb; }
+    .market-review-module { margin-top: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fbfdff; }
+    .module-title { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; margin-bottom: 8px; }
+    .module-title b { font-size: 16px; }
+    .module-title span { color: var(--muted); font-size: 13px; }
+    .market-overview { padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #ffffff; }
+    .market-overview b { display: block; margin-bottom: 5px; font-size: 14px; }
+    .overview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
+    .overview-grid section { border: 1px solid var(--line); border-radius: 8px; padding: 9px; background: #ffffff; }
+    .overview-grid section.wide { grid-column: span 2; }
+    .overview-grid strong { display: block; font-size: 13px; margin-bottom: 4px; }
+    .overview-grid span { display: block; color: #344054; font-size: 13px; }
+    .path-mini-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+    .path-mini { border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
+    .path-mini strong { margin-bottom: 3px; }
+    .path-mini span { color: #344054; font-size: 12px; }
+    .market-ecology { margin-top: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #ffffff; }
+    .market-ecology b { display: block; margin-bottom: 8px; font-size: 14px; }
+    .market-ecology p { margin: 8px 0; color: #344054; font-size: 13px; }
+    .breadth-grid, .theme-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+    .breadth-grid span, .theme-chip { border: 1px solid var(--line); border-radius: 8px; padding: 8px; background: #f8fafc; }
+    .theme-chip strong { display: block; font-size: 13px; }
+    .theme-chip span { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
+    .theme-leaders { color: #344054 !important; }
+    .subhead { display: block; margin: 10px 0 6px; font-size: 13px; }
+    .strong-theme { background: #f0fdf4; border-color: #b7e4c7; }
+    .secondary-theme-grid .theme-chip { background: #fbfdff; }
+    .secondary-theme-grid .theme-chip strong { color: #475467; }
+    .expert-digest { margin-top: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #ffffff; }
+    .expert-digest > b { display: block; margin-bottom: 8px; font-size: 14px; }
+    .expert-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-bottom: 12px; }
+    .expert-metric-card, .expert-panel, .quote-card { border: 1px solid var(--line); border-radius: 8px; background: #ffffff; box-shadow: var(--shadow); }
+    .expert-metric-card { padding: 12px; min-height: 94px; }
+    .expert-metric-card small { display: block; color: var(--muted); font-size: 12px; margin-bottom: 6px; }
+    .expert-metric-card strong { display: block; font-size: 20px; line-height: 1.25; margin-bottom: 5px; }
+    .expert-metric-card span { color: #667085; font-size: 13px; }
+    .expert-summary-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 12px; margin-bottom: 12px; }
+    .expert-wide-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+    .expert-panel { padding: 14px; }
+    .expert-panel h3 { margin: 0 0 10px; font-size: 16px; }
+    .decision-row { display: grid; grid-template-columns: 70px 1fr; gap: 12px; padding: 9px 0; border-top: 1px solid #edf0f5; }
+    .decision-row:first-of-type { border-top: 0; padding-top: 0; }
+    .decision-row b { font-size: 13px; }
+    .decision-row p { margin: 0; color: #344054; font-size: 14px; }
+    .brief-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .brief-card { border: 1px solid var(--line); border-radius: 8px; padding: 10px; background: #fbfcfe; }
+    .brief-card strong { display: block; margin-bottom: 5px; font-size: 13px; }
+    .brief-card span { color: #344054; font-size: 13px; }
+    .bars { display: grid; gap: 10px; }
+    .bar-line { display: grid; grid-template-columns: 78px 1fr 36px; gap: 8px; align-items: center; font-size: 13px; }
+    .track { height: 9px; border-radius: 999px; background: #edf0f5; overflow: hidden; }
+    .fill { height: 100%; border-radius: inherit; background: #2563eb; }
+    .signal-list { display: grid; gap: 8px; margin: 0; padding-left: 0; list-style: none; }
+    .signal-list li { position: relative; padding-left: 16px; color: #344054; font-size: 14px; }
+    .signal-list li::before { content: ""; position: absolute; left: 0; top: .72em; width: 6px; height: 6px; border-radius: 50%; background: #2563eb; }
+    .quote-rule { margin: -2px 0 8px; color: var(--muted); font-size: 13px; }
+    .expert-quotes-panel { margin: 16px 0; }
+    .expert-quotes-panel .subhead { font-size: 16px; margin-top: 0; }
+    .quote-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+    .quote-card { padding: 12px; display: flex; flex-direction: column; gap: 8px; background: #fbfcfe; }
+    .quote-meta { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 12px; margin-bottom: 2px; }
+    .quote-meta span { color: #1f4e79; font-weight: 800; }
+    .quote-card blockquote { margin: 0; padding-left: 10px; border-left: 3px solid #bfd7fb; font-weight: 800; color: #17202a; }
+    .quote-card p { margin: 0; padding-top: 7px; border-top: 1px solid #edf0f5; color: #344054; font-size: 13px; }
+    .quote-card p b { color: #17202a; }
+    .quote-card a { margin-top: auto; color: #245985; font-size: 13px; font-weight: 800; text-decoration: none; }
+    .section-title { margin: 22px 0 10px; font-size: 18px; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .stock-card { background: var(--panel); border: 1px solid var(--line); border-top: 5px solid var(--blue); border-radius: 8px; padding: 14px; box-shadow: var(--shadow); }
+    .action-wait { border-top-color: var(--amber); }
+    .action-offense { border-top-color: var(--green); }
+    .action-range { border-top-color: var(--blue); }
+    .action-defense { border-top-color: #8a94a6; }
+    .card-head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+    .card-head h3 { margin: 0; font-size: 18px; }
+    .card-head p { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+    .action-badge { white-space: nowrap; border-radius: 999px; padding: 4px 9px; background: #eef3f8; color: #1f4e79; font-size: 12px; font-weight: 800; }
+    .takeaway { margin: 12px 0; padding: 10px; background: #f8fafc; border-radius: 8px; border: 1px solid var(--line); font-weight: 700; }
+    .levels { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 10px 0; }
+    .level-pill { border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
+    .level-pill span { display: block; color: var(--muted); font-size: 12px; }
+    .level-pill strong { font-size: 16px; }
+    .stock-sections { display: grid; gap: 8px; }
+    .stock-sections section { border-top: 1px solid var(--line); padding-top: 8px; }
+    .stock-sections b { display: block; font-size: 13px; margin-bottom: 3px; }
+    .stock-sections span, .reason { color: #344054; font-size: 13px; }
+    .reason { margin: 10px 0 0; }
+    .tree { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .top-tree { margin-top: 12px; }
+    .path { border-radius: 8px; padding: 12px; border: 1px solid var(--line); background: var(--panel); }
+    .path h3 { margin: 0 0 8px; font-size: 16px; }
+    .path ul { margin: 0; padding-left: 18px; color: #344054; }
+    .skip-row { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
+    .empty { color: var(--muted); padding: 10px 0; }
+    footer { color: var(--muted); margin: 22px 0 4px; font-size: 12px; }
+    @media (max-width: 920px) {
+      .page { padding: 14px; }
+      .cards, .tree, .overview-grid, .path-mini-grid, .expert-metrics, .expert-summary-grid, .expert-wide-grid, .brief-grid, .quote-grid { grid-template-columns: 1fr; }
+      .overview-grid section.wide { grid-column: auto; }
+      .decision-row { grid-template-columns: 1fr; gap: 4px; }
+      .levels { grid-template-columns: 1fr 1fr; }
+      .skip-row { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 520px) {
+      .levels { grid-template-columns: 1fr; }
+    }
+  
+/* Pages mobile reading compatibility */
+@media (max-width: 760px) {
+  body { background:#fff; color:#1f2937; }
+  .page { padding: 16px 14px 28px; max-width: 100%; }
+  .hero { margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #e5e7eb; }
+  .hero h1 { font-size: 24px; line-height: 1.2; margin: 0 0 8px; }
+  .hero p, p { font-size: 15px; line-height: 1.75; }
+  .panel, .expert-panel, .scoreboard-panel, .stock-card, .quote-card, .path-mini {
+    border: 0 !important; box-shadow: none !important; border-radius: 0 !important;
+    background: transparent !important; padding: 14px 0 !important;
+    border-bottom: 1px solid #e5e7eb !important;
+  }
+  .section-title, .subhead, h2 { font-size: 20px !important; line-height: 1.3; margin: 18px 0 10px; font-weight: 800; }
+  h3 { font-size: 17px !important; line-height: 1.35; margin: 14px 0 8px; font-weight: 750; }
+  .grid, .quote-grid, .stock-grid, .score-grid { display:block !important; }
+  .stat-grid, .metrics-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 8px !important; }
+  .stat-card, .metric-card {
+    background: #f8fafc !important; border: 1px solid #e5e7eb !important;
+    border-radius: 10px !important; padding: 10px !important;
+  }
+  .gate-red, .path-red { background:#fff1f0 !important; border:1px solid #f4c7c3 !important; border-radius:10px !important; padding:10px !important; }
+  .gate-yellow, .path-yellow { background:#fff8e6 !important; border:1px solid #f1ddb0 !important; border-radius:10px !important; padding:10px !important; }
+  .gate-blue, .path-blue { background:#eef5ff !important; border:1px solid #cfe0f6 !important; border-radius:10px !important; padding:10px !important; }
+  .theme-card, .chain-card {
+    background:#f8fafc !important; border:1px solid #e5e7eb !important; border-radius:10px !important; padding:10px !important; margin-bottom:8px;
+  }
+  table { font-size: 13px; }
+  .score-table-wrap { overflow-x:auto; }
+}
+
+</style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="panel">
+        <h1>2026-07-06 复盘看板</h1>
+        <section class="market-review-module">
+          <div class="module-title">
+            <b>盘面与题材复盘</b>
+            <span>结构、全市场题材、跟踪对象判断合并阅读。</span>
+          </div>
+          
+    <div class="market-overview">
+      <b>大盘总体分析</b>
+      <div class="overview-grid">
+        <section>
+          <strong>结论</strong>
+          <span>指数收 4041.24，低于当日 5m 中枢 4042.08-4050.40 下沿，也仍低于 30m 投影中枢 4073.73-4103.93。30m DIF 仍为 -8.98，但 MACD 翻红到 1.31，说明下杀动能有所衰减，尚未完成真正修复。</span>
+        </section>
+        <section>
+          <strong>结构</strong>
+          <span>30m 层面，指数还在 4073.73 下方，不能说重新回到强结构；但相对 7月2日的强杀，今天没有继续破 4000，且 MACD 转正，说明进入弱修复观察。5m 层面，上午和午后都围绕 4042-4050 震荡，尾盘收在中枢下方，表示修复不够强。明天第一观察是 4043/4050，站回后再看 4073；跌回 4006/3997 则修复失败。</span>
+        </section>
+        <section class="wide">
+          <strong>题材</strong>
+          <span>震荡分化，但主力净额明显流出；全A上涨占比 +35.7%，中位涨幅 -1.17%；今日强势方向：动力煤 / 生猪养殖 / 炼焦煤 / 畜禽饲料 / 炼油化工 / 基因药物。</span>
+        </section>
+        <section class="wide">
+          <strong>明日路径</strong>
+          <div class="path-mini-grid">
+            <div class="path-mini gate-red">
+              <strong>红：站回 4050，再看 4073</strong>
+              <span>这是修复路径：指数先收回 4042-4050 的5m中枢，并维持在 4043 上方。；若科技核心同步站回VWAP，可看 4073.73 的30m中枢下沿。</span>
+            </div>
+            
+            <div class="path-mini gate-yellow">
+              <strong>黄：4006-4050 弱震荡</strong>
+              <span>这是当前基准路径：指数止跌但修复不足，市场继续在科技余震和轮动题材之间摇摆。；这种环境适合降低预期，等核心站回VWAP后再动。</span>
+            </div>
+            
+            <div class="path-mini gate-blue">
+              <strong>蓝：跌破 4006，继续寻底</strong>
+              <span>如果指数跌破 4006/3997，说明今天的弱修复失败。；蓝色路径下重新看 3990 和更低支撑，活动仓继续压缩。</span>
+            </div>
+            </div>
+        </section>
+      </div>
+    </div>
+    
+          
+    <div class="market-ecology">
+      <b>题材生态</b>
+      <div class="breadth-grid">
+        <span>上涨 1817 / 下跌 3275</span>
+        <span>上涨占比 +35.7%</span>
+        <span>中位涨幅 -1.17%</span>
+        <span>主力净额 -778亿</span>
+      </div>
+      <p>震荡分化，但主力净额明显流出；全A上涨占比 +35.7%，中位涨幅 -1.17%；今日强势方向：动力煤 / 生猪养殖 / 炼焦煤 / 畜禽饲料 / 炼油化工 / 基因药物。</p>
+      <strong class="subhead">今日强势方向</strong>
+      <div class="theme-grid">
+        <div class="theme-chip strong-theme">
+          <strong>动力煤</strong>
+          <span>均涨 +3.89% · 涨停 1 · >=5% 6 · 成交 105.4亿</span>
+          <span class="theme-leaders">领涨：昊华能源、新集能源、陕西煤业、中煤能源、兖矿能源、甘肃能化</span>
+        </div>
+        
+        <div class="theme-chip strong-theme">
+          <strong>生猪养殖</strong>
+          <span>均涨 +3.50% · 涨停 1 · >=5% 3 · 成交 80.6亿</span>
+          <span class="theme-leaders">领涨：巨星农牧、天邦食品、温氏股份、牧原股份、正邦科技、神农集团</span>
+        </div>
+        
+        <div class="theme-chip strong-theme">
+          <strong>炼焦煤</strong>
+          <span>均涨 +3.12% · 涨停 0 · >=5% 1 · 成交 31.4亿</span>
+          <span class="theme-leaders">领涨：兰花科创、平煤股份、华阳股份、冀中能源、山西焦煤、潞安环能</span>
+        </div>
+        
+        <div class="theme-chip strong-theme">
+          <strong>畜禽饲料</strong>
+          <span>均涨 +3.11% · 涨停 0 · >=5% 2 · 成交 23.7亿</span>
+          <span class="theme-leaders">领涨：路德科技、新 希 望、唐人神、天康生物、傲农生物、禾丰股份</span>
+        </div>
+        
+        <div class="theme-chip strong-theme">
+          <strong>炼油化工</strong>
+          <span>均涨 +2.74% · 涨停 0 · >=5% 1 · 成交 31.5亿</span>
+          <span class="theme-leaders">领涨：恒力石化、华锦股份、上海石化、中国石化、ST沈化</span>
+        </div>
+        
+        <div class="theme-chip strong-theme">
+          <strong>肉鸡养殖</strong>
+          <span>均涨 +2.61% · 涨停 0 · >=5% 0 · 成交 21.5亿</span>
+          <span class="theme-leaders">领涨：益生股份、立华股份、民和股份、圣农发展、晓鸣股份、湘佳股份</span>
+        </div>
+        </div>
+      <strong class="subhead">高成交链条观察</strong>
+      <div class="theme-grid secondary-theme-grid">
+        <div class="theme-chip">
+          <strong>锂矿 / 锂盐 / 电池材料</strong>
+          <span>均涨 -1.14% · 涨停 0 · 成交 241.8亿</span>
+          <span class="theme-leaders">领涨：融捷股份、雅化集团、天齐锂业、赣锋锂业、西藏矿业、中矿资源</span>
+        </div>
+        
+        <div class="theme-chip">
+          <strong>AI服务器链 / 高端PCB / MLCC / 半导体材料</strong>
+          <span>均涨 -1.72% · 涨停 11 · 成交 7410.8亿</span>
+          <span class="theme-leaders">领涨：概伦电子、国力电子、华大九天、伟测科技、江波龙、盛科通信-U、佰维存储、德明利、盛合晶微、甬矽电子</span>
+        </div>
+        
+        <div class="theme-chip">
+          <strong>光通信 / CPO / 6G / AI硬件链</strong>
+          <span>均涨 -2.37% · 涨停 3 · 成交 1742.5亿</span>
+          <span class="theme-leaders">领涨：菲菱科思、高凌信息、共进股份、锐捷网络、美利信、意华股份</span>
+        </div>
+        
+        <div class="theme-chip">
+          <strong>机器人 / 具身智能 / 自动化设备</strong>
+          <span>均涨 -2.42% · 涨停 12 · 成交 2122.0亿</span>
+          <span class="theme-leaders">领涨：鑫磊股份、华依科技、高澜股份、派斯林、神力股份、大元泵业、雷赛智能、锋龙股份、创世纪、南方泵业</span>
+        </div>
+        </div>
+    </div>
+    
+          
+    <div class="expert-digest">
+      <b>跟踪对象发言精炼</b>
+      <div class="expert-metrics">
+        <section class="expert-metric-card">
+          <small>盘面结论</small>
+          <strong>弱修复</strong>
+          <span>指数止跌，但宽度和主线仍弱。</span>
+        </section>
+        
+        <section class="expert-metric-card">
+          <small>交易类型</small>
+          <strong>防守观察</strong>
+          <span>科技先等核心确认。</span>
+        </section>
+        
+        <section class="expert-metric-card">
+          <small>主线焦点</small>
+          <strong>科技余震</strong>
+          <span>光通信逻辑未坏，交易仍承压。</span>
+        </section>
+        
+        <section class="expert-metric-card">
+          <small>执行结论</small>
+          <strong>等4043</strong>
+          <span>站回再谈修复。</span>
+        </section>
+        </div>
+      <div class="expert-summary-grid">
+        <section class="expert-panel decision-panel">
+          <h3>核心判断</h3>
+          <div class="decision-row"><b>共识</b><p>科技没有被基本面证伪，但短线情绪和仓位压力仍未完全解除。</p></div><div class="decision-row"><b>分歧</b><p>4041 附近是弱修复还是下跌中继，要看明天 4043/4050 能否站回。</p></div><div class="decision-row"><b>风险</b><p>科技分时脉冲若不能持续，可能继续消耗做多力量并触发多杀多。</p></div><div class="decision-row"><b>明日</b><p>先看指数 4043-4050，再看光通信和半导体核心VWAP承接。</p></div>
+        </section>
+        <section class="expert-panel">
+          <h3>明日过滤器</h3>
+          <div class="brief-grid"><section class="brief-card"><strong>指数</strong><span>4041 弱修复，仍低于 5m 中枢下沿。</span></section><section class="brief-card"><strong>科技</strong><span>光通信基本面未证伪，但交易压力未释放完。</span></section><section class="brief-card"><strong>宽度</strong><span>中位 -1.17%，主力净流出，普遍弱。</span></section><section class="brief-card"><strong>执行</strong><span>不抢脉冲，等结构收回。</span></section></div>
+        </section>
+      </div>
+      <div class="expert-wide-grid">
+        <section class="expert-panel">
+          <h3>主线热度</h3>
+          <div class="bars">
+        <div class="bar-line">
+          <span>光通信 / AI硬件</span>
+          <div class="track"><div class="fill" style="width: 50%;"></div></div>
+          <b>情绪压力</b>
+        </div>
+        
+        <div class="bar-line">
+          <span>国产替代 / 昇腾</span>
+          <div class="track"><div class="fill" style="width: 50%;"></div></div>
+          <b>脉冲分流</b>
+        </div>
+        
+        <div class="bar-line">
+          <span>创新药</span>
+          <div class="track"><div class="fill" style="width: 50%;"></div></div>
+          <b>轮动承接</b>
+        </div>
+        
+        <div class="bar-line">
+          <span>煤炭 / 银行</span>
+          <div class="track"><div class="fill" style="width: 50%;"></div></div>
+          <b>防守</b>
+        </div>
+        
+        <div class="bar-line">
+          <span>机器人 / 航天</span>
+          <div class="track"><div class="fill" style="width: 50%;"></div></div>
+          <b>次级题材</b>
+        </div>
+        </div>
+        </section>
+        <section class="expert-panel">
+          <h3>机会线索</h3>
+          <ul class="signal-list"><li>光通信若明天能站回VWAP并修复 60 日线压力，可视作情绪压力测试后的第一层确认。</li><li>半导体设备 ETF 若重新收回 3.721-3.790 中枢，可作为科技内部修复锚。</li><li>医药、煤炭等方向有承接，但更适合作为轮动观察，不宜用一日强弱确认主线。</li></ul>
+        </section>
+        <section class="expert-panel">
+          <h3>风险线索</h3>
+          <ul class="signal-list"><li>指数跌破 4006/3997，说明 4041 弱修复失败。</li><li>科技核心若继续深水或跌停放量，仍是多杀多前兆。</li><li>沪电、亨通未收回各自5m中枢前，反抽不按趋势恢复处理。</li></ul>
+        </section>
+      </div>
+    </div>
+    
+        </section>
+      </div>
+    </section>
+
+    
+    <section class="expert-quotes-panel panel">
+      <strong class="subhead">有用摘录</strong>
+      <p class="quote-rule">今天优先读取数据库人工标记的有用发言，再扫全量今日汇总补漏；保留能解释科技情绪、指数关键位、光通信基本面与交易压力、热点轮动和仓位纪律的内容。</p>
+      <div class="quote-grid">
+        <article class="quote-card">
+          <div class="quote-meta"><span>科技</span><small>NGA / fuelish / 11:50</small></div>
+          <blockquote>“科技肯定是超预期，但是A股跟外围的定价逻辑正在分裂”</blockquote>
+          <p><b>背景：</b>有用标记里重点提到科技仍有产业预期，但A股交易层面被情绪、仓位和估值压力主导。</p>
+          <p><b>交易含义：</b>产业逻辑和交易节奏要分开：长期逻辑没坏，不等于短线能马上修复。</p>
+          <p><b>明日动作：</b>明天只看核心能否站回VWAP和关键结构位，不因基本面观点直接加仓。</p>
+          
+        </article>
+        
+        <article class="quote-card">
+          <div class="quote-meta"><span>光通信</span><small>雪球 / VincentLv / 16:38</small></div>
+          <blockquote>“光通信更像被情绪错杀”</blockquote>
+          <p><b>背景：</b>机构观点认为 Meta 需求和AI网络投资并未被证伪，SemiAnalysis 事件更多触发交易波动。</p>
+          <p><b>交易含义：</b>光通信可以继续放在观察核心，但必须先消化短期仓位压力和中报前分歧。</p>
+          <p><b>明日动作：</b>关注大光模块、光芯片、MPO/FAU、空芯光纤等高确定性方向的承接，而不是追后排反抽。</p>
+          
+        </article>
+        
+        <article class="quote-card">
+          <div class="quote-meta"><span>指数</span><small>NGA / 夜骰2号机 / 15:12</small></div>
+          <blockquote>“4041这里整体还行”</blockquote>
+          <p><b>背景：</b>指数尾盘守在4041附近，30m MACD翻红，但仍低于关键中枢，属于弱修复而非转强。</p>
+          <p><b>交易含义：</b>4041只是止跌观察，真正升级需要重新站回4043/4050和4073。</p>
+          <p><b>明日动作：</b>明天低于4043先谨慎，站回4050再看修复质量。</p>
+          
+        </article>
+        
+        <article class="quote-card">
+          <div class="quote-meta"><span>风险</span><small>NGA / 丶阿疯 / 14:56</small></div>
+          <blockquote>“这种情况挺难办的，多杀多前兆”</blockquote>
+          <p><b>背景：</b>科技热门票深水和跌停成交放大，说明被动卖压和情绪杀仍在。</p>
+          <p><b>交易含义：</b>盘中脉冲不能自动解释为修复，可能只是消耗做多力量。</p>
+          <p><b>明日动作：</b>破位票不抢第一根拉升，先看收盘能否站回均价。</p>
+          
+        </article>
+        
+        <article class="quote-card">
+          <div class="quote-meta"><span>盯盘</span><small>NGA / 灰兔尾 / 14:52</small></div>
+          <blockquote>“今天光开盘就杀，奠定今天基调，存反弹不过开盘”</blockquote>
+          <p><b>背景：</b>光和存储两个关键分支都没有形成有效承接，说明科技内部情绪仍偏弱。</p>
+          <p><b>交易含义：</b>科技修复不能看零星国产方向脉冲，要看光、存、导核心是否同步止跌。</p>
+          <p><b>明日动作：</b>明天仍以光通信核心和半导体设备ETF作为科技强弱锚。</p>
+          
+        </article>
+        
+        <article class="quote-card">
+          <div class="quote-meta"><span>轮动</span><small>NGA / 丶阿疯 / 盘后</small></div>
+          <blockquote>“目前还是以情绪为主，逻辑能讲，只能讲一点点”</blockquote>
+          <p><b>背景：</b>电风扇轮动中，创新药、国产替代、航天、机器人都能讲逻辑，但持续性差异很大。</p>
+          <p><b>交易含义：</b>今天非科技方向的承接更多是资金避险和试错，不宜直接判定新主线。</p>
+          <p><b>明日动作：</b>只把新方向作为观察池，等连续性和容量核心出现再升级。</p>
+          
+        </article>
+        
+        <article class="quote-card">
+          <div class="quote-meta"><span>执行</span><small>NGA / wh773045290 / 16:31</small></div>
+          <blockquote>“次日板块不强就出了，套利为主”</blockquote>
+          <p><b>背景：</b>短线高手也在降低预期，强调日内和次日强弱，而不是长期格局所有轮动票。</p>
+          <p><b>交易含义：</b>弱市里很多交易是套利，不是趋势仓，不能用趋势仓的耐心处理后排。</p>
+          <p><b>明日动作：</b>明天后排轮动票不强就处理，核心趋势票也要看结构位。</p>
+          
+        </article>
+        
+        <article class="quote-card">
+          <div class="quote-meta"><span>仓位</span><small>NGA / wh773045290 / 16:39</small></div>
+          <blockquote>“溢价率超15就不用考虑了。玩不起。”</blockquote>
+          <p><b>背景：</b>创新药和港股映射方向有热度，但溢价和波动会让追高性价比下降。</p>
+          <p><b>交易含义：</b>越是弱市轮动，越要避免高溢价和高波动品种的情绪追买。</p>
+          <p><b>明日动作：</b>新方向只看低吸和确认，不在高溢价位置追。</p>
+          
+        </article>
+        </div>
+    </section>
+    
+
+    <h2 class="section-title">标的复盘</h2>
+    <section class="cards">
+    <article class="stock-card action-defense">
+      <div class="card-head">
+        <div>
+          <h3>sz002463 沪电股份</h3>
+        </div>
+        <span class="action-badge">减仓防守</span>
+      </div>
+      <div class="takeaway">沪电仍是破位后的弱修复，尾盘低于 130.20 中枢下沿，未站回 130.76/134 前不看趋势恢复。</div>
+      <div class="levels"><div class="level-pill"><span>防守</span><strong>130.20</strong></div><div class="level-pill"><span>中枢上沿</span><strong>130.76</strong></div><div class="level-pill"><span>VWAP</span><strong>129.32</strong></div><div class="level-pill"><span>收盘</span><strong>128.83</strong></div></div>
+      <div class="stock-sections">
+        <section>
+          <b>结论</b>
+          <span>收盘 128.83，低于 5m 中枢 130.20-130.76，略低于 VWAP 129.32；30m DIF -3.29、MACD -0.28，动量仍弱。</span>
+        </section>
+        <section>
+          <b>结构</b>
+          <span>早盘从 137.90 一路杀到 123.00，午后修复到 130.76 后再次回落，尾盘收在中枢下方。5m 下跌后有明显反弹，但没有站稳中枢，说明只是破位后的技术修复。</span>
+        </section>
+        <section>
+          <b>题材与执行</b>
+          <span>PCB和AI硬件容量票仍受科技情绪压制。明天先看 127.96/128.83 是否守住，再看 129.32/VWAP 和 130.76；只有收回 134 附近，才有弱转强可能。</span>
+        </section>
+      </div>
+    </article>
+    
+
+    <article class="stock-card action-defense">
+      <div class="card-head">
+        <div>
+          <h3>sh600487 亨通光电</h3>
+        </div>
+        <span class="action-badge">减仓防守</span>
+      </div>
+      <div class="takeaway">亨通继续弱于光通信修复预期，仍在 91.93-98.90 大中枢下方，短线只看止跌，不看反转。</div>
+      <div class="levels"><div class="level-pill"><span>防守</span><strong>91.93</strong></div><div class="level-pill"><span>中枢上沿</span><strong>98.90</strong></div><div class="level-pill"><span>VWAP</span><strong>86.15</strong></div><div class="level-pill"><span>收盘</span><strong>84.60</strong></div></div>
+      <div class="stock-sections">
+        <section>
+          <b>结论</b>
+          <span>收盘 84.60，低于 5m 中枢 91.93-98.90，也低于 VWAP 86.15；30m DIF -4.40，MACD 刚翻到 0.03。</span>
+        </section>
+        <section>
+          <b>结构</b>
+          <span>开盘高点 92.63 后快速下杀，盘中最低 82.61，午后反抽到 87.42 后回落。虽然30m MACD有轻微修复，但价格远离结构位，说明只是下跌后动能衰减，不是趋势修复。</span>
+        </section>
+        <section>
+          <b>题材与执行</b>
+          <span>光通信基本面未证伪，但亨通个股结构仍破。明天先看 82.61 是否守住，收回 86.15 才看弱修复，站回 91.93 才恢复中枢观察；否则继续防守。</span>
+        </section>
+      </div>
+    </article>
+    
+
+    <article class="stock-card action-defense">
+      <div class="card-head">
+        <div>
+          <h3>sh588710 科创半导体设备ETF</h3>
+        </div>
+        <span class="action-badge">减仓防守</span>
+      </div>
+      <div class="takeaway">半导体设备 ETF 已从破位转入弱横盘，收盘几乎贴近VWAP，但仍低于 3.721-3.790 中枢。</div>
+      <div class="levels"><div class="level-pill"><span>防守</span><strong>3.72</strong></div><div class="level-pill"><span>中枢上沿</span><strong>3.79</strong></div><div class="level-pill"><span>VWAP</span><strong>3.68</strong></div><div class="level-pill"><span>收盘</span><strong>3.68</strong></div></div>
+      <div class="stock-sections">
+        <section>
+          <b>结论</b>
+          <span>收盘 3.684，低于 5m 中枢 3.721-3.790，几乎贴近 VWAP 3.683；30m DIF -0.080，MACD 小幅翻红 0.007。</span>
+        </section>
+        <section>
+          <b>结构</b>
+          <span>上午反抽到 3.790 后未能站稳，午后回落到 3.667 后横盘，尾盘收在VWAP附近。结构上比7月2日恐慌缓和，但没有重新回到中枢，仍是破位后的弱整理。</span>
+        </section>
+        <section>
+          <b>题材与执行</b>
+          <span>半导体设备仍可作为科技修复观察锚。明天关键看 3.667 不破并收回 3.721；站回 3.790 才是修复升级，跌破 3.644 则重新转弱。</span>
+        </section>
+      </div>
+    </article>
+    
+
+    <article class="stock-card action-defense">
+      <div class="card-head">
+        <div>
+          <h3>sz002709 天赐材料</h3>
+        </div>
+        <span class="action-badge">减仓防守</span>
+      </div>
+      <div class="takeaway">天赐补齐数据后确认是明确破位，跌破 53.30-54.87 中枢并收在 49.00，不能再按抗跌票处理。</div>
+      <div class="levels"><div class="level-pill"><span>防守</span><strong>53.30</strong></div><div class="level-pill"><span>中枢上沿</span><strong>54.87</strong></div><div class="level-pill"><span>VWAP</span><strong>50.79</strong></div><div class="level-pill"><span>收盘</span><strong>49.00</strong></div></div>
+      <div class="stock-sections">
+        <section>
+          <b>结论</b>
+          <span>收盘 49.00，低于 5m 中枢 53.30-54.87，也低于 VWAP 50.79；30m DIF -1.055、MACD -1.071，收盘相对VWAP -3.53%。</span>
+        </section>
+        <section>
+          <b>结构</b>
+          <span>早盘冲到 52.79 后持续走弱，午后跌破 50.00，尾盘最低 48.64 后收在 49.00。5m 下跌面积没有收敛出有效底背驰，30m 也重新转入负动量，这里是前期修复失败后的破位延续。</span>
+        </section>
+        <section>
+          <b>题材与执行</b>
+          <span>新能源/化工材料今天没有形成有效承接，天赐也没有走出独立抗跌。明天先看 48.64/49.00 是否止跌，收回 50.79 才看弱修复，站回 52.45/53.30 才恢复观察；跌破 48.64 继续防守。</span>
+        </section>
+      </div>
+    </article>
+    </section>
+
+    <footer>生成自 tools/chanlun_replay_plan.py；数据源：本地 D:\OneDrive\Stock\details。</footer>
+  </main>
+</body>
+</html>

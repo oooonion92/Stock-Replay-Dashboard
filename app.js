@@ -1,5 +1,6 @@
 (()=>{
   const D=window.REPLAY_DATA,$=id=>document.getElementById(id);
+  const sheet=document.createElement("link");sheet.rel="stylesheet";sheet.href="overrides.css";document.head.appendChild(sheet);
   const C=["#2b638f","#18865f","#b7791f","#7655d8","#c53b32"];
   const L={pending:"待后验",supported:"支持",mixed:"部分支持",falsified:"未证实"};
   const cls=v=>v>=65?"score-good":v>=35?"score-neutral":"score-risk";

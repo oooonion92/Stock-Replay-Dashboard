@@ -209,6 +209,48 @@
   .path { padding: 12px 0; border: 0; border-top: 1px solid #e7ebf1; border-radius: 0; background: transparent; }
 }
 </style>
+<style>
+/* Mobile type hierarchy: title -> section -> subsection -> body. */
+@media (max-width: 680px) {
+  body { color: #17202a; font-size: 15px; font-weight: 400; line-height: 1.62; }
+  .hero h1 { margin: 2px 0 8px; font-size: 25px; font-weight: 800; line-height: 1.25; letter-spacing: -.02em; }
+  .subtitle { font-size: 12px; font-weight: 400; }
+  .module-title { margin: 14px 0 4px; padding: 0 0 10px; border-bottom: 2px solid #245985; }
+  .module-title b { font-size: 20px; font-weight: 800; line-height: 1.3; }
+  .module-title span { margin-top: 4px; font-size: 12px; font-weight: 400; }
+  .market-overview, .market-ecology, .expert-digest { margin-top: 10px; }
+  .market-overview > b, .market-ecology > b, .expert-digest > b {
+    margin: 0 0 10px; padding: 1px 0 1px 10px; border-left: 4px solid #245985;
+    font-size: 18px; font-weight: 800; line-height: 1.35;
+  }
+  .section-title {
+    margin: 24px 0 12px; padding: 0 0 8px; border-bottom: 2px solid #245985;
+    font-size: 20px; font-weight: 800; line-height: 1.35;
+  }
+  .expert-quotes-panel > .subhead {
+    margin: 22px 0 10px; padding: 1px 0 7px 10px; border-left: 4px solid #245985;
+    border-bottom: 1px solid #d9e0ea; font-size: 18px; font-weight: 800;
+  }
+  .subhead, .expert-panel h3 {
+    margin: 16px 0 8px; padding-bottom: 5px; border-bottom: 1px solid #d9e0ea;
+    font-size: 16px; font-weight: 700; line-height: 1.4;
+  }
+  .overview-grid strong, .path-mini strong, .brief-card strong,
+  .theme-chip strong, .stock-sections b, .decision-row b {
+    font-size: 14px; font-weight: 700; line-height: 1.45;
+  }
+  .overview-grid span, .path-mini span, .brief-card span, .theme-chip span,
+  .stock-sections span, .reason, .decision-row p {
+    font-size: 14px; font-weight: 400; line-height: 1.65;
+  }
+  .market-score-main small, .expert-metric-card small { font-size: 12px; font-weight: 500; }
+  .market-score-main b, .expert-metric-card strong { font-weight: 800; }
+  .card-head { padding-bottom: 8px; border-bottom: 1px solid #d9e0ea; }
+  .card-head h3 { font-size: 18px; font-weight: 800; line-height: 1.35; }
+  .scoreboard-head p, .quote-rule { font-size: 12px; font-weight: 400; }
+  .overview-grid section + section, .expert-panel + .expert-panel { border-top-color: #d9e0ea; }
+}
+</style>
 </head>
 <body>
   <main class="page">

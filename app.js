@@ -1,6 +1,7 @@
 (()=>{
   const D=window.REPLAY_DATA,$=id=>document.getElementById(id);
   const sheet=document.createElement("link");sheet.rel="stylesheet";sheet.href="overrides.css";document.head.appendChild(sheet);
+  const groupSheet=document.createElement("link");groupSheet.rel="stylesheet";groupSheet.href="expert-groups.css";document.head.appendChild(groupSheet);
   const C=["#2b638f","#18865f","#b7791f","#7655d8","#c53b32"];
   const L={pending:"待后验",supported:"支持",mixed:"部分支持",falsified:"未证实"};
   const cls=v=>v>=65?"score-good":v>=35?"score-neutral":"score-risk";
@@ -42,9 +43,13 @@
     }).join("");
     const claims=recent.flatMap(date=>D.reports[date].experts.map(q=>({...q,date})),),N=claims.reduce((a,q)=>(a[q.result]=(a[q.result]||0)+1,a),{});
     $("validationStats").innerHTML=Object.entries(L).map(([k,v])=>`<span>${v} ${N[k]||0}</span>`).join("");
-    $("expertCards").innerHTML=claims.map(q=>{
+    const expertCard=q=>{
       const detail=q.result==="pending"?`验证条件：${q.test||"等待后续交易日数据。"}`:`后验结果：${q.evidence||"未记录可核验依据。"}`;
-      return `<article class="expert-card"><div class="expert-meta"><b>${q.tag}</b><span>${q.date} · ${q.source}</span></div><blockquote>“${q.quote}”</blockquote><p><b>交易含义：</b>${q.meaning}</p><div class="validation-box"><strong>${L[q.result]||"待标注"}</strong><span>${detail}</span></div>${q.url?`<a href="${q.url}" target="_blank" rel="noopener noreferrer">查看原帖</a>`:""}</article>`;
+      return `<article class="expert-card"><div class="expert-meta"><b>${q.tag}</b><span>${q.source}</span></div><blockquote>“${q.quote}”</blockquote><p><b>交易含义：</b>${q.meaning}</p><div class="validation-box"><strong>${L[q.result]||"待标注"}</strong><span>${detail}</span></div>${q.url?`<a href="${q.url}" target="_blank" rel="noopener noreferrer">查看原帖</a>`:""}</article>`;
+    };
+    $("expertCards").innerHTML=recent.map((date,index)=>{
+      const label=date===d?"所选日期":`前${index}个交易日`;
+      return `<section class="expert-day-group ${date===d?"is-current":""}"><header class="expert-day-head"><h3>${date}</h3><span>${label} · ${D.reports[date].experts.length} 条</span></header><div class="expert-day-grid">${D.reports[date].experts.map(expertCard).join("")}</div></section>`;
     }).join("");
   }
   D.dates.slice().reverse().forEach(d=>{const o=document.createElement("option");o.value=d;o.textContent=d;$("dateSelect").appendChild(o)});

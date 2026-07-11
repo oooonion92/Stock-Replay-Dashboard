@@ -7,6 +7,7 @@
   const cls=v=>v>=65?"score-good":v>=35?"score-neutral":"score-risk";
   const domain=series=>{
     const values=series.flatMap(s=>s.values).filter(Number.isFinite);
+    if(!values.length)return [0,100];
     const lo=Math.min(...values),hi=Math.max(...values),span=Math.max(hi-lo,10);
     const unit=span<=25?5:10,low=Math.max(0,Math.floor((lo-span*.16)/unit)*unit),high=Math.min(100,Math.ceil((hi+span*.16)/unit)*unit);
     return low===high?[Math.max(0,low-unit),Math.min(100,high+unit)]:[low,high];
@@ -29,12 +30,13 @@
   }
   function render(d){
     const R=D.reports[d],M=R.market,A=D.dates.filter(x=>x<=d),recent=A.slice(-3).reverse();
-    $("marketTotal").textContent=M.total;$("marketStatus").textContent=M.status;$("marketSummary").textContent=M.summary;
-    $("sentimentScore").textContent=M.sentiment;$("technicalScore").textContent=M.technical;$("fullReportLink").href=R.fullReport;
+    const hasMarketScore=Number.isFinite(M.total),scored=A.filter(x=>Number.isFinite(D.reports[x].market.total));
+    $("marketTotal").textContent=hasMarketScore?M.total:"—";$("marketStatus").textContent=M.status||"未纳入评分";$("marketSummary").textContent=M.summary||"该日已收录完整复盘 HTML，但当时尚未生成入口看板所需的市场评分字段。";
+    $("sentimentScore").textContent=Number.isFinite(M.sentiment)?M.sentiment:"—";$("technicalScore").textContent=Number.isFinite(M.technical)?M.technical:"—";$("fullReportLink").href=R.fullReport;
     $("pathCards").innerHTML=M.paths.map(p=>`<div class="path-card path-${p.tone}"><b>${p.title}</b><span>${p.text}</span></div>`).join("");
-    $("historyCount").textContent=`${A.length} 个可比交易日`;
+    $("historyCount").textContent=`${scored.length}/${A.length} 个交易日有评分`;
     $("marketTrend").innerHTML=chart([{values:A.map(x=>D.reports[x].market.total)}],A,{labels:true});
-    $("trendNote").textContent="纵轴按当前可比区间自动缩放；总分越高代表环境越有利，但总闸与结构约束仍优先。";
+    $("trendNote").textContent=scored.length===A.length?"纵轴按当前可比区间自动缩放；总分越高代表环境越有利，但总闸与结构约束仍优先。":"早期复盘已纳入日期轴，但当时未生成总分；曲线只连接有评分的交易日。";
     $("stockTrend").innerHTML=chart(R.stocks.map((s,i)=>({color:C[i],values:A.map(x=>D.reports[x].stocks.find(q=>q.symbol===s.symbol)?.total??null)})),A,{labels:true});
     const prev=A.length>1?D.reports[A[A.length-2]]:null;
     $("stockRows").innerHTML=R.stocks.map(s=>{

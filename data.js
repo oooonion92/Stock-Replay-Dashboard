@@ -9,7 +9,8 @@ window.REPLAY_DATA={
     "2026-07-07",
     "2026-07-08",
     "2026-07-09",
-    "2026-07-10"
+    "2026-07-10",
+    "2026-07-13"
   ],
   "reports": {
     "2026-07-03": {
@@ -874,6 +875,137 @@ window.REPLAY_DATA={
         }
       ],
       "fullReport": "reports/20260707.html"
+    },
+    "2026-07-13": {
+      "market": {
+        "total": 25,
+        "sentiment": 11,
+        "technical": 14,
+        "status": "风险释放",
+        "summary": "蓝色总闸。全市场仅777家上涨、4377家下跌，中位跌幅-4.08%；上证尾盘守在3902.61—3936.02新中枢内，但30分钟下行动能仍在扩张。",
+        "paths": [
+          {
+            "tone": "red",
+            "title": "红：收复3936并进一步站上3972",
+            "text": "指数、市场宽度与科技容量核心同步修复，才恢复进攻观察。"
+          },
+          {
+            "tone": "yellow",
+            "title": "黄：守住3900并在3903—3936震荡",
+            "text": "只按风险释放后的筑底验证处理，不预判日线底。"
+          },
+          {
+            "tone": "blue",
+            "title": "蓝：跌破3900或反抽不过3927",
+            "text": "所有新增买点继续暂停，优先保护本金和已有利润。"
+          }
+        ]
+      },
+      "stocks": [
+        {
+          "symbol": "sz002709",
+          "name": "天赐材料",
+          "structure": 8,
+          "support": 0,
+          "relative": 6,
+          "environment": 4,
+          "risk": 8,
+          "total": 26,
+          "status": "禁止左侧"
+        },
+        {
+          "symbol": "sz002463",
+          "name": "沪电股份",
+          "structure": 7,
+          "support": 0,
+          "relative": 4,
+          "environment": 4,
+          "risk": 5,
+          "total": 20,
+          "status": "禁止左侧"
+        },
+        {
+          "symbol": "sh603078",
+          "name": "江化微",
+          "structure": 7,
+          "support": 0,
+          "relative": 4,
+          "environment": 4,
+          "risk": 1,
+          "total": 16,
+          "status": "禁止左侧"
+        },
+        {
+          "symbol": "sz002384",
+          "name": "东山精密",
+          "structure": 4,
+          "support": 0,
+          "relative": 4,
+          "environment": 4,
+          "risk": 1,
+          "total": 13,
+          "status": "禁止左侧"
+        },
+        {
+          "symbol": "sh588710",
+          "name": "科创半导体设备ETF",
+          "structure": 4,
+          "support": 0,
+          "relative": 3,
+          "environment": 4,
+          "risk": 1,
+          "total": 12,
+          "status": "禁止左侧"
+        }
+      ],
+      "experts": [
+        {
+          "tag": "指数",
+          "source": "NGA / fuelish · 15:02",
+          "quote": "3927的低点再次确认比较关键，目前没有特别强势的板块，所以右侧是没有买点的。",
+          "meaning": "缺口回补不等于右侧买点，仍需放量和结构确认。",
+          "test": "观察3900—3936能否形成承接并收复3972。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47002314&pid=874961680"
+        },
+        {
+          "tag": "风险",
+          "source": "NGA / 丶阿疯 · 13:02",
+          "quote": "最糟糕的不是科技的下跌中继，而是带A的下跌中继。",
+          "meaning": "风险已从科技扩散到全市场。",
+          "test": "观察全A宽度与跌停家数能否快速修复。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=44279886&pid=874947159"
+        },
+        {
+          "tag": "底部",
+          "source": "NGA / Plezl · 13:14",
+          "quote": "可能有反抽但底今天应该出不来，我没动手，也没让你们抄底。",
+          "meaning": "反抽预期不能替代底部确认。",
+          "test": "若反抽不过3927或再破3900，谨慎观点获支持。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=874948411"
+        },
+        {
+          "tag": "分歧",
+          "source": "NGA / sora496 · 16:23",
+          "quote": "3927破了然后补了缺口是好事，剩下的就是等止跌信号。",
+          "meaning": "偏积极结构判断同样要求等待止跌信号。",
+          "test": "观察指数是否收复3936且不再创新低。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=874972473"
+        },
+        {
+          "tag": "仓位",
+          "source": "NGA / 灰兔尾 · 16:27",
+          "quote": "信心不能当饭吃，浮盈可以，本金不行；到了该撤的位置就说拜拜。",
+          "meaning": "他人的抄底依赖利润垫与个人模式，不能直接复制。",
+          "test": "无利润垫时以本金保护和结构确认优先。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47171869&pid=874972974"
+        }
+      ],
+      "fullReport": "reports/20260713.html"
     }
   }
 };

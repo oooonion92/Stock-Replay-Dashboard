@@ -10,7 +10,8 @@ window.REPLAY_DATA={
     "2026-07-08",
     "2026-07-09",
     "2026-07-10",
-    "2026-07-13"
+    "2026-07-13",
+    "2026-07-14"
   ],
   "reports": {
     "2026-07-03": {
@@ -1006,6 +1007,146 @@ window.REPLAY_DATA={
         }
       ],
       "fullReport": "reports/20260713.html"
+    },
+    "2026-07-14": {
+      "market": {
+        "total": 73,
+        "sentiment": 41,
+        "technical": 32,
+        "status": "可试错环境",
+        "summary": "黄偏红的强修复。全A上涨占比76.3%、中位涨幅1.51%，上证重新站上3902.61—3936.02中枢；但3972尚未有效突破，30分钟DIF仍在零轴下。",
+        "paths": [
+          {
+            "tone": "red",
+            "title": "红：站稳3972并进一步收复4019",
+            "text": "成交、市场宽度与PCB/光通信容量核心同步延续，才把修复升级为进攻观察。"
+          },
+          {
+            "tone": "yellow",
+            "title": "黄：守住3936并在3936—3972震荡",
+            "text": "按强修复后的消化处理，只允许回踩确认后小仓验证，不追一致高开。"
+          },
+          {
+            "tone": "blue",
+            "title": "蓝：跌回3936下方并失守3902",
+            "text": "暂停新增试错；高弹性方向若放量跌回VWAP下方，优先保护已有利润。"
+          }
+        ]
+      },
+      "stocks": [
+        {
+          "symbol": "sz002463",
+          "name": "沪电股份",
+          "structure": 26,
+          "support": 15,
+          "relative": 6,
+          "environment": 14,
+          "risk": 9,
+          "total": 70,
+          "status": "回踩试错"
+        },
+        {
+          "symbol": "sz002384",
+          "name": "东山精密",
+          "structure": 26,
+          "support": 17,
+          "relative": 6,
+          "environment": 14,
+          "risk": 5,
+          "total": 68,
+          "status": "回踩试错"
+        },
+        {
+          "symbol": "sz002709",
+          "name": "天赐材料",
+          "structure": 24,
+          "support": 15,
+          "relative": 6,
+          "environment": 14,
+          "risk": 9,
+          "total": 68,
+          "status": "回踩试错"
+        },
+        {
+          "symbol": "sh603078",
+          "name": "江化微",
+          "structure": 24,
+          "support": 15,
+          "relative": 4,
+          "environment": 14,
+          "risk": 9,
+          "total": 66,
+          "status": "回踩试错"
+        },
+        {
+          "symbol": "sh588710",
+          "name": "科创半导体设备ETF",
+          "structure": 8,
+          "support": 13,
+          "relative": 3,
+          "environment": 14,
+          "risk": 4,
+          "total": 42,
+          "status": "防守观察"
+        }
+      ],
+      "experts": [
+        {
+          "tag": "指数",
+          "source": "NGA / 夜骰2号机 · 15:08",
+          "quote": "收盘3967，过昨天开盘价，好迹象；总体还行，要看明天验证。",
+          "meaning": "修复质量改善，但持续性仍需次日确认。",
+          "test": "先看3936承接与3972突破，进一步再看4019。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875079123"
+        },
+        {
+          "tag": "PCB",
+          "source": "NGA / fuelish · 15:09",
+          "quote": "PCB和光模块经历了较长调整，时间和空间上都有反弹需求；今天较硬的是生益、东山、沪电。",
+          "meaning": "PCB修复有时间、空间与容量核心共振，但仍先定义为反弹。",
+          "test": "次日不追一致，观察核心回踩承接。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47002314&pid=875079213"
+        },
+        {
+          "tag": "纪律",
+          "source": "NGA / 夜骰2号机 · 11:45",
+          "quote": "到点位可以博弈，但博弈不是赌；没有左侧承受能力就等右侧，不要红着眼操作。",
+          "meaning": "低位试错必须匹配纪律和承受能力，不能照搬抄底。",
+          "test": "等待右侧确认，避免情绪化加仓。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875054839"
+        },
+        {
+          "tag": "次日预案",
+          "source": "NGA / 丶阿疯 · 13:44",
+          "quote": "可以做好明天的预案，但不要把走势定死，临盘再看。",
+          "meaning": "利润垫和开盘反馈决定处理，不能预设单一路径。",
+          "test": "高开、回踩与弱转强分别处理，不追固定剧本。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=44279886&pid=875068814"
+        },
+        {
+          "tag": "轮动",
+          "source": "NGA / sora496 · 13:40",
+          "quote": "这点成交量不够光和半导体一起玩，半导体最好先企稳，让其他方向完成轮动反弹。",
+          "meaning": "科技修复并非全面同步，半导体设备仍需独立验证。",
+          "test": "不因PCB强势直接提高半导体设备优先级。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875068301"
+        },
+        {
+          "tag": "成交",
+          "source": "雪球 / 菜鸡图 · 14:14",
+          "quote": "成交量没有明显放大，板块成交集中度下降，趋同交易开始减弱。",
+          "meaning": "宽度回暖有利，但缩量意味着持续性需要继续验证。",
+          "test": "关注次日成交是否补上，不把普涨直接定义为主升。",
+          "result": "pending",
+          "url": "https://xueqiu.com/6242833700/400058997"
+        }
+      ],
+      "fullReport": "reports/20260714.html"
     }
   }
 };

@@ -547,71 +547,57 @@
     <section class="scoreboard-panel">
       <div class="scoreboard-head">
         <h2 class="section-title">跟踪标的评分</h2>
-        <p>评分用于先排优先级：先看高分票的回踩承接，低分票只保留风险观察。</p>
+        <p>结构30 + 承接25 + 相对强弱30 + 风险15。相对强弱同时衡量上涨共振与下跌抗性。</p>
       </div>
-      <div class="score-table-wrap">
-        <table class="score-table">
-          <thead><tr><th title="当前跟踪标的名称。">标的</th><th title="满分30：看5m中枢位置、30m DIF/MACD方向、背驰/动量结构。">结构分</th><th title="满分25：看VWAP、尾盘位置、日内回落后是否能收回关键位。">承接分</th><th title="满分15：看个股在指数风险窗口里的抗跌或放大下跌程度。">相对强弱</th><th title="满分15：看指数总闸、全A宽度、中位涨幅等外部环境。">环境分</th><th title="满分15：分数越高越安全；急拉、深水、诱多、跌破中枢会扣分。">风险分</th><th title="五项合计，辅助判断优先级，不替代下方AI深度复盘。">总分</th><th title="按总分给出的简短动作层级：进攻观察、回踩试错、强势观察、防守观察、禁止左侧。">状态</th></tr></thead>
-          <tbody>
+      <div class="score-table-wrap"><table class="score-table">
+        <thead><tr><th title="当前跟踪标的名称。">标的</th><th title="满分30：看5m中枢位置、30m DIF/MACD方向、背驰与动量。">结构分</th><th title="满分25：看VWAP、尾盘位置、盘中跌破后的收复及高开高走质量。">承接分</th><th title="满分30：指数上涨时奖励同步上涨和超额收益；指数下跌时奖励抗跌、独立上涨与较低下行捕获。">相对强弱</th><th title="满分15：越高越安全；弱收盘、诱多、跌破中枢和高下行捕获扣分。">风险分</th><th title="结构30、承接25、相对强弱30、风险15，合计100。">总分</th><th title="按总分给出动作层级，不替代下方AI深度复盘。">状态</th></tr></thead><tbody>
             <tr>
               <td data-label="标的"><strong>沪电股份</strong><small>sz002463</small></td>
               <td data-label="结构分">26</td>
-              <td data-label="承接分">15</td>
-              <td data-label="相对强弱">6</td>
-              <td data-label="环境分">14</td>
-              <td data-label="风险分">9</td>
-              <td data-label="总分"><b>70</b></td>
-              <td data-label="状态"><span class="score-pill score-try">回踩试错</span></td>
+              <td data-label="承接分">21</td>
+              <td data-label="相对强弱">25</td>
+              <td data-label="风险分">11</td>
+              <td data-label="总分"><b>83</b></td>
+              <td data-label="状态"><span class="score-pill score-hot">进攻观察</span></td>
             </tr>
-            
             <tr>
               <td data-label="标的"><strong>东山精密</strong><small>sz002384</small></td>
               <td data-label="结构分">26</td>
-              <td data-label="承接分">17</td>
-              <td data-label="相对强弱">6</td>
-              <td data-label="环境分">14</td>
-              <td data-label="风险分">5</td>
-              <td data-label="总分"><b>68</b></td>
-              <td data-label="状态"><span class="score-pill score-try">回踩试错</span></td>
+              <td data-label="承接分">22</td>
+              <td data-label="相对强弱">25</td>
+              <td data-label="风险分">9</td>
+              <td data-label="总分"><b>82</b></td>
+              <td data-label="状态"><span class="score-pill score-hot">进攻观察</span></td>
             </tr>
-            
             <tr>
               <td data-label="标的"><strong>天赐材料</strong><small>sz002709</small></td>
               <td data-label="结构分">24</td>
-              <td data-label="承接分">15</td>
-              <td data-label="相对强弱">6</td>
-              <td data-label="环境分">14</td>
-              <td data-label="风险分">9</td>
-              <td data-label="总分"><b>68</b></td>
+              <td data-label="承接分">20</td>
+              <td data-label="相对强弱">20</td>
+              <td data-label="风险分">11</td>
+              <td data-label="总分"><b>75</b></td>
               <td data-label="状态"><span class="score-pill score-try">回踩试错</span></td>
             </tr>
-            
             <tr>
               <td data-label="标的"><strong>江化微</strong><small>sh603078</small></td>
               <td data-label="结构分">24</td>
-              <td data-label="承接分">15</td>
-              <td data-label="相对强弱">4</td>
-              <td data-label="环境分">14</td>
-              <td data-label="风险分">9</td>
-              <td data-label="总分"><b>66</b></td>
+              <td data-label="承接分">20</td>
+              <td data-label="相对强弱">13</td>
+              <td data-label="风险分">11</td>
+              <td data-label="总分"><b>68</b></td>
               <td data-label="状态"><span class="score-pill score-try">回踩试错</span></td>
             </tr>
-            
             <tr>
               <td data-label="标的"><strong>科创半导体设备ETF</strong><small>sh588710</small></td>
               <td data-label="结构分">8</td>
-              <td data-label="承接分">13</td>
-              <td data-label="相对强弱">3</td>
-              <td data-label="环境分">14</td>
+              <td data-label="承接分">18</td>
+              <td data-label="相对强弱">11</td>
               <td data-label="风险分">4</td>
-              <td data-label="总分"><b>42</b></td>
+              <td data-label="总分"><b>41</b></td>
               <td data-label="状态"><span class="score-pill score-defense">防守观察</span></td>
-            </tr>
-            </tbody>
-        </table>
-      </div>
+            </tr></tbody>
+      </table></div>
     </section>
-    
 
     <h2 class="section-title">标的复盘</h2>
     <section class="cards">

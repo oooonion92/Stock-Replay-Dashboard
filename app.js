@@ -37,7 +37,8 @@
     $("historyCount").textContent=`${scored.length}/${A.length} 个交易日有评分`;
     $("marketTrend").innerHTML=chart([{values:A.map(x=>D.reports[x].market.total)}],A,{labels:true});
     $("trendNote").textContent=scored.length===A.length?"纵轴按当前可比区间自动缩放；总分越高代表环境越有利，但总闸与结构约束仍优先。":"早期复盘已纳入日期轴，但当时未生成总分；曲线只连接有评分的交易日。";
-    $("stockTrend").innerHTML=chart(R.stocks.map((s,i)=>({color:C[i],values:A.map(x=>D.reports[x].stocks.find(q=>q.symbol===s.symbol)?.total??null)})),A,{labels:true});
+    const stockDates=A.filter(x=>(D.reports[x].stocks||[]).some(s=>Number.isFinite(s.total)));
+    $("stockTrend").innerHTML=chart(R.stocks.map((s,i)=>({color:C[i],values:stockDates.map(x=>(D.reports[x].stocks||[]).find(q=>q.symbol===s.symbol&&Number.isFinite(q.total))?.total??null)})),stockDates,{labels:true});
     const prev=A.length>1?D.reports[A[A.length-2]]:null;
     $("stockRows").innerHTML=R.stocks.map(s=>{
       const q=prev?.stocks.find(x=>x.symbol===s.symbol),delta=q?s.total-q.total:null;

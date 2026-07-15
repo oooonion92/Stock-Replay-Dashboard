@@ -173,7 +173,20 @@
       .levels { grid-template-columns: 1fr; }
     }
   </style>
-<style>
+<style>/* Work responsive refinement: canonical layout matched to the 2026-07-10 report. */
+/* Mobile hierarchy is flat by design; keep this asset as the single source of truth. */
+/* Tablet behavior remains separate and does not alter the canonical <=680px layout. */
+@media (min-width: 681px) and (max-width: 920px) {
+  .page { padding: 18px; }
+  .cards, .tree, .expert-metrics, .expert-summary-grid, .expert-wide-grid,
+  .brief-grid, .quote-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .overview-grid, .breadth-grid, .theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .overview-grid section.wide { grid-column: span 2; }
+  .market-score-main { grid-template-columns: 1.2fr 1fr 1fr; }
+  .path-mini-grid { grid-template-columns: 1fr; }
+  .skip-row { grid-template-columns: 1fr 1fr; }
+}
+
 /* Work mobile refinement: generated after the repository renderer completes. */
 @media (max-width: 680px) {
   body { font-size: 15px; line-height: 1.55; overflow-x: hidden; }
@@ -231,8 +244,8 @@
   .breadth-grid, .theme-grid, .levels { grid-template-columns: 1fr; }
   .score-table tr { padding: 4px 8px; }
 }
-</style>
-<style>
+
+
 /* Mobile flat reading mode: reduce nested-card visual noise without changing desktop. */
 @media (max-width: 680px) {
   body { background: #fff; }
@@ -267,8 +280,8 @@
   .level-pill { border: 0; border-radius: 0; padding: 7px 0; border-bottom: 1px solid #edf0f5; }
   .path { padding: 12px 0; border: 0; border-top: 1px solid #e7ebf1; border-radius: 0; background: transparent; }
 }
-</style>
-<style>
+
+
 /* Mobile type hierarchy: title -> section -> subsection -> body. */
 @media (max-width: 680px) {
   body { color: #17202a; font-size: 15px; font-weight: 400; line-height: 1.62; }
@@ -309,8 +322,8 @@
   .scoreboard-head p, .quote-rule { font-size: 12px; font-weight: 400; }
   .overview-grid section + section, .expert-panel + .expert-panel { border-top-color: #d9e0ea; }
 }
-</style>
-<style>
+
+
 /* Mobile semantic tiles: keep comparable themes visually grouped. */
 @media (max-width: 680px) {
   .theme-grid { gap: 8px; }
@@ -324,6 +337,10 @@
   .secondary-theme-grid .theme-chip { background: #f3f7fb; border-color: #d7e3ef; }
 }
 </style>
+
+
+
+
 
 </head>
 <body>

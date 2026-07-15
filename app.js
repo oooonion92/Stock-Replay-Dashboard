@@ -29,7 +29,7 @@
     return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="历史评分趋势">${grid}${paths}${dates.map((d,i)=>`<text x="${x(i)}" y="${h-6}" text-anchor="middle" font-size="10" fill="#667085">${d.slice(5)}</text>`).join("")}</svg>`;
   }
   function render(d){
-    const R=D.reports[d],M=R.market,A=D.dates.filter(x=>x<=d),recent=A.slice(-3).reverse();
+    const R=D.reports[d],M=R.market,A=D.dates.filter(x=>x<=d),recent=[d];
     const hasMarketScore=Number.isFinite(M.total),scored=A.filter(x=>Number.isFinite(D.reports[x].market.total));
     $("marketTotal").textContent=hasMarketScore?M.total:"—";$("marketStatus").textContent=M.status||"未纳入评分";$("marketSummary").textContent=M.summary||"该日已收录完整复盘 HTML，但当时尚未生成入口看板所需的市场评分字段。";
     $("sentimentScore").textContent=Number.isFinite(M.sentiment)?M.sentiment:"—";$("technicalScore").textContent=Number.isFinite(M.technical)?M.technical:"—";$("fullReportLink").href=R.fullReport;
@@ -51,7 +51,7 @@
       return `<article class="expert-card"><div class="expert-meta"><b>${q.tag}</b><span>${q.source}</span></div><blockquote>“${q.quote}”</blockquote><p><b>交易含义：</b>${q.meaning}</p><div class="validation-box"><strong>${L[q.result]||"待标注"}</strong><span>${detail}</span></div>${q.url?`<a href="${q.url}" target="_blank" rel="noopener noreferrer">查看原帖</a>`:""}</article>`;
     };
     $("expertCards").innerHTML=recent.map((date,index)=>{
-      const label=date===d?"所选日期":`前${index}个交易日`;
+      const label="所选日期";
       return `<section class="expert-day-group ${date===d?"is-current":""}"><header class="expert-day-head"><h3>${date}</h3><span>${label} · ${D.reports[date].experts.length} 条</span></header><div class="expert-day-grid">${D.reports[date].experts.map(expertCard).join("")}</div></section>`;
     }).join("");
   }

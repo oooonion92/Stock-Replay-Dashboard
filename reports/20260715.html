@@ -239,6 +239,121 @@
   .skip-row { grid-template-columns: 1fr; gap: 4px; padding: 9px 0; }
   .section-title { margin: 18px 0 8px; font-size: 17px; }
   footer { margin: 18px 0 4px; }
+
+  /* Mobile hierarchy is flat by design: title -> section divider -> text.
+     Do not reintroduce card-inside-card framing here. */
+  .hero > .panel,
+  .expert-quotes-panel.panel {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+  .market-review-module {
+    margin-top: 14px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+  .market-score-panel,
+  .market-overview,
+  .market-ecology,
+  .expert-digest {
+    margin: 16px 0 0;
+    padding: 14px 0 0;
+    border: 0;
+    border-top: 1px solid var(--line);
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+  .market-score-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .market-score-main > div {
+    padding: 8px 6px 10px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+  .market-score-main > div:first-child {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--line);
+  }
+  .market-score-main > div:nth-child(3) { border-left: 1px solid var(--line); padding-left: 14px; }
+  .market-score-main strong { font-size: 28px; }
+  .market-score-main b { font-size: 18px; }
+  .market-score-components span {
+    padding: 3px 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+  .overview-grid { gap: 0; }
+  .overview-grid section {
+    padding: 11px 0;
+    border: 0;
+    border-top: 1px solid #edf0f5;
+    border-radius: 0;
+    background: transparent;
+  }
+  .overview-grid section:first-child { border-top: 0; }
+  .path-mini-grid { gap: 7px; }
+  .path-mini { border-width: 1px; border-radius: 7px; }
+  .breadth-grid span,
+  .theme-chip,
+  .brief-card {
+    border: 0;
+    border-radius: 7px;
+    background: #f4f6f8;
+  }
+  .expert-metric-card,
+  .expert-panel,
+  .quote-card {
+    min-height: 0;
+    padding: 11px 0;
+    border: 0;
+    border-top: 1px solid #edf0f5;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+  .expert-metrics,
+  .expert-summary-grid,
+  .expert-wide-grid,
+  .quote-grid { gap: 0; }
+  .expert-metric-card:first-child,
+  .expert-panel:first-child,
+  .quote-card:first-child { border-top: 0; }
+  .quote-card blockquote { font-weight: 400; }
+  .score-table tr {
+    padding: 7px 0;
+    border: 0;
+    border-top: 1px solid var(--line);
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+  .stock-card {
+    padding: 12px 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+  .takeaway,
+  .level-pill {
+    border: 0;
+    border-radius: 7px;
+    background: #f4f6f8;
+  }
 }
 @media (max-width: 380px) {
   .page { padding: 8px; }

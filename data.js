@@ -11,7 +11,8 @@ window.REPLAY_DATA={
     "2026-07-09",
     "2026-07-10",
     "2026-07-13",
-    "2026-07-14"
+    "2026-07-14",
+    "2026-07-15"
   ],
   "reports": {
     "2026-07-03": {
@@ -1142,6 +1143,141 @@ window.REPLAY_DATA={
         }
       ],
       "fullReport": "reports/20260714.html"
+    },
+    "2026-07-15": {
+      "market": {
+        "total": 53,
+        "sentiment": 33,
+        "technical": 20,
+        "status": "震荡观察",
+        "summary": "黄色偏蓝。上证收3955.58，仍在3948.56—3974.87最新5分钟中枢内；市场宽度偏强，但主力净流出，科技与半导体显著弱于指数。",
+        "paths": [
+          {
+            "tone": "red",
+            "title": "红：站稳3975并突破3982",
+            "text": "成交改善、科技容量核心收回VWAP且半导体跌幅收敛，才升级观察。"
+          },
+          {
+            "tone": "yellow",
+            "title": "黄：守住3949并在3949—3975震荡",
+            "text": "继续按指数稳定、风格轮动处理；医药消费不追一致，科技只看抗跌核心。"
+          },
+          {
+            "tone": "blue",
+            "title": "蓝：失守3944并跌回3936下方",
+            "text": "暂停新增试错；科技若继续显著弱于指数，按下跌中继管理风险。"
+          }
+        ]
+      },
+      "stocks": [
+        {
+          "symbol": "sz002463",
+          "name": "沪电股份",
+          "structure": 21,
+          "support": 0,
+          "relative": 25,
+          "risk": 5,
+          "total": 51,
+          "status": "强势观察"
+        },
+        {
+          "symbol": "sz002384",
+          "name": "东山精密",
+          "structure": 21,
+          "support": 2,
+          "relative": 25,
+          "risk": 1,
+          "total": 49,
+          "status": "防守观察"
+        },
+        {
+          "symbol": "sz002709",
+          "name": "天赐材料",
+          "structure": 23,
+          "support": 1,
+          "relative": 14,
+          "risk": 8,
+          "total": 46,
+          "status": "防守观察"
+        },
+        {
+          "symbol": "sh603078",
+          "name": "江化微",
+          "structure": 20,
+          "support": 0,
+          "relative": 13,
+          "risk": 4,
+          "total": 37,
+          "status": "防守观察"
+        },
+        {
+          "symbol": "sh588710",
+          "name": "科创半导体设备ETF",
+          "structure": 4,
+          "support": 0,
+          "relative": 11,
+          "risk": 1,
+          "total": 16,
+          "status": "禁止左侧"
+        }
+      ],
+      "experts": [
+        {
+          "tag": "科技分化",
+          "source": "NGA / fuelish · 15:30",
+          "quote": "业绩好的科技跌得少一点，业绩差的科技跌得多一点。",
+          "meaning": "科技不能整体处理，个股质量和承接决定优先级。",
+          "test": "只保留能收回VWAP并强于板块的核心观察。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47002314&pid=875207174"
+        },
+        {
+          "tag": "指数与科技",
+          "source": "NGA / 夜骰2号机 · 11:43",
+          "quote": "指数会被防守板块填充，而科技不一定。",
+          "meaning": "指数稳定不代表科技风险同步解除。",
+          "test": "比较科技核心与上证的日内相对强弱和回撤。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875179547"
+        },
+        {
+          "tag": "科技节奏",
+          "source": "NGA / 进击的猫猫头选手 · 12:17",
+          "quote": "科技每次反弹的全市场吸血能力越来越弱。",
+          "meaning": "科技反弹的扩散力和持续性正在下降。",
+          "test": "观察反弹时成交集中度与后排跟随是否改善。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45502551&pid=875184254"
+        },
+        {
+          "tag": "仓位纪律",
+          "source": "NGA / zippo578 · 15:35",
+          "quote": "看不懂就控制仓位，等科技的调整周期结束。",
+          "meaning": "无法确认结构时，仓位控制优先于左侧猜底。",
+          "test": "等待板块止跌、核心收回VWAP和结构位。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875207815"
+        },
+        {
+          "tag": "分歧",
+          "source": "NGA / 灰兔尾 · 15:11",
+          "quote": "量在放但价不动，抛压和承接要看明天确认。",
+          "meaning": "放量不涨说明筹码交换激烈，不能直接视为承接。",
+          "test": "看次日是否缩量守位或放量突破。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875204638"
+        },
+        {
+          "tag": "半导体风险",
+          "source": "NGA / Plezl · 15:10",
+          "quote": "避开半导体，哪怕最强力出手也不是直接上去。",
+          "meaning": "半导体仍处风险释放期，反弹不等于反转。",
+          "test": "等待板块跌幅收敛、核心止跌并形成右侧结构。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875204479"
+        }
+      ],
+      "fullReport": "reports/20260715.html"
     }
   }
 };

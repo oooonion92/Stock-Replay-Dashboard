@@ -174,34 +174,7 @@
     }
   </style>
 <style>
-/* Work responsive refinement: generated after the repository renderer completes. */
-/* Desktop keeps the repository's three-column presentation. */
-@media (min-width: 681px) and (max-width: 920px) {
-  .page { padding: 18px; }
-  .cards, .tree, .expert-metrics, .expert-summary-grid, .expert-wide-grid,
-  .brief-grid, .quote-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .overview-grid, .breadth-grid, .theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .overview-grid section.wide { grid-column: span 2; }
-  .market-score-main { grid-template-columns: 1.2fr 1fr 1fr; }
-  .path-mini-grid { grid-template-columns: 1fr; }
-  .skip-row { grid-template-columns: 1fr 1fr; }
-}
-/* Score rows become labelled cards before the desktop table would need to scroll. */
-@media (max-width: 800px) {
-  .score-table-wrap { overflow: visible; border: 0; box-shadow: none; background: transparent; }
-  .score-table { min-width: 0; width: 100%; border-collapse: separate; border-spacing: 0 8px; }
-  .score-table thead { display: none; }
-  .score-table, .score-table tbody, .score-table tr, .score-table td { display: block; }
-  .score-table tr { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); padding: 4px 10px; box-shadow: var(--shadow); }
-  .score-table td { min-height: 32px; padding: 7px 0; border-bottom: 1px solid #edf0f5; text-align: right; font-size: 13px; }
-  .score-table td:last-child { border-bottom: 0; }
-  .score-table td:first-child { text-align: left; font-size: 15px; font-weight: 800; }
-  .score-table td::before { content: attr(data-label); float: left; color: var(--muted); font-size: 12px; font-weight: 600; text-align: left; }
-  .score-table td:first-child::before { display: none; }
-  .score-table td small { margin-top: 1px; }
-  .score-pill { min-width: 64px; }
-}
-/* Phone layout favors scanability and touch-friendly spacing. */
+/* Work mobile refinement: generated after the repository renderer completes. */
 @media (max-width: 680px) {
   body { font-size: 15px; line-height: 1.55; overflow-x: hidden; }
   .page { padding: 10px; }
@@ -229,6 +202,18 @@
   .quote-meta span { max-width: 52%; }
   .scoreboard-panel { margin: 14px 0; }
   .scoreboard-head { display: block; }
+  .score-table-wrap { overflow: visible; border: 0; box-shadow: none; background: transparent; }
+  .score-table { min-width: 0; width: 100%; border-collapse: separate; border-spacing: 0 8px; }
+  .score-table thead { display: none; }
+  .score-table, .score-table tbody, .score-table tr, .score-table td { display: block; }
+  .score-table tr { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); padding: 4px 10px; box-shadow: var(--shadow); }
+  .score-table td { min-height: 32px; padding: 7px 0; border-bottom: 1px solid #edf0f5; text-align: right; font-size: 13px; }
+  .score-table td:last-child { border-bottom: 0; }
+  .score-table td:first-child { text-align: left; font-size: 15px; font-weight: 800; }
+  .score-table td::before { content: attr(data-label); float: left; color: var(--muted); font-size: 12px; font-weight: 600; text-align: left; }
+  .score-table td:first-child::before { display: none; }
+  .score-table td small { margin-top: 1px; }
+  .score-pill { min-width: 64px; }
   .card-head { gap: 8px; }
   .card-head h3 { font-size: 17px; }
   .action-badge { padding: 4px 7px; font-size: 11px; }
@@ -239,121 +224,6 @@
   .skip-row { grid-template-columns: 1fr; gap: 4px; padding: 9px 0; }
   .section-title { margin: 18px 0 8px; font-size: 17px; }
   footer { margin: 18px 0 4px; }
-
-  /* Mobile hierarchy is flat by design: title -> section divider -> text.
-     Do not reintroduce card-inside-card framing here. */
-  .hero > .panel,
-  .expert-quotes-panel.panel {
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-  }
-  .market-review-module {
-    margin-top: 14px;
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-  }
-  .market-score-panel,
-  .market-overview,
-  .market-ecology,
-  .expert-digest {
-    margin: 16px 0 0;
-    padding: 14px 0 0;
-    border: 0;
-    border-top: 1px solid var(--line);
-    border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-  }
-  .market-score-main {
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    border-bottom: 1px solid var(--line);
-  }
-  .market-score-main > div {
-    padding: 8px 6px 10px;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-  }
-  .market-score-main > div:first-child {
-    grid-column: 1 / -1;
-    border-bottom: 1px solid var(--line);
-  }
-  .market-score-main > div:nth-child(3) { border-left: 1px solid var(--line); padding-left: 14px; }
-  .market-score-main strong { font-size: 28px; }
-  .market-score-main b { font-size: 18px; }
-  .market-score-components span {
-    padding: 3px 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-  }
-  .overview-grid { gap: 0; }
-  .overview-grid section {
-    padding: 11px 0;
-    border: 0;
-    border-top: 1px solid #edf0f5;
-    border-radius: 0;
-    background: transparent;
-  }
-  .overview-grid section:first-child { border-top: 0; }
-  .path-mini-grid { gap: 7px; }
-  .path-mini { border-width: 1px; border-radius: 7px; }
-  .breadth-grid span,
-  .theme-chip,
-  .brief-card {
-    border: 0;
-    border-radius: 7px;
-    background: #f4f6f8;
-  }
-  .expert-metric-card,
-  .expert-panel,
-  .quote-card {
-    min-height: 0;
-    padding: 11px 0;
-    border: 0;
-    border-top: 1px solid #edf0f5;
-    border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-  }
-  .expert-metrics,
-  .expert-summary-grid,
-  .expert-wide-grid,
-  .quote-grid { gap: 0; }
-  .expert-metric-card:first-child,
-  .expert-panel:first-child,
-  .quote-card:first-child { border-top: 0; }
-  .quote-card blockquote { font-weight: 400; }
-  .score-table tr {
-    padding: 7px 0;
-    border: 0;
-    border-top: 1px solid var(--line);
-    border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-  }
-  .stock-card {
-    padding: 12px 0;
-    border-right: 0;
-    border-bottom: 0;
-    border-left: 0;
-    border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-  }
-  .takeaway,
-  .level-pill {
-    border: 0;
-    border-radius: 7px;
-    background: #f4f6f8;
-  }
 }
 @media (max-width: 380px) {
   .page { padding: 8px; }
@@ -362,6 +232,99 @@
   .score-table tr { padding: 4px 8px; }
 }
 </style>
+<style>
+/* Mobile flat reading mode: reduce nested-card visual noise without changing desktop. */
+@media (max-width: 680px) {
+  body { background: #fff; }
+  .page { padding: 8px 14px 18px; }
+  .panel { padding: 0; border: 0; border-radius: 0; box-shadow: none; background: transparent; }
+  .market-review-module { margin-top: 12px; padding: 0; border: 0; border-radius: 0; background: transparent; }
+  .market-score-panel, .market-overview, .market-ecology, .expert-digest {
+    margin: 0; padding: 14px 0; border: 0; border-top: 1px solid #e7ebf1;
+    border-radius: 0; background: transparent;
+  }
+  .market-score-main > div { border: 0; border-radius: 0; padding: 8px 0; background: transparent; }
+  .market-score-main > div + div { border-top: 1px solid #edf0f5; }
+  .market-score-components span { border: 0; background: #f2f5f8; }
+  .overview-grid { gap: 0; margin-top: 2px; }
+  .overview-grid section { padding: 11px 0; border: 0; border-top: 1px solid #edf0f5; border-radius: 0; background: transparent; }
+  .overview-grid section:first-child { border-top: 0; }
+  .path-mini-grid { gap: 8px; padding-top: 4px; }
+  .path-mini { padding: 10px; border-radius: 8px; }
+  .breadth-grid, .theme-grid { gap: 0 12px; }
+  .breadth-grid span, .theme-chip { padding: 9px 0; border: 0; border-bottom: 1px solid #edf0f5; border-radius: 0; background: transparent; }
+  .expert-metric-card, .expert-panel, .quote-card, .brief-card {
+    border: 0; border-radius: 0; box-shadow: none; background: transparent;
+  }
+  .expert-metric-card { padding: 9px 0; border-bottom: 1px solid #edf0f5; }
+  .expert-panel { padding: 12px 0; border-top: 1px solid #e7ebf1; }
+  .brief-card { padding: 9px 0; border-top: 1px solid #edf0f5; }
+  .quote-card { padding: 12px 0; border-top: 1px solid #e7ebf1; }
+  .score-table { border-spacing: 0; }
+  .score-table tr { padding: 6px 0; border: 0; border-top: 1px solid #e7ebf1; border-radius: 0; box-shadow: none; background: transparent; }
+  .stock-card { padding: 14px 0; border: 0; border-top: 4px solid var(--blue); border-radius: 0; box-shadow: none; background: transparent; }
+  .takeaway { border: 0; border-left: 3px solid #bfd7fb; border-radius: 0; background: #f7f9fc; }
+  .level-pill { border: 0; border-radius: 0; padding: 7px 0; border-bottom: 1px solid #edf0f5; }
+  .path { padding: 12px 0; border: 0; border-top: 1px solid #e7ebf1; border-radius: 0; background: transparent; }
+}
+</style>
+<style>
+/* Mobile type hierarchy: title -> section -> subsection -> body. */
+@media (max-width: 680px) {
+  body { color: #17202a; font-size: 15px; font-weight: 400; line-height: 1.62; }
+  .hero h1 { margin: 2px 0 8px; font-size: 25px; font-weight: 800; line-height: 1.25; letter-spacing: -.02em; }
+  .subtitle { font-size: 12px; font-weight: 400; }
+  .module-title { margin: 14px 0 4px; padding: 0 0 10px; border-bottom: 2px solid #245985; }
+  .module-title b { font-size: 20px; font-weight: 800; line-height: 1.3; }
+  .module-title span { margin-top: 4px; font-size: 12px; font-weight: 400; }
+  .market-overview, .market-ecology, .expert-digest { margin-top: 10px; }
+  .market-overview > b, .market-ecology > b, .expert-digest > b {
+    margin: 0 0 10px; padding: 1px 0 1px 10px; border-left: 4px solid #245985;
+    font-size: 18px; font-weight: 800; line-height: 1.35;
+  }
+  .section-title {
+    margin: 24px 0 12px; padding: 0 0 8px; border-bottom: 2px solid #245985;
+    font-size: 20px; font-weight: 800; line-height: 1.35;
+  }
+  .expert-quotes-panel > .subhead {
+    margin: 22px 0 10px; padding: 1px 0 7px 10px; border-left: 4px solid #245985;
+    border-bottom: 1px solid #d9e0ea; font-size: 18px; font-weight: 800;
+  }
+  .subhead, .expert-panel h3 {
+    margin: 16px 0 8px; padding-bottom: 5px; border-bottom: 1px solid #d9e0ea;
+    font-size: 16px; font-weight: 700; line-height: 1.4;
+  }
+  .overview-grid strong, .path-mini strong, .brief-card strong,
+  .theme-chip strong, .stock-sections b, .decision-row b {
+    font-size: 14px; font-weight: 700; line-height: 1.45;
+  }
+  .overview-grid span, .path-mini span, .brief-card span, .theme-chip span,
+  .stock-sections span, .reason, .decision-row p {
+    font-size: 14px; font-weight: 400; line-height: 1.65;
+  }
+  .market-score-main small, .expert-metric-card small { font-size: 12px; font-weight: 500; }
+  .market-score-main b, .expert-metric-card strong { font-weight: 800; }
+  .card-head { padding-bottom: 8px; border-bottom: 1px solid #d9e0ea; }
+  .card-head h3 { font-size: 18px; font-weight: 800; line-height: 1.35; }
+  .scoreboard-head p, .quote-rule { font-size: 12px; font-weight: 400; }
+  .overview-grid section + section, .expert-panel + .expert-panel { border-top-color: #d9e0ea; }
+}
+</style>
+<style>
+/* Mobile semantic tiles: keep comparable themes visually grouped. */
+@media (max-width: 680px) {
+  .theme-grid { gap: 8px; }
+  .theme-chip {
+    padding: 10px; border: 1px solid #dbe3ec; border-radius: 8px;
+    background: #f7f9fc;
+  }
+  .theme-chip strong { margin-bottom: 4px; }
+  .theme-chip span + span { margin-top: 5px; }
+  .strong-theme { background: #effaf4; border-color: #c6e7d2; }
+  .secondary-theme-grid .theme-chip { background: #f3f7fb; border-color: #d7e3ef; }
+}
+</style>
+
 </head>
 <body>
   <main class="page">

@@ -12,7 +12,8 @@ window.REPLAY_DATA={
     "2026-07-10",
     "2026-07-13",
     "2026-07-14",
-    "2026-07-15"
+    "2026-07-15",
+    "2026-07-16"
   ],
   "reports": {
     "2026-07-03": {
@@ -1278,6 +1279,121 @@ window.REPLAY_DATA={
         }
       ],
       "fullReport": "reports/20260715.html"
+    },
+    "2026-07-16": {
+      "market": {
+        "total": 21,
+        "sentiment": 18,
+        "technical": 3,
+        "status": "风险释放",
+        "summary": "蓝色风险释放。上证收3882.41、跌1.85%，全天冲高后单边回落，跌破3943.70—3974.87的最新5分钟中枢；30分钟DIF、MACD与斜率均为负。全A中位跌0.19%，但81家跌停、570家跌超5%、主力净流出约741亿元，科技和半导体继续承担主要亏钱效应。",
+        "paths": [
+          {
+            "tone": "red",
+            "title": "红：收回3903并进一步站上3944",
+            "text": "要求成交与市场宽度同步改善，科技容量核心收回VWAP，才把反抽升级为修复；先等回踩确认，09:30—10:00不追第一波反弹。"
+          },
+          {
+            "tone": "yellow",
+            "title": "黄：守住3868并在3868—3903弱修复",
+            "text": "按下跌后的技术反抽处理，反弹受制于3903时仍以降波动和去弱留强为主；只观察能逆指数、守VWAP并保持结构的核心，不把板块普反当反转。"
+          },
+          {
+            "tone": "blue",
+            "title": "蓝：失守3868并跌破3850",
+            "text": "暂停新增试错，下一观察区下移至3794附近，避免在加速段左侧摊低成本；半导体与高贝塔标的若继续放大指数跌幅，严格执行各自失败线。"
+          }
+        ]
+      },
+      "stocks": [
+        {
+          "symbol": "sz002384",
+          "name": "东山精密",
+          "structure": 14,
+          "support": 20,
+          "relative": 25,
+          "risk": 8,
+          "total": 67,
+          "status": "回踩试错"
+        },
+        {
+          "symbol": "sz002463",
+          "name": "沪电股份",
+          "structure": 10,
+          "support": 8,
+          "relative": 20,
+          "risk": 3,
+          "total": 41,
+          "status": "防守观察"
+        },
+        {
+          "symbol": "sh588710",
+          "name": "科创半导体设备ETF",
+          "structure": 4,
+          "support": 0,
+          "relative": 11,
+          "risk": 1,
+          "total": 16,
+          "status": "禁止左侧"
+        }
+      ],
+      "experts": [
+        {
+          "tag": "科技核心",
+          "source": "NGA / fuelish · 15:07",
+          "quote": "做科技的右侧选手只需要看东山的走势。",
+          "meaning": "科技内部已从板块普涨收缩为少数核心的相对强弱验证。",
+          "test": "以东山的VWAP和中枢承接作为科技回流锚。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47002314&pid=875334683"
+        },
+        {
+          "tag": "仓位纪律",
+          "source": "NGA / Plezl · 12:43",
+          "quote": "控仓参与，交易体系不健全的人请休息。",
+          "meaning": "趋势未稳时，降低暴露比猜底更重要。",
+          "test": "仅用小仓验证右侧信号，不扩大左侧仓位。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875317692"
+        },
+        {
+          "tag": "反弹供给",
+          "source": "NGA / zippo578 · 16:07",
+          "quote": "遇见反弹，最好真的跑了。",
+          "meaning": "上方潜在卖压会压制第一波修复，反抽不宜直接当反转。",
+          "test": "先等反弹后的回踩确认，再判断能否升级。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875342507"
+        },
+        {
+          "tag": "趋势状态",
+          "source": "NGA / 夜骰2号机 · 15:12",
+          "quote": "短期趋势线加速向下，想上大仓位等回踩。",
+          "meaning": "即便出现第一波反弹，缺口和趋势线仍构成多重压力。",
+          "test": "以3903和3944两级收复作为修复确认。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875335358"
+        },
+        {
+          "tag": "弱市抱团",
+          "source": "NGA / 进击的猫猫头选手 · 12:21",
+          "quote": "分歧切核心，弱势切抱团。",
+          "meaning": "弱市里属性次于资金是否持续抱住核心。",
+          "test": "只保留逆指数且守住VWAP的核心，后排全部降级。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45502551&pid=875314960"
+        },
+        {
+          "tag": "生存优先",
+          "source": "NGA / 灰兔尾 · 14:50",
+          "quote": "优先保护自己生存，做垫子。",
+          "meaning": "极端波动中先建立利润垫和退出条件。",
+          "test": "失败线前置，不用补仓替代止损纪律。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875332215"
+        }
+      ],
+      "fullReport": "reports/20260716.html"
     }
   }
 };

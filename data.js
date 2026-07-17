@@ -13,7 +13,8 @@ window.REPLAY_DATA={
     "2026-07-13",
     "2026-07-14",
     "2026-07-15",
-    "2026-07-16"
+    "2026-07-16",
+    "2026-07-17"
   ],
   "reports": {
     "2026-07-03": {
@@ -1394,6 +1395,121 @@ window.REPLAY_DATA={
         }
       ],
       "fullReport": "reports/20260716.html"
+    },
+    "2026-07-17": {
+      "market": {
+        "total": 9,
+        "sentiment": 7,
+        "technical": 2,
+        "status": "风险释放",
+        "summary": "深蓝色极端风险释放。上证收3764.16、跌3.05%，跌破3806.39—3820.77的最新5分钟中枢；全A仅405家上涨、4758家下跌，中位跌4.29%，635家跌停，市场仍处于加速出清而非右侧止跌。",
+        "paths": [
+          {
+            "tone": "red",
+            "title": "红：收回3806并进一步站上3821",
+            "text": "要求上涨家数与成交同步改善，科技容量核心收回VWAP，才把反抽升级为结构修复；先等回踩确认，09:30—10:00不追第一波急拉。"
+          },
+          {
+            "tone": "yellow",
+            "title": "黄：守住3745并在3745—3806弱修复",
+            "text": "只按极端下跌后的技术反抽处理，3806未收回前不把普反当反转；只观察能守VWAP、缩小跌幅并形成回踩确认的核心。"
+          },
+          {
+            "tone": "blue",
+            "title": "蓝：跌破3745且不能快速收回",
+            "text": "暂停所有新增试错，不在加速段用补仓替代止损；高贝塔科技继续放大指数跌幅时严格执行失败线。"
+          }
+        ]
+      },
+      "stocks": [
+        {
+          "symbol": "sz002463",
+          "name": "沪电股份",
+          "structure": 11,
+          "support": 11,
+          "relative": 13,
+          "risk": 4,
+          "total": 39,
+          "status": "防守观察"
+        },
+        {
+          "symbol": "sz002384",
+          "name": "东山精密",
+          "structure": 4,
+          "support": 0,
+          "relative": 11,
+          "risk": 1,
+          "total": 16,
+          "status": "禁止左侧"
+        },
+        {
+          "symbol": "sh588710",
+          "name": "科创半导体设备ETF",
+          "structure": 4,
+          "support": 0,
+          "relative": 11,
+          "risk": 1,
+          "total": 16,
+          "status": "禁止左侧"
+        }
+      ],
+      "experts": [
+        {
+          "tag": "下跌结构",
+          "source": "NGA / zippo578 · 15:24",
+          "quote": "下跌加速段，要么买在尖底，要么等技术买点：加速—反抽降速—回踩确认。",
+          "meaning": "右侧验证需要反抽降速和回踩确认，不能只看跌幅。",
+          "test": "等待指数收回3806后回踩不破，再评估风险是否解除。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875466678"
+        },
+        {
+          "tag": "指数路径",
+          "source": "NGA / fuelish · 10:52",
+          "quote": "抄底就看3806，这个点破了就看3794。",
+          "meaning": "原支撑已经转为下个交易日的第一恢复压力。",
+          "test": "3806未收回前只按风险释放处理。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47002314&pid=875426116"
+        },
+        {
+          "tag": "趋势确认",
+          "source": "NGA / 夜骰2号机 · 15:10",
+          "quote": "啥时候活跃市值周K向上拐或者单日出+4再回来。尊重市场，执行纪律。",
+          "meaning": "情绪极值不等于趋势拐点，仍需活跃市值给出右侧确认。",
+          "test": "宽度和活跃市值未改善前维持低风险暴露。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875463782"
+        },
+        {
+          "tag": "反弹风险",
+          "source": "NGA / Plezl · 15:28",
+          "quote": "技术面抓支撑位反弹终究还是火中取栗。",
+          "meaning": "支撑位只提供观察点，不自动提供可持续买点。",
+          "test": "先等回踩确认，不在第一根反弹K线追入。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875467387"
+        },
+        {
+          "tag": "科技仓位",
+          "source": "NGA / 丶阿疯 · 13:30",
+          "quote": "即使是长线，也要等科技企稳再补。",
+          "meaning": "持有周期长不能替代短期结构确认。",
+          "test": "科技核心收回VWAP和中枢后再考虑增加暴露。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=44279886&pid=875449151"
+        },
+        {
+          "tag": "失败线",
+          "source": "NGA / 灰兔尾 · 14:48",
+          "quote": "尾盘跌破，收不回来，那就按照纪律减仓。",
+          "meaning": "跌破后不能快速收回就是可执行的风险信号。",
+          "test": "3745或个股结构下沿失守后，不用补仓替代纪律。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=45974302&pid=875460347"
+        }
+      ],
+      "fullReport": "reports/20260717.html"
     }
   }
 };

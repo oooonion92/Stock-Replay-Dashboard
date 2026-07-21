@@ -213,6 +213,36 @@
 .market-score-dimension .score-component-list > span:last-child:nth-child(odd) {
   grid-column: 1 / -1;
 }
+.report-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.report-topbar h1 { margin: 0; }
+.dashboard-back {
+  flex: 0 0 auto;
+  padding: 7px 11px;
+  border: 1px solid #cbd8e6;
+  border-radius: 7px;
+  background: #f7faff;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.dashboard-back:hover { background: #edf5ff; }
+.market-score-total .market-score-total-head { margin-bottom: 12px; }
+.market-score-total-notes {
+  display: grid;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e9f0;
+}
+.market-score-total-notes p { margin: 0; }
+.market-score-total-notes b { display: block; margin-bottom: 2px; font-size: 11px; }
+.market-score-total-notes span { display: block; color: #475467; font-size: 11px; line-height: 1.5; }
 @media (min-width: 681px) and (max-width: 920px) {
   .page { padding: 18px; }
   .cards, .tree, .expert-metrics, .expert-summary-grid, .expert-wide-grid,
@@ -231,6 +261,9 @@
   .panel { padding: 12px; border-radius: 10px; }
   .hero { margin-bottom: 10px; }
   .hero h1 { font-size: 21px; line-height: 1.3; margin-bottom: 6px; }
+  .report-topbar { align-items: flex-start; gap: 10px; margin-bottom: 6px; }
+  .report-topbar h1 { margin: 0; }
+  .dashboard-back { padding: 6px 9px; font-size: 11px; }
   .module-title { display: block; margin-bottom: 10px; }
   .module-title b { display: block; font-size: 16px; margin-bottom: 3px; }
   .module-title span { display: block; font-size: 12px; }
@@ -392,7 +425,7 @@
   <main class="page">
     <section class="hero">
       <div class="panel">
-        <h1>2026-07-21 复盘看板</h1>
+        <div class="report-topbar"><h1>2026-07-21 复盘看板</h1><a class="dashboard-back" href="../">← 返回总看板</a></div>
         <section class="market-review-module">
           <div class="module-title">
             <b>盘面与题材复盘</b>
@@ -401,12 +434,10 @@
           
     <section class="market-score-panel">
       <div class="market-score-main">
-        <div><small>大盘总闸评分</small><strong>63</strong><span class="score-pill score-watch">震荡观察</span></div>
+        <div class="market-score-total"><div class="market-score-total-head"><small>大盘总闸评分</small><strong>63</strong><span class="score-pill score-watch">震荡观察</span></div><div class="market-score-total-notes"><p><b>跨日情绪</b><span>昨日涨超5%共 260 只，今日开盘中位 -0.94%，收盘中位 -0.94%，39% 收红；昨日跌停 279 只，69% 收红，92% 盘中回到 -3% 以上，15% 再跌超5%。</span></p><p><b>评分结论</b><span>宽度、涨停扩散、昨日弱势股修复和主力净额均支持规则层情绪分；但日线与30分钟仍为向下离开确认，今日30分钟上行笔尚未确认，技术面下修2分，避免把单日V形反弹直接计作趋势反转。</span></p></div></div>
         <div class="market-score-dimension sentiment-dimension"><small>情绪面</small><b>40 / 50</b><div class="score-component-list sentiment-components"><span title="情绪基准：10（范围 10）"><i class="component-label">情绪基准</i><b class="component-value">10</b></span><span title="宽度：10（范围 15）"><i class="component-label">宽度</i><b class="component-value">10</b></span><span title="当日赚钱：10（范围 10）"><i class="component-label">当日赚钱</i><b class="component-value">10</b></span><span title="强势股次日溢价：-2（范围 -4~+4）"><i class="component-label">强势股次日溢价</i><b class="component-value">-2</b></span><span title="亏钱效应：0（范围 -10~0）"><i class="component-label">亏钱效应</i><b class="component-value">0</b></span><span title="主线一致：8（范围 8）"><i class="component-label">主线一致</i><b class="component-value">8</b></span><span title="高手情绪：4（范围 11）"><i class="component-label">高手情绪</i><b class="component-value">4</b></span></div></div>
         <div class="market-score-dimension technical-dimension"><small>技术面</small><b>23 / 50</b><div class="score-component-list technical-components"><span title="5m位置：0（范围 15）"><i class="component-label">5m位置</i><b class="component-value">0</b></span><span title="30m动量：5（范围 12）"><i class="component-label">30m动量</i><b class="component-value">5</b></span><span title="关键位：8（范围 8）"><i class="component-label">关键位</i><b class="component-value">8</b></span><span title="量价：6（范围 8）"><i class="component-label">量价</i><b class="component-value">6</b></span><span title="路径质量：6（范围 7）"><i class="component-label">路径质量</i><b class="component-value">6</b></span></div></div>
       </div>
-      <p><b>跨日情绪：</b>昨日涨超5%共 260 只，今日开盘中位 -0.94%，收盘中位 -0.94%，39% 收红；昨日跌停 279 只，69% 收红，92% 盘中回到 -3% 以上，15% 再跌超5%。</p>
-      <p><b>评分结论：</b>宽度、涨停扩散、昨日弱势股修复和主力净额均支持规则层情绪分；但日线与30分钟仍为向下离开确认，今日30分钟上行笔尚未确认，技术面下修2分，避免把单日V形反弹直接计作趋势反转。</p>
     </section>
           
     <div class="market-overview">

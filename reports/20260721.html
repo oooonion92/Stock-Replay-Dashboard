@@ -176,6 +176,43 @@
 <style>/* Work responsive refinement: canonical layout matched to the 2026-07-10 report. */
 /* Mobile hierarchy is flat by design; keep this asset as the single source of truth. */
 /* Tablet behavior remains separate and does not alter the canonical <=680px layout. */
+.market-score-dimension .score-component-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e9f0;
+}
+.market-score-dimension .score-component-list > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: #475467;
+  font-size: 11px;
+  line-height: 1.35;
+}
+.market-score-dimension .component-label {
+  min-width: 0;
+  color: #667085;
+  font-style: normal;
+  overflow-wrap: anywhere;
+}
+.market-score-dimension .component-value {
+  flex: 0 0 auto;
+  color: #172033;
+  font-size: 12px;
+  font-weight: 800;
+}
+.market-score-dimension .score-component-list > span:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
 @media (min-width: 681px) and (max-width: 920px) {
   .page { padding: 18px; }
   .cards, .tree, .expert-metrics, .expert-summary-grid, .expert-wide-grid,
@@ -204,8 +241,21 @@
   .cards, .tree { grid-template-columns: 1fr; gap: 8px; }
   .overview-grid section.wide { grid-column: auto; }
   .market-score-main strong { font-size: 28px; }
-  .market-score-components { gap: 5px; }
-  .market-score-components span { padding: 4px 7px; font-size: 11px; }
+  .market-score-dimension .score-component-list {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    margin-top: 7px;
+    padding-top: 7px;
+  }
+  .market-score-dimension .score-component-list > span {
+    padding: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #edf0f5;
+    border-radius: 0;
+    background: transparent;
+    font-size: 10px;
+  }
+  .market-score-dimension .score-component-list > span:last-child { border-bottom: 0; }
   .breadth-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .expert-metric-card { min-height: 0; padding: 10px; }

@@ -47,13 +47,16 @@
   function renderSector(d){
     const cfg=D.sectorFlowConfig;if(!cfg)return;
     const metric=$("sectorMetricSelect").value||cfg.defaultMetric,selected=$("sectorSelect").value||"all",dates=D.dates.filter(x=>x<=d);
-    const groups=selected==="all"?cfg.groups:cfg.groups.filter(g=>g.id===selected);
-    const series=groups.map(g=>({name:g.name,color:g.color,values:dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.[metric]??null)}));
-    $("sectorTrend").innerHTML=chart(series,dates,{metric,includeZero:metric==="mainNet",labels:groups.length===1,strokeWidth:1.4,dotRadius:2.2,aria:`板块${cfg.metrics.find(x=>x.id===metric)?.name||"资金"}趋势`});
-    const current=cfg.groups.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.[metric]})).sort((a,b)=>(finite(b.v)?Number(b.v):-Infinity)-(finite(a.v)?Number(a.v):-Infinity));
+    const parent=cfg.groups.find(g=>g.id===selected||g.subgroups?.some(s=>s.id===selected));
+    const chosen=selected==="all"?cfg.groups:selected===parent?.id?(parent.subgroups||[parent]):parent?.subgroups?.filter(s=>s.id===selected)||[];
+    const series=chosen.map(g=>({name:g.name,color:g.color,values:dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.[metric]??null)}));
+    $("sectorTrend").innerHTML=chart(series,dates,{metric,includeZero:metric==="mainNet",labels:chosen.length===1,strokeWidth:1.4,dotRadius:2.2,aria:`板块${cfg.metrics.find(x=>x.id===metric)?.name||"资金"}趋势`});
+    const legendItems=selected==="all"?cfg.groups:selected===parent?.id?(parent.subgroups||[parent]):chosen;
+    const current=legendItems.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.[metric]})).sort((a,b)=>(finite(b.v)?Number(b.v):-Infinity)-(finite(a.v)?Number(a.v):-Infinity));
     $("sectorLegend").innerHTML=current.map(({g,v})=>`<button type="button" data-sector="${g.id}" class="sector-key ${selected===g.id?"is-active":""}"><i style="background:${g.color}"></i><span>${g.name}</span><b>${metricFormat(v,metric)}</b></button>`).join("");
     const meta=cfg.metrics.find(x=>x.id===metric),missing=current.filter(x=>!finite(x.v)).length;
-    $("sectorNote").textContent=`${meta.name} · ${meta.unit}；区间与市场评分日期一致。${metric==="mainNet"?"主力净额沿用全A数据源口径。":""}${missing?` 所选日有 ${missing} 个方向缺少有效源数据。`:""}`;
+    const scope=selected==="all"?"点击任一总方向可下钻细分。":selected===parent?.id?`${parent.name}已按细分方向拆解。`:`当前查看 ${chosen[0]?.name||"细分方向"}。`;
+    $("sectorNote").textContent=`${meta.name} · ${meta.unit}；区间与市场评分日期一致。${metric==="mainNet"?"主力净额沿用全A数据源口径。":""}${scope}${missing?` 所选日有 ${missing} 个方向缺少有效源数据。`:""}`;
   }
   function render(d){
     const R=D.reports[d],M=R.market,A=D.dates.filter(x=>x<=d),recent=[d];
@@ -81,7 +84,8 @@
   D.dates.slice().reverse().forEach(d=>{const o=document.createElement("option");o.value=d;o.textContent=d;$("dateSelect").appendChild(o)});
   if(D.sectorFlowConfig){
     D.sectorFlowConfig.metrics.forEach(m=>{const o=document.createElement("option");o.value=m.id;o.textContent=m.name;$("sectorMetricSelect").appendChild(o)});$("sectorMetricSelect").value=D.sectorFlowConfig.defaultMetric;
-    [{id:"all",name:"全部方向"},...D.sectorFlowConfig.groups].forEach(g=>{const o=document.createElement("option");o.value=g.id;o.textContent=g.name;$("sectorSelect").appendChild(o)});$("sectorSelect").value="all";
+    const all=document.createElement("option");all.value="all";all.textContent="全部方向";$("sectorSelect").appendChild(all);
+    D.sectorFlowConfig.groups.forEach(g=>{const o=document.createElement("option");o.value=g.id;o.textContent=g.name;$("sectorSelect").appendChild(o);(g.subgroups||[]).forEach(s=>{const sub=document.createElement("option");sub.value=s.id;sub.textContent=`　${s.name}`;$("sectorSelect").appendChild(sub)})});$("sectorSelect").value="all";
     $("sectorMetricSelect").addEventListener("change",()=>renderSector($("dateSelect").value));$("sectorSelect").addEventListener("change",()=>renderSector($("dateSelect").value));
     $("sectorLegend").addEventListener("click",e=>{const b=e.target.closest("[data-sector]");if(b){$("sectorSelect").value=b.dataset.sector;renderSector($("dateSelect").value)}});
   }

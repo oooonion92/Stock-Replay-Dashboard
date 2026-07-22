@@ -197,7 +197,44 @@
   color: #475467;
   font-size: 11px;
   line-height: 1.35;
+  position: relative;
+  cursor: help;
 }
+.score-tooltip {
+  display: none;
+  position: absolute;
+  z-index: 30;
+  left: 50%;
+  bottom: calc(100% + 9px);
+  width: min(320px, 32vw);
+  padding: 11px 12px;
+  border: 1px solid #cbd8e6;
+  border-radius: 9px;
+  background: #172033;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(16, 24, 40, .22);
+  transform: translateX(-50%);
+  text-align: left;
+  pointer-events: none;
+}
+.score-tooltip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  border: 6px solid transparent;
+  border-top-color: #172033;
+  transform: translateX(-50%);
+}
+.score-tooltip b,
+.score-tooltip em { display: block; }
+.score-tooltip b { margin: 0 0 3px; color: #9cc7ff; font-size: 11px; }
+.score-tooltip b:not(:first-child) { margin-top: 9px; }
+.score-tooltip em { color: #f5f7fa; font-size: 12px; font-style: normal; font-weight: 400; line-height: 1.55; }
+.score-component:hover .score-tooltip,
+.score-component:focus .score-tooltip,
+.score-component:focus-within .score-tooltip { display: block; }
+.score-component:focus { outline: 2px solid #7fb3e8; outline-offset: 2px; }
 .market-score-dimension .component-label {
   min-width: 0;
   color: #667085;
@@ -288,6 +325,18 @@
     background: transparent;
     font-size: 10px;
   }
+  .score-tooltip {
+    position: fixed;
+    left: 14px;
+    right: 14px;
+    bottom: 18px;
+    width: auto;
+    max-height: 48vh;
+    overflow: auto;
+    transform: none;
+    pointer-events: auto;
+  }
+  .score-tooltip::after { display: none; }
   .market-score-dimension .score-component-list > span:last-child { border-bottom: 0; }
   .breadth-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .theme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -435,8 +484,8 @@
     <section class="market-score-panel">
       <div class="market-score-main">
         <div class="market-score-total"><div class="market-score-total-head"><small>大盘总闸评分</small><strong>33</strong><span class="score-pill score-ban">风险释放</span></div><div class="market-score-total-notes"><p><b>跨日情绪</b><span>昨日涨超5%共 892 只，今日开盘中位 -1.03%，收盘中位 -2.24%，27% 收红；昨日跌停 30 只，40% 收红，80% 盘中回到 -3% 以上，33% 再跌超5%。</span></p><p><b>评分结论</b><span>昨日强势股收盘中位跌2.24%，强势延续为负；昨日跌停股虽有80%的盘中逃跑窗口，但收盘中位仍跌2.34%，亏钱效应未消失。30分钟上行笔确认提供修复证据，5分钟午后回落和决策层向下状态限制技术评价。</span></p></div></div>
-        <div class="market-score-dimension sentiment-dimension"><small>情绪面</small><b>16 / 50</b><div class="score-component-list sentiment-components"><span title="情绪基准：10（范围 10）"><i class="component-label">情绪基准</i><b class="component-value">10</b></span><span title="宽度：2（范围 15）"><i class="component-label">宽度</i><b class="component-value">2</b></span><span title="当日赚钱：2（范围 10）"><i class="component-label">当日赚钱</i><b class="component-value">2</b></span><span title="强势股次日溢价：-2（范围 -4~+4）"><i class="component-label">强势股次日溢价</i><b class="component-value">-2</b></span><span title="亏钱效应：-5（范围 -10~0）"><i class="component-label">亏钱效应</i><b class="component-value">-5</b></span><span title="主线一致：5（范围 8）"><i class="component-label">主线一致</i><b class="component-value">5</b></span><span title="高手情绪：4（范围 11）"><i class="component-label">高手情绪</i><b class="component-value">4</b></span></div></div>
-        <div class="market-score-dimension technical-dimension"><small>技术面</small><b>17 / 50</b><div class="score-component-list technical-components"><span title="5m位置：0（范围 15）"><i class="component-label">5m位置</i><b class="component-value">0</b></span><span title="30m动量：10（范围 12）"><i class="component-label">30m动量</i><b class="component-value">10</b></span><span title="关键位：5（范围 8）"><i class="component-label">关键位</i><b class="component-value">5</b></span><span title="量价：0（范围 8）"><i class="component-label">量价</i><b class="component-value">0</b></span><span title="路径质量：2（范围 7）"><i class="component-label">路径质量</i><b class="component-value">2</b></span></div></div>
+        <div class="market-score-dimension sentiment-dimension"><small>情绪面</small><b>16 / 50</b><div class="score-component-list sentiment-components"><span class="score-component" tabindex="0" aria-label="情绪基准10分。评分标准：固定10分中性底座；宽度、赚钱/亏钱效应、主线和高手证据在其他分项单独加减。 当日原因：当日使用固定中性基准10分，没有用主观情绪重复加分。"><i class="component-label">情绪基准</i><b class="component-value">10</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>固定10分中性底座；宽度、赚钱/亏钱效应、主线和高手证据在其他分项单独加减。</em><b>当日原因</b><em>当日使用固定中性基准10分，没有用主观情绪重复加分。</em></span></span><span class="score-component" tabindex="0" aria-label="宽度2分。评分标准：0–15分；按上涨家数占比、全A中位涨幅及两者历史分位分档，普涨加分、普跌扣分。 当日原因：上涨占比28%，全A中位涨幅-1.27%，对应宽度2分。"><i class="component-label">宽度</i><b class="component-value">2</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>0–15分；按上涨家数占比、全A中位涨幅及两者历史分位分档，普涨加分、普跌扣分。</em><b>当日原因</b><em>上涨占比28%，全A中位涨幅-1.27%，对应宽度2分。</em></span></span><span class="score-component" tabindex="0" aria-label="当日赚钱2分。评分标准：0–10分；综合涨停家数、涨超5%家数、上涨宽度、成交额分位和正向主力净额；只有扩散且有量才给高分。 当日原因：涨停49家、涨超5%为209家，上涨占比28%，主力净额-83.7亿元，得到2分。"><i class="component-label">当日赚钱</i><b class="component-value">2</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>0–10分；综合涨停家数、涨超5%家数、上涨宽度、成交额分位和正向主力净额；只有扩散且有量才给高分。</em><b>当日原因</b><em>涨停49家、涨超5%为209家，上涨占比28%，主力净额-83.7亿元，得到2分。</em></span></span><span class="score-component" tabindex="0" aria-label="强势股次日溢价-2分。评分标准：-4至+4分；比较昨日涨超5%与昨日涨停股今日开盘、收盘中位数和收红率。高开低走或多数收跌扣分，稳定正溢价加分。 当日原因：昨日强势股892只，今日收盘中位-2.24%、收红率27%；昨日涨停股收盘中位0.64%，得到-2分。"><i class="component-label">强势股次日溢价</i><b class="component-value">-2</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>-4至+4分；比较昨日涨超5%与昨日涨停股今日开盘、收盘中位数和收红率。高开低走或多数收跌扣分，稳定正溢价加分。</em><b>当日原因</b><em>昨日强势股892只，今日收盘中位-2.24%、收红率27%；昨日涨停股收盘中位0.64%，得到-2分。</em></span></span><span class="score-component" tabindex="0" aria-label="亏钱效应-5分。评分标准：-10至0分；按当日跌停/跌超5%扩散，以及昨日弱势股和跌停股的修复率、逃跑窗口和重复受损率直接计负分。 当日原因：当日跌停11家、跌超5%为223家；昨日弱势股收盘中位-0.47%，昨日跌停重复受损率33%，记-5分。"><i class="component-label">亏钱效应</i><b class="component-value">-5</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>-10至0分；按当日跌停/跌超5%扩散，以及昨日弱势股和跌停股的修复率、逃跑窗口和重复受损率直接计负分。</em><b>当日原因</b><em>当日跌停11家、跌超5%为223家；昨日弱势股收盘中位-0.47%，昨日跌停重复受损率33%，记-5分。</em></span></span><span class="score-component" tabindex="0" aria-label="主线一致5分。评分标准：0–8分；统计涨幅居前且有涨超5%个股的强势行业数量，再结合最强主题的涨超5%家数、成交额以及全市场宽度/量能约束。多方向共振且有容量才给高分。 当日原因：涨幅居前且具备强势扩散的行业有10个；首要高成交主题涨超5%为1家、成交140.7亿元；上涨占比28%低于35%，按规则降1分，得到5分。"><i class="component-label">主线一致</i><b class="component-value">5</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>0–8分；统计涨幅居前且有涨超5%个股的强势行业数量，再结合最强主题的涨超5%家数、成交额以及全市场宽度/量能约束。多方向共振且有容量才给高分。</em><b>当日原因</b><em>涨幅居前且具备强势扩散的行业有10个；首要高成交主题涨超5%为1家、成交140.7亿元；上涨占比28%低于35%，按规则降1分，得到5分。</em></span></span><span class="score-component" tabindex="0" aria-label="高手情绪4分。评分标准：0–11分；4分为证据层中性基准，只有精选观点形成可验证共识并改变次日路径时才调整；论坛观点不能单独触发交易。 当日原因：当日精选观点用于交叉验证，情绪调整为0分；该分项显示4分。"><i class="component-label">高手情绪</i><b class="component-value">4</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>0–11分；4分为证据层中性基准，只有精选观点形成可验证共识并改变次日路径时才调整；论坛观点不能单独触发交易。</em><b>当日原因</b><em>当日精选观点用于交叉验证，情绪调整为0分；该分项显示4分。</em></span></span></div></div>
+        <div class="market-score-dimension technical-dimension"><small>技术面</small><b>17 / 50</b><div class="score-component-list technical-components"><span class="score-component" tabindex="0" aria-label="30m结构0分。评分标准：0–15分；以缠论30分钟决策层为主：向上离开确认15、上涨趋势12、中枢平衡7、下跌趋势3、向下离开确认0。候选与失效信号不加分。 当日原因：30分钟决策状态为向下离开确认，结构分为0。5分钟只用于执行时点，不替代30分钟定级。"><i class="component-label">30m结构</i><b class="component-value">0</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>0–15分；以缠论30分钟决策层为主：向上离开确认15、上涨趋势12、中枢平衡7、下跌趋势3、向下离开确认0。候选与失效信号不加分。</em><b>当日原因</b><em>30分钟决策状态为向下离开确认，结构分为0。5分钟只用于执行时点，不替代30分钟定级。</em></span></span><span class="score-component" tabindex="0" aria-label="30m动量10分。评分标准：0–12分；依据30分钟DIF位置与斜率、MACD红绿柱方向和动量扩张/衰减分档，零轴上且同步增强得分更高。 当日原因：30分钟DIF=7.97、MACD=13.11、12周期斜率=2.98，得到10分。"><i class="component-label">30m动量</i><b class="component-value">10</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>0–12分；依据30分钟DIF位置与斜率、MACD红绿柱方向和动量扩张/衰减分档，零轴上且同步增强得分更高。</em><b>当日原因</b><em>30分钟DIF=7.97、MACD=13.11、12周期斜率=2.98，得到10分。</em></span></span><span class="score-component" tabindex="0" aria-label="关键位5分。评分标准：0–8分；依据红黄蓝总闸、收盘是否站上5分钟中枢ZD/ZG，以及是否接近全天高点逐项计分。 当日原因：结构总闸为黄色，收盘3867.03；5分钟中枢ZD/ZG为3861.26/3882.21，得到5分。"><i class="component-label">关键位</i><b class="component-value">5</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>0–8分；依据红黄蓝总闸、收盘是否站上5分钟中枢ZD/ZG，以及是否接近全天高点逐项计分。</em><b>当日原因</b><em>结构总闸为黄色，收盘3867.03；5分钟中枢ZD/ZG为3861.26/3882.21，得到5分。</em></span></span><span class="score-component" tabindex="0" aria-label="量价0分。评分标准：0–8分；成交额历史分位、主力净额强度和市场宽度共同确认。放量且资金净流入、上涨扩散时加分，缩量或净流出不拔高。 当日原因：成交额历史分位26%，主力净额-83.7亿元，上涨占比28%，得到0分。"><i class="component-label">量价</i><b class="component-value">0</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>0–8分；成交额历史分位、主力净额强度和市场宽度共同确认。放量且资金净流入、上涨扩散时加分，缩量或净流出不拔高。</em><b>当日原因</b><em>成交额历史分位26%，主力净额-83.7亿元，上涨占比28%，得到0分。</em></span></span><span class="score-component" tabindex="0" aria-label="路径质量2分。评分标准：0–7分；红/黄/蓝结构路径提供基础分，再按中枢突破、成交额分位和市场宽度确认加减。低量、弱宽度会限制得分。 当日原因：结构总闸为黄色，成交额分位26%、上涨占比28%，得到2分。"><i class="component-label">路径质量</i><b class="component-value">2</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>0–7分；红/黄/蓝结构路径提供基础分，再按中枢突破、成交额分位和市场宽度确认加减。低量、弱宽度会限制得分。</em><b>当日原因</b><em>结构总闸为黄色，成交额分位26%、上涨占比28%，得到2分。</em></span></span></div></div>
       </div>
     </section>
           
@@ -484,9 +533,9 @@
         <span>上涨 1432 / 下跌 3649</span>
         <span>上涨占比 +28.2%</span>
         <span>中位涨幅 -1.27%</span>
-        <span>主力净额 -83.7亿</span>
+        <span>主力净额 -84亿</span>
       </div>
-      <p>弱势分化；全A上涨占比 +28.2%，中位涨幅 -1.27%，主力净额约 -83.7亿元；今日强势方向：黄金 / 油田服务 / 油气开采 / 动力煤 / 煤化工 / 炼焦煤。</p>
+      <p>弱势分化；全A上涨占比 +28.2%，中位涨幅 -1.27%；今日强势方向：黄金 / 油田服务 / 油气开采 / 动力煤 / 煤化工 / 炼焦煤。</p>
       <p class="source-note">主力净额临时使用《全部Ａ股20260722补充.xlsx》，按原始全市场文件代码范围取交集；其余指标仍来自原始文件。</p>
       <strong class="subhead">今日强势方向</strong>
       <div class="theme-grid">

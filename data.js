@@ -1865,52 +1865,430 @@ window.REPLAY_DATA={
       {
         "id": "semiconductor",
         "name": "半导体",
-        "color": "#0067A5"
+        "color": "#0067A5",
+        "subgroups": [
+          {
+            "id": "semi_equipment",
+            "name": "半导体设备",
+            "color": "#004B76"
+          },
+          {
+            "id": "semi_materials",
+            "name": "半导体材料",
+            "color": "#007CB9"
+          },
+          {
+            "id": "semi_manufacturing",
+            "name": "晶圆制造",
+            "color": "#00A0C6"
+          },
+          {
+            "id": "semi_design",
+            "name": "芯片设计",
+            "color": "#4AB9D0"
+          },
+          {
+            "id": "semi_packaging",
+            "name": "封装测试",
+            "color": "#79D3DE"
+          }
+        ]
       },
       {
         "id": "electronics",
         "name": "PCB／电子元件",
-        "color": "#00A676"
+        "color": "#008F6A",
+        "subgroups": [
+          {
+            "id": "elec_pcb",
+            "name": "PCB",
+            "color": "#006B50"
+          },
+          {
+            "id": "elec_passive",
+            "name": "被动元件",
+            "color": "#00A676"
+          },
+          {
+            "id": "elec_components",
+            "name": "消费电子组件",
+            "color": "#43C59E"
+          }
+        ]
       },
       {
         "id": "optical",
-        "name": "CPO／光通信",
-        "color": "#7A3FF2"
+        "name": "CPO／通信",
+        "color": "#6F42C1",
+        "subgroups": [
+          {
+            "id": "comm_optical",
+            "name": "光通信链",
+            "color": "#4D2A91"
+          },
+          {
+            "id": "comm_equipment",
+            "name": "通信设备",
+            "color": "#7048C8"
+          },
+          {
+            "id": "comm_services",
+            "name": "通信工程服务",
+            "color": "#9C78E0"
+          }
+        ]
       },
       {
         "id": "automation",
         "name": "机器人／自动化",
-        "color": "#F28E2B"
+        "color": "#E8741E",
+        "subgroups": [
+          {
+            "id": "auto_robot",
+            "name": "机器人本体",
+            "color": "#B84D00"
+          },
+          {
+            "id": "auto_control",
+            "name": "工控自动化",
+            "color": "#E66B00"
+          },
+          {
+            "id": "auto_machine",
+            "name": "工业母机",
+            "color": "#F49A45"
+          },
+          {
+            "id": "auto_components",
+            "name": "核心零部件",
+            "color": "#F7BD7B"
+          }
+        ]
       },
       {
         "id": "defense",
         "name": "军工／商业航天",
-        "color": "#D62728"
+        "color": "#C7362F",
+        "subgroups": [
+          {
+            "id": "def_aerospace",
+            "name": "航天装备",
+            "color": "#8E201B"
+          },
+          {
+            "id": "def_aviation",
+            "name": "航空装备",
+            "color": "#C7362F"
+          },
+          {
+            "id": "def_electronics",
+            "name": "军工电子",
+            "color": "#E56A64"
+          },
+          {
+            "id": "def_land_sea",
+            "name": "兵装／航海装备",
+            "color": "#F19B96"
+          }
+        ]
       },
       {
         "id": "battery",
         "name": "锂电／新能源",
-        "color": "#17BECF"
+        "color": "#1595A3",
+        "subgroups": [
+          {
+            "id": "newenergy_lithium",
+            "name": "锂资源／电池",
+            "color": "#08717D"
+          },
+          {
+            "id": "newenergy_materials",
+            "name": "电池材料／设备",
+            "color": "#1595A3"
+          },
+          {
+            "id": "newenergy_solar",
+            "name": "光伏",
+            "color": "#35B8C5"
+          },
+          {
+            "id": "newenergy_wind",
+            "name": "风电设备",
+            "color": "#70CED6"
+          },
+          {
+            "id": "newenergy_hydrogen",
+            "name": "燃料电池",
+            "color": "#A2E2E7"
+          }
+        ]
       },
       {
         "id": "resources",
         "name": "有色资源",
-        "color": "#8C6D1F"
+        "color": "#9B6B16",
+        "subgroups": [
+          {
+            "id": "res_industrial",
+            "name": "工业金属",
+            "color": "#6F4A0A"
+          },
+          {
+            "id": "res_minor",
+            "name": "小金属／稀土",
+            "color": "#9B6B16"
+          },
+          {
+            "id": "res_precious",
+            "name": "贵金属",
+            "color": "#C8952E"
+          }
+        ]
       },
       {
         "id": "medicine",
         "name": "医药",
-        "color": "#E83E8C"
+        "color": "#D83B7D",
+        "subgroups": [
+          {
+            "id": "med_innovative",
+            "name": "创新药／生物药",
+            "color": "#A9255F"
+          },
+          {
+            "id": "med_cxo",
+            "name": "CXO",
+            "color": "#D83B7D"
+          },
+          {
+            "id": "med_tcm",
+            "name": "中药",
+            "color": "#E66A9D"
+          },
+          {
+            "id": "med_device",
+            "name": "器械／诊断",
+            "color": "#EF9ABB"
+          },
+          {
+            "id": "med_services",
+            "name": "医疗服务",
+            "color": "#F5C2D5"
+          }
+        ]
       },
       {
         "id": "finance",
         "name": "大金融",
-        "color": "#4D4D4D"
+        "color": "#4D4D4D",
+        "subgroups": [
+          {
+            "id": "fin_banks",
+            "name": "银行",
+            "color": "#262626"
+          },
+          {
+            "id": "fin_insurance",
+            "name": "保险",
+            "color": "#525252"
+          },
+          {
+            "id": "fin_brokers",
+            "name": "券商／期货",
+            "color": "#737373"
+          },
+          {
+            "id": "fin_other",
+            "name": "其他金融",
+            "color": "#969696"
+          }
+        ]
       }
     ]
   },
   "sectorFlow": {
     "2026-06-29": {
+      "semi_equipment": {
+        "turnover": 889.71,
+        "turnoverShare": 2.53,
+        "mainNet": 34.27
+      },
+      "semi_materials": {
+        "turnover": 1031.14,
+        "turnoverShare": 2.93,
+        "mainNet": -4.49
+      },
+      "semi_manufacturing": {
+        "turnover": 374.43,
+        "turnoverShare": 1.06,
+        "mainNet": -1.68
+      },
+      "semi_design": {
+        "turnover": 3521.75,
+        "turnoverShare": 10.01,
+        "mainNet": 58.86
+      },
+      "semi_packaging": {
+        "turnover": 948.6,
+        "turnoverShare": 2.7,
+        "mainNet": -64.07
+      },
+      "elec_pcb": {
+        "turnover": 1296.19,
+        "turnoverShare": 3.68,
+        "mainNet": -75.71
+      },
+      "elec_passive": {
+        "turnover": 607.65,
+        "turnoverShare": 1.73,
+        "mainNet": 20.39
+      },
+      "elec_components": {
+        "turnover": 1284.2,
+        "turnoverShare": 3.65,
+        "mainNet": -33.97
+      },
+      "comm_optical": {
+        "turnover": 1937.89,
+        "turnoverShare": 5.51,
+        "mainNet": -135.57
+      },
+      "comm_equipment": {
+        "turnover": 350.84,
+        "turnoverShare": 1.0,
+        "mainNet": -13.79
+      },
+      "comm_services": {
+        "turnover": 34.06,
+        "turnoverShare": 0.1,
+        "mainNet": -1.6
+      },
+      "auto_robot": {
+        "turnover": 137.62,
+        "turnoverShare": 0.39,
+        "mainNet": -0.08
+      },
+      "auto_control": {
+        "turnover": 240.58,
+        "turnoverShare": 0.68,
+        "mainNet": -2.31
+      },
+      "auto_machine": {
+        "turnover": 589.52,
+        "turnoverShare": 1.68,
+        "mainNet": 25.59
+      },
+      "auto_components": {
+        "turnover": 409.16,
+        "turnoverShare": 1.16,
+        "mainNet": -4.84
+      },
+      "def_aerospace": {
+        "turnover": 139.66,
+        "turnoverShare": 0.4,
+        "mainNet": -0.65
+      },
+      "def_aviation": {
+        "turnover": 155.55,
+        "turnoverShare": 0.44,
+        "mainNet": -7.32
+      },
+      "def_electronics": {
+        "turnover": 435.1,
+        "turnoverShare": 1.24,
+        "mainNet": -1.05
+      },
+      "def_land_sea": {
+        "turnover": 136.64,
+        "turnoverShare": 0.39,
+        "mainNet": -4.88
+      },
+      "newenergy_lithium": {
+        "turnover": 762.3,
+        "turnoverShare": 2.17,
+        "mainNet": 8.39
+      },
+      "newenergy_materials": {
+        "turnover": 372.75,
+        "turnoverShare": 1.06,
+        "mainNet": -5.92
+      },
+      "newenergy_solar": {
+        "turnover": 674.16,
+        "turnoverShare": 1.92,
+        "mainNet": 6.1
+      },
+      "newenergy_wind": {
+        "turnover": 149.84,
+        "turnoverShare": 0.43,
+        "mainNet": -8.75
+      },
+      "newenergy_hydrogen": {
+        "turnover": 5.17,
+        "turnoverShare": 0.01,
+        "mainNet": -0.65
+      },
+      "res_industrial": {
+        "turnover": 743.27,
+        "turnoverShare": 2.11,
+        "mainNet": 5.99
+      },
+      "res_minor": {
+        "turnover": 933.68,
+        "turnoverShare": 2.65,
+        "mainNet": -16.99
+      },
+      "res_precious": {
+        "turnover": 102.1,
+        "turnoverShare": 0.29,
+        "mainNet": 1.93
+      },
+      "med_innovative": {
+        "turnover": 644.19,
+        "turnoverShare": 1.83,
+        "mainNet": 35.13
+      },
+      "med_cxo": {
+        "turnover": 308.2,
+        "turnoverShare": 0.88,
+        "mainNet": 17.25
+      },
+      "med_tcm": {
+        "turnover": 122.36,
+        "turnoverShare": 0.35,
+        "mainNet": 3.57
+      },
+      "med_device": {
+        "turnover": 230.45,
+        "turnoverShare": 0.66,
+        "mainNet": 5.29
+      },
+      "med_services": {
+        "turnover": 53.31,
+        "turnoverShare": 0.15,
+        "mainNet": 2.46
+      },
+      "fin_banks": {
+        "turnover": 299.11,
+        "turnoverShare": 0.85,
+        "mainNet": 7.58
+      },
+      "fin_insurance": {
+        "turnover": 110.97,
+        "turnoverShare": 0.32,
+        "mainNet": 4.49
+      },
+      "fin_brokers": {
+        "turnover": 600.28,
+        "turnoverShare": 1.71,
+        "mainNet": -3.45
+      },
+      "fin_other": {
+        "turnover": 34.53,
+        "turnoverShare": 0.1,
+        "mainNet": 0.11
+      },
       "semiconductor": {
         "turnover": 6765.63,
         "turnoverShare": 19.23,
@@ -1922,42 +2300,222 @@ window.REPLAY_DATA={
         "mainNet": -89.29
       },
       "optical": {
-        "turnover": 2127.55,
-        "turnoverShare": 6.05,
-        "mainNet": -135.98
+        "turnover": 2322.79,
+        "turnoverShare": 6.6,
+        "mainNet": -150.96
       },
       "automation": {
-        "turnover": 1036.17,
-        "turnoverShare": 2.95,
-        "mainNet": -20.13
+        "turnover": 1376.88,
+        "turnoverShare": 3.91,
+        "mainNet": 18.37
       },
       "defense": {
-        "turnover": 782.77,
-        "turnoverShare": 2.23,
-        "mainNet": -11.07
+        "turnover": 866.94,
+        "turnoverShare": 2.46,
+        "mainNet": -13.89
       },
       "battery": {
-        "turnover": 1135.05,
-        "turnoverShare": 3.23,
-        "mainNet": 2.48
+        "turnover": 1964.22,
+        "turnoverShare": 5.58,
+        "mainNet": -0.82
       },
       "resources": {
-        "turnover": 1630.4,
-        "turnoverShare": 4.64,
-        "mainNet": -7.38
+        "turnover": 1779.05,
+        "turnoverShare": 5.06,
+        "mainNet": -9.07
       },
       "medicine": {
-        "turnover": 1149.36,
-        "turnoverShare": 3.27,
-        "mainNet": 56.42
+        "turnover": 1358.51,
+        "turnoverShare": 3.86,
+        "mainNet": 63.69
       },
       "finance": {
-        "turnover": 1034.79,
-        "turnoverShare": 2.94,
-        "mainNet": 8.73
+        "turnover": 1044.89,
+        "turnoverShare": 2.97,
+        "mainNet": 8.72
       }
     },
     "2026-06-30": {
+      "semi_equipment": {
+        "turnover": 846.74,
+        "turnoverShare": 2.59,
+        "mainNet": 5.73
+      },
+      "semi_materials": {
+        "turnover": 943.87,
+        "turnoverShare": 2.88,
+        "mainNet": -22.03
+      },
+      "semi_manufacturing": {
+        "turnover": 430.35,
+        "turnoverShare": 1.31,
+        "mainNet": 29.77
+      },
+      "semi_design": {
+        "turnover": 3364.94,
+        "turnoverShare": 10.28,
+        "mainNet": 37.82
+      },
+      "semi_packaging": {
+        "turnover": 770.71,
+        "turnoverShare": 2.35,
+        "mainNet": 13.72
+      },
+      "elec_pcb": {
+        "turnover": 1304.81,
+        "turnoverShare": 3.99,
+        "mainNet": 68.5
+      },
+      "elec_passive": {
+        "turnover": 423.79,
+        "turnoverShare": 1.29,
+        "mainNet": 0.22
+      },
+      "elec_components": {
+        "turnover": 1193.35,
+        "turnoverShare": 3.65,
+        "mainNet": 37.81
+      },
+      "comm_optical": {
+        "turnover": 1845.5,
+        "turnoverShare": 5.64,
+        "mainNet": 105.67
+      },
+      "comm_equipment": {
+        "turnover": 331.28,
+        "turnoverShare": 1.01,
+        "mainNet": 14.95
+      },
+      "comm_services": {
+        "turnover": 30.0,
+        "turnoverShare": 0.09,
+        "mainNet": 3.17
+      },
+      "auto_robot": {
+        "turnover": 185.9,
+        "turnoverShare": 0.57,
+        "mainNet": 13.0
+      },
+      "auto_control": {
+        "turnover": 238.88,
+        "turnoverShare": 0.73,
+        "mainNet": 3.39
+      },
+      "auto_machine": {
+        "turnover": 570.28,
+        "turnoverShare": 1.74,
+        "mainNet": -0.97
+      },
+      "auto_components": {
+        "turnover": 449.36,
+        "turnoverShare": 1.37,
+        "mainNet": 18.74
+      },
+      "def_aerospace": {
+        "turnover": 148.72,
+        "turnoverShare": 0.45,
+        "mainNet": 4.81
+      },
+      "def_aviation": {
+        "turnover": 159.71,
+        "turnoverShare": 0.49,
+        "mainNet": 2.05
+      },
+      "def_electronics": {
+        "turnover": 447.17,
+        "turnoverShare": 1.37,
+        "mainNet": 9.47
+      },
+      "def_land_sea": {
+        "turnover": 129.02,
+        "turnoverShare": 0.39,
+        "mainNet": 3.47
+      },
+      "newenergy_lithium": {
+        "turnover": 669.09,
+        "turnoverShare": 2.04,
+        "mainNet": 9.47
+      },
+      "newenergy_materials": {
+        "turnover": 373.71,
+        "turnoverShare": 1.14,
+        "mainNet": 4.07
+      },
+      "newenergy_solar": {
+        "turnover": 652.82,
+        "turnoverShare": 1.99,
+        "mainNet": 18.26
+      },
+      "newenergy_wind": {
+        "turnover": 148.97,
+        "turnoverShare": 0.46,
+        "mainNet": 18.02
+      },
+      "newenergy_hydrogen": {
+        "turnover": 13.66,
+        "turnoverShare": 0.04,
+        "mainNet": 0.33
+      },
+      "res_industrial": {
+        "turnover": 646.35,
+        "turnoverShare": 1.97,
+        "mainNet": -15.72
+      },
+      "res_minor": {
+        "turnover": 796.35,
+        "turnoverShare": 2.43,
+        "mainNet": 4.4
+      },
+      "res_precious": {
+        "turnover": 95.85,
+        "turnoverShare": 0.29,
+        "mainNet": -2.24
+      },
+      "med_innovative": {
+        "turnover": 521.7,
+        "turnoverShare": 1.59,
+        "mainNet": -16.16
+      },
+      "med_cxo": {
+        "turnover": 255.94,
+        "turnoverShare": 0.78,
+        "mainNet": -7.28
+      },
+      "med_tcm": {
+        "turnover": 101.62,
+        "turnoverShare": 0.31,
+        "mainNet": -3.83
+      },
+      "med_device": {
+        "turnover": 194.88,
+        "turnoverShare": 0.6,
+        "mainNet": -0.07
+      },
+      "med_services": {
+        "turnover": 45.31,
+        "turnoverShare": 0.14,
+        "mainNet": -4.27
+      },
+      "fin_banks": {
+        "turnover": 303.57,
+        "turnoverShare": 0.93,
+        "mainNet": -14.62
+      },
+      "fin_insurance": {
+        "turnover": 100.25,
+        "turnoverShare": 0.31,
+        "mainNet": -3.84
+      },
+      "fin_brokers": {
+        "turnover": 493.27,
+        "turnoverShare": 1.51,
+        "mainNet": 2.07
+      },
+      "fin_other": {
+        "turnover": 30.48,
+        "turnoverShare": 0.09,
+        "mainNet": -1.13
+      },
       "semiconductor": {
         "turnover": 6356.61,
         "turnoverShare": 19.42,
@@ -1969,42 +2527,222 @@ window.REPLAY_DATA={
         "mainNet": 106.53
       },
       "optical": {
-        "turnover": 2044.65,
-        "turnoverShare": 6.25,
-        "mainNet": 112.44
+        "turnover": 2206.79,
+        "turnoverShare": 6.74,
+        "mainNet": 123.78
       },
       "automation": {
-        "turnover": 1093.33,
-        "turnoverShare": 3.34,
-        "mainNet": 41.31
+        "turnover": 1444.42,
+        "turnoverShare": 4.41,
+        "mainNet": 34.16
       },
       "defense": {
-        "turnover": 806.88,
-        "turnoverShare": 2.46,
-        "mainNet": 18.21
+        "turnover": 884.63,
+        "turnoverShare": 2.7,
+        "mainNet": 19.81
       },
       "battery": {
-        "turnover": 1042.8,
-        "turnoverShare": 3.19,
-        "mainNet": 13.54
+        "turnover": 1858.25,
+        "turnoverShare": 5.68,
+        "mainNet": 50.15
       },
       "resources": {
-        "turnover": 1406.64,
-        "turnoverShare": 4.3,
-        "mainNet": -14.07
+        "turnover": 1538.54,
+        "turnoverShare": 4.7,
+        "mainNet": -13.56
       },
       "medicine": {
-        "turnover": 947.7,
-        "turnoverShare": 2.9,
-        "mainNet": -21.87
+        "turnover": 1119.44,
+        "turnoverShare": 3.42,
+        "mainNet": -31.61
       },
       "finance": {
-        "turnover": 919.03,
-        "turnoverShare": 2.81,
-        "mainNet": -17.39
+        "turnover": 927.57,
+        "turnoverShare": 2.83,
+        "mainNet": -17.52
       }
     },
     "2026-07-01": {
+      "semi_equipment": {
+        "turnover": 956.06,
+        "turnoverShare": 2.61,
+        "mainNet": -8.94
+      },
+      "semi_materials": {
+        "turnover": 1037.52,
+        "turnoverShare": 2.83,
+        "mainNet": -25.79
+      },
+      "semi_manufacturing": {
+        "turnover": 477.79,
+        "turnoverShare": 1.31,
+        "mainNet": -24.48
+      },
+      "semi_design": {
+        "turnover": 3597.78,
+        "turnoverShare": 9.83,
+        "mainNet": -182.12
+      },
+      "semi_packaging": {
+        "turnover": 839.06,
+        "turnoverShare": 2.29,
+        "mainNet": -9.1
+      },
+      "elec_pcb": {
+        "turnover": 1309.61,
+        "turnoverShare": 3.58,
+        "mainNet": -95.46
+      },
+      "elec_passive": {
+        "turnover": 474.89,
+        "turnoverShare": 1.3,
+        "mainNet": 7.93
+      },
+      "elec_components": {
+        "turnover": 1241.46,
+        "turnoverShare": 3.39,
+        "mainNet": -63.86
+      },
+      "comm_optical": {
+        "turnover": 1910.58,
+        "turnoverShare": 5.22,
+        "mainNet": -203.07
+      },
+      "comm_equipment": {
+        "turnover": 373.57,
+        "turnoverShare": 1.02,
+        "mainNet": -8.79
+      },
+      "comm_services": {
+        "turnover": 55.15,
+        "turnoverShare": 0.15,
+        "mainNet": 3.55
+      },
+      "auto_robot": {
+        "turnover": 176.78,
+        "turnoverShare": 0.48,
+        "mainNet": 7.85
+      },
+      "auto_control": {
+        "turnover": 270.04,
+        "turnoverShare": 0.74,
+        "mainNet": -3.83
+      },
+      "auto_machine": {
+        "turnover": 457.6,
+        "turnoverShare": 1.25,
+        "mainNet": -38.1
+      },
+      "auto_components": {
+        "turnover": 504.76,
+        "turnoverShare": 1.38,
+        "mainNet": -6.48
+      },
+      "def_aerospace": {
+        "turnover": 149.96,
+        "turnoverShare": 0.41,
+        "mainNet": 4.43
+      },
+      "def_aviation": {
+        "turnover": 160.94,
+        "turnoverShare": 0.44,
+        "mainNet": -2.43
+      },
+      "def_electronics": {
+        "turnover": 443.92,
+        "turnoverShare": 1.21,
+        "mainNet": 3.28
+      },
+      "def_land_sea": {
+        "turnover": 160.84,
+        "turnoverShare": 0.44,
+        "mainNet": 7.03
+      },
+      "newenergy_lithium": {
+        "turnover": 835.78,
+        "turnoverShare": 2.28,
+        "mainNet": -7.28
+      },
+      "newenergy_materials": {
+        "turnover": 461.38,
+        "turnoverShare": 1.26,
+        "mainNet": 12.51
+      },
+      "newenergy_solar": {
+        "turnover": 835.37,
+        "turnoverShare": 2.28,
+        "mainNet": -12.96
+      },
+      "newenergy_wind": {
+        "turnover": 197.87,
+        "turnoverShare": 0.54,
+        "mainNet": -1.74
+      },
+      "newenergy_hydrogen": {
+        "turnover": 11.75,
+        "turnoverShare": 0.03,
+        "mainNet": -0.93
+      },
+      "res_industrial": {
+        "turnover": 683.14,
+        "turnoverShare": 1.87,
+        "mainNet": 1.94
+      },
+      "res_minor": {
+        "turnover": 813.94,
+        "turnoverShare": 2.22,
+        "mainNet": -25.62
+      },
+      "res_precious": {
+        "turnover": 97.99,
+        "turnoverShare": 0.27,
+        "mainNet": 0.26
+      },
+      "med_innovative": {
+        "turnover": 724.25,
+        "turnoverShare": 1.98,
+        "mainNet": 24.68
+      },
+      "med_cxo": {
+        "turnover": 323.4,
+        "turnoverShare": 0.88,
+        "mainNet": -6.24
+      },
+      "med_tcm": {
+        "turnover": 120.22,
+        "turnoverShare": 0.33,
+        "mainNet": 4.53
+      },
+      "med_device": {
+        "turnover": 233.74,
+        "turnoverShare": 0.64,
+        "mainNet": 6.51
+      },
+      "med_services": {
+        "turnover": 61.25,
+        "turnoverShare": 0.17,
+        "mainNet": 3.89
+      },
+      "fin_banks": {
+        "turnover": 235.88,
+        "turnoverShare": 0.64,
+        "mainNet": 6.17
+      },
+      "fin_insurance": {
+        "turnover": 186.31,
+        "turnoverShare": 0.51,
+        "mainNet": 14.27
+      },
+      "fin_brokers": {
+        "turnover": 937.05,
+        "turnoverShare": 2.56,
+        "mainNet": 95.08
+      },
+      "fin_other": {
+        "turnover": 50.62,
+        "turnoverShare": 0.14,
+        "mainNet": 2.61
+      },
       "semiconductor": {
         "turnover": 6908.21,
         "turnoverShare": 18.88,
@@ -2016,42 +2754,222 @@ window.REPLAY_DATA={
         "mainNet": -151.4
       },
       "optical": {
-        "turnover": 2101.63,
-        "turnoverShare": 5.74,
-        "mainNet": -210.66
+        "turnover": 2339.29,
+        "turnoverShare": 6.39,
+        "mainNet": -208.31
       },
       "automation": {
-        "turnover": 1202.36,
-        "turnoverShare": 3.29,
-        "mainNet": -1.78
+        "turnover": 1409.18,
+        "turnoverShare": 3.85,
+        "mainNet": -40.56
       },
       "defense": {
-        "turnover": 817.22,
-        "turnoverShare": 2.23,
-        "mainNet": 3.7
+        "turnover": 915.67,
+        "turnoverShare": 2.5,
+        "mainNet": 12.31
       },
       "battery": {
-        "turnover": 1297.16,
-        "turnoverShare": 3.54,
-        "mainNet": 5.22
+        "turnover": 2342.15,
+        "turnoverShare": 6.4,
+        "mainNet": -10.42
       },
       "resources": {
-        "turnover": 1463.64,
-        "turnoverShare": 4.0,
-        "mainNet": -18.06
+        "turnover": 1595.08,
+        "turnoverShare": 4.36,
+        "mainNet": -23.41
       },
       "medicine": {
-        "turnover": 1219.87,
-        "turnoverShare": 3.33,
-        "mainNet": 23.63
+        "turnover": 1462.86,
+        "turnoverShare": 4.0,
+        "mainNet": 33.37
       },
       "finance": {
-        "turnover": 1395.67,
-        "turnoverShare": 3.81,
-        "mainNet": 117.44
+        "turnover": 1409.87,
+        "turnoverShare": 3.85,
+        "mainNet": 118.13
       }
     },
     "2026-07-02": {
+      "semi_equipment": {
+        "turnover": 930.68,
+        "turnoverShare": 2.7,
+        "mainNet": -69.8
+      },
+      "semi_materials": {
+        "turnover": 861.58,
+        "turnoverShare": 2.5,
+        "mainNet": -53.68
+      },
+      "semi_manufacturing": {
+        "turnover": 390.32,
+        "turnoverShare": 1.13,
+        "mainNet": -36.4
+      },
+      "semi_design": {
+        "turnover": 3057.76,
+        "turnoverShare": 8.86,
+        "mainNet": -282.26
+      },
+      "semi_packaging": {
+        "turnover": 688.35,
+        "turnoverShare": 2.0,
+        "mainNet": -73.42
+      },
+      "elec_pcb": {
+        "turnover": 1224.07,
+        "turnoverShare": 3.55,
+        "mainNet": -107.88
+      },
+      "elec_passive": {
+        "turnover": 446.92,
+        "turnoverShare": 1.3,
+        "mainNet": -32.27
+      },
+      "elec_components": {
+        "turnover": 1074.85,
+        "turnoverShare": 3.12,
+        "mainNet": -100.09
+      },
+      "comm_optical": {
+        "turnover": 1735.77,
+        "turnoverShare": 5.03,
+        "mainNet": -172.24
+      },
+      "comm_equipment": {
+        "turnover": 340.62,
+        "turnoverShare": 0.99,
+        "mainNet": -25.76
+      },
+      "comm_services": {
+        "turnover": 49.95,
+        "turnoverShare": 0.14,
+        "mainNet": -1.61
+      },
+      "auto_robot": {
+        "turnover": 238.92,
+        "turnoverShare": 0.69,
+        "mainNet": -11.0
+      },
+      "auto_control": {
+        "turnover": 260.34,
+        "turnoverShare": 0.75,
+        "mainNet": -8.26
+      },
+      "auto_machine": {
+        "turnover": 428.81,
+        "turnoverShare": 1.24,
+        "mainNet": -32.58
+      },
+      "auto_components": {
+        "turnover": 513.23,
+        "turnoverShare": 1.49,
+        "mainNet": 5.11
+      },
+      "def_aerospace": {
+        "turnover": 123.62,
+        "turnoverShare": 0.36,
+        "mainNet": -7.34
+      },
+      "def_aviation": {
+        "turnover": 152.72,
+        "turnoverShare": 0.44,
+        "mainNet": 3.01
+      },
+      "def_electronics": {
+        "turnover": 436.09,
+        "turnoverShare": 1.26,
+        "mainNet": -3.67
+      },
+      "def_land_sea": {
+        "turnover": 138.81,
+        "turnoverShare": 0.4,
+        "mainNet": -0.94
+      },
+      "newenergy_lithium": {
+        "turnover": 739.27,
+        "turnoverShare": 2.14,
+        "mainNet": 11.21
+      },
+      "newenergy_materials": {
+        "turnover": 409.54,
+        "turnoverShare": 1.19,
+        "mainNet": -1.43
+      },
+      "newenergy_solar": {
+        "turnover": 627.12,
+        "turnoverShare": 1.82,
+        "mainNet": -48.36
+      },
+      "newenergy_wind": {
+        "turnover": 153.76,
+        "turnoverShare": 0.45,
+        "mainNet": -8.97
+      },
+      "newenergy_hydrogen": {
+        "turnover": 7.54,
+        "turnoverShare": 0.02,
+        "mainNet": -0.62
+      },
+      "res_industrial": {
+        "turnover": 702.81,
+        "turnoverShare": 2.04,
+        "mainNet": 0.9
+      },
+      "res_minor": {
+        "turnover": 888.42,
+        "turnoverShare": 2.57,
+        "mainNet": 5.46
+      },
+      "res_precious": {
+        "turnover": 195.9,
+        "turnoverShare": 0.57,
+        "mainNet": 23.14
+      },
+      "med_innovative": {
+        "turnover": 713.46,
+        "turnoverShare": 2.07,
+        "mainNet": 17.38
+      },
+      "med_cxo": {
+        "turnover": 268.07,
+        "turnoverShare": 0.78,
+        "mainNet": -3.4
+      },
+      "med_tcm": {
+        "turnover": 117.29,
+        "turnoverShare": 0.34,
+        "mainNet": -0.74
+      },
+      "med_device": {
+        "turnover": 229.3,
+        "turnoverShare": 0.66,
+        "mainNet": 3.86
+      },
+      "med_services": {
+        "turnover": 51.43,
+        "turnoverShare": 0.15,
+        "mainNet": -1.44
+      },
+      "fin_banks": {
+        "turnover": 290.55,
+        "turnoverShare": 0.84,
+        "mainNet": 5.99
+      },
+      "fin_insurance": {
+        "turnover": 122.47,
+        "turnoverShare": 0.35,
+        "mainNet": 2.16
+      },
+      "fin_brokers": {
+        "turnover": 676.31,
+        "turnoverShare": 1.96,
+        "mainNet": -43.59
+      },
+      "fin_other": {
+        "turnover": 37.55,
+        "turnoverShare": 0.11,
+        "mainNet": -1.37
+      },
       "semiconductor": {
         "turnover": 5928.69,
         "turnoverShare": 17.18,
@@ -2063,42 +2981,222 @@ window.REPLAY_DATA={
         "mainNet": -240.24
       },
       "optical": {
-        "turnover": 1921.03,
-        "turnoverShare": 5.57,
-        "mainNet": -182.86
+        "turnover": 2126.34,
+        "turnoverShare": 6.16,
+        "mainNet": -199.61
       },
       "automation": {
-        "turnover": 1271.43,
-        "turnoverShare": 3.68,
-        "mainNet": -23.77
+        "turnover": 1441.3,
+        "turnoverShare": 4.18,
+        "mainNet": -46.73
       },
       "defense": {
-        "turnover": 766.68,
-        "turnoverShare": 2.22,
-        "mainNet": -8.15
+        "turnover": 851.24,
+        "turnoverShare": 2.47,
+        "mainNet": -8.93
       },
       "battery": {
-        "turnover": 1148.81,
-        "turnoverShare": 3.33,
-        "mainNet": 9.77
+        "turnover": 1937.22,
+        "turnoverShare": 5.61,
+        "mainNet": -48.18
       },
       "resources": {
-        "turnover": 1611.42,
-        "turnoverShare": 4.67,
-        "mainNet": 21.82
+        "turnover": 1787.14,
+        "turnoverShare": 5.18,
+        "mainNet": 29.5
       },
       "medicine": {
-        "turnover": 1158.84,
-        "turnoverShare": 3.36,
-        "mainNet": 10.44
+        "turnover": 1379.55,
+        "turnoverShare": 4.0,
+        "mainNet": 15.66
       },
       "finance": {
-        "turnover": 1116.12,
-        "turnoverShare": 3.23,
-        "mainNet": -36.1
+        "turnover": 1126.88,
+        "turnoverShare": 3.27,
+        "mainNet": -36.81
       }
     },
     "2026-07-03": {
+      "semi_equipment": {
+        "turnover": 803.37,
+        "turnoverShare": 2.52,
+        "mainNet": -16.02
+      },
+      "semi_materials": {
+        "turnover": 809.2,
+        "turnoverShare": 2.54,
+        "mainNet": -60.18
+      },
+      "semi_manufacturing": {
+        "turnover": 318.76,
+        "turnoverShare": 1.0,
+        "mainNet": -12.76
+      },
+      "semi_design": {
+        "turnover": 2831.3,
+        "turnoverShare": 8.9,
+        "mainNet": -55.72
+      },
+      "semi_packaging": {
+        "turnover": 575.4,
+        "turnoverShare": 1.81,
+        "mainNet": -27.67
+      },
+      "elec_pcb": {
+        "turnover": 1308.93,
+        "turnoverShare": 4.11,
+        "mainNet": 61.84
+      },
+      "elec_passive": {
+        "turnover": 376.17,
+        "turnoverShare": 1.18,
+        "mainNet": -24.81
+      },
+      "elec_components": {
+        "turnover": 1037.23,
+        "turnoverShare": 3.26,
+        "mainNet": 44.21
+      },
+      "comm_optical": {
+        "turnover": 1597.93,
+        "turnoverShare": 5.02,
+        "mainNet": -19.99
+      },
+      "comm_equipment": {
+        "turnover": 287.73,
+        "turnoverShare": 0.9,
+        "mainNet": 4.35
+      },
+      "comm_services": {
+        "turnover": 35.25,
+        "turnoverShare": 0.11,
+        "mainNet": -0.39
+      },
+      "auto_robot": {
+        "turnover": 288.69,
+        "turnoverShare": 0.91,
+        "mainNet": 17.91
+      },
+      "auto_control": {
+        "turnover": 271.18,
+        "turnoverShare": 0.85,
+        "mainNet": 5.16
+      },
+      "auto_machine": {
+        "turnover": 362.04,
+        "turnoverShare": 1.14,
+        "mainNet": -8.57
+      },
+      "auto_components": {
+        "turnover": 636.52,
+        "turnoverShare": 2.0,
+        "mainNet": 43.42
+      },
+      "def_aerospace": {
+        "turnover": 164.25,
+        "turnoverShare": 0.52,
+        "mainNet": 16.93
+      },
+      "def_aviation": {
+        "turnover": 199.24,
+        "turnoverShare": 0.63,
+        "mainNet": 6.39
+      },
+      "def_electronics": {
+        "turnover": 432.06,
+        "turnoverShare": 1.36,
+        "mainNet": 11.34
+      },
+      "def_land_sea": {
+        "turnover": 179.65,
+        "turnoverShare": 0.56,
+        "mainNet": 14.39
+      },
+      "newenergy_lithium": {
+        "turnover": 675.4,
+        "turnoverShare": 2.12,
+        "mainNet": 13.36
+      },
+      "newenergy_materials": {
+        "turnover": 333.77,
+        "turnoverShare": 1.05,
+        "mainNet": -15.14
+      },
+      "newenergy_solar": {
+        "turnover": 495.92,
+        "turnoverShare": 1.56,
+        "mainNet": -16.63
+      },
+      "newenergy_wind": {
+        "turnover": 162.8,
+        "turnoverShare": 0.51,
+        "mainNet": 8.7
+      },
+      "newenergy_hydrogen": {
+        "turnover": 5.92,
+        "turnoverShare": 0.02,
+        "mainNet": -0.02
+      },
+      "res_industrial": {
+        "turnover": 773.2,
+        "turnoverShare": 2.43,
+        "mainNet": 16.93
+      },
+      "res_minor": {
+        "turnover": 791.55,
+        "turnoverShare": 2.49,
+        "mainNet": -25.43
+      },
+      "res_precious": {
+        "turnover": 213.2,
+        "turnoverShare": 0.67,
+        "mainNet": 23.03
+      },
+      "med_innovative": {
+        "turnover": 678.95,
+        "turnoverShare": 2.13,
+        "mainNet": 16.54
+      },
+      "med_cxo": {
+        "turnover": 228.65,
+        "turnoverShare": 0.72,
+        "mainNet": 4.15
+      },
+      "med_tcm": {
+        "turnover": 106.51,
+        "turnoverShare": 0.33,
+        "mainNet": -0.04
+      },
+      "med_device": {
+        "turnover": 203.48,
+        "turnoverShare": 0.64,
+        "mainNet": 3.43
+      },
+      "med_services": {
+        "turnover": 42.94,
+        "turnoverShare": 0.13,
+        "mainNet": -2.28
+      },
+      "fin_banks": {
+        "turnover": 244.19,
+        "turnoverShare": 0.77,
+        "mainNet": 0.81
+      },
+      "fin_insurance": {
+        "turnover": 96.14,
+        "turnoverShare": 0.3,
+        "mainNet": 0.99
+      },
+      "fin_brokers": {
+        "turnover": 524.36,
+        "turnoverShare": 1.65,
+        "mainNet": 4.75
+      },
+      "fin_other": {
+        "turnover": 31.52,
+        "turnoverShare": 0.1,
+        "mainNet": 1.36
+      },
       "semiconductor": {
         "turnover": 5338.03,
         "turnoverShare": 16.77,
@@ -2110,42 +3208,222 @@ window.REPLAY_DATA={
         "mainNet": 81.24
       },
       "optical": {
-        "turnover": 1758.21,
-        "turnoverShare": 5.53,
-        "mainNet": -24.12
+        "turnover": 1920.91,
+        "turnoverShare": 6.04,
+        "mainNet": -16.03
       },
       "automation": {
-        "turnover": 1437.74,
-        "turnoverShare": 4.52,
-        "mainNet": 76.49
+        "turnover": 1558.43,
+        "turnoverShare": 4.9,
+        "mainNet": 57.92
       },
       "defense": {
-        "turnover": 848.34,
-        "turnoverShare": 2.67,
-        "mainNet": 34.82
+        "turnover": 975.2,
+        "turnoverShare": 3.06,
+        "mainNet": 49.06
       },
       "battery": {
-        "turnover": 1009.17,
-        "turnoverShare": 3.17,
-        "mainNet": -1.78
+        "turnover": 1673.81,
+        "turnoverShare": 5.26,
+        "mainNet": -9.73
       },
       "resources": {
-        "turnover": 1602.35,
-        "turnoverShare": 5.04,
-        "mainNet": 13.39
+        "turnover": 1777.94,
+        "turnoverShare": 5.59,
+        "mainNet": 14.53
       },
       "medicine": {
-        "turnover": 1060.39,
-        "turnoverShare": 3.33,
-        "mainNet": 20.14
+        "turnover": 1260.53,
+        "turnoverShare": 3.96,
+        "mainNet": 21.8
       },
       "finance": {
-        "turnover": 887.24,
-        "turnoverShare": 2.79,
-        "mainNet": 7.57
+        "turnover": 896.21,
+        "turnoverShare": 2.82,
+        "mainNet": 7.92
       }
     },
     "2026-07-06": {
+      "semi_equipment": {
+        "turnover": 690.16,
+        "turnoverShare": 2.23,
+        "mainNet": -5.43
+      },
+      "semi_materials": {
+        "turnover": 646.56,
+        "turnoverShare": 2.09,
+        "mainNet": -39.48
+      },
+      "semi_manufacturing": {
+        "turnover": 364.74,
+        "turnoverShare": 1.18,
+        "mainNet": 1.48
+      },
+      "semi_design": {
+        "turnover": 2952.44,
+        "turnoverShare": 9.55,
+        "mainNet": -39.24
+      },
+      "semi_packaging": {
+        "turnover": 628.11,
+        "turnoverShare": 2.03,
+        "mainNet": -19.99
+      },
+      "elec_pcb": {
+        "turnover": 1095.97,
+        "turnoverShare": 3.55,
+        "mainNet": -56.04
+      },
+      "elec_passive": {
+        "turnover": 354.63,
+        "turnoverShare": 1.15,
+        "mainNet": -22.02
+      },
+      "elec_components": {
+        "turnover": 922.59,
+        "turnoverShare": 2.98,
+        "mainNet": -27.87
+      },
+      "comm_optical": {
+        "turnover": 1573.95,
+        "turnoverShare": 5.09,
+        "mainNet": -104.23
+      },
+      "comm_equipment": {
+        "turnover": 308.03,
+        "turnoverShare": 1.0,
+        "mainNet": -13.99
+      },
+      "comm_services": {
+        "turnover": 36.8,
+        "turnoverShare": 0.12,
+        "mainNet": -1.73
+      },
+      "auto_robot": {
+        "turnover": 278.56,
+        "turnoverShare": 0.9,
+        "mainNet": -16.07
+      },
+      "auto_control": {
+        "turnover": 263.89,
+        "turnoverShare": 0.85,
+        "mainNet": -13.97
+      },
+      "auto_machine": {
+        "turnover": 338.81,
+        "turnoverShare": 1.1,
+        "mainNet": -12.76
+      },
+      "auto_components": {
+        "turnover": 616.8,
+        "turnoverShare": 2.0,
+        "mainNet": -7.33
+      },
+      "def_aerospace": {
+        "turnover": 147.93,
+        "turnoverShare": 0.48,
+        "mainNet": -5.88
+      },
+      "def_aviation": {
+        "turnover": 159.46,
+        "turnoverShare": 0.52,
+        "mainNet": -2.55
+      },
+      "def_electronics": {
+        "turnover": 454.63,
+        "turnoverShare": 1.47,
+        "mainNet": -7.14
+      },
+      "def_land_sea": {
+        "turnover": 186.75,
+        "turnoverShare": 0.6,
+        "mainNet": 3.36
+      },
+      "newenergy_lithium": {
+        "turnover": 673.99,
+        "turnoverShare": 2.18,
+        "mainNet": -15.84
+      },
+      "newenergy_materials": {
+        "turnover": 350.94,
+        "turnoverShare": 1.14,
+        "mainNet": -17.36
+      },
+      "newenergy_solar": {
+        "turnover": 454.93,
+        "turnoverShare": 1.47,
+        "mainNet": -17.11
+      },
+      "newenergy_wind": {
+        "turnover": 140.24,
+        "turnoverShare": 0.45,
+        "mainNet": -8.29
+      },
+      "newenergy_hydrogen": {
+        "turnover": 6.23,
+        "turnoverShare": 0.02,
+        "mainNet": -0.16
+      },
+      "res_industrial": {
+        "turnover": 694.48,
+        "turnoverShare": 2.25,
+        "mainNet": -8.84
+      },
+      "res_minor": {
+        "turnover": 732.52,
+        "turnoverShare": 2.37,
+        "mainNet": -57.27
+      },
+      "res_precious": {
+        "turnover": 271.76,
+        "turnoverShare": 0.88,
+        "mainNet": 2.92
+      },
+      "med_innovative": {
+        "turnover": 883.9,
+        "turnoverShare": 2.86,
+        "mainNet": 28.75
+      },
+      "med_cxo": {
+        "turnover": 322.34,
+        "turnoverShare": 1.04,
+        "mainNet": 3.58
+      },
+      "med_tcm": {
+        "turnover": 119.83,
+        "turnoverShare": 0.39,
+        "mainNet": -0.97
+      },
+      "med_device": {
+        "turnover": 231.33,
+        "turnoverShare": 0.75,
+        "mainNet": -3.61
+      },
+      "med_services": {
+        "turnover": 50.99,
+        "turnoverShare": 0.16,
+        "mainNet": 0.26
+      },
+      "fin_banks": {
+        "turnover": 286.75,
+        "turnoverShare": 0.93,
+        "mainNet": 14.39
+      },
+      "fin_insurance": {
+        "turnover": 114.76,
+        "turnoverShare": 0.37,
+        "mainNet": 7.92
+      },
+      "fin_brokers": {
+        "turnover": 513.13,
+        "turnoverShare": 1.66,
+        "mainNet": -3.12
+      },
+      "fin_other": {
+        "turnover": 29.25,
+        "turnoverShare": 0.09,
+        "mainNet": -0.07
+      },
       "semiconductor": {
         "turnover": 5282.02,
         "turnoverShare": 17.09,
@@ -2157,42 +3435,222 @@ window.REPLAY_DATA={
         "mainNet": -105.93
       },
       "optical": {
-        "turnover": 1742.54,
-        "turnoverShare": 5.64,
-        "mainNet": -112.15
+        "turnover": 1918.78,
+        "turnoverShare": 6.21,
+        "mainNet": -119.94
       },
       "automation": {
-        "turnover": 1405.4,
-        "turnoverShare": 4.55,
-        "mainNet": -43.93
+        "turnover": 1498.05,
+        "turnoverShare": 4.85,
+        "mainNet": -50.13
       },
       "defense": {
-        "turnover": 815.06,
-        "turnoverShare": 2.64,
-        "mainNet": -15.71
+        "turnover": 948.77,
+        "turnoverShare": 3.07,
+        "mainNet": -12.22
       },
       "battery": {
-        "turnover": 1024.93,
-        "turnoverShare": 3.32,
-        "mainNet": -33.2
+        "turnover": 1626.33,
+        "turnoverShare": 5.26,
+        "mainNet": -58.76
       },
       "resources": {
-        "turnover": 1516.29,
-        "turnoverShare": 4.91,
-        "mainNet": -51.91
+        "turnover": 1698.77,
+        "turnoverShare": 5.5,
+        "mainNet": -63.19
       },
       "medicine": {
-        "turnover": 1361.13,
-        "turnoverShare": 4.4,
-        "mainNet": 24.61
+        "turnover": 1608.39,
+        "turnoverShare": 5.2,
+        "mainNet": 28.02
       },
       "finance": {
-        "turnover": 935.45,
-        "turnoverShare": 3.03,
-        "mainNet": 19.12
+        "turnover": 943.89,
+        "turnoverShare": 3.05,
+        "mainNet": 19.13
       }
     },
     "2026-07-07": {
+      "semi_equipment": {
+        "turnover": 618.54,
+        "turnoverShare": 2.4,
+        "mainNet": 3.11
+      },
+      "semi_materials": {
+        "turnover": 545.28,
+        "turnoverShare": 2.11,
+        "mainNet": 13.59
+      },
+      "semi_manufacturing": {
+        "turnover": 289.39,
+        "turnoverShare": 1.12,
+        "mainNet": -2.77
+      },
+      "semi_design": {
+        "turnover": 2566.89,
+        "turnoverShare": 9.95,
+        "mainNet": -81.93
+      },
+      "semi_packaging": {
+        "turnover": 672.3,
+        "turnoverShare": 2.6,
+        "mainNet": 48.35
+      },
+      "elec_pcb": {
+        "turnover": 963.63,
+        "turnoverShare": 3.73,
+        "mainNet": -30.6
+      },
+      "elec_passive": {
+        "turnover": 284.95,
+        "turnoverShare": 1.1,
+        "mainNet": -14.34
+      },
+      "elec_components": {
+        "turnover": 759.02,
+        "turnoverShare": 2.94,
+        "mainNet": -19.91
+      },
+      "comm_optical": {
+        "turnover": 1411.92,
+        "turnoverShare": 5.47,
+        "mainNet": -30.12
+      },
+      "comm_equipment": {
+        "turnover": 278.85,
+        "turnoverShare": 1.08,
+        "mainNet": -8.12
+      },
+      "comm_services": {
+        "turnover": 26.87,
+        "turnoverShare": 0.1,
+        "mainNet": -1.6
+      },
+      "auto_robot": {
+        "turnover": 230.72,
+        "turnoverShare": 0.89,
+        "mainNet": -5.78
+      },
+      "auto_control": {
+        "turnover": 186.96,
+        "turnoverShare": 0.72,
+        "mainNet": -7.77
+      },
+      "auto_machine": {
+        "turnover": 265.71,
+        "turnoverShare": 1.03,
+        "mainNet": 0.38
+      },
+      "auto_components": {
+        "turnover": 490.41,
+        "turnoverShare": 1.9,
+        "mainNet": -19.39
+      },
+      "def_aerospace": {
+        "turnover": 99.93,
+        "turnoverShare": 0.39,
+        "mainNet": -5.54
+      },
+      "def_aviation": {
+        "turnover": 125.61,
+        "turnoverShare": 0.49,
+        "mainNet": -6.42
+      },
+      "def_electronics": {
+        "turnover": 350.09,
+        "turnoverShare": 1.36,
+        "mainNet": -8.26
+      },
+      "def_land_sea": {
+        "turnover": 139.88,
+        "turnoverShare": 0.54,
+        "mainNet": -3.37
+      },
+      "newenergy_lithium": {
+        "turnover": 607.72,
+        "turnoverShare": 2.35,
+        "mainNet": -0.96
+      },
+      "newenergy_materials": {
+        "turnover": 305.12,
+        "turnoverShare": 1.18,
+        "mainNet": -2.07
+      },
+      "newenergy_solar": {
+        "turnover": 390.17,
+        "turnoverShare": 1.51,
+        "mainNet": 4.21
+      },
+      "newenergy_wind": {
+        "turnover": 115.44,
+        "turnoverShare": 0.45,
+        "mainNet": -11.11
+      },
+      "newenergy_hydrogen": {
+        "turnover": 12.43,
+        "turnoverShare": 0.05,
+        "mainNet": 1.29
+      },
+      "res_industrial": {
+        "turnover": 470.99,
+        "turnoverShare": 1.82,
+        "mainNet": -22.33
+      },
+      "res_minor": {
+        "turnover": 530.79,
+        "turnoverShare": 2.06,
+        "mainNet": -37.73
+      },
+      "res_precious": {
+        "turnover": 142.14,
+        "turnoverShare": 0.55,
+        "mainNet": -7.75
+      },
+      "med_innovative": {
+        "turnover": 606.9,
+        "turnoverShare": 2.35,
+        "mainNet": -39.88
+      },
+      "med_cxo": {
+        "turnover": 234.96,
+        "turnoverShare": 0.91,
+        "mainNet": -13.99
+      },
+      "med_tcm": {
+        "turnover": 88.37,
+        "turnoverShare": 0.34,
+        "mainNet": -4.39
+      },
+      "med_device": {
+        "turnover": 178.97,
+        "turnoverShare": 0.69,
+        "mainNet": -5.88
+      },
+      "med_services": {
+        "turnover": 43.66,
+        "turnoverShare": 0.17,
+        "mainNet": -4.3
+      },
+      "fin_banks": {
+        "turnover": 247.84,
+        "turnoverShare": 0.96,
+        "mainNet": 8.26
+      },
+      "fin_insurance": {
+        "turnover": 80.37,
+        "turnoverShare": 0.31,
+        "mainNet": -4.55
+      },
+      "fin_brokers": {
+        "turnover": 438.5,
+        "turnoverShare": 1.7,
+        "mainNet": -62.86
+      },
+      "fin_other": {
+        "turnover": 30.72,
+        "turnoverShare": 0.12,
+        "mainNet": -0.42
+      },
       "semiconductor": {
         "turnover": 4692.41,
         "turnoverShare": 18.18,
@@ -2204,42 +3662,222 @@ window.REPLAY_DATA={
         "mainNet": -64.86
       },
       "optical": {
-        "turnover": 1557.12,
-        "turnoverShare": 6.03,
-        "mainNet": -30.81
+        "turnover": 1717.64,
+        "turnoverShare": 6.65,
+        "mainNet": -39.84
       },
       "automation": {
-        "turnover": 1124.08,
-        "turnoverShare": 4.36,
-        "mainNet": -40.95
+        "turnover": 1173.8,
+        "turnoverShare": 4.55,
+        "mainNet": -32.55
       },
       "defense": {
-        "turnover": 616.61,
-        "turnoverShare": 2.39,
-        "mainNet": -20.3
+        "turnover": 715.52,
+        "turnoverShare": 2.77,
+        "mainNet": -23.59
       },
       "battery": {
-        "turnover": 912.84,
-        "turnoverShare": 3.54,
-        "mainNet": -3.02
+        "turnover": 1430.88,
+        "turnoverShare": 5.54,
+        "mainNet": -8.63
       },
       "resources": {
-        "turnover": 1022.07,
-        "turnoverShare": 3.96,
-        "mainNet": -53.26
+        "turnover": 1143.92,
+        "turnoverShare": 4.43,
+        "mainNet": -67.81
       },
       "medicine": {
-        "turnover": 960.49,
-        "turnoverShare": 3.72,
-        "mainNet": -51.32
+        "turnover": 1152.85,
+        "turnoverShare": 4.47,
+        "mainNet": -68.44
       },
       "finance": {
-        "turnover": 788.77,
-        "turnoverShare": 3.06,
-        "mainNet": -59.1
+        "turnover": 797.43,
+        "turnoverShare": 3.09,
+        "mainNet": -59.57
       }
     },
     "2026-07-08": {
+      "semi_equipment": {
+        "turnover": 741.59,
+        "turnoverShare": 2.89,
+        "mainNet": 12.73
+      },
+      "semi_materials": {
+        "turnover": 632.81,
+        "turnoverShare": 2.47,
+        "mainNet": -26.41
+      },
+      "semi_manufacturing": {
+        "turnover": 399.36,
+        "turnoverShare": 1.56,
+        "mainNet": 19.16
+      },
+      "semi_design": {
+        "turnover": 2653.89,
+        "turnoverShare": 10.35,
+        "mainNet": -62.03
+      },
+      "semi_packaging": {
+        "turnover": 659.59,
+        "turnoverShare": 2.57,
+        "mainNet": -51.27
+      },
+      "elec_pcb": {
+        "turnover": 875.72,
+        "turnoverShare": 3.42,
+        "mainNet": -17.04
+      },
+      "elec_passive": {
+        "turnover": 315.04,
+        "turnoverShare": 1.23,
+        "mainNet": -11.98
+      },
+      "elec_components": {
+        "turnover": 832.04,
+        "turnoverShare": 3.25,
+        "mainNet": 2.65
+      },
+      "comm_optical": {
+        "turnover": 1435.94,
+        "turnoverShare": 5.6,
+        "mainNet": 14.83
+      },
+      "comm_equipment": {
+        "turnover": 307.01,
+        "turnoverShare": 1.2,
+        "mainNet": 10.33
+      },
+      "comm_services": {
+        "turnover": 24.58,
+        "turnoverShare": 0.1,
+        "mainNet": -0.0
+      },
+      "auto_robot": {
+        "turnover": 143.6,
+        "turnoverShare": 0.56,
+        "mainNet": -15.27
+      },
+      "auto_control": {
+        "turnover": 174.22,
+        "turnoverShare": 0.68,
+        "mainNet": -6.13
+      },
+      "auto_machine": {
+        "turnover": 260.27,
+        "turnoverShare": 1.02,
+        "mainNet": -8.81
+      },
+      "auto_components": {
+        "turnover": 406.47,
+        "turnoverShare": 1.59,
+        "mainNet": -15.6
+      },
+      "def_aerospace": {
+        "turnover": 85.39,
+        "turnoverShare": 0.33,
+        "mainNet": -0.82
+      },
+      "def_aviation": {
+        "turnover": 110.67,
+        "turnoverShare": 0.43,
+        "mainNet": -5.88
+      },
+      "def_electronics": {
+        "turnover": 353.55,
+        "turnoverShare": 1.38,
+        "mainNet": -11.1
+      },
+      "def_land_sea": {
+        "turnover": 157.44,
+        "turnoverShare": 0.61,
+        "mainNet": -3.39
+      },
+      "newenergy_lithium": {
+        "turnover": 642.39,
+        "turnoverShare": 2.51,
+        "mainNet": -65.07
+      },
+      "newenergy_materials": {
+        "turnover": 346.36,
+        "turnoverShare": 1.35,
+        "mainNet": -25.41
+      },
+      "newenergy_solar": {
+        "turnover": 406.25,
+        "turnoverShare": 1.58,
+        "mainNet": -25.07
+      },
+      "newenergy_wind": {
+        "turnover": 99.94,
+        "turnoverShare": 0.39,
+        "mainNet": -8.33
+      },
+      "newenergy_hydrogen": {
+        "turnover": 6.67,
+        "turnoverShare": 0.03,
+        "mainNet": -0.78
+      },
+      "res_industrial": {
+        "turnover": 431.77,
+        "turnoverShare": 1.68,
+        "mainNet": -16.48
+      },
+      "res_minor": {
+        "turnover": 469.24,
+        "turnoverShare": 1.83,
+        "mainNet": -34.47
+      },
+      "res_precious": {
+        "turnover": 138.92,
+        "turnoverShare": 0.54,
+        "mainNet": 3.39
+      },
+      "med_innovative": {
+        "turnover": 507.67,
+        "turnoverShare": 1.98,
+        "mainNet": -19.92
+      },
+      "med_cxo": {
+        "turnover": 192.2,
+        "turnoverShare": 0.75,
+        "mainNet": -12.0
+      },
+      "med_tcm": {
+        "turnover": 82.74,
+        "turnoverShare": 0.32,
+        "mainNet": 0.53
+      },
+      "med_device": {
+        "turnover": 151.84,
+        "turnoverShare": 0.59,
+        "mainNet": -1.71
+      },
+      "med_services": {
+        "turnover": 29.7,
+        "turnoverShare": 0.12,
+        "mainNet": -0.14
+      },
+      "fin_banks": {
+        "turnover": 262.01,
+        "turnoverShare": 1.02,
+        "mainNet": 3.39
+      },
+      "fin_insurance": {
+        "turnover": 63.31,
+        "turnoverShare": 0.25,
+        "mainNet": -0.9
+      },
+      "fin_brokers": {
+        "turnover": 341.69,
+        "turnoverShare": 1.33,
+        "mainNet": -29.38
+      },
+      "fin_other": {
+        "turnover": 35.01,
+        "turnoverShare": 0.14,
+        "mainNet": -0.09
+      },
       "semiconductor": {
         "turnover": 5087.25,
         "turnoverShare": 19.85,
@@ -2251,42 +3889,222 @@ window.REPLAY_DATA={
         "mainNet": -26.37
       },
       "optical": {
-        "turnover": 1600.46,
-        "turnoverShare": 6.24,
-        "mainNet": 16.41
+        "turnover": 1767.53,
+        "turnoverShare": 6.9,
+        "mainNet": 25.17
       },
       "automation": {
-        "turnover": 943.54,
-        "turnoverShare": 3.68,
-        "mainNet": -33.28
+        "turnover": 984.56,
+        "turnoverShare": 3.84,
+        "mainNet": -45.81
       },
       "defense": {
-        "turnover": 590.16,
-        "turnoverShare": 2.3,
-        "mainNet": -20.77
+        "turnover": 707.05,
+        "turnoverShare": 2.76,
+        "mainNet": -21.18
       },
       "battery": {
-        "turnover": 988.75,
-        "turnoverShare": 3.86,
-        "mainNet": -90.48
+        "turnover": 1501.62,
+        "turnoverShare": 5.86,
+        "mainNet": -124.66
       },
       "resources": {
-        "turnover": 928.17,
-        "turnoverShare": 3.62,
-        "mainNet": -35.28
+        "turnover": 1039.93,
+        "turnoverShare": 4.06,
+        "mainNet": -47.56
       },
       "medicine": {
-        "turnover": 817.89,
-        "turnoverShare": 3.19,
-        "mainNet": -28.9
+        "turnover": 964.14,
+        "turnoverShare": 3.76,
+        "mainNet": -33.24
       },
       "finance": {
-        "turnover": 694.28,
-        "turnoverShare": 2.71,
-        "mainNet": -27.04
+        "turnover": 702.02,
+        "turnoverShare": 2.74,
+        "mainNet": -26.98
       }
     },
     "2026-07-09": {
+      "semi_equipment": {
+        "turnover": 883.07,
+        "turnoverShare": 3.03,
+        "mainNet": 59.2
+      },
+      "semi_materials": {
+        "turnover": 699.76,
+        "turnoverShare": 2.4,
+        "mainNet": 27.76
+      },
+      "semi_manufacturing": {
+        "turnover": 535.46,
+        "turnoverShare": 1.84,
+        "mainNet": 39.78
+      },
+      "semi_design": {
+        "turnover": 3168.62,
+        "turnoverShare": 10.88,
+        "mainNet": 115.55
+      },
+      "semi_packaging": {
+        "turnover": 712.75,
+        "turnoverShare": 2.45,
+        "mainNet": 91.79
+      },
+      "elec_pcb": {
+        "turnover": 1157.79,
+        "turnoverShare": 3.97,
+        "mainNet": 76.39
+      },
+      "elec_passive": {
+        "turnover": 327.1,
+        "turnoverShare": 1.12,
+        "mainNet": -2.23
+      },
+      "elec_components": {
+        "turnover": 976.0,
+        "turnoverShare": 3.35,
+        "mainNet": 41.81
+      },
+      "comm_optical": {
+        "turnover": 1810.75,
+        "turnoverShare": 6.21,
+        "mainNet": 76.49
+      },
+      "comm_equipment": {
+        "turnover": 531.53,
+        "turnoverShare": 1.82,
+        "mainNet": 40.49
+      },
+      "comm_services": {
+        "turnover": 27.91,
+        "turnoverShare": 0.1,
+        "mainNet": -0.2
+      },
+      "auto_robot": {
+        "turnover": 169.76,
+        "turnoverShare": 0.58,
+        "mainNet": -0.06
+      },
+      "auto_control": {
+        "turnover": 193.1,
+        "turnoverShare": 0.66,
+        "mainNet": 6.47
+      },
+      "auto_machine": {
+        "turnover": 313.38,
+        "turnoverShare": 1.08,
+        "mainNet": 1.63
+      },
+      "auto_components": {
+        "turnover": 347.42,
+        "turnoverShare": 1.19,
+        "mainNet": -2.51
+      },
+      "def_aerospace": {
+        "turnover": 97.29,
+        "turnoverShare": 0.33,
+        "mainNet": 4.32
+      },
+      "def_aviation": {
+        "turnover": 117.94,
+        "turnoverShare": 0.4,
+        "mainNet": -3.89
+      },
+      "def_electronics": {
+        "turnover": 370.91,
+        "turnoverShare": 1.27,
+        "mainNet": -2.56
+      },
+      "def_land_sea": {
+        "turnover": 149.11,
+        "turnoverShare": 0.51,
+        "mainNet": -6.15
+      },
+      "newenergy_lithium": {
+        "turnover": 675.07,
+        "turnoverShare": 2.32,
+        "mainNet": -31.33
+      },
+      "newenergy_materials": {
+        "turnover": 341.5,
+        "turnoverShare": 1.17,
+        "mainNet": -24.89
+      },
+      "newenergy_solar": {
+        "turnover": 450.21,
+        "turnoverShare": 1.55,
+        "mainNet": -19.26
+      },
+      "newenergy_wind": {
+        "turnover": 110.24,
+        "turnoverShare": 0.38,
+        "mainNet": -5.06
+      },
+      "newenergy_hydrogen": {
+        "turnover": 7.29,
+        "turnoverShare": 0.03,
+        "mainNet": -0.14
+      },
+      "res_industrial": {
+        "turnover": 538.29,
+        "turnoverShare": 1.85,
+        "mainNet": -20.56
+      },
+      "res_minor": {
+        "turnover": 620.74,
+        "turnoverShare": 2.13,
+        "mainNet": -34.54
+      },
+      "res_precious": {
+        "turnover": 140.01,
+        "turnoverShare": 0.48,
+        "mainNet": -0.65
+      },
+      "med_innovative": {
+        "turnover": 506.24,
+        "turnoverShare": 1.74,
+        "mainNet": -12.56
+      },
+      "med_cxo": {
+        "turnover": 207.01,
+        "turnoverShare": 0.71,
+        "mainNet": -2.24
+      },
+      "med_tcm": {
+        "turnover": 94.78,
+        "turnoverShare": 0.33,
+        "mainNet": -1.44
+      },
+      "med_device": {
+        "turnover": 160.69,
+        "turnoverShare": 0.55,
+        "mainNet": -2.61
+      },
+      "med_services": {
+        "turnover": 31.82,
+        "turnoverShare": 0.11,
+        "mainNet": -0.64
+      },
+      "fin_banks": {
+        "turnover": 247.05,
+        "turnoverShare": 0.85,
+        "mainNet": -4.09
+      },
+      "fin_insurance": {
+        "turnover": 77.55,
+        "turnoverShare": 0.27,
+        "mainNet": -6.08
+      },
+      "fin_brokers": {
+        "turnover": 441.25,
+        "turnoverShare": 1.51,
+        "mainNet": 8.69
+      },
+      "fin_other": {
+        "turnover": 35.13,
+        "turnoverShare": 0.12,
+        "mainNet": 0.48
+      },
       "semiconductor": {
         "turnover": 5999.67,
         "turnoverShare": 20.59,
@@ -2298,42 +4116,222 @@ window.REPLAY_DATA={
         "mainNet": 115.97
       },
       "optical": {
-        "turnover": 2018.32,
-        "turnoverShare": 6.93,
-        "mainNet": 68.96
+        "turnover": 2370.19,
+        "turnoverShare": 8.14,
+        "mainNet": 116.78
       },
       "automation": {
-        "turnover": 1101.56,
-        "turnoverShare": 3.78,
-        "mainNet": 49.05
+        "turnover": 1023.67,
+        "turnoverShare": 3.51,
+        "mainNet": 5.53
       },
       "defense": {
-        "turnover": 629.67,
-        "turnoverShare": 2.16,
-        "mainNet": -3.99
+        "turnover": 735.25,
+        "turnoverShare": 2.52,
+        "mainNet": -8.28
       },
       "battery": {
-        "turnover": 1016.57,
-        "turnoverShare": 3.49,
-        "mainNet": -56.22
+        "turnover": 1584.31,
+        "turnoverShare": 5.44,
+        "mainNet": -80.67
       },
       "resources": {
-        "turnover": 1102.81,
-        "turnoverShare": 3.79,
-        "mainNet": -32.59
+        "turnover": 1299.03,
+        "turnoverShare": 4.46,
+        "mainNet": -55.76
       },
       "medicine": {
-        "turnover": 861.14,
-        "turnoverShare": 2.96,
-        "mainNet": -13.8
+        "turnover": 1000.54,
+        "turnoverShare": 3.43,
+        "mainNet": -19.5
       },
       "finance": {
-        "turnover": 792.71,
-        "turnoverShare": 2.72,
-        "mainNet": -0.96
+        "turnover": 800.97,
+        "turnoverShare": 2.75,
+        "mainNet": -1.0
       }
     },
     "2026-07-10": {
+      "semi_equipment": {
+        "turnover": 988.26,
+        "turnoverShare": 2.92,
+        "mainNet": -7.14
+      },
+      "semi_materials": {
+        "turnover": 861.93,
+        "turnoverShare": 2.54,
+        "mainNet": -30.46
+      },
+      "semi_manufacturing": {
+        "turnover": 537.35,
+        "turnoverShare": 1.59,
+        "mainNet": -28.09
+      },
+      "semi_design": {
+        "turnover": 3589.12,
+        "turnoverShare": 10.59,
+        "mainNet": -206.7
+      },
+      "semi_packaging": {
+        "turnover": 958.71,
+        "turnoverShare": 2.83,
+        "mainNet": -3.14
+      },
+      "elec_pcb": {
+        "turnover": 1296.79,
+        "turnoverShare": 3.83,
+        "mainNet": -49.46
+      },
+      "elec_passive": {
+        "turnover": 336.18,
+        "turnoverShare": 0.99,
+        "mainNet": -10.74
+      },
+      "elec_components": {
+        "turnover": 1177.7,
+        "turnoverShare": 3.48,
+        "mainNet": -17.25
+      },
+      "comm_optical": {
+        "turnover": 2049.17,
+        "turnoverShare": 6.05,
+        "mainNet": -76.8
+      },
+      "comm_equipment": {
+        "turnover": 607.86,
+        "turnoverShare": 1.79,
+        "mainNet": 16.58
+      },
+      "comm_services": {
+        "turnover": 38.26,
+        "turnoverShare": 0.11,
+        "mainNet": 3.34
+      },
+      "auto_robot": {
+        "turnover": 183.51,
+        "turnoverShare": 0.54,
+        "mainNet": -1.46
+      },
+      "auto_control": {
+        "turnover": 209.13,
+        "turnoverShare": 0.62,
+        "mainNet": -1.51
+      },
+      "auto_machine": {
+        "turnover": 448.81,
+        "turnoverShare": 1.32,
+        "mainNet": 4.53
+      },
+      "auto_components": {
+        "turnover": 401.93,
+        "turnoverShare": 1.19,
+        "mainNet": 2.72
+      },
+      "def_aerospace": {
+        "turnover": 185.44,
+        "turnoverShare": 0.55,
+        "mainNet": 32.46
+      },
+      "def_aviation": {
+        "turnover": 221.48,
+        "turnoverShare": 0.65,
+        "mainNet": 1.69
+      },
+      "def_electronics": {
+        "turnover": 588.48,
+        "turnoverShare": 1.74,
+        "mainNet": 25.7
+      },
+      "def_land_sea": {
+        "turnover": 217.89,
+        "turnoverShare": 0.64,
+        "mainNet": 19.34
+      },
+      "newenergy_lithium": {
+        "turnover": 695.87,
+        "turnoverShare": 2.05,
+        "mainNet": -53.51
+      },
+      "newenergy_materials": {
+        "turnover": 328.78,
+        "turnoverShare": 0.97,
+        "mainNet": -25.46
+      },
+      "newenergy_solar": {
+        "turnover": 523.28,
+        "turnoverShare": 1.54,
+        "mainNet": -20.7
+      },
+      "newenergy_wind": {
+        "turnover": 164.69,
+        "turnoverShare": 0.49,
+        "mainNet": 15.28
+      },
+      "newenergy_hydrogen": {
+        "turnover": 6.91,
+        "turnoverShare": 0.02,
+        "mainNet": -0.12
+      },
+      "res_industrial": {
+        "turnover": 577.66,
+        "turnoverShare": 1.7,
+        "mainNet": 14.4
+      },
+      "res_minor": {
+        "turnover": 588.27,
+        "turnoverShare": 1.74,
+        "mainNet": 3.84
+      },
+      "res_precious": {
+        "turnover": 149.57,
+        "turnoverShare": 0.44,
+        "mainNet": 4.55
+      },
+      "med_innovative": {
+        "turnover": 660.24,
+        "turnoverShare": 1.95,
+        "mainNet": 16.98
+      },
+      "med_cxo": {
+        "turnover": 294.04,
+        "turnoverShare": 0.87,
+        "mainNet": 16.02
+      },
+      "med_tcm": {
+        "turnover": 121.09,
+        "turnoverShare": 0.36,
+        "mainNet": 4.07
+      },
+      "med_device": {
+        "turnover": 205.66,
+        "turnoverShare": 0.61,
+        "mainNet": -0.66
+      },
+      "med_services": {
+        "turnover": 53.08,
+        "turnoverShare": 0.16,
+        "mainNet": 2.31
+      },
+      "fin_banks": {
+        "turnover": 260.1,
+        "turnoverShare": 0.77,
+        "mainNet": 10.36
+      },
+      "fin_insurance": {
+        "turnover": 90.46,
+        "turnoverShare": 0.27,
+        "mainNet": 0.7
+      },
+      "fin_brokers": {
+        "turnover": 424.79,
+        "turnoverShare": 1.25,
+        "mainNet": -25.91
+      },
+      "fin_other": {
+        "turnover": 41.52,
+        "turnoverShare": 0.12,
+        "mainNet": 0.78
+      },
       "semiconductor": {
         "turnover": 6935.38,
         "turnoverShare": 20.47,
@@ -2345,42 +4343,222 @@ window.REPLAY_DATA={
         "mainNet": -77.45
       },
       "optical": {
-        "turnover": 2294.45,
-        "turnoverShare": 6.77,
-        "mainNet": -64.55
+        "turnover": 2695.28,
+        "turnoverShare": 7.95,
+        "mainNet": -56.88
       },
       "automation": {
-        "turnover": 1234.18,
-        "turnoverShare": 3.64,
-        "mainNet": 3.13
+        "turnover": 1243.39,
+        "turnoverShare": 3.67,
+        "mainNet": 4.28
       },
       "defense": {
-        "turnover": 1055.37,
-        "turnoverShare": 3.11,
-        "mainNet": 61.69
+        "turnover": 1213.29,
+        "turnoverShare": 3.58,
+        "mainNet": 79.19
       },
       "battery": {
-        "turnover": 1024.65,
-        "turnoverShare": 3.02,
-        "mainNet": -78.96
+        "turnover": 1719.53,
+        "turnoverShare": 5.07,
+        "mainNet": -84.51
       },
       "resources": {
-        "turnover": 1185.24,
-        "turnoverShare": 3.5,
-        "mainNet": 21.6
+        "turnover": 1315.5,
+        "turnoverShare": 3.88,
+        "mainNet": 22.79
       },
       "medicine": {
-        "turnover": 1115.91,
-        "turnoverShare": 3.29,
-        "mainNet": 31.38
+        "turnover": 1334.11,
+        "turnoverShare": 3.94,
+        "mainNet": 38.72
       },
       "finance": {
-        "turnover": 808.06,
-        "turnoverShare": 2.38,
-        "mainNet": -14.6
+        "turnover": 816.87,
+        "turnoverShare": 2.41,
+        "mainNet": -14.07
       }
     },
     "2026-07-13": {
+      "semi_equipment": {
+        "turnover": 994.51,
+        "turnoverShare": 3.53,
+        "mainNet": -49.06
+      },
+      "semi_materials": {
+        "turnover": 590.63,
+        "turnoverShare": 2.1,
+        "mainNet": -38.41
+      },
+      "semi_manufacturing": {
+        "turnover": 410.46,
+        "turnoverShare": 1.46,
+        "mainNet": -17.36
+      },
+      "semi_design": {
+        "turnover": 2868.78,
+        "turnoverShare": 10.18,
+        "mainNet": -259.25
+      },
+      "semi_packaging": {
+        "turnover": 858.09,
+        "turnoverShare": 3.05,
+        "mainNet": -40.84
+      },
+      "elec_pcb": {
+        "turnover": 1038.49,
+        "turnoverShare": 3.69,
+        "mainNet": -49.63
+      },
+      "elec_passive": {
+        "turnover": 283.93,
+        "turnoverShare": 1.01,
+        "mainNet": -24.37
+      },
+      "elec_components": {
+        "turnover": 874.91,
+        "turnoverShare": 3.11,
+        "mainNet": -88.14
+      },
+      "comm_optical": {
+        "turnover": 1463.51,
+        "turnoverShare": 5.19,
+        "mainNet": -106.67
+      },
+      "comm_equipment": {
+        "turnover": 427.34,
+        "turnoverShare": 1.52,
+        "mainNet": -17.39
+      },
+      "comm_services": {
+        "turnover": 38.53,
+        "turnoverShare": 0.14,
+        "mainNet": 0.2
+      },
+      "auto_robot": {
+        "turnover": 122.73,
+        "turnoverShare": 0.44,
+        "mainNet": -11.99
+      },
+      "auto_control": {
+        "turnover": 176.94,
+        "turnoverShare": 0.63,
+        "mainNet": -9.7
+      },
+      "auto_machine": {
+        "turnover": 314.13,
+        "turnoverShare": 1.11,
+        "mainNet": -30.06
+      },
+      "auto_components": {
+        "turnover": 344.77,
+        "turnoverShare": 1.22,
+        "mainNet": -13.8
+      },
+      "def_aerospace": {
+        "turnover": 306.1,
+        "turnoverShare": 1.09,
+        "mainNet": -25.69
+      },
+      "def_aviation": {
+        "turnover": 159.9,
+        "turnoverShare": 0.57,
+        "mainNet": -8.14
+      },
+      "def_electronics": {
+        "turnover": 464.81,
+        "turnoverShare": 1.65,
+        "mainNet": -35.58
+      },
+      "def_land_sea": {
+        "turnover": 225.93,
+        "turnoverShare": 0.8,
+        "mainNet": -13.25
+      },
+      "newenergy_lithium": {
+        "turnover": 598.04,
+        "turnoverShare": 2.12,
+        "mainNet": -7.35
+      },
+      "newenergy_materials": {
+        "turnover": 273.75,
+        "turnoverShare": 0.97,
+        "mainNet": -15.33
+      },
+      "newenergy_solar": {
+        "turnover": 407.69,
+        "turnoverShare": 1.45,
+        "mainNet": -32.66
+      },
+      "newenergy_wind": {
+        "turnover": 130.57,
+        "turnoverShare": 0.46,
+        "mainNet": -11.41
+      },
+      "newenergy_hydrogen": {
+        "turnover": 4.26,
+        "turnoverShare": 0.02,
+        "mainNet": -0.28
+      },
+      "res_industrial": {
+        "turnover": 476.98,
+        "turnoverShare": 1.69,
+        "mainNet": -20.42
+      },
+      "res_minor": {
+        "turnover": 469.03,
+        "turnoverShare": 1.66,
+        "mainNet": -40.75
+      },
+      "res_precious": {
+        "turnover": 107.78,
+        "turnoverShare": 0.38,
+        "mainNet": -0.89
+      },
+      "med_innovative": {
+        "turnover": 589.08,
+        "turnoverShare": 2.09,
+        "mainNet": -1.53
+      },
+      "med_cxo": {
+        "turnover": 256.02,
+        "turnoverShare": 0.91,
+        "mainNet": 2.67
+      },
+      "med_tcm": {
+        "turnover": 203.28,
+        "turnoverShare": 0.72,
+        "mainNet": 4.3
+      },
+      "med_device": {
+        "turnover": 176.88,
+        "turnoverShare": 0.63,
+        "mainNet": -4.16
+      },
+      "med_services": {
+        "turnover": 38.0,
+        "turnoverShare": 0.13,
+        "mainNet": -2.68
+      },
+      "fin_banks": {
+        "turnover": 355.86,
+        "turnoverShare": 1.26,
+        "mainNet": -5.37
+      },
+      "fin_insurance": {
+        "turnover": 83.77,
+        "turnoverShare": 0.3,
+        "mainNet": -3.09
+      },
+      "fin_brokers": {
+        "turnover": 363.0,
+        "turnoverShare": 1.29,
+        "mainNet": -24.28
+      },
+      "fin_other": {
+        "turnover": 34.72,
+        "turnoverShare": 0.12,
+        "mainNet": -2.17
+      },
       "semiconductor": {
         "turnover": 5722.48,
         "turnoverShare": 20.31,
@@ -2392,42 +4570,222 @@ window.REPLAY_DATA={
         "mainNet": -162.14
       },
       "optical": {
-        "turnover": 1640.46,
-        "turnoverShare": 5.82,
-        "mainNet": -117.74
+        "turnover": 1929.38,
+        "turnoverShare": 6.85,
+        "mainNet": -123.86
       },
       "automation": {
-        "turnover": 964.27,
-        "turnoverShare": 3.42,
-        "mainNet": -45.68
+        "turnover": 958.56,
+        "turnoverShare": 3.4,
+        "mainNet": -65.55
       },
       "defense": {
-        "turnover": 980.2,
-        "turnoverShare": 3.48,
-        "mainNet": -71.74
+        "turnover": 1156.74,
+        "turnoverShare": 4.11,
+        "mainNet": -82.66
       },
       "battery": {
-        "turnover": 871.79,
-        "turnoverShare": 3.09,
-        "mainNet": -22.68
+        "turnover": 1414.31,
+        "turnoverShare": 5.02,
+        "mainNet": -67.03
       },
       "resources": {
-        "turnover": 927.99,
-        "turnoverShare": 3.29,
-        "mainNet": -47.64
+        "turnover": 1053.79,
+        "turnoverShare": 3.74,
+        "mainNet": -62.07
       },
       "medicine": {
-        "turnover": 1088.43,
-        "turnoverShare": 3.86,
-        "mainNet": 3.64
+        "turnover": 1263.26,
+        "turnoverShare": 4.48,
+        "mainNet": -1.41
       },
       "finance": {
-        "turnover": 828.58,
-        "turnoverShare": 2.94,
-        "mainNet": -34.39
+        "turnover": 837.35,
+        "turnoverShare": 2.97,
+        "mainNet": -34.91
       }
     },
     "2026-07-14": {
+      "semi_equipment": {
+        "turnover": 907.48,
+        "turnoverShare": 3.36,
+        "mainNet": -20.97
+      },
+      "semi_materials": {
+        "turnover": 564.11,
+        "turnoverShare": 2.09,
+        "mainNet": -28.78
+      },
+      "semi_manufacturing": {
+        "turnover": 417.25,
+        "turnoverShare": 1.54,
+        "mainNet": -5.18
+      },
+      "semi_design": {
+        "turnover": 2663.8,
+        "turnoverShare": 9.85,
+        "mainNet": -35.15
+      },
+      "semi_packaging": {
+        "turnover": 881.35,
+        "turnoverShare": 3.26,
+        "mainNet": -9.86
+      },
+      "elec_pcb": {
+        "turnover": 1231.71,
+        "turnoverShare": 4.56,
+        "mainNet": 148.99
+      },
+      "elec_passive": {
+        "turnover": 298.37,
+        "turnoverShare": 1.1,
+        "mainNet": 8.88
+      },
+      "elec_components": {
+        "turnover": 806.19,
+        "turnoverShare": 2.98,
+        "mainNet": 1.77
+      },
+      "comm_optical": {
+        "turnover": 1762.99,
+        "turnoverShare": 6.52,
+        "mainNet": 114.48
+      },
+      "comm_equipment": {
+        "turnover": 412.56,
+        "turnoverShare": 1.53,
+        "mainNet": -8.18
+      },
+      "comm_services": {
+        "turnover": 31.23,
+        "turnoverShare": 0.12,
+        "mainNet": -0.11
+      },
+      "auto_robot": {
+        "turnover": 115.41,
+        "turnoverShare": 0.43,
+        "mainNet": -3.09
+      },
+      "auto_control": {
+        "turnover": 155.56,
+        "turnoverShare": 0.58,
+        "mainNet": 1.01
+      },
+      "auto_machine": {
+        "turnover": 330.48,
+        "turnoverShare": 1.22,
+        "mainNet": -1.17
+      },
+      "auto_components": {
+        "turnover": 277.82,
+        "turnoverShare": 1.03,
+        "mainNet": -1.81
+      },
+      "def_aerospace": {
+        "turnover": 112.45,
+        "turnoverShare": 0.42,
+        "mainNet": -12.64
+      },
+      "def_aviation": {
+        "turnover": 127.15,
+        "turnoverShare": 0.47,
+        "mainNet": -6.29
+      },
+      "def_electronics": {
+        "turnover": 379.89,
+        "turnoverShare": 1.41,
+        "mainNet": -18.67
+      },
+      "def_land_sea": {
+        "turnover": 152.43,
+        "turnoverShare": 0.56,
+        "mainNet": -10.45
+      },
+      "newenergy_lithium": {
+        "turnover": 555.83,
+        "turnoverShare": 2.06,
+        "mainNet": 6.19
+      },
+      "newenergy_materials": {
+        "turnover": 206.35,
+        "turnoverShare": 0.76,
+        "mainNet": -3.8
+      },
+      "newenergy_solar": {
+        "turnover": 371.08,
+        "turnoverShare": 1.37,
+        "mainNet": -4.19
+      },
+      "newenergy_wind": {
+        "turnover": 102.66,
+        "turnoverShare": 0.38,
+        "mainNet": -6.24
+      },
+      "newenergy_hydrogen": {
+        "turnover": 3.97,
+        "turnoverShare": 0.01,
+        "mainNet": -0.06
+      },
+      "res_industrial": {
+        "turnover": 667.23,
+        "turnoverShare": 2.47,
+        "mainNet": 55.87
+      },
+      "res_minor": {
+        "turnover": 504.2,
+        "turnoverShare": 1.86,
+        "mainNet": 27.83
+      },
+      "res_precious": {
+        "turnover": 133.41,
+        "turnoverShare": 0.49,
+        "mainNet": 6.23
+      },
+      "med_innovative": {
+        "turnover": 619.04,
+        "turnoverShare": 2.29,
+        "mainNet": 0.17
+      },
+      "med_cxo": {
+        "turnover": 305.33,
+        "turnoverShare": 1.13,
+        "mainNet": 19.27
+      },
+      "med_tcm": {
+        "turnover": 205.27,
+        "turnoverShare": 0.76,
+        "mainNet": 0.61
+      },
+      "med_device": {
+        "turnover": 183.18,
+        "turnoverShare": 0.68,
+        "mainNet": 0.01
+      },
+      "med_services": {
+        "turnover": 37.74,
+        "turnoverShare": 0.14,
+        "mainNet": -0.35
+      },
+      "fin_banks": {
+        "turnover": 318.32,
+        "turnoverShare": 1.18,
+        "mainNet": -14.34
+      },
+      "fin_insurance": {
+        "turnover": 119.22,
+        "turnoverShare": 0.44,
+        "mainNet": 3.74
+      },
+      "fin_brokers": {
+        "turnover": 361.64,
+        "turnoverShare": 1.34,
+        "mainNet": -9.53
+      },
+      "fin_other": {
+        "turnover": 29.41,
+        "turnoverShare": 0.11,
+        "mainNet": -0.47
+      },
       "semiconductor": {
         "turnover": 5433.99,
         "turnoverShare": 20.1,
@@ -2439,42 +4797,222 @@ window.REPLAY_DATA={
         "mainNet": 159.63
       },
       "optical": {
-        "turnover": 1927.38,
-        "turnoverShare": 7.13,
-        "mainNet": 116.95
+        "turnover": 2206.78,
+        "turnoverShare": 8.16,
+        "mainNet": 106.19
       },
       "automation": {
-        "turnover": 843.73,
-        "turnoverShare": 3.12,
-        "mainNet": -15.54
+        "turnover": 879.26,
+        "turnoverShare": 3.25,
+        "mainNet": -5.06
       },
       "defense": {
-        "turnover": 655.6,
-        "turnoverShare": 2.42,
-        "mainNet": -38.99
+        "turnover": 771.92,
+        "turnoverShare": 2.85,
+        "mainNet": -48.05
       },
       "battery": {
-        "turnover": 762.18,
-        "turnoverShare": 2.82,
-        "mainNet": 2.39
+        "turnover": 1239.9,
+        "turnoverShare": 4.59,
+        "mainNet": -8.11
       },
       "resources": {
-        "turnover": 1178.4,
-        "turnoverShare": 4.36,
-        "mainNet": 82.35
+        "turnover": 1304.84,
+        "turnoverShare": 4.83,
+        "mainNet": 89.93
       },
       "medicine": {
-        "turnover": 1191.31,
-        "turnoverShare": 4.41,
-        "mainNet": 23.16
+        "turnover": 1350.56,
+        "turnoverShare": 5.0,
+        "mainNet": 19.72
       },
       "finance": {
-        "turnover": 820.28,
-        "turnoverShare": 3.03,
-        "mainNet": -20.68
+        "turnover": 828.59,
+        "turnoverShare": 3.06,
+        "mainNet": -20.6
       }
     },
     "2026-07-15": {
+      "semi_equipment": {
+        "turnover": 744.0,
+        "turnoverShare": 2.89,
+        "mainNet": -22.18
+      },
+      "semi_materials": {
+        "turnover": 479.83,
+        "turnoverShare": 1.87,
+        "mainNet": -28.19
+      },
+      "semi_manufacturing": {
+        "turnover": 325.31,
+        "turnoverShare": 1.27,
+        "mainNet": -17.09
+      },
+      "semi_design": {
+        "turnover": 2262.74,
+        "turnoverShare": 8.8,
+        "mainNet": -137.67
+      },
+      "semi_packaging": {
+        "turnover": 802.83,
+        "turnoverShare": 3.12,
+        "mainNet": -83.09
+      },
+      "elec_pcb": {
+        "turnover": 1282.27,
+        "turnoverShare": 4.99,
+        "mainNet": -30.44
+      },
+      "elec_passive": {
+        "turnover": 261.3,
+        "turnoverShare": 1.02,
+        "mainNet": -9.03
+      },
+      "elec_components": {
+        "turnover": 663.05,
+        "turnoverShare": 2.58,
+        "mainNet": -30.1
+      },
+      "comm_optical": {
+        "turnover": 1437.26,
+        "turnoverShare": 5.59,
+        "mainNet": -23.36
+      },
+      "comm_equipment": {
+        "turnover": 371.68,
+        "turnoverShare": 1.45,
+        "mainNet": -2.31
+      },
+      "comm_services": {
+        "turnover": 24.89,
+        "turnoverShare": 0.1,
+        "mainNet": -0.18
+      },
+      "auto_robot": {
+        "turnover": 131.23,
+        "turnoverShare": 0.51,
+        "mainNet": 5.7
+      },
+      "auto_control": {
+        "turnover": 158.0,
+        "turnoverShare": 0.61,
+        "mainNet": 4.41
+      },
+      "auto_machine": {
+        "turnover": 257.14,
+        "turnoverShare": 1.0,
+        "mainNet": -17.69
+      },
+      "auto_components": {
+        "turnover": 255.98,
+        "turnoverShare": 1.0,
+        "mainNet": 5.03
+      },
+      "def_aerospace": {
+        "turnover": 138.48,
+        "turnoverShare": 0.54,
+        "mainNet": -13.88
+      },
+      "def_aviation": {
+        "turnover": 114.49,
+        "turnoverShare": 0.45,
+        "mainNet": -1.9
+      },
+      "def_electronics": {
+        "turnover": 271.17,
+        "turnoverShare": 1.05,
+        "mainNet": -15.03
+      },
+      "def_land_sea": {
+        "turnover": 108.84,
+        "turnoverShare": 0.42,
+        "mainNet": -4.35
+      },
+      "newenergy_lithium": {
+        "turnover": 517.03,
+        "turnoverShare": 2.01,
+        "mainNet": -7.21
+      },
+      "newenergy_materials": {
+        "turnover": 194.26,
+        "turnoverShare": 0.76,
+        "mainNet": -2.59
+      },
+      "newenergy_solar": {
+        "turnover": 323.79,
+        "turnoverShare": 1.26,
+        "mainNet": 2.95
+      },
+      "newenergy_wind": {
+        "turnover": 86.84,
+        "turnoverShare": 0.34,
+        "mainNet": -5.87
+      },
+      "newenergy_hydrogen": {
+        "turnover": 3.18,
+        "turnoverShare": 0.01,
+        "mainNet": -0.04
+      },
+      "res_industrial": {
+        "turnover": 568.86,
+        "turnoverShare": 2.21,
+        "mainNet": -0.66
+      },
+      "res_minor": {
+        "turnover": 424.04,
+        "turnoverShare": 1.65,
+        "mainNet": -22.79
+      },
+      "res_precious": {
+        "turnover": 117.65,
+        "turnoverShare": 0.46,
+        "mainNet": -3.14
+      },
+      "med_innovative": {
+        "turnover": 975.01,
+        "turnoverShare": 3.79,
+        "mainNet": 50.82
+      },
+      "med_cxo": {
+        "turnover": 467.9,
+        "turnoverShare": 1.82,
+        "mainNet": 30.82
+      },
+      "med_tcm": {
+        "turnover": 238.88,
+        "turnoverShare": 0.93,
+        "mainNet": -1.7
+      },
+      "med_device": {
+        "turnover": 245.45,
+        "turnoverShare": 0.95,
+        "mainNet": 8.29
+      },
+      "med_services": {
+        "turnover": 57.17,
+        "turnoverShare": 0.22,
+        "mainNet": 3.21
+      },
+      "fin_banks": {
+        "turnover": 319.34,
+        "turnoverShare": 1.24,
+        "mainNet": -22.37
+      },
+      "fin_insurance": {
+        "turnover": 163.58,
+        "turnoverShare": 0.64,
+        "mainNet": 6.7
+      },
+      "fin_brokers": {
+        "turnover": 483.41,
+        "turnoverShare": 1.88,
+        "mainNet": 31.27
+      },
+      "fin_other": {
+        "turnover": 44.28,
+        "turnoverShare": 0.17,
+        "mainNet": -0.81
+      },
       "semiconductor": {
         "turnover": 4614.72,
         "turnoverShare": 17.95,
@@ -2486,42 +5024,222 @@ window.REPLAY_DATA={
         "mainNet": -69.56
       },
       "optical": {
-        "turnover": 1611.41,
-        "turnoverShare": 6.27,
-        "mainNet": -18.96
+        "turnover": 1833.84,
+        "turnoverShare": 7.13,
+        "mainNet": -25.86
       },
       "automation": {
-        "turnover": 786.77,
-        "turnoverShare": 3.06,
-        "mainNet": 10.01
+        "turnover": 802.34,
+        "turnoverShare": 3.12,
+        "mainNet": -2.55
       },
       "defense": {
-        "turnover": 549.74,
-        "turnoverShare": 2.14,
-        "mainNet": -32.31
+        "turnover": 632.97,
+        "turnoverShare": 2.46,
+        "mainNet": -35.16
       },
       "battery": {
-        "turnover": 711.29,
-        "turnoverShare": 2.77,
-        "mainNet": -9.8
+        "turnover": 1125.1,
+        "turnoverShare": 4.38,
+        "mainNet": -12.76
       },
       "resources": {
-        "turnover": 1013.16,
-        "turnoverShare": 3.94,
-        "mainNet": -21.59
+        "turnover": 1110.54,
+        "turnoverShare": 4.32,
+        "mainNet": -26.59
       },
       "medicine": {
-        "turnover": 1734.98,
-        "turnoverShare": 6.75,
-        "mainNet": 80.43
+        "turnover": 1984.41,
+        "turnoverShare": 7.72,
+        "mainNet": 91.44
       },
       "finance": {
-        "turnover": 999.68,
-        "turnoverShare": 3.89,
-        "mainNet": 15.25
+        "turnover": 1010.6,
+        "turnoverShare": 3.93,
+        "mainNet": 14.79
       }
     },
     "2026-07-16": {
+      "semi_equipment": {
+        "turnover": 641.69,
+        "turnoverShare": 2.67,
+        "mainNet": -48.93
+      },
+      "semi_materials": {
+        "turnover": 464.3,
+        "turnoverShare": 1.93,
+        "mainNet": -47.55
+      },
+      "semi_manufacturing": {
+        "turnover": 308.41,
+        "turnoverShare": 1.28,
+        "mainNet": -3.35
+      },
+      "semi_design": {
+        "turnover": 2278.25,
+        "turnoverShare": 9.48,
+        "mainNet": -128.12
+      },
+      "semi_packaging": {
+        "turnover": 606.23,
+        "turnoverShare": 2.52,
+        "mainNet": -28.84
+      },
+      "elec_pcb": {
+        "turnover": 1119.22,
+        "turnoverShare": 4.66,
+        "mainNet": 17.68
+      },
+      "elec_passive": {
+        "turnover": 239.01,
+        "turnoverShare": 0.99,
+        "mainNet": -10.72
+      },
+      "elec_components": {
+        "turnover": 725.64,
+        "turnoverShare": 3.02,
+        "mainNet": -8.67
+      },
+      "comm_optical": {
+        "turnover": 1336.62,
+        "turnoverShare": 5.56,
+        "mainNet": -104.09
+      },
+      "comm_equipment": {
+        "turnover": 408.17,
+        "turnoverShare": 1.7,
+        "mainNet": -1.88
+      },
+      "comm_services": {
+        "turnover": 27.34,
+        "turnoverShare": 0.11,
+        "mainNet": 0.49
+      },
+      "auto_robot": {
+        "turnover": 130.15,
+        "turnoverShare": 0.54,
+        "mainNet": -1.05
+      },
+      "auto_control": {
+        "turnover": 137.55,
+        "turnoverShare": 0.57,
+        "mainNet": -9.48
+      },
+      "auto_machine": {
+        "turnover": 246.74,
+        "turnoverShare": 1.03,
+        "mainNet": -19.85
+      },
+      "auto_components": {
+        "turnover": 288.66,
+        "turnoverShare": 1.2,
+        "mainNet": 0.88
+      },
+      "def_aerospace": {
+        "turnover": 97.99,
+        "turnoverShare": 0.41,
+        "mainNet": -4.8
+      },
+      "def_aviation": {
+        "turnover": 89.82,
+        "turnoverShare": 0.37,
+        "mainNet": -3.12
+      },
+      "def_electronics": {
+        "turnover": 237.74,
+        "turnoverShare": 0.99,
+        "mainNet": -4.99
+      },
+      "def_land_sea": {
+        "turnover": 107.02,
+        "turnoverShare": 0.45,
+        "mainNet": -5.81
+      },
+      "newenergy_lithium": {
+        "turnover": 465.42,
+        "turnoverShare": 1.94,
+        "mainNet": -15.65
+      },
+      "newenergy_materials": {
+        "turnover": 194.98,
+        "turnoverShare": 0.81,
+        "mainNet": -6.38
+      },
+      "newenergy_solar": {
+        "turnover": 299.17,
+        "turnoverShare": 1.24,
+        "mainNet": -14.07
+      },
+      "newenergy_wind": {
+        "turnover": 78.69,
+        "turnoverShare": 0.33,
+        "mainNet": -4.31
+      },
+      "newenergy_hydrogen": {
+        "turnover": 3.33,
+        "turnoverShare": 0.01,
+        "mainNet": -0.25
+      },
+      "res_industrial": {
+        "turnover": 473.75,
+        "turnoverShare": 1.97,
+        "mainNet": -11.13
+      },
+      "res_minor": {
+        "turnover": 350.17,
+        "turnoverShare": 1.46,
+        "mainNet": -22.47
+      },
+      "res_precious": {
+        "turnover": 103.39,
+        "turnoverShare": 0.43,
+        "mainNet": -1.48
+      },
+      "med_innovative": {
+        "turnover": 858.99,
+        "turnoverShare": 3.57,
+        "mainNet": -14.71
+      },
+      "med_cxo": {
+        "turnover": 446.25,
+        "turnoverShare": 1.86,
+        "mainNet": -16.94
+      },
+      "med_tcm": {
+        "turnover": 251.17,
+        "turnoverShare": 1.05,
+        "mainNet": 4.56
+      },
+      "med_device": {
+        "turnover": 238.85,
+        "turnoverShare": 0.99,
+        "mainNet": -1.0
+      },
+      "med_services": {
+        "turnover": 64.51,
+        "turnoverShare": 0.27,
+        "mainNet": 3.89
+      },
+      "fin_banks": {
+        "turnover": 263.4,
+        "turnoverShare": 1.1,
+        "mainNet": -13.31
+      },
+      "fin_insurance": {
+        "turnover": 97.66,
+        "turnoverShare": 0.41,
+        "mainNet": -5.48
+      },
+      "fin_brokers": {
+        "turnover": 351.15,
+        "turnoverShare": 1.46,
+        "mainNet": -33.66
+      },
+      "fin_other": {
+        "turnover": 35.06,
+        "turnoverShare": 0.15,
+        "mainNet": -2.17
+      },
       "semiconductor": {
         "turnover": 4298.88,
         "turnoverShare": 17.89,
@@ -2533,42 +5251,222 @@ window.REPLAY_DATA={
         "mainNet": -1.71
       },
       "optical": {
-        "turnover": 1501.53,
-        "turnoverShare": 6.25,
-        "mainNet": -104.92
+        "turnover": 1772.13,
+        "turnoverShare": 7.37,
+        "mainNet": -105.48
       },
       "automation": {
-        "turnover": 850.08,
-        "turnoverShare": 3.54,
-        "mainNet": -9.91
+        "turnover": 803.1,
+        "turnoverShare": 3.34,
+        "mainNet": -29.51
       },
       "defense": {
-        "turnover": 449.74,
-        "turnoverShare": 1.87,
-        "mainNet": -14.19
+        "turnover": 532.58,
+        "turnoverShare": 2.22,
+        "mainNet": -18.72
       },
       "battery": {
-        "turnover": 660.41,
-        "turnoverShare": 2.75,
-        "mainNet": -22.02
+        "turnover": 1041.6,
+        "turnoverShare": 4.33,
+        "mainNet": -40.66
       },
       "resources": {
-        "turnover": 842.08,
-        "turnoverShare": 3.5,
-        "mainNet": -27.05
+        "turnover": 927.31,
+        "turnoverShare": 3.86,
+        "mainNet": -35.08
       },
       "medicine": {
-        "turnover": 1644.56,
-        "turnoverShare": 6.84,
-        "mainNet": -25.37
+        "turnover": 1859.77,
+        "turnoverShare": 7.74,
+        "mainNet": -24.2
       },
       "finance": {
-        "turnover": 738.44,
-        "turnoverShare": 3.07,
-        "mainNet": -54.36
+        "turnover": 747.27,
+        "turnoverShare": 3.11,
+        "mainNet": -54.62
       }
     },
     "2026-07-17": {
+      "semi_equipment": {
+        "turnover": 725.34,
+        "turnoverShare": 2.73,
+        "mainNet": -33.33
+      },
+      "semi_materials": {
+        "turnover": 440.1,
+        "turnoverShare": 1.66,
+        "mainNet": -34.92
+      },
+      "semi_manufacturing": {
+        "turnover": 386.5,
+        "turnoverShare": 1.46,
+        "mainNet": -18.23
+      },
+      "semi_design": {
+        "turnover": 2452.72,
+        "turnoverShare": 9.24,
+        "mainNet": -131.07
+      },
+      "semi_packaging": {
+        "turnover": 602.79,
+        "turnoverShare": 2.27,
+        "mainNet": -24.05
+      },
+      "elec_pcb": {
+        "turnover": 1132.62,
+        "turnoverShare": 4.27,
+        "mainNet": -105.98
+      },
+      "elec_passive": {
+        "turnover": 242.43,
+        "turnoverShare": 0.91,
+        "mainNet": -15.02
+      },
+      "elec_components": {
+        "turnover": 794.28,
+        "turnoverShare": 2.99,
+        "mainNet": -67.02
+      },
+      "comm_optical": {
+        "turnover": 1706.73,
+        "turnoverShare": 6.43,
+        "mainNet": -173.38
+      },
+      "comm_equipment": {
+        "turnover": 407.98,
+        "turnoverShare": 1.54,
+        "mainNet": -33.55
+      },
+      "comm_services": {
+        "turnover": 27.43,
+        "turnoverShare": 0.1,
+        "mainNet": -1.11
+      },
+      "auto_robot": {
+        "turnover": 120.62,
+        "turnoverShare": 0.45,
+        "mainNet": -10.7
+      },
+      "auto_control": {
+        "turnover": 166.8,
+        "turnoverShare": 0.63,
+        "mainNet": -12.6
+      },
+      "auto_machine": {
+        "turnover": 262.53,
+        "turnoverShare": 0.99,
+        "mainNet": -25.05
+      },
+      "auto_components": {
+        "turnover": 351.87,
+        "turnoverShare": 1.33,
+        "mainNet": -12.86
+      },
+      "def_aerospace": {
+        "turnover": 107.34,
+        "turnoverShare": 0.4,
+        "mainNet": -6.11
+      },
+      "def_aviation": {
+        "turnover": 107.53,
+        "turnoverShare": 0.41,
+        "mainNet": -6.9
+      },
+      "def_electronics": {
+        "turnover": 267.49,
+        "turnoverShare": 1.01,
+        "mainNet": -17.98
+      },
+      "def_land_sea": {
+        "turnover": 108.59,
+        "turnoverShare": 0.41,
+        "mainNet": -3.9
+      },
+      "newenergy_lithium": {
+        "turnover": 562.15,
+        "turnoverShare": 2.12,
+        "mainNet": -5.28
+      },
+      "newenergy_materials": {
+        "turnover": 217.24,
+        "turnoverShare": 0.82,
+        "mainNet": -10.69
+      },
+      "newenergy_solar": {
+        "turnover": 326.64,
+        "turnoverShare": 1.23,
+        "mainNet": -13.9
+      },
+      "newenergy_wind": {
+        "turnover": 102.23,
+        "turnoverShare": 0.39,
+        "mainNet": -5.08
+      },
+      "newenergy_hydrogen": {
+        "turnover": 3.91,
+        "turnoverShare": 0.01,
+        "mainNet": -0.21
+      },
+      "res_industrial": {
+        "turnover": 518.75,
+        "turnoverShare": 1.95,
+        "mainNet": -25.7
+      },
+      "res_minor": {
+        "turnover": 388.92,
+        "turnoverShare": 1.46,
+        "mainNet": -28.22
+      },
+      "res_precious": {
+        "turnover": 126.71,
+        "turnoverShare": 0.48,
+        "mainNet": -4.72
+      },
+      "med_innovative": {
+        "turnover": 788.86,
+        "turnoverShare": 2.97,
+        "mainNet": -60.5
+      },
+      "med_cxo": {
+        "turnover": 346.18,
+        "turnoverShare": 1.3,
+        "mainNet": -27.62
+      },
+      "med_tcm": {
+        "turnover": 236.78,
+        "turnoverShare": 0.89,
+        "mainNet": -12.72
+      },
+      "med_device": {
+        "turnover": 230.98,
+        "turnoverShare": 0.87,
+        "mainNet": -11.92
+      },
+      "med_services": {
+        "turnover": 60.17,
+        "turnoverShare": 0.23,
+        "mainNet": -3.69
+      },
+      "fin_banks": {
+        "turnover": 400.41,
+        "turnoverShare": 1.51,
+        "mainNet": -9.92
+      },
+      "fin_insurance": {
+        "turnover": 119.25,
+        "turnoverShare": 0.45,
+        "mainNet": -4.93
+      },
+      "fin_brokers": {
+        "turnover": 443.69,
+        "turnoverShare": 1.67,
+        "mainNet": -28.46
+      },
+      "fin_other": {
+        "turnover": 40.89,
+        "turnoverShare": 0.15,
+        "mainNet": -1.73
+      },
       "semiconductor": {
         "turnover": 4607.43,
         "turnoverShare": 17.36,
@@ -2580,42 +5478,222 @@ window.REPLAY_DATA={
         "mainNet": -188.01
       },
       "optical": {
-        "turnover": 1880.03,
-        "turnoverShare": 7.08,
-        "mainNet": -179.75
+        "turnover": 2142.15,
+        "turnoverShare": 8.07,
+        "mainNet": -208.04
       },
       "automation": {
-        "turnover": 923.73,
-        "turnoverShare": 3.48,
-        "mainNet": -64.16
+        "turnover": 901.83,
+        "turnoverShare": 3.4,
+        "mainNet": -61.21
       },
       "defense": {
-        "turnover": 509.86,
-        "turnoverShare": 1.92,
-        "mainNet": -32.09
+        "turnover": 590.96,
+        "turnoverShare": 2.23,
+        "mainNet": -34.89
       },
       "battery": {
-        "turnover": 779.39,
-        "turnoverShare": 2.94,
-        "mainNet": -15.97
+        "turnover": 1212.17,
+        "turnoverShare": 4.57,
+        "mainNet": -35.16
       },
       "resources": {
-        "turnover": 930.65,
-        "turnoverShare": 3.51,
-        "mainNet": -48.03
+        "turnover": 1034.39,
+        "turnoverShare": 3.9,
+        "mainNet": -58.63
       },
       "medicine": {
-        "turnover": 1457.89,
-        "turnoverShare": 5.49,
-        "mainNet": -102.11
+        "turnover": 1662.96,
+        "turnoverShare": 6.26,
+        "mainNet": -116.45
       },
       "finance": {
-        "turnover": 992.92,
-        "turnoverShare": 3.74,
+        "turnover": 1004.24,
+        "turnoverShare": 3.78,
         "mainNet": -45.04
       }
     },
     "2026-07-20": {
+      "semi_equipment": {
+        "turnover": 724.24,
+        "turnoverShare": 2.68,
+        "mainNet": -9.32
+      },
+      "semi_materials": {
+        "turnover": 410.14,
+        "turnoverShare": 1.52,
+        "mainNet": -5.52
+      },
+      "semi_manufacturing": {
+        "turnover": 362.83,
+        "turnoverShare": 1.34,
+        "mainNet": -1.73
+      },
+      "semi_design": {
+        "turnover": 2397.97,
+        "turnoverShare": 8.88,
+        "mainNet": -54.31
+      },
+      "semi_packaging": {
+        "turnover": 524.24,
+        "turnoverShare": 1.94,
+        "mainNet": -27.49
+      },
+      "elec_pcb": {
+        "turnover": 1050.24,
+        "turnoverShare": 3.89,
+        "mainNet": -54.76
+      },
+      "elec_passive": {
+        "turnover": 234.42,
+        "turnoverShare": 0.87,
+        "mainNet": 0.42
+      },
+      "elec_components": {
+        "turnover": 775.89,
+        "turnoverShare": 2.87,
+        "mainNet": -20.01
+      },
+      "comm_optical": {
+        "turnover": 1684.82,
+        "turnoverShare": 6.24,
+        "mainNet": 0.41
+      },
+      "comm_equipment": {
+        "turnover": 398.16,
+        "turnoverShare": 1.47,
+        "mainNet": -23.89
+      },
+      "comm_services": {
+        "turnover": 33.11,
+        "turnoverShare": 0.12,
+        "mainNet": 0.96
+      },
+      "auto_robot": {
+        "turnover": 114.47,
+        "turnoverShare": 0.42,
+        "mainNet": -5.02
+      },
+      "auto_control": {
+        "turnover": 174.94,
+        "turnoverShare": 0.65,
+        "mainNet": -10.19
+      },
+      "auto_machine": {
+        "turnover": 255.84,
+        "turnoverShare": 0.95,
+        "mainNet": -12.72
+      },
+      "auto_components": {
+        "turnover": 348.42,
+        "turnoverShare": 1.29,
+        "mainNet": -8.99
+      },
+      "def_aerospace": {
+        "turnover": 87.14,
+        "turnoverShare": 0.32,
+        "mainNet": -7.81
+      },
+      "def_aviation": {
+        "turnover": 121.78,
+        "turnoverShare": 0.45,
+        "mainNet": -3.71
+      },
+      "def_electronics": {
+        "turnover": 264.75,
+        "turnoverShare": 0.98,
+        "mainNet": -6.42
+      },
+      "def_land_sea": {
+        "turnover": 110.83,
+        "turnoverShare": 0.41,
+        "mainNet": -2.99
+      },
+      "newenergy_lithium": {
+        "turnover": 576.73,
+        "turnoverShare": 2.13,
+        "mainNet": -18.02
+      },
+      "newenergy_materials": {
+        "turnover": 241.59,
+        "turnoverShare": 0.89,
+        "mainNet": -7.92
+      },
+      "newenergy_solar": {
+        "turnover": 368.81,
+        "turnoverShare": 1.36,
+        "mainNet": -9.49
+      },
+      "newenergy_wind": {
+        "turnover": 97.61,
+        "turnoverShare": 0.36,
+        "mainNet": -3.12
+      },
+      "newenergy_hydrogen": {
+        "turnover": 4.22,
+        "turnoverShare": 0.02,
+        "mainNet": -0.28
+      },
+      "res_industrial": {
+        "turnover": 510.04,
+        "turnoverShare": 1.89,
+        "mainNet": 0.59
+      },
+      "res_minor": {
+        "turnover": 419.95,
+        "turnoverShare": 1.55,
+        "mainNet": -5.38
+      },
+      "res_precious": {
+        "turnover": 110.93,
+        "turnoverShare": 0.41,
+        "mainNet": -1.93
+      },
+      "med_innovative": {
+        "turnover": 658.87,
+        "turnoverShare": 2.44,
+        "mainNet": -14.88
+      },
+      "med_cxo": {
+        "turnover": 314.08,
+        "turnoverShare": 1.16,
+        "mainNet": -4.71
+      },
+      "med_tcm": {
+        "turnover": 220.13,
+        "turnoverShare": 0.81,
+        "mainNet": -6.67
+      },
+      "med_device": {
+        "turnover": 213.65,
+        "turnoverShare": 0.79,
+        "mainNet": -7.22
+      },
+      "med_services": {
+        "turnover": 53.16,
+        "turnoverShare": 0.2,
+        "mainNet": 0.17
+      },
+      "fin_banks": {
+        "turnover": 455.98,
+        "turnoverShare": 1.69,
+        "mainNet": 4.84
+      },
+      "fin_insurance": {
+        "turnover": 179.39,
+        "turnoverShare": 0.66,
+        "mainNet": 9.39
+      },
+      "fin_brokers": {
+        "turnover": 459.73,
+        "turnoverShare": 1.7,
+        "mainNet": -11.0
+      },
+      "fin_other": {
+        "turnover": 46.15,
+        "turnoverShare": 0.17,
+        "mainNet": -1.37
+      },
       "semiconductor": {
         "turnover": 4419.42,
         "turnoverShare": 16.36,
@@ -2627,42 +5705,222 @@ window.REPLAY_DATA={
         "mainNet": -74.35
       },
       "optical": {
-        "turnover": 1866.0,
-        "turnoverShare": 6.91,
-        "mainNet": -6.91
+        "turnover": 2116.1,
+        "turnoverShare": 7.83,
+        "mainNet": -22.52
       },
       "automation": {
-        "turnover": 902.52,
-        "turnoverShare": 3.34,
-        "mainNet": -40.86
+        "turnover": 893.68,
+        "turnoverShare": 3.31,
+        "mainNet": -36.93
       },
       "defense": {
-        "turnover": 505.18,
-        "turnoverShare": 1.87,
-        "mainNet": -18.61
+        "turnover": 584.5,
+        "turnoverShare": 2.16,
+        "mainNet": -20.93
       },
       "battery": {
-        "turnover": 818.32,
-        "turnoverShare": 3.03,
-        "mainNet": -25.94
+        "turnover": 1288.96,
+        "turnoverShare": 4.77,
+        "mainNet": -38.83
       },
       "resources": {
-        "turnover": 941.01,
-        "turnoverShare": 3.48,
-        "mainNet": -2.94
+        "turnover": 1040.92,
+        "turnoverShare": 3.85,
+        "mainNet": -6.72
       },
       "medicine": {
-        "turnover": 1289.87,
-        "turnoverShare": 4.77,
-        "mainNet": -26.29
+        "turnover": 1459.88,
+        "turnoverShare": 5.4,
+        "mainNet": -33.31
       },
       "finance": {
-        "turnover": 1128.76,
-        "turnoverShare": 4.18,
-        "mainNet": 2.08
+        "turnover": 1141.25,
+        "turnoverShare": 4.22,
+        "mainNet": 1.86
       }
     },
     "2026-07-21": {
+      "semi_equipment": {
+        "turnover": 842.14,
+        "turnoverShare": 2.85,
+        "mainNet": 37.67
+      },
+      "semi_materials": {
+        "turnover": 521.24,
+        "turnoverShare": 1.76,
+        "mainNet": 16.12
+      },
+      "semi_manufacturing": {
+        "turnover": 429.64,
+        "turnoverShare": 1.45,
+        "mainNet": 22.06
+      },
+      "semi_design": {
+        "turnover": 2761.7,
+        "turnoverShare": 9.34,
+        "mainNet": 96.32
+      },
+      "semi_packaging": {
+        "turnover": 644.09,
+        "turnoverShare": 2.18,
+        "mainNet": 30.15
+      },
+      "elec_pcb": {
+        "turnover": 1260.5,
+        "turnoverShare": 4.26,
+        "mainNet": 23.89
+      },
+      "elec_passive": {
+        "turnover": 313.62,
+        "turnoverShare": 1.06,
+        "mainNet": 11.07
+      },
+      "elec_components": {
+        "turnover": 886.57,
+        "turnoverShare": 3.0,
+        "mainNet": 43.89
+      },
+      "comm_optical": {
+        "turnover": 2030.3,
+        "turnoverShare": 6.87,
+        "mainNet": 72.69
+      },
+      "comm_equipment": {
+        "turnover": 397.58,
+        "turnoverShare": 1.34,
+        "mainNet": 3.09
+      },
+      "comm_services": {
+        "turnover": 32.98,
+        "turnoverShare": 0.11,
+        "mainNet": -0.02
+      },
+      "auto_robot": {
+        "turnover": 122.29,
+        "turnoverShare": 0.41,
+        "mainNet": -1.16
+      },
+      "auto_control": {
+        "turnover": 192.42,
+        "turnoverShare": 0.65,
+        "mainNet": 4.32
+      },
+      "auto_machine": {
+        "turnover": 293.62,
+        "turnoverShare": 0.99,
+        "mainNet": 2.0
+      },
+      "auto_components": {
+        "turnover": 352.55,
+        "turnoverShare": 1.19,
+        "mainNet": 1.29
+      },
+      "def_aerospace": {
+        "turnover": 93.44,
+        "turnoverShare": 0.32,
+        "mainNet": -1.28
+      },
+      "def_aviation": {
+        "turnover": 125.31,
+        "turnoverShare": 0.42,
+        "mainNet": -0.17
+      },
+      "def_electronics": {
+        "turnover": 318.06,
+        "turnoverShare": 1.08,
+        "mainNet": 5.84
+      },
+      "def_land_sea": {
+        "turnover": 105.71,
+        "turnoverShare": 0.36,
+        "mainNet": 0.93
+      },
+      "newenergy_lithium": {
+        "turnover": 592.43,
+        "turnoverShare": 2.0,
+        "mainNet": 14.99
+      },
+      "newenergy_materials": {
+        "turnover": 272.51,
+        "turnoverShare": 0.92,
+        "mainNet": 8.98
+      },
+      "newenergy_solar": {
+        "turnover": 368.97,
+        "turnoverShare": 1.25,
+        "mainNet": 4.55
+      },
+      "newenergy_wind": {
+        "turnover": 97.72,
+        "turnoverShare": 0.33,
+        "mainNet": 1.04
+      },
+      "newenergy_hydrogen": {
+        "turnover": 4.86,
+        "turnoverShare": 0.02,
+        "mainNet": -0.23
+      },
+      "res_industrial": {
+        "turnover": 604.73,
+        "turnoverShare": 2.05,
+        "mainNet": 28.02
+      },
+      "res_minor": {
+        "turnover": 531.7,
+        "turnoverShare": 1.8,
+        "mainNet": 19.53
+      },
+      "res_precious": {
+        "turnover": 158.88,
+        "turnoverShare": 0.54,
+        "mainNet": 9.17
+      },
+      "med_innovative": {
+        "turnover": 655.54,
+        "turnoverShare": 2.22,
+        "mainNet": -0.42
+      },
+      "med_cxo": {
+        "turnover": 290.1,
+        "turnoverShare": 0.98,
+        "mainNet": 2.43
+      },
+      "med_tcm": {
+        "turnover": 204.71,
+        "turnoverShare": 0.69,
+        "mainNet": -4.28
+      },
+      "med_device": {
+        "turnover": 215.15,
+        "turnoverShare": 0.73,
+        "mainNet": -3.44
+      },
+      "med_services": {
+        "turnover": 49.51,
+        "turnoverShare": 0.17,
+        "mainNet": -0.85
+      },
+      "fin_banks": {
+        "turnover": 456.21,
+        "turnoverShare": 1.54,
+        "mainNet": -24.45
+      },
+      "fin_insurance": {
+        "turnover": 168.5,
+        "turnoverShare": 0.57,
+        "mainNet": 3.34
+      },
+      "fin_brokers": {
+        "turnover": 449.18,
+        "turnoverShare": 1.52,
+        "mainNet": -5.23
+      },
+      "fin_other": {
+        "turnover": 65.68,
+        "turnoverShare": 0.22,
+        "mainNet": 1.71
+      },
       "semiconductor": {
         "turnover": 5198.81,
         "turnoverShare": 17.58,
@@ -2674,42 +5932,222 @@ window.REPLAY_DATA={
         "mainNet": 78.86
       },
       "optical": {
-        "turnover": 2226.36,
-        "turnoverShare": 7.53,
-        "mainNet": 73.83
+        "turnover": 2460.86,
+        "turnoverShare": 8.32,
+        "mainNet": 75.76
       },
       "automation": {
-        "turnover": 922.58,
-        "turnoverShare": 3.12,
-        "mainNet": 6.64
+        "turnover": 960.88,
+        "turnoverShare": 3.25,
+        "mainNet": 6.45
       },
       "defense": {
-        "turnover": 567.96,
-        "turnoverShare": 1.92,
-        "mainNet": 5.27
+        "turnover": 642.52,
+        "turnoverShare": 2.17,
+        "mainNet": 5.32
       },
       "battery": {
-        "turnover": 864.94,
-        "turnoverShare": 2.93,
-        "mainNet": 23.97
+        "turnover": 1336.49,
+        "turnoverShare": 4.52,
+        "mainNet": 29.34
       },
       "resources": {
-        "turnover": 1135.27,
-        "turnoverShare": 3.84,
-        "mainNet": 44.51
+        "turnover": 1295.31,
+        "turnoverShare": 4.38,
+        "mainNet": 56.72
       },
       "medicine": {
-        "turnover": 1243.61,
-        "turnoverShare": 4.21,
-        "mainNet": -5.56
+        "turnover": 1415.01,
+        "turnoverShare": 4.79,
+        "mainNet": -6.55
       },
       "finance": {
-        "turnover": 1125.79,
-        "turnoverShare": 3.81,
-        "mainNet": -24.98
+        "turnover": 1139.56,
+        "turnoverShare": 3.85,
+        "mainNet": -24.64
       }
     },
     "2026-07-22": {
+      "semi_equipment": {
+        "turnover": 897.4,
+        "turnoverShare": 3.38,
+        "mainNet": 10.71
+      },
+      "semi_materials": {
+        "turnover": 495.73,
+        "turnoverShare": 1.87,
+        "mainNet": 0.61
+      },
+      "semi_manufacturing": {
+        "turnover": 368.34,
+        "turnoverShare": 1.39,
+        "mainNet": -10.14
+      },
+      "semi_design": {
+        "turnover": 2713.98,
+        "turnoverShare": 10.23,
+        "mainNet": -5.88
+      },
+      "semi_packaging": {
+        "turnover": 730.47,
+        "turnoverShare": 2.75,
+        "mainNet": 21.18
+      },
+      "elec_pcb": {
+        "turnover": 1160.98,
+        "turnoverShare": 4.38,
+        "mainNet": -15.45
+      },
+      "elec_passive": {
+        "turnover": 293.44,
+        "turnoverShare": 1.11,
+        "mainNet": 2.79
+      },
+      "elec_components": {
+        "turnover": 765.7,
+        "turnoverShare": 2.89,
+        "mainNet": 3.76
+      },
+      "comm_optical": {
+        "turnover": 1679.9,
+        "turnoverShare": 6.33,
+        "mainNet": -118.98
+      },
+      "comm_equipment": {
+        "turnover": 478.85,
+        "turnoverShare": 1.8,
+        "mainNet": 41.86
+      },
+      "comm_services": {
+        "turnover": 32.85,
+        "turnoverShare": 0.12,
+        "mainNet": -0.35
+      },
+      "auto_robot": {
+        "turnover": 93.49,
+        "turnoverShare": 0.35,
+        "mainNet": -1.59
+      },
+      "auto_control": {
+        "turnover": 158.27,
+        "turnoverShare": 0.6,
+        "mainNet": 0.82
+      },
+      "auto_machine": {
+        "turnover": 266.56,
+        "turnoverShare": 1.0,
+        "mainNet": 1.23
+      },
+      "auto_components": {
+        "turnover": 267.78,
+        "turnoverShare": 1.01,
+        "mainNet": -3.64
+      },
+      "def_aerospace": {
+        "turnover": 75.98,
+        "turnoverShare": 0.29,
+        "mainNet": -3.71
+      },
+      "def_aviation": {
+        "turnover": 98.12,
+        "turnoverShare": 0.37,
+        "mainNet": 1.25
+      },
+      "def_electronics": {
+        "turnover": 295.39,
+        "turnoverShare": 1.11,
+        "mainNet": 3.5
+      },
+      "def_land_sea": {
+        "turnover": 102.34,
+        "turnoverShare": 0.39,
+        "mainNet": 0.03
+      },
+      "newenergy_lithium": {
+        "turnover": 471.47,
+        "turnoverShare": 1.78,
+        "mainNet": -9.13
+      },
+      "newenergy_materials": {
+        "turnover": 219.19,
+        "turnoverShare": 0.83,
+        "mainNet": -1.49
+      },
+      "newenergy_solar": {
+        "turnover": 355.65,
+        "turnoverShare": 1.34,
+        "mainNet": 8.25
+      },
+      "newenergy_wind": {
+        "turnover": 77.07,
+        "turnoverShare": 0.29,
+        "mainNet": -1.16
+      },
+      "newenergy_hydrogen": {
+        "turnover": 3.41,
+        "turnoverShare": 0.01,
+        "mainNet": -0.36
+      },
+      "res_industrial": {
+        "turnover": 726.68,
+        "turnoverShare": 2.74,
+        "mainNet": 25.06
+      },
+      "res_minor": {
+        "turnover": 542.58,
+        "turnoverShare": 2.05,
+        "mainNet": 19.7
+      },
+      "res_precious": {
+        "turnover": 231.21,
+        "turnoverShare": 0.87,
+        "mainNet": 16.27
+      },
+      "med_innovative": {
+        "turnover": 605.08,
+        "turnoverShare": 2.28,
+        "mainNet": -7.62
+      },
+      "med_cxo": {
+        "turnover": 286.57,
+        "turnoverShare": 1.08,
+        "mainNet": -2.95
+      },
+      "med_tcm": {
+        "turnover": 168.94,
+        "turnoverShare": 0.64,
+        "mainNet": -4.64
+      },
+      "med_device": {
+        "turnover": 178.52,
+        "turnoverShare": 0.67,
+        "mainNet": 0.55
+      },
+      "med_services": {
+        "turnover": 39.76,
+        "turnoverShare": 0.15,
+        "mainNet": 0.04
+      },
+      "fin_banks": {
+        "turnover": 314.92,
+        "turnoverShare": 1.19,
+        "mainNet": -7.08
+      },
+      "fin_insurance": {
+        "turnover": 131.35,
+        "turnoverShare": 0.5,
+        "mainNet": 6.1
+      },
+      "fin_brokers": {
+        "turnover": 322.43,
+        "turnoverShare": 1.22,
+        "mainNet": -0.31
+      },
+      "fin_other": {
+        "turnover": 50.25,
+        "turnoverShare": 0.19,
+        "mainNet": -1.03
+      },
       "semiconductor": {
         "turnover": 5205.91,
         "turnoverShare": 19.62,
@@ -2721,39 +6159,39 @@ window.REPLAY_DATA={
         "mainNet": -8.9
       },
       "optical": {
-        "turnover": 1850.76,
-        "turnoverShare": 6.98,
-        "mainNet": -114.64
+        "turnover": 2191.6,
+        "turnoverShare": 8.26,
+        "mainNet": -77.47
       },
       "automation": {
-        "turnover": 864.17,
-        "turnoverShare": 3.26,
-        "mainNet": 33.52
+        "turnover": 786.09,
+        "turnoverShare": 2.96,
+        "mainNet": -3.18
       },
       "defense": {
-        "turnover": 495.27,
-        "turnoverShare": 1.87,
-        "mainNet": 0.54
+        "turnover": 571.83,
+        "turnoverShare": 2.16,
+        "mainNet": 1.06
       },
       "battery": {
-        "turnover": 690.66,
-        "turnoverShare": 2.6,
-        "mainNet": -10.62
+        "turnover": 1126.78,
+        "turnoverShare": 4.25,
+        "mainNet": -3.89
       },
       "resources": {
-        "turnover": 1349.75,
-        "turnoverShare": 5.09,
-        "mainNet": 55.82
+        "turnover": 1500.46,
+        "turnoverShare": 5.66,
+        "mainNet": 61.03
       },
       "medicine": {
-        "turnover": 1120.84,
-        "turnoverShare": 4.22,
-        "mainNet": -14.8
+        "turnover": 1278.86,
+        "turnoverShare": 4.82,
+        "mainNet": -14.61
       },
       "finance": {
-        "turnover": 808.7,
-        "turnoverShare": 3.05,
-        "mainNet": -2.33
+        "turnover": 818.95,
+        "turnoverShare": 3.09,
+        "mainNet": -2.32
       }
     }
   },

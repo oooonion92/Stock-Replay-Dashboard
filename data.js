@@ -16,7 +16,8 @@ window.REPLAY_DATA={
     "2026-07-16",
     "2026-07-17",
     "2026-07-20",
-    "2026-07-21"
+    "2026-07-21",
+    "2026-07-22"
   ],
   "reports": {
     "2026-07-03": {
@@ -1742,6 +1743,103 @@ window.REPLAY_DATA={
         }
       ],
       "fullReport": "reports/20260721.html"
+    },
+    "2026-07-22": {
+      "market": {
+        "total": 33,
+        "sentiment": 16,
+        "technical": 17,
+        "status": "风险释放",
+        "summary": "蓝色风险释放。上证收3867.03、较前收微涨0.07%，但全A仅1432家上涨、3649家下跌，中位跌1.27%；指数红盘没有转化为普遍赚钱效应，昨日强势股与科技高弹性方向下午集中回落。",
+        "paths": [
+          {
+            "tone": "red",
+            "title": "红：放量突破3884并守住3861",
+            "text": "要求全市场中位涨幅转正，昨日强势股重新获得正溢价，科技容量核心同步收回VWAP。；突破后等待回踩3861—3847不破；30分钟继续上行并形成新的同级别确认后，才提高进攻等级。"
+          },
+          {
+            "tone": "yellow",
+            "title": "黄：在3847—3884区间震荡",
+            "text": "按下跌结构中的反弹消化处理，只观察能够守住VWAP并持续强于指数的核心。；09:30—10:00不追买；科技方向先验证下午抛压能否收敛，再看回踩承接。"
+          },
+          {
+            "tone": "blue",
+            "title": "蓝：跌破3847且不能快速收回",
+            "text": "视为本轮30分钟反弹进一步转弱，暂停新增追涨并降低高弹性方向暴露。；若再跌破3741，则日线与30分钟向下结构重新共振，继续以风险控制为先。"
+          }
+        ]
+      },
+      "stocks": [
+        {
+          "symbol": "sz002463",
+          "name": "沪电股份",
+          "structure": 0,
+          "support": 0,
+          "relative": 13,
+          "risk": 3,
+          "total": 16,
+          "status": "禁止左侧"
+        },
+        {
+          "symbol": "sz002384",
+          "name": "东山精密",
+          "structure": 0,
+          "support": 0,
+          "relative": 13,
+          "risk": 1,
+          "total": 14,
+          "status": "禁止左侧"
+        },
+        {
+          "symbol": "sh588710",
+          "name": "科创半导体设备ETF",
+          "structure": 19,
+          "support": 0,
+          "relative": 11,
+          "risk": 5,
+          "total": 35,
+          "status": "防守观察"
+        }
+      ],
+      "experts": [
+        {
+          "tag": "科技分化",
+          "source": "NGA / fuelish · 15:51",
+          "quote": "下午科技跳水很正常，昨天救市抄底的资金兑现走人。",
+          "meaning": "昨日强修复形成的浮盈会转化为次日抛压，需要用承接而非叙事确认。",
+          "test": "不追高开，先验证科技核心能否守住VWAP与日内低点。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207267&pid=876034797"
+        },
+        {
+          "tag": "高波动风险",
+          "source": "NGA / fuelish · 17:36",
+          "quote": "走势呈现较强的趋同性，振幅很大，大资金的做T天堂。",
+          "meaning": "流动性带来大振幅，不等于趋势承接，消息扰动时回撤也会同步放大。",
+          "test": "东山只在收回VWAP并降低日内振幅后恢复评价。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207267&pid=876048705"
+        },
+        {
+          "tag": "方向筛选",
+          "source": "虎扑 / hawk404 · 15:19",
+          "quote": "今天盘面科技为数不多的亮点就是交换机、NPO、封测、算力。",
+          "meaning": "科技并非整体延续，应按细分强度与核心承接筛选，不能用板块标签概括全部个股。",
+          "test": "优先验证封测与算力核心的次日溢价，弱势细分不做扩散。",
+          "result": "pending",
+          "url": "https://my.hupu.com/34528560488260?tabKey=2#reply-7c673fafb02d7a23"
+        },
+        {
+          "tag": "持续性",
+          "source": "虎扑 / 华福证券福清清宏路营业部 · 15:47",
+          "quote": "是啊，本来就难。",
+          "meaning": "持续性没有建立时，应降低后排和追涨策略的权重。",
+          "test": "只保留可观察、可验证的核心，连续负溢价时暂停追涨。",
+          "result": "pending",
+          "url": "https://my.hupu.com/78406233693990?tabKey=2#reply-36b8f781a41f758b"
+        }
+      ],
+      "fullReport": "reports/20260722.html"
     }
   },
   "sectorFlowConfig": {
@@ -2609,6 +2707,53 @@ window.REPLAY_DATA={
         "turnover": 1125.79,
         "turnoverShare": 3.81,
         "mainNet": -24.98
+      }
+    },
+    "2026-07-22": {
+      "semiconductor": {
+        "turnover": 5205.91,
+        "turnoverShare": 19.62,
+        "mainNet": null
+      },
+      "electronics": {
+        "turnover": 2220.12,
+        "turnoverShare": 8.37,
+        "mainNet": null
+      },
+      "optical": {
+        "turnover": 1850.76,
+        "turnoverShare": 6.98,
+        "mainNet": null
+      },
+      "automation": {
+        "turnover": 864.17,
+        "turnoverShare": 3.26,
+        "mainNet": null
+      },
+      "defense": {
+        "turnover": 495.27,
+        "turnoverShare": 1.87,
+        "mainNet": null
+      },
+      "battery": {
+        "turnover": 690.66,
+        "turnoverShare": 2.6,
+        "mainNet": null
+      },
+      "resources": {
+        "turnover": 1349.75,
+        "turnoverShare": 5.09,
+        "mainNet": null
+      },
+      "medicine": {
+        "turnover": 1120.84,
+        "turnoverShare": 4.22,
+        "mainNet": null
+      },
+      "finance": {
+        "turnover": 808.7,
+        "turnoverShare": 3.05,
+        "mainNet": null
       }
     }
   }

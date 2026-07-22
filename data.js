@@ -2713,48 +2713,51 @@ window.REPLAY_DATA={
       "semiconductor": {
         "turnover": 5205.91,
         "turnoverShare": 19.62,
-        "mainNet": null
+        "mainNet": 16.48
       },
       "electronics": {
         "turnover": 2220.12,
         "turnoverShare": 8.37,
-        "mainNet": null
+        "mainNet": -8.9
       },
       "optical": {
         "turnover": 1850.76,
         "turnoverShare": 6.98,
-        "mainNet": null
+        "mainNet": -114.64
       },
       "automation": {
         "turnover": 864.17,
         "turnoverShare": 3.26,
-        "mainNet": null
+        "mainNet": 33.52
       },
       "defense": {
         "turnover": 495.27,
         "turnoverShare": 1.87,
-        "mainNet": null
+        "mainNet": 0.54
       },
       "battery": {
         "turnover": 690.66,
         "turnoverShare": 2.6,
-        "mainNet": null
+        "mainNet": -10.62
       },
       "resources": {
         "turnover": 1349.75,
         "turnoverShare": 5.09,
-        "mainNet": null
+        "mainNet": 55.82
       },
       "medicine": {
         "turnover": 1120.84,
         "turnoverShare": 4.22,
-        "mainNet": null
+        "mainNet": -14.8
       },
       "finance": {
         "turnover": 808.7,
         "turnoverShare": 3.05,
-        "mainNet": null
+        "mainNet": -2.33
       }
     }
+  },
+  "sectorFlowSourceNotes": {
+    "2026-07-22": "主力净额来自全部Ａ股20260722补充.xlsx，并按原始全市场文件代码范围取交集；成交额与成交占比仍来自原始全部Ａ股20260722.xlsx。"
   }
 };

@@ -44,18 +44,33 @@
     const dateLabels=dates.map((d,i)=>(i%step===0||i===dates.length-1)?`<text x="${x(i)}" y="${h-7}" text-anchor="middle" font-size="10" fill="#667085">${d.slice(5)}</text>`:"").join("");
     return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${aria}">${grid}${zero}${paths}${dateLabels}</svg>`;
   }
+  function flowComboChart(series,dates){
+    const values=series.values.map(v=>finite(v)?Number(v):null),changes=values.map((v,i)=>v===null||i===0||values[i-1]===null?null:v-values[i-1]);
+    if(!values.some(finite))return `<div class="chart-empty">该日之前没有可用的板块资金数据</div>`;
+    const w=760,h=240,p={l:58,r:28,t:30,b:34},iw=w-p.l-p.r,ih=h-p.t-p.b,n=Math.max(dates.length,1),[low,high]=domain([{values},{values:changes}],{includeZero:true});
+    const x=i=>n===1?w/2:p.l+i*iw/(n-1),y=v=>p.t+(high-v)*ih/(high-low),zeroY=y(0),barWidth=Math.max(7,Math.min(22,iw/Math.max(n,1)*.48));
+    const grid=Array.from({length:5},(_,i)=>low+(high-low)*i/4).map(v=>`<g><line x1="${p.l}" y1="${y(v)}" x2="${w-p.r}" y2="${y(v)}" stroke="#e5eaf0"/><text x="4" y="${y(v)+4}" font-size="11" fill="#98a2b3">${metricFormat(v,"mainNet",true)}</text></g>`).join("");
+    const bars=values.map((v,i)=>{if(v===null)return "";const top=Math.min(y(v),zeroY),height=Math.max(1,Math.abs(y(v)-zeroY)),fill=v>=0?"#C94A43":"#2F7D68";return `<rect x="${x(i)-barWidth/2}" y="${top}" width="${barWidth}" height="${height}" rx="2" fill="${fill}" opacity=".62"><title>${dates[i]} 当日主力净额 ${metricFormat(v,"mainNet")}；较前日变化 ${metricFormat(changes[i],"mainNet")}</title></rect>`}).join("");
+    const segments=[];let points=[];changes.forEach((v,i)=>{if(finite(v))points.push({v:Number(v),i});else if(points.length){segments.push(points);points=[]}});if(points.length)segments.push(points);
+    const changeColor="#7655D8",line=segments.map(g=>`<polyline points="${g.map(q=>`${x(q.i)},${y(q.v)}`).join(" ")}" fill="none" stroke="${changeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`).join("");
+    const dots=changes.map((v,i)=>finite(v)?`<circle cx="${x(i)}" cy="${y(Number(v))}" r="2.6" fill="${changeColor}" stroke="#fff" stroke-width="1"><title>${dates[i]} 较前日变化 ${metricFormat(v,"mainNet")}</title></circle>`:"").join("");
+    const step=Math.max(1,Math.ceil(dates.length/8)),dateLabels=dates.map((d,i)=>(i%step===0||i===dates.length-1)?`<text x="${x(i)}" y="${h-7}" text-anchor="middle" font-size="10" fill="#667085">${d.slice(5)}</text>`:"").join("");
+    const last=values.map((v,i)=>({v,i})).filter(q=>finite(q.v)).at(-1),lastChange=changes.map((v,i)=>({v,i})).filter(q=>finite(q.v)).at(-1);
+    const tags=`${last?`<text x="${Math.min(x(last.i)+8,w-76)}" y="${y(last.v)+(last.v>=0?-7:14)}" font-size="10" font-weight="700" fill="${last.v>=0?"#A9342F":"#236452"}">${metricFormat(last.v,"mainNet",true)}</text>`:""}${lastChange?`<text x="${Math.min(x(lastChange.i)+8,w-76)}" y="${y(lastChange.v)-7}" font-size="10" font-weight="700" fill="${changeColor}">Δ ${metricFormat(lastChange.v,"mainNet",true)}</text>`:""}`;
+    return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${series.name}主力净额及较前日变化"><g font-size="10"><rect x="${p.l}" y="8" width="12" height="8" rx="2" fill="#C94A43" opacity=".62"/><text x="${p.l+17}" y="16" fill="#667085">净流入</text><rect x="${p.l+58}" y="8" width="12" height="8" rx="2" fill="#2F7D68" opacity=".62"/><text x="${p.l+75}" y="16" fill="#667085">净流出</text><line x1="${p.l+118}" y1="12" x2="${p.l+134}" y2="12" stroke="${changeColor}" stroke-width="2"/><text x="${p.l+140}" y="16" fill="#667085">较前日变化</text></g>${grid}<line x1="${p.l}" y1="${zeroY}" x2="${w-p.r}" y2="${zeroY}" stroke="#667085" stroke-width="1.5"/>${bars}${line}${dots}${tags}${dateLabels}</svg>`;
+  }
   function renderSector(d){
     const cfg=D.sectorFlowConfig;if(!cfg)return;
     const metric=$("sectorMetricSelect").value||cfg.defaultMetric,selected=$("sectorSelect").value||"all",dates=D.dates.filter(x=>x<=d);
     const parent=cfg.groups.find(g=>g.id===selected||g.subgroups?.some(s=>s.id===selected));
     const chosen=selected==="all"?cfg.groups:selected===parent?.id?(parent.subgroups||[parent]):parent?.subgroups?.filter(s=>s.id===selected)||[];
     const series=chosen.map(g=>({name:g.name,color:g.color,values:dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.[metric]??null)}));
-    $("sectorTrend").innerHTML=chart(series,dates,{metric,includeZero:metric==="mainNet",labels:chosen.length===1,strokeWidth:1.4,dotRadius:2.2,aria:`板块${cfg.metrics.find(x=>x.id===metric)?.name||"资金"}趋势`});
+    $("sectorTrend").innerHTML=metric==="mainNet"&&chosen.length===1?flowComboChart(series[0],dates):chart(series,dates,{metric,includeZero:metric==="mainNet",labels:chosen.length===1,strokeWidth:1.4,dotRadius:2.2,aria:`板块${cfg.metrics.find(x=>x.id===metric)?.name||"资金"}趋势`});
     const legendItems=selected==="all"?cfg.groups:selected===parent?.id?(parent.subgroups||[parent]):chosen;
     const current=legendItems.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.[metric]})).sort((a,b)=>(finite(b.v)?Number(b.v):-Infinity)-(finite(a.v)?Number(a.v):-Infinity));
     $("sectorLegend").innerHTML=current.map(({g,v})=>`<button type="button" data-sector="${g.id}" class="sector-key ${selected===g.id?"is-active":""}"><i style="background:${g.color}"></i><span>${g.name}</span><b>${metricFormat(v,metric)}</b></button>`).join("");
     const meta=cfg.metrics.find(x=>x.id===metric),missing=current.filter(x=>!finite(x.v)).length;
-    const scope=selected==="all"?"点击任一总方向可下钻细分。":selected===parent?.id?`${parent.name}已按细分方向拆解。`:`当前查看 ${chosen[0]?.name||"细分方向"}。`;
+    const scope=selected==="all"?"点击任一总方向可下钻细分。":selected===parent?.id?`${parent.name}已按细分方向拆解。`:`当前查看 ${chosen[0]?.name||"细分方向"}。${metric==="mainNet"?"柱体为当日净额，折线为较前一交易日变化。":""}`;
     $("sectorNote").textContent=`${meta.name} · ${meta.unit}；区间与市场评分日期一致。${metric==="mainNet"?"主力净额沿用全A数据源口径。":""}${scope}${missing?` 所选日有 ${missing} 个方向缺少有效源数据。`:""}`;
   }
   function render(d){

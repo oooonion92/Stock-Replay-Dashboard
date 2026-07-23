@@ -23,19 +23,46 @@
     if(score){low=Math.max(0,low);high=Math.min(100,high)}
     return low===high?[low-1,high+1]:[low,high];
   };
+  const niceStep=raw=>{
+    if(!finite(raw)||Number(raw)<=0)return 1;
+    const power=10**Math.floor(Math.log10(Number(raw))),fraction=Number(raw)/power;
+    const nice=fraction<=1?1:fraction<=2?2:fraction<=2.5?2.5:fraction<=5?5:10;
+    return nice*power;
+  };
+  const niceScale=(series,{includeZero=false,score=false}={})=>{
+    if(score){
+      const [low,high]=domain(series,{score,includeZero});
+      return {low,high,ticks:Array.from({length:5},(_,i)=>low+(high-low)*i/4)};
+    }
+    const values=series.flatMap(s=>s.values).filter(finite).map(Number);
+    if(!values.length)return {low:-1,high:1,ticks:[-1,-.5,0,.5,1]};
+    let lo=Math.min(...values),hi=Math.max(...values);
+    if(includeZero){lo=Math.min(lo,0);hi=Math.max(hi,0)}
+    const padding=Math.max((hi-lo)*.1,Math.max(Math.abs(lo),Math.abs(hi))*.04,1);
+    const step=niceStep((hi-lo+padding*2)/4);
+    const low=Math.floor((lo-padding)/step)*step,high=Math.ceil((hi+padding)/step)*step;
+    const ticks=[];for(let v=low;v<=high+step*.01;v+=step)ticks.push(Math.abs(v)<step*.001?0:v);
+    return {low,high,ticks};
+  };
+  const symmetricScale=values=>{
+    const nums=values.filter(finite).map(v=>Math.abs(Number(v))),max=Math.max(...nums,1);
+    const step=niceStep(max/2),extent=Math.ceil(max/step)*step;
+    return {low:-extent,high:extent,ticks:[-extent,-extent/2,0,extent/2,extent]};
+  };
   function chart(series,dates,{labels=false,score=false,includeZero=false,metric="score",aria="趋势图",strokeWidth=3,dotRadius=3.6}={}){
     const hasValues=series.some(s=>s.values.some(finite));
     if(!hasValues)return `<div class="chart-empty">该日之前没有可用的板块资金数据</div>`;
-    const w=760,h=240,p={l:58,r:24,t:22,b:34},iw=w-p.l-p.r,ih=h-p.t-p.b,n=Math.max(dates.length,1),[low,high]=domain(series,{score,includeZero});
+    const w=760,h=240,p={l:58,r:24,t:22,b:34},iw=w-p.l-p.r,ih=h-p.t-p.b,n=Math.max(dates.length,1),scale=niceScale(series,{score,includeZero}),{low,high}=scale;
     const x=i=>n===1?w/2:p.l+i*iw/(n-1),y=v=>p.t+(high-v)*ih/(high-low);
     const fmt=v=>metric==="score"?(Number.isInteger(v)?v:v.toFixed(1)):metricFormat(v,metric,true);
-    const grid=Array.from({length:5},(_,i)=>low+(high-low)*i/4).map(v=>`<g><line x1="${p.l}" y1="${y(v)}" x2="${w-p.r}" y2="${y(v)}" stroke="#e5eaf0"/><text x="4" y="${y(v)+4}" font-size="11" fill="#98a2b3">${fmt(v)}</text></g>`).join("");
+    const grid=scale.ticks.map(v=>`<g><line x1="${p.l}" y1="${y(v)}" x2="${w-p.r}" y2="${y(v)}" stroke="#e5eaf0"/><text x="4" y="${y(v)+4}" font-size="11" fill="#98a2b3">${fmt(v)}</text></g>`).join("");
     const zero=includeZero&&low<0&&high>0?`<line x1="${p.l}" y1="${y(0)}" x2="${w-p.r}" y2="${y(0)}" stroke="#98a2b3" stroke-width="1.5"/>`:"";
     const paths=series.map((s,j)=>{
       const color=s.color||C[j%C.length],segments=[];let points=[];
       s.values.forEach((v,i)=>{if(finite(v))points.push({v:Number(v),i});else if(points.length){segments.push(points);points=[]}});if(points.length)segments.push(points);
-      const lines=segments.map(g=>`<polyline points="${g.map(q=>`${x(q.i)},${y(q.v)}`).join(" ")}" fill="none" stroke="${color}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round"/>`).join("");
-      const dots=s.values.map((v,i)=>finite(v)?`<circle cx="${x(i)}" cy="${y(Number(v))}" r="${dotRadius}" fill="${color}" stroke="#fff" stroke-width="1"><title>${dates[i]} ${s.name||""} ${metricFormat(v,metric)}</title></circle>`:"").join("");
+      const opacity=s.muted?.2:1,width=s.emphasis?Math.max(strokeWidth,2.2):strokeWidth,dash=s.dash?` stroke-dasharray="${s.dash}"`:"";
+      const lines=segments.map(g=>`<polyline data-series="${s.id||j}" points="${g.map(q=>`${x(q.i)},${y(q.v)}`).join(" ")}" fill="none" stroke="${color}" stroke-width="${width}" opacity="${opacity}"${dash} stroke-linecap="round" stroke-linejoin="round"/>`).join("");
+      const dots=s.values.map((v,i)=>finite(v)?`<circle data-series="${s.id||j}" cx="${x(i)}" cy="${y(Number(v))}" r="${s.emphasis?Math.max(dotRadius,2.8):dotRadius}" fill="${color}" opacity="${opacity}" stroke="#fff" stroke-width="1"><title>${dates[i]} ${s.name||""} ${metricFormat(v,metric)}</title></circle>`:"").join("");
       const last=[...s.values].map((v,i)=>({v,i})).filter(q=>finite(q.v)).at(-1);
       const tag=labels&&last?`<text x="${Math.min(x(last.i)+7,w-55)}" y="${y(Number(last.v))-7}" font-size="10" font-weight="700" fill="${color}">${fmt(Number(last.v))}</text>`:"";
       return lines+dots+tag;
@@ -47,30 +74,49 @@
   function flowComboChart(series,dates){
     const values=series.values.map(v=>finite(v)?Number(v):null),changes=values.map((v,i)=>v===null||i===0||values[i-1]===null?null:v-values[i-1]);
     if(!values.some(finite))return `<div class="chart-empty">该日之前没有可用的板块资金数据</div>`;
-    const w=760,h=240,p={l:58,r:28,t:30,b:34},iw=w-p.l-p.r,ih=h-p.t-p.b,n=Math.max(dates.length,1),[low,high]=domain([{values},{values:changes}],{includeZero:true});
-    const x=i=>n===1?w/2:p.l+i*iw/(n-1),y=v=>p.t+(high-v)*ih/(high-low),zeroY=y(0),barWidth=Math.max(7,Math.min(22,iw/Math.max(n,1)*.48));
-    const grid=Array.from({length:5},(_,i)=>low+(high-low)*i/4).map(v=>`<g><line x1="${p.l}" y1="${y(v)}" x2="${w-p.r}" y2="${y(v)}" stroke="#e5eaf0"/><text x="4" y="${y(v)+4}" font-size="11" fill="#98a2b3">${metricFormat(v,"mainNet",true)}</text></g>`).join("");
-    const bars=values.map((v,i)=>{if(v===null)return "";const top=Math.min(y(v),zeroY),height=Math.max(1,Math.abs(y(v)-zeroY)),fill=v>=0?"#C94A43":"#2F7D68";return `<rect x="${x(i)-barWidth/2}" y="${top}" width="${barWidth}" height="${height}" rx="2" fill="${fill}" opacity=".62"><title>${dates[i]} 当日主力净额 ${metricFormat(v,"mainNet")}；较前日变化 ${metricFormat(changes[i],"mainNet")}</title></rect>`}).join("");
+    const w=760,h=240,p={l:58,r:58,t:34,b:34},iw=w-p.l-p.r,ih=h-p.t-p.b,n=Math.max(dates.length,1),left=symmetricScale(values),right=symmetricScale(changes);
+    const x=i=>n===1?w/2:p.l+i*iw/(n-1),yLeft=v=>p.t+(left.high-v)*ih/(left.high-left.low),yRight=v=>p.t+(right.high-v)*ih/(right.high-right.low),zeroY=yLeft(0),barWidth=Math.max(7,Math.min(22,iw/Math.max(n,1)*.48));
+    const grid=left.ticks.map((v,i)=>`<g><line x1="${p.l}" y1="${yLeft(v)}" x2="${w-p.r}" y2="${yLeft(v)}" stroke="#e5eaf0"/><text x="4" y="${yLeft(v)+4}" font-size="10" fill="#98a2b3">${metricFormat(v,"mainNet",true)}</text><text x="${w-4}" y="${yLeft(v)+4}" text-anchor="end" font-size="10" fill="#7655D8">${metricFormat(right.ticks[i],"mainNet",true)}</text></g>`).join("");
+    const bars=values.map((v,i)=>{if(v===null)return "";const top=Math.min(yLeft(v),zeroY),height=Math.max(1,Math.abs(yLeft(v)-zeroY)),fill=v>=0?"#C94A43":"#2F7D68";return `<rect x="${x(i)-barWidth/2}" y="${top}" width="${barWidth}" height="${height}" rx="2" fill="${fill}" opacity=".62"><title>${dates[i]} 当日主力净额 ${metricFormat(v,"mainNet")}；较前日变化 ${metricFormat(changes[i],"mainNet")}</title></rect>`}).join("");
     const segments=[];let points=[];changes.forEach((v,i)=>{if(finite(v))points.push({v:Number(v),i});else if(points.length){segments.push(points);points=[]}});if(points.length)segments.push(points);
-    const changeColor="#7655D8",line=segments.map(g=>`<polyline points="${g.map(q=>`${x(q.i)},${y(q.v)}`).join(" ")}" fill="none" stroke="${changeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`).join("");
-    const dots=changes.map((v,i)=>finite(v)?`<circle cx="${x(i)}" cy="${y(Number(v))}" r="2.6" fill="${changeColor}" stroke="#fff" stroke-width="1"><title>${dates[i]} 较前日变化 ${metricFormat(v,"mainNet")}</title></circle>`:"").join("");
+    const changeColor="#7655D8",line=segments.map(g=>`<polyline points="${g.map(q=>`${x(q.i)},${yRight(q.v)}`).join(" ")}" fill="none" stroke="${changeColor}" stroke-width="2" stroke-dasharray="5 3" stroke-linecap="round" stroke-linejoin="round"/>`).join("");
+    const dots=changes.map((v,i)=>finite(v)?`<circle cx="${x(i)}" cy="${yRight(Number(v))}" r="2.6" fill="${changeColor}" stroke="#fff" stroke-width="1"><title>${dates[i]} 较前日变化 ${metricFormat(v,"mainNet")}</title></circle>`:"").join("");
     const step=Math.max(1,Math.ceil(dates.length/8)),dateLabels=dates.map((d,i)=>(i%step===0||i===dates.length-1)?`<text x="${x(i)}" y="${h-7}" text-anchor="middle" font-size="10" fill="#667085">${d.slice(5)}</text>`:"").join("");
-    const last=values.map((v,i)=>({v,i})).filter(q=>finite(q.v)).at(-1),lastChange=changes.map((v,i)=>({v,i})).filter(q=>finite(q.v)).at(-1);
-    const tags=`${last?`<text x="${Math.min(x(last.i)+8,w-76)}" y="${y(last.v)+(last.v>=0?-7:14)}" font-size="10" font-weight="700" fill="${last.v>=0?"#A9342F":"#236452"}">${metricFormat(last.v,"mainNet",true)}</text>`:""}${lastChange?`<text x="${Math.min(x(lastChange.i)+8,w-76)}" y="${y(lastChange.v)-7}" font-size="10" font-weight="700" fill="${changeColor}">Δ ${metricFormat(lastChange.v,"mainNet",true)}</text>`:""}`;
-    return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${series.name}主力净额及较前日变化"><g font-size="10"><rect x="${p.l}" y="8" width="12" height="8" rx="2" fill="#C94A43" opacity=".62"/><text x="${p.l+17}" y="16" fill="#667085">净流入</text><rect x="${p.l+58}" y="8" width="12" height="8" rx="2" fill="#2F7D68" opacity=".62"/><text x="${p.l+75}" y="16" fill="#667085">净流出</text><line x1="${p.l+118}" y1="12" x2="${p.l+134}" y2="12" stroke="${changeColor}" stroke-width="2"/><text x="${p.l+140}" y="16" fill="#667085">较前日变化</text></g>${grid}<line x1="${p.l}" y1="${zeroY}" x2="${w-p.r}" y2="${zeroY}" stroke="#667085" stroke-width="1.5"/>${bars}${line}${dots}${tags}${dateLabels}</svg>`;
+    return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${series.name}主力净额及较前日变化"><g font-size="10"><text x="${p.l}" y="12" fill="#667085">左轴·当日净额</text><text x="${w-p.r}" y="12" text-anchor="end" fill="${changeColor}">右轴·较前日变化</text><rect x="${p.l}" y="19" width="12" height="8" rx="2" fill="#C94A43" opacity=".62"/><text x="${p.l+17}" y="27" fill="#667085">净流入</text><rect x="${p.l+58}" y="19" width="12" height="8" rx="2" fill="#2F7D68" opacity=".62"/><text x="${p.l+75}" y="27" fill="#667085">净流出</text><line x1="${p.l+118}" y1="23" x2="${p.l+134}" y2="23" stroke="${changeColor}" stroke-width="2" stroke-dasharray="5 3"/><text x="${p.l+140}" y="27" fill="#667085">较前日变化</text></g>${grid}<line x1="${p.l}" y1="${zeroY}" x2="${w-p.r}" y2="${zeroY}" stroke="#667085" stroke-width="1.5"/>${bars}${line}${dots}${dateLabels}</svg>`;
+  }
+  function sectorSummary(metric,selected,parent,chosen,dates,current){
+    const target=$("sectorSummary");if(!target)return;
+    if(chosen.length===1){
+      const g=chosen[0],values=dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.[metric]??null),valid=values.filter(finite).map(Number),today=valid.at(-1),prev=valid.length>1?valid.at(-2):null,delta=finite(today)&&finite(prev)?today-prev:null,last5=valid.slice(-5);
+      const cards=[
+        ["当日",metricFormat(today,metric)],
+        ["较前日",finite(delta)?metricFormat(delta,metric):"—"],
+        [metric==="mainNet"?"近5日累计":"近5日均值",last5.length?metricFormat(metric==="mainNet"?last5.reduce((a,v)=>a+v,0):last5.reduce((a,v)=>a+v,0)/last5.length,metric):"—"],
+        [metric==="mainNet"?"近5日流入":"有效天数",metric==="mainNet"?`${last5.filter(v=>v>0).length}/${last5.length} 日`:`${last5.length} 日`]
+      ];
+      target.innerHTML=cards.map(([label,value])=>`<div><span>${label}</span><b>${value}</b></div>`).join("");
+      return;
+    }
+    const finiteCurrent=current.filter(x=>finite(x.v));
+    const strongest=finiteCurrent[0],weakest=finiteCurrent.at(-1);
+    target.innerHTML=strongest&&weakest?`<div class="sector-summary-wide"><span>当日最强</span><b>${strongest.g.name} ${metricFormat(strongest.v,metric)}</b></div><div class="sector-summary-wide"><span>当日最弱</span><b>${weakest.g.name} ${metricFormat(weakest.v,metric)}</b></div>`:"";
   }
   function renderSector(d){
     const cfg=D.sectorFlowConfig;if(!cfg)return;
     const metric=$("sectorMetricSelect").value||cfg.defaultMetric,selected=$("sectorSelect").value||"all",dates=D.dates.filter(x=>x<=d);
     const parent=cfg.groups.find(g=>g.id===selected||g.subgroups?.some(s=>s.id===selected));
     const chosen=selected==="all"?cfg.groups:selected===parent?.id?(parent.subgroups||[parent]):parent?.subgroups?.filter(s=>s.id===selected)||[];
-    const series=chosen.map(g=>({name:g.name,color:g.color,values:dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.[metric]??null)}));
+    const currentUnsorted=chosen.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.[metric]})),ranked=currentUnsorted.filter(x=>finite(x.v)).sort((a,b)=>Number(b.v)-Number(a.v));
+    const highlightIds=new Set(selected==="all"?[...ranked.slice(0,3),...ranked.slice(-3)].map(x=>x.g.id):chosen.map(g=>g.id));
+    const dashes=["","7 3","2 3","10 3 2 3","4 3"];
+    const series=chosen.map((g,i)=>({id:g.id,name:g.name,color:g.color,values:dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.[metric]??null),emphasis:highlightIds.has(g.id),muted:selected==="all"&&!highlightIds.has(g.id),dash:selected!=="all"&&chosen.length>1?dashes[i%dashes.length]:""}));
     $("sectorTrend").innerHTML=metric==="mainNet"&&chosen.length===1?flowComboChart(series[0],dates):chart(series,dates,{metric,includeZero:metric==="mainNet",labels:chosen.length===1,strokeWidth:1.4,dotRadius:2.2,aria:`板块${cfg.metrics.find(x=>x.id===metric)?.name||"资金"}趋势`});
     const legendItems=selected==="all"?cfg.groups:selected===parent?.id?(parent.subgroups||[parent]):chosen;
     const current=legendItems.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.[metric]})).sort((a,b)=>(finite(b.v)?Number(b.v):-Infinity)-(finite(a.v)?Number(a.v):-Infinity));
+    sectorSummary(metric,selected,parent,chosen,dates,current);
     $("sectorLegend").innerHTML=current.map(({g,v})=>`<button type="button" data-sector="${g.id}" class="sector-key ${selected===g.id?"is-active":""}"><i style="background:${g.color}"></i><span>${g.name}</span><b>${metricFormat(v,metric)}</b></button>`).join("");
     const meta=cfg.metrics.find(x=>x.id===metric),missing=current.filter(x=>!finite(x.v)).length;
-    const scope=selected==="all"?"点击任一总方向可下钻细分。":selected===parent?.id?`${parent.name}已按细分方向拆解。`:`当前查看 ${chosen[0]?.name||"细分方向"}。${metric==="mainNet"?"柱体为当日净额，折线为较前一交易日变化。":""}`;
+    const scope=selected==="all"?"默认突出当日净流入前三与净流出前三；点击任一总方向可下钻细分。":selected===parent?.id?`${parent.name}已按细分方向拆解，并用线型辅助区分。`:`当前查看 ${chosen[0]?.name||"细分方向"}。${metric==="mainNet"?"柱体为当日净额，虚线为较前一交易日变化，分别使用左右纵轴。":""}`;
     $("sectorNote").textContent=`${meta.name} · ${meta.unit}；区间与市场评分日期一致。${metric==="mainNet"?"主力净额沿用全A数据源口径。":""}${scope}${missing?` 所选日有 ${missing} 个方向缺少有效源数据。`:""}`;
   }
   function render(d){

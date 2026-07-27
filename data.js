@@ -19,7 +19,8 @@ window.REPLAY_DATA={
     "2026-07-21",
     "2026-07-22",
     "2026-07-23",
-    "2026-07-24"
+    "2026-07-24",
+    "2026-07-27"
   ],
   "reports": {
     "2026-07-03": {
@@ -2045,6 +2046,112 @@ window.REPLAY_DATA={
         }
       ],
       "fullReport": "reports/20260724.html"
+    },
+    "2026-07-27": {
+      "market": {
+        "total": 66,
+        "sentiment": 45,
+        "technical": 21,
+        "status": "可试错环境",
+        "summary": "红色修复验证，但尚未完成30分钟反转。上证收3858.25、上涨1.15%，全A4885家上涨、中位涨2.78%，昨日强弱两组均获得明显修复；但成交额仅约2.08万亿元、处于近20日5%分位，且全市场主力净流入中约825亿元来自上市首日的N长鑫，普涨后的持续性仍需次日量能和溢价确认。",
+        "paths": [
+          {
+            "tone": "red",
+            "title": "红：放量站稳3875",
+            "text": "先要求5分钟有效突破并回踩守住3874.96，同时30分钟DIF斜率继续改善、成交额高于7月27日，才把修复升级为延续。；进一步观察3967与4019.22；未收回30分钟中枢下沿4019.22前，仍按反弹段而非完整反转处理。"
+          },
+          {
+            "tone": "yellow",
+            "title": "黄：3822—3875内消化",
+            "text": "若指数围绕3852.78反复、但守住3822.35与3793.45，则等待5分钟中枢扩展或回踩后的新确认，不在区间中段追价。；09:30—10:00不追买；优先验证半导体、PCB等核心能否守住VWAP，以及7月27日强势股是否继续获得正溢价。"
+          },
+          {
+            "tone": "blue",
+            "title": "蓝：跌破3822并失守3793",
+            "text": "若跌破3822.35后反抽不能收回，并进一步失守3793.45，说明本轮强修复未转化为有效结构，暂停新增追涨与左侧试错。；若同时出现成交缩减、强势股低开低走或半导体资金快速回吐，重新按30分钟向下结构执行风险控制。"
+          }
+        ]
+      },
+      "stocks": [
+        {
+          "symbol": "sh588710",
+          "name": "科创半导体设备ETF",
+          "structure": 22,
+          "support": 20,
+          "relative": 20,
+          "risk": 9,
+          "total": 71,
+          "status": "回踩试错"
+        },
+        {
+          "symbol": "sz002463",
+          "name": "沪电股份",
+          "structure": 12,
+          "support": 21,
+          "relative": 22,
+          "risk": 9,
+          "total": 64,
+          "status": "强势观察"
+        },
+        {
+          "symbol": "sz002422",
+          "name": "科伦药业",
+          "structure": 17,
+          "support": 17,
+          "relative": 24,
+          "risk": 5,
+          "total": 63,
+          "status": "防守观察"
+        }
+      ],
+      "experts": [
+        {
+          "tag": "科技资金扩散",
+          "source": "NGA / fuelish · 15:02",
+          "quote": "围绕长鑫搭台唱戏的题材似乎也开始活跃了。",
+          "meaning": "科技修复不能只看长鑫本身，更要观察资金能否扩散到材料、设备、封测和PCB。",
+          "test": "比较N长鑫以外的科技分支成交与主力净额，只有扩散延续才提高主线评级。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207267&pid=876541172"
+        },
+        {
+          "tag": "流动性约束",
+          "source": "NGA / -阿狼- · 14:35",
+          "quote": "一点点放量都回拉起来指数，但是指望大涨不现实，因为没有流动性。",
+          "meaning": "宽度修复与趋势主升是两件事，反弹持续性仍要由成交额确认。",
+          "test": "不追普涨，等待成交额高于7月27日并站稳3875后再提高风险敞口。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207407&pid=876537573"
+        },
+        {
+          "tag": "科技次日节奏",
+          "source": "NGA / 丶阿疯 · 14:45",
+          "quote": "明天科技的持续性问题不大，冲高要敢砸，低了敢捞。",
+          "meaning": "即使看多科技延续，也应通过回踩承接和冲高兑现管理节奏。",
+          "test": "观察半导体和PCB核心回踩VWAP后的承接，不在早盘一致高开时追价。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207543&pid=876538871"
+        },
+        {
+          "tag": "修复方向",
+          "source": "NGA / mayuzi · 16:24",
+          "quote": "重点看谁是反攻：半导体材料设备、光通信、PCB、光芯片。",
+          "meaning": "反攻方向已经较清晰，但仍需用次日强弱排序筛掉仅跟随普涨的分支。",
+          "test": "按次日溢价、VWAP和板块资金扩散重新排序材料、设备、光通信和PCB。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207407&pid=876552002"
+        },
+        {
+          "tag": "追涨风险",
+          "source": "NGA / 兰斯洛t · 15:15",
+          "quote": "超跌反弹类的和涉及到扩产类的最好不要追涨。",
+          "meaning": "题材逻辑不能替代买点位置，单日大涨后优先验证回踩而非继续抬价。",
+          "test": "09:30—10:00不追买；等待核心回踩VWAP和关键位后再决定是否保留试错。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207407&pid=876542842"
+        }
+      ],
+      "fullReport": "reports/20260727.html"
     }
   },
   "sectorFlowConfig": {
@@ -6851,6 +6958,233 @@ window.REPLAY_DATA={
         "turnover": 748.53,
         "turnoverShare": 3.88,
         "mainNet": -80.12
+      }
+    },
+    "2026-07-27": {
+      "semi_equipment": {
+        "turnover": 631.25,
+        "turnoverShare": 3.04,
+        "mainNet": 10.17
+      },
+      "semi_materials": {
+        "turnover": 416.83,
+        "turnoverShare": 2.01,
+        "mainNet": 18.77
+      },
+      "semi_manufacturing": {
+        "turnover": 240.54,
+        "turnoverShare": 1.16,
+        "mainNet": -13.86
+      },
+      "semi_design": {
+        "turnover": 3078.85,
+        "turnoverShare": 14.83,
+        "mainNet": 767.43
+      },
+      "semi_packaging": {
+        "turnover": 478.44,
+        "turnoverShare": 2.3,
+        "mainNet": -24.56
+      },
+      "elec_pcb": {
+        "turnover": 705.18,
+        "turnoverShare": 3.4,
+        "mainNet": 43.12
+      },
+      "elec_passive": {
+        "turnover": 239.55,
+        "turnoverShare": 1.15,
+        "mainNet": 25.53
+      },
+      "elec_components": {
+        "turnover": 658.59,
+        "turnoverShare": 3.17,
+        "mainNet": 11.42
+      },
+      "comm_optical": {
+        "turnover": 997.59,
+        "turnoverShare": 4.8,
+        "mainNet": 19.39
+      },
+      "comm_equipment": {
+        "turnover": 251.63,
+        "turnoverShare": 1.21,
+        "mainNet": -1.02
+      },
+      "comm_services": {
+        "turnover": 18.87,
+        "turnoverShare": 0.09,
+        "mainNet": -0.16
+      },
+      "auto_robot": {
+        "turnover": 59.34,
+        "turnoverShare": 0.29,
+        "mainNet": 2.86
+      },
+      "auto_control": {
+        "turnover": 108.86,
+        "turnoverShare": 0.52,
+        "mainNet": 1.78
+      },
+      "auto_machine": {
+        "turnover": 161.55,
+        "turnoverShare": 0.78,
+        "mainNet": -1.93
+      },
+      "auto_components": {
+        "turnover": 217.85,
+        "turnoverShare": 1.05,
+        "mainNet": 7.3
+      },
+      "def_aerospace": {
+        "turnover": 46.71,
+        "turnoverShare": 0.22,
+        "mainNet": -0.13
+      },
+      "def_aviation": {
+        "turnover": 99.36,
+        "turnoverShare": 0.48,
+        "mainNet": 0.31
+      },
+      "def_electronics": {
+        "turnover": 214.8,
+        "turnoverShare": 1.03,
+        "mainNet": -1.77
+      },
+      "def_land_sea": {
+        "turnover": 140.74,
+        "turnoverShare": 0.68,
+        "mainNet": 1.41
+      },
+      "newenergy_lithium": {
+        "turnover": 505.82,
+        "turnoverShare": 2.44,
+        "mainNet": 16.62
+      },
+      "newenergy_materials": {
+        "turnover": 249.04,
+        "turnoverShare": 1.2,
+        "mainNet": 10.67
+      },
+      "newenergy_solar": {
+        "turnover": 240.35,
+        "turnoverShare": 1.16,
+        "mainNet": 6.12
+      },
+      "newenergy_wind": {
+        "turnover": 79.46,
+        "turnoverShare": 0.38,
+        "mainNet": 3.71
+      },
+      "newenergy_hydrogen": {
+        "turnover": 2.74,
+        "turnoverShare": 0.01,
+        "mainNet": 0.0
+      },
+      "res_industrial": {
+        "turnover": 407.53,
+        "turnoverShare": 1.96,
+        "mainNet": 14.97
+      },
+      "res_minor": {
+        "turnover": 317.1,
+        "turnoverShare": 1.53,
+        "mainNet": 5.75
+      },
+      "res_precious": {
+        "turnover": 149.51,
+        "turnoverShare": 0.72,
+        "mainNet": 4.22
+      },
+      "med_innovative": {
+        "turnover": 422.29,
+        "turnoverShare": 2.03,
+        "mainNet": -0.95
+      },
+      "med_cxo": {
+        "turnover": 222.99,
+        "turnoverShare": 1.07,
+        "mainNet": 0.72
+      },
+      "med_tcm": {
+        "turnover": 126.93,
+        "turnoverShare": 0.61,
+        "mainNet": 4.31
+      },
+      "med_device": {
+        "turnover": 157.48,
+        "turnoverShare": 0.76,
+        "mainNet": -1.6
+      },
+      "med_services": {
+        "turnover": 46.55,
+        "turnoverShare": 0.22,
+        "mainNet": 3.94
+      },
+      "fin_banks": {
+        "turnover": 272.52,
+        "turnoverShare": 1.31,
+        "mainNet": -2.62
+      },
+      "fin_insurance": {
+        "turnover": 80.28,
+        "turnoverShare": 0.39,
+        "mainNet": -1.67
+      },
+      "fin_brokers": {
+        "turnover": 260.02,
+        "turnoverShare": 1.25,
+        "mainNet": -0.27
+      },
+      "fin_other": {
+        "turnover": 31.66,
+        "turnoverShare": 0.15,
+        "mainNet": 0.39
+      },
+      "semiconductor": {
+        "turnover": 4845.91,
+        "turnoverShare": 23.34,
+        "mainNet": 757.96
+      },
+      "electronics": {
+        "turnover": 1603.32,
+        "turnoverShare": 7.72,
+        "mainNet": 80.07
+      },
+      "optical": {
+        "turnover": 1268.09,
+        "turnoverShare": 6.11,
+        "mainNet": 18.21
+      },
+      "automation": {
+        "turnover": 547.6,
+        "turnoverShare": 2.64,
+        "mainNet": 10.01
+      },
+      "defense": {
+        "turnover": 501.61,
+        "turnoverShare": 2.42,
+        "mainNet": -0.18
+      },
+      "battery": {
+        "turnover": 1077.41,
+        "turnoverShare": 5.19,
+        "mainNet": 37.13
+      },
+      "resources": {
+        "turnover": 874.13,
+        "turnoverShare": 4.21,
+        "mainNet": 24.93
+      },
+      "medicine": {
+        "turnover": 976.24,
+        "turnoverShare": 4.7,
+        "mainNet": 6.42
+      },
+      "finance": {
+        "turnover": 644.48,
+        "turnoverShare": 3.1,
+        "mainNet": -4.17
       }
     }
   },

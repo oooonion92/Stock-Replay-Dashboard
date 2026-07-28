@@ -6,6 +6,8 @@
   const L={pending:"待后验",supported:"支持",mixed:"部分支持",falsified:"未证实"};
   const cls=v=>v>=65?"score-good":v>=35?"score-neutral":"score-risk";
   const finite=v=>v!==null&&v!==""&&Number.isFinite(Number(v));
+  const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  let projectionTimeframe="30m";
   const metricFormat=(v,id,axis=false)=>{
     if(!finite(v))return "—";
     const n=Number(v),digits=id==="turnoverShare"?1:Math.abs(n)>=100?0:1;
@@ -119,15 +121,59 @@
     const scope=selected==="all"?"默认突出当日净流入前三与净流出前三；点击任一总方向可下钻细分。":selected===parent?.id?`${parent.name}已按细分方向拆解，并用线型辅助区分。`:`当前查看 ${chosen[0]?.name||"细分方向"}。${metric==="mainNet"?"柱体为当日净额，虚线为较前一交易日变化，分别使用左右纵轴。":""}`;
     $("sectorNote").textContent=`${meta.name} · ${meta.unit}；区间与市场评分日期一致。${metric==="mainNet"?"主力净额沿用全A数据源口径。":""}${scope}${missing?` 所选日有 ${missing} 个方向缺少有效源数据。`:""}`;
   }
+  const barsText=value=>finite(value)?`${Number(value)}根`:"当前位置不足";
+  const projectionTargetRow=(target,direction)=>{
+    const bars=target.bars||{},realistic=target.realistic||{};
+    const metrics=direction==="up"
+      ?`DIF拐头 ${barsText(bars.dif_turn)} · 柱翻红 ${barsText(bars.histogram_flip)} · DIF过零 ${barsText(bars.dif_zero)}`
+      :`DIF转弱 ${barsText(bars.dif_turn)} · 柱翻绿 ${barsText(bars.histogram_flip)} · 负柱放大 ${barsText(bars.histogram_expand)}`;
+    const time=direction==="up"
+      ?realistic.dif_zero||realistic.histogram_flip||realistic.dif_turn
+      :realistic.histogram_expand||realistic.histogram_flip||realistic.dif_turn;
+    return `<li><b>${finite(target.price)?Number(target.price).toFixed(2):"—"}</b><span>${esc(metrics)}</span><em>${esc(time||"—")}</em></li>`;
+  };
+  function renderProjection(d){
+    const projection=D.reports[d]?.market?.pathProjection;
+    const content=$("projectionContent"),empty=$("projectionUnavailable");
+    if(!projection||projection.schemaVersion!=="multi-timeframe-path-v1"){
+      content.hidden=true;empty.hidden=false;
+      empty.textContent="该历史日期尚未生成多周期路径快照；不使用后来的数据倒填。";
+      $("projectionVolume").textContent="历史数据未纳入";
+      return;
+    }
+    content.hidden=false;empty.hidden=true;
+    const volume=projection.volume||{},review=projection.previousReview||{},paths=projection.nextSessionPaths||{},timeframes=projection.timeframes||{};
+    if(!timeframes[projectionTimeframe])projectionTimeframe=Object.keys(timeframes)[0]||"30m";
+    $("projectionVolume").textContent=`${volume.label||"量能未知"} · 近20期量比 ${finite(volume.ratio20)?Math.round(Number(volume.ratio20)*100)+"%":"—"}`;
+    $("projectionReview").className=`dashboard-projection-review ${esc(review.status||"first")}`;
+    $("projectionReview").innerHTML=`<b>${review.available?`昨日路径：${esc(review.primary||"待复核")}`:"首个路径快照"}</b><span>${esc(review.summary||"暂无上一交易日路径可供复核。")}</span>`;
+    const branchMeta=[
+      ["up","修复路径",paths.up?.label],
+      ["range","震荡路径",paths.range?.label],
+      ["down","破坏路径",paths.down?.label]
+    ];
+    $("projectionBranches").innerHTML=branchMeta.map(([tone,title,label])=>`<div class="dashboard-projection-branch ${tone}"><b>${title}</b><span>${esc(label||"—")}</span></div>`).join("");
+    $("projectionTabs").innerHTML=Object.entries(timeframes).map(([key,item])=>`<button type="button" class="${key===projectionTimeframe?"is-active":""}" data-projection-timeframe="${key}" aria-selected="${key===projectionTimeframe}">${esc(item.label||key)}</button>`).join("");
+    const item=timeframes[projectionTimeframe]||{},current=item.current||{};
+    $("projectionDetail").innerHTML=`
+      <div class="dashboard-projection-current">
+        <div><span>当前状态</span><b>${esc(current.phase||"—")}</b></div>
+        <dl><div><dt>DIF</dt><dd>${finite(current.dif)?Number(current.dif).toFixed(2):"—"}</dd></div><div><dt>DEA</dt><dd>${finite(current.dea)?Number(current.dea).toFixed(2):"—"}</dd></div><div><dt>柱</dt><dd>${finite(current.histogram)?Number(current.histogram).toFixed(2):"—"}</dd></div></dl>
+      </div>
+      <div class="dashboard-projection-targets">
+        <section class="up"><h3>修复、确认与放大</h3><ul>${(item.upTargets||[]).map(target=>projectionTargetRow(target,"up")).join("")||"<li><span>暂无有效上方结构位</span></li>"}</ul></section>
+        <section class="down"><h3>破坏、确认与放大</h3><ul>${(item.downTargets||[]).map(target=>projectionTargetRow(target,"down")).join("")||"<li><span>暂无有效下方结构位</span></li>"}</ul></section>
+      </div>`;
+  }
   function render(d){
     const R=D.reports[d],M=R.market,A=D.dates.filter(x=>x<=d),recent=[d];
     const hasMarketScore=Number.isFinite(M.total),scored=A.filter(x=>Number.isFinite(D.reports[x].market.total));
     $("marketTotal").textContent=hasMarketScore?M.total:"—";$("marketStatus").textContent=M.status||"未纳入评分";$("marketSummary").textContent=M.summary||"该日已收录完整复盘 HTML，但当时尚未生成入口看板所需的市场评分字段。";
     $("sentimentScore").textContent=Number.isFinite(M.sentiment)?M.sentiment:"—";$("technicalScore").textContent=Number.isFinite(M.technical)?M.technical:"—";$("fullReportLink").href=R.fullReport;
-    $("pathCards").innerHTML=M.paths.map(p=>`<div class="path-card path-${p.tone}"><b>${p.title}</b><span>${p.text}</span></div>`).join("");
     $("historyCount").textContent=`${scored.length}/${A.length} 个交易日有评分`;
     $("marketTrend").innerHTML=chart([{values:A.map(x=>D.reports[x].market.total)}],A,{labels:true,score:true,metric:"score",aria:"市场评分趋势"});
     $("trendNote").textContent=scored.length===A.length?"纵轴按当前可比区间自动缩放；总分越高代表环境越有利，但总闸与结构约束仍优先。":"早期复盘已纳入日期轴，但当时未生成总分；曲线只连接有评分的交易日。";
+    renderProjection(d);
     renderSector(d);
     const prev=A.length>1?D.reports[A[A.length-2]]:null;
     $("stockRows").innerHTML=R.stocks.map(s=>{
@@ -150,5 +196,6 @@
     $("sectorMetricSelect").addEventListener("change",()=>renderSector($("dateSelect").value));$("sectorSelect").addEventListener("change",()=>renderSector($("dateSelect").value));
     $("sectorLegend").addEventListener("click",e=>{const b=e.target.closest("[data-sector]");if(b){$("sectorSelect").value=b.dataset.sector;renderSector($("dateSelect").value)}});
   }
+  $("projectionTabs").addEventListener("click",event=>{const button=event.target.closest("[data-projection-timeframe]");if(!button)return;projectionTimeframe=button.dataset.projectionTimeframe;renderProjection($("dateSelect").value)});
   $("dateSelect").addEventListener("change",e=>render(e.target.value));render(D.dates[D.dates.length-1]);
 })();

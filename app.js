@@ -132,10 +132,20 @@
     const body=rows.map(row=>`<tr class="path-stage-${esc(row.tone||"neutral")}"><th scope="row">${esc(row.label||"—")}</th><td><span>点位</span>${esc(row.priceCondition||"—")}</td><td><span>笔结构</span>${esc(row.strokeCondition||"—")}</td><td><span>MACD</span>${esc(row.macdCondition||"—")}</td><td><span>判断</span>${esc(row.decision||"—")}</td></tr>`).join("");
     return `<div class="dashboard-path-table-wrap"><table class="dashboard-path-table dashboard-path-table-v2"><thead><tr><th>路径</th><th>点位</th><th>笔结构</th><th>MACD面积与快慢线</th><th>判断</th></tr></thead><tbody>${body}</tbody></table></div>`;
   };
+  const chanStructureChart=structure=>{
+    const strokes=(structure?.strokes||[]).slice(-5);
+    if(!strokes.length)return `<div class="path-table-empty">本级别暂无足够确认笔</div>`;
+    const points=[{price:strokes[0].start_price,time:strokes[0].start_at},...strokes.map(stroke=>({price:stroke.end_price,time:stroke.end_at}))];
+    return chart(
+      [{id:"chan",name:"确认笔",color:"#2b638f",values:points.map(point=>point.price),emphasis:true}],
+      points.map(point=>point.time||""),
+      {labels:true,metric:"score",aria:`${structure.level||""}最近确认笔走势`,strokeWidth:2,dotRadius:3}
+    );
+  };
   function renderProjection(d){
     const projection=D.reports[d]?.market?.pathProjection;
     const content=$("projectionContent"),empty=$("projectionUnavailable");
-    if(!projection||!["multi-timeframe-path-v1","multi-timeframe-path-v2"].includes(projection.schemaVersion)){
+    if(!projection||!["multi-timeframe-path-v1","multi-timeframe-path-v2","multi-timeframe-native-chan-v3"].includes(projection.schemaVersion)){
       content.hidden=true;empty.hidden=false;
       empty.textContent="该历史日期尚未生成多周期路径快照；不使用后来的数据倒填。";
       $("projectionVolume").textContent="历史数据未纳入";
@@ -155,15 +165,25 @@
     $("projectionBranches").innerHTML=branchMeta.map(([tone,title,label])=>`<div class="dashboard-projection-branch ${tone}"><b>${title}</b><span>${esc(label||"—")}</span></div>`).join("");
     $("projectionTabs").innerHTML=Object.entries(timeframes).map(([key,item])=>`<button type="button" class="${key===projectionTimeframe?"is-active":""}" data-projection-timeframe="${key}" aria-selected="${key===projectionTimeframe}">${esc(item.label||key)}</button>`).join("");
     const item=timeframes[projectionTimeframe]||{},current=item.current||{};
-    if(projection.schemaVersion==="multi-timeframe-path-v2"){
+    if(["multi-timeframe-path-v2","multi-timeframe-native-chan-v3"].includes(projection.schemaVersion)){
       const assessment=item.phaseAssessment||{},checkpoint=item.checkpoints?.[projectionCheckpoint]||item.checkpoints?.close||{};
       const progression=(projection.progression||[]).map(step=>`<li class="${esc(step.status||"")}"><span>${esc(step.label||"—")}</span><b>${esc(step.role||"—")}</b><small>${esc(step.phase||"—")}</small></li>`).join("");
+      const levelPaths=item.paths||paths,structure=item.chanStructure||{},lastStroke=structure.lastStroke||{},activeCenter=structure.activeCenter||{};
+      const levelBranches=[["up","本级别修复",levelPaths.up?.label],["range","本级别区间",levelPaths.range?.label],["down","本级别破坏",levelPaths.down?.label]];
+      const centerText=finite(activeCenter.zd)&&finite(activeCenter.zg)?` · 中枢 ${Number(activeCenter.zd).toFixed(0)}—${Number(activeCenter.zg).toFixed(0)}`:"";
+      const structurePanel=projection.schemaVersion==="multi-timeframe-native-chan-v3"?`
+        <section class="dashboard-chan-structure">
+          <header><b>${esc(item.label||projectionTimeframe)}原生缠论结构</b><span>最近${lastStroke.direction==="up"?"上行":"下行"}笔${lastStroke.is_sure?"已确认":"未确认"}${esc(centerText)}</span></header>
+          ${chanStructureChart(structure)}
+        </section>
+        <div class="dashboard-level-branches">${levelBranches.map(([tone,title,label])=>`<div class="${tone}"><b>${title}</b><span>${esc(label||"—")}</span></div>`).join("")}</div>`:"";
       $("projectionDetail").innerHTML=`
         <ol class="dashboard-projection-progression">${progression}</ol>
         <div class="dashboard-projection-current dashboard-projection-current-v2">
           <div><span>${esc(assessment.role||"当前状态")}</span><b>${esc(assessment.label||current.phase||"—")}</b><p>${esc(assessment.summary||"")}</p></div>
           <dl><div><dt>DIF</dt><dd>${finite(current.dif)?Number(current.dif).toFixed(2):"—"}</dd></div><div><dt>DEA</dt><dd>${finite(current.dea)?Number(current.dea).toFixed(2):"—"}</dd></div><div><dt>柱</dt><dd>${finite(current.histogram)?Number(current.histogram).toFixed(2):"—"}</dd></div></dl>
         </div>
+        ${structurePanel}
         <div class="dashboard-checkpoint-tabs" role="tablist"><button type="button" data-projection-checkpoint="noon" class="${projectionCheckpoint==="noon"?"is-active":""}">明日午间</button><button type="button" data-projection-checkpoint="close" class="${projectionCheckpoint==="close"?"is-active":""}">明日收盘</button></div>
         <p class="dashboard-checkpoint-note">${esc(checkpoint.note||"")}</p>
         ${projectionScenarioTable(checkpoint.scenarios)}

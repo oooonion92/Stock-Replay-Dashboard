@@ -2873,7 +2873,7 @@ window.REPLAY_DATA={
           }
         ],
         "pathProjection": {
-          "schemaVersion": "multi-timeframe-path-v1",
+          "schemaVersion": "multi-timeframe-path-v2",
           "date": "2026-07-29",
           "source": "5m-consistent-aggregation",
           "close": 3828.469,
@@ -3064,7 +3064,195 @@ window.REPLAY_DATA={
                   "condition": "跌破后绿柱停止扩大，并重新收回3853",
                   "judgment": "破坏未能放大，转入3819—3875区间修复。"
                 }
-              ]
+              ],
+              "phaseAssessment": {
+                "label": "下跌笔完成后的强反抽，验证新向上笔",
+                "summary": "零轴下金叉已出现，但仍需价格越过结构位并形成可延伸的向上笔。",
+                "role": "短期启动",
+                "roleText": "决定下一交易日先走修复、区间还是再破坏",
+                "nativeChan": true
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "午间收盘",
+                  "bars": 4,
+                  "note": "按平滑路径模拟 4 根30分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3847.189,
+                      "priceCondition": "3819—3875内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "水下金叉，红柱扩张；DIF 2.1 / DEA -3.2，正面积 36.6，负面积 0.0",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "simulation": {
+                        "close": 3847.189,
+                        "dif": 2.083,
+                        "dea": -3.153,
+                        "histogram": 10.472,
+                        "positiveArea": 36.582,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3874.964,
+                      "priceCondition": "收回3853并测试3875",
+                      "strokeCondition": "低级别向上笔延伸，开始推动上一级别修复",
+                      "macdCondition": "水下金叉，红柱扩张；DIF 6.5 / DEA -1.6，正面积 49.3，负面积 0.0",
+                      "decision": "确认后观察3900，未站稳仍视为反抽",
+                      "simulation": {
+                        "close": 3874.964,
+                        "dif": 6.468,
+                        "dea": -1.568,
+                        "histogram": 16.073,
+                        "positiveArea": 49.261,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3900.0,
+                      "priceCondition": "站稳3900",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "水下金叉，红柱扩张；DIF 10.4 / DEA -0.1，正面积 60.7，负面积 0.0",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "simulation": {
+                        "close": 3900.0,
+                        "dif": 10.421,
+                        "dea": -0.139,
+                        "histogram": 21.121,
+                        "positiveArea": 60.69,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3819并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "水下死叉，绿柱扩大；DIF -14.7 / DEA -9.2，正面积 4.3，负面积 16.2",
+                      "decision": "跌破后不能快速收回3819，恢复风险控制",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -14.665,
+                        "dea": -9.206,
+                        "histogram": -10.919,
+                        "positiveArea": 4.311,
+                        "negativeArea": 16.153
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "当日收盘",
+                  "bars": 8,
+                  "note": "按平滑路径模拟 8 根30分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3847.189,
+                      "priceCondition": "3819—3875内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "水上金叉，红柱扩张；DIF 4.6 / DEA 0.5，正面积 66.0，负面积 0.0",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "simulation": {
+                        "close": 3847.189,
+                        "dif": 4.584,
+                        "dea": 0.52,
+                        "histogram": 8.128,
+                        "positiveArea": 65.964,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3874.964,
+                      "priceCondition": "收回3853并测试3875",
+                      "strokeCondition": "低级别向上笔延伸，开始推动上一级别修复",
+                      "macdCondition": "水上金叉，红柱扩张；DIF 10.5 / DEA 3.6，正面积 90.8，负面积 0.0",
+                      "decision": "确认后观察3900，未站稳仍视为反抽",
+                      "simulation": {
+                        "close": 3874.964,
+                        "dif": 10.458,
+                        "dea": 3.625,
+                        "histogram": 13.667,
+                        "positiveArea": 90.802,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3900.0,
+                      "priceCondition": "站稳3900",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "水上金叉，红柱扩张；DIF 15.8 / DEA 6.4，正面积 113.2，负面积 0.0",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "simulation": {
+                        "close": 3900.0,
+                        "dif": 15.753,
+                        "dea": 6.423,
+                        "histogram": 18.659,
+                        "positiveArea": 113.191,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3819并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "水下死叉，绿柱扩大；DIF -17.9 / DEA -11.3，正面积 10.2，负面积 39.1",
+                      "decision": "跌破后不能快速收回3819，恢复风险控制",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -17.851,
+                        "dea": -11.338,
+                        "histogram": -13.027,
+                        "positiveArea": 10.209,
+                        "negativeArea": 39.105
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3828.469,
+                  "ema12": 3817.364,
+                  "ema26": 3821.911,
+                  "dif": -4.547,
+                  "dea": -7.725,
+                  "histogram": 6.356
+                }
+              }
             },
             "60m": {
               "label": "60分钟",
@@ -3243,7 +3431,195 @@ window.REPLAY_DATA={
                   "condition": "跌破后绿柱停止扩大，并重新收回3853",
                   "judgment": "破坏未能放大，转入3819—3875区间修复。"
                 }
-              ]
+              ],
+              "phaseAssessment": {
+                "label": "下跌动量衰减，修复开始向60分钟传导",
+                "summary": "红柱出现说明下行动量减弱；持续性取决于30分钟上行笔能否跨日延伸。",
+                "role": "持续性桥梁",
+                "roleText": "验证30分钟修复能否延续，而不是一轮日内脉冲",
+                "nativeChan": false
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "午间收盘",
+                  "bars": 2,
+                  "note": "按平滑路径模拟 2 根60分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3847.189,
+                      "priceCondition": "3819—3875内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -7.9 / DEA -12.2，正面积 14.1，负面积 0.0",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "simulation": {
+                        "close": 3847.189,
+                        "dif": -7.946,
+                        "dea": -12.221,
+                        "histogram": 8.551,
+                        "positiveArea": 14.112,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3874.964,
+                      "priceCondition": "收回3853并测试3875",
+                      "strokeCondition": "低级别向上笔延伸，开始推动上一级别修复",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -4.9 / DEA -11.4，正面积 20.4，负面积 0.0",
+                      "decision": "确认后观察3900，未站稳仍视为反抽",
+                      "simulation": {
+                        "close": 3874.964,
+                        "dif": -4.875,
+                        "dea": -11.43,
+                        "histogram": 13.11,
+                        "positiveArea": 20.443,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3900.0,
+                      "priceCondition": "站稳3900",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -2.1 / DEA -10.7，正面积 26.2，负面积 0.0",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "simulation": {
+                        "close": 3900.0,
+                        "dif": -2.106,
+                        "dea": -10.716,
+                        "histogram": 17.22,
+                        "positiveArea": 26.151,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3819并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "水下死叉，绿柱扩大；DIF -19.7 / DEA -15.2，正面积 0.0，负面积 10.1",
+                      "decision": "跌破后不能快速收回3819，恢复风险控制",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -19.674,
+                        "dea": -15.244,
+                        "histogram": -8.861,
+                        "positiveArea": 0.0,
+                        "negativeArea": 10.07
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "当日收盘",
+                  "bars": 4,
+                  "note": "按平滑路径模拟 4 根60分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3847.189,
+                      "priceCondition": "3819—3875内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -5.0 / DEA -10.1，正面积 30.9，负面积 0.0",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "simulation": {
+                        "close": 3847.189,
+                        "dif": -5.02,
+                        "dea": -10.119,
+                        "histogram": 10.197,
+                        "positiveArea": 30.933,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3874.964,
+                      "priceCondition": "收回3853并测试3875",
+                      "strokeCondition": "低级别向上笔延伸，开始推动上一级别修复",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -0.6 / DEA -8.5，正面积 43.6，负面积 0.0",
+                      "decision": "确认后观察3900，未站稳仍视为反抽",
+                      "simulation": {
+                        "close": 3874.964,
+                        "dif": -0.635,
+                        "dea": -8.534,
+                        "histogram": 15.798,
+                        "positiveArea": 43.612,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3900.0,
+                      "priceCondition": "站稳3900",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "水下金叉，红柱扩张；DIF 3.3 / DEA -7.1，正面积 55.0，负面积 0.0",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "simulation": {
+                        "close": 3900.0,
+                        "dif": 3.318,
+                        "dea": -7.105,
+                        "histogram": 20.846,
+                        "positiveArea": 55.041,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3819并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "水下死叉，绿柱扩大；DIF -21.8 / DEA -16.2，正面积 1.6，负面积 19.1",
+                      "decision": "跌破后不能快速收回3819，恢复风险控制",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -21.769,
+                        "dea": -16.172,
+                        "histogram": -11.194,
+                        "positiveArea": 1.578,
+                        "negativeArea": 19.069
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3828.469,
+                  "ema12": 3822.434,
+                  "ema26": 3835.111,
+                  "dif": -12.677,
+                  "dea": -13.985,
+                  "histogram": 2.616
+                }
+              }
             },
             "120m": {
               "label": "120分钟",
@@ -3436,7 +3812,195 @@ window.REPLAY_DATA={
                   "condition": "跌破后绿柱停止扩大，并重新收回3853",
                   "judgment": "破坏未能放大，转入3819—3875区间修复。"
                 }
-              ]
+              ],
+              "phaseAssessment": {
+                "label": "零轴下修复，等待波段级别确认",
+                "summary": "动量正在修复，但尚不能把短周期反弹命名为120分钟趋势反转。",
+                "role": "波段传导",
+                "roleText": "判断修复能否升级成波段上行笔",
+                "nativeChan": false
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "午间收盘",
+                  "bars": 1,
+                  "note": "按平滑路径模拟 1 根120分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3847.189,
+                      "priceCondition": "3819—3875内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -32.4 / DEA -38.3，正面积 11.8，负面积 0.0",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "simulation": {
+                        "close": 3847.189,
+                        "dif": -32.414,
+                        "dea": -38.303,
+                        "histogram": 11.779,
+                        "positiveArea": 11.779,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3874.964,
+                      "priceCondition": "收回3853并测试3875",
+                      "strokeCondition": "低级别向上笔延伸，开始推动上一级别修复",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -30.2 / DEA -37.9，正面积 15.3，负面积 0.0",
+                      "decision": "确认后观察3900，未站稳仍视为反抽",
+                      "simulation": {
+                        "close": 3874.964,
+                        "dif": -30.198,
+                        "dea": -37.86,
+                        "histogram": 15.324,
+                        "positiveArea": 15.324,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3900.0,
+                      "priceCondition": "站稳3900",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -28.2 / DEA -37.5，正面积 18.5，负面积 0.0",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "simulation": {
+                        "close": 3900.0,
+                        "dif": -28.201,
+                        "dea": -37.461,
+                        "histogram": 18.519,
+                        "positiveArea": 18.519,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3819并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "水下死叉，绿柱扩大；DIF -40.9 / DEA -40.0，正面积 0.0，负面积 1.8",
+                      "decision": "跌破后不能快速收回3819，恢复风险控制",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -40.876,
+                        "dea": -39.996,
+                        "histogram": -1.761,
+                        "positiveArea": 0.0,
+                        "negativeArea": 1.761
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "当日收盘",
+                  "bars": 2,
+                  "note": "按平滑路径模拟 2 根120分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3847.189,
+                      "priceCondition": "3819—3875内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -29.7 / DEA -36.7，正面积 24.6，负面积 0.0",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "simulation": {
+                        "close": 3847.189,
+                        "dif": -29.687,
+                        "dea": -36.7,
+                        "histogram": 14.025,
+                        "positiveArea": 24.609,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3874.964,
+                      "priceCondition": "收回3853并测试3875",
+                      "strokeCondition": "低级别向上笔延伸，开始推动上一级别修复",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -26.6 / DEA -35.9，正面积 30.9，负面积 0.0",
+                      "decision": "确认后观察3900，未站稳仍视为反抽",
+                      "simulation": {
+                        "close": 3874.964,
+                        "dif": -26.616,
+                        "dea": -35.908,
+                        "histogram": 18.584,
+                        "positiveArea": 30.94,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3900.0,
+                      "priceCondition": "站稳3900",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -23.8 / DEA -35.2，正面积 36.6，负面积 0.0",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "simulation": {
+                        "close": 3900.0,
+                        "dif": -23.848,
+                        "dea": -35.195,
+                        "histogram": 22.693,
+                        "positiveArea": 36.648,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3819并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "水下死叉，绿柱扩大；DIF -41.4 / DEA -39.7，正面积 3.8，负面积 3.4",
+                      "decision": "跌破后不能快速收回3819，恢复风险控制",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -41.416,
+                        "dea": -39.722,
+                        "histogram": -3.388,
+                        "positiveArea": 3.814,
+                        "negativeArea": 3.388
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3828.469,
+                  "ema12": 3833.824,
+                  "ema26": 3869.983,
+                  "dif": -36.158,
+                  "dea": -39.776,
+                  "histogram": 7.234
+                }
+              }
             },
             "1d": {
               "label": "日线",
@@ -3629,9 +4193,227 @@ window.REPLAY_DATA={
                   "condition": "跌破后绿柱停止扩大，并重新收回3853",
                   "judgment": "破坏未能放大，转入3819—3875区间修复。"
                 }
-              ]
+              ],
+              "phaseAssessment": {
+                "label": "日线下跌笔后的初期修复",
+                "summary": "日线绿柱收敛，仍处在零轴下方；先观察下跌笔是否停止扩展。",
+                "role": "趋势定性",
+                "roleText": "只负责确认大级别背景是否改变",
+                "nativeChan": true
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "午间收盘",
+                  "bars": 1,
+                  "note": "半日仅观察日线方向，不把半根日K当作日线确认。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3847.189,
+                      "priceCondition": "3819—3875内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "水下死叉，绿柱收敛；DIF -57.5 / DEA -56.1，正面积 0.0，负面积 2.8",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "simulation": {
+                        "close": 3847.189,
+                        "dif": -57.531,
+                        "dea": -56.119,
+                        "histogram": -2.822,
+                        "positiveArea": 0.0,
+                        "negativeArea": 2.822
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3874.964,
+                      "priceCondition": "收回3853并测试3875",
+                      "strokeCondition": "低级别向上笔延伸，开始推动上一级别修复",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -55.3 / DEA -55.7，正面积 0.7，负面积 0.0",
+                      "decision": "确认后观察3900，未站稳仍视为反抽",
+                      "simulation": {
+                        "close": 3874.964,
+                        "dif": -55.315,
+                        "dea": -55.676,
+                        "histogram": 0.723,
+                        "positiveArea": 0.723,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3900.0,
+                      "priceCondition": "站稳3900",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -53.3 / DEA -55.3，正面积 3.9，负面积 0.0",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "simulation": {
+                        "close": 3900.0,
+                        "dif": -53.318,
+                        "dea": -55.277,
+                        "histogram": 3.918,
+                        "positiveArea": 3.918,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3819并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "水下死叉，绿柱扩大；DIF -66.0 / DEA -57.8，正面积 0.0，负面积 16.4",
+                      "decision": "跌破后不能快速收回3819，恢复风险控制",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -65.993,
+                        "dea": -57.812,
+                        "histogram": -16.362,
+                        "positiveArea": 0.0,
+                        "negativeArea": 16.362
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "当日收盘",
+                  "bars": 1,
+                  "note": "按平滑路径模拟 1 根日线K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3847.189,
+                      "priceCondition": "3819—3875内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "水下死叉，绿柱收敛；DIF -57.5 / DEA -56.1，正面积 0.0，负面积 2.8",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "simulation": {
+                        "close": 3847.189,
+                        "dif": -57.531,
+                        "dea": -56.119,
+                        "histogram": -2.822,
+                        "positiveArea": 0.0,
+                        "negativeArea": 2.822
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3874.964,
+                      "priceCondition": "收回3853并测试3875",
+                      "strokeCondition": "低级别向上笔延伸，开始推动上一级别修复",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -55.3 / DEA -55.7，正面积 0.7，负面积 0.0",
+                      "decision": "确认后观察3900，未站稳仍视为反抽",
+                      "simulation": {
+                        "close": 3874.964,
+                        "dif": -55.315,
+                        "dea": -55.676,
+                        "histogram": 0.723,
+                        "positiveArea": 0.723,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3900.0,
+                      "priceCondition": "站稳3900",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "水下金叉，红柱扩张；DIF -53.3 / DEA -55.3，正面积 3.9，负面积 0.0",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "simulation": {
+                        "close": 3900.0,
+                        "dif": -53.318,
+                        "dea": -55.277,
+                        "histogram": 3.918,
+                        "positiveArea": 3.918,
+                        "negativeArea": 0.0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3819并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "水下死叉，绿柱扩大；DIF -66.0 / DEA -57.8，正面积 0.0，负面积 16.4",
+                      "decision": "跌破后不能快速收回3819，恢复风险控制",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -65.993,
+                        "dea": -57.812,
+                        "histogram": -16.362,
+                        "positiveArea": 0.0,
+                        "negativeArea": 16.362
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3828.469,
+                  "ema12": 3866.979,
+                  "ema26": 3927.407,
+                  "dif": -60.428,
+                  "dea": -55.767,
+                  "histogram": -9.323
+                }
+              }
             }
           },
+          "progression": [
+            {
+              "timeframe": "30m",
+              "label": "30分钟",
+              "role": "短期启动",
+              "phase": "下跌笔完成后的强反抽，验证新向上笔",
+              "status": "leading"
+            },
+            {
+              "timeframe": "60m",
+              "label": "60分钟",
+              "role": "持续性桥梁",
+              "phase": "下跌动量衰减，修复开始向60分钟传导",
+              "status": "transmitting"
+            },
+            {
+              "timeframe": "120m",
+              "label": "120分钟",
+              "role": "波段传导",
+              "phase": "零轴下修复，等待波段级别确认",
+              "status": "transmitting"
+            },
+            {
+              "timeframe": "1d",
+              "label": "日线",
+              "role": "趋势定性",
+              "phase": "日线下跌笔后的初期修复",
+              "status": "pending"
+            }
+          ],
           "nextSessionPaths": {
             "up": {
               "trigger": 3852.775,

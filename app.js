@@ -8,6 +8,7 @@
   const finite=v=>v!==null&&v!==""&&Number.isFinite(Number(v));
   const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   let projectionTimeframe="30m";
+  let projectionCheckpoint="close";
   const metricFormat=(v,id,axis=false)=>{
     if(!finite(v))return "—";
     const n=Number(v),digits=id==="turnoverShare"?1:Math.abs(n)>=100?0:1;
@@ -126,10 +127,15 @@
     const body=rows.map(row=>`<tr class="path-stage-${esc(row.tone||"neutral")}"><th scope="row">${esc(row.stage||"—")}</th><td><span>可观察条件</span>${esc(row.condition||"—")}</td><td><span>判断</span>${esc(row.judgment||"—")}</td></tr>`).join("");
     return `<div class="dashboard-path-table-wrap"><table class="dashboard-path-table"><thead><tr><th>路径阶段</th><th>可观察条件</th><th>判断</th></tr></thead><tbody>${body}</tbody></table></div>`;
   };
+  const projectionScenarioTable=rows=>{
+    if(!rows?.length)return `<div class="path-table-empty">该周期暂无可用路径条件</div>`;
+    const body=rows.map(row=>`<tr class="path-stage-${esc(row.tone||"neutral")}"><th scope="row">${esc(row.label||"—")}</th><td><span>点位</span>${esc(row.priceCondition||"—")}</td><td><span>笔结构</span>${esc(row.strokeCondition||"—")}</td><td><span>MACD</span>${esc(row.macdCondition||"—")}</td><td><span>判断</span>${esc(row.decision||"—")}</td></tr>`).join("");
+    return `<div class="dashboard-path-table-wrap"><table class="dashboard-path-table dashboard-path-table-v2"><thead><tr><th>路径</th><th>点位</th><th>笔结构</th><th>MACD面积与快慢线</th><th>判断</th></tr></thead><tbody>${body}</tbody></table></div>`;
+  };
   function renderProjection(d){
     const projection=D.reports[d]?.market?.pathProjection;
     const content=$("projectionContent"),empty=$("projectionUnavailable");
-    if(!projection||projection.schemaVersion!=="multi-timeframe-path-v1"){
+    if(!projection||!["multi-timeframe-path-v1","multi-timeframe-path-v2"].includes(projection.schemaVersion)){
       content.hidden=true;empty.hidden=false;
       empty.textContent="该历史日期尚未生成多周期路径快照；不使用后来的数据倒填。";
       $("projectionVolume").textContent="历史数据未纳入";
@@ -149,6 +155,21 @@
     $("projectionBranches").innerHTML=branchMeta.map(([tone,title,label])=>`<div class="dashboard-projection-branch ${tone}"><b>${title}</b><span>${esc(label||"—")}</span></div>`).join("");
     $("projectionTabs").innerHTML=Object.entries(timeframes).map(([key,item])=>`<button type="button" class="${key===projectionTimeframe?"is-active":""}" data-projection-timeframe="${key}" aria-selected="${key===projectionTimeframe}">${esc(item.label||key)}</button>`).join("");
     const item=timeframes[projectionTimeframe]||{},current=item.current||{};
+    if(projection.schemaVersion==="multi-timeframe-path-v2"){
+      const assessment=item.phaseAssessment||{},checkpoint=item.checkpoints?.[projectionCheckpoint]||item.checkpoints?.close||{};
+      const progression=(projection.progression||[]).map(step=>`<li class="${esc(step.status||"")}"><span>${esc(step.label||"—")}</span><b>${esc(step.role||"—")}</b><small>${esc(step.phase||"—")}</small></li>`).join("");
+      $("projectionDetail").innerHTML=`
+        <ol class="dashboard-projection-progression">${progression}</ol>
+        <div class="dashboard-projection-current dashboard-projection-current-v2">
+          <div><span>${esc(assessment.role||"当前状态")}</span><b>${esc(assessment.label||current.phase||"—")}</b><p>${esc(assessment.summary||"")}</p></div>
+          <dl><div><dt>DIF</dt><dd>${finite(current.dif)?Number(current.dif).toFixed(2):"—"}</dd></div><div><dt>DEA</dt><dd>${finite(current.dea)?Number(current.dea).toFixed(2):"—"}</dd></div><div><dt>柱</dt><dd>${finite(current.histogram)?Number(current.histogram).toFixed(2):"—"}</dd></div></dl>
+        </div>
+        <div class="dashboard-checkpoint-tabs" role="tablist"><button type="button" data-projection-checkpoint="noon" class="${projectionCheckpoint==="noon"?"is-active":""}">午间收盘</button><button type="button" data-projection-checkpoint="close" class="${projectionCheckpoint==="close"?"is-active":""}">当日收盘</button></div>
+        <p class="dashboard-checkpoint-note">${esc(checkpoint.note||"")}</p>
+        ${projectionScenarioTable(checkpoint.scenarios)}
+        <details class="dashboard-projection-math"><summary>展开 MACD 数学推演说明</summary><p>默认以平滑推进作为可比基准。早段冲高后横盘通常累计面积更大、但收盘柱可能缩短；尾段加速通常收盘柱更强、累计面积反而较小。量能只约束路径持续性，不进入MACD公式。</p></details>`;
+      return;
+    }
     $("projectionDetail").innerHTML=`
       <div class="dashboard-projection-current">
         <div><span>当前状态</span><b>${esc(current.phase||"—")}</b></div>
@@ -188,5 +209,6 @@
     $("sectorLegend").addEventListener("click",e=>{const b=e.target.closest("[data-sector]");if(b){$("sectorSelect").value=b.dataset.sector;renderSector($("dateSelect").value)}});
   }
   $("projectionTabs").addEventListener("click",event=>{const button=event.target.closest("[data-projection-timeframe]");if(!button)return;projectionTimeframe=button.dataset.projectionTimeframe;renderProjection($("dateSelect").value)});
+  $("projectionDetail").addEventListener("click",event=>{const button=event.target.closest("[data-projection-checkpoint]");if(!button)return;projectionCheckpoint=button.dataset.projectionCheckpoint;renderProjection($("dateSelect").value)});
   $("dateSelect").addEventListener("change",e=>render(e.target.value));render(D.dates[D.dates.length-1]);
 })();

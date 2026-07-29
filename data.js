@@ -21,7 +21,8 @@ window.REPLAY_DATA={
     "2026-07-23",
     "2026-07-24",
     "2026-07-27",
-    "2026-07-28"
+    "2026-07-28",
+    "2026-07-29"
   ],
   "reports": {
     "2026-07-03": {
@@ -2846,6 +2847,795 @@ window.REPLAY_DATA={
         }
       ],
       "fullReport": "reports/20260728.html"
+    },
+    "2026-07-29": {
+      "market": {
+        "total": 58,
+        "sentiment": 37,
+        "technical": 21,
+        "status": "震荡观察",
+        "summary": "黄色震荡观察。上证早盘下探3782.48后收回，午后30分钟四根MACD柱连续翻红并在零轴下形成DIF上穿DEA，收3828.47；全A上涨3968家、中位涨1.55%，但成交额处于近20日约21%分位、全市场主力净流出约22亿元，按低量修复而非趋势反转处理。",
+        "paths": [
+          {
+            "tone": "red",
+            "title": "红：收回3853，确认3875，放大看3900",
+            "text": "先要求30分钟收盘站上3852.78，回踩守住3819.41；再以3874.96作为结构确认位。只有站稳3875且量能不低于7月29日，才把零轴下修复升级为向上路径。；30分钟DIF最快约2根可过零，但当前偏低量下更现实是半天至2个交易日；若价格不能持续在3853上方，单次过零不作为趋势确认。"
+          },
+          {
+            "tone": "yellow",
+            "title": "黄：3819—3875内消化与换手",
+            "text": "若3819.41守住、反弹又受制于3852.78—3874.96，则按区间震荡处理，观察30分钟红柱是否继续扩张以及DIF能否稳定抬升。；宽度改善必须由成交额回升和强势股次日正溢价确认；低量普涨不能单独定义为新主升。"
+          },
+          {
+            "tone": "blue",
+            "title": "蓝：失守3819，先看3782，放大看3741",
+            "text": "若30分钟收盘跌破3819.41且红柱明显缩短，视为下午修复受损；失守3782.48后反抽不能收回，向3741.11放大。；若同时出现昨日强势股再度负溢价、科技核心跌回VWAP下方和主力净流出扩大，恢复风险控制，不把盘中拉回当成反转。"
+          }
+        ],
+        "pathProjection": {
+          "schemaVersion": "multi-timeframe-path-v1",
+          "date": "2026-07-29",
+          "source": "5m-consistent-aggregation",
+          "close": 3828.469,
+          "volume": {
+            "amount": 10663.94,
+            "average20": 12334.75,
+            "ratio20": 0.8645,
+            "label": "偏低量",
+            "rule": "量能不进入MACD公式；只约束目标区域能否持续，以及数学K线数向现实时间的映射。"
+          },
+          "levels": {
+            "up": [
+              3852.775,
+              3874.964,
+              3900.0,
+              4002.782,
+              4019.215,
+              4073.88,
+              4190.866
+            ],
+            "down": [
+              3819.413,
+              3782.481,
+              3741.11
+            ]
+          },
+          "timeframes": {
+            "30m": {
+              "label": "30分钟",
+              "barsPerDay": 8,
+              "current": {
+                "close": 3828.469,
+                "dif": -4.547,
+                "dea": -7.725,
+                "histogram": 6.356,
+                "difDelta": 1.494,
+                "histogramDelta": 1.4,
+                "phase": "零轴下方修复"
+              },
+              "upTargets": [
+                {
+                  "price": 3852.775,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 2,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3874.964,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3900.0,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 4002.782,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3819.413,
+                  "bars": {
+                    "dif_turn": null,
+                    "histogram_flip": null,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "当前目标位不足以完成",
+                    "histogram_flip": "当前目标位不足以完成",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3782.481,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 2,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 2
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                }
+              ]
+            },
+            "60m": {
+              "label": "60分钟",
+              "barsPerDay": 4,
+              "current": {
+                "close": 3828.469,
+                "dif": -12.677,
+                "dea": -13.985,
+                "histogram": 2.616,
+                "difDelta": 1.629,
+                "histogramDelta": 2.603,
+                "phase": "零轴下方修复"
+              },
+              "upTargets": [
+                {
+                  "price": 3852.775,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 7,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约2—4个交易日"
+                  }
+                },
+                {
+                  "price": 3874.964,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 4,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3900.0,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 2,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 4002.782,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 4019.215,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3819.413,
+                  "bars": {
+                    "dif_turn": null,
+                    "histogram_flip": null,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "当前目标位不足以完成",
+                    "histogram_flip": "当前目标位不足以完成",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3782.481,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 2
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                }
+              ]
+            },
+            "120m": {
+              "label": "120分钟",
+              "barsPerDay": 2,
+              "current": {
+                "close": 3828.469,
+                "dif": -36.158,
+                "dea": -39.776,
+                "histogram": 7.234,
+                "difDelta": 2.347,
+                "histogramDelta": 2.886,
+                "phase": "零轴下方修复"
+              },
+              "upTargets": [
+                {
+                  "price": 3852.775,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3874.964,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 24,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约3—5周"
+                  }
+                },
+                {
+                  "price": 3900.0,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 9,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约5—9个交易日"
+                  }
+                },
+                {
+                  "price": 4002.782,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 3,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约1—3个交易日"
+                  }
+                },
+                {
+                  "price": 4019.215,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 3,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约1—3个交易日"
+                  }
+                },
+                {
+                  "price": 4073.88,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 2,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3819.413,
+                  "bars": {
+                    "dif_turn": null,
+                    "histogram_flip": null,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "当前目标位不足以完成",
+                    "histogram_flip": "当前目标位不足以完成",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3782.481,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": null,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "当前目标位不足以完成",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                }
+              ]
+            },
+            "1d": {
+              "label": "日线",
+              "barsPerDay": 1,
+              "current": {
+                "close": 3828.469,
+                "dif": -60.428,
+                "dea": -55.767,
+                "histogram": -9.323,
+                "difDelta": 0.913,
+                "histogramDelta": 4.157,
+                "phase": "绿柱区动量收敛"
+              },
+              "upTargets": [
+                {
+                  "price": 3874.964,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3900.0,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 4002.782,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 7,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约8—14个交易日"
+                  }
+                },
+                {
+                  "price": 4019.215,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 6,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约7—12个交易日"
+                  }
+                },
+                {
+                  "price": 4073.88,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 4,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约5—8个交易日"
+                  }
+                },
+                {
+                  "price": 4190.866,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 3,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约3—6个交易日"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3819.413,
+                  "bars": {
+                    "dif_turn": null,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "当前目标位不足以完成",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3782.481,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                }
+              ]
+            }
+          },
+          "nextSessionPaths": {
+            "up": {
+              "trigger": 3852.775,
+              "confirm": 3874.964,
+              "amplify": 3900.0,
+              "failure": 3819.413,
+              "label": "收回3853，确认3875，放大看3900"
+            },
+            "range": {
+              "lower": 3819.413,
+              "upper": 3874.964,
+              "label": "3819—3875内止跌与换手"
+            },
+            "down": {
+              "trigger": 3819.413,
+              "amplify": 3741.11,
+              "recovery": 3852.775,
+              "label": "失守3819，放大看3741"
+            }
+          },
+          "previousReview": {
+            "available": true,
+            "previousDate": "2026-07-28",
+            "status": "down_recovered",
+            "primary": "下跌触发后收回",
+            "summary": "开3823.29、高3845.77、低3782.48、收3828.47；上涨触发/确认/放大=09:35/13:35/—，下跌触发/放大=09:50/—。",
+            "events": {
+              "upTriggeredAt": "09:35",
+              "upConfirmedAt": "13:35",
+              "upAmplifiedAt": null,
+              "downTriggeredAt": "09:50",
+              "downAmplifiedAt": null
+            },
+            "timeframeChanges": [
+              {
+                "timeframe": "30m",
+                "label": "30分钟",
+                "difDelta": 4.48,
+                "histogramDelta": 9.812,
+                "phaseBefore": "绿柱区动量收敛",
+                "phaseAfter": "零轴下方修复"
+              },
+              {
+                "timeframe": "60m",
+                "label": "60分钟",
+                "difDelta": 1.484,
+                "histogramDelta": 3.519,
+                "phaseBefore": "下行动量仍在",
+                "phaseAfter": "零轴下方修复"
+              },
+              {
+                "timeframe": "120m",
+                "label": "120分钟",
+                "difDelta": 1.191,
+                "histogramDelta": -0.515,
+                "phaseBefore": "零轴下方修复",
+                "phaseAfter": "零轴下方修复"
+              },
+              {
+                "timeframe": "1d",
+                "label": "日线",
+                "difDelta": 0.913,
+                "histogramDelta": 4.157,
+                "phaseBefore": "下行动量仍在",
+                "phaseAfter": "绿柱区动量收敛"
+              }
+            ],
+            "range": {
+              "lower": 3793.449,
+              "upper": 3833.716
+            }
+          },
+          "sessionStages": {
+            "30m": {
+              "morning": {
+                "point": "午收3793.18；最低3782.48",
+                "condition": "DIF -11.92 / DEA -9.59 / 柱 -4.67；11:30绿柱停止扩大，但尚未翻红。",
+                "judgment": "09:50下跌路径触发，未向3741放大；3793附近只进入修复准备。"
+              },
+              "afternoon": {
+                "point": "收3828.47；最高3845.77",
+                "condition": "13:30柱翻红且DIF水下上穿DEA；下午4根红柱连续扩张，收盘DIF -4.55。",
+                "judgment": "收回3822，修复成立；未以30分钟收盘站稳3853，放大尚未确认。"
+              }
+            },
+            "60m": {
+              "morning": {
+                "point": "午收3793.18；最低3782.48",
+                "condition": "DIF -16.04 / DEA -14.31 / 柱 -3.46；绿柱较前一根继续扩大。",
+                "judgment": "价格破坏已触发，60分钟动量尚未止跌；只记录未放大，不提前判修复。"
+              },
+              "afternoon": {
+                "point": "收3828.47；重回3822上方",
+                "condition": "DIF -12.68 / DEA -13.99 / 柱 +2.62；收盘完成水下金叉并翻红。",
+                "judgment": "完成第一步动量修复；DIF仍在零轴下，需3853—3875持续承接。"
+              }
+            },
+            "120m": {
+              "morning": {
+                "point": "午收3793.18；下探3782.48",
+                "condition": "DIF -38.51 / DEA -40.68 / 柱 +4.35；红柱较前一根7.75明显收缩。",
+                "judgment": "下跌触发削弱原有修复，120分钟没有转空确认，也没有修复放大。"
+              },
+              "afternoon": {
+                "point": "收3828.47；下影线收回",
+                "condition": "DIF -36.16 / DEA -39.78 / 柱 +7.23；红柱重新扩张，DIF继续抬升。",
+                "judgment": "120分钟修复重新占优；距零轴仍远，只能定义为下行背景中的修复延续。"
+              }
+            },
+            "1d": {
+              "morning": {
+                "point": "临时收3793.18；日低3782.48",
+                "condition": "午间仅作临时K线：DIF -63.24 / DEA -56.33 / 柱 -13.83，绿柱一度扩大。",
+                "judgment": "日线未收盘，上午只能记录破坏压力，不能据临时MACD确认日线转弱。"
+              },
+              "afternoon": {
+                "point": "日收3828.47；长下影修复",
+                "condition": "DIF -60.43 / DEA -55.77 / 柱 -9.32；绿柱较前日-13.48收敛，DIF拐升。",
+                "judgment": "日线进入修复准备，但DIF仍低于DEA、缠论仍向下离开；尚未形成日线买点。"
+              }
+            }
+          }
+        }
+      },
+      "stocks": [
+        {
+          "symbol": "sz002463",
+          "name": "沪电股份",
+          "structure": 0,
+          "support": 21,
+          "relative": 15,
+          "risk": 7,
+          "total": 43,
+          "status": "防守观察"
+        },
+        {
+          "symbol": "sh588710",
+          "name": "科创半导体设备ETF",
+          "structure": 1,
+          "support": 20,
+          "relative": 11,
+          "risk": 7,
+          "total": 39,
+          "status": "防守观察"
+        },
+        {
+          "symbol": "sz002422",
+          "name": "科伦药业",
+          "structure": 4,
+          "support": 0,
+          "relative": 18,
+          "risk": 6,
+          "total": 28,
+          "status": "禁止左侧"
+        }
+      ],
+      "experts": [
+        {
+          "tag": "科技修复质量",
+          "source": "NGA / fuelish · 15:05",
+          "quote": "光存核心止跌，但是板块要快速反弹很难，只是收了一根下引线的阴线，没有反包昨日阴线，明天还面临抄底盘的抛压，短期依旧看震荡。",
+          "meaning": "科技只能先按核心修复、后排分化处理，不能由单日下影线直接升级趋势。",
+          "test": "验证核心是否守住VWAP、后排是否停止补跌，以及指数能否确认3853—3875。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207267&pid=876763292"
+        },
+        {
+          "tag": "指数共振",
+          "source": "NGA / 丶阿疯 · 12:34",
+          "quote": "既然指数是重中之重，那即使选择题材也好，就尽量选和指数共振的；反指板块一定要追强的核心，低吸后排一定会遭重。",
+          "meaning": "相对强弱要同时看指数上涨时的共振和指数回落时的抵抗性。",
+          "test": "次日比较共振核心和后排的VWAP承接，不对普涨日仍弱于指数的标的加分。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207543&pid=876745245"
+        },
+        {
+          "tag": "分时量价纪律",
+          "source": "NGA / -阿狼- · 14:21",
+          "quote": "当超跌反弹是放量的，而见第一次分时高点后停止放量，第二次拉升没有继续放量、也没有继续突破分时高点的时候，第二次拉升T出。",
+          "meaning": "修复路径需要量价持续，而不是只看价格瞬时拉回。",
+          "test": "明日第二次冲击3853或3875若不放量且不创新高，降低高弹性仓位。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207407&pid=876757896"
+        },
+        {
+          "tag": "区间验证",
+          "source": "NGA / Plezl · 14:08",
+          "quote": "策略是3793以下买一点，3830以上卖一点。",
+          "meaning": "7月29日更接近先破坏后收回的区间修复，而非单边趋势。",
+          "test": "次日边界上移至3819与3853—3875，仍按逐级确认处理。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207407&pid=876756381"
+        },
+        {
+          "tag": "反方证据",
+          "source": "NGA / 海伯利安之歌 · 10:46",
+          "quote": "趋势已经形成，不要被日内分时欺骗。",
+          "meaning": "午后30分钟金叉只完成动量修复，仍需新结构和次日延续性确认。",
+          "test": "若科技核心次日跌回VWAP下方或后排继续补跌，提高该反方判断权重。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47209064&pid=876728795"
+        }
+      ],
+      "fullReport": "reports/20260729.html"
     }
   },
   "sectorFlowConfig": {
@@ -3162,7 +3952,7 @@ window.REPLAY_DATA={
       },
       "comm_equipment": {
         "turnover": 350.84,
-        "turnoverShare": 1,
+        "turnoverShare": 1.0,
         "mainNet": -13.79
       },
       "comm_services": {
@@ -3393,14 +4183,14 @@ window.REPLAY_DATA={
         "mainNet": 14.95
       },
       "comm_services": {
-        "turnover": 30,
+        "turnover": 30.0,
         "turnoverShare": 0.09,
         "mainNet": 3.17
       },
       "auto_robot": {
         "turnover": 185.9,
         "turnoverShare": 0.57,
-        "mainNet": 13
+        "mainNet": 13.0
       },
       "auto_control": {
         "turnover": 238.88,
@@ -3786,7 +4576,7 @@ window.REPLAY_DATA={
       },
       "medicine": {
         "turnover": 1462.86,
-        "turnoverShare": 4,
+        "turnoverShare": 4.0,
         "mainNet": 33.37
       },
       "finance": {
@@ -3818,7 +4608,7 @@ window.REPLAY_DATA={
       },
       "semi_packaging": {
         "turnover": 688.35,
-        "turnoverShare": 2,
+        "turnoverShare": 2.0,
         "mainNet": -73.42
       },
       "elec_pcb": {
@@ -3854,7 +4644,7 @@ window.REPLAY_DATA={
       "auto_robot": {
         "turnover": 238.92,
         "turnoverShare": 0.69,
-        "mainNet": -11
+        "mainNet": -11.0
       },
       "auto_control": {
         "turnover": 260.34,
@@ -4013,7 +4803,7 @@ window.REPLAY_DATA={
       },
       "medicine": {
         "turnover": 1379.55,
-        "turnoverShare": 4,
+        "turnoverShare": 4.0,
         "mainNet": 15.66
       },
       "finance": {
@@ -4035,7 +4825,7 @@ window.REPLAY_DATA={
       },
       "semi_manufacturing": {
         "turnover": 318.76,
-        "turnoverShare": 1,
+        "turnoverShare": 1.0,
         "mainNet": -12.76
       },
       "semi_design": {
@@ -4095,7 +4885,7 @@ window.REPLAY_DATA={
       },
       "auto_components": {
         "turnover": 636.52,
-        "turnoverShare": 2,
+        "turnoverShare": 2.0,
         "mainNet": 43.42
       },
       "def_aerospace": {
@@ -4297,7 +5087,7 @@ window.REPLAY_DATA={
       },
       "comm_equipment": {
         "turnover": 308.03,
-        "turnoverShare": 1,
+        "turnoverShare": 1.0,
         "mainNet": -13.99
       },
       "comm_services": {
@@ -4322,7 +5112,7 @@ window.REPLAY_DATA={
       },
       "auto_components": {
         "turnover": 616.8,
-        "turnoverShare": 2,
+        "turnoverShare": 2.0,
         "mainNet": -7.33
       },
       "def_aerospace": {
@@ -4757,7 +5547,7 @@ window.REPLAY_DATA={
       "comm_services": {
         "turnover": 24.58,
         "turnoverShare": 0.1,
-        "mainNet": 0
+        "mainNet": -0.0
       },
       "auto_robot": {
         "turnover": 143.6,
@@ -4847,7 +5637,7 @@ window.REPLAY_DATA={
       "med_cxo": {
         "turnover": 192.2,
         "turnoverShare": 0.75,
-        "mainNet": -12
+        "mainNet": -12.0
       },
       "med_tcm": {
         "turnover": 82.74,
@@ -4967,7 +5757,7 @@ window.REPLAY_DATA={
         "mainNet": -2.23
       },
       "elec_components": {
-        "turnover": 976,
+        "turnover": 976.0,
         "turnoverShare": 3.35,
         "mainNet": 41.81
       },
@@ -5154,7 +5944,7 @@ window.REPLAY_DATA={
       "finance": {
         "turnover": 800.97,
         "turnoverShare": 2.75,
-        "mainNet": -1
+        "mainNet": -1.0
       }
     },
     "2026-07-10": {
@@ -5541,7 +6331,7 @@ window.REPLAY_DATA={
         "mainNet": -4.16
       },
       "med_services": {
-        "turnover": 38,
+        "turnover": 38.0,
         "turnoverShare": 0.13,
         "mainNet": -2.68
       },
@@ -5556,7 +6346,7 @@ window.REPLAY_DATA={
         "mainNet": -3.09
       },
       "fin_brokers": {
-        "turnover": 363,
+        "turnover": 363.0,
         "turnoverShare": 1.29,
         "mainNet": -24.28
       },
@@ -5829,7 +6619,7 @@ window.REPLAY_DATA={
       },
       "medicine": {
         "turnover": 1350.56,
-        "turnoverShare": 5,
+        "turnoverShare": 5.0,
         "mainNet": 19.72
       },
       "finance": {
@@ -5840,7 +6630,7 @@ window.REPLAY_DATA={
     },
     "2026-07-15": {
       "semi_equipment": {
-        "turnover": 744,
+        "turnover": 744.0,
         "turnoverShare": 2.89,
         "mainNet": -22.18
       },
@@ -5900,18 +6690,18 @@ window.REPLAY_DATA={
         "mainNet": 5.7
       },
       "auto_control": {
-        "turnover": 158,
+        "turnover": 158.0,
         "turnoverShare": 0.61,
         "mainNet": 4.41
       },
       "auto_machine": {
         "turnover": 257.14,
-        "turnoverShare": 1,
+        "turnoverShare": 1.0,
         "mainNet": -17.69
       },
       "auto_components": {
         "turnover": 255.98,
-        "turnoverShare": 1,
+        "turnoverShare": 1.0,
         "mainNet": 5.03
       },
       "def_aerospace": {
@@ -6219,7 +7009,7 @@ window.REPLAY_DATA={
       "med_device": {
         "turnover": 238.85,
         "turnoverShare": 0.99,
-        "mainNet": -1
+        "mainNet": -1.0
       },
       "med_services": {
         "turnover": 64.51,
@@ -6693,7 +7483,7 @@ window.REPLAY_DATA={
       "fin_brokers": {
         "turnover": 459.73,
         "turnoverShare": 1.7,
-        "mainNet": -11
+        "mainNet": -11.0
       },
       "fin_other": {
         "turnover": 46.15,
@@ -6784,7 +7574,7 @@ window.REPLAY_DATA={
       },
       "elec_components": {
         "turnover": 886.57,
-        "turnoverShare": 3,
+        "turnoverShare": 3.0,
         "mainNet": 43.89
       },
       "comm_optical": {
@@ -6815,7 +7605,7 @@ window.REPLAY_DATA={
       "auto_machine": {
         "turnover": 293.62,
         "turnoverShare": 0.99,
-        "mainNet": 2
+        "mainNet": 2.0
       },
       "auto_components": {
         "turnover": 352.55,
@@ -6844,7 +7634,7 @@ window.REPLAY_DATA={
       },
       "newenergy_lithium": {
         "turnover": 592.43,
-        "turnoverShare": 2,
+        "turnoverShare": 2.0,
         "mainNet": 14.99
       },
       "newenergy_materials": {
@@ -7041,7 +7831,7 @@ window.REPLAY_DATA={
       },
       "auto_machine": {
         "turnover": 266.56,
-        "turnoverShare": 1,
+        "turnoverShare": 1.0,
         "mainNet": 1.23
       },
       "auto_components": {
@@ -7773,7 +8563,7 @@ window.REPLAY_DATA={
       "newenergy_hydrogen": {
         "turnover": 2.74,
         "turnoverShare": 0.01,
-        "mainNet": 0
+        "mainNet": 0.0
       },
       "res_industrial": {
         "turnover": 407.53,
@@ -7938,7 +8728,7 @@ window.REPLAY_DATA={
         "mainNet": -0.14
       },
       "auto_robot": {
-        "turnover": 63,
+        "turnover": 63.0,
         "turnoverShare": 0.31,
         "mainNet": -1.22
       },
@@ -8106,6 +8896,233 @@ window.REPLAY_DATA={
         "turnover": 728.72,
         "turnoverShare": 3.6,
         "mainNet": -11.67
+      }
+    },
+    "2026-07-29": {
+      "semi_equipment": {
+        "turnover": 714.93,
+        "turnoverShare": 3.11,
+        "mainNet": -2.46
+      },
+      "semi_materials": {
+        "turnover": 400.9,
+        "turnoverShare": 1.75,
+        "mainNet": -14.26
+      },
+      "semi_manufacturing": {
+        "turnover": 257.93,
+        "turnoverShare": 1.12,
+        "mainNet": -15.29
+      },
+      "semi_design": {
+        "turnover": 2402.93,
+        "turnoverShare": 10.46,
+        "mainNet": 20.69
+      },
+      "semi_packaging": {
+        "turnover": 475.99,
+        "turnoverShare": 2.07,
+        "mainNet": -24.16
+      },
+      "elec_pcb": {
+        "turnover": 907.28,
+        "turnoverShare": 3.95,
+        "mainNet": -8.33
+      },
+      "elec_passive": {
+        "turnover": 304.48,
+        "turnoverShare": 1.33,
+        "mainNet": 28.3
+      },
+      "elec_components": {
+        "turnover": 662.41,
+        "turnoverShare": 2.88,
+        "mainNet": -2.09
+      },
+      "comm_optical": {
+        "turnover": 1338.56,
+        "turnoverShare": 5.83,
+        "mainNet": 6.79
+      },
+      "comm_equipment": {
+        "turnover": 280.04,
+        "turnoverShare": 1.22,
+        "mainNet": -7.86
+      },
+      "comm_services": {
+        "turnover": 24.24,
+        "turnoverShare": 0.11,
+        "mainNet": -0.21
+      },
+      "auto_robot": {
+        "turnover": 84.5,
+        "turnoverShare": 0.37,
+        "mainNet": -1.48
+      },
+      "auto_control": {
+        "turnover": 147.49,
+        "turnoverShare": 0.64,
+        "mainNet": -4.52
+      },
+      "auto_machine": {
+        "turnover": 204.9,
+        "turnoverShare": 0.89,
+        "mainNet": -8.25
+      },
+      "auto_components": {
+        "turnover": 244.71,
+        "turnoverShare": 1.07,
+        "mainNet": -3.33
+      },
+      "def_aerospace": {
+        "turnover": 42.93,
+        "turnoverShare": 0.19,
+        "mainNet": -0.44
+      },
+      "def_aviation": {
+        "turnover": 104.81,
+        "turnoverShare": 0.46,
+        "mainNet": 1.38
+      },
+      "def_electronics": {
+        "turnover": 212.74,
+        "turnoverShare": 0.93,
+        "mainNet": 1.42
+      },
+      "def_land_sea": {
+        "turnover": 149.25,
+        "turnoverShare": 0.65,
+        "mainNet": 3.61
+      },
+      "newenergy_lithium": {
+        "turnover": 522.67,
+        "turnoverShare": 2.28,
+        "mainNet": 8.89
+      },
+      "newenergy_materials": {
+        "turnover": 261.03,
+        "turnoverShare": 1.14,
+        "mainNet": 3.02
+      },
+      "newenergy_solar": {
+        "turnover": 352.7,
+        "turnoverShare": 1.54,
+        "mainNet": -13.34
+      },
+      "newenergy_wind": {
+        "turnover": 92.16,
+        "turnoverShare": 0.4,
+        "mainNet": 0.21
+      },
+      "newenergy_hydrogen": {
+        "turnover": 2.78,
+        "turnoverShare": 0.01,
+        "mainNet": 0.0
+      },
+      "res_industrial": {
+        "turnover": 448.71,
+        "turnoverShare": 1.95,
+        "mainNet": 5.71
+      },
+      "res_minor": {
+        "turnover": 356.08,
+        "turnoverShare": 1.55,
+        "mainNet": -2.33
+      },
+      "res_precious": {
+        "turnover": 126.12,
+        "turnoverShare": 0.55,
+        "mainNet": 1.33
+      },
+      "med_innovative": {
+        "turnover": 411.38,
+        "turnoverShare": 1.79,
+        "mainNet": -1.87
+      },
+      "med_cxo": {
+        "turnover": 208.15,
+        "turnoverShare": 0.91,
+        "mainNet": 2.26
+      },
+      "med_tcm": {
+        "turnover": 127.37,
+        "turnoverShare": 0.55,
+        "mainNet": -2.49
+      },
+      "med_device": {
+        "turnover": 176.47,
+        "turnoverShare": 0.77,
+        "mainNet": 1.18
+      },
+      "med_services": {
+        "turnover": 68.95,
+        "turnoverShare": 0.3,
+        "mainNet": -2.6
+      },
+      "fin_banks": {
+        "turnover": 356.16,
+        "turnoverShare": 1.55,
+        "mainNet": -16.23
+      },
+      "fin_insurance": {
+        "turnover": 93.86,
+        "turnoverShare": 0.41,
+        "mainNet": -1.09
+      },
+      "fin_brokers": {
+        "turnover": 338.69,
+        "turnoverShare": 1.47,
+        "mainNet": 18.32
+      },
+      "fin_other": {
+        "turnover": 42.98,
+        "turnoverShare": 0.19,
+        "mainNet": 0.38
+      },
+      "semiconductor": {
+        "turnover": 4252.68,
+        "turnoverShare": 18.52,
+        "mainNet": -35.47
+      },
+      "electronics": {
+        "turnover": 1874.16,
+        "turnoverShare": 8.16,
+        "mainNet": 17.88
+      },
+      "optical": {
+        "turnover": 1642.84,
+        "turnoverShare": 7.15,
+        "mainNet": -1.28
+      },
+      "automation": {
+        "turnover": 681.6,
+        "turnoverShare": 2.97,
+        "mainNet": -17.58
+      },
+      "defense": {
+        "turnover": 509.72,
+        "turnoverShare": 2.22,
+        "mainNet": 5.97
+      },
+      "battery": {
+        "turnover": 1231.34,
+        "turnoverShare": 5.36,
+        "mainNet": -1.21
+      },
+      "resources": {
+        "turnover": 930.91,
+        "turnoverShare": 4.05,
+        "mainNet": 4.71
+      },
+      "medicine": {
+        "turnover": 992.31,
+        "turnoverShare": 4.32,
+        "mainNet": -3.52
+      },
+      "finance": {
+        "turnover": 831.7,
+        "turnoverShare": 3.62,
+        "mainNet": 1.38
       }
     }
   },

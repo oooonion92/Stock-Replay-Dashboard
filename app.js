@@ -132,6 +132,12 @@
       :realistic.histogram_expand||realistic.histogram_flip||realistic.dif_turn;
     return `<li><b>${finite(target.price)?Number(target.price).toFixed(2):"—"}</b><span>${esc(metrics)}</span><em>${esc(time||"—")}</em></li>`;
   };
+  const projectionStageTable=stages=>{
+    if(!stages?.morning||!stages?.afternoon)return "";
+    const row=(title,item)=>`<tr><th scope="row">${title}</th><td><span>点位</span>${esc(item.point||"—")}</td><td><span>指标条件</span>${esc(item.condition||"—")}</td><td><span>路径判断</span>${esc(item.judgment||"—")}</td></tr>`;
+    return `<div class="dashboard-session-heading"><b>当日路径分段复核</b><span>午间确认上午，收盘再判断下午是否完成、放大或失效</span></div>
+      <div class="dashboard-session-table-wrap"><table class="dashboard-session-table"><thead><tr><th>阶段</th><th>点位</th><th>指标条件</th><th>路径判断</th></tr></thead><tbody>${row("午间收盘",stages.morning)}${row("当日收盘",stages.afternoon)}</tbody></table></div>`;
+  };
   function renderProjection(d){
     const projection=D.reports[d]?.market?.pathProjection;
     const content=$("projectionContent"),empty=$("projectionUnavailable");
@@ -154,12 +160,13 @@
     ];
     $("projectionBranches").innerHTML=branchMeta.map(([tone,title,label])=>`<div class="dashboard-projection-branch ${tone}"><b>${title}</b><span>${esc(label||"—")}</span></div>`).join("");
     $("projectionTabs").innerHTML=Object.entries(timeframes).map(([key,item])=>`<button type="button" class="${key===projectionTimeframe?"is-active":""}" data-projection-timeframe="${key}" aria-selected="${key===projectionTimeframe}">${esc(item.label||key)}</button>`).join("");
-    const item=timeframes[projectionTimeframe]||{},current=item.current||{};
+    const item=timeframes[projectionTimeframe]||{},current=item.current||{},stages=projection.sessionStages?.[projectionTimeframe]||{};
     $("projectionDetail").innerHTML=`
       <div class="dashboard-projection-current">
         <div><span>当前状态</span><b>${esc(current.phase||"—")}</b></div>
         <dl><div><dt>DIF</dt><dd>${finite(current.dif)?Number(current.dif).toFixed(2):"—"}</dd></div><div><dt>DEA</dt><dd>${finite(current.dea)?Number(current.dea).toFixed(2):"—"}</dd></div><div><dt>柱</dt><dd>${finite(current.histogram)?Number(current.histogram).toFixed(2):"—"}</dd></div></dl>
       </div>
+      ${projectionStageTable(stages)}
       <div class="dashboard-projection-targets">
         <section class="up"><h3>修复、确认与放大</h3><ul>${(item.upTargets||[]).map(target=>projectionTargetRow(target,"up")).join("")||"<li><span>暂无有效上方结构位</span></li>"}</ul></section>
         <section class="down"><h3>破坏、确认与放大</h3><ul>${(item.downTargets||[]).map(target=>projectionTargetRow(target,"down")).join("")||"<li><span>暂无有效下方结构位</span></li>"}</ul></section>

@@ -121,22 +121,10 @@
     const scope=selected==="all"?"默认突出当日净流入前三与净流出前三；点击任一总方向可下钻细分。":selected===parent?.id?`${parent.name}已按细分方向拆解，并用线型辅助区分。`:`当前查看 ${chosen[0]?.name||"细分方向"}。${metric==="mainNet"?"柱体为当日净额，虚线为较前一交易日变化，分别使用左右纵轴。":""}`;
     $("sectorNote").textContent=`${meta.name} · ${meta.unit}；区间与市场评分日期一致。${metric==="mainNet"?"主力净额沿用全A数据源口径。":""}${scope}${missing?` 所选日有 ${missing} 个方向缺少有效源数据。`:""}`;
   }
-  const barsText=value=>finite(value)?`${Number(value)}根`:"当前位置不足";
-  const projectionTargetRow=(target,direction)=>{
-    const bars=target.bars||{},realistic=target.realistic||{};
-    const metrics=direction==="up"
-      ?`DIF拐头 ${barsText(bars.dif_turn)} · 柱翻红 ${barsText(bars.histogram_flip)} · DIF过零 ${barsText(bars.dif_zero)}`
-      :`DIF转弱 ${barsText(bars.dif_turn)} · 柱翻绿 ${barsText(bars.histogram_flip)} · 负柱放大 ${barsText(bars.histogram_expand)}`;
-    const time=direction==="up"
-      ?realistic.dif_zero||realistic.histogram_flip||realistic.dif_turn
-      :realistic.histogram_expand||realistic.histogram_flip||realistic.dif_turn;
-    return `<li><b>${finite(target.price)?Number(target.price).toFixed(2):"—"}</b><span>${esc(metrics)}</span><em>${esc(time||"—")}</em></li>`;
-  };
-  const projectionStageTable=stages=>{
-    if(!stages?.morning||!stages?.afternoon)return "";
-    const row=(title,item)=>`<tr><th scope="row">${title}</th><td><span>点位</span>${esc(item.point||"—")}</td><td><span>指标条件</span>${esc(item.condition||"—")}</td><td><span>路径判断</span>${esc(item.judgment||"—")}</td></tr>`;
-    return `<div class="dashboard-session-heading"><b>当日路径分段复核</b><span>午间确认上午，收盘再判断下午是否完成、放大或失效</span></div>
-      <div class="dashboard-session-table-wrap"><table class="dashboard-session-table"><thead><tr><th>阶段</th><th>点位</th><th>指标条件</th><th>路径判断</th></tr></thead><tbody>${row("午间收盘",stages.morning)}${row("当日收盘",stages.afternoon)}</tbody></table></div>`;
+  const projectionPathTable=rows=>{
+    if(!rows?.length)return `<div class="path-table-empty">该周期暂无可用路径条件</div>`;
+    const body=rows.map(row=>`<tr class="path-stage-${esc(row.tone||"neutral")}"><th scope="row">${esc(row.stage||"—")}</th><td><span>可观察条件</span>${esc(row.condition||"—")}</td><td><span>判断</span>${esc(row.judgment||"—")}</td></tr>`).join("");
+    return `<div class="dashboard-path-table-wrap"><table class="dashboard-path-table"><thead><tr><th>路径阶段</th><th>可观察条件</th><th>判断</th></tr></thead><tbody>${body}</tbody></table></div>`;
   };
   function renderProjection(d){
     const projection=D.reports[d]?.market?.pathProjection;
@@ -160,17 +148,13 @@
     ];
     $("projectionBranches").innerHTML=branchMeta.map(([tone,title,label])=>`<div class="dashboard-projection-branch ${tone}"><b>${title}</b><span>${esc(label||"—")}</span></div>`).join("");
     $("projectionTabs").innerHTML=Object.entries(timeframes).map(([key,item])=>`<button type="button" class="${key===projectionTimeframe?"is-active":""}" data-projection-timeframe="${key}" aria-selected="${key===projectionTimeframe}">${esc(item.label||key)}</button>`).join("");
-    const item=timeframes[projectionTimeframe]||{},current=item.current||{},stages=projection.sessionStages?.[projectionTimeframe]||{};
+    const item=timeframes[projectionTimeframe]||{},current=item.current||{};
     $("projectionDetail").innerHTML=`
       <div class="dashboard-projection-current">
         <div><span>当前状态</span><b>${esc(current.phase||"—")}</b></div>
         <dl><div><dt>DIF</dt><dd>${finite(current.dif)?Number(current.dif).toFixed(2):"—"}</dd></div><div><dt>DEA</dt><dd>${finite(current.dea)?Number(current.dea).toFixed(2):"—"}</dd></div><div><dt>柱</dt><dd>${finite(current.histogram)?Number(current.histogram).toFixed(2):"—"}</dd></div></dl>
       </div>
-      ${projectionStageTable(stages)}
-      <div class="dashboard-projection-targets">
-        <section class="up"><h3>修复、确认与放大</h3><ul>${(item.upTargets||[]).map(target=>projectionTargetRow(target,"up")).join("")||"<li><span>暂无有效上方结构位</span></li>"}</ul></section>
-        <section class="down"><h3>破坏、确认与放大</h3><ul>${(item.downTargets||[]).map(target=>projectionTargetRow(target,"down")).join("")||"<li><span>暂无有效下方结构位</span></li>"}</ul></section>
-      </div>`;
+      ${projectionPathTable(item.pathStages)}`;
   }
   function render(d){
     const R=D.reports[d],M=R.market,A=D.dates.filter(x=>x<=d),recent=[d];

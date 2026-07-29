@@ -144,7 +144,7 @@
     content.hidden=false;empty.hidden=true;
     const volume=projection.volume||{},review=projection.previousReview||{},paths=projection.nextSessionPaths||{},timeframes=projection.timeframes||{};
     if(!timeframes[projectionTimeframe])projectionTimeframe=Object.keys(timeframes)[0]||"30m";
-    $("projectionVolume").textContent=`${volume.label||"量能未知"} · 近20期量比 ${finite(volume.ratio20)?Math.round(Number(volume.ratio20)*100)+"%":"—"}`;
+    $("projectionVolume").textContent=`基于${projection.date||d}收盘 · ${volume.label||"量能未知"} · 近20期量比 ${finite(volume.ratio20)?Math.round(Number(volume.ratio20)*100)+"%":"—"}`;
     $("projectionReview").className=`dashboard-projection-review ${esc(review.status||"first")}`;
     $("projectionReview").innerHTML=`<b>${review.available?`昨日路径：${esc(review.primary||"待复核")}`:"首个路径快照"}</b><span>${esc(review.summary||"暂无上一交易日路径可供复核。")}</span>`;
     const branchMeta=[
@@ -164,7 +164,7 @@
           <div><span>${esc(assessment.role||"当前状态")}</span><b>${esc(assessment.label||current.phase||"—")}</b><p>${esc(assessment.summary||"")}</p></div>
           <dl><div><dt>DIF</dt><dd>${finite(current.dif)?Number(current.dif).toFixed(2):"—"}</dd></div><div><dt>DEA</dt><dd>${finite(current.dea)?Number(current.dea).toFixed(2):"—"}</dd></div><div><dt>柱</dt><dd>${finite(current.histogram)?Number(current.histogram).toFixed(2):"—"}</dd></div></dl>
         </div>
-        <div class="dashboard-checkpoint-tabs" role="tablist"><button type="button" data-projection-checkpoint="noon" class="${projectionCheckpoint==="noon"?"is-active":""}">午间收盘</button><button type="button" data-projection-checkpoint="close" class="${projectionCheckpoint==="close"?"is-active":""}">当日收盘</button></div>
+        <div class="dashboard-checkpoint-tabs" role="tablist"><button type="button" data-projection-checkpoint="noon" class="${projectionCheckpoint==="noon"?"is-active":""}">明日午间</button><button type="button" data-projection-checkpoint="close" class="${projectionCheckpoint==="close"?"is-active":""}">明日收盘</button></div>
         <p class="dashboard-checkpoint-note">${esc(checkpoint.note||"")}</p>
         ${projectionScenarioTable(checkpoint.scenarios)}
         <details class="dashboard-projection-math"><summary>展开 MACD 数学推演说明</summary><p>默认以平滑推进作为可比基准。早段冲高后横盘通常累计面积更大、但收盘柱可能缩短；尾段加速通常收盘柱更强、累计面积反而较小。量能只约束路径持续性，不进入MACD公式。</p></details>`;

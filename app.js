@@ -132,16 +132,6 @@
     const body=rows.map(row=>`<tr class="path-stage-${esc(row.tone||"neutral")}"><th scope="row">${esc(row.label||"—")}</th><td><span>点位</span>${esc(row.priceCondition||"—")}</td><td><span>笔结构</span>${esc(row.strokeCondition||"—")}</td><td><span>MACD</span>${esc(row.macdCondition||"—")}</td><td><span>判断</span>${esc(row.decision||"—")}</td></tr>`).join("");
     return `<div class="dashboard-path-table-wrap"><table class="dashboard-path-table dashboard-path-table-v2"><thead><tr><th>路径</th><th>点位</th><th>笔结构</th><th>MACD面积与快慢线</th><th>判断</th></tr></thead><tbody>${body}</tbody></table></div>`;
   };
-  const chanStructureChart=structure=>{
-    const strokes=(structure?.strokes||[]).slice(-5);
-    if(!strokes.length)return `<div class="path-table-empty">本级别暂无足够确认笔</div>`;
-    const points=[{price:strokes[0].start_price,time:strokes[0].start_at},...strokes.map(stroke=>({price:stroke.end_price,time:stroke.end_at}))];
-    return chart(
-      [{id:"chan",name:"确认笔",color:"#2b638f",values:points.map(point=>point.price),emphasis:true}],
-      points.map(point=>point.time||""),
-      {labels:true,metric:"score",aria:`${structure.level||""}最近确认笔走势`,strokeWidth:2,dotRadius:3}
-    );
-  };
   function renderProjection(d){
     const projection=D.reports[d]?.market?.pathProjection;
     const content=$("projectionContent"),empty=$("projectionUnavailable");
@@ -172,10 +162,7 @@
       const levelBranches=[["up","本级别修复",levelPaths.up?.label],["range","本级别区间",levelPaths.range?.label],["down","本级别破坏",levelPaths.down?.label]];
       const centerText=finite(activeCenter.zd)&&finite(activeCenter.zg)?` · 中枢 ${Number(activeCenter.zd).toFixed(0)}—${Number(activeCenter.zg).toFixed(0)}`:"";
       const structurePanel=projection.schemaVersion==="multi-timeframe-native-chan-v3"?`
-        <section class="dashboard-chan-structure">
-          <header><b>${esc(item.label||projectionTimeframe)}原生缠论结构</b><span>最近${lastStroke.direction==="up"?"上行":"下行"}笔${lastStroke.is_sure?"已确认":"未确认"}${esc(centerText)}</span></header>
-          ${chanStructureChart(structure)}
-        </section>
+        <div class="dashboard-chan-summary"><b>${esc(item.label||projectionTimeframe)}结构</b><span>${lastStroke.direction?`最近${lastStroke.direction==="up"?"上行":"下行"}笔${lastStroke.is_sure?"已确认":"未确认"}${esc(centerText)}`:"暂无足够确认笔"}</span></div>
         <div class="dashboard-level-branches">${levelBranches.map(([tone,title,label])=>`<div class="${tone}"><b>${title}</b><span>${esc(label||"—")}</span></div>`).join("")}</div>`:"";
       $("projectionDetail").innerHTML=`
         <ol class="dashboard-projection-progression">${progression}</ol>

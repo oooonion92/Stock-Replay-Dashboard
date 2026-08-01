@@ -10,6 +10,7 @@
   let projectionTimeframe="30m";
   let projectionCheckpoint="close";
   let expandedShortIndustry=null;
+  let expandedCapitalDirection=null;
   const metricFormat=(v,id,axis=false)=>{
     if(!finite(v))return "—";
     const n=Number(v),digits=id==="turnoverShare"?1:Math.abs(n)>=100?0:1;
@@ -121,17 +122,9 @@
   }
   function renderSector(d){
     const cfg=D.sectorFlowConfig;if(!cfg)return;
-    const metric=$("sectorMetricSelect").value||cfg.defaultMetric,selected=$("sectorSelect").value||"all",dates=D.dates.filter(x=>x<=d);
-    const parent=cfg.groups.find(g=>g.id===selected||g.subgroups?.some(s=>s.id===selected));
-    const chosen=selected==="all"?cfg.groups:selected===parent?.id?(parent.subgroups||[parent]):parent?.subgroups?.filter(s=>s.id===selected)||[];
-    const currentUnsorted=chosen.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.[metric]})),ranked=currentUnsorted.filter(x=>finite(x.v)).sort((a,b)=>Number(b.v)-Number(a.v));
-    const highlightIds=new Set(selected==="all"?[...ranked.slice(0,3),...ranked.slice(-3)].map(x=>x.g.id):chosen.map(g=>g.id));
-    const dashes=["","7 3","2 3","10 3 2 3","4 3"];
-    const series=chosen.map((g,i)=>({id:g.id,name:g.name,color:g.color,values:dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.[metric]??null),emphasis:highlightIds.has(g.id),muted:selected==="all"&&!highlightIds.has(g.id),dash:selected!=="all"&&chosen.length>1?dashes[i%dashes.length]:""}));
-    $("sectorTrend").innerHTML=selected==="all"?sectorHeatmap(cfg.groups,dates,metric):metric==="mainNet"&&chosen.length===1?flowComboChart(series[0],dates):chart(series,dates,{metric,includeZero:metric==="mainNet",labels:chosen.length===1,strokeWidth:1.4,dotRadius:2.2,bridgeMissing:true,aria:`板块${cfg.metrics.find(x=>x.id===metric)?.name||"资金"}趋势`});
-    const legendItems=selected==="all"?cfg.groups:selected===parent?.id?(parent.subgroups||[parent]):chosen;
-    const current=legendItems.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.[metric]})).sort((a,b)=>(finite(b.v)?Number(b.v):-Infinity)-(finite(a.v)?Number(a.v):-Infinity));
-    if(selected==="all")$("sectorSummary").innerHTML="";else sectorSummary(metric,selected,parent,chosen,dates,current);
+    const metric=$("sectorMetricSelect").value||cfg.defaultMetric,dates=D.dates.filter(x=>x<=d),current=cfg.groups.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.[metric]})).sort((a,b)=>(finite(b.v)?Number(b.v):-Infinity)-(finite(a.v)?Number(a.v):-Infinity));
+    $("sectorTrend").innerHTML=sectorHeatmap(cfg.groups,dates,metric);
+    $("sectorSummary").innerHTML="";
     const directionSnapshot=cfg.groups.map(g=>{
       const values=dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.mainNet??null),valid=values.filter(finite).map(Number),today=D.sectorFlow?.[d]?.[g.id]?.mainNet??null,recent=valid.slice(-3),sum3=recent.length===3?recent.reduce((a,v)=>a+v,0):null;
       const state=!finite(today)||!finite(sum3)?"数据不足":Number(today)>0&&Number(sum3)>0?"持续回流":Number(today)>0?"单日回流":Number(today)<0&&Number(sum3)<0?"持续流出":"分歧";
@@ -141,12 +134,15 @@
     const totalDirectionFlow=directionSnapshot.filter(item=>finite(item.v)).sort((a,b)=>Number(b.v)-Number(a.v));
     const ongoing=directionSnapshot.filter(item=>item.state==="持续回流"),positive=directionSnapshot.filter(item=>finite(item.v)&&Number(item.v)>0),strongest=totalDirectionFlow[0];
     $("capitalDecision").innerHTML=totalDirectionFlow.length?`<div><span>当日流入</span><b>${positive.length}/${cfg.groups.length} 个</b></div><div><span>持续回流</span><b>${ongoing.length} 个</b></div><div><span>当日最强</span><b>${esc(strongest?.g.name||"—")}</b></div>`:"<span class=\"sector-insight-empty\">该日主力净额字段不可用</span>";
-    $("sectorMatrix").innerHTML=directionSnapshot.map(item=>`<button type="button" class="sector-matrix-item ${item.tone} ${selected===item.g.id?"is-active":""}" data-direction="${item.g.id}"><i style="background:${item.g.color}"></i><span>${esc(item.g.name)}</span><b>${esc(metricFormat(item.v,"mainNet"))}</b><small>近3日 ${esc(metricFormat(item.sum3,"mainNet"))}</small><em>${esc(item.state)}</em></button>`).join("");
-    $("sectorLegend").innerHTML=selected!=="all"&&chosen.length>1?current.map(({g,v})=>`<button type="button" data-sector="${g.id}" class="sector-key ${selected===g.id?"is-active":""}"><i style="background:${g.color}"></i><span>${g.name}</span><b>${metricFormat(v,metric)}</b></button>`).join(""):"";
-    const meta=cfg.metrics.find(x=>x.id===metric),missing=current.filter(x=>!finite(x.v)).length;
-    const scope=selected==="all"?"热力图呈现九大方向的资金轮动；点击上方任一方向卡片下钻单方向趋势。":selected===parent?.id?`${parent.name}已按细分方向拆解，并用线型辅助区分。`:`当前查看 ${chosen[0]?.name||"细分方向"}。${metric==="mainNet"?"柱体为当日净额，虚线为较前一交易日变化，分别使用左右纵轴。":""}`;
-    const missingDates=dates.filter(date=>!chosen.some(g=>finite(D.sectorFlow?.[date]?.[g.id]?.[metric]))).map(date=>date.slice(5));
-    $("sectorNote").textContent=`${meta.name} · ${meta.unit}；区间与市场评分日期一致。${metric==="mainNet"?"主力净额沿用全A数据源口径。":""}${scope}${missingDates.length?` ${missingDates.join("、")} 源数据缺失，图中虚线仅连接前后有效观测值。`:""}${missing?` 所选日有 ${missing} 个方向缺少有效源数据。`:""}`;
+    $("sectorMatrix").innerHTML=directionSnapshot.map(item=>`<button type="button" class="sector-matrix-item ${item.tone} ${expandedCapitalDirection===item.g.id?"is-active":""}" data-direction="${item.g.id}" aria-expanded="${expandedCapitalDirection===item.g.id}"><i style="background:${item.g.color}"></i><span>${esc(item.g.name)}</span><b>${esc(metricFormat(item.v,"mainNet"))}</b><small>近3日 ${esc(metricFormat(item.sum3,"mainNet"))}</small><em>${esc(item.state)}</em></button>`).join("");
+    const expanded=cfg.groups.find(g=>g.id===expandedCapitalDirection),detail=$("sectorDetail");
+    if(expanded&&detail){
+      const branches=(expanded.subgroups||[]).map(g=>{const values=dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.mainNet??null),valid=values.filter(finite).map(Number),today=D.sectorFlow?.[d]?.[g.id]?.mainNet??null,recent=valid.slice(-3),sum3=recent.length===3?recent.reduce((a,v)=>a+v,0):null,state=!finite(today)||!finite(sum3)?"数据不足":Number(today)>0&&Number(sum3)>0?"持续回流":Number(today)>0?"单日回流":Number(today)<0&&Number(sum3)<0?"持续流出":"分歧";return {g,today,sum3,state};}).sort((a,b)=>(finite(b.today)?Number(b.today):-Infinity)-(finite(a.today)?Number(a.today):-Infinity));
+      detail.innerHTML=`<div class="sector-detail-head"><b>${esc(expanded.name)} · 细分资金</b><span>点击收起</span><button type="button" data-capital-close>收起</button></div><div class="sector-branch-grid">${branches.map(item=>`<div class="sector-branch-item"><i style="background:${item.g.color}"></i><b>${esc(item.g.name)}</b><span>当日 ${esc(metricFormat(item.today,"mainNet"))}</span><small>近3日 ${esc(metricFormat(item.sum3,"mainNet"))}</small><em class="${item.state==="持续回流"?"inflow":item.state==="持续流出"?"outflow":"mixed"}">${esc(item.state)}</em></div>`).join("")||'<span class="sector-insight-empty">暂无可展开的细分方向</span>'}</div>`;
+    }else if(detail)detail.innerHTML="";
+    $("sectorLegend").innerHTML="";
+    const meta=cfg.metrics.find(x=>x.id===metric),missingDates=dates.filter(date=>!cfg.groups.some(g=>finite(D.sectorFlow?.[date]?.[g.id]?.[metric]))).map(date=>date.slice(5));
+    $("sectorNote").textContent=`${meta.name} · ${meta.unit}；区间与市场评分日期一致。${metric==="mainNet"?"主力净额沿用全A数据源口径。":""}热力图呈现九大方向的资金轮动；点击上方方向卡片展开该方向的细分流入流出。${missingDates.length?` ${missingDates.join("、")} 源数据缺失。`:""}`;
   }
   const pct=v=>finite(v)?`${Number(v).toFixed(2).replace(/\.00$/,"")}%`:"—";
   const signedPct=v=>finite(v)?`${Number(v)>0?"+":""}${Number(v).toFixed(2).replace(/\.00$/,"")}%`:"—";
@@ -279,11 +275,13 @@
   D.dates.slice().reverse().forEach(d=>{const o=document.createElement("option");o.value=d;o.textContent=d;$("dateSelect").appendChild(o)});
   if(D.sectorFlowConfig){
     D.sectorFlowConfig.metrics.forEach(m=>{const o=document.createElement("option");o.value=m.id;o.textContent=m.name;$("sectorMetricSelect").appendChild(o)});$("sectorMetricSelect").value=D.sectorFlowConfig.defaultMetric;
+    const directionControl=$("sectorSelect").closest("label");if(directionControl)directionControl.hidden=true;
+    const sectorDetail=document.createElement("div");sectorDetail.id="sectorDetail";sectorDetail.className="sector-detail";$("sectorMatrix").after(sectorDetail);
     const all=document.createElement("option");all.value="all";all.textContent="全部方向";$("sectorSelect").appendChild(all);
     D.sectorFlowConfig.groups.forEach(g=>{const o=document.createElement("option");o.value=g.id;o.textContent=g.name;$("sectorSelect").appendChild(o);(g.subgroups||[]).forEach(s=>{const sub=document.createElement("option");sub.value=s.id;sub.textContent=`　${s.name}`;$("sectorSelect").appendChild(sub)})});$("sectorSelect").value="all";
-    $("sectorMetricSelect").addEventListener("change",()=>renderSector($("dateSelect").value));$("sectorSelect").addEventListener("change",()=>renderSector($("dateSelect").value));
-    $("sectorLegend").addEventListener("click",e=>{const b=e.target.closest("[data-sector]");if(b){$("sectorSelect").value=b.dataset.sector;renderSector($("dateSelect").value)}});
-    $("sectorMatrix").addEventListener("click",e=>{const b=e.target.closest("[data-direction]");if(b){$("sectorSelect").value=b.dataset.direction;renderSector($("dateSelect").value)}});
+    $("sectorMetricSelect").addEventListener("change",()=>renderSector($("dateSelect").value));
+    $("sectorMatrix").addEventListener("click",e=>{const close=e.target.closest("[data-capital-close]");if(close){expandedCapitalDirection=null;renderSector($("dateSelect").value);return;}const b=e.target.closest("[data-direction]");if(!b)return;expandedCapitalDirection=expandedCapitalDirection===b.dataset.direction?null:b.dataset.direction;renderSector($("dateSelect").value)});
+    $("sectorDetail").addEventListener("click",e=>{if(e.target.closest("[data-capital-close]")){expandedCapitalDirection=null;renderSector($("dateSelect").value)}});
   }
   $("projectionTabs").addEventListener("click",event=>{const button=event.target.closest("[data-projection-timeframe]");if(!button)return;projectionTimeframe=button.dataset.projectionTimeframe;renderProjection($("dateSelect").value)});
   $("projectionDetail").addEventListener("click",event=>{const button=event.target.closest("[data-projection-checkpoint]");if(!button)return;projectionCheckpoint=button.dataset.projectionCheckpoint;renderProjection($("dateSelect").value)});

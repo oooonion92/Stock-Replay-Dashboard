@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 221210)
-Total output lines: 23462
-
 window.REPLAY_DATA={
   "dates": [
     "2026-06-29",
@@ -5762,7 +5759,9335 @@ window.REPLAY_DATA={
                     "end_price": 3927.853,
                     "stroke_count": 1,
                     "macd_area": 498.7137006169751,
-  …101210 tokens truncated…"
+                    "volume": 1189715557200,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 5
+                  },
+                  {
+                    "id": "chanpy-line-fd05d9aebc41",
+                    "level": "120m",
+                    "start_at": "2026-06-08T15:00:00",
+                    "end_at": "2026-06-23T11:30:00",
+                    "confirmed_at": "2026-06-23T15:00:00",
+                    "direction": "up",
+                    "start_price": 3927.853,
+                    "end_price": 4175.348,
+                    "stroke_count": 1,
+                    "macd_area": 296.2903473021301,
+                    "volume": 651956563900,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 6
+                  },
+                  {
+                    "id": "chanpy-line-08209eece52d",
+                    "level": "120m",
+                    "start_at": "2026-06-23T11:30:00",
+                    "end_at": "2026-06-29T13:05:00",
+                    "confirmed_at": "2026-06-29T15:00:00",
+                    "direction": "down",
+                    "start_price": 4175.348,
+                    "end_price": 3992.552,
+                    "stroke_count": 1,
+                    "macd_area": 39.17456837857735,
+                    "volume": 305680913700,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 7
+                  },
+                  {
+                    "id": "chanpy-line-4906a02aa402",
+                    "level": "120m",
+                    "start_at": "2026-06-29T13:05:00",
+                    "end_at": "2026-07-01T11:30:00",
+                    "confirmed_at": "2026-07-02T11:30:00",
+                    "direction": "up",
+                    "start_price": 3992.552,
+                    "end_price": 4143.314,
+                    "stroke_count": 1,
+                    "macd_area": 1.9448506021325294,
+                    "volume": 162610240500,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 8
+                  },
+                  {
+                    "id": "chanpy-line-360675a330d3",
+                    "level": "120m",
+                    "start_at": "2026-07-01T11:30:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T11:30:00",
+                    "direction": "down",
+                    "start_price": 4143.314,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 409.1596365241181,
+                    "volume": 835420238000,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 9
+                  }
+                ],
+                "pivots": [
+                  {
+                    "id": "chanpy-pivot-3a74e11c2c47",
+                    "level": "120m",
+                    "kind": "top",
+                    "event_at": "2026-03-03T11:30:00",
+                    "confirmed_at": "2026-03-03T15:00:00",
+                    "price": 4197.228,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-3125fc4ce9b5",
+                    "level": "120m",
+                    "kind": "bottom",
+                    "event_at": "2026-03-09T11:30:00",
+                    "confirmed_at": "2026-03-09T15:00:00",
+                    "price": 4052.545,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-42a668ca8ba9",
+                    "level": "120m",
+                    "kind": "top",
+                    "event_at": "2026-03-12T11:30:00",
+                    "confirmed_at": "2026-03-12T15:00:00",
+                    "price": 4141.649,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-6204a180eddf",
+                    "level": "120m",
+                    "kind": "bottom",
+                    "event_at": "2026-03-23T15:00:00",
+                    "confirmed_at": "2026-03-24T15:00:00",
+                    "price": 3794.684,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-cfd41f32d877",
+                    "level": "120m",
+                    "kind": "top",
+                    "event_at": "2026-05-14T11:30:00",
+                    "confirmed_at": "2026-05-14T15:00:00",
+                    "price": 4258.863,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-8c69ac52090e",
+                    "level": "120m",
+                    "kind": "bottom",
+                    "event_at": "2026-06-08T15:00:00",
+                    "confirmed_at": "2026-06-09T11:30:00",
+                    "price": 3927.853,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-8fc8875268e7",
+                    "level": "120m",
+                    "kind": "top",
+                    "event_at": "2026-06-23T11:30:00",
+                    "confirmed_at": "2026-06-23T15:00:00",
+                    "price": 4175.348,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-b243ddaedd77",
+                    "level": "120m",
+                    "kind": "bottom",
+                    "event_at": "2026-06-29T13:05:00",
+                    "confirmed_at": "2026-06-29T15:00:00",
+                    "price": 3992.552,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-57b81bffc054",
+                    "level": "120m",
+                    "kind": "top",
+                    "event_at": "2026-07-01T11:30:00",
+                    "confirmed_at": "2026-07-02T11:30:00",
+                    "price": 4143.314,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-a8d81da74c35",
+                    "level": "120m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T11:30:00",
+                    "price": 3741.11,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  }
+                ],
+                "centers": [
+                  {
+                    "id": "chanpy-center-a85adb5cda77",
+                    "level": "120m",
+                    "start_at": "2026-03-09T11:30:00",
+                    "end_at": "2026-07-01T11:30:00",
+                    "zd": 4052.545,
+                    "zg": 4141.649,
+                    "dd": 3794.684,
+                    "gg": 4258.863,
+                    "state": "active",
+                    "stroke_count": 7,
+                    "component_type": "stroke",
+                    "component_count": 7,
+                    "extension_count": 4,
+                    "promoted_from": [],
+                    "is_sure": false
+                  }
+                ],
+                "signals": [
+                  {
+                    "id": "chanpy-signal-31c27bcfc0a7",
+                    "level": "120m",
+                    "label": "1B",
+                    "display_label": "笔B1",
+                    "side": "buy",
+                    "price": 3741.11,
+                    "confidence": 0.45,
+                    "divergence_class": "trend_divergence",
+                    "structure_guard": 4141.649,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-20T15:00:00",
+                      "detected_at": "2026-07-21T11:30:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-21T11:30:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "1"
+                      ],
+                      "primary_type": "1",
+                      "comparison_kind": "divergence",
+                      "basis": "比较最后一个中枢的进入段与离开段；价格创新值且至少两项动能证据明确减弱才确认背驰。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 35,
+                        "end": 43,
+                        "startTime": "2026-03-03T11:30:00",
+                        "endTime": "2026-03-09T11:30:00",
+                        "startValue": 4197.228,
+                        "endValue": 4052.545,
+                        "direction": "down",
+                        "bars": 9,
+                        "priceMove": 144.683,
+                        "macdArea": 78.35169876516397,
+                        "macdPeak": 14.60865380776869,
+                        "difExtreme": 5.598397067435144,
+                        "volumeTotal": 357210323400,
+                        "volumeAverage": 39690035933.333336,
+                        "amountAverage": 599604483413.3334
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 197,
+                        "end": 224,
+                        "startTime": "2026-07-01T11:30:00",
+                        "endTime": "2026-07-20T15:00:00",
+                        "startValue": 4143.314,
+                        "endValue": 3741.11,
+                        "direction": "down",
+                        "bars": 28,
+                        "priceMove": 402.2040000000002,
+                        "macdArea": 409.1596365241181,
+                        "macdPeak": 34.31834176188883,
+                        "difExtreme": 62.04595031392091,
+                        "volumeTotal": 835420238000,
+                        "volumeAverage": 29836437071.42857,
+                        "amountAverage": 678129715492.5714
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 2.779898122101423,
+                        "macd_area": 5.222090177654642,
+                        "macd_peak": 2.3491789328075385,
+                        "dif_extreme": 11.082806304474348,
+                        "volume_average": 0.7517362070808985
+                      },
+                      "divergence_audit": {
+                        "status": "unsupported",
+                        "status_label": "不支持背驰",
+                        "price_extension": true,
+                        "momentum_votes": 0,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": false,
+                        "macd_peak_weakening": false,
+                        "dif_weakening": false,
+                        "volume_contracting": true,
+                        "conclusion": "动能证据没有明确减弱。"
+                      },
+                      "center": {
+                        "id": "chanpy-center-71efb78acfa1",
+                        "level": "native",
+                        "start_at": "2026-03-09T11:30:00",
+                        "end_at": "2026-07-01T11:30:00",
+                        "zd": 4052.545,
+                        "zg": 4141.649,
+                        "dd": 3794.684,
+                        "gg": 4258.863,
+                        "state": "active",
+                        "stroke_count": 7,
+                        "component_type": "stroke",
+                        "component_count": 7,
+                        "extension_count": 4,
+                        "promoted_from": [],
+                        "is_sure": false
+                      },
+                      "native_features": {
+                        "divergence_rate": 2.3491789328071095,
+                        "zs_cnt": 1,
+                        "bsp_bi_amp": 402.2040000000002
+                      },
+                      "line_index": 9,
+                      "dependency": null,
+                      "native_type": "1",
+                      "scope": "stroke"
+                    }
+                  }
+                ],
+                "summary": {
+                  "bars": 239,
+                  "pivots": 11,
+                  "strokes": 10,
+                  "confirmed_strokes": 10,
+                  "segments": 1,
+                  "confirmed_segments": 0,
+                  "higher_segments": 0,
+                  "centers": 1,
+                  "segment_centers": 0,
+                  "signals": 0,
+                  "signal_history": 1,
+                  "strict_first_signals": 0
+                },
+                "provenance": {
+                  "engine": "chan.py",
+                  "engineCommit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                  "calculationLevel": "120m",
+                  "sameLevelBars": true,
+                  "enumMode": "120m-bars-via-timeframe-agnostic-chan-core"
+                }
+              },
+              "pathStages": [
+                {
+                  "stage": "修复准备",
+                  "tone": "repair",
+                  "condition": "红柱不连续缩短，DIF继续抬升；回踩不失3795",
+                  "judgment": "只说明卖压或下行动量衰减，尚未构成修复确认。"
+                },
+                {
+                  "stage": "修复触发",
+                  "tone": "repair",
+                  "condition": "本级别K线收回3928，同时MACD柱不再恶化",
+                  "judgment": "修复路径启动；按当前量能更现实的时间为约半天—2天。"
+                },
+                {
+                  "stage": "修复确认",
+                  "tone": "repair",
+                  "condition": "连续两根本级别K线收在3993上方，或DIF上穿DEA且红柱持续扩张",
+                  "judgment": "修复获得价格或动量确认，下一观察位上移至4053；约半天—2天。"
+                },
+                {
+                  "stage": "修复放大",
+                  "tone": "repair",
+                  "condition": "站稳4053，红柱继续扩张，成交额不低于约0.86倍20期均量",
+                  "judgment": "才把修复升级为趋势扩展；参考时间：约1—3个交易日。"
+                },
+                {
+                  "stage": "下跌触发",
+                  "tone": "damage",
+                  "condition": "本级别K线收盘跌破3795",
+                  "judgment": "破坏路径启动；盘中刺破但收回，不算下跌确认。"
+                },
+                {
+                  "stage": "下跌确认",
+                  "tone": "damage",
+                  "condition": "连续两根本级别K线收在3795下方，或DIF继续下行且绿柱持续扩大",
+                  "judgment": "下跌获得价格或动量确认，修复路径失效。"
+                },
+                {
+                  "stage": "下跌放大",
+                  "tone": "damage",
+                  "condition": "跌破前低并继续创新低，同时绿柱继续扩大",
+                  "judgment": "才把下方目标进一步移至3741；参考时间：当前目标位不足以完成。"
+                },
+                {
+                  "stage": "下跌收回",
+                  "tone": "neutral",
+                  "condition": "跌破后绿柱停止扩大，并重新收回3928",
+                  "judgment": "破坏未能放大，转入3795—3993区间修复。"
+                }
+              ],
+              "phaseAssessment": {
+                "label": "120分钟下跌笔完成，反向笔仍待确认",
+                "summary": "动量正在修复；只有越过120分钟自身分型和中枢边界才升级为波段反转。",
+                "role": "波段结构",
+                "roleText": "用120分钟自身笔与中枢判断波段反转或下跌延伸",
+                "nativeChan": true
+              },
+              "paths": {
+                "source": "same-level-chan-structure",
+                "timeframe": "120m",
+                "up": {
+                  "trigger": 3927.853,
+                  "confirm": 3992.552,
+                  "amplify": 4052.545,
+                  "failure": 3794.684,
+                  "label": "收回3928，确认3993，放大看4053"
+                },
+                "range": {
+                  "lower": 3794.684,
+                  "upper": 3992.552,
+                  "label": "3795—3993内止跌与换手"
+                },
+                "down": {
+                  "trigger": 3794.684,
+                  "intermediate": 3741.11,
+                  "amplify": 3741.11,
+                  "recovery": 3927.853,
+                  "label": "失守3795，放大看3741"
+                },
+                "evidence": {
+                  "state": "down_leave_confirmed",
+                  "lastStroke": {
+                    "id": "chanpy-line-360675a330d3",
+                    "level": "120m",
+                    "start_at": "2026-07-01T11:30:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T11:30:00",
+                    "direction": "down",
+                    "start_price": 4143.314,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 409.1596365241181,
+                    "volume": 835420238000,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 9
+                  },
+                  "activeCenter": {
+                    "id": "chanpy-center-a85adb5cda77",
+                    "level": "120m",
+                    "start_at": "2026-03-09T11:30:00",
+                    "end_at": "2026-07-01T11:30:00",
+                    "zd": 4052.545,
+                    "zg": 4141.649,
+                    "dd": 3794.684,
+                    "gg": 4258.863,
+                    "state": "active",
+                    "stroke_count": 7,
+                    "component_type": "stroke",
+                    "component_count": 7,
+                    "extension_count": 4,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  "candidateUp": [
+                    3927.853,
+                    3992.552,
+                    4052.545,
+                    4141.649,
+                    4143.314,
+                    4175.348
+                  ],
+                  "candidateDown": [
+                    3794.684,
+                    3741.11
+                  ]
+                }
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "下一交易日午间",
+                  "bars": 1,
+                  "note": "按平滑路径模拟 1 根120分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3893.618,
+                      "priceCondition": "3795—3993内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 17.7",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3893.618,
+                        "dif": -28.71,
+                        "dea": -37.563,
+                        "histogram": 17.705,
+                        "positiveArea": 17.705,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3992.552,
+                      "priceCondition": "收回3928并测试3993",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 30.3",
+                      "decision": "确认后观察4053，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3992.552,
+                        "dif": -20.818,
+                        "dea": -35.984,
+                        "histogram": 30.332,
+                        "positiveArea": 30.332,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 4052.545,
+                      "priceCondition": "站稳4053",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 38.0",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4052.545,
+                        "dif": -16.032,
+                        "dea": -35.027,
+                        "histogram": 37.99,
+                        "positiveArea": 37.99,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3795并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "MACD转绿；DIF下穿DEA，快慢线仍在水下；绿柱面积 1.8",
+                      "decision": "120分钟修复被否定，波段级别重新回到下跌笔扩展；日线修复预期同步降级。",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -40.876,
+                        "dea": -39.996,
+                        "histogram": -1.761,
+                        "positiveArea": 0,
+                        "negativeArea": 1.761
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "下一交易日收盘",
+                  "bars": 2,
+                  "note": "按平滑路径模拟 2 根120分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3893.618,
+                      "priceCondition": "3795—3993内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 35.2",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3893.618,
+                        "dif": -24.554,
+                        "dea": -35.377,
+                        "histogram": 21.646,
+                        "positiveArea": 35.193,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3992.552,
+                      "priceCondition": "收回3928并测试3993",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 57.7",
+                      "decision": "确认后观察4053，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3992.552,
+                        "dif": -13.615,
+                        "dea": -32.557,
+                        "histogram": 37.885,
+                        "positiveArea": 57.746,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 4052.545,
+                      "priceCondition": "站稳4053",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 71.4",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4052.545,
+                        "dif": -6.982,
+                        "dea": -30.848,
+                        "histogram": 47.733,
+                        "positiveArea": 71.422,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3795并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "MACD转绿；DIF下穿DEA，快慢线仍在水下；绿柱面积 3.4",
+                      "decision": "120分钟修复被否定，波段级别重新回到下跌笔扩展；日线修复预期同步降级。",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -41.416,
+                        "dea": -39.722,
+                        "histogram": -3.388,
+                        "positiveArea": 3.814,
+                        "negativeArea": 3.388
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3828.469,
+                  "ema12": 3833.824,
+                  "ema26": 3869.983,
+                  "dif": -36.158,
+                  "dea": -39.776,
+                  "histogram": 7.234
+                }
+              }
+            },
+            "1d": {
+              "label": "日线",
+              "barsPerDay": 1,
+              "current": {
+                "close": 3828.469,
+                "dif": -60.428,
+                "dea": -55.767,
+                "histogram": -9.323,
+                "difDelta": 0.913,
+                "histogramDelta": 4.157,
+                "phase": "绿柱区动量收敛"
+              },
+              "upTargets": [
+                {
+                  "price": 3927.853,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 55,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约14—22周"
+                  }
+                },
+                {
+                  "price": 4002.782,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 7,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约8—14个交易日"
+                  }
+                },
+                {
+                  "price": 4175.348,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 3,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约3—6个交易日"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3794.684,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                }
+              ],
+              "chanStructure": {
+                "level": "1d",
+                "state": "down_leave_confirmed",
+                "observation": "价格位于最近中枢下方，等待首次反抽是否受制于 ZD。",
+                "riskLine": 3927.853,
+                "lastStroke": {
+                  "id": "chanpy-line-cc1966f21d87",
+                  "level": "1d",
+                  "start_at": "2026-06-23T15:00:00",
+                  "end_at": "2026-07-20T15:00:00",
+                  "confirmed_at": "2026-07-21T15:00:00",
+                  "direction": "down",
+                  "start_price": 4175.348,
+                  "end_price": 3741.11,
+                  "stroke_count": 1,
+                  "macd_area": 288.2531512378573,
+                  "volume": 1219034448800,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 5
+                },
+                "lastSegment": {
+                  "id": "chanpy-line-3ec4c648d62f",
+                  "level": "1d",
+                  "start_at": "2026-02-03T15:00:00",
+                  "end_at": "2026-07-20T15:00:00",
+                  "confirmed_at": "2026-07-20T15:00:00",
+                  "direction": "down",
+                  "start_price": 4002.782,
+                  "end_price": 3741.11,
+                  "stroke_count": 6,
+                  "macd_area": 1258.10590786717,
+                  "volume": 6950727376100,
+                  "is_sure": false,
+                  "source_kind": "segment",
+                  "source_index": 0,
+                  "reason": "0seg_find_low"
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-16ea0b1e5be6",
+                  "level": "1d",
+                  "start_at": "2026-03-23T15:00:00",
+                  "end_at": "2026-06-23T15:00:00",
+                  "zd": 3927.853,
+                  "zg": 4175.348,
+                  "dd": 3794.684,
+                  "gg": 4258.863,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "strokes": [
+                  {
+                    "id": "chanpy-line-6e99b058bb47",
+                    "level": "1d",
+                    "start_at": "2026-02-03T15:00:00",
+                    "end_at": "2026-03-03T15:00:00",
+                    "confirmed_at": "2026-03-04T15:00:00",
+                    "direction": "up",
+                    "start_price": 4002.782,
+                    "end_price": 4197.228,
+                    "stroke_count": 1,
+                    "macd_area": 81.0650883721845,
+                    "volume": 950105727000,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 0
+                  },
+                  {
+                    "id": "chanpy-line-85d082025643",
+                    "level": "1d",
+                    "start_at": "2026-03-03T15:00:00",
+                    "end_at": "2026-03-23T15:00:00",
+                    "confirmed_at": "2026-03-25T15:00:00",
+                    "direction": "down",
+                    "start_price": 4197.228,
+                    "end_price": 3794.684,
+                    "stroke_count": 1,
+                    "macd_area": 139.55982605588645,
+                    "volume": 1095514394400,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 1
+                  },
+                  {
+                    "id": "chanpy-line-722d60d0c407",
+                    "level": "1d",
+                    "start_at": "2026-03-23T15:00:00",
+                    "end_at": "2026-05-14T15:00:00",
+                    "confirmed_at": "2026-05-15T15:00:00",
+                    "direction": "up",
+                    "start_price": 3794.684,
+                    "end_price": 4258.863,
+                    "stroke_count": 1,
+                    "macd_area": 750.0063722521559,
+                    "volume": 2166227540300,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 2
+                  },
+                  {
+                    "id": "chanpy-line-330ebcac7c9d",
+                    "level": "1d",
+                    "start_at": "2026-05-14T15:00:00",
+                    "end_at": "2026-06-08T15:00:00",
+                    "confirmed_at": "2026-06-09T15:00:00",
+                    "direction": "down",
+                    "start_price": 4258.863,
+                    "end_price": 3927.853,
+                    "stroke_count": 1,
+                    "macd_area": 356.64356691956766,
+                    "volume": 1189715557200,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 3
+                  },
+                  {
+                    "id": "chanpy-line-33bfaefcaa9b",
+                    "level": "1d",
+                    "start_at": "2026-06-08T15:00:00",
+                    "end_at": "2026-06-23T15:00:00",
+                    "confirmed_at": "2026-06-24T15:00:00",
+                    "direction": "up",
+                    "start_price": 3927.853,
+                    "end_price": 4175.348,
+                    "stroke_count": 1,
+                    "macd_area": 76.43621030743408,
+                    "volume": 715970757600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 4
+                  },
+                  {
+                    "id": "chanpy-line-cc1966f21d87",
+                    "level": "1d",
+                    "start_at": "2026-06-23T15:00:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T15:00:00",
+                    "direction": "down",
+                    "start_price": 4175.348,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 288.2531512378573,
+                    "volume": 1219034448800,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 5
+                  }
+                ],
+                "pivots": [
+                  {
+                    "id": "chanpy-pivot-04fc78a0b90e",
+                    "level": "1d",
+                    "kind": "bottom",
+                    "event_at": "2026-02-03T15:00:00",
+                    "confirmed_at": "2026-03-04T15:00:00",
+                    "price": 4002.782,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-2dcf78d10f71",
+                    "level": "1d",
+                    "kind": "top",
+                    "event_at": "2026-03-03T15:00:00",
+                    "confirmed_at": "2026-03-04T15:00:00",
+                    "price": 4197.228,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-0d6db89523e5",
+                    "level": "1d",
+                    "kind": "bottom",
+                    "event_at": "2026-03-23T15:00:00",
+                    "confirmed_at": "2026-03-25T15:00:00",
+                    "price": 3794.684,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-063ee1b45855",
+                    "level": "1d",
+                    "kind": "top",
+                    "event_at": "2026-05-14T15:00:00",
+                    "confirmed_at": "2026-05-15T15:00:00",
+                    "price": 4258.863,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-ed102e7e359a",
+                    "level": "1d",
+                    "kind": "bottom",
+                    "event_at": "2026-06-08T15:00:00",
+                    "confirmed_at": "2026-06-09T15:00:00",
+                    "price": 3927.853,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-f734ffcd180b",
+                    "level": "1d",
+                    "kind": "top",
+                    "event_at": "2026-06-23T15:00:00",
+                    "confirmed_at": "2026-06-24T15:00:00",
+                    "price": 4175.348,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-616f4cfde1a4",
+                    "level": "1d",
+                    "kind": "bottom",
+                    "event_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T15:00:00",
+                    "price": 3741.11,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  }
+                ],
+                "centers": [
+                  {
+                    "id": "chanpy-center-16ea0b1e5be6",
+                    "level": "1d",
+                    "start_at": "2026-03-23T15:00:00",
+                    "end_at": "2026-06-23T15:00:00",
+                    "zd": 3927.853,
+                    "zg": 4175.348,
+                    "dd": 3794.684,
+                    "gg": 4258.863,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  }
+                ],
+                "signals": [
+                  {
+                    "id": "chanpy-signal-c0b6f46bb009",
+                    "level": "1d",
+                    "label": "1B",
+                    "display_label": "笔B1",
+                    "side": "buy",
+                    "price": 3741.11,
+                    "confidence": 0.45,
+                    "divergence_class": "trend_divergence",
+                    "structure_guard": 4175.348,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-20T15:00:00",
+                      "detected_at": "2026-07-21T15:00:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-21T15:00:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "1"
+                      ],
+                      "primary_type": "1",
+                      "comparison_kind": "divergence",
+                      "basis": "比较最后一个中枢的进入段与离开段；价格创新值且至少两项动能证据明确减弱才确认背驰。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 18,
+                        "end": 32,
+                        "startTime": "2026-03-03T15:00:00",
+                        "endTime": "2026-03-23T15:00:00",
+                        "startValue": 4197.228,
+                        "endValue": 3794.684,
+                        "direction": "down",
+                        "bars": 15,
+                        "priceMove": 402.54399999999987,
+                        "macdArea": 139.55982605588645,
+                        "macdPeak": 52.952577666513974,
+                        "difExtreme": 46.09332396704849,
+                        "volumeTotal": 1095514394400,
+                        "volumeAverage": 73034292960,
+                        "amountAverage": 1058209691511.4667
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 93,
+                        "end": 112,
+                        "startTime": "2026-06-23T15:00:00",
+                        "endTime": "2026-07-20T15:00:00",
+                        "startValue": 4175.348,
+                        "endValue": 3741.11,
+                        "direction": "down",
+                        "bars": 20,
+                        "priceMove": 434.23799999999983,
+                        "macdArea": 288.2531512378573,
+                        "macdPeak": 50.602441030346654,
+                        "difExtreme": 61.83480711884158,
+                        "volumeTotal": 1219034448800,
+                        "volumeAverage": 60951722440,
+                        "amountAverage": 1418804454195.2
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 1.0787342501689257,
+                        "macd_area": 2.0654450452125594,
+                        "macd_peak": 0.955618088113329,
+                        "dif_extreme": 1.3415132994757868,
+                        "volume_average": 0.8345630520909201
+                      },
+                      "divergence_audit": {
+                        "status": "unsupported",
+                        "status_label": "不支持背驰",
+                        "price_extension": true,
+                        "momentum_votes": 0,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": false,
+                        "macd_peak_weakening": false,
+                        "dif_weakening": false,
+                        "volume_contracting": true,
+                        "conclusion": "动能证据没有明确减弱。"
+                      },
+                      "center": {
+                        "id": "chanpy-center-380febeb7d05",
+                        "level": "native",
+                        "start_at": "2026-03-23T15:00:00",
+                        "end_at": "2026-06-23T15:00:00",
+                        "zd": 3927.853,
+                        "zg": 4175.348,
+                        "dd": 3794.684,
+                        "gg": 4258.863,
+                        "state": "active",
+                        "stroke_count": 3,
+                        "component_type": "stroke",
+                        "component_count": 3,
+                        "extension_count": 0,
+                        "promoted_from": [],
+                        "is_sure": false
+                      },
+                      "native_features": {
+                        "divergence_rate": 0.914887122217256,
+                        "zs_cnt": 1,
+                        "bsp_bi_amp": 434.23799999999983
+                      },
+                      "line_index": 5,
+                      "dependency": null,
+                      "native_type": "1",
+                      "scope": "stroke"
+                    }
+                  }
+                ],
+                "summary": {
+                  "bars": 120,
+                  "pivots": 7,
+                  "strokes": 6,
+                  "confirmed_strokes": 6,
+                  "segments": 1,
+                  "confirmed_segments": 0,
+                  "higher_segments": 0,
+                  "centers": 1,
+                  "segment_centers": 0,
+                  "signals": 0,
+                  "signal_history": 1,
+                  "strict_first_signals": 0
+                },
+                "provenance": {
+                  "engine": "chan.py",
+                  "engineCommit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                  "calculationLevel": "1d",
+                  "sameLevelBars": true,
+                  "enumMode": "native-enum"
+                }
+              },
+              "pathStages": [
+                {
+                  "stage": "修复准备",
+                  "tone": "repair",
+                  "condition": "绿柱连续缩短，DIF下行斜率放缓；价格先收回3928",
+                  "judgment": "只说明卖压或下行动量衰减，尚未构成修复确认。"
+                },
+                {
+                  "stage": "修复触发",
+                  "tone": "repair",
+                  "condition": "本级别K线收回3928，同时MACD柱不再恶化",
+                  "judgment": "修复路径启动；按当前量能更现实的时间为约半天—2天。"
+                },
+                {
+                  "stage": "修复确认",
+                  "tone": "repair",
+                  "condition": "连续两根本级别K线收在4003上方，或DIF上穿DEA且红柱持续扩张",
+                  "judgment": "修复获得价格或动量确认，下一观察位上移至4175；约半天—2天。"
+                },
+                {
+                  "stage": "修复放大",
+                  "tone": "repair",
+                  "condition": "站稳4175，红柱继续扩张，成交额不低于约0.86倍20期均量",
+                  "judgment": "才把修复升级为趋势扩展；参考时间：约3—6个交易日。"
+                },
+                {
+                  "stage": "下跌触发",
+                  "tone": "damage",
+                  "condition": "本级别K线收盘跌破3795",
+                  "judgment": "破坏路径启动；盘中刺破但收回，不算下跌确认。"
+                },
+                {
+                  "stage": "下跌确认",
+                  "tone": "damage",
+                  "condition": "连续两根本级别K线收在3795下方，或DIF继续下行且绿柱持续扩大",
+                  "judgment": "下跌获得价格或动量确认，修复路径失效。"
+                },
+                {
+                  "stage": "下跌放大",
+                  "tone": "damage",
+                  "condition": "跌破前低并继续创新低，同时绿柱继续扩大",
+                  "judgment": "才把下方目标进一步移至3741；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌收回",
+                  "tone": "neutral",
+                  "condition": "跌破后绿柱停止扩大，并重新收回3928",
+                  "judgment": "破坏未能放大，转入3795—4003区间修复。"
+                }
+              ],
+              "phaseAssessment": {
+                "label": "日线下跌笔后的初期修复",
+                "summary": "日线绿柱收敛，仍处在零轴下方；先观察下跌笔是否停止扩展。",
+                "role": "趋势定性",
+                "roleText": "只负责确认大级别背景是否改变",
+                "nativeChan": true
+              },
+              "paths": {
+                "source": "same-level-chan-structure",
+                "timeframe": "1d",
+                "up": {
+                  "trigger": 3927.853,
+                  "confirm": 4002.782,
+                  "amplify": 4175.348,
+                  "failure": 3794.684,
+                  "label": "收回3928，确认4003，放大看4175"
+                },
+                "range": {
+                  "lower": 3794.684,
+                  "upper": 4002.782,
+                  "label": "3795—4003内止跌与换手"
+                },
+                "down": {
+                  "trigger": 3794.684,
+                  "intermediate": 3741.11,
+                  "amplify": 3741.11,
+                  "recovery": 3927.853,
+                  "label": "失守3795，放大看3741"
+                },
+                "evidence": {
+                  "state": "down_leave_confirmed",
+                  "lastStroke": {
+                    "id": "chanpy-line-cc1966f21d87",
+                    "level": "1d",
+                    "start_at": "2026-06-23T15:00:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T15:00:00",
+                    "direction": "down",
+                    "start_price": 4175.348,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 288.2531512378573,
+                    "volume": 1219034448800,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 5
+                  },
+                  "activeCenter": {
+                    "id": "chanpy-center-16ea0b1e5be6",
+                    "level": "1d",
+                    "start_at": "2026-03-23T15:00:00",
+                    "end_at": "2026-06-23T15:00:00",
+                    "zd": 3927.853,
+                    "zg": 4175.348,
+                    "dd": 3794.684,
+                    "gg": 4258.863,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  "candidateUp": [
+                    3927.853,
+                    4002.782,
+                    4175.348,
+                    4197.228,
+                    4258.863
+                  ],
+                  "candidateDown": [
+                    3794.684,
+                    3741.11
+                  ]
+                }
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "下一交易日午间",
+                  "bars": 1,
+                  "note": "半日仅观察日线方向，不把半根日K当作日线确认。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3898.733,
+                      "priceCondition": "3795—4003内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 3.8",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3898.733,
+                        "dif": -53.419,
+                        "dea": -55.297,
+                        "histogram": 3.757,
+                        "positiveArea": 3.757,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 4002.782,
+                      "priceCondition": "收回3928并测试4003",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 17.0",
+                      "decision": "确认后观察4175，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4002.782,
+                        "dif": -45.119,
+                        "dea": -53.637,
+                        "histogram": 17.037,
+                        "positiveArea": 17.037,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 4175.348,
+                      "priceCondition": "站稳4175",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 39.1",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4175.348,
+                        "dif": -31.353,
+                        "dea": -50.884,
+                        "histogram": 39.062,
+                        "positiveArea": 39.062,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3795并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "绿柱扩大；DIF在DEA下方，快慢线仍在水下；绿柱面积 16.4",
+                      "decision": "日线下跌笔重新扩展；所有低级别反抽只按执行层修复处理。",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -65.993,
+                        "dea": -57.812,
+                        "histogram": -16.362,
+                        "positiveArea": 0,
+                        "negativeArea": 16.362
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "下一交易日收盘",
+                  "bars": 1,
+                  "note": "按平滑路径模拟 1 根日线K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3898.733,
+                      "priceCondition": "3795—4003内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 3.8",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3898.733,
+                        "dif": -53.419,
+                        "dea": -55.297,
+                        "histogram": 3.757,
+                        "positiveArea": 3.757,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 4002.782,
+                      "priceCondition": "收回3928并测试4003",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 17.0",
+                      "decision": "确认后观察4175，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4002.782,
+                        "dif": -45.119,
+                        "dea": -53.637,
+                        "histogram": 17.037,
+                        "positiveArea": 17.037,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 4175.348,
+                      "priceCondition": "站稳4175",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 39.1",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4175.348,
+                        "dif": -31.353,
+                        "dea": -50.884,
+                        "histogram": 39.062,
+                        "positiveArea": 39.062,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3795并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "绿柱扩大；DIF在DEA下方，快慢线仍在水下；绿柱面积 16.4",
+                      "decision": "日线下跌笔重新扩展；所有低级别反抽只按执行层修复处理。",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -65.993,
+                        "dea": -57.812,
+                        "histogram": -16.362,
+                        "positiveArea": 0,
+                        "negativeArea": 16.362
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3828.469,
+                  "ema12": 3866.979,
+                  "ema26": 3927.407,
+                  "dif": -60.428,
+                  "dea": -55.767,
+                  "histogram": -9.323
+                }
+              }
+            }
+          },
+          "progression": [
+            {
+              "timeframe": "30m",
+              "label": "30分钟",
+              "role": "短期启动",
+              "phase": "下跌笔完成后的强反抽，验证新向上笔",
+              "status": "leading"
+            },
+            {
+              "timeframe": "60m",
+              "label": "60分钟",
+              "role": "持续性结构",
+              "phase": "60分钟下跌笔完成，等待向上笔延伸",
+              "status": "native"
+            },
+            {
+              "timeframe": "120m",
+              "label": "120分钟",
+              "role": "波段结构",
+              "phase": "120分钟下跌笔完成，反向笔仍待确认",
+              "status": "native"
+            },
+            {
+              "timeframe": "1d",
+              "label": "日线",
+              "role": "趋势定性",
+              "phase": "日线下跌笔后的初期修复",
+              "status": "pending"
+            }
+          ],
+          "nextSessionPaths": {
+            "source": "same-level-chan-structure",
+            "timeframe": "30m",
+            "up": {
+              "trigger": 3858.31,
+              "confirm": 3884.435,
+              "amplify": 3938.878,
+              "failure": 3793.449,
+              "label": "收回3858，确认3884，放大看3939"
+            },
+            "range": {
+              "lower": 3793.449,
+              "upper": 3884.435,
+              "label": "3793—3884内止跌与换手"
+            },
+            "down": {
+              "trigger": 3793.449,
+              "intermediate": 3782.481,
+              "amplify": 3741.11,
+              "recovery": 3858.31,
+              "label": "失守3793，放大看3741"
+            },
+            "evidence": {
+              "state": "down_leave_confirmed",
+              "lastStroke": {
+                "id": "chanpy-line-22e0d417e98c",
+                "level": "30m",
+                "start_at": "2026-07-27T15:00:00",
+                "end_at": "2026-07-29T10:30:00",
+                "confirmed_at": "2026-07-29T11:00:00",
+                "direction": "down",
+                "start_price": 3858.31,
+                "end_price": 3782.481,
+                "stroke_count": 1,
+                "macd_area": 30.90002366494048,
+                "volume": 79474041600,
+                "is_sure": true,
+                "source_kind": "stroke",
+                "source_index": 62
+              },
+              "activeCenter": {
+                "id": "chanpy-center-91591949034b",
+                "level": "30m",
+                "start_at": "2026-07-02T15:00:00",
+                "end_at": "2026-07-10T13:30:00",
+                "zd": 4019.215,
+                "zg": 4073.88,
+                "dd": 3938.878,
+                "gg": 4074.828,
+                "state": "active",
+                "stroke_count": 3,
+                "component_type": "stroke",
+                "component_count": 3,
+                "extension_count": 0,
+                "promoted_from": [],
+                "is_sure": false
+              },
+              "candidateUp": [
+                3858.31,
+                3884.435,
+                3938.878,
+                3981.672,
+                4019.215,
+                4073.88
+              ],
+              "candidateDown": [
+                3793.449,
+                3782.481,
+                3741.11
+              ]
+            }
+          },
+          "timeframePaths": {
+            "30m": {
+              "source": "same-level-chan-structure",
+              "timeframe": "30m",
+              "up": {
+                "trigger": 3858.31,
+                "confirm": 3884.435,
+                "amplify": 3938.878,
+                "failure": 3793.449,
+                "label": "收回3858，确认3884，放大看3939"
+              },
+              "range": {
+                "lower": 3793.449,
+                "upper": 3884.435,
+                "label": "3793—3884内止跌与换手"
+              },
+              "down": {
+                "trigger": 3793.449,
+                "intermediate": 3782.481,
+                "amplify": 3741.11,
+                "recovery": 3858.31,
+                "label": "失守3793，放大看3741"
+              },
+              "evidence": {
+                "state": "down_leave_confirmed",
+                "lastStroke": {
+                  "id": "chanpy-line-22e0d417e98c",
+                  "level": "30m",
+                  "start_at": "2026-07-27T15:00:00",
+                  "end_at": "2026-07-29T10:30:00",
+                  "confirmed_at": "2026-07-29T11:00:00",
+                  "direction": "down",
+                  "start_price": 3858.31,
+                  "end_price": 3782.481,
+                  "stroke_count": 1,
+                  "macd_area": 30.90002366494048,
+                  "volume": 79474041600,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 62
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-91591949034b",
+                  "level": "30m",
+                  "start_at": "2026-07-02T15:00:00",
+                  "end_at": "2026-07-10T13:30:00",
+                  "zd": 4019.215,
+                  "zg": 4073.88,
+                  "dd": 3938.878,
+                  "gg": 4074.828,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "candidateUp": [
+                  3858.31,
+                  3884.435,
+                  3938.878,
+                  3981.672,
+                  4019.215,
+                  4073.88
+                ],
+                "candidateDown": [
+                  3793.449,
+                  3782.481,
+                  3741.11
+                ]
+              }
+            },
+            "60m": {
+              "source": "same-level-chan-structure",
+              "timeframe": "60m",
+              "up": {
+                "trigger": 3884.435,
+                "confirm": 3938.878,
+                "amplify": 3992.552,
+                "failure": 3782.481,
+                "label": "收回3884，确认3939，放大看3993"
+              },
+              "range": {
+                "lower": 3782.481,
+                "upper": 3938.878,
+                "label": "3782—3939内止跌与换手"
+              },
+              "down": {
+                "trigger": 3782.481,
+                "intermediate": 3741.11,
+                "amplify": 3741.11,
+                "recovery": 3884.435,
+                "label": "失守3782，放大看3741"
+              },
+              "evidence": {
+                "state": "down_leave_confirmed",
+                "lastStroke": {
+                  "id": "chanpy-line-970429b35089",
+                  "level": "60m",
+                  "start_at": "2026-07-22T11:30:00",
+                  "end_at": "2026-07-29T10:30:00",
+                  "confirmed_at": "2026-07-29T11:30:00",
+                  "direction": "down",
+                  "start_price": 3884.435,
+                  "end_price": 3782.481,
+                  "stroke_count": 1,
+                  "macd_area": 2.679010548004282,
+                  "volume": 251235069500,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 30
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-b3a9768e949c",
+                  "level": "60m",
+                  "start_at": "2026-06-29T10:35:00",
+                  "end_at": "2026-07-10T14:00:00",
+                  "zd": 3992.552,
+                  "zg": 4074.828,
+                  "dd": 3938.878,
+                  "gg": 4143.314,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "candidateUp": [
+                  3884.435,
+                  3938.878,
+                  3992.552,
+                  4010.872,
+                  4074.828,
+                  4143.314
+                ],
+                "candidateDown": [
+                  3782.481,
+                  3741.11
+                ]
+              }
+            },
+            "120m": {
+              "source": "same-level-chan-structure",
+              "timeframe": "120m",
+              "up": {
+                "trigger": 3927.853,
+                "confirm": 3992.552,
+                "amplify": 4052.545,
+                "failure": 3794.684,
+                "label": "收回3928，确认3993，放大看4053"
+              },
+              "range": {
+                "lower": 3794.684,
+                "upper": 3992.552,
+                "label": "3795—3993内止跌与换手"
+              },
+              "down": {
+                "trigger": 3794.684,
+                "intermediate": 3741.11,
+                "amplify": 3741.11,
+                "recovery": 3927.853,
+                "label": "失守3795，放大看3741"
+              },
+              "evidence": {
+                "state": "down_leave_confirmed",
+                "lastStroke": {
+                  "id": "chanpy-line-360675a330d3",
+                  "level": "120m",
+                  "start_at": "2026-07-01T11:30:00",
+                  "end_at": "2026-07-20T15:00:00",
+                  "confirmed_at": "2026-07-21T11:30:00",
+                  "direction": "down",
+                  "start_price": 4143.314,
+                  "end_price": 3741.11,
+                  "stroke_count": 1,
+                  "macd_area": 409.1596365241181,
+                  "volume": 835420238000,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 9
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-a85adb5cda77",
+                  "level": "120m",
+                  "start_at": "2026-03-09T11:30:00",
+                  "end_at": "2026-07-01T11:30:00",
+                  "zd": 4052.545,
+                  "zg": 4141.649,
+                  "dd": 3794.684,
+                  "gg": 4258.863,
+                  "state": "active",
+                  "stroke_count": 7,
+                  "component_type": "stroke",
+                  "component_count": 7,
+                  "extension_count": 4,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "candidateUp": [
+                  3927.853,
+                  3992.552,
+                  4052.545,
+                  4141.649,
+                  4143.314,
+                  4175.348
+                ],
+                "candidateDown": [
+                  3794.684,
+                  3741.11
+                ]
+              }
+            },
+            "1d": {
+              "source": "same-level-chan-structure",
+              "timeframe": "1d",
+              "up": {
+                "trigger": 3927.853,
+                "confirm": 4002.782,
+                "amplify": 4175.348,
+                "failure": 3794.684,
+                "label": "收回3928，确认4003，放大看4175"
+              },
+              "range": {
+                "lower": 3794.684,
+                "upper": 4002.782,
+                "label": "3795—4003内止跌与换手"
+              },
+              "down": {
+                "trigger": 3794.684,
+                "intermediate": 3741.11,
+                "amplify": 3741.11,
+                "recovery": 3927.853,
+                "label": "失守3795，放大看3741"
+              },
+              "evidence": {
+                "state": "down_leave_confirmed",
+                "lastStroke": {
+                  "id": "chanpy-line-cc1966f21d87",
+                  "level": "1d",
+                  "start_at": "2026-06-23T15:00:00",
+                  "end_at": "2026-07-20T15:00:00",
+                  "confirmed_at": "2026-07-21T15:00:00",
+                  "direction": "down",
+                  "start_price": 4175.348,
+                  "end_price": 3741.11,
+                  "stroke_count": 1,
+                  "macd_area": 288.2531512378573,
+                  "volume": 1219034448800,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 5
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-16ea0b1e5be6",
+                  "level": "1d",
+                  "start_at": "2026-03-23T15:00:00",
+                  "end_at": "2026-06-23T15:00:00",
+                  "zd": 3927.853,
+                  "zg": 4175.348,
+                  "dd": 3794.684,
+                  "gg": 4258.863,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "candidateUp": [
+                  3927.853,
+                  4002.782,
+                  4175.348,
+                  4197.228,
+                  4258.863
+                ],
+                "candidateDown": [
+                  3794.684,
+                  3741.11
+                ]
+              }
+            }
+          },
+          "chanModel": {
+            "sourceRoot": "Stock-Analysis-chan-native-60-120",
+            "head": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+            "levels": [
+              "30m",
+              "60m",
+              "120m",
+              "1d"
+            ]
+          },
+          "previousReview": {
+            "available": true,
+            "previousDate": "2026-07-28",
+            "status": "down_recovered",
+            "primary": "下跌触发后收回",
+            "summary": "开3823.29、高3845.77、低3782.48、收3828.47；上涨触发/确认/放大=09:35/13:35/—，下跌触发/放大=09:50/—。",
+            "events": {
+              "upTriggeredAt": "09:35",
+              "upConfirmedAt": "13:35",
+              "upAmplifiedAt": null,
+              "downTriggeredAt": "09:50",
+              "downAmplifiedAt": null
+            },
+            "timeframeChanges": [
+              {
+                "timeframe": "30m",
+                "label": "30分钟",
+                "difDelta": 4.48,
+                "histogramDelta": 9.812,
+                "phaseBefore": "绿柱区动量收敛",
+                "phaseAfter": "零轴下方修复"
+              },
+              {
+                "timeframe": "60m",
+                "label": "60分钟",
+                "difDelta": 1.484,
+                "histogramDelta": 3.519,
+                "phaseBefore": "下行动量仍在",
+                "phaseAfter": "零轴下方修复"
+              },
+              {
+                "timeframe": "120m",
+                "label": "120分钟",
+                "difDelta": 1.191,
+                "histogramDelta": -0.515,
+                "phaseBefore": "零轴下方修复",
+                "phaseAfter": "零轴下方修复"
+              },
+              {
+                "timeframe": "1d",
+                "label": "日线",
+                "difDelta": 0.913,
+                "histogramDelta": 4.157,
+                "phaseBefore": "下行动量仍在",
+                "phaseAfter": "绿柱区动量收敛"
+              }
+            ],
+            "range": {
+              "lower": 3793.449,
+              "upper": 3833.716
+            }
+          }
+        }
+      },
+      "stocks": [
+        {
+          "symbol": "sz002463",
+          "name": "沪电股份",
+          "structure": 0,
+          "support": 21,
+          "relative": 15,
+          "risk": 7,
+          "total": 43,
+          "status": "防守观察"
+        },
+        {
+          "symbol": "sh588710",
+          "name": "科创半导体设备ETF",
+          "structure": 1,
+          "support": 20,
+          "relative": 11,
+          "risk": 7,
+          "total": 39,
+          "status": "防守观察"
+        },
+        {
+          "symbol": "sz002422",
+          "name": "科伦药业",
+          "structure": 4,
+          "support": 0,
+          "relative": 18,
+          "risk": 6,
+          "total": 28,
+          "status": "禁止左侧"
+        }
+      ],
+      "experts": [
+        {
+          "tag": "科技修复质量",
+          "source": "NGA / fuelish · 15:05",
+          "quote": "光存核心止跌，但是板块要快速反弹很难，只是收了一根下引线的阴线，没有反包昨日阴线，明天还面临抄底盘的抛压，短期依旧看震荡。",
+          "meaning": "科技只能先按核心修复、后排分化处理，不能由单日下影线直接升级趋势。",
+          "test": "验证核心是否守住VWAP、后排是否停止补跌，以及指数能否确认3853—3875。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207267&pid=876763292"
+        },
+        {
+          "tag": "指数共振",
+          "source": "NGA / 丶阿疯 · 12:34",
+          "quote": "既然指数是重中之重，那即使选择题材也好，就尽量选和指数共振的；反指板块一定要追强的核心，低吸后排一定会遭重。",
+          "meaning": "相对强弱要同时看指数上涨时的共振和指数回落时的抵抗性。",
+          "test": "次日比较共振核心和后排的VWAP承接，不对普涨日仍弱于指数的标的加分。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207543&pid=876745245"
+        },
+        {
+          "tag": "分时量价纪律",
+          "source": "NGA / -阿狼- · 14:21",
+          "quote": "当超跌反弹是放量的，而见第一次分时高点后停止放量，第二次拉升没有继续放量、也没有继续突破分时高点的时候，第二次拉升T出。",
+          "meaning": "修复路径需要量价持续，而不是只看价格瞬时拉回。",
+          "test": "明日第二次冲击3853或3875若不放量且不创新高，降低高弹性仓位。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207407&pid=876757896"
+        },
+        {
+          "tag": "区间验证",
+          "source": "NGA / Plezl · 14:08",
+          "quote": "策略是3793以下买一点，3830以上卖一点。",
+          "meaning": "7月29日更接近先破坏后收回的区间修复，而非单边趋势。",
+          "test": "次日边界上移至3819与3853—3875，仍按逐级确认处理。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207407&pid=876756381"
+        },
+        {
+          "tag": "反方证据",
+          "source": "NGA / 海伯利安之歌 · 10:46",
+          "quote": "趋势已经形成，不要被日内分时欺骗。",
+          "meaning": "午后30分钟金叉只完成动量修复，仍需新结构和次日延续性确认。",
+          "test": "若科技核心次日跌回VWAP下方或后排继续补跌，提高该反方判断权重。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47209064&pid=876728795"
+        }
+      ],
+      "fullReport": "reports/20260729.html"
+    },
+    "2026-07-30": {
+      "market": {
+        "total": 14,
+        "sentiment": 11,
+        "technical": 3,
+        "status": "风险释放",
+        "summary": "蓝色风险释放。上证盘中跌破昨日3819与3782路径位，最低3767.50，尾盘虽收回3793并收3804.69，但仍在最新5分钟中枢3819.41—3839.34下方；全A仅1636家上涨、中位跌1.20%，95家跌停、981家跌超5%，全市场主力净流出约715亿元，反抽尚未转化为修复确认。",
+        "paths": [
+          {
+            "tone": "red",
+            "title": "红：先收3819，再过3839；确认看3858",
+            "text": "30分钟先收回3819.41并进入3819.41—3839.34中枢，随后站稳3839.34，才视为3767.50后的反抽开始延伸；进一步突破并回踩守住3858.31，才确认新的30分钟向上笔具备延续资格。；60分钟修复需价格站稳3884.44并令柱体持续转红、DIF重新上穿DEA；120分钟要看到3927.85附近形成更高一笔，不能用30分钟收回3819替代更大级别确认。"
+          },
+          {
+            "tone": "yellow",
+            "title": "黄：3768—3839内换手，观察反抽质量",
+            "text": "若3767.50不再被有效跌破，但反抽持续受制于3819.41—3839.34，则按下跌后的区间消化处理；先看30分钟红柱能否重新扩张，再看60分钟柱能否稳定翻红。；成交额仅约20日均量89%，区间上沿若没有放量与市场宽度同步修复，不把盘中穿越中枢当成有效反转。"
+          },
+          {
+            "tone": "blue",
+            "title": "蓝：失守3768，放大看3741",
+            "text": "若30分钟收盘再次跌破3767.50且反抽不能收回3793.45，视为新下行笔继续延伸；跌破3741.11后，30与60分钟绿柱会重新扩张，120分钟零轴下修复也将明显受损。；若同时出现跌停与跌超5%数量继续增加、昨日弱势股重复受损和科技高成交方向净流出扩大，暂停新增左侧试错，等待新的同级别底分型和向上笔确认。"
+          }
+        ],
+        "pathProjection": {
+          "schemaVersion": "multi-timeframe-native-chan-v3",
+          "date": "2026-07-30",
+          "source": "5m-consistent-aggregation+same-level-chan-core",
+          "close": 3804.693,
+          "volume": {
+            "amount": 10760.56,
+            "average20": 12084.19,
+            "ratio20": 0.8905,
+            "label": "偏低量",
+            "rule": "量能不进入MACD公式；只约束目标区域能否持续，以及数学K线数向现实时间的映射。"
+          },
+          "levels": {
+            "up": [
+              3819.413,
+              3839.341,
+              3852.775,
+              3874.964,
+              3900,
+              4002.782,
+              4019.215,
+              4073.88,
+              4190.866
+            ],
+            "down": [
+              3797.909,
+              3767.503,
+              3741.11
+            ]
+          },
+          "timeframes": {
+            "30m": {
+              "label": "30分钟",
+              "barsPerDay": 8,
+              "current": {
+                "close": 3804.693,
+                "dif": -5.51,
+                "dea": -6.083,
+                "histogram": 1.146,
+                "difDelta": -0.043,
+                "histogramDelta": -0.372,
+                "phase": "零轴下方修复"
+              },
+              "upTargets": [
+                {
+                  "price": 3858.31,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 2,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3884.435,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3938.878,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3793.449,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 3
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3767.503,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                }
+              ],
+              "chanStructure": {
+                "level": "30m",
+                "state": "down_leave_confirmed",
+                "observation": "价格位于最近中枢下方，等待首次反抽是否受制于 ZD。",
+                "riskLine": 4019.215,
+                "lastStroke": {
+                  "id": "chanpy-line-c1dcc8b4825b",
+                  "level": "30m",
+                  "start_at": "2026-07-27T15:00:00",
+                  "end_at": "2026-07-30T13:30:00",
+                  "confirmed_at": "2026-07-30T14:00:00",
+                  "direction": "down",
+                  "start_price": 3858.31,
+                  "end_price": 3767.503,
+                  "stroke_count": 1,
+                  "macd_area": 43.51574731281276,
+                  "volume": 151201797600,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 62
+                },
+                "lastSegment": {
+                  "id": "chanpy-line-bf3d94fe7ec8",
+                  "level": "30m",
+                  "start_at": "2026-07-20T15:00:00",
+                  "end_at": "2026-07-27T15:00:00",
+                  "confirmed_at": "2026-07-27T15:00:00",
+                  "direction": "up",
+                  "start_price": 3741.11,
+                  "end_price": 3858.31,
+                  "stroke_count": 3,
+                  "macd_area": 364.6643089459863,
+                  "volume": 290216705700,
+                  "is_sure": false,
+                  "source_kind": "segment",
+                  "source_index": 7,
+                  "reason": "collect_left_1"
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-91591949034b",
+                  "level": "30m",
+                  "start_at": "2026-07-02T15:00:00",
+                  "end_at": "2026-07-10T13:30:00",
+                  "zd": 4019.215,
+                  "zg": 4073.88,
+                  "dd": 3938.878,
+                  "gg": 4074.828,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "strokes": [
+                  {
+                    "id": "chanpy-line-0b673b09a369",
+                    "level": "30m",
+                    "start_at": "2026-07-10T13:30:00",
+                    "end_at": "2026-07-14T11:30:00",
+                    "confirmed_at": "2026-07-14T13:30:00",
+                    "direction": "down",
+                    "start_price": 4074.828,
+                    "end_price": 3869.304,
+                    "stroke_count": 1,
+                    "macd_area": 224.41368891593464,
+                    "volume": 116170804400,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 56
+                  },
+                  {
+                    "id": "chanpy-line-90a1f8e0b896",
+                    "level": "30m",
+                    "start_at": "2026-07-14T11:30:00",
+                    "end_at": "2026-07-15T10:30:00",
+                    "confirmed_at": "2026-07-15T11:30:00",
+                    "direction": "up",
+                    "start_price": 3869.304,
+                    "end_price": 3981.672,
+                    "stroke_count": 1,
+                    "macd_area": 45.5549120601147,
+                    "volume": 56186756900,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 57
+                  },
+                  {
+                    "id": "chanpy-line-5b5a86a02dd6",
+                    "level": "30m",
+                    "start_at": "2026-07-15T10:30:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T10:00:00",
+                    "direction": "down",
+                    "start_price": 3981.672,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 251.7064436606864,
+                    "volume": 227040071900,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 58
+                  },
+                  {
+                    "id": "chanpy-line-dd122a2a087f",
+                    "level": "30m",
+                    "start_at": "2026-07-20T15:00:00",
+                    "end_at": "2026-07-22T11:30:00",
+                    "confirmed_at": "2026-07-22T13:30:00",
+                    "direction": "up",
+                    "start_price": 3741.11,
+                    "end_price": 3884.435,
+                    "stroke_count": 1,
+                    "macd_area": 243.9789765386098,
+                    "volume": 122675148400,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 59
+                  },
+                  {
+                    "id": "chanpy-line-9dd1d84e277c",
+                    "level": "30m",
+                    "start_at": "2026-07-22T11:30:00",
+                    "end_at": "2026-07-27T10:00:00",
+                    "confirmed_at": "2026-07-27T10:30:00",
+                    "direction": "down",
+                    "start_price": 3884.435,
+                    "end_price": 3793.449,
+                    "stroke_count": 1,
+                    "macd_area": 69.82116923803872,
+                    "volume": 140404359500,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 60
+                  },
+                  {
+                    "id": "chanpy-line-92b1b6035a50",
+                    "level": "30m",
+                    "start_at": "2026-07-27T10:00:00",
+                    "end_at": "2026-07-27T15:00:00",
+                    "confirmed_at": "2026-07-28T10:00:00",
+                    "direction": "up",
+                    "start_price": 3793.449,
+                    "end_price": 3858.31,
+                    "stroke_count": 1,
+                    "macd_area": 3.0150660983340547,
+                    "volume": 47742149600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 61
+                  },
+                  {
+                    "id": "chanpy-line-c1dcc8b4825b",
+                    "level": "30m",
+                    "start_at": "2026-07-27T15:00:00",
+                    "end_at": "2026-07-30T13:30:00",
+                    "confirmed_at": "2026-07-30T14:00:00",
+                    "direction": "down",
+                    "start_price": 3858.31,
+                    "end_price": 3767.503,
+                    "stroke_count": 1,
+                    "macd_area": 43.51574731281276,
+                    "volume": 151201797600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 62
+                  }
+                ],
+                "pivots": [
+                  {
+                    "id": "chanpy-pivot-b9bc1e4af0e3",
+                    "level": "30m",
+                    "kind": "top",
+                    "event_at": "2026-07-03T14:30:00",
+                    "confirmed_at": "2026-07-03T15:00:00",
+                    "price": 4073.88,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-cfd6b06b6085",
+                    "level": "30m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-09T11:30:00",
+                    "confirmed_at": "2026-07-09T13:30:00",
+                    "price": 3938.878,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-458f7319399e",
+                    "level": "30m",
+                    "kind": "top",
+                    "event_at": "2026-07-10T13:30:00",
+                    "confirmed_at": "2026-07-10T14:00:00",
+                    "price": 4074.828,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-9a783309d9be",
+                    "level": "30m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-14T11:30:00",
+                    "confirmed_at": "2026-07-14T13:30:00",
+                    "price": 3869.304,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-195052402bcc",
+                    "level": "30m",
+                    "kind": "top",
+                    "event_at": "2026-07-15T10:30:00",
+                    "confirmed_at": "2026-07-15T11:30:00",
+                    "price": 3981.672,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-8ca56903a716",
+                    "level": "30m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T10:00:00",
+                    "price": 3741.11,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-ebacb7ce3ba8",
+                    "level": "30m",
+                    "kind": "top",
+                    "event_at": "2026-07-22T11:30:00",
+                    "confirmed_at": "2026-07-22T13:30:00",
+                    "price": 3884.435,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-20c5d622d755",
+                    "level": "30m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-27T10:00:00",
+                    "confirmed_at": "2026-07-27T10:30:00",
+                    "price": 3793.449,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-bc902410d1aa",
+                    "level": "30m",
+                    "kind": "top",
+                    "event_at": "2026-07-27T15:00:00",
+                    "confirmed_at": "2026-07-28T10:00:00",
+                    "price": 3858.31,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-3d971536fe47",
+                    "level": "30m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-30T13:30:00",
+                    "confirmed_at": "2026-07-30T14:00:00",
+                    "price": 3767.503,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  }
+                ],
+                "centers": [
+                  {
+                    "id": "chanpy-center-6dbbc11d73d4",
+                    "level": "30m",
+                    "start_at": "2026-06-16T11:00:00",
+                    "end_at": "2026-06-22T11:00:00",
+                    "zd": 4073.732,
+                    "zg": 4103.926,
+                    "dd": 4070.172,
+                    "gg": 4117.451,
+                    "state": "completed",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": true
+                  },
+                  {
+                    "id": "chanpy-center-adaaaaec67a7",
+                    "level": "30m",
+                    "start_at": "2026-06-24T11:30:00",
+                    "end_at": "2026-07-01T11:30:00",
+                    "zd": 4075.492,
+                    "zg": 4133.097,
+                    "dd": 3992.552,
+                    "gg": 4143.314,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  {
+                    "id": "chanpy-center-91591949034b",
+                    "level": "30m",
+                    "start_at": "2026-07-02T15:00:00",
+                    "end_at": "2026-07-10T13:30:00",
+                    "zd": 4019.215,
+                    "zg": 4073.88,
+                    "dd": 3938.878,
+                    "gg": 4074.828,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  }
+                ],
+                "signals": [
+                  {
+                    "id": "chanpy-signal-c6ea29152968",
+                    "level": "30m",
+                    "label": "2S",
+                    "display_label": "笔S2s",
+                    "side": "sell",
+                    "price": 4143.314,
+                    "confidence": 0.72,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 4143.314,
+                    "risk_guard": 4175.348,
+                    "lifecycle": {
+                      "state": "confirmed",
+                      "event_at": "2026-07-01T11:30:00",
+                      "detected_at": "2026-07-01T13:30:00",
+                      "confirmed_at": "2026-07-01T13:30:00",
+                      "invalidated_at": null,
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2s"
+                      ],
+                      "primary_type": "2s",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 739,
+                        "end": 748,
+                        "startTime": "2026-06-23T11:00:00",
+                        "endTime": "2026-06-24T11:30:00",
+                        "startValue": 4175.348,
+                        "endValue": 4075.492,
+                        "direction": "down",
+                        "bars": 10,
+                        "priceMove": 99.85599999999977,
+                        "macdArea": 77.46985995062694,
+                        "macdPeak": 15.548022963286968,
+                        "difExtreme": 0.5153207645344082,
+                        "volumeTotal": 77293485500,
+                        "volumeAverage": 7729348550,
+                        "amountAverage": 176924072345.6
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 770,
+                        "end": 788,
+                        "startTime": "2026-06-29T10:35:00",
+                        "endTime": "2026-07-01T11:30:00",
+                        "startValue": 3992.552,
+                        "endValue": 4143.314,
+                        "direction": "up",
+                        "bars": 19,
+                        "priceMove": 150.76200000000017,
+                        "macdArea": 180.18773513131137,
+                        "macdPeak": 19.95726749293914,
+                        "difExtreme": 13.832751205884506,
+                        "volumeTotal": 144770754500,
+                        "volumeAverage": 7619513394.736842,
+                        "amountAverage": 193772250381.4737
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 1.5097941035090583,
+                        "macd_area": 2.3259075883982305,
+                        "macd_peak": 1.2835887585234196,
+                        "dif_extreme": 26.842992089368614,
+                        "volume_average": 0.9857898560851991
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2s_retrace_rate": 0.6791980451850692,
+                        "bsp2s_break_bi_amp": 99.85599999999977,
+                        "bsp2s_bi_amp": 150.76200000000017,
+                        "bsp2s_lv": 1,
+                        "bsp_bi_amp": 150.76200000000017
+                      },
+                      "line_index": 51,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 47,
+                        "status": "confirmed",
+                        "parent_signal_id": "chanpy-signal-405e15421a11",
+                        "parent_display_label": "笔S1",
+                        "parent_event_at": "2026-06-23T11:00:00",
+                        "parent_state": "confirmed",
+                        "status_label": "关联一类点已确认",
+                        "conclusion": "关联一类点通过严格复核，二类点可继续按回撤结构判定。"
+                      },
+                      "native_type": "2s",
+                      "scope": "stroke",
+                      "lifecycle_audit": {
+                        "risk_guard": 4175.348,
+                        "rule": "收盘价有效升破信号链风险线",
+                        "invalidated_at": null
+                      }
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-ab44f8c896a0",
+                    "level": "30m",
+                    "label": "3S",
+                    "display_label": "笔S3a",
+                    "side": "sell",
+                    "price": 4073.88,
+                    "confidence": 0.72,
+                    "divergence_class": "center_non_return",
+                    "structure_guard": 4075.492,
+                    "risk_guard": 4073.88,
+                    "lifecycle": {
+                      "state": "confirmed",
+                      "event_at": "2026-07-03T14:30:00",
+                      "detected_at": "2026-07-03T15:00:00",
+                      "confirmed_at": "2026-07-03T15:00:00",
+                      "invalidated_at": null,
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "3a"
+                      ],
+                      "primary_type": "3a",
+                      "comparison_kind": "center_non_return",
+                      "basis": "三类点检查离开中枢后的首次回踩或反抽是否回到中枢。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 788,
+                        "end": 800,
+                        "startTime": "2026-07-01T11:30:00",
+                        "endTime": "2026-07-02T15:00:00",
+                        "startValue": 4143.314,
+                        "endValue": 4019.215,
+                        "direction": "down",
+                        "bars": 13,
+                        "priceMove": 124.09900000000016,
+                        "macdArea": 72.88612943896345,
+                        "macdPeak": 17.54136182854566,
+                        "difExtreme": 8.371356183128682,
+                        "volumeTotal": 93831642300,
+                        "volumeAverage": 7217818638.461538,
+                        "amountAverage": 176076266889.84616
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 800,
+                        "end": 807,
+                        "startTime": "2026-07-02T15:00:00",
+                        "endTime": "2026-07-03T14:30:00",
+                        "startValue": 4019.215,
+                        "endValue": 4073.88,
+                        "direction": "up",
+                        "bars": 8,
+                        "priceMove": 54.664999999999964,
+                        "macdArea": 0,
+                        "macdPeak": 0,
+                        "difExtreme": 8.371356183128682,
+                        "volumeTotal": 61543950300,
+                        "volumeAverage": 7692993787.5,
+                        "amountAverage": 185338101760
+                      },
+                      "third_structure": {
+                        "side": "sell",
+                        "center_boundary_name": "ZD",
+                        "center_boundary": 4075.492,
+                        "departure": {
+                          "name": "对照段",
+                          "start": 788,
+                          "end": 800,
+                          "startTime": "2026-07-01T11:30:00",
+                          "endTime": "2026-07-02T15:00:00",
+                          "startValue": 4143.314,
+                          "endValue": 4019.215,
+                          "direction": "down",
+                          "bars": 13,
+                          "priceMove": 124.09900000000016,
+                          "macdArea": 72.88612943896345,
+                          "macdPeak": 17.54136182854566,
+                          "difExtreme": 8.371356183128682,
+                          "volumeTotal": 93831642300,
+                          "volumeAverage": 7217818638.461538,
+                          "amountAverage": 176076266889.84616
+                        },
+                        "retrace": {
+                          "name": "检验段",
+                          "start": 800,
+                          "end": 807,
+                          "startTime": "2026-07-02T15:00:00",
+                          "endTime": "2026-07-03T14:30:00",
+                          "startValue": 4019.215,
+                          "endValue": 4073.88,
+                          "direction": "up",
+                          "bars": 8,
+                          "priceMove": 54.664999999999964,
+                          "macdArea": 0,
+                          "macdPeak": 0,
+                          "difExtreme": 8.371356183128682,
+                          "volumeTotal": 61543950300,
+                          "volumeAverage": 7692993787.5,
+                          "amountAverage": 185338101760
+                        },
+                        "retrace_extreme": 4073.88,
+                        "holds_center": true,
+                        "clearance": 1.61200000000008,
+                        "clearance_ratio": 0.0003955350666864467,
+                        "rule": "向下离开中枢后，首次反抽高点不高于中枢下沿 ZD。"
+                      },
+                      "ratios": {},
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": {
+                        "id": "chanpy-center-28a33f6bdab4",
+                        "level": "native",
+                        "start_at": "2026-06-24T11:30:00",
+                        "end_at": "2026-07-01T11:30:00",
+                        "zd": 4075.492,
+                        "zg": 4133.097,
+                        "dd": 3992.552,
+                        "gg": 4143.314,
+                        "state": "active",
+                        "stroke_count": 3,
+                        "component_type": "stroke",
+                        "component_count": 3,
+                        "extension_count": 0,
+                        "promoted_from": [],
+                        "is_sure": false
+                      },
+                      "native_features": {
+                        "bsp3_zs_height": 0.014134489774486015,
+                        "bsp3_bi_amp": 54.664999999999964,
+                        "bsp_bi_amp": 54.664999999999964
+                      },
+                      "line_index": 53,
+                      "dependency": null,
+                      "native_type": "3a",
+                      "scope": "stroke",
+                      "lifecycle_audit": {
+                        "risk_guard": 4073.88,
+                        "rule": "收盘价有效升破信号链风险线",
+                        "invalidated_at": null
+                      }
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-36e8100aee50",
+                    "level": "30m",
+                    "label": "1B",
+                    "display_label": "笔B1p",
+                    "side": "buy",
+                    "price": 3741.11,
+                    "confidence": 0.45,
+                    "divergence_class": "consolidation_divergence",
+                    "structure_guard": 3741.11,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-20T15:00:00",
+                      "detected_at": "2026-07-21T10:00:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-21T10:00:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "1p"
+                      ],
+                      "primary_type": "1p",
+                      "comparison_kind": "divergence",
+                      "basis": "盘整背驰比较相隔一段反向走势的前后两段同向结构。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 845,
+                        "end": 860,
+                        "startTime": "2026-07-10T13:30:00",
+                        "endTime": "2026-07-14T11:30:00",
+                        "startValue": 4074.828,
+                        "endValue": 3869.304,
+                        "direction": "down",
+                        "bars": 16,
+                        "priceMove": 205.5239999999999,
+                        "macdArea": 224.41368891593464,
+                        "macdPeak": 25.5438102013879,
+                        "difExtreme": 30.91944832010904,
+                        "volumeTotal": 116170804400,
+                        "volumeAverage": 7260675275,
+                        "amountAverage": 165710856192
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 866,
+                        "end": 896,
+                        "startTime": "2026-07-15T10:30:00",
+                        "endTime": "2026-07-20T15:00:00",
+                        "startValue": 3981.672,
+                        "endValue": 3741.11,
+                        "direction": "down",
+                        "bars": 31,
+                        "priceMove": 240.5619999999999,
+                        "macdArea": 251.7064436606864,
+                        "macdPeak": 26.380497533583124,
+                        "difExtreme": 45.11313140054517,
+                        "volumeTotal": 227040071900,
+                        "volumeAverage": 7323873287.096774,
+                        "amountAverage": 143938473587.6129
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 1.1704813063194568,
+                        "macd_area": 1.121618047796432,
+                        "macd_peak": 1.032754993307528,
+                        "dif_extreme": 1.4590535682748584,
+                        "volume_average": 1.0087041507439918
+                      },
+                      "divergence_audit": {
+                        "status": "unsupported",
+                        "status_label": "不支持背驰",
+                        "price_extension": true,
+                        "momentum_votes": 0,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": false,
+                        "macd_peak_weakening": false,
+                        "dif_weakening": false,
+                        "volume_contracting": false,
+                        "conclusion": "动能证据没有明确减弱。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "divergence_rate": 1.0327549892645271,
+                        "bsp1_bi_amp": 240.5619999999999,
+                        "bsp_bi_amp": 240.5619999999999
+                      },
+                      "line_index": 58,
+                      "dependency": null,
+                      "native_type": "1p",
+                      "scope": "stroke"
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-0e4eb78b0696",
+                    "level": "30m",
+                    "label": "2B",
+                    "display_label": "笔B2",
+                    "side": "buy",
+                    "price": 3793.449,
+                    "confidence": 0.45,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 3793.449,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-27T10:00:00",
+                      "detected_at": "2026-07-27T10:30:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-27T10:30:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2"
+                      ],
+                      "primary_type": "2",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 896,
+                        "end": 908,
+                        "startTime": "2026-07-20T15:00:00",
+                        "endTime": "2026-07-22T11:30:00",
+                        "startValue": 3741.11,
+                        "endValue": 3884.435,
+                        "direction": "up",
+                        "bars": 13,
+                        "priceMove": 143.32499999999982,
+                        "macdArea": 243.9789765386098,
+                        "macdPeak": 31.953202735741463,
+                        "difExtreme": 6.778127189266343,
+                        "volumeTotal": 122675148400,
+                        "volumeAverage": 9436549876.923077,
+                        "amountAverage": 184275077592.6154
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 908,
+                        "end": 929,
+                        "startTime": "2026-07-22T11:30:00",
+                        "endTime": "2026-07-27T10:00:00",
+                        "startValue": 3884.435,
+                        "endValue": 3793.449,
+                        "direction": "down",
+                        "bars": 22,
+                        "priceMove": 90.98599999999988,
+                        "macdArea": 69.82116923803872,
+                        "macdPeak": 11.456106092432616,
+                        "difExtreme": 6.4137316524420385,
+                        "volumeTotal": 140404359500,
+                        "volumeAverage": 6382016340.909091,
+                        "amountAverage": 120791816750.54546
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 0.6348229548229548,
+                        "macd_area": 0.28617699044650874,
+                        "macd_peak": 0.3585276313982233,
+                        "dif_extreme": 0.9462394955642982,
+                        "volume_average": 0.6763082296122023
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2_retrace_rate": 0.6348229548229548,
+                        "bsp2_break_bi_amp": 143.32499999999982,
+                        "bsp2_bi_amp": 90.98599999999988,
+                        "bsp_bi_amp": 90.98599999999988
+                      },
+                      "line_index": 60,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 58,
+                        "status": "invalidated",
+                        "parent_signal_id": "chanpy-signal-36e8100aee50",
+                        "parent_display_label": "笔B1p",
+                        "parent_event_at": "2026-07-20T15:00:00",
+                        "parent_state": "invalidated",
+                        "status_label": "关联一类点已失效",
+                        "conclusion": "关联一类点后来跌破或升破风险线，依赖它的二类点已退出当前有效信号。"
+                      },
+                      "native_type": "2",
+                      "scope": "stroke"
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-4f6931efc1bb",
+                    "level": "30m",
+                    "label": "2B",
+                    "display_label": "笔B2s",
+                    "side": "buy",
+                    "price": 3767.503,
+                    "confidence": 0.45,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 3767.503,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-30T13:30:00",
+                      "detected_at": "2026-07-30T14:00:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-30T14:00:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2s"
+                      ],
+                      "primary_type": "2s",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 896,
+                        "end": 908,
+                        "startTime": "2026-07-20T15:00:00",
+                        "endTime": "2026-07-22T11:30:00",
+                        "startValue": 3741.11,
+                        "endValue": 3884.435,
+                        "direction": "up",
+                        "bars": 13,
+                        "priceMove": 143.32499999999982,
+                        "macdArea": 243.9789765386098,
+                        "macdPeak": 31.953202735741463,
+                        "difExtreme": 6.778127189266343,
+                        "volumeTotal": 122675148400,
+                        "volumeAverage": 9436549876.923077,
+                        "amountAverage": 184275077592.6154
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 936,
+                        "end": 957,
+                        "startTime": "2026-07-27T15:00:00",
+                        "endTime": "2026-07-30T13:30:00",
+                        "startValue": 3858.31,
+                        "endValue": 3767.503,
+                        "direction": "down",
+                        "bars": 22,
+                        "priceMove": 90.80699999999979,
+                        "macdArea": 43.51574731281276,
+                        "macdPeak": 5.265969796451602,
+                        "difExtreme": 11.92043952868471,
+                        "volumeTotal": 151201797600,
+                        "volumeAverage": 6872808981.818182,
+                        "amountAverage": 130345330874.18182
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 0.6335740450026157,
+                        "macd_area": 0.17835859437637397,
+                        "macd_peak": 0.16480256580231054,
+                        "dif_extreme": 1.7586627095994294,
+                        "volume_average": 0.7283179839514778
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2s_retrace_rate": 0.8158520844235125,
+                        "bsp2s_break_bi_amp": 143.32499999999982,
+                        "bsp2s_bi_amp": 90.80699999999979,
+                        "bsp2s_lv": 1,
+                        "bsp_bi_amp": 90.80699999999979
+                      },
+                      "line_index": 62,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 58,
+                        "status": "invalidated",
+                        "parent_signal_id": "chanpy-signal-36e8100aee50",
+                        "parent_display_label": "笔B1p",
+                        "parent_event_at": "2026-07-20T15:00:00",
+                        "parent_state": "invalidated",
+                        "status_label": "关联一类点已失效",
+                        "conclusion": "关联一类点后来跌破或升破风险线，依赖它的二类点已退出当前有效信号。"
+                      },
+                      "native_type": "2s",
+                      "scope": "stroke"
+                    }
+                  }
+                ],
+                "summary": {
+                  "bars": 961,
+                  "pivots": 64,
+                  "strokes": 63,
+                  "confirmed_strokes": 63,
+                  "segments": 8,
+                  "confirmed_segments": 4,
+                  "higher_segments": 4,
+                  "centers": 9,
+                  "segment_centers": 0,
+                  "signals": 8,
+                  "signal_history": 22,
+                  "strict_first_signals": 3
+                },
+                "provenance": {
+                  "engine": "chan.py",
+                  "engineCommit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                  "calculationLevel": "30m",
+                  "sameLevelBars": true,
+                  "enumMode": "native-enum"
+                }
+              },
+              "pathStages": [
+                {
+                  "stage": "修复准备",
+                  "tone": "repair",
+                  "condition": "红柱不连续缩短，DIF继续抬升；回踩不失3793",
+                  "judgment": "只说明卖压或下行动量衰减，尚未构成修复确认。"
+                },
+                {
+                  "stage": "修复触发",
+                  "tone": "repair",
+                  "condition": "本级别K线收回3858，同时MACD柱不再恶化",
+                  "judgment": "修复路径启动；按当前量能更现实的时间为约半天—2天。"
+                },
+                {
+                  "stage": "修复确认",
+                  "tone": "repair",
+                  "condition": "连续两根本级别K线收在3884上方，或DIF上穿DEA且红柱持续扩张",
+                  "judgment": "修复获得价格或动量确认，下一观察位上移至3939；约半天—2天。"
+                },
+                {
+                  "stage": "修复放大",
+                  "tone": "repair",
+                  "condition": "站稳3939，红柱继续扩张，成交额不低于约0.89倍20期均量",
+                  "judgment": "才把修复升级为趋势扩展；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌触发",
+                  "tone": "damage",
+                  "condition": "本级别K线收盘跌破3793",
+                  "judgment": "破坏路径启动；盘中刺破但收回，不算下跌确认。"
+                },
+                {
+                  "stage": "下跌确认",
+                  "tone": "damage",
+                  "condition": "连续两根本级别K线收在3793下方，或DIF继续下行且绿柱持续扩大",
+                  "judgment": "下跌获得价格或动量确认，修复路径失效。"
+                },
+                {
+                  "stage": "下跌放大",
+                  "tone": "damage",
+                  "condition": "跌破前低并继续创新低，同时绿柱继续扩大",
+                  "judgment": "才把下方目标进一步移至3741；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌收回",
+                  "tone": "neutral",
+                  "condition": "跌破后绿柱停止扩大，并重新收回3858",
+                  "judgment": "破坏未能放大，转入3793—3884区间修复。"
+                }
+              ],
+              "phaseAssessment": {
+                "label": "下跌笔完成后的强反抽，验证新向上笔",
+                "summary": "零轴下金叉已出现，但仍需价格越过结构位并形成可延伸的向上笔。",
+                "role": "短期启动",
+                "roleText": "决定下一交易日先走修复、区间还是再破坏",
+                "nativeChan": true
+              },
+              "paths": {
+                "source": "same-level-chan-structure",
+                "timeframe": "30m",
+                "up": {
+                  "trigger": 3858.31,
+                  "confirm": 3884.435,
+                  "amplify": 3938.878,
+                  "failure": 3793.449,
+                  "label": "收回3858，确认3884，放大看3939"
+                },
+                "range": {
+                  "lower": 3793.449,
+                  "upper": 3884.435,
+                  "label": "3793—3884内止跌与换手"
+                },
+                "down": {
+                  "trigger": 3793.449,
+                  "intermediate": 3767.503,
+                  "amplify": 3741.11,
+                  "recovery": 3858.31,
+                  "label": "失守3793，放大看3741"
+                },
+                "evidence": {
+                  "state": "down_leave_confirmed",
+                  "lastStroke": {
+                    "id": "chanpy-line-c1dcc8b4825b",
+                    "level": "30m",
+                    "start_at": "2026-07-27T15:00:00",
+                    "end_at": "2026-07-30T13:30:00",
+                    "confirmed_at": "2026-07-30T14:00:00",
+                    "direction": "down",
+                    "start_price": 3858.31,
+                    "end_price": 3767.503,
+                    "stroke_count": 1,
+                    "macd_area": 43.51574731281276,
+                    "volume": 151201797600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 62
+                  },
+                  "activeCenter": {
+                    "id": "chanpy-center-91591949034b",
+                    "level": "30m",
+                    "start_at": "2026-07-02T15:00:00",
+                    "end_at": "2026-07-10T13:30:00",
+                    "zd": 4019.215,
+                    "zg": 4073.88,
+                    "dd": 3938.878,
+                    "gg": 4074.828,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  "candidateUp": [
+                    3858.31,
+                    3884.435,
+                    3938.878,
+                    3981.672,
+                    4019.215,
+                    4073.88
+                  ],
+                  "candidateDown": [
+                    3793.449,
+                    3767.503,
+                    3741.11
+                  ]
+                }
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "下一交易日午间",
+                  "bars": 4,
+                  "note": "按平滑路径模拟 4 根30分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3838.942,
+                      "priceCondition": "3793—3884内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，DIF上水；红柱面积 19.4",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3838.942,
+                        "dif": 0.301,
+                        "dea": -3.653,
+                        "histogram": 7.908,
+                        "positiveArea": 19.438,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3884.435,
+                      "priceCondition": "收回3858并测试3884",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，DIF上水；红柱面积 40.2",
+                      "decision": "确认后观察3939，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3884.435,
+                        "dif": 7.484,
+                        "dea": -1.057,
+                        "histogram": 17.082,
+                        "positiveArea": 40.205,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3938.878,
+                      "priceCondition": "站稳3939",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，DIF上水、DEA上水；红柱面积 65.1",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3938.878,
+                        "dif": 16.08,
+                        "dea": 2.049,
+                        "histogram": 28.06,
+                        "positiveArea": 65.058,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "收盘失守3793＝反抽否定；跌破3768且不能收回＝下跌笔重启；3741为放大目标",
+                      "strokeCondition": "30分钟向上反抽笔失效，下跌笔重新延伸并向更大级别传导",
+                      "macdCondition": "MACD转绿；DIF下穿DEA，快慢线仍在水下；绿柱面积 25.2",
+                      "decision": "3793先否定本段反抽，3768决定破坏是否放大。跨级别影响：60分钟绿柱扩大、DIF下穿DEA；120分钟由红转绿、DIF下穿DEA。",
+                      "propagation": "跨级别影响：60分钟绿柱扩大、DIF下穿DEA；120分钟由红转绿、DIF下穿DEA。",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -15.145,
+                        "dea": -9.236,
+                        "histogram": -11.82,
+                        "positiveArea": 0,
+                        "negativeArea": 25.221
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "下一交易日收盘",
+                  "bars": 8,
+                  "note": "按平滑路径模拟 8 根30分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3838.942,
+                      "priceCondition": "3793—3884内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，DIF上水；红柱面积 39.4",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3838.942,
+                        "dif": 2.948,
+                        "dea": -1.158,
+                        "histogram": 8.212,
+                        "positiveArea": 39.401,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3884.435,
+                      "priceCondition": "收回3858并测试3884",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，DIF上水、DEA上水；红柱面积 80.1",
+                      "decision": "确认后观察3939，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3884.435,
+                        "dif": 12.57,
+                        "dea": 3.927,
+                        "histogram": 17.285,
+                        "positiveArea": 80.083,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3938.878,
+                      "priceCondition": "站稳3939",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，DIF上水、DEA上水；红柱面积 128.8",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3938.878,
+                        "dif": 24.084,
+                        "dea": 10.013,
+                        "histogram": 28.142,
+                        "positiveArea": 128.768,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "收盘失守3793＝反抽否定；跌破3768且不能收回＝下跌笔重启；3741为放大目标",
+                      "strokeCondition": "30分钟向上反抽笔失效，下跌笔重新延伸并向更大级别传导",
+                      "macdCondition": "MACD转绿；DIF下穿DEA，快慢线仍在水下；绿柱面积 48.1",
+                      "decision": "3793先否定本段反抽，3768决定破坏是否放大。跨级别影响：60分钟绿柱扩大、DIF下穿DEA；120分钟由红转绿、DIF下穿DEA。",
+                      "propagation": "跨级别影响：60分钟绿柱扩大、DIF下穿DEA；120分钟由红转绿、DIF下穿DEA。",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -17.742,
+                        "dea": -12.094,
+                        "histogram": -11.298,
+                        "positiveArea": 0,
+                        "negativeArea": 48.085
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3804.693,
+                  "ema12": 3809.444,
+                  "ema26": 3814.954,
+                  "dif": -5.51,
+                  "dea": -6.083,
+                  "histogram": 1.146
+                }
+              }
+            },
+            "60m": {
+              "label": "60分钟",
+              "barsPerDay": 4,
+              "current": {
+                "close": 3804.693,
+                "dif": -13.95,
+                "dea": -13.945,
+                "histogram": -0.012,
+                "difDelta": 0.345,
+                "histogramDelta": 0.693,
+                "phase": "绿柱区动量收敛"
+              },
+              "upTargets": [
+                {
+                  "price": 3884.435,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 3,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3938.878,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 2,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3992.552,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3767.503,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                }
+              ],
+              "chanStructure": {
+                "level": "60m",
+                "state": "down_leave_confirmed",
+                "observation": "价格位于最近中枢下方，等待首次反抽是否受制于 ZD。",
+                "riskLine": 3992.552,
+                "lastStroke": {
+                  "id": "chanpy-line-dd9f64ae4171",
+                  "level": "60m",
+                  "start_at": "2026-07-22T11:30:00",
+                  "end_at": "2026-07-30T14:00:00",
+                  "confirmed_at": "2026-07-30T15:00:00",
+                  "direction": "down",
+                  "start_price": 3884.435,
+                  "end_price": 3767.503,
+                  "stroke_count": 1,
+                  "macd_area": 8.133931034811393,
+                  "volume": 327455727000,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 30
+                },
+                "lastSegment": {
+                  "id": "chanpy-line-55e82244f6c4",
+                  "level": "60m",
+                  "start_at": "2026-07-20T15:00:00",
+                  "end_at": "2026-07-22T11:30:00",
+                  "confirmed_at": "2026-07-22T11:30:00",
+                  "direction": "up",
+                  "start_price": 3741.11,
+                  "end_price": 3884.435,
+                  "stroke_count": 1,
+                  "macd_area": 71.00731799947194,
+                  "volume": 128788840300,
+                  "is_sure": false,
+                  "source_kind": "segment",
+                  "source_index": 7,
+                  "reason": "collect_left_1"
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-b3a9768e949c",
+                  "level": "60m",
+                  "start_at": "2026-06-29T10:35:00",
+                  "end_at": "2026-07-10T14:00:00",
+                  "zd": 3992.552,
+                  "zg": 4074.828,
+                  "dd": 3938.878,
+                  "gg": 4143.314,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "strokes": [
+                  {
+                    "id": "chanpy-line-d8ecfaa8b1b5",
+                    "level": "60m",
+                    "start_at": "2026-06-23T11:30:00",
+                    "end_at": "2026-06-29T10:35:00",
+                    "confirmed_at": "2026-06-29T13:05:00",
+                    "direction": "down",
+                    "start_price": 4175.348,
+                    "end_price": 3992.552,
+                    "stroke_count": 1,
+                    "macd_area": 171.37657874403402,
+                    "volume": 259699972800,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 24
+                  },
+                  {
+                    "id": "chanpy-line-db58dc7cca8e",
+                    "level": "60m",
+                    "start_at": "2026-06-29T10:35:00",
+                    "end_at": "2026-07-01T11:30:00",
+                    "confirmed_at": "2026-07-01T14:00:00",
+                    "direction": "up",
+                    "start_price": 3992.552,
+                    "end_price": 4143.314,
+                    "stroke_count": 1,
+                    "macd_area": 32.43839628318194,
+                    "volume": 162610240500,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 25
+                  },
+                  {
+                    "id": "chanpy-line-20e7234f9d54",
+                    "level": "60m",
+                    "start_at": "2026-07-01T11:30:00",
+                    "end_at": "2026-07-09T11:30:00",
+                    "confirmed_at": "2026-07-09T14:00:00",
+                    "direction": "down",
+                    "start_price": 4143.314,
+                    "end_price": 3938.878,
+                    "stroke_count": 1,
+                    "macd_area": 184.46405249797692,
+                    "volume": 356423641600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 26
+                  },
+                  {
+                    "id": "chanpy-line-0657f2b69f15",
+                    "level": "60m",
+                    "start_at": "2026-07-09T11:30:00",
+                    "end_at": "2026-07-10T14:00:00",
+                    "confirmed_at": "2026-07-10T15:00:00",
+                    "direction": "up",
+                    "start_price": 3938.878,
+                    "end_price": 4074.828,
+                    "stroke_count": 1,
+                    "macd_area": 56.53480746048905,
+                    "volume": 84672477900,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 27
+                  },
+                  {
+                    "id": "chanpy-line-b6feff80ccba",
+                    "level": "60m",
+                    "start_at": "2026-07-10T14:00:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T10:30:00",
+                    "direction": "down",
+                    "start_price": 4074.828,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 291.99688116719733,
+                    "volume": 386493937600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 28
+                  },
+                  {
+                    "id": "chanpy-line-4966915a61a1",
+                    "level": "60m",
+                    "start_at": "2026-07-20T15:00:00",
+                    "end_at": "2026-07-22T11:30:00",
+                    "confirmed_at": "2026-07-22T14:00:00",
+                    "direction": "up",
+                    "start_price": 3741.11,
+                    "end_price": 3884.435,
+                    "stroke_count": 1,
+                    "macd_area": 71.00731799947194,
+                    "volume": 128788840300,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 29
+                  },
+                  {
+                    "id": "chanpy-line-dd9f64ae4171",
+                    "level": "60m",
+                    "start_at": "2026-07-22T11:30:00",
+                    "end_at": "2026-07-30T14:00:00",
+                    "confirmed_at": "2026-07-30T15:00:00",
+                    "direction": "down",
+                    "start_price": 3884.435,
+                    "end_price": 3767.503,
+                    "stroke_count": 1,
+                    "macd_area": 8.133931034811393,
+                    "volume": 327455727000,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 30
+                  }
+                ],
+                "pivots": [
+                  {
+                    "id": "chanpy-pivot-06dc67c717a2",
+                    "level": "60m",
+                    "kind": "top",
+                    "event_at": "2026-06-09T15:00:00",
+                    "confirmed_at": "2026-06-10T10:30:00",
+                    "price": 4010.872,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-84304664eac7",
+                    "level": "60m",
+                    "kind": "bottom",
+                    "event_at": "2026-06-11T11:30:00",
+                    "confirmed_at": "2026-06-11T14:00:00",
+                    "price": 3958.437,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-025df410a4e9",
+                    "level": "60m",
+                    "kind": "top",
+                    "event_at": "2026-06-23T11:30:00",
+                    "confirmed_at": "2026-06-23T14:00:00",
+                    "price": 4175.348,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-ac38e08cf6af",
+                    "level": "60m",
+                    "kind": "bottom",
+                    "event_at": "2026-06-29T10:35:00",
+                    "confirmed_at": "2026-06-29T13:05:00",
+                    "price": 3992.552,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-b56e587fceef",
+                    "level": "60m",
+                    "kind": "top",
+                    "event_at": "2026-07-01T11:30:00",
+                    "confirmed_at": "2026-07-01T14:00:00",
+                    "price": 4143.314,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-23c43e8b5b43",
+                    "level": "60m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-09T11:30:00",
+                    "confirmed_at": "2026-07-09T14:00:00",
+                    "price": 3938.878,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-a9d92722a774",
+                    "level": "60m",
+                    "kind": "top",
+                    "event_at": "2026-07-10T14:00:00",
+                    "confirmed_at": "2026-07-10T15:00:00",
+                    "price": 4074.828,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-f4fc092f5379",
+                    "level": "60m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T10:30:00",
+                    "price": 3741.11,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-abea9a3db920",
+                    "level": "60m",
+                    "kind": "top",
+                    "event_at": "2026-07-22T11:30:00",
+                    "confirmed_at": "2026-07-22T14:00:00",
+                    "price": 3884.435,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-03e50ceb26e4",
+                    "level": "60m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-30T14:00:00",
+                    "confirmed_at": "2026-07-30T15:00:00",
+                    "price": 3767.503,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  }
+                ],
+                "centers": [
+                  {
+                    "id": "chanpy-center-02132d1a915a",
+                    "level": "60m",
+                    "start_at": "2026-02-04T15:00:00",
+                    "end_at": "2026-02-13T15:00:00",
+                    "zd": 4079.77,
+                    "zg": 4104.621,
+                    "dd": 4029.973,
+                    "gg": 4142.561,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  {
+                    "id": "chanpy-center-99dd543834e9",
+                    "level": "60m",
+                    "start_at": "2026-05-19T10:30:00",
+                    "end_at": "2026-05-25T15:00:00",
+                    "zd": 4107.994,
+                    "zg": 4153.879,
+                    "dd": 4067.747,
+                    "gg": 4199.527,
+                    "state": "completed",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": true
+                  },
+                  {
+                    "id": "chanpy-center-b3a9768e949c",
+                    "level": "60m",
+                    "start_at": "2026-06-29T10:35:00",
+                    "end_at": "2026-07-10T14:00:00",
+                    "zd": 3992.552,
+                    "zg": 4074.828,
+                    "dd": 3938.878,
+                    "gg": 4143.314,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  }
+                ],
+                "signals": [
+                  {
+                    "id": "chanpy-signal-36faa3b992cf",
+                    "level": "60m",
+                    "label": "2S",
+                    "display_label": "笔S2",
+                    "side": "sell",
+                    "price": 4141.649,
+                    "confidence": 0.72,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 4141.649,
+                    "risk_guard": 4197.228,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-03-12T10:30:00",
+                      "detected_at": "2026-03-12T11:30:00",
+                      "confirmed_at": "2026-03-12T11:30:00",
+                      "invalidated_at": "2026-05-11T10:30:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2"
+                      ],
+                      "primary_type": "2",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 69,
+                        "end": 75,
+                        "startTime": "2026-03-03T10:30:00",
+                        "endTime": "2026-03-04T14:00:00",
+                        "startValue": 4197.228,
+                        "endValue": 4055.412,
+                        "direction": "down",
+                        "bars": 7,
+                        "priceMove": 141.81600000000026,
+                        "macdArea": 65.84076871030408,
+                        "macdPeak": 23.23747085116402,
+                        "difExtreme": 9.028005299807774,
+                        "volumeTotal": 156429843700,
+                        "volumeAverage": 22347120528.57143,
+                        "amountAverage": 336505545874.2857
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 75,
+                        "end": 97,
+                        "startTime": "2026-03-04T14:00:00",
+                        "endTime": "2026-03-12T10:30:00",
+                        "startValue": 4055.412,
+                        "endValue": 4141.649,
+                        "direction": "up",
+                        "bars": 23,
+                        "priceMove": 86.23700000000053,
+                        "macdArea": 56.998710097615316,
+                        "macdPeak": 9.686124007880613,
+                        "difExtreme": 2.776105039562026,
+                        "volumeTotal": 412830975800,
+                        "volumeAverage": 17949172860.869564,
+                        "amountAverage": 268731655924.86957
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 0.608090765498959,
+                        "macd_area": 0.8657054164784534,
+                        "macd_peak": 0.4168321100829014,
+                        "dif_extreme": 0.3074992700348919,
+                        "volume_average": 0.8031984629930748
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2_retrace_rate": 0.608090765498959,
+                        "bsp2_break_bi_amp": 141.81600000000026,
+                        "bsp2_bi_amp": 86.23700000000053,
+                        "bsp_bi_amp": 86.23700000000053
+                      },
+                      "line_index": 7,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 5,
+                        "status": "invalidated",
+                        "parent_signal_id": "chanpy-signal-03fcfda9e39d",
+                        "parent_display_label": "笔S1",
+                        "parent_event_at": "2026-03-03T10:30:00",
+                        "parent_state": "invalidated",
+                        "status_label": "关联一类点已失效",
+                        "conclusion": "关联一类点后来跌破或升破风险线，依赖它的二类点已退出当前有效信号。"
+                      },
+                      "native_type": "2",
+                      "scope": "stroke",
+                      "lifecycle_audit": {
+                        "risk_guard": 4197.228,
+                        "rule": "收盘价有效升破信号链风险线",
+                        "invalidated_at": "2026-05-11T10:30:00"
+                      }
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-bdc4c015d766",
+                    "level": "60m",
+                    "label": "1B",
+                    "display_label": "笔B1p",
+                    "side": "buy",
+                    "price": 3927.853,
+                    "confidence": 0.45,
+                    "divergence_class": "consolidation_divergence",
+                    "structure_guard": 3927.853,
+                    "risk_guard": 3927.853,
+                    "lifecycle": {
+                      "state": "candidate",
+                      "event_at": "2026-06-08T14:00:00",
+                      "detected_at": "2026-06-09T10:30:00",
+                      "confirmed_at": null,
+                      "invalidated_at": null,
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "1p"
+                      ],
+                      "primary_type": "1p",
+                      "comparison_kind": "divergence",
+                      "basis": "盘整背驰比较相隔一段反向走势的前后两段同向结构。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 292,
+                        "end": 313,
+                        "startTime": "2026-05-25T15:00:00",
+                        "endTime": "2026-06-02T10:30:00",
+                        "startValue": 4153.879,
+                        "endValue": 4032.583,
+                        "direction": "down",
+                        "bars": 22,
+                        "priceMove": 121.29599999999982,
+                        "macdArea": 65.76573659561635,
+                        "macdPeak": 7.610046207316117,
+                        "difExtreme": 18.072166408482644,
+                        "volumeTotal": 376861418000,
+                        "volumeAverage": 17130064454.545454,
+                        "amountAverage": 363560334429.0909
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 320,
+                        "end": 331,
+                        "startTime": "2026-06-03T15:00:00",
+                        "endTime": "2026-06-08T14:00:00",
+                        "startValue": 4107.046,
+                        "endValue": 3927.853,
+                        "direction": "down",
+                        "bars": 12,
+                        "priceMove": 179.1930000000002,
+                        "macdArea": 52.186357999908395,
+                        "macdPeak": 21.928394509644832,
+                        "difExtreme": 27.175503678012774,
+                        "volumeTotal": 198262865300,
+                        "volumeAverage": 16521905441.666666,
+                        "amountAverage": 333195531605.3333
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 1.4773199445983418,
+                        "macd_area": 0.7935189462074224,
+                        "macd_peak": 2.8815060923760747,
+                        "dif_extreme": 1.503721416888749,
+                        "volume_average": 0.9644975642390293
+                      },
+                      "divergence_audit": {
+                        "status": "insufficient",
+                        "status_label": "证据不足",
+                        "price_extension": true,
+                        "momentum_votes": 1,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": true,
+                        "macd_peak_weakening": false,
+                        "dif_weakening": false,
+                        "volume_contracting": true,
+                        "conclusion": "仅一项动能证据明确减弱。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "divergence_rate": 3.0132330524096895,
+                        "bsp1_bi_amp": 179.1930000000002,
+                        "bsp_bi_amp": 179.1930000000002
+                      },
+                      "line_index": 20,
+                      "dependency": null,
+                      "native_type": "1p",
+                      "scope": "stroke"
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-627b826cf862",
+                    "level": "60m",
+                    "label": "2B",
+                    "display_label": "笔B2",
+                    "side": "buy",
+                    "price": 3958.437,
+                    "confidence": 0.45,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 3958.437,
+                    "risk_guard": 3927.853,
+                    "lifecycle": {
+                      "state": "candidate",
+                      "event_at": "2026-06-11T11:30:00",
+                      "detected_at": "2026-06-11T14:00:00",
+                      "confirmed_at": null,
+                      "invalidated_at": null,
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2"
+                      ],
+                      "primary_type": "2",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 331,
+                        "end": 336,
+                        "startTime": "2026-06-08T14:00:00",
+                        "endTime": "2026-06-09T15:00:00",
+                        "startValue": 3927.853,
+                        "endValue": 4010.872,
+                        "direction": "up",
+                        "bars": 6,
+                        "priceMove": 83.01899999999978,
+                        "macdArea": 0,
+                        "macdPeak": 0,
+                        "difExtreme": 27.175503678012774,
+                        "volumeTotal": 83528284100,
+                        "volumeAverage": 13921380683.333334,
+                        "amountAverage": 273130061824
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 336,
+                        "end": 342,
+                        "startTime": "2026-06-09T15:00:00",
+                        "endTime": "2026-06-11T11:30:00",
+                        "startValue": 4010.872,
+                        "endValue": 3958.437,
+                        "direction": "down",
+                        "bars": 7,
+                        "priceMove": 52.434999999999945,
+                        "macdArea": 8.406776558506891,
+                        "macdPeak": 4.6523352972499055,
+                        "difExtreme": 27.99725468476936,
+                        "volumeTotal": 107619575500,
+                        "volumeAverage": 15374225071.428572,
+                        "amountAverage": 313620795977.1429
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 0.6316024042689034,
+                        "macd_area": null,
+                        "macd_peak": null,
+                        "dif_extreme": 1.0302386670176586,
+                        "volume_average": 1.1043606536695445
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2_retrace_rate": 0.6316024042689034,
+                        "bsp2_break_bi_amp": 83.01899999999978,
+                        "bsp2_bi_amp": 52.434999999999945,
+                        "bsp_bi_amp": 52.434999999999945
+                      },
+                      "line_index": 22,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 20,
+                        "status": "pending",
+                        "parent_signal_id": "chanpy-signal-bdc4c015d766",
+                        "parent_display_label": "笔B1p",
+                        "parent_event_at": "2026-06-08T14:00:00",
+                        "parent_state": "candidate",
+                        "status_label": "关联一类点仍是候选",
+                        "conclusion": "关联一类点尚未通过严格复核，依赖它的二类点只能保留为候选。"
+                      },
+                      "native_type": "2",
+                      "scope": "stroke"
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-5e89176f16bd",
+                    "level": "60m",
+                    "label": "1B",
+                    "display_label": "笔B1",
+                    "side": "buy",
+                    "price": 3741.11,
+                    "confidence": 0.45,
+                    "divergence_class": "trend_divergence",
+                    "structure_guard": 4074.828,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-20T15:00:00",
+                      "detected_at": "2026-07-21T10:30:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-21T10:30:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "1"
+                      ],
+                      "primary_type": "1",
+                      "comparison_kind": "divergence",
+                      "basis": "比较最后一个中枢的进入段与离开段；价格创新值且至少两项动能证据明确减弱才确认背驰。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 370,
+                        "end": 385,
+                        "startTime": "2026-06-23T11:30:00",
+                        "endTime": "2026-06-29T10:35:00",
+                        "startValue": 4175.348,
+                        "endValue": 3992.552,
+                        "direction": "down",
+                        "bars": 16,
+                        "priceMove": 182.79599999999982,
+                        "macdArea": 171.37657874403402,
+                        "macdPeak": 26.33913547854601,
+                        "difExtreme": 13.13028244360703,
+                        "volumeTotal": 259699972800,
+                        "volumeAverage": 16231248300,
+                        "amountAverage": 395811351552
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 423,
+                        "end": 448,
+                        "startTime": "2026-07-10T14:00:00",
+                        "endTime": "2026-07-20T15:00:00",
+                        "startValue": 4074.828,
+                        "endValue": 3741.11,
+                        "direction": "down",
+                        "bars": 26,
+                        "priceMove": 333.71799999999985,
+                        "macdArea": 291.99688116719733,
+                        "macdPeak": 32.04924187998027,
+                        "difExtreme": 56.33317779128811,
+                        "volumeTotal": 386493937600,
+                        "volumeAverage": 14865151446.153847,
+                        "amountAverage": 309707281329.2308
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 1.8256307577846351,
+                        "macd_area": 1.7038318964420474,
+                        "macd_peak": 1.2167917168764066,
+                        "dif_extreme": 4.290324906050747,
+                        "volume_average": 0.9158353794731763
+                      },
+                      "divergence_audit": {
+                        "status": "unsupported",
+                        "status_label": "不支持背驰",
+                        "price_extension": true,
+                        "momentum_votes": 0,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": false,
+                        "macd_peak_weakening": false,
+                        "dif_weakening": false,
+                        "volume_contracting": true,
+                        "conclusion": "动能证据没有明确减弱。"
+                      },
+                      "center": {
+                        "id": "chanpy-center-8d71adc7a1dc",
+                        "level": "native",
+                        "start_at": "2026-06-29T10:35:00",
+                        "end_at": "2026-07-10T14:00:00",
+                        "zd": 3992.552,
+                        "zg": 4074.828,
+                        "dd": 3938.878,
+                        "gg": 4143.314,
+                        "state": "active",
+                        "stroke_count": 3,
+                        "component_type": "stroke",
+                        "component_count": 3,
+                        "extension_count": 0,
+                        "promoted_from": [],
+                        "is_sure": false
+                      },
+                      "native_features": {
+                        "divergence_rate": 1.2167917168763422,
+                        "zs_cnt": 1,
+                        "bsp_bi_amp": 333.71799999999985
+                      },
+                      "line_index": 28,
+                      "dependency": null,
+                      "native_type": "1",
+                      "scope": "stroke"
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-06285d1ad16c",
+                    "level": "60m",
+                    "label": "2B",
+                    "display_label": "笔B2",
+                    "side": "buy",
+                    "price": 3767.503,
+                    "confidence": 0.45,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 3767.503,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-30T14:00:00",
+                      "detected_at": "2026-07-30T15:00:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-30T15:00:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2"
+                      ],
+                      "primary_type": "2",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 448,
+                        "end": 454,
+                        "startTime": "2026-07-20T15:00:00",
+                        "endTime": "2026-07-22T11:30:00",
+                        "startValue": 3741.11,
+                        "endValue": 3884.435,
+                        "direction": "up",
+                        "bars": 7,
+                        "priceMove": 143.32499999999982,
+                        "macdArea": 71.00731799947194,
+                        "macdPeak": 28.384761841750276,
+                        "difExtreme": 25.55596347163646,
+                        "volumeTotal": 128788840300,
+                        "volumeAverage": 18398405757.142857,
+                        "amountAverage": 356924485046.8571
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 454,
+                        "end": 479,
+                        "startTime": "2026-07-22T11:30:00",
+                        "endTime": "2026-07-30T14:00:00",
+                        "startValue": 3884.435,
+                        "endValue": 3767.503,
+                        "direction": "down",
+                        "bars": 26,
+                        "priceMove": 116.93199999999979,
+                        "macdArea": 8.133931034811393,
+                        "macdPeak": 3.459764008987257,
+                        "difExtreme": 25.55596347163646,
+                        "volumeTotal": 327455727000,
+                        "volumeAverage": 12594451038.461538,
+                        "amountAverage": 239469662523.07693
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 0.8158520844235125,
+                        "macd_area": 0.11455060216289092,
+                        "macd_peak": 0.12188807601332051,
+                        "dif_extreme": 1,
+                        "volume_average": 0.6845403457618584
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2_retrace_rate": 0.8158520844235125,
+                        "bsp2_break_bi_amp": 143.32499999999982,
+                        "bsp2_bi_amp": 116.93199999999979,
+                        "bsp_bi_amp": 116.93199999999979
+                      },
+                      "line_index": 30,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 28,
+                        "status": "invalidated",
+                        "parent_signal_id": "chanpy-signal-5e89176f16bd",
+                        "parent_display_label": "笔B1",
+                        "parent_event_at": "2026-07-20T15:00:00",
+                        "parent_state": "invalidated",
+                        "status_label": "关联一类点已失效",
+                        "conclusion": "关联一类点后来跌破或升破风险线，依赖它的二类点已退出当前有效信号。"
+                      },
+                      "native_type": "2",
+                      "scope": "stroke"
+                    }
+                  }
+                ],
+                "summary": {
+                  "bars": 481,
+                  "pivots": 32,
+                  "strokes": 31,
+                  "confirmed_strokes": 31,
+                  "segments": 8,
+                  "confirmed_segments": 4,
+                  "higher_segments": 4,
+                  "centers": 3,
+                  "segment_centers": 0,
+                  "signals": 0,
+                  "signal_history": 6,
+                  "strict_first_signals": 1
+                },
+                "provenance": {
+                  "engine": "chan.py",
+                  "engineCommit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                  "calculationLevel": "60m",
+                  "sameLevelBars": true,
+                  "enumMode": "native-60m-enum"
+                }
+              },
+              "pathStages": [
+                {
+                  "stage": "修复准备",
+                  "tone": "repair",
+                  "condition": "绿柱连续缩短，DIF下行斜率放缓；价格先收回3884",
+                  "judgment": "只说明卖压或下行动量衰减，尚未构成修复确认。"
+                },
+                {
+                  "stage": "修复触发",
+                  "tone": "repair",
+                  "condition": "本级别K线收回3884，同时MACD柱不再恶化",
+                  "judgment": "修复路径启动；按当前量能更现实的时间为约半天—2天。"
+                },
+                {
+                  "stage": "修复确认",
+                  "tone": "repair",
+                  "condition": "连续两根本级别K线收在3939上方，或DIF上穿DEA且红柱持续扩张",
+                  "judgment": "修复获得价格或动量确认，下一观察位上移至3993；约半天—2天。"
+                },
+                {
+                  "stage": "修复放大",
+                  "tone": "repair",
+                  "condition": "站稳3993，红柱继续扩张，成交额不低于约0.89倍20期均量",
+                  "judgment": "才把修复升级为趋势扩展；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌触发",
+                  "tone": "damage",
+                  "condition": "本级别K线收盘跌破3768",
+                  "judgment": "破坏路径启动；盘中刺破但收回，不算下跌确认。"
+                },
+                {
+                  "stage": "下跌确认",
+                  "tone": "damage",
+                  "condition": "连续两根本级别K线收在3768下方，或DIF继续下行且绿柱持续扩大",
+                  "judgment": "下跌获得价格或动量确认，修复路径失效。"
+                },
+                {
+                  "stage": "下跌放大",
+                  "tone": "damage",
+                  "condition": "跌破前低并继续创新低，同时绿柱继续扩大",
+                  "judgment": "才把下方目标进一步移至3741；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌收回",
+                  "tone": "neutral",
+                  "condition": "跌破后绿柱停止扩大，并重新收回3884",
+                  "judgment": "破坏未能放大，转入3768—3939区间修复。"
+                }
+              ],
+              "phaseAssessment": {
+                "label": "下行动量收敛，等待反向笔成立",
+                "summary": "卖压减弱，尚缺少价格与结构的共同确认。",
+                "role": "持续性结构",
+                "roleText": "用60分钟自身笔与中枢判断修复能否跨日延续",
+                "nativeChan": true
+              },
+              "paths": {
+                "source": "same-level-chan-structure",
+                "timeframe": "60m",
+                "up": {
+                  "trigger": 3884.435,
+                  "confirm": 3938.878,
+                  "amplify": 3992.552,
+                  "failure": 3767.503,
+                  "label": "收回3884，确认3939，放大看3993"
+                },
+                "range": {
+                  "lower": 3767.503,
+                  "upper": 3938.878,
+                  "label": "3768—3939内止跌与换手"
+                },
+                "down": {
+                  "trigger": 3767.503,
+                  "intermediate": 3741.11,
+                  "amplify": 3741.11,
+                  "recovery": 3884.435,
+                  "label": "失守3768，放大看3741"
+                },
+                "evidence": {
+                  "state": "down_leave_confirmed",
+                  "lastStroke": {
+                    "id": "chanpy-line-dd9f64ae4171",
+                    "level": "60m",
+                    "start_at": "2026-07-22T11:30:00",
+                    "end_at": "2026-07-30T14:00:00",
+                    "confirmed_at": "2026-07-30T15:00:00",
+                    "direction": "down",
+                    "start_price": 3884.435,
+                    "end_price": 3767.503,
+                    "stroke_count": 1,
+                    "macd_area": 8.133931034811393,
+                    "volume": 327455727000,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 30
+                  },
+                  "activeCenter": {
+                    "id": "chanpy-center-b3a9768e949c",
+                    "level": "60m",
+                    "start_at": "2026-06-29T10:35:00",
+                    "end_at": "2026-07-10T14:00:00",
+                    "zd": 3992.552,
+                    "zg": 4074.828,
+                    "dd": 3938.878,
+                    "gg": 4143.314,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  "candidateUp": [
+                    3884.435,
+                    3938.878,
+                    3992.552,
+                    4010.872,
+                    4074.828,
+                    4143.314
+                  ],
+                  "candidateDown": [
+                    3767.503,
+                    3741.11
+                  ]
+                }
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "下一交易日午间",
+                  "bars": 2,
+                  "note": "按平滑路径模拟 2 根60分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3853.191,
+                      "priceCondition": "3768—3939内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 13.1",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3853.191,
+                        "dif": -7.668,
+                        "dea": -12.312,
+                        "histogram": 9.288,
+                        "positiveArea": 13.06,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3938.878,
+                      "priceCondition": "收回3884并测试3939",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，DIF上水；红柱面积 32.6",
+                      "decision": "确认后观察3993，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3938.878,
+                        "dif": 1.806,
+                        "dea": -9.87,
+                        "histogram": 23.353,
+                        "positiveArea": 32.594,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3992.552,
+                      "priceCondition": "站稳3993",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，DIF上水；红柱面积 44.8",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3992.552,
+                        "dif": 7.741,
+                        "dea": -8.341,
+                        "histogram": 32.163,
+                        "positiveArea": 44.83,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3768并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "绿柱扩大；DIF在DEA下方，快慢线仍在水下；绿柱面积 12.5",
+                      "decision": "60分钟修复被否定后，短线破坏升级为持续性风险。若30分钟破坏持续，120分钟由红转绿、DIF下穿DEA。",
+                      "propagation": "若30分钟破坏持续，120分钟由红转绿、DIF下穿DEA。",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -20.061,
+                        "dea": -15.506,
+                        "histogram": -9.11,
+                        "positiveArea": 0,
+                        "negativeArea": 12.49
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "下一交易日收盘",
+                  "bars": 4,
+                  "note": "按平滑路径模拟 4 根60分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3853.191,
+                      "priceCondition": "3768—3939内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 28.5",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3853.191,
+                        "dif": -4.281,
+                        "dea": -10.384,
+                        "histogram": 12.207,
+                        "positiveArea": 28.485,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3938.878,
+                      "priceCondition": "收回3884并测试3939",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，DIF上水；红柱面积 67.6",
+                      "decision": "确认后观察3993，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3938.878,
+                        "dif": 9.248,
+                        "dea": -5.494,
+                        "histogram": 29.486,
+                        "positiveArea": 67.601,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3992.552,
+                      "priceCondition": "站稳3993",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，DIF上水；红柱面积 92.1",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3992.552,
+                        "dif": 17.723,
+                        "dea": -2.432,
+                        "histogram": 40.309,
+                        "positiveArea": 92.102,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3768并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "绿柱扩大；DIF在DEA下方，快慢线仍在水下；绿柱面积 22.7",
+                      "decision": "60分钟修复被否定后，短线破坏升级为持续性风险。若30分钟破坏持续，120分钟由红转绿、DIF下穿DEA。",
+                      "propagation": "若30分钟破坏持续，120分钟由红转绿、DIF下穿DEA。",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -21.977,
+                        "dea": -16.779,
+                        "histogram": -10.394,
+                        "positiveArea": 0,
+                        "negativeArea": 22.679
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3804.693,
+                  "ema12": 3812.264,
+                  "ema26": 3826.214,
+                  "dif": -13.95,
+                  "dea": -13.945,
+                  "histogram": -0.012
+                }
+              }
+            },
+            "120m": {
+              "label": "120分钟",
+              "barsPerDay": 2,
+              "current": {
+                "close": 3804.693,
+                "dif": -36.359,
+                "dea": -38.714,
+                "histogram": 4.711,
+                "difDelta": 1.052,
+                "histogramDelta": 0.926,
+                "phase": "零轴下方修复"
+              },
+              "upTargets": [
+                {
+                  "price": 3927.853,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 5,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约3—5个交易日"
+                  }
+                },
+                {
+                  "price": 3992.552,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 3,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约1—3个交易日"
+                  }
+                },
+                {
+                  "price": 4052.545,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 2,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3794.684,
+                  "bars": {
+                    "dif_turn": null,
+                    "histogram_flip": null,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "当前目标位不足以完成",
+                    "histogram_flip": "当前目标位不足以完成",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 2
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 2
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                }
+              ],
+              "chanStructure": {
+                "level": "120m",
+                "state": "down_leave_confirmed",
+                "observation": "价格位于最近中枢下方，等待首次反抽是否受制于 ZD。",
+                "riskLine": 4052.545,
+                "lastStroke": {
+                  "id": "chanpy-line-360675a330d3",
+                  "level": "120m",
+                  "start_at": "2026-07-01T11:30:00",
+                  "end_at": "2026-07-20T15:00:00",
+                  "confirmed_at": "2026-07-21T11:30:00",
+                  "direction": "down",
+                  "start_price": 4143.314,
+                  "end_price": 3741.11,
+                  "stroke_count": 1,
+                  "macd_area": 409.1596365241181,
+                  "volume": 835420238000,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 9
+                },
+                "lastSegment": {
+                  "id": "chanpy-line-aa87ea78dddf",
+                  "level": "120m",
+                  "start_at": "2026-02-03T11:30:00",
+                  "end_at": "2026-07-20T15:00:00",
+                  "confirmed_at": "2026-07-20T15:00:00",
+                  "direction": "down",
+                  "start_price": 4002.782,
+                  "end_price": 3741.11,
+                  "stroke_count": 10,
+                  "macd_area": 1707.8769393764949,
+                  "volume": 6950727376100,
+                  "is_sure": false,
+                  "source_kind": "segment",
+                  "source_index": 0,
+                  "reason": "0seg_find_low"
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-a85adb5cda77",
+                  "level": "120m",
+                  "start_at": "2026-03-09T11:30:00",
+                  "end_at": "2026-07-01T11:30:00",
+                  "zd": 4052.545,
+                  "zg": 4141.649,
+                  "dd": 3794.684,
+                  "gg": 4258.863,
+                  "state": "active",
+                  "stroke_count": 7,
+                  "component_type": "stroke",
+                  "component_count": 7,
+                  "extension_count": 4,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "strokes": [
+                  {
+                    "id": "chanpy-line-71af191f69e8",
+                    "level": "120m",
+                    "start_at": "2026-03-12T11:30:00",
+                    "end_at": "2026-03-23T15:00:00",
+                    "confirmed_at": "2026-03-24T15:00:00",
+                    "direction": "down",
+                    "start_price": 4141.649,
+                    "end_price": 3794.684,
+                    "stroke_count": 1,
+                    "macd_area": 230.23242315761885,
+                    "volume": 575187002900,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 3
+                  },
+                  {
+                    "id": "chanpy-line-4a2d0be39e1f",
+                    "level": "120m",
+                    "start_at": "2026-03-23T15:00:00",
+                    "end_at": "2026-05-14T11:30:00",
+                    "confirmed_at": "2026-05-14T15:00:00",
+                    "direction": "up",
+                    "start_price": 3794.684,
+                    "end_price": 4258.863,
+                    "stroke_count": 1,
+                    "macd_area": 784.5538606164224,
+                    "volume": 2094034775800,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 4
+                  },
+                  {
+                    "id": "chanpy-line-8dfa132f9097",
+                    "level": "120m",
+                    "start_at": "2026-05-14T11:30:00",
+                    "end_at": "2026-06-08T15:00:00",
+                    "confirmed_at": "2026-06-09T11:30:00",
+                    "direction": "down",
+                    "start_price": 4258.863,
+                    "end_price": 3927.853,
+                    "stroke_count": 1,
+                    "macd_area": 498.7137006169751,
+                    "volume": 1189715557200,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 5
+                  },
+                  {
+                    "id": "chanpy-line-fd05d9aebc41",
+                    "level": "120m",
+                    "start_at": "2026-06-08T15:00:00",
+                    "end_at": "2026-06-23T11:30:00",
+                    "confirmed_at": "2026-06-23T15:00:00",
+                    "direction": "up",
+                    "start_price": 3927.853,
+                    "end_price": 4175.348,
+                    "stroke_count": 1,
+                    "macd_area": 296.2903473021301,
+                    "volume": 651956563900,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 6
+                  },
+                  {
+                    "id": "chanpy-line-08209eece52d",
+                    "level": "120m",
+                    "start_at": "2026-06-23T11:30:00",
+                    "end_at": "2026-06-29T13:05:00",
+                    "confirmed_at": "2026-06-29T15:00:00",
+                    "direction": "down",
+                    "start_price": 4175.348,
+                    "end_price": 3992.552,
+                    "stroke_count": 1,
+                    "macd_area": 39.17456837857735,
+                    "volume": 305680913700,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 7
+                  },
+                  {
+                    "id": "chanpy-line-4906a02aa402",
+                    "level": "120m",
+                    "start_at": "2026-06-29T13:05:00",
+                    "end_at": "2026-07-01T11:30:00",
+                    "confirmed_at": "2026-07-02T11:30:00",
+                    "direction": "up",
+                    "start_price": 3992.552,
+                    "end_price": 4143.314,
+                    "stroke_count": 1,
+                    "macd_area": 1.9448506021325294,
+                    "volume": 162610240500,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 8
+                  },
+                  {
+                    "id": "chanpy-line-360675a330d3",
+                    "level": "120m",
+                    "start_at": "2026-07-01T11:30:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T11:30:00",
+                    "direction": "down",
+                    "start_price": 4143.314,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 409.1596365241181,
+                    "volume": 835420238000,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 9
+                  }
+                ],
+                "pivots": [
+                  {
+                    "id": "chanpy-pivot-3a74e11c2c47",
+                    "level": "120m",
+                    "kind": "top",
+                    "event_at": "2026-03-03T11:30:00",
+                    "confirmed_at": "2026-03-03T15:00:00",
+                    "price": 4197.228,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-3125fc4ce9b5",
+                    "level": "120m",
+                    "kind": "bottom",
+                    "event_at": "2026-03-09T11:30:00",
+                    "confirmed_at": "2026-03-09T15:00:00",
+                    "price": 4052.545,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-42a668ca8ba9",
+                    "level": "120m",
+                    "kind": "top",
+                    "event_at": "2026-03-12T11:30:00",
+                    "confirmed_at": "2026-03-12T15:00:00",
+                    "price": 4141.649,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-6204a180eddf",
+                    "level": "120m",
+                    "kind": "bottom",
+                    "event_at": "2026-03-23T15:00:00",
+                    "confirmed_at": "2026-03-24T15:00:00",
+                    "price": 3794.684,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-cfd41f32d877",
+                    "level": "120m",
+                    "kind": "top",
+                    "event_at": "2026-05-14T11:30:00",
+                    "confirmed_at": "2026-05-14T15:00:00",
+                    "price": 4258.863,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-8c69ac52090e",
+                    "level": "120m",
+                    "kind": "bottom",
+                    "event_at": "2026-06-08T15:00:00",
+                    "confirmed_at": "2026-06-09T11:30:00",
+                    "price": 3927.853,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-8fc8875268e7",
+                    "level": "120m",
+                    "kind": "top",
+                    "event_at": "2026-06-23T11:30:00",
+                    "confirmed_at": "2026-06-23T15:00:00",
+                    "price": 4175.348,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-b243ddaedd77",
+                    "level": "120m",
+                    "kind": "bottom",
+                    "event_at": "2026-06-29T13:05:00",
+                    "confirmed_at": "2026-06-29T15:00:00",
+                    "price": 3992.552,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-57b81bffc054",
+                    "level": "120m",
+                    "kind": "top",
+                    "event_at": "2026-07-01T11:30:00",
+                    "confirmed_at": "2026-07-02T11:30:00",
+                    "price": 4143.314,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-a8d81da74c35",
+                    "level": "120m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T11:30:00",
+                    "price": 3741.11,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  }
+                ],
+                "centers": [
+                  {
+                    "id": "chanpy-center-a85adb5cda77",
+                    "level": "120m",
+                    "start_at": "2026-03-09T11:30:00",
+                    "end_at": "2026-07-01T11:30:00",
+                    "zd": 4052.545,
+                    "zg": 4141.649,
+                    "dd": 3794.684,
+                    "gg": 4258.863,
+                    "state": "active",
+                    "stroke_count": 7,
+                    "component_type": "stroke",
+                    "component_count": 7,
+                    "extension_count": 4,
+                    "promoted_from": [],
+                    "is_sure": false
+                  }
+                ],
+                "signals": [
+                  {
+                    "id": "chanpy-signal-31c27bcfc0a7",
+                    "level": "120m",
+                    "label": "1B",
+                    "display_label": "笔B1",
+                    "side": "buy",
+                    "price": 3741.11,
+                    "confidence": 0.45,
+                    "divergence_class": "trend_divergence",
+                    "structure_guard": 4141.649,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-20T15:00:00",
+                      "detected_at": "2026-07-21T11:30:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-21T11:30:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "1"
+                      ],
+                      "primary_type": "1",
+                      "comparison_kind": "divergence",
+                      "basis": "比较最后一个中枢的进入段与离开段；价格创新值且至少两项动能证据明确减弱才确认背驰。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 35,
+                        "end": 43,
+                        "startTime": "2026-03-03T11:30:00",
+                        "endTime": "2026-03-09T11:30:00",
+                        "startValue": 4197.228,
+                        "endValue": 4052.545,
+                        "direction": "down",
+                        "bars": 9,
+                        "priceMove": 144.683,
+                        "macdArea": 78.35169876516397,
+                        "macdPeak": 14.60865380776869,
+                        "difExtreme": 5.598397067435144,
+                        "volumeTotal": 357210323400,
+                        "volumeAverage": 39690035933.333336,
+                        "amountAverage": 599604483413.3334
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 197,
+                        "end": 224,
+                        "startTime": "2026-07-01T11:30:00",
+                        "endTime": "2026-07-20T15:00:00",
+                        "startValue": 4143.314,
+                        "endValue": 3741.11,
+                        "direction": "down",
+                        "bars": 28,
+                        "priceMove": 402.2040000000002,
+                        "macdArea": 409.1596365241181,
+                        "macdPeak": 34.31834176188883,
+                        "difExtreme": 62.04595031392091,
+                        "volumeTotal": 835420238000,
+                        "volumeAverage": 29836437071.42857,
+                        "amountAverage": 678129715492.5714
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 2.779898122101423,
+                        "macd_area": 5.222090177654642,
+                        "macd_peak": 2.3491789328075385,
+                        "dif_extreme": 11.082806304474348,
+                        "volume_average": 0.7517362070808985
+                      },
+                      "divergence_audit": {
+                        "status": "unsupported",
+                        "status_label": "不支持背驰",
+                        "price_extension": true,
+                        "momentum_votes": 0,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": false,
+                        "macd_peak_weakening": false,
+                        "dif_weakening": false,
+                        "volume_contracting": true,
+                        "conclusion": "动能证据没有明确减弱。"
+                      },
+                      "center": {
+                        "id": "chanpy-center-71efb78acfa1",
+                        "level": "native",
+                        "start_at": "2026-03-09T11:30:00",
+                        "end_at": "2026-07-01T11:30:00",
+                        "zd": 4052.545,
+                        "zg": 4141.649,
+                        "dd": 3794.684,
+                        "gg": 4258.863,
+                        "state": "active",
+                        "stroke_count": 7,
+                        "component_type": "stroke",
+                        "component_count": 7,
+                        "extension_count": 4,
+                        "promoted_from": [],
+                        "is_sure": false
+                      },
+                      "native_features": {
+                        "divergence_rate": 2.3491789328071095,
+                        "zs_cnt": 1,
+                        "bsp_bi_amp": 402.2040000000002
+                      },
+                      "line_index": 9,
+                      "dependency": null,
+                      "native_type": "1",
+                      "scope": "stroke"
+                    }
+                  }
+                ],
+                "summary": {
+                  "bars": 241,
+                  "pivots": 11,
+                  "strokes": 10,
+                  "confirmed_strokes": 10,
+                  "segments": 1,
+                  "confirmed_segments": 0,
+                  "higher_segments": 0,
+                  "centers": 1,
+                  "segment_centers": 0,
+                  "signals": 0,
+                  "signal_history": 1,
+                  "strict_first_signals": 0
+                },
+                "provenance": {
+                  "engine": "chan.py",
+                  "engineCommit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                  "calculationLevel": "120m",
+                  "sameLevelBars": true,
+                  "enumMode": "120m-bars-via-timeframe-agnostic-chan-core"
+                }
+              },
+              "pathStages": [
+                {
+                  "stage": "修复准备",
+                  "tone": "repair",
+                  "condition": "红柱不连续缩短，DIF继续抬升；回踩不失3795",
+                  "judgment": "只说明卖压或下行动量衰减，尚未构成修复确认。"
+                },
+                {
+                  "stage": "修复触发",
+                  "tone": "repair",
+                  "condition": "本级别K线收回3928，同时MACD柱不再恶化",
+                  "judgment": "修复路径启动；按当前量能更现实的时间为约半天—2天。"
+                },
+                {
+                  "stage": "修复确认",
+                  "tone": "repair",
+                  "condition": "连续两根本级别K线收在3993上方，或DIF上穿DEA且红柱持续扩张",
+                  "judgment": "修复获得价格或动量确认，下一观察位上移至4053；约半天—2天。"
+                },
+                {
+                  "stage": "修复放大",
+                  "tone": "repair",
+                  "condition": "站稳4053，红柱继续扩张，成交额不低于约0.89倍20期均量",
+                  "judgment": "才把修复升级为趋势扩展；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌触发",
+                  "tone": "damage",
+                  "condition": "本级别K线收盘跌破3795",
+                  "judgment": "破坏路径启动；盘中刺破但收回，不算下跌确认。"
+                },
+                {
+                  "stage": "下跌确认",
+                  "tone": "damage",
+                  "condition": "连续两根本级别K线收在3795下方，或DIF继续下行且绿柱持续扩大",
+                  "judgment": "下跌获得价格或动量确认，修复路径失效。"
+                },
+                {
+                  "stage": "下跌放大",
+                  "tone": "damage",
+                  "condition": "跌破前低并继续创新低，同时绿柱继续扩大",
+                  "judgment": "才把下方目标进一步移至3741；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌收回",
+                  "tone": "neutral",
+                  "condition": "跌破后绿柱停止扩大，并重新收回3928",
+                  "judgment": "破坏未能放大，转入3795—3993区间修复。"
+                }
+              ],
+              "phaseAssessment": {
+                "label": "120分钟下跌笔完成，反向笔仍待确认",
+                "summary": "动量正在修复；只有越过120分钟自身分型和中枢边界才升级为波段反转。",
+                "role": "波段结构",
+                "roleText": "用120分钟自身笔与中枢判断波段反转或下跌延伸",
+                "nativeChan": true
+              },
+              "paths": {
+                "source": "same-level-chan-structure",
+                "timeframe": "120m",
+                "up": {
+                  "trigger": 3927.853,
+                  "confirm": 3992.552,
+                  "amplify": 4052.545,
+                  "failure": 3794.684,
+                  "label": "收回3928，确认3993，放大看4053"
+                },
+                "range": {
+                  "lower": 3794.684,
+                  "upper": 3992.552,
+                  "label": "3795—3993内止跌与换手"
+                },
+                "down": {
+                  "trigger": 3794.684,
+                  "intermediate": 3741.11,
+                  "amplify": 3741.11,
+                  "recovery": 3927.853,
+                  "label": "失守3795，放大看3741"
+                },
+                "evidence": {
+                  "state": "down_leave_confirmed",
+                  "lastStroke": {
+                    "id": "chanpy-line-360675a330d3",
+                    "level": "120m",
+                    "start_at": "2026-07-01T11:30:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T11:30:00",
+                    "direction": "down",
+                    "start_price": 4143.314,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 409.1596365241181,
+                    "volume": 835420238000,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 9
+                  },
+                  "activeCenter": {
+                    "id": "chanpy-center-a85adb5cda77",
+                    "level": "120m",
+                    "start_at": "2026-03-09T11:30:00",
+                    "end_at": "2026-07-01T11:30:00",
+                    "zd": 4052.545,
+                    "zg": 4141.649,
+                    "dd": 3794.684,
+                    "gg": 4258.863,
+                    "state": "active",
+                    "stroke_count": 7,
+                    "component_type": "stroke",
+                    "component_count": 7,
+                    "extension_count": 4,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  "candidateUp": [
+                    3927.853,
+                    3992.552,
+                    4052.545,
+                    4141.649,
+                    4143.314,
+                    4175.348
+                  ],
+                  "candidateDown": [
+                    3794.684,
+                    3741.11
+                  ]
+                }
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "下一交易日午间",
+                  "bars": 1,
+                  "note": "按平滑路径模拟 1 根120分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3893.618,
+                      "priceCondition": "3795—3993内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 17.1",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3893.618,
+                        "dif": -28.026,
+                        "dea": -36.576,
+                        "histogram": 17.1,
+                        "positiveArea": 17.1,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3992.552,
+                      "priceCondition": "收回3928并测试3993",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 29.7",
+                      "decision": "确认后观察4053，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3992.552,
+                        "dif": -20.134,
+                        "dea": -34.998,
+                        "histogram": 29.728,
+                        "positiveArea": 29.728,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 4052.545,
+                      "priceCondition": "站稳4053",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 37.4",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4052.545,
+                        "dif": -15.348,
+                        "dea": -34.041,
+                        "histogram": 37.385,
+                        "positiveArea": 37.385,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3795并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "MACD转绿；DIF下穿DEA，快慢线仍在水下；绿柱面积 2.4",
+                      "decision": "120分钟修复被否定，波段级别重新回到下跌笔扩展；日线修复预期同步降级。",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -40.192,
+                        "dea": -39.01,
+                        "histogram": -2.365,
+                        "positiveArea": 0,
+                        "negativeArea": 2.365
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "下一交易日收盘",
+                  "bars": 2,
+                  "note": "按平滑路径模拟 2 根120分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3893.618,
+                      "priceCondition": "3795—3993内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 32.8",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3893.618,
+                        "dif": -23.917,
+                        "dea": -34.612,
+                        "histogram": 21.39,
+                        "positiveArea": 32.815,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3992.552,
+                      "priceCondition": "收回3928并测试3993",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 55.4",
+                      "decision": "确认后观察4053，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3992.552,
+                        "dif": -12.978,
+                        "dea": -31.793,
+                        "histogram": 37.629,
+                        "positiveArea": 55.368,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 4052.545,
+                      "priceCondition": "站稳4053",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线仍在水下；红柱面积 69.0",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4052.545,
+                        "dif": -6.345,
+                        "dea": -30.083,
+                        "histogram": 47.476,
+                        "positiveArea": 69.044,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3795并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "MACD转绿；DIF下穿DEA，快慢线仍在水下；绿柱面积 3.6",
+                      "decision": "120分钟修复被否定，波段级别重新回到下跌笔扩展；日线修复预期同步降级。",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -40.78,
+                        "dea": -38.958,
+                        "histogram": -3.644,
+                        "positiveArea": 1.692,
+                        "negativeArea": 3.644
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3804.693,
+                  "ema12": 3822.928,
+                  "ema26": 3859.287,
+                  "dif": -36.359,
+                  "dea": -38.714,
+                  "histogram": 4.711
+                }
+              }
+            },
+            "1d": {
+              "label": "日线",
+              "barsPerDay": 1,
+              "current": {
+                "close": 3804.693,
+                "dif": -60.921,
+                "dea": -56.797,
+                "histogram": -8.246,
+                "difDelta": -0.493,
+                "histogramDelta": 1.076,
+                "phase": "下行动量仍在"
+              },
+              "upTargets": [
+                {
+                  "price": 3927.853,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 23,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约6—10周"
+                  }
+                },
+                {
+                  "price": 4002.782,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 7,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约8—14个交易日"
+                  }
+                },
+                {
+                  "price": 4175.348,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 3,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约3—6个交易日"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3794.684,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 1
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                }
+              ],
+              "chanStructure": {
+                "level": "1d",
+                "state": "down_leave_confirmed",
+                "observation": "价格位于最近中枢下方，等待首次反抽是否受制于 ZD。",
+                "riskLine": 3927.853,
+                "lastStroke": {
+                  "id": "chanpy-line-cc1966f21d87",
+                  "level": "1d",
+                  "start_at": "2026-06-23T15:00:00",
+                  "end_at": "2026-07-20T15:00:00",
+                  "confirmed_at": "2026-07-21T15:00:00",
+                  "direction": "down",
+                  "start_price": 4175.348,
+                  "end_price": 3741.11,
+                  "stroke_count": 1,
+                  "macd_area": 288.2531512378573,
+                  "volume": 1219034448800,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 5
+                },
+                "lastSegment": {
+                  "id": "chanpy-line-3ec4c648d62f",
+                  "level": "1d",
+                  "start_at": "2026-02-03T15:00:00",
+                  "end_at": "2026-07-20T15:00:00",
+                  "confirmed_at": "2026-07-20T15:00:00",
+                  "direction": "down",
+                  "start_price": 4002.782,
+                  "end_price": 3741.11,
+                  "stroke_count": 6,
+                  "macd_area": 1258.10590786717,
+                  "volume": 6950727376100,
+                  "is_sure": false,
+                  "source_kind": "segment",
+                  "source_index": 0,
+                  "reason": "0seg_find_low"
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-16ea0b1e5be6",
+                  "level": "1d",
+                  "start_at": "2026-03-23T15:00:00",
+                  "end_at": "2026-06-23T15:00:00",
+                  "zd": 3927.853,
+                  "zg": 4175.348,
+                  "dd": 3794.684,
+                  "gg": 4258.863,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "strokes": [
+                  {
+                    "id": "chanpy-line-6e99b058bb47",
+                    "level": "1d",
+                    "start_at": "2026-02-03T15:00:00",
+                    "end_at": "2026-03-03T15:00:00",
+                    "confirmed_at": "2026-03-04T15:00:00",
+                    "direction": "up",
+                    "start_price": 4002.782,
+                    "end_price": 4197.228,
+                    "stroke_count": 1,
+                    "macd_area": 81.0650883721845,
+                    "volume": 950105727000,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 0
+                  },
+                  {
+                    "id": "chanpy-line-85d082025643",
+                    "level": "1d",
+                    "start_at": "2026-03-03T15:00:00",
+                    "end_at": "2026-03-23T15:00:00",
+                    "confirmed_at": "2026-03-25T15:00:00",
+                    "direction": "down",
+                    "start_price": 4197.228,
+                    "end_price": 3794.684,
+                    "stroke_count": 1,
+                    "macd_area": 139.55982605588645,
+                    "volume": 1095514394400,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 1
+                  },
+                  {
+                    "id": "chanpy-line-722d60d0c407",
+                    "level": "1d",
+                    "start_at": "2026-03-23T15:00:00",
+                    "end_at": "2026-05-14T15:00:00",
+                    "confirmed_at": "2026-05-15T15:00:00",
+                    "direction": "up",
+                    "start_price": 3794.684,
+                    "end_price": 4258.863,
+                    "stroke_count": 1,
+                    "macd_area": 750.0063722521559,
+                    "volume": 2166227540300,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 2
+                  },
+                  {
+                    "id": "chanpy-line-330ebcac7c9d",
+                    "level": "1d",
+                    "start_at": "2026-05-14T15:00:00",
+                    "end_at": "2026-06-08T15:00:00",
+                    "confirmed_at": "2026-06-09T15:00:00",
+                    "direction": "down",
+                    "start_price": 4258.863,
+                    "end_price": 3927.853,
+                    "stroke_count": 1,
+                    "macd_area": 356.64356691956766,
+                    "volume": 1189715557200,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 3
+                  },
+                  {
+                    "id": "chanpy-line-33bfaefcaa9b",
+                    "level": "1d",
+                    "start_at": "2026-06-08T15:00:00",
+                    "end_at": "2026-06-23T15:00:00",
+                    "confirmed_at": "2026-06-24T15:00:00",
+                    "direction": "up",
+                    "start_price": 3927.853,
+                    "end_price": 4175.348,
+                    "stroke_count": 1,
+                    "macd_area": 76.43621030743408,
+                    "volume": 715970757600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 4
+                  },
+                  {
+                    "id": "chanpy-line-cc1966f21d87",
+                    "level": "1d",
+                    "start_at": "2026-06-23T15:00:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T15:00:00",
+                    "direction": "down",
+                    "start_price": 4175.348,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 288.2531512378573,
+                    "volume": 1219034448800,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 5
+                  }
+                ],
+                "pivots": [
+                  {
+                    "id": "chanpy-pivot-04fc78a0b90e",
+                    "level": "1d",
+                    "kind": "bottom",
+                    "event_at": "2026-02-03T15:00:00",
+                    "confirmed_at": "2026-03-04T15:00:00",
+                    "price": 4002.782,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-2dcf78d10f71",
+                    "level": "1d",
+                    "kind": "top",
+                    "event_at": "2026-03-03T15:00:00",
+                    "confirmed_at": "2026-03-04T15:00:00",
+                    "price": 4197.228,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-0d6db89523e5",
+                    "level": "1d",
+                    "kind": "bottom",
+                    "event_at": "2026-03-23T15:00:00",
+                    "confirmed_at": "2026-03-25T15:00:00",
+                    "price": 3794.684,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-063ee1b45855",
+                    "level": "1d",
+                    "kind": "top",
+                    "event_at": "2026-05-14T15:00:00",
+                    "confirmed_at": "2026-05-15T15:00:00",
+                    "price": 4258.863,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-ed102e7e359a",
+                    "level": "1d",
+                    "kind": "bottom",
+                    "event_at": "2026-06-08T15:00:00",
+                    "confirmed_at": "2026-06-09T15:00:00",
+                    "price": 3927.853,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-f734ffcd180b",
+                    "level": "1d",
+                    "kind": "top",
+                    "event_at": "2026-06-23T15:00:00",
+                    "confirmed_at": "2026-06-24T15:00:00",
+                    "price": 4175.348,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-616f4cfde1a4",
+                    "level": "1d",
+                    "kind": "bottom",
+                    "event_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T15:00:00",
+                    "price": 3741.11,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  }
+                ],
+                "centers": [
+                  {
+                    "id": "chanpy-center-16ea0b1e5be6",
+                    "level": "1d",
+                    "start_at": "2026-03-23T15:00:00",
+                    "end_at": "2026-06-23T15:00:00",
+                    "zd": 3927.853,
+                    "zg": 4175.348,
+                    "dd": 3794.684,
+                    "gg": 4258.863,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  }
+                ],
+                "signals": [
+                  {
+                    "id": "chanpy-signal-c0b6f46bb009",
+                    "level": "1d",
+                    "label": "1B",
+                    "display_label": "笔B1",
+                    "side": "buy",
+                    "price": 3741.11,
+                    "confidence": 0.45,
+                    "divergence_class": "trend_divergence",
+                    "structure_guard": 4175.348,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-20T15:00:00",
+                      "detected_at": "2026-07-21T15:00:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-21T15:00:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "1"
+                      ],
+                      "primary_type": "1",
+                      "comparison_kind": "divergence",
+                      "basis": "比较最后一个中枢的进入段与离开段；价格创新值且至少两项动能证据明确减弱才确认背驰。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 18,
+                        "end": 32,
+                        "startTime": "2026-03-03T15:00:00",
+                        "endTime": "2026-03-23T15:00:00",
+                        "startValue": 4197.228,
+                        "endValue": 3794.684,
+                        "direction": "down",
+                        "bars": 15,
+                        "priceMove": 402.54399999999987,
+                        "macdArea": 139.55982605588645,
+                        "macdPeak": 52.952577666513974,
+                        "difExtreme": 46.09332396704849,
+                        "volumeTotal": 1095514394400,
+                        "volumeAverage": 73034292960,
+                        "amountAverage": 1058209691511.4667
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 93,
+                        "end": 112,
+                        "startTime": "2026-06-23T15:00:00",
+                        "endTime": "2026-07-20T15:00:00",
+                        "startValue": 4175.348,
+                        "endValue": 3741.11,
+                        "direction": "down",
+                        "bars": 20,
+                        "priceMove": 434.23799999999983,
+                        "macdArea": 288.2531512378573,
+                        "macdPeak": 50.602441030346654,
+                        "difExtreme": 61.83480711884158,
+                        "volumeTotal": 1219034448800,
+                        "volumeAverage": 60951722440,
+                        "amountAverage": 1418804454195.2
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 1.0787342501689257,
+                        "macd_area": 2.0654450452125594,
+                        "macd_peak": 0.955618088113329,
+                        "dif_extreme": 1.3415132994757868,
+                        "volume_average": 0.8345630520909201
+                      },
+                      "divergence_audit": {
+                        "status": "unsupported",
+                        "status_label": "不支持背驰",
+                        "price_extension": true,
+                        "momentum_votes": 0,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": false,
+                        "macd_peak_weakening": false,
+                        "dif_weakening": false,
+                        "volume_contracting": true,
+                        "conclusion": "动能证据没有明确减弱。"
+                      },
+                      "center": {
+                        "id": "chanpy-center-380febeb7d05",
+                        "level": "native",
+                        "start_at": "2026-03-23T15:00:00",
+                        "end_at": "2026-06-23T15:00:00",
+                        "zd": 3927.853,
+                        "zg": 4175.348,
+                        "dd": 3794.684,
+                        "gg": 4258.863,
+                        "state": "active",
+                        "stroke_count": 3,
+                        "component_type": "stroke",
+                        "component_count": 3,
+                        "extension_count": 0,
+                        "promoted_from": [],
+                        "is_sure": false
+                      },
+                      "native_features": {
+                        "divergence_rate": 0.914887122217256,
+                        "zs_cnt": 1,
+                        "bsp_bi_amp": 434.23799999999983
+                      },
+                      "line_index": 5,
+                      "dependency": null,
+                      "native_type": "1",
+                      "scope": "stroke"
+                    }
+                  }
+                ],
+                "summary": {
+                  "bars": 121,
+                  "pivots": 7,
+                  "strokes": 6,
+                  "confirmed_strokes": 6,
+                  "segments": 1,
+                  "confirmed_segments": 0,
+                  "higher_segments": 0,
+                  "centers": 1,
+                  "segment_centers": 0,
+                  "signals": 0,
+                  "signal_history": 1,
+                  "strict_first_signals": 0
+                },
+                "provenance": {
+                  "engine": "chan.py",
+                  "engineCommit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                  "calculationLevel": "1d",
+                  "sameLevelBars": true,
+                  "enumMode": "native-enum"
+                }
+              },
+              "pathStages": [
+                {
+                  "stage": "修复准备",
+                  "tone": "repair",
+                  "condition": "绿柱连续缩短，DIF下行斜率放缓；价格先收回3928",
+                  "judgment": "只说明卖压或下行动量衰减，尚未构成修复确认。"
+                },
+                {
+                  "stage": "修复触发",
+                  "tone": "repair",
+                  "condition": "本级别K线收回3928，同时MACD柱不再恶化",
+                  "judgment": "修复路径启动；按当前量能更现实的时间为约半天—2天。"
+                },
+                {
+                  "stage": "修复确认",
+                  "tone": "repair",
+                  "condition": "连续两根本级别K线收在4003上方，或DIF上穿DEA且红柱持续扩张",
+                  "judgment": "修复获得价格或动量确认，下一观察位上移至4175；约半天—2天。"
+                },
+                {
+                  "stage": "修复放大",
+                  "tone": "repair",
+                  "condition": "站稳4175，红柱继续扩张，成交额不低于约0.89倍20期均量",
+                  "judgment": "才把修复升级为趋势扩展；参考时间：约3—6个交易日。"
+                },
+                {
+                  "stage": "下跌触发",
+                  "tone": "damage",
+                  "condition": "本级别K线收盘跌破3795",
+                  "judgment": "破坏路径启动；盘中刺破但收回，不算下跌确认。"
+                },
+                {
+                  "stage": "下跌确认",
+                  "tone": "damage",
+                  "condition": "连续两根本级别K线收在3795下方，或DIF继续下行且绿柱持续扩大",
+                  "judgment": "下跌获得价格或动量确认，修复路径失效。"
+                },
+                {
+                  "stage": "下跌放大",
+                  "tone": "damage",
+                  "condition": "跌破前低并继续创新低，同时绿柱继续扩大",
+                  "judgment": "才把下方目标进一步移至3741；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌收回",
+                  "tone": "neutral",
+                  "condition": "跌破后绿柱停止扩大，并重新收回3928",
+                  "judgment": "破坏未能放大，转入3795—4003区间修复。"
+                }
+              ],
+              "phaseAssessment": {
+                "label": "日线下跌笔后的初期修复",
+                "summary": "日线绿柱收敛，仍处在零轴下方；先观察下跌笔是否停止扩展。",
+                "role": "趋势定性",
+                "roleText": "只负责确认大级别背景是否改变",
+                "nativeChan": true
+              },
+              "paths": {
+                "source": "same-level-chan-structure",
+                "timeframe": "1d",
+                "up": {
+                  "trigger": 3927.853,
+                  "confirm": 4002.782,
+                  "amplify": 4175.348,
+                  "failure": 3794.684,
+                  "label": "收回3928，确认4003，放大看4175"
+                },
+                "range": {
+                  "lower": 3794.684,
+                  "upper": 4002.782,
+                  "label": "3795—4003内止跌与换手"
+                },
+                "down": {
+                  "trigger": 3794.684,
+                  "intermediate": 3741.11,
+                  "amplify": 3741.11,
+                  "recovery": 3927.853,
+                  "label": "失守3795，放大看3741"
+                },
+                "evidence": {
+                  "state": "down_leave_confirmed",
+                  "lastStroke": {
+                    "id": "chanpy-line-cc1966f21d87",
+                    "level": "1d",
+                    "start_at": "2026-06-23T15:00:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T15:00:00",
+                    "direction": "down",
+                    "start_price": 4175.348,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 288.2531512378573,
+                    "volume": 1219034448800,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 5
+                  },
+                  "activeCenter": {
+                    "id": "chanpy-center-16ea0b1e5be6",
+                    "level": "1d",
+                    "start_at": "2026-03-23T15:00:00",
+                    "end_at": "2026-06-23T15:00:00",
+                    "zd": 3927.853,
+                    "zg": 4175.348,
+                    "dd": 3794.684,
+                    "gg": 4258.863,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  "candidateUp": [
+                    3927.853,
+                    4002.782,
+                    4175.348,
+                    4197.228,
+                    4258.863
+                  ],
+                  "candidateDown": [
+                    3794.684,
+                    3741.11
+                  ]
+                }
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "下一交易日午间",
+                  "bars": 1,
+                  "note": "半日仅观察日线方向，不把半根日K当作日线确认。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3898.733,
+                      "priceCondition": "3795—4003内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 5.9",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3898.733,
+                        "dif": -53.11,
+                        "dea": -56.06,
+                        "histogram": 5.899,
+                        "positiveArea": 5.899,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 4002.782,
+                      "priceCondition": "收回3928并测试4003",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 19.2",
+                      "decision": "确认后观察4175，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4002.782,
+                        "dif": -44.81,
+                        "dea": -54.4,
+                        "histogram": 19.18,
+                        "positiveArea": 19.18,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 4175.348,
+                      "priceCondition": "站稳4175",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 41.2",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4175.348,
+                        "dif": -31.044,
+                        "dea": -51.647,
+                        "histogram": 41.205,
+                        "positiveArea": 41.205,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3795并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "绿柱扩大；DIF在DEA下方，快慢线仍在水下；绿柱面积 14.2",
+                      "decision": "日线下跌笔重新扩展；所有低级别反抽只按执行层修复处理。",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -65.684,
+                        "dea": -58.575,
+                        "histogram": -14.219,
+                        "positiveArea": 0,
+                        "negativeArea": 14.219
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "下一交易日收盘",
+                  "bars": 1,
+                  "note": "按平滑路径模拟 1 根日线K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3898.733,
+                      "priceCondition": "3795—4003内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 5.9",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3898.733,
+                        "dif": -53.11,
+                        "dea": -56.06,
+                        "histogram": 5.899,
+                        "positiveArea": 5.899,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 4002.782,
+                      "priceCondition": "收回3928并测试4003",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 19.2",
+                      "decision": "确认后观察4175，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4002.782,
+                        "dif": -44.81,
+                        "dea": -54.4,
+                        "histogram": 19.18,
+                        "positiveArea": 19.18,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 4175.348,
+                      "priceCondition": "站稳4175",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "MACD翻红；DIF上穿DEA，快慢线仍在水下；红柱面积 41.2",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 4175.348,
+                        "dif": -31.044,
+                        "dea": -51.647,
+                        "histogram": 41.205,
+                        "positiveArea": 41.205,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "失守3795并测试3741",
+                      "strokeCondition": "下跌笔继续创新低，反向修复失败",
+                      "macdCondition": "绿柱扩大；DIF在DEA下方，快慢线仍在水下；绿柱面积 14.2",
+                      "decision": "日线下跌笔重新扩展；所有低级别反抽只按执行层修复处理。",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -65.684,
+                        "dea": -58.575,
+                        "histogram": -14.219,
+                        "positiveArea": 0,
+                        "negativeArea": 14.219
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3804.693,
+                  "ema12": 3857.396,
+                  "ema26": 3918.317,
+                  "dif": -60.921,
+                  "dea": -56.797,
+                  "histogram": -8.246
+                }
+              }
+            }
+          },
+          "progression": [
+            {
+              "timeframe": "30m",
+              "label": "30分钟",
+              "role": "短期启动",
+              "phase": "下跌笔完成后的强反抽，验证新向上笔",
+              "status": "leading"
+            },
+            {
+              "timeframe": "60m",
+              "label": "60分钟",
+              "role": "持续性结构",
+              "phase": "下行动量收敛，等待反向笔成立",
+              "status": "native"
+            },
+            {
+              "timeframe": "120m",
+              "label": "120分钟",
+              "role": "波段结构",
+              "phase": "120分钟下跌笔完成，反向笔仍待确认",
+              "status": "native"
+            },
+            {
+              "timeframe": "1d",
+              "label": "日线",
+              "role": "趋势定性",
+              "phase": "日线下跌笔后的初期修复",
+              "status": "pending"
+            }
+          ],
+          "nextSessionPaths": {
+            "source": "same-level-chan-structure",
+            "timeframe": "30m",
+            "up": {
+              "trigger": 3858.31,
+              "confirm": 3884.435,
+              "amplify": 3938.878,
+              "failure": 3793.449,
+              "label": "收回3858，确认3884，放大看3939"
+            },
+            "range": {
+              "lower": 3793.449,
+              "upper": 3884.435,
+              "label": "3793—3884内止跌与换手"
+            },
+            "down": {
+              "trigger": 3793.449,
+              "intermediate": 3767.503,
+              "amplify": 3741.11,
+              "recovery": 3858.31,
+              "label": "失守3793，放大看3741"
+            },
+            "evidence": {
+              "state": "down_leave_confirmed",
+              "lastStroke": {
+                "id": "chanpy-line-c1dcc8b4825b",
+                "level": "30m",
+                "start_at": "2026-07-27T15:00:00",
+                "end_at": "2026-07-30T13:30:00",
+                "confirmed_at": "2026-07-30T14:00:00",
+                "direction": "down",
+                "start_price": 3858.31,
+                "end_price": 3767.503,
+                "stroke_count": 1,
+                "macd_area": 43.51574731281276,
+                "volume": 151201797600,
+                "is_sure": true,
+                "source_kind": "stroke",
+                "source_index": 62
+              },
+              "activeCenter": {
+                "id": "chanpy-center-91591949034b",
+                "level": "30m",
+                "start_at": "2026-07-02T15:00:00",
+                "end_at": "2026-07-10T13:30:00",
+                "zd": 4019.215,
+                "zg": 4073.88,
+                "dd": 3938.878,
+                "gg": 4074.828,
+                "state": "active",
+                "stroke_count": 3,
+                "component_type": "stroke",
+                "component_count": 3,
+                "extension_count": 0,
+                "promoted_from": [],
+                "is_sure": false
+              },
+              "candidateUp": [
+                3858.31,
+                3884.435,
+                3938.878,
+                3981.672,
+                4019.215,
+                4073.88
+              ],
+              "candidateDown": [
+                3793.449,
+                3767.503,
+                3741.11
+              ]
+            }
+          },
+          "timeframePaths": {
+            "30m": {
+              "source": "same-level-chan-structure",
+              "timeframe": "30m",
+              "up": {
+                "trigger": 3858.31,
+                "confirm": 3884.435,
+                "amplify": 3938.878,
+                "failure": 3793.449,
+                "label": "收回3858，确认3884，放大看3939"
+              },
+              "range": {
+                "lower": 3793.449,
+                "upper": 3884.435,
+                "label": "3793—3884内止跌与换手"
+              },
+              "down": {
+                "trigger": 3793.449,
+                "intermediate": 3767.503,
+                "amplify": 3741.11,
+                "recovery": 3858.31,
+                "label": "失守3793，放大看3741"
+              },
+              "evidence": {
+                "state": "down_leave_confirmed",
+                "lastStroke": {
+                  "id": "chanpy-line-c1dcc8b4825b",
+                  "level": "30m",
+                  "start_at": "2026-07-27T15:00:00",
+                  "end_at": "2026-07-30T13:30:00",
+                  "confirmed_at": "2026-07-30T14:00:00",
+                  "direction": "down",
+                  "start_price": 3858.31,
+                  "end_price": 3767.503,
+                  "stroke_count": 1,
+                  "macd_area": 43.51574731281276,
+                  "volume": 151201797600,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 62
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-91591949034b",
+                  "level": "30m",
+                  "start_at": "2026-07-02T15:00:00",
+                  "end_at": "2026-07-10T13:30:00",
+                  "zd": 4019.215,
+                  "zg": 4073.88,
+                  "dd": 3938.878,
+                  "gg": 4074.828,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "candidateUp": [
+                  3858.31,
+                  3884.435,
+                  3938.878,
+                  3981.672,
+                  4019.215,
+                  4073.88
+                ],
+                "candidateDown": [
+                  3793.449,
+                  3767.503,
+                  3741.11
+                ]
+              }
+            },
+            "60m": {
+              "source": "same-level-chan-structure",
+              "timeframe": "60m",
+              "up": {
+                "trigger": 3884.435,
+                "confirm": 3938.878,
+                "amplify": 3992.552,
+                "failure": 3767.503,
+                "label": "收回3884，确认3939，放大看3993"
+              },
+              "range": {
+                "lower": 3767.503,
+                "upper": 3938.878,
+                "label": "3768—3939内止跌与换手"
+              },
+              "down": {
+                "trigger": 3767.503,
+                "intermediate": 3741.11,
+                "amplify": 3741.11,
+                "recovery": 3884.435,
+                "label": "失守3768，放大看3741"
+              },
+              "evidence": {
+                "state": "down_leave_confirmed",
+                "lastStroke": {
+                  "id": "chanpy-line-dd9f64ae4171",
+                  "level": "60m",
+                  "start_at": "2026-07-22T11:30:00",
+                  "end_at": "2026-07-30T14:00:00",
+                  "confirmed_at": "2026-07-30T15:00:00",
+                  "direction": "down",
+                  "start_price": 3884.435,
+                  "end_price": 3767.503,
+                  "stroke_count": 1,
+                  "macd_area": 8.133931034811393,
+                  "volume": 327455727000,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 30
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-b3a9768e949c",
+                  "level": "60m",
+                  "start_at": "2026-06-29T10:35:00",
+                  "end_at": "2026-07-10T14:00:00",
+                  "zd": 3992.552,
+                  "zg": 4074.828,
+                  "dd": 3938.878,
+                  "gg": 4143.314,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "candidateUp": [
+                  3884.435,
+                  3938.878,
+                  3992.552,
+                  4010.872,
+                  4074.828,
+                  4143.314
+                ],
+                "candidateDown": [
+                  3767.503,
+                  3741.11
+                ]
+              }
+            },
+            "120m": {
+              "source": "same-level-chan-structure",
+              "timeframe": "120m",
+              "up": {
+                "trigger": 3927.853,
+                "confirm": 3992.552,
+                "amplify": 4052.545,
+                "failure": 3794.684,
+                "label": "收回3928，确认3993，放大看4053"
+              },
+              "range": {
+                "lower": 3794.684,
+                "upper": 3992.552,
+                "label": "3795—3993内止跌与换手"
+              },
+              "down": {
+                "trigger": 3794.684,
+                "intermediate": 3741.11,
+                "amplify": 3741.11,
+                "recovery": 3927.853,
+                "label": "失守3795，放大看3741"
+              },
+              "evidence": {
+                "state": "down_leave_confirmed",
+                "lastStroke": {
+                  "id": "chanpy-line-360675a330d3",
+                  "level": "120m",
+                  "start_at": "2026-07-01T11:30:00",
+                  "end_at": "2026-07-20T15:00:00",
+                  "confirmed_at": "2026-07-21T11:30:00",
+                  "direction": "down",
+                  "start_price": 4143.314,
+                  "end_price": 3741.11,
+                  "stroke_count": 1,
+                  "macd_area": 409.1596365241181,
+                  "volume": 835420238000,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 9
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-a85adb5cda77",
+                  "level": "120m",
+                  "start_at": "2026-03-09T11:30:00",
+                  "end_at": "2026-07-01T11:30:00",
+                  "zd": 4052.545,
+                  "zg": 4141.649,
+                  "dd": 3794.684,
+                  "gg": 4258.863,
+                  "state": "active",
+                  "stroke_count": 7,
+                  "component_type": "stroke",
+                  "component_count": 7,
+                  "extension_count": 4,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "candidateUp": [
+                  3927.853,
+                  3992.552,
+                  4052.545,
+                  4141.649,
+                  4143.314,
+                  4175.348
+                ],
+                "candidateDown": [
+                  3794.684,
+                  3741.11
+                ]
+              }
+            },
+            "1d": {
+              "source": "same-level-chan-structure",
+              "timeframe": "1d",
+              "up": {
+                "trigger": 3927.853,
+                "confirm": 4002.782,
+                "amplify": 4175.348,
+                "failure": 3794.684,
+                "label": "收回3928，确认4003，放大看4175"
+              },
+              "range": {
+                "lower": 3794.684,
+                "upper": 4002.782,
+                "label": "3795—4003内止跌与换手"
+              },
+              "down": {
+                "trigger": 3794.684,
+                "intermediate": 3741.11,
+                "amplify": 3741.11,
+                "recovery": 3927.853,
+                "label": "失守3795，放大看3741"
+              },
+              "evidence": {
+                "state": "down_leave_confirmed",
+                "lastStroke": {
+                  "id": "chanpy-line-cc1966f21d87",
+                  "level": "1d",
+                  "start_at": "2026-06-23T15:00:00",
+                  "end_at": "2026-07-20T15:00:00",
+                  "confirmed_at": "2026-07-21T15:00:00",
+                  "direction": "down",
+                  "start_price": 4175.348,
+                  "end_price": 3741.11,
+                  "stroke_count": 1,
+                  "macd_area": 288.2531512378573,
+                  "volume": 1219034448800,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 5
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-16ea0b1e5be6",
+                  "level": "1d",
+                  "start_at": "2026-03-23T15:00:00",
+                  "end_at": "2026-06-23T15:00:00",
+                  "zd": 3927.853,
+                  "zg": 4175.348,
+                  "dd": 3794.684,
+                  "gg": 4258.863,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "candidateUp": [
+                  3927.853,
+                  4002.782,
+                  4175.348,
+                  4197.228,
+                  4258.863
+                ],
+                "candidateDown": [
+                  3794.684,
+                  3741.11
+                ]
+              }
+            }
+          },
+          "chanModel": {
+            "sourceRoot": "Stock-Analysis-chan-native-60-120",
+            "head": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+            "levels": [
+              "30m",
+              "60m",
+              "120m",
+              "1d"
+            ]
+          },
+          "previousReview": {
+            "available": true,
+            "previousDate": "2026-07-29",
+            "status": "down_recovered",
+            "primary": "下跌触发后收回",
+            "summary": "开3812.11、高3839.34、低3767.50、收3804.69；上涨触发/确认/放大=—/—/—，下跌触发/放大=11:00/—。",
+            "events": {
+              "upTriggeredAt": null,
+              "upConfirmedAt": null,
+              "upAmplifiedAt": null,
+              "downTriggeredAt": "11:00",
+              "downAmplifiedAt": null
+            },
+            "timeframeChanges": [
+              {
+                "timeframe": "30m",
+                "label": "30分钟",
+                "difDelta": -0.963,
+                "histogramDelta": -5.21,
+                "phaseBefore": "零轴下方修复",
+                "phaseAfter": "零轴下方修复"
+              },
+              {
+                "timeframe": "60m",
+                "label": "60分钟",
+                "difDelta": -1.273,
+                "histogramDelta": -2.628,
+                "phaseBefore": "零轴下方修复",
+                "phaseAfter": "绿柱区动量收敛"
+              },
+              {
+                "timeframe": "120m",
+                "label": "120分钟",
+                "difDelta": -0.201,
+                "histogramDelta": -2.523,
+                "phaseBefore": "零轴下方修复",
+                "phaseAfter": "零轴下方修复"
+              },
+              {
+                "timeframe": "1d",
+                "label": "日线",
+                "difDelta": -0.493,
+                "histogramDelta": 1.077,
+                "phaseBefore": "绿柱区动量收敛",
+                "phaseAfter": "下行动量仍在"
+              }
+            ],
+            "range": {
+              "lower": 3793.449,
+              "upper": 3884.435
+            }
+          }
+        }
+      },
+      "stocks": [
+        {
+          "symbol": "sz002463",
+          "name": "沪电股份",
+          "structure": 0,
+          "support": 0,
+          "relative": 13,
+          "risk": 1,
+          "total": 14,
+          "status": "禁止左侧"
+        },
+        {
+          "symbol": "sz002422",
+          "name": "科伦药业",
+          "structure": 12,
+          "support": 17,
+          "relative": 22,
+          "risk": 11,
+          "total": 62,
+          "status": "强势观察"
+        },
+        {
+          "symbol": "sh588710",
+          "name": "科创半导体设备ETF",
+          "structure": 0,
+          "support": 0,
+          "relative": 11,
+          "risk": 3,
+          "total": 14,
+          "status": "禁止左侧"
+        }
+      ],
+      "experts": [
+        {
+          "tag": "趋势纪律",
+          "source": "NGA / fuelish · 15:47",
+          "quote": "做趋势股请一定要记住，下跌趋势只可能买对一次。",
+          "meaning": "当前科技反抽仍需同级别结构确认，不能把一次低吸成功外推为趋势反转。",
+          "test": "先验证上证收回3819—3839，以及科技核心重新站上各自VWAP与中枢。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207267&pid=876887335"
+        },
+        {
+          "tag": "量能与大势",
+          "source": "NGA / 丶阿疯 · 15:09",
+          "quote": "主升过程中，随便抄底都赚，因为量能情绪都在。反之，怎么抄都死，因为情绪坏了，量能也低了。",
+          "meaning": "今天成交量偏低且亏钱效应严重，左侧反抽的容错率仍低。",
+          "test": "次日只有宽度、成交额和强势股溢价同步修复，才提高红色路径权重。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207543&pid=876882339"
+        },
+        {
+          "tag": "技术买点",
+          "source": "NGA / zippo578 · 16:02",
+          "quote": "上证技术买点没有，深和创的底部还在，纠错标准就是DIF新低。",
+          "meaning": "上证尾盘收回不能替代30分钟同级别结构确认，DIF与新低关系仍需继续观察。",
+          "test": "若价格再破3767且30分钟DIF同步新低，按下跌延伸；若价格新低而DIF不新低，再检查背离证据。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207407&pid=876889255"
+        },
+        {
+          "tag": "二次探底",
+          "source": "NGA / 海伯利安之歌 · 11:45",
+          "quote": "底部不是预测出来的，是走出来的。等市场自己踩出第一只脚，然后反弹，继续等，等第二只脚出来，底背离了，再买。",
+          "meaning": "3767最多先按第一只脚候选处理，当前尚未出现第二只脚与同级别买点确认。",
+          "test": "记录后续回踩是否守住3767、MACD面积是否缩小，以及能否形成新的30分钟向上笔。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47209064&pid=876858620"
+        },
+        {
+          "tag": "医药共振",
+          "source": "NGA / 丶阿疯 · 12:06",
+          "quote": "药是共振指数的，尤其是CXO分支；所以指数不行，他们第一个不行。",
+          "meaning": "科伦的日内相对承接只能作为个股样本，不能在指数破位时直接当成板块防守结论。",
+          "test": "科伦需继续守住42.15与VWAP42.44，同时验证指数不再跌破3767。",
+          "result": "pending",
+          "url": "https://bbs.nga.cn/read.php?tid=47207543&pid=876861682"
+        }
+      ],
+      "fullReport": "reports/20260730.html"
+    },
+    "2026-07-31": {
+      "market": {
+        "total": 78,
+        "sentiment": 47,
+        "technical": 31,
+        "status": "可试错环境",
+        "summary": "黄色震荡观察。全A普涨且主力净流入明显，但上证冲高回落、收盘仍在3819.41—3839.34的5分钟中枢内，也未收回30分钟中枢上沿3858.31；当前是下跌笔后的修复进入中枢换手，不是趋势反转确认。",
+        "paths": [
+          {
+            "tone": "red",
+            "title": "红：收回3858，确认3869，放大看3939",
+            "text": "若30分钟收盘站回3858.31，并继续收复3869.30，且红柱不再缩短，才确认向上笔继续延伸；随后观察3938.88。；60分钟需收回3884.44、进一步确认3938.88；120分钟与日线要分别处理3927.85与3992.55附近结构，不能用30分钟突破代替更大级别确认。"
+          },
+          {
+            "tone": "yellow",
+            "title": "黄：3793—3869内换手，观察普涨持续性",
+            "text": "若3793.45不破但3858.31—3869.30持续受阻，按中枢内换手处理；不追盘中冲高，等待价格与红柱重新同向扩张。；成交额接近20日均量但处历史37%分位，下一交易日仍需验证上涨宽度、强势股溢价和主力净额能否延续。"
+          },
+          {
+            "tone": "blue",
+            "title": "蓝：失守3793，先看3768，再看3741",
+            "text": "若30分钟收盘跌破3793.45，当前向上笔进入失效验证；进一步跌破3767.50且不能快速收回，视为下行笔重新延伸，目标下移至3741.11。；若同时60分钟失守3767.50、120分钟失守3794.68，绿柱重新扩大，则暂停新增左侧试错，等待新的同级别底分型和向上笔确认。"
+          }
+        ],
+        "pathProjection": {
+          "schemaVersion": "multi-timeframe-native-chan-v3",
+          "date": "2026-07-31",
+          "source": "5m-consistent-aggregation+same-level-chan-core",
+          "close": 3832.262,
+          "volume": {
+            "amount": 11619.9,
+            "average20": 11932.4,
+            "ratio20": 0.9738,
+            "label": "接近均量",
+            "rule": "量能不进入MACD公式；只约束目标区域能否持续，以及数学K线数向现实时间的映射。"
+          },
+          "levels": {
+            "up": [
+              3839.341,
+              3858.31,
+              3900,
+              4002.782,
+              4190.866
+            ],
+            "down": [
+              3831.179,
+              3822.374,
+              3767.503,
+              3741.11
+            ]
+          },
+          "timeframes": {
+            "30m": {
+              "label": "30分钟",
+              "barsPerDay": 8,
+              "current": {
+                "close": 3832.262,
+                "dif": 4.939,
+                "dea": 1.672,
+                "histogram": 6.534,
+                "difDelta": -0.215,
+                "histogramDelta": -2.063,
+                "phase": "零轴上方增强"
+              },
+              "upTargets": [
+                {
+                  "price": 3858.31,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3869.304,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3938.878,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3793.449,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3767.503,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 2
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 2
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                }
+              ],
+              "chanStructure": {
+                "level": "30m",
+                "state": "center_balance",
+                "observation": "价格仍在最近中枢内，等待有效离开。",
+                "riskLine": null,
+                "lastStroke": {
+                  "id": "chanpy-line-8b0f63190124",
+                  "level": "30m",
+                  "start_at": "2026-07-30T13:30:00",
+                  "end_at": "2026-07-31T10:30:00",
+                  "confirmed_at": "2026-07-31T11:00:00",
+                  "direction": "up",
+                  "start_price": 3767.503,
+                  "end_price": 3847.093,
+                  "stroke_count": 1,
+                  "macd_area": 16.32946020487396,
+                  "volume": 51758915500,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 63
+                },
+                "lastSegment": {
+                  "id": "chanpy-line-71d799c8a75f",
+                  "level": "30m",
+                  "start_at": "2026-07-20T15:00:00",
+                  "end_at": "2026-07-31T10:30:00",
+                  "confirmed_at": "2026-07-31T10:30:00",
+                  "direction": "up",
+                  "start_price": 3741.11,
+                  "end_price": 3847.093,
+                  "stroke_count": 5,
+                  "macd_area": 413.6660715192515,
+                  "volume": 480149449400,
+                  "is_sure": false,
+                  "source_kind": "segment",
+                  "source_index": 7,
+                  "reason": "collect_left_0"
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-f77f2fc04213",
+                  "level": "30m",
+                  "start_at": "2026-07-22T11:30:00",
+                  "end_at": "2026-07-30T13:30:00",
+                  "zd": 3793.449,
+                  "zg": 3858.31,
+                  "dd": 3767.503,
+                  "gg": 3884.435,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "strokes": [
+                  {
+                    "id": "chanpy-line-90a1f8e0b896",
+                    "level": "30m",
+                    "start_at": "2026-07-14T11:30:00",
+                    "end_at": "2026-07-15T10:30:00",
+                    "confirmed_at": "2026-07-15T11:30:00",
+                    "direction": "up",
+                    "start_price": 3869.304,
+                    "end_price": 3981.672,
+                    "stroke_count": 1,
+                    "macd_area": 45.5549120601147,
+                    "volume": 56186756900,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 57
+                  },
+                  {
+                    "id": "chanpy-line-5b5a86a02dd6",
+                    "level": "30m",
+                    "start_at": "2026-07-15T10:30:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T10:00:00",
+                    "direction": "down",
+                    "start_price": 3981.672,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 251.7064436606864,
+                    "volume": 227040071900,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 58
+                  },
+                  {
+                    "id": "chanpy-line-dd122a2a087f",
+                    "level": "30m",
+                    "start_at": "2026-07-20T15:00:00",
+                    "end_at": "2026-07-22T11:30:00",
+                    "confirmed_at": "2026-07-22T13:30:00",
+                    "direction": "up",
+                    "start_price": 3741.11,
+                    "end_price": 3884.435,
+                    "stroke_count": 1,
+                    "macd_area": 243.9789765386098,
+                    "volume": 122675148400,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 59
+                  },
+                  {
+                    "id": "chanpy-line-9dd1d84e277c",
+                    "level": "30m",
+                    "start_at": "2026-07-22T11:30:00",
+                    "end_at": "2026-07-27T10:00:00",
+                    "confirmed_at": "2026-07-27T10:30:00",
+                    "direction": "down",
+                    "start_price": 3884.435,
+                    "end_price": 3793.449,
+                    "stroke_count": 1,
+                    "macd_area": 69.82116923803872,
+                    "volume": 140404359500,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 60
+                  },
+                  {
+                    "id": "chanpy-line-92b1b6035a50",
+                    "level": "30m",
+                    "start_at": "2026-07-27T10:00:00",
+                    "end_at": "2026-07-27T15:00:00",
+                    "confirmed_at": "2026-07-28T10:00:00",
+                    "direction": "up",
+                    "start_price": 3793.449,
+                    "end_price": 3858.31,
+                    "stroke_count": 1,
+                    "macd_area": 3.0150660983340547,
+                    "volume": 47742149600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 61
+                  },
+                  {
+                    "id": "chanpy-line-c1dcc8b4825b",
+                    "level": "30m",
+                    "start_at": "2026-07-27T15:00:00",
+                    "end_at": "2026-07-30T13:30:00",
+                    "confirmed_at": "2026-07-30T14:00:00",
+                    "direction": "down",
+                    "start_price": 3858.31,
+                    "end_price": 3767.503,
+                    "stroke_count": 1,
+                    "macd_area": 43.51574731281276,
+                    "volume": 151201797600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 62
+                  },
+                  {
+                    "id": "chanpy-line-8b0f63190124",
+                    "level": "30m",
+                    "start_at": "2026-07-30T13:30:00",
+                    "end_at": "2026-07-31T10:30:00",
+                    "confirmed_at": "2026-07-31T11:00:00",
+                    "direction": "up",
+                    "start_price": 3767.503,
+                    "end_price": 3847.093,
+                    "stroke_count": 1,
+                    "macd_area": 16.32946020487396,
+                    "volume": 51758915500,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 63
+                  }
+                ],
+                "pivots": [
+                  {
+                    "id": "chanpy-pivot-cfd6b06b6085",
+                    "level": "30m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-09T11:30:00",
+                    "confirmed_at": "2026-07-09T13:30:00",
+                    "price": 3938.878,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-458f7319399e",
+                    "level": "30m",
+                    "kind": "top",
+                    "event_at": "2026-07-10T13:30:00",
+                    "confirmed_at": "2026-07-10T14:00:00",
+                    "price": 4074.828,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-9a783309d9be",
+                    "level": "30m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-14T11:30:00",
+                    "confirmed_at": "2026-07-14T13:30:00",
+                    "price": 3869.304,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-195052402bcc",
+                    "level": "30m",
+                    "kind": "top",
+                    "event_at": "2026-07-15T10:30:00",
+                    "confirmed_at": "2026-07-15T11:30:00",
+                    "price": 3981.672,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-8ca56903a716",
+                    "level": "30m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T10:00:00",
+                    "price": 3741.11,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-ebacb7ce3ba8",
+                    "level": "30m",
+                    "kind": "top",
+                    "event_at": "2026-07-22T11:30:00",
+                    "confirmed_at": "2026-07-22T13:30:00",
+                    "price": 3884.435,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-20c5d622d755",
+                    "level": "30m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-27T10:00:00",
+                    "confirmed_at": "2026-07-27T10:30:00",
+                    "price": 3793.449,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-bc902410d1aa",
+                    "level": "30m",
+                    "kind": "top",
+                    "event_at": "2026-07-27T15:00:00",
+                    "confirmed_at": "2026-07-28T10:00:00",
+                    "price": 3858.31,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-3d971536fe47",
+                    "level": "30m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-30T13:30:00",
+                    "confirmed_at": "2026-07-30T14:00:00",
+                    "price": 3767.503,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-b2e3f1bb4deb",
+                    "level": "30m",
+                    "kind": "top",
+                    "event_at": "2026-07-31T10:30:00",
+                    "confirmed_at": "2026-07-31T11:00:00",
+                    "price": 3847.093,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  }
+                ],
+                "centers": [
+                  {
+                    "id": "chanpy-center-adaaaaec67a7",
+                    "level": "30m",
+                    "start_at": "2026-06-24T11:30:00",
+                    "end_at": "2026-07-01T11:30:00",
+                    "zd": 4075.492,
+                    "zg": 4133.097,
+                    "dd": 3992.552,
+                    "gg": 4143.314,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  {
+                    "id": "chanpy-center-91591949034b",
+                    "level": "30m",
+                    "start_at": "2026-07-02T15:00:00",
+                    "end_at": "2026-07-10T13:30:00",
+                    "zd": 4019.215,
+                    "zg": 4073.88,
+                    "dd": 3938.878,
+                    "gg": 4074.828,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  {
+                    "id": "chanpy-center-f77f2fc04213",
+                    "level": "30m",
+                    "start_at": "2026-07-22T11:30:00",
+                    "end_at": "2026-07-30T13:30:00",
+                    "zd": 3793.449,
+                    "zg": 3858.31,
+                    "dd": 3767.503,
+                    "gg": 3884.435,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  }
+                ],
+                "signals": [
+                  {
+                    "id": "chanpy-signal-c6ea29152968",
+                    "level": "30m",
+                    "label": "2S",
+                    "display_label": "笔S2s",
+                    "side": "sell",
+                    "price": 4143.314,
+                    "confidence": 0.72,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 4143.314,
+                    "risk_guard": 4175.348,
+                    "lifecycle": {
+                      "state": "confirmed",
+                      "event_at": "2026-07-01T11:30:00",
+                      "detected_at": "2026-07-01T13:30:00",
+                      "confirmed_at": "2026-07-01T13:30:00",
+                      "invalidated_at": null,
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2s"
+                      ],
+                      "primary_type": "2s",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 739,
+                        "end": 748,
+                        "startTime": "2026-06-23T11:00:00",
+                        "endTime": "2026-06-24T11:30:00",
+                        "startValue": 4175.348,
+                        "endValue": 4075.492,
+                        "direction": "down",
+                        "bars": 10,
+                        "priceMove": 99.85599999999977,
+                        "macdArea": 77.46985995062694,
+                        "macdPeak": 15.548022963286968,
+                        "difExtreme": 0.5153207645344082,
+                        "volumeTotal": 77293485500,
+                        "volumeAverage": 7729348550,
+                        "amountAverage": 176924072345.6
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 770,
+                        "end": 788,
+                        "startTime": "2026-06-29T10:35:00",
+                        "endTime": "2026-07-01T11:30:00",
+                        "startValue": 3992.552,
+                        "endValue": 4143.314,
+                        "direction": "up",
+                        "bars": 19,
+                        "priceMove": 150.76200000000017,
+                        "macdArea": 180.18773513131137,
+                        "macdPeak": 19.95726749293914,
+                        "difExtreme": 13.832751205884506,
+                        "volumeTotal": 144770754500,
+                        "volumeAverage": 7619513394.736842,
+                        "amountAverage": 193772250381.4737
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 1.5097941035090583,
+                        "macd_area": 2.3259075883982305,
+                        "macd_peak": 1.2835887585234196,
+                        "dif_extreme": 26.842992089368614,
+                        "volume_average": 0.9857898560851991
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2s_retrace_rate": 0.6791980451850692,
+                        "bsp2s_break_bi_amp": 99.85599999999977,
+                        "bsp2s_bi_amp": 150.76200000000017,
+                        "bsp2s_lv": 1,
+                        "bsp_bi_amp": 150.76200000000017
+                      },
+                      "line_index": 51,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 47,
+                        "status": "confirmed",
+                        "parent_signal_id": "chanpy-signal-405e15421a11",
+                        "parent_display_label": "笔S1",
+                        "parent_event_at": "2026-06-23T11:00:00",
+                        "parent_state": "confirmed",
+                        "status_label": "关联一类点已确认",
+                        "conclusion": "关联一类点通过严格复核，二类点可继续按回撤结构判定。"
+                      },
+                      "native_type": "2s",
+                      "scope": "stroke",
+                      "lifecycle_audit": {
+                        "risk_guard": 4175.348,
+                        "rule": "收盘价有效升破信号链风险线",
+                        "invalidated_at": null
+                      }
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-ab44f8c896a0",
+                    "level": "30m",
+                    "label": "3S",
+                    "display_label": "笔S3a",
+                    "side": "sell",
+                    "price": 4073.88,
+                    "confidence": 0.72,
+                    "divergence_class": "center_non_return",
+                    "structure_guard": 4075.492,
+                    "risk_guard": 4073.88,
+                    "lifecycle": {
+                      "state": "confirmed",
+                      "event_at": "2026-07-03T14:30:00",
+                      "detected_at": "2026-07-03T15:00:00",
+                      "confirmed_at": "2026-07-03T15:00:00",
+                      "invalidated_at": null,
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "3a"
+                      ],
+                      "primary_type": "3a",
+                      "comparison_kind": "center_non_return",
+                      "basis": "三类点检查离开中枢后的首次回踩或反抽是否回到中枢。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 788,
+                        "end": 800,
+                        "startTime": "2026-07-01T11:30:00",
+                        "endTime": "2026-07-02T15:00:00",
+                        "startValue": 4143.314,
+                        "endValue": 4019.215,
+                        "direction": "down",
+                        "bars": 13,
+                        "priceMove": 124.09900000000016,
+                        "macdArea": 72.88612943896345,
+                        "macdPeak": 17.54136182854566,
+                        "difExtreme": 8.371356183128682,
+                        "volumeTotal": 93831642300,
+                        "volumeAverage": 7217818638.461538,
+                        "amountAverage": 176076266889.84616
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 800,
+                        "end": 807,
+                        "startTime": "2026-07-02T15:00:00",
+                        "endTime": "2026-07-03T14:30:00",
+                        "startValue": 4019.215,
+                        "endValue": 4073.88,
+                        "direction": "up",
+                        "bars": 8,
+                        "priceMove": 54.664999999999964,
+                        "macdArea": 0,
+                        "macdPeak": 0,
+                        "difExtreme": 8.371356183128682,
+                        "volumeTotal": 61543950300,
+                        "volumeAverage": 7692993787.5,
+                        "amountAverage": 185338101760
+                      },
+                      "third_structure": {
+                        "side": "sell",
+                        "center_boundary_name": "ZD",
+                        "center_boundary": 4075.492,
+                        "departure": {
+                          "name": "对照段",
+                          "start": 788,
+                          "end": 800,
+                          "startTime": "2026-07-01T11:30:00",
+                          "endTime": "2026-07-02T15:00:00",
+                          "startValue": 4143.314,
+                          "endValue": 4019.215,
+                          "direction": "down",
+                          "bars": 13,
+                          "priceMove": 124.09900000000016,
+                          "macdArea": 72.88612943896345,
+                          "macdPeak": 17.54136182854566,
+                          "difExtreme": 8.371356183128682,
+                          "volumeTotal": 93831642300,
+                          "volumeAverage": 7217818638.461538,
+                          "amountAverage": 176076266889.84616
+                        },
+                        "retrace": {
+                          "name": "检验段",
+                          "start": 800,
+                          "end": 807,
+                          "startTime": "2026-07-02T15:00:00",
+                          "endTime": "2026-07-03T14:30:00",
+                          "startValue": 4019.215,
+                          "endValue": 4073.88,
+                          "direction": "up",
+                          "bars": 8,
+                          "priceMove": 54.664999999999964,
+                          "macdArea": 0,
+                          "macdPeak": 0,
+                          "difExtreme": 8.371356183128682,
+                          "volumeTotal": 61543950300,
+                          "volumeAverage": 7692993787.5,
+                          "amountAverage": 185338101760
+                        },
+                        "retrace_extreme": 4073.88,
+                        "holds_center": true,
+                        "clearance": 1.61200000000008,
+                        "clearance_ratio": 0.0003955350666864467,
+                        "rule": "向下离开中枢后，首次反抽高点不高于中枢下沿 ZD。"
+                      },
+                      "ratios": {},
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": {
+                        "id": "chanpy-center-28a33f6bdab4",
+                        "level": "native",
+                        "start_at": "2026-06-24T11:30:00",
+                        "end_at": "2026-07-01T11:30:00",
+                        "zd": 4075.492,
+                        "zg": 4133.097,
+                        "dd": 3992.552,
+                        "gg": 4143.314,
+                        "state": "active",
+                        "stroke_count": 3,
+                        "component_type": "stroke",
+                        "component_count": 3,
+                        "extension_count": 0,
+                        "promoted_from": [],
+                        "is_sure": false
+                      },
+                      "native_features": {
+                        "bsp3_zs_height": 0.014134489774486015,
+                        "bsp3_bi_amp": 54.664999999999964,
+                        "bsp_bi_amp": 54.664999999999964
+                      },
+                      "line_index": 53,
+                      "dependency": null,
+                      "native_type": "3a",
+                      "scope": "stroke",
+                      "lifecycle_audit": {
+                        "risk_guard": 4073.88,
+                        "rule": "收盘价有效升破信号链风险线",
+                        "invalidated_at": null
+                      }
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-36e8100aee50",
+                    "level": "30m",
+                    "label": "1B",
+                    "display_label": "笔B1p",
+                    "side": "buy",
+                    "price": 3741.11,
+                    "confidence": 0.45,
+                    "divergence_class": "consolidation_divergence",
+                    "structure_guard": 3741.11,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-20T15:00:00",
+                      "detected_at": "2026-07-21T10:00:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-21T10:00:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "1p"
+                      ],
+                      "primary_type": "1p",
+                      "comparison_kind": "divergence",
+                      "basis": "盘整背驰比较相隔一段反向走势的前后两段同向结构。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 845,
+                        "end": 860,
+                        "startTime": "2026-07-10T13:30:00",
+                        "endTime": "2026-07-14T11:30:00",
+                        "startValue": 4074.828,
+                        "endValue": 3869.304,
+                        "direction": "down",
+                        "bars": 16,
+                        "priceMove": 205.5239999999999,
+                        "macdArea": 224.41368891593464,
+                        "macdPeak": 25.5438102013879,
+                        "difExtreme": 30.91944832010904,
+                        "volumeTotal": 116170804400,
+                        "volumeAverage": 7260675275,
+                        "amountAverage": 165710856192
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 866,
+                        "end": 896,
+                        "startTime": "2026-07-15T10:30:00",
+                        "endTime": "2026-07-20T15:00:00",
+                        "startValue": 3981.672,
+                        "endValue": 3741.11,
+                        "direction": "down",
+                        "bars": 31,
+                        "priceMove": 240.5619999999999,
+                        "macdArea": 251.7064436606864,
+                        "macdPeak": 26.380497533583124,
+                        "difExtreme": 45.11313140054517,
+                        "volumeTotal": 227040071900,
+                        "volumeAverage": 7323873287.096774,
+                        "amountAverage": 143938473587.6129
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 1.1704813063194568,
+                        "macd_area": 1.121618047796432,
+                        "macd_peak": 1.032754993307528,
+                        "dif_extreme": 1.4590535682748584,
+                        "volume_average": 1.0087041507439918
+                      },
+                      "divergence_audit": {
+                        "status": "unsupported",
+                        "status_label": "不支持背驰",
+                        "price_extension": true,
+                        "momentum_votes": 0,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": false,
+                        "macd_peak_weakening": false,
+                        "dif_weakening": false,
+                        "volume_contracting": false,
+                        "conclusion": "动能证据没有明确减弱。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "divergence_rate": 1.0327549892645271,
+                        "bsp1_bi_amp": 240.5619999999999,
+                        "bsp_bi_amp": 240.5619999999999
+                      },
+                      "line_index": 58,
+                      "dependency": null,
+                      "native_type": "1p",
+                      "scope": "stroke"
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-0e4eb78b0696",
+                    "level": "30m",
+                    "label": "2B",
+                    "display_label": "笔B2",
+                    "side": "buy",
+                    "price": 3793.449,
+                    "confidence": 0.45,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 3793.449,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-27T10:00:00",
+                      "detected_at": "2026-07-27T10:30:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-27T10:30:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2"
+                      ],
+                      "primary_type": "2",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 896,
+                        "end": 908,
+                        "startTime": "2026-07-20T15:00:00",
+                        "endTime": "2026-07-22T11:30:00",
+                        "startValue": 3741.11,
+                        "endValue": 3884.435,
+                        "direction": "up",
+                        "bars": 13,
+                        "priceMove": 143.32499999999982,
+                        "macdArea": 243.9789765386098,
+                        "macdPeak": 31.953202735741463,
+                        "difExtreme": 6.778127189266343,
+                        "volumeTotal": 122675148400,
+                        "volumeAverage": 9436549876.923077,
+                        "amountAverage": 184275077592.6154
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 908,
+                        "end": 929,
+                        "startTime": "2026-07-22T11:30:00",
+                        "endTime": "2026-07-27T10:00:00",
+                        "startValue": 3884.435,
+                        "endValue": 3793.449,
+                        "direction": "down",
+                        "bars": 22,
+                        "priceMove": 90.98599999999988,
+                        "macdArea": 69.82116923803872,
+                        "macdPeak": 11.456106092432616,
+                        "difExtreme": 6.4137316524420385,
+                        "volumeTotal": 140404359500,
+                        "volumeAverage": 6382016340.909091,
+                        "amountAverage": 120791816750.54546
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 0.6348229548229548,
+                        "macd_area": 0.28617699044650874,
+                        "macd_peak": 0.3585276313982233,
+                        "dif_extreme": 0.9462394955642982,
+                        "volume_average": 0.6763082296122023
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2_retrace_rate": 0.6348229548229548,
+                        "bsp2_break_bi_amp": 143.32499999999982,
+                        "bsp2_bi_amp": 90.98599999999988,
+                        "bsp_bi_amp": 90.98599999999988
+                      },
+                      "line_index": 60,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 58,
+                        "status": "invalidated",
+                        "parent_signal_id": "chanpy-signal-36e8100aee50",
+                        "parent_display_label": "笔B1p",
+                        "parent_event_at": "2026-07-20T15:00:00",
+                        "parent_state": "invalidated",
+                        "status_label": "关联一类点已失效",
+                        "conclusion": "关联一类点后来跌破或升破风险线，依赖它的二类点已退出当前有效信号。"
+                      },
+                      "native_type": "2",
+                      "scope": "stroke"
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-4f6931efc1bb",
+                    "level": "30m",
+                    "label": "2B",
+                    "display_label": "笔B2s",
+                    "side": "buy",
+                    "price": 3767.503,
+                    "confidence": 0.45,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 3767.503,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-30T13:30:00",
+                      "detected_at": "2026-07-30T14:00:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-30T14:00:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2s"
+                      ],
+                      "primary_type": "2s",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 896,
+                        "end": 908,
+                        "startTime": "2026-07-20T15:00:00",
+                        "endTime": "2026-07-22T11:30:00",
+                        "startValue": 3741.11,
+                        "endValue": 3884.435,
+                        "direction": "up",
+                        "bars": 13,
+                        "priceMove": 143.32499999999982,
+                        "macdArea": 243.9789765386098,
+                        "macdPeak": 31.953202735741463,
+                        "difExtreme": 6.778127189266343,
+                        "volumeTotal": 122675148400,
+                        "volumeAverage": 9436549876.923077,
+                        "amountAverage": 184275077592.6154
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 936,
+                        "end": 957,
+                        "startTime": "2026-07-27T15:00:00",
+                        "endTime": "2026-07-30T13:30:00",
+                        "startValue": 3858.31,
+                        "endValue": 3767.503,
+                        "direction": "down",
+                        "bars": 22,
+                        "priceMove": 90.80699999999979,
+                        "macdArea": 43.51574731281276,
+                        "macdPeak": 5.265969796451602,
+                        "difExtreme": 11.92043952868471,
+                        "volumeTotal": 151201797600,
+                        "volumeAverage": 6872808981.818182,
+                        "amountAverage": 130345330874.18182
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 0.6335740450026157,
+                        "macd_area": 0.17835859437637397,
+                        "macd_peak": 0.16480256580231054,
+                        "dif_extreme": 1.7586627095994294,
+                        "volume_average": 0.7283179839514778
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2s_retrace_rate": 0.8158520844235125,
+                        "bsp2s_break_bi_amp": 143.32499999999982,
+                        "bsp2s_bi_amp": 90.80699999999979,
+                        "bsp2s_lv": 1,
+                        "bsp_bi_amp": 90.80699999999979
+                      },
+                      "line_index": 62,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 58,
+                        "status": "invalidated",
+                        "parent_signal_id": "chanpy-signal-36e8100aee50",
+                        "parent_display_label": "笔B1p",
+                        "parent_event_at": "2026-07-20T15:00:00",
+                        "parent_state": "invalidated",
+                        "status_label": "关联一类点已失效",
+                        "conclusion": "关联一类点后来跌破或升破风险线，依赖它的二类点已退出当前有效信号。"
+                      },
+                      "native_type": "2s",
+                      "scope": "stroke"
+                    }
+                  }
+                ],
+                "summary": {
+                  "bars": 969,
+                  "pivots": 65,
+                  "strokes": 64,
+                  "confirmed_strokes": 64,
+                  "segments": 8,
+                  "confirmed_segments": 4,
+                  "higher_segments": 4,
+                  "centers": 10,
+                  "segment_centers": 0,
+                  "signals": 8,
+                  "signal_history": 22,
+                  "strict_first_signals": 3
+                },
+                "provenance": {
+                  "engine": "chan.py",
+                  "engineCommit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                  "calculationLevel": "30m",
+                  "sameLevelBars": true,
+                  "enumMode": "native-enum"
+                }
+              },
+              "pathStages": [
+                {
+                  "stage": "修复准备",
+                  "tone": "repair",
+                  "condition": "红柱不连续缩短，DIF继续抬升；回踩不失3793",
+                  "judgment": "只说明卖压或下行动量衰减，尚未构成修复确认。"
+                },
+                {
+                  "stage": "修复触发",
+                  "tone": "repair",
+                  "condition": "本级别K线收回3858，同时MACD柱不再恶化",
+                  "judgment": "修复路径启动；按当前量能更现实的时间为约半天—2天。"
+                },
+                {
+                  "stage": "修复确认",
+                  "tone": "repair",
+                  "condition": "连续两根本级别K线收在3869上方，或DIF上穿DEA且红柱持续扩张",
+                  "judgment": "修复获得价格或动量确认，下一观察位上移至3939；约半天—2天。"
+                },
+                {
+                  "stage": "修复放大",
+                  "tone": "repair",
+                  "condition": "站稳3939，红柱继续扩张，成交额不低于约0.97倍20期均量",
+                  "judgment": "才把修复升级为趋势扩展；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌触发",
+                  "tone": "damage",
+                  "condition": "本级别K线收盘跌破3793",
+                  "judgment": "破坏路径启动；盘中刺破但收回，不算下跌确认。"
+                },
+                {
+                  "stage": "下跌确认",
+                  "tone": "damage",
+                  "condition": "连续两根本级别K线收在3793下方，或DIF继续下行且绿柱持续扩大",
+                  "judgment": "下跌获得价格或动量确认，修复路径失效。"
+                },
+                {
+                  "stage": "下跌放大",
+                  "tone": "damage",
+                  "condition": "跌破前低并继续创新低，同时绿柱继续扩大",
+                  "judgment": "才把下方目标进一步移至3741；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌收回",
+                  "tone": "neutral",
+                  "condition": "跌破后绿柱停止扩大，并重新收回3858",
+                  "judgment": "破坏未能放大，转入3793—3869区间修复。"
+                }
+              ],
+              "phaseAssessment": {
+                "label": "本级别向上笔已确认，观察延伸或衰竭",
+                "summary": "结构已转为向上笔；下一步比较价格延伸、量能与MACD面积是否同步。",
+                "role": "短期启动",
+                "roleText": "决定下一交易日先走修复、区间还是再破坏",
+                "nativeChan": true
+              },
+              "paths": {
+                "source": "same-level-chan-structure",
+                "timeframe": "30m",
+                "up": {
+                  "trigger": 3858.31,
+                  "confirm": 3869.304,
+                  "amplify": 3938.878,
+                  "failure": 3793.449,
+                  "label": "收回3858，确认3869，放大看3939"
+                },
+                "range": {
+                  "lower": 3793.449,
+                  "upper": 3869.304,
+                  "label": "3793—3869内止跌与换手"
+                },
+                "down": {
+                  "trigger": 3793.449,
+                  "intermediate": 3767.503,
+                  "amplify": 3741.11,
+                  "recovery": 3858.31,
+                  "label": "失守3793，放大看3741"
+                },
+                "evidence": {
+                  "state": "center_balance",
+                  "lastStroke": {
+                    "id": "chanpy-line-8b0f63190124",
+                    "level": "30m",
+                    "start_at": "2026-07-30T13:30:00",
+                    "end_at": "2026-07-31T10:30:00",
+                    "confirmed_at": "2026-07-31T11:00:00",
+                    "direction": "up",
+                    "start_price": 3767.503,
+                    "end_price": 3847.093,
+                    "stroke_count": 1,
+                    "macd_area": 16.32946020487396,
+                    "volume": 51758915500,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 63
+                  },
+                  "activeCenter": {
+                    "id": "chanpy-center-f77f2fc04213",
+                    "level": "30m",
+                    "start_at": "2026-07-22T11:30:00",
+                    "end_at": "2026-07-30T13:30:00",
+                    "zd": 3793.449,
+                    "zg": 3858.31,
+                    "dd": 3767.503,
+                    "gg": 3884.435,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  "candidateUp": [
+                    3858.31,
+                    3869.304,
+                    3938.878,
+                    3847.093,
+                    3884.435,
+                    3981.672
+                  ],
+                  "candidateDown": [
+                    3793.449,
+                    3767.503,
+                    3741.11
+                  ]
+                }
+              },
+              "checkpoints": {
+                "noon": {
+                  "label": "下一交易日午间",
+                  "bars": 4,
+                  "note": "按平滑路径模拟 4 根30分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3831.377,
+                      "priceCondition": "3793—3869内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "红柱缩短；DIF在DEA上方，快慢线维持水上；红柱面积 12.0",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3831.377,
+                        "dif": 3.885,
+                        "dea": 3.177,
+                        "histogram": 1.416,
+                        "positiveArea": 12.039,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3869.304,
+                      "priceCondition": "收回3858并测试3869",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线维持水上；红柱面积 29.4",
+                      "decision": "确认后观察3939，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3869.304,
+                        "dif": 9.873,
+                        "dea": 5.341,
+                        "histogram": 9.064,
+                        "positiveArea": 29.353,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3938.878,
+                      "priceCondition": "站稳3939",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线维持水上；红柱面积 61.1",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3938.878,
+                        "dif": 20.858,
+                        "dea": 9.311,
+                        "histogram": 23.094,
+                        "positiveArea": 61.113,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "收盘失守3793＝反抽否定；跌破3768且不能收回＝下跌笔重启；3741为放大目标",
+                      "strokeCondition": "30分钟向上反抽笔失效，下跌笔重新延伸并向更大级别传导",
+                      "macdCondition": "MACD转绿；DIF下穿DEA，DIF下水、DEA下水；绿柱面积 31.1",
+                      "decision": "3793先否定本段反抽，3768决定破坏是否放大。跨级别影响：60分钟由红转绿、DIF下穿DEA；120分钟红柱缩短、DIF仍在DEA上方。",
+                      "propagation": "跨级别影响：60分钟由红转绿、DIF下穿DEA；120分钟红柱缩短、DIF仍在DEA上方。",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -10.367,
+                        "dea": -1.974,
+                        "histogram": -16.786,
+                        "positiveArea": 1.96,
+                        "negativeArea": 31.127
+                      }
+                    }
+                  ]
+                },
+                "close": {
+                  "label": "下一交易日收盘",
+                  "bars": 8,
+                  "note": "按平滑路径模拟 8 根30分钟K线；实际节奏不同会改变MACD面积。",
+                  "scenarios": [
+                    {
+                      "tone": "range",
+                      "label": "区间消化",
+                      "target": 3831.377,
+                      "priceCondition": "3793—3869内反复",
+                      "strokeCondition": "反向笔不延伸，仍按震荡换手",
+                      "macdCondition": "MACD转绿；DIF下穿DEA，快慢线维持水上；绿柱面积 0.7",
+                      "decision": "不追涨；等待价格和动量同向选择",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3831.377,
+                        "dif": 2.973,
+                        "dea": 3.241,
+                        "histogram": -0.535,
+                        "positiveArea": 13.282,
+                        "negativeArea": 0.732
+                      }
+                    },
+                    {
+                      "tone": "up",
+                      "label": "向上笔验证",
+                      "target": 3869.304,
+                      "priceCondition": "收回3858并测试3869",
+                      "strokeCondition": "本级别向上笔开始延伸；越过本级别确认位后才向上一级传导",
+                      "macdCondition": "红柱缩短；DIF在DEA上方，快慢线维持水上；红柱面积 46.5",
+                      "decision": "确认后观察3939，未站稳仍视为反抽",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3869.304,
+                        "dif": 10.994,
+                        "dea": 7.48,
+                        "histogram": 7.029,
+                        "positiveArea": 46.467,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "expand",
+                      "label": "修复放大",
+                      "target": 3938.878,
+                      "priceCondition": "站稳3939",
+                      "strokeCondition": "本级别上行笔获得价格与动量共同支持",
+                      "macdCondition": "红柱扩大；DIF在DEA上方，快慢线维持水上；红柱面积 108.7",
+                      "decision": "只有量能不弱于基准，才升级为趋势扩展",
+                      "propagation": "",
+                      "simulation": {
+                        "close": 3938.878,
+                        "dif": 25.709,
+                        "dea": 15.257,
+                        "histogram": 20.903,
+                        "positiveArea": 108.684,
+                        "negativeArea": 0
+                      }
+                    },
+                    {
+                      "tone": "down",
+                      "label": "破坏延续",
+                      "target": 3741.11,
+                      "priceCondition": "收盘失守3793＝反抽否定；跌破3768且不能收回＝下跌笔重启；3741为放大目标",
+                      "strokeCondition": "30分钟向上反抽笔失效，下跌笔重新延伸并向更大级别传导",
+                      "macdCondition": "MACD转绿；DIF下穿DEA，DIF下水、DEA下水；绿柱面积 71.6",
+                      "decision": "3793先否定本段反抽，3768决定破坏是否放大。跨级别影响：60分钟由红转绿、DIF下穿DEA；120分钟红柱缩短、DIF仍在DEA上方。",
+                      "propagation": "跨级别影响：60分钟由红转绿、DIF下穿DEA；120分钟红柱缩短、DIF仍在DEA上方。",
+                      "simulation": {
+                        "close": 3741.11,
+                        "dif": -16.118,
+                        "dea": -6.85,
+                        "histogram": -18.536,
+                        "positiveArea": 3.414,
+                        "negativeArea": 71.584
+                      }
+                    }
+                  ]
+                }
+              },
+              "calculation": {
+                "formula": "MACD(12,26,9)，柱=2×(DIF−DEA)",
+                "defaultRhythm": "smooth",
+                "rhythms": [
+                  {
+                    "id": "early",
+                    "label": "早段冲高后横盘",
+                    "effect": "面积通常更大，但收盘柱可能缩短"
+                  },
+                  {
+                    "id": "smooth",
+                    "label": "平滑推进",
+                    "effect": "作为默认可比基准"
+                  },
+                  {
+                    "id": "late",
+                    "label": "尾段加速",
+                    "effect": "收盘柱更强，但累计面积通常较小"
+                  }
+                ],
+                "state": {
+                  "close": 3832.262,
+                  "ema12": 3830.489,
+                  "ema26": 3825.55,
+                  "dif": 4.939,
+                  "dea": 1.672,
+                  "histogram": 6.534
+                }
+              }
+            },
+            "60m": {
+              "label": "60分钟",
+              "barsPerDay": 4,
+              "current": {
+                "close": 3832.262,
+                "dif": -5.223,
+                "dea": -10.102,
+                "histogram": 9.758,
+                "difDelta": 1.332,
+                "histogramDelta": 0.225,
+                "phase": "零轴下方修复"
+              },
+              "upTargets": [
+                {
+                  "price": 3884.435,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3938.878,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3992.552,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": 1,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "dif_zero": "约半天—2天"
+                  }
+                }
+              ],
+              "downTargets": [
+                {
+                  "price": 3767.503,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 2,
+                    "dif_zero": null,
+                    "histogram_expand": null
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "当前目标位不足以完成"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 3
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                },
+                {
+                  "price": 3741.11,
+                  "bars": {
+                    "dif_turn": 1,
+                    "histogram_flip": 1,
+                    "dif_zero": null,
+                    "histogram_expand": 3
+                  },
+                  "realistic": {
+                    "dif_turn": "约半天—2天",
+                    "histogram_flip": "约半天—2天",
+                    "histogram_expand": "约半天—2天"
+                  }
+                }
+              ],
+              "chanStructure": {
+                "level": "60m",
+                "state": "down_leave_confirmed",
+                "observation": "价格位于最近中枢下方，等待首次反抽是否受制于 ZD。",
+                "riskLine": 3992.552,
+                "lastStroke": {
+                  "id": "chanpy-line-dd9f64ae4171",
+                  "level": "60m",
+                  "start_at": "2026-07-22T11:30:00",
+                  "end_at": "2026-07-30T14:00:00",
+                  "confirmed_at": "2026-07-30T15:00:00",
+                  "direction": "down",
+                  "start_price": 3884.435,
+                  "end_price": 3767.503,
+                  "stroke_count": 1,
+                  "macd_area": 8.133931034811393,
+                  "volume": 327455727000,
+                  "is_sure": true,
+                  "source_kind": "stroke",
+                  "source_index": 30
+                },
+                "lastSegment": {
+                  "id": "chanpy-line-55e82244f6c4",
+                  "level": "60m",
+                  "start_at": "2026-07-20T15:00:00",
+                  "end_at": "2026-07-22T11:30:00",
+                  "confirmed_at": "2026-07-22T11:30:00",
+                  "direction": "up",
+                  "start_price": 3741.11,
+                  "end_price": 3884.435,
+                  "stroke_count": 1,
+                  "macd_area": 71.00731799947194,
+                  "volume": 128788840300,
+                  "is_sure": false,
+                  "source_kind": "segment",
+                  "source_index": 7,
+                  "reason": "collect_left_1"
+                },
+                "activeCenter": {
+                  "id": "chanpy-center-b3a9768e949c",
+                  "level": "60m",
+                  "start_at": "2026-06-29T10:35:00",
+                  "end_at": "2026-07-10T14:00:00",
+                  "zd": 3992.552,
+                  "zg": 4074.828,
+                  "dd": 3938.878,
+                  "gg": 4143.314,
+                  "state": "active",
+                  "stroke_count": 3,
+                  "component_type": "stroke",
+                  "component_count": 3,
+                  "extension_count": 0,
+                  "promoted_from": [],
+                  "is_sure": false
+                },
+                "strokes": [
+                  {
+                    "id": "chanpy-line-d8ecfaa8b1b5",
+                    "level": "60m",
+                    "start_at": "2026-06-23T11:30:00",
+                    "end_at": "2026-06-29T10:35:00",
+                    "confirmed_at": "2026-06-29T13:05:00",
+                    "direction": "down",
+                    "start_price": 4175.348,
+                    "end_price": 3992.552,
+                    "stroke_count": 1,
+                    "macd_area": 171.37657874403402,
+                    "volume": 259699972800,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 24
+                  },
+                  {
+                    "id": "chanpy-line-db58dc7cca8e",
+                    "level": "60m",
+                    "start_at": "2026-06-29T10:35:00",
+                    "end_at": "2026-07-01T11:30:00",
+                    "confirmed_at": "2026-07-01T14:00:00",
+                    "direction": "up",
+                    "start_price": 3992.552,
+                    "end_price": 4143.314,
+                    "stroke_count": 1,
+                    "macd_area": 32.43839628318194,
+                    "volume": 162610240500,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 25
+                  },
+                  {
+                    "id": "chanpy-line-20e7234f9d54",
+                    "level": "60m",
+                    "start_at": "2026-07-01T11:30:00",
+                    "end_at": "2026-07-09T11:30:00",
+                    "confirmed_at": "2026-07-09T14:00:00",
+                    "direction": "down",
+                    "start_price": 4143.314,
+                    "end_price": 3938.878,
+                    "stroke_count": 1,
+                    "macd_area": 184.46405249797692,
+                    "volume": 356423641600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 26
+                  },
+                  {
+                    "id": "chanpy-line-0657f2b69f15",
+                    "level": "60m",
+                    "start_at": "2026-07-09T11:30:00",
+                    "end_at": "2026-07-10T14:00:00",
+                    "confirmed_at": "2026-07-10T15:00:00",
+                    "direction": "up",
+                    "start_price": 3938.878,
+                    "end_price": 4074.828,
+                    "stroke_count": 1,
+                    "macd_area": 56.53480746048905,
+                    "volume": 84672477900,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 27
+                  },
+                  {
+                    "id": "chanpy-line-b6feff80ccba",
+                    "level": "60m",
+                    "start_at": "2026-07-10T14:00:00",
+                    "end_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T10:30:00",
+                    "direction": "down",
+                    "start_price": 4074.828,
+                    "end_price": 3741.11,
+                    "stroke_count": 1,
+                    "macd_area": 291.99688116719733,
+                    "volume": 386493937600,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 28
+                  },
+                  {
+                    "id": "chanpy-line-4966915a61a1",
+                    "level": "60m",
+                    "start_at": "2026-07-20T15:00:00",
+                    "end_at": "2026-07-22T11:30:00",
+                    "confirmed_at": "2026-07-22T14:00:00",
+                    "direction": "up",
+                    "start_price": 3741.11,
+                    "end_price": 3884.435,
+                    "stroke_count": 1,
+                    "macd_area": 71.00731799947194,
+                    "volume": 128788840300,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 29
+                  },
+                  {
+                    "id": "chanpy-line-dd9f64ae4171",
+                    "level": "60m",
+                    "start_at": "2026-07-22T11:30:00",
+                    "end_at": "2026-07-30T14:00:00",
+                    "confirmed_at": "2026-07-30T15:00:00",
+                    "direction": "down",
+                    "start_price": 3884.435,
+                    "end_price": 3767.503,
+                    "stroke_count": 1,
+                    "macd_area": 8.133931034811393,
+                    "volume": 327455727000,
+                    "is_sure": true,
+                    "source_kind": "stroke",
+                    "source_index": 30
+                  }
+                ],
+                "pivots": [
+                  {
+                    "id": "chanpy-pivot-06dc67c717a2",
+                    "level": "60m",
+                    "kind": "top",
+                    "event_at": "2026-06-09T15:00:00",
+                    "confirmed_at": "2026-06-10T10:30:00",
+                    "price": 4010.872,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-84304664eac7",
+                    "level": "60m",
+                    "kind": "bottom",
+                    "event_at": "2026-06-11T11:30:00",
+                    "confirmed_at": "2026-06-11T14:00:00",
+                    "price": 3958.437,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-025df410a4e9",
+                    "level": "60m",
+                    "kind": "top",
+                    "event_at": "2026-06-23T11:30:00",
+                    "confirmed_at": "2026-06-23T14:00:00",
+                    "price": 4175.348,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-ac38e08cf6af",
+                    "level": "60m",
+                    "kind": "bottom",
+                    "event_at": "2026-06-29T10:35:00",
+                    "confirmed_at": "2026-06-29T13:05:00",
+                    "price": 3992.552,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-b56e587fceef",
+                    "level": "60m",
+                    "kind": "top",
+                    "event_at": "2026-07-01T11:30:00",
+                    "confirmed_at": "2026-07-01T14:00:00",
+                    "price": 4143.314,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-23c43e8b5b43",
+                    "level": "60m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-09T11:30:00",
+                    "confirmed_at": "2026-07-09T14:00:00",
+                    "price": 3938.878,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-a9d92722a774",
+                    "level": "60m",
+                    "kind": "top",
+                    "event_at": "2026-07-10T14:00:00",
+                    "confirmed_at": "2026-07-10T15:00:00",
+                    "price": 4074.828,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-f4fc092f5379",
+                    "level": "60m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-20T15:00:00",
+                    "confirmed_at": "2026-07-21T10:30:00",
+                    "price": 3741.11,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-abea9a3db920",
+                    "level": "60m",
+                    "kind": "top",
+                    "event_at": "2026-07-22T11:30:00",
+                    "confirmed_at": "2026-07-22T14:00:00",
+                    "price": 3884.435,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  },
+                  {
+                    "id": "chanpy-pivot-03e50ceb26e4",
+                    "level": "60m",
+                    "kind": "bottom",
+                    "event_at": "2026-07-30T14:00:00",
+                    "confirmed_at": "2026-07-30T15:00:00",
+                    "price": 3767.503,
+                    "is_sure": true,
+                    "source_kind": "stroke"
+                  }
+                ],
+                "centers": [
+                  {
+                    "id": "chanpy-center-02132d1a915a",
+                    "level": "60m",
+                    "start_at": "2026-02-04T15:00:00",
+                    "end_at": "2026-02-13T15:00:00",
+                    "zd": 4079.77,
+                    "zg": 4104.621,
+                    "dd": 4029.973,
+                    "gg": 4142.561,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  },
+                  {
+                    "id": "chanpy-center-99dd543834e9",
+                    "level": "60m",
+                    "start_at": "2026-05-19T10:30:00",
+                    "end_at": "2026-05-25T15:00:00",
+                    "zd": 4107.994,
+                    "zg": 4153.879,
+                    "dd": 4067.747,
+                    "gg": 4199.527,
+                    "state": "completed",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": true
+                  },
+                  {
+                    "id": "chanpy-center-b3a9768e949c",
+                    "level": "60m",
+                    "start_at": "2026-06-29T10:35:00",
+                    "end_at": "2026-07-10T14:00:00",
+                    "zd": 3992.552,
+                    "zg": 4074.828,
+                    "dd": 3938.878,
+                    "gg": 4143.314,
+                    "state": "active",
+                    "stroke_count": 3,
+                    "component_type": "stroke",
+                    "component_count": 3,
+                    "extension_count": 0,
+                    "promoted_from": [],
+                    "is_sure": false
+                  }
+                ],
+                "signals": [
+                  {
+                    "id": "chanpy-signal-36faa3b992cf",
+                    "level": "60m",
+                    "label": "2S",
+                    "display_label": "笔S2",
+                    "side": "sell",
+                    "price": 4141.649,
+                    "confidence": 0.72,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 4141.649,
+                    "risk_guard": 4197.228,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-03-12T10:30:00",
+                      "detected_at": "2026-03-12T11:30:00",
+                      "confirmed_at": "2026-03-12T11:30:00",
+                      "invalidated_at": "2026-05-11T10:30:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2"
+                      ],
+                      "primary_type": "2",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 69,
+                        "end": 75,
+                        "startTime": "2026-03-03T10:30:00",
+                        "endTime": "2026-03-04T14:00:00",
+                        "startValue": 4197.228,
+                        "endValue": 4055.412,
+                        "direction": "down",
+                        "bars": 7,
+                        "priceMove": 141.81600000000026,
+                        "macdArea": 65.84076871030408,
+                        "macdPeak": 23.23747085116402,
+                        "difExtreme": 9.028005299807774,
+                        "volumeTotal": 156429843700,
+                        "volumeAverage": 22347120528.57143,
+                        "amountAverage": 336505545874.2857
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 75,
+                        "end": 97,
+                        "startTime": "2026-03-04T14:00:00",
+                        "endTime": "2026-03-12T10:30:00",
+                        "startValue": 4055.412,
+                        "endValue": 4141.649,
+                        "direction": "up",
+                        "bars": 23,
+                        "priceMove": 86.23700000000053,
+                        "macdArea": 56.998710097615316,
+                        "macdPeak": 9.686124007880613,
+                        "difExtreme": 2.776105039562026,
+                        "volumeTotal": 412830975800,
+                        "volumeAverage": 17949172860.869564,
+                        "amountAverage": 268731655924.86957
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 0.608090765498959,
+                        "macd_area": 0.8657054164784534,
+                        "macd_peak": 0.4168321100829014,
+                        "dif_extreme": 0.3074992700348919,
+                        "volume_average": 0.8031984629930748
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2_retrace_rate": 0.608090765498959,
+                        "bsp2_break_bi_amp": 141.81600000000026,
+                        "bsp2_bi_amp": 86.23700000000053,
+                        "bsp_bi_amp": 86.23700000000053
+                      },
+                      "line_index": 7,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 5,
+                        "status": "invalidated",
+                        "parent_signal_id": "chanpy-signal-03fcfda9e39d",
+                        "parent_display_label": "笔S1",
+                        "parent_event_at": "2026-03-03T10:30:00",
+                        "parent_state": "invalidated",
+                        "status_label": "关联一类点已失效",
+                        "conclusion": "关联一类点后来跌破或升破风险线，依赖它的二类点已退出当前有效信号。"
+                      },
+                      "native_type": "2",
+                      "scope": "stroke",
+                      "lifecycle_audit": {
+                        "risk_guard": 4197.228,
+                        "rule": "收盘价有效升破信号链风险线",
+                        "invalidated_at": "2026-05-11T10:30:00"
+                      }
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-bdc4c015d766",
+                    "level": "60m",
+                    "label": "1B",
+                    "display_label": "笔B1p",
+                    "side": "buy",
+                    "price": 3927.853,
+                    "confidence": 0.45,
+                    "divergence_class": "consolidation_divergence",
+                    "structure_guard": 3927.853,
+                    "risk_guard": 3927.853,
+                    "lifecycle": {
+                      "state": "candidate",
+                      "event_at": "2026-06-08T14:00:00",
+                      "detected_at": "2026-06-09T10:30:00",
+                      "confirmed_at": null,
+                      "invalidated_at": null,
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "1p"
+                      ],
+                      "primary_type": "1p",
+                      "comparison_kind": "divergence",
+                      "basis": "盘整背驰比较相隔一段反向走势的前后两段同向结构。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 292,
+                        "end": 313,
+                        "startTime": "2026-05-25T15:00:00",
+                        "endTime": "2026-06-02T10:30:00",
+                        "startValue": 4153.879,
+                        "endValue": 4032.583,
+                        "direction": "down",
+                        "bars": 22,
+                        "priceMove": 121.29599999999982,
+                        "macdArea": 65.76573659561635,
+                        "macdPeak": 7.610046207316117,
+                        "difExtreme": 18.072166408482644,
+                        "volumeTotal": 376861418000,
+                        "volumeAverage": 17130064454.545454,
+                        "amountAverage": 363560334429.0909
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 320,
+                        "end": 331,
+                        "startTime": "2026-06-03T15:00:00",
+                        "endTime": "2026-06-08T14:00:00",
+                        "startValue": 4107.046,
+                        "endValue": 3927.853,
+                        "direction": "down",
+                        "bars": 12,
+                        "priceMove": 179.1930000000002,
+                        "macdArea": 52.186357999908395,
+                        "macdPeak": 21.928394509644832,
+                        "difExtreme": 27.175503678012774,
+                        "volumeTotal": 198262865300,
+                        "volumeAverage": 16521905441.666666,
+                        "amountAverage": 333195531605.3333
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 1.4773199445983418,
+                        "macd_area": 0.7935189462074224,
+                        "macd_peak": 2.8815060923760747,
+                        "dif_extreme": 1.503721416888749,
+                        "volume_average": 0.9644975642390293
+                      },
+                      "divergence_audit": {
+                        "status": "insufficient",
+                        "status_label": "证据不足",
+                        "price_extension": true,
+                        "momentum_votes": 1,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": true,
+                        "macd_peak_weakening": false,
+                        "dif_weakening": false,
+                        "volume_contracting": true,
+                        "conclusion": "仅一项动能证据明确减弱。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "divergence_rate": 3.0132330524096895,
+                        "bsp1_bi_amp": 179.1930000000002,
+                        "bsp_bi_amp": 179.1930000000002
+                      },
+                      "line_index": 20,
+                      "dependency": null,
+                      "native_type": "1p",
+                      "scope": "stroke"
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-627b826cf862",
+                    "level": "60m",
+                    "label": "2B",
+                    "display_label": "笔B2",
+                    "side": "buy",
+                    "price": 3958.437,
+                    "confidence": 0.45,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 3958.437,
+                    "risk_guard": 3927.853,
+                    "lifecycle": {
+                      "state": "candidate",
+                      "event_at": "2026-06-11T11:30:00",
+                      "detected_at": "2026-06-11T14:00:00",
+                      "confirmed_at": null,
+                      "invalidated_at": null,
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2"
+                      ],
+                      "primary_type": "2",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 331,
+                        "end": 336,
+                        "startTime": "2026-06-08T14:00:00",
+                        "endTime": "2026-06-09T15:00:00",
+                        "startValue": 3927.853,
+                        "endValue": 4010.872,
+                        "direction": "up",
+                        "bars": 6,
+                        "priceMove": 83.01899999999978,
+                        "macdArea": 0,
+                        "macdPeak": 0,
+                        "difExtreme": 27.175503678012774,
+                        "volumeTotal": 83528284100,
+                        "volumeAverage": 13921380683.333334,
+                        "amountAverage": 273130061824
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 336,
+                        "end": 342,
+                        "startTime": "2026-06-09T15:00:00",
+                        "endTime": "2026-06-11T11:30:00",
+                        "startValue": 4010.872,
+                        "endValue": 3958.437,
+                        "direction": "down",
+                        "bars": 7,
+                        "priceMove": 52.434999999999945,
+                        "macdArea": 8.406776558506891,
+                        "macdPeak": 4.6523352972499055,
+                        "difExtreme": 27.99725468476936,
+                        "volumeTotal": 107619575500,
+                        "volumeAverage": 15374225071.428572,
+                        "amountAverage": 313620795977.1429
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 0.6316024042689034,
+                        "macd_area": null,
+                        "macd_peak": null,
+                        "dif_extreme": 1.0302386670176586,
+                        "volume_average": 1.1043606536695445
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2_retrace_rate": 0.6316024042689034,
+                        "bsp2_break_bi_amp": 83.01899999999978,
+                        "bsp2_bi_amp": 52.434999999999945,
+                        "bsp_bi_amp": 52.434999999999945
+                      },
+                      "line_index": 22,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 20,
+                        "status": "pending",
+                        "parent_signal_id": "chanpy-signal-bdc4c015d766",
+                        "parent_display_label": "笔B1p",
+                        "parent_event_at": "2026-06-08T14:00:00",
+                        "parent_state": "candidate",
+                        "status_label": "关联一类点仍是候选",
+                        "conclusion": "关联一类点尚未通过严格复核，依赖它的二类点只能保留为候选。"
+                      },
+                      "native_type": "2",
+                      "scope": "stroke"
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-5e89176f16bd",
+                    "level": "60m",
+                    "label": "1B",
+                    "display_label": "笔B1",
+                    "side": "buy",
+                    "price": 3741.11,
+                    "confidence": 0.45,
+                    "divergence_class": "trend_divergence",
+                    "structure_guard": 4074.828,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-20T15:00:00",
+                      "detected_at": "2026-07-21T10:30:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-21T10:30:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "1"
+                      ],
+                      "primary_type": "1",
+                      "comparison_kind": "divergence",
+                      "basis": "比较最后一个中枢的进入段与离开段；价格创新值且至少两项动能证据明确减弱才确认背驰。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 370,
+                        "end": 385,
+                        "startTime": "2026-06-23T11:30:00",
+                        "endTime": "2026-06-29T10:35:00",
+                        "startValue": 4175.348,
+                        "endValue": 3992.552,
+                        "direction": "down",
+                        "bars": 16,
+                        "priceMove": 182.79599999999982,
+                        "macdArea": 171.37657874403402,
+                        "macdPeak": 26.33913547854601,
+                        "difExtreme": 13.13028244360703,
+                        "volumeTotal": 259699972800,
+                        "volumeAverage": 16231248300,
+                        "amountAverage": 395811351552
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 423,
+                        "end": 448,
+                        "startTime": "2026-07-10T14:00:00",
+                        "endTime": "2026-07-20T15:00:00",
+                        "startValue": 4074.828,
+                        "endValue": 3741.11,
+                        "direction": "down",
+                        "bars": 26,
+                        "priceMove": 333.71799999999985,
+                        "macdArea": 291.99688116719733,
+                        "macdPeak": 32.04924187998027,
+                        "difExtreme": 56.33317779128811,
+                        "volumeTotal": 386493937600,
+                        "volumeAverage": 14865151446.153847,
+                        "amountAverage": 309707281329.2308
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 1.8256307577846351,
+                        "macd_area": 1.7038318964420474,
+                        "macd_peak": 1.2167917168764066,
+                        "dif_extreme": 4.290324906050747,
+                        "volume_average": 0.9158353794731763
+                      },
+                      "divergence_audit": {
+                        "status": "unsupported",
+                        "status_label": "不支持背驰",
+                        "price_extension": true,
+                        "momentum_votes": 0,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": false,
+                        "macd_peak_weakening": false,
+                        "dif_weakening": false,
+                        "volume_contracting": true,
+                        "conclusion": "动能证据没有明确减弱。"
+                      },
+                      "center": {
+                        "id": "chanpy-center-8d71adc7a1dc",
+                        "level": "native",
+                        "start_at": "2026-06-29T10:35:00",
+                        "end_at": "2026-07-10T14:00:00",
+                        "zd": 3992.552,
+                        "zg": 4074.828,
+                        "dd": 3938.878,
+                        "gg": 4143.314,
+                        "state": "active",
+                        "stroke_count": 3,
+                        "component_type": "stroke",
+                        "component_count": 3,
+                        "extension_count": 0,
+                        "promoted_from": [],
+                        "is_sure": false
+                      },
+                      "native_features": {
+                        "divergence_rate": 1.2167917168763422,
+                        "zs_cnt": 1,
+                        "bsp_bi_amp": 333.71799999999985
+                      },
+                      "line_index": 28,
+                      "dependency": null,
+                      "native_type": "1",
+                      "scope": "stroke"
+                    }
+                  },
+                  {
+                    "id": "chanpy-signal-06285d1ad16c",
+                    "level": "60m",
+                    "label": "2B",
+                    "display_label": "笔B2",
+                    "side": "buy",
+                    "price": 3767.503,
+                    "confidence": 0.45,
+                    "divergence_class": "structural_retest",
+                    "structure_guard": 3767.503,
+                    "risk_guard": 3741.11,
+                    "lifecycle": {
+                      "state": "invalidated",
+                      "event_at": "2026-07-30T14:00:00",
+                      "detected_at": "2026-07-30T15:00:00",
+                      "confirmed_at": null,
+                      "invalidated_at": "2026-07-30T15:00:00",
+                      "expired_at": null
+                    },
+                    "evidence": {
+                      "engine": "chan.py",
+                      "engine_commit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                      "native_types": [
+                        "2"
+                      ],
+                      "primary_type": "2",
+                      "comparison_kind": "retrace",
+                      "basis": "二类点检查一类点后的回撤或反抽是否守住结构保护价；正式确认还要求关联一类点通过严格复核。",
+                      "reference": {
+                        "name": "对照段",
+                        "start": 448,
+                        "end": 454,
+                        "startTime": "2026-07-20T15:00:00",
+                        "endTime": "2026-07-22T11:30:00",
+                        "startValue": 3741.11,
+                        "endValue": 3884.435,
+                        "direction": "up",
+                        "bars": 7,
+                        "priceMove": 143.32499999999982,
+                        "macdArea": 71.00731799947194,
+                        "macdPeak": 28.384761841750276,
+                        "difExtreme": 25.55596347163646,
+                        "volumeTotal": 128788840300,
+                        "volumeAverage": 18398405757.142857,
+                        "amountAverage": 356924485046.8571
+                      },
+                      "test": {
+                        "name": "检验段",
+                        "start": 454,
+                        "end": 479,
+                        "startTime": "2026-07-22T11:30:00",
+                        "endTime": "2026-07-30T14:00:00",
+                        "startValue": 3884.435,
+                        "endValue": 3767.503,
+                        "direction": "down",
+                        "bars": 26,
+                        "priceMove": 116.93199999999979,
+                        "macdArea": 8.133931034811393,
+                        "macdPeak": 3.459764008987257,
+                        "difExtreme": 25.55596347163646,
+                        "volumeTotal": 327455727000,
+                        "volumeAverage": 12594451038.461538,
+                        "amountAverage": 239469662523.07693
+                      },
+                      "third_structure": null,
+                      "ratios": {
+                        "price_move": 0.8158520844235125,
+                        "macd_area": 0.11455060216289092,
+                        "macd_peak": 0.12188807601332051,
+                        "dif_extreme": 1,
+                        "volume_average": 0.6845403457618584
+                      },
+                      "divergence_audit": {
+                        "status": "not_applicable",
+                        "status_label": "非背驰类结构点",
+                        "price_extension": null,
+                        "momentum_votes": null,
+                        "required_votes": 2,
+                        "weakening_ratio": 0.85,
+                        "macd_area_weakening": null,
+                        "macd_peak_weakening": null,
+                        "dif_weakening": null,
+                        "volume_contracting": null,
+                        "conclusion": "该类型不以背驰作为直接成立条件。"
+                      },
+                      "center": null,
+                      "native_features": {
+                        "bsp2_retrace_rate": 0.8158520844235125,
+                        "bsp2_break_bi_amp": 143.32499999999982,
+                        "bsp2_bi_amp": 116.93199999999979,
+                        "bsp_bi_amp": 116.93199999999979
+                      },
+                      "line_index": 30,
+                      "dependency": {
+                        "required": true,
+                        "parent_line_index": 28,
+                        "status": "invalidated",
+                        "parent_signal_id": "chanpy-signal-5e89176f16bd",
+                        "parent_display_label": "笔B1",
+                        "parent_event_at": "2026-07-20T15:00:00",
+                        "parent_state": "invalidated",
+                        "status_label": "关联一类点已失效",
+                        "conclusion": "关联一类点后来跌破或升破风险线，依赖它的二类点已退出当前有效信号。"
+                      },
+                      "native_type": "2",
+                      "scope": "stroke"
+                    }
+                  }
+                ],
+                "summary": {
+                  "bars": 485,
+                  "pivots": 32,
+                  "strokes": 31,
+                  "confirmed_strokes": 31,
+                  "segments": 8,
+                  "confirmed_segments": 4,
+                  "higher_segments": 4,
+                  "centers": 3,
+                  "segment_centers": 0,
+                  "signals": 0,
+                  "signal_history": 6,
+                  "strict_first_signals": 1
+                },
+                "provenance": {
+                  "engine": "chan.py",
+                  "engineCommit": "429d6ed3043e27c93a003ba2b10e70a05575e1f5",
+                  "calculationLevel": "60m",
+                  "sameLevelBars": true,
+                  "enumMode": "native-60m-enum"
+                }
+              },
+              "pathStages": [
+                {
+                  "stage": "修复准备",
+                  "tone": "repair",
+                  "condition": "红柱不连续缩短，DIF继续抬升；回踩不失3768",
+                  "judgment": "只说明卖压或下行动量衰减，尚未构成修复确认。"
+                },
+                {
+                  "stage": "修复触发",
+                  "tone": "repair",
+                  "condition": "本级别K线收回3884，同时MACD柱不再恶化",
+                  "judgment": "修复路径启动；按当前量能更现实的时间为约半天—2天。"
+                },
+                {
+                  "stage": "修复确认",
+                  "tone": "repair",
+                  "condition": "连续两根本级别K线收在3939上方，或DIF上穿DEA且红柱持续扩张",
+                  "judgment": "修复获得价格或动量确认，下一观察位上移至3993；约半天—2天。"
+                },
+                {
+                  "stage": "修复放大",
+                  "tone": "repair",
+                  "condition": "站稳3993，红柱继续扩张，成交额不低于约0.97倍20期均量",
+                  "judgment": "才把修复升级为趋势扩展；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌触发",
+                  "tone": "damage",
+                  "condition": "本级别K线收盘跌破3768",
+                  "judgment": "破坏路径启动；盘中刺破但收回，不算下跌确认。"
+                },
+                {
+                  "stage": "下跌确认",
+                  "tone": "damage",
+                  "condition": "连续两根本级别K线收在3768下方，或DIF继续下行且绿柱持续扩大",
+                  "judgment": "下跌获得价格或动量确认，修复路径失效。"
+                },
+                {
+                  "stage": "下跌放大",
+                  "tone": "damage",
+                  "condition": "跌破前低并继续创新低，同时绿柱继续扩大",
+                  "judgment": "才把下方目标进一步移至3741；参考时间：约半天—2天。"
+                },
+                {
+                  "stage": "下跌收回",
+                  "tone": "neutral",
+                  "condition": "跌破后绿柱停止扩大，并重新收回3884",
+                  "judgment": "破坏未能放大，转入3768—3939区间修复。"
+                }
+              ],
+              "phaseAssessment": {
+                "label": "下行笔后的反抽准备，等待新向上笔验证",
+                "summary": "MACD转好只说明下行动能衰减；价格尚未满足本级别结构确认。",
+                "role": "持续性结构",
+                "roleText": "用60分钟自身笔与中枢判断修复能否跨日延续",
+                "nativeChan": true
+              },
+              "paths": {
+                "source": "same-level-chan-structure",
+                "timeframe": "60m",
+                "up": {
+                  "trigger": 3884.435,
+                  "confirm": 3938.878,
+                  "amplify": 3992.552,
+                  "failure": 3767.503,
+                  "label": "收回3884，确认3939，放大看3993"
+                },
+                "range": {
+                  "lower": 3767.503,
+                  "upper": 3938.878,
+                  "label": "3768—3939内止跌与换手"
                 },
                 "down": {
                   "trigger": 3767.503,

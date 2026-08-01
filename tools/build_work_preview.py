@@ -1,4 +1,42 @@
-Warning: truncated output (original token count: 592)
-Total output lines: 1
+#!/usr/bin/env python3
+"""Build a single-file dashboard preview for environments that open HTML alone.
 
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJCdWlsZCBhIHNpbmdsZS1maWxlIGRhc2hib2FyZCBwcmV2aWV3IGZvciBlbnZpcm9ubWVudHMgdGhhdCBvcGVuIEhUTUwgYWxvbmUuCgpUaGUgcHJvZHVjdGlvbiBQYWdlcyBzaXRlIGludGVudGlvbmFsbHkga2VlcHMgQ1NTIGFuZCBkYXRhIGluIHNlcGFyYXRlIHN0YXRpYwpmaWxlcy4gU29tZSBmaWxlIHZpZXdlcnMgb25seSBvcGVuIGluZGV4Lmh0bWwgYW5kIHRoZXJlZm9yZSByZW5kZXIgdW5zdHlsZWQKdGV4dC4gVGhpcyB0b29sIGJ1bmRsZXMgdGhlIHNhbWUgYXNzZXRzIGlu…392 tokens truncated…YXRhLmpzIj48L3NjcmlwdD4nLCBmIjxzY3JpcHQ+e2lubGluZV9zY3JpcHQocmVhZCgnc2hvcnQtdGVybS1kYXRhLmpzJykpfTwvc2NyaXB0PiIpCiAgICBodG1sID0gaHRtbC5yZXBsYWNlKCc8c2NyaXB0IHNyYz0iYXBwLmpzIj48L3NjcmlwdD4nLCBmIjxzY3JpcHQ+e2lubGluZV9zY3JpcHQoYXBwKX08L3NjcmlwdD4iKQogICAgT1VUUFVULndyaXRlX3RleHQoaHRtbCwgZW5jb2Rpbmc9InV0Zi04IikKICAgIHByaW50KGYiYnVpbHQge09VVFBVVH0iKQoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICBtYWluKCkK
+The production Pages site intentionally keeps CSS and data in separate static
+files. Some file viewers only open index.html and therefore render unstyled
+text. This tool bundles the same assets into dashboard_preview.html without
+altering the production entry point.
+"""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT = ROOT / "dashboard_preview.html"
+
+
+def read(name: str) -> str:
+    return (ROOT / name).read_text(encoding="utf-8")
+
+
+def inline_script(text: str) -> str:
+    return text.replace("</script", "<\\/script")
+
+
+def main() -> None:
+    html = read("index.html")
+    styles = "\n".join(read(name) for name in ["styles.css", "overrides.css", "expert-groups.css"])
+    app = read("app.js")
+    app = app.replace('  const sheet=document.createElement("link");sheet.rel="stylesheet";sheet.href="overrides.css";document.head.appendChild(sheet);\n', "")
+    app = app.replace('  const groupSheet=document.createElement("link");groupSheet.rel="stylesheet";groupSheet.href="expert-groups.css";document.head.appendChild(groupSheet);\n', "")
+    html = html.replace('<link rel="stylesheet" href="styles.css">', f"<style>{styles}</style>")
+    html = html.replace('<script src="data.js"></script>', f"<script>{inline_script(read('data.js'))}</script>")
+    html = html.replace('<script src="short-term-data.js"></script>', f"<script>{inline_script(read('short-term-data.js'))}</script>")
+    html = html.replace('<script src="app.js"></script>', f"<script>{inline_script(app)}</script>")
+    OUTPUT.write_text(html, encoding="utf-8")
+    print(f"built {OUTPUT}")
+
+
+if __name__ == "__main__":
+    main()

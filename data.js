@@ -21643,42 +21643,42 @@ window.REPLAY_DATA={
       "semi_equipment": {
         "turnover": 897.4,
         "turnoverShare": 3.38,
-        "mainNet": null
+        "mainNet": 10.71
       },
       "semi_materials": {
         "turnover": 495.73,
         "turnoverShare": 1.87,
-        "mainNet": null
+        "mainNet": 0.61
       },
       "semi_manufacturing": {
         "turnover": 368.34,
         "turnoverShare": 1.39,
-        "mainNet": null
+        "mainNet": -10.14
       },
       "semi_design": {
         "turnover": 2713.98,
         "turnoverShare": 10.23,
-        "mainNet": null
+        "mainNet": -5.88
       },
       "semi_packaging": {
         "turnover": 730.47,
         "turnoverShare": 2.75,
-        "mainNet": null
+        "mainNet": 21.18
       },
       "elec_pcb": {
         "turnover": 1160.98,
         "turnoverShare": 4.38,
-        "mainNet": null
+        "mainNet": -15.45
       },
       "elec_passive": {
         "turnover": 293.44,
         "turnoverShare": 1.11,
-        "mainNet": null
+        "mainNet": 2.79
       },
       "elec_components": {
         "turnover": 765.7,
         "turnoverShare": 2.89,
-        "mainNet": null
+        "mainNet": 3.76
       },
       "comm_optical": {
         "turnover": 1679.9,

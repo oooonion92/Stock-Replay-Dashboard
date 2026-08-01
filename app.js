@@ -89,6 +89,19 @@
     const step=Math.max(1,Math.ceil(dates.length/8)),dateLabels=dates.map((d,i)=>(i%step===0||i===dates.length-1)?`<text x="${x(i)}" y="${h-7}" text-anchor="middle" font-size="10" fill="#667085">${d.slice(5)}</text>`:"").join("");
     return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${series.name}主力净额及较前日变化"><g font-size="10"><text x="${p.l}" y="12" fill="#667085">左轴·当日净额</text><text x="${w-p.r}" y="12" text-anchor="end" fill="${changeColor}">右轴·较前日变化</text><rect x="${p.l}" y="19" width="12" height="8" rx="2" fill="#C94A43" opacity=".62"/><text x="${p.l+17}" y="27" fill="#667085">净流入</text><rect x="${p.l+58}" y="19" width="12" height="8" rx="2" fill="#2F7D68" opacity=".62"/><text x="${p.l+75}" y="27" fill="#667085">净流出</text><line x1="${p.l+118}" y1="23" x2="${p.l+134}" y2="23" stroke="${changeColor}" stroke-width="2" stroke-dasharray="5 3"/><text x="${p.l+140}" y="27" fill="#667085">较前日变化</text></g>${grid}<line x1="${p.l}" y1="${zeroY}" x2="${w-p.r}" y2="${zeroY}" stroke="#667085" stroke-width="1.5"/>${bars}${line}${bridges}${dots}${dateLabels}</svg>`;
   }
+  function sectorHeatmap(groups,dates,metric){
+    const values=groups.flatMap(g=>dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.[metric])).filter(finite).map(Number);
+    if(!values.length)return `<div class="chart-empty">该日之前没有可用的板块资金数据</div>`;
+    const signed=metric==="mainNet",max=Math.max(...values.map(v=>Math.abs(v)),1),w=760,h=258,p={l:96,r:18,t:31,b:31},iw=w-p.l-p.r,ih=h-p.t-p.b,cw=iw/Math.max(dates.length,1),rh=ih/Math.max(groups.length,1),dateStep=Math.max(1,Math.ceil(dates.length/8));
+    const cells=groups.map((g,row)=>dates.map((date,col)=>{
+      const raw=D.sectorFlow?.[date]?.[g.id]?.[metric];if(!finite(raw))return `<rect x="${p.l+col*cw+1}" y="${p.t+row*rh+1}" width="${Math.max(cw-2,1)}" height="${Math.max(rh-2,1)}" rx="2" fill="#f2f4f7"><title>${date} ${g.name} 数据缺失</title></rect>`;
+      const v=Number(raw),strength=.16+.78*Math.sqrt(Math.abs(v)/max),fill=signed?(v>=0?"#C94A43":"#2F7D68"):"#2F77A8";
+      return `<rect x="${p.l+col*cw+1}" y="${p.t+row*rh+1}" width="${Math.max(cw-2,1)}" height="${Math.max(rh-2,1)}" rx="2" fill="${fill}" opacity="${strength}"><title>${date} ${g.name} ${metricFormat(v,metric)}</title></rect>`;
+    }).join("")+`<text x="${p.l-7}" y="${p.t+row*rh+rh/2+3}" text-anchor="end" font-size="10" fill="#475467">${g.name}</text>`).join("");
+    const labels=dates.map((date,i)=>(i%dateStep===0||i===dates.length-1)?`<text x="${p.l+i*cw+cw/2}" y="${h-7}" text-anchor="middle" font-size="10" fill="#667085">${date.slice(5)}</text>`:"").join("");
+    const legend=signed?`<text x="${p.l}" y="14" font-size="10" fill="#087443">净流出</text><rect x="${p.l+35}" y="7" width="42" height="7" rx="3" fill="#2F7D68" opacity=".68"/><text x="${p.l+84}" y="14" font-size="10" fill="#667085">绝对值越深，资金强度越高</text><rect x="${p.l+220}" y="7" width="42" height="7" rx="3" fill="#C94A43" opacity=".68"/><text x="${p.l+269}" y="14" font-size="10" fill="#b42318">净流入</text>`:`<text x="${p.l}" y="14" font-size="10" fill="#667085">颜色越深，数值越高</text>`;
+    return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="九大方向资金轮动热力图">${legend}${cells}${labels}</svg>`;
+  }
   function sectorSummary(metric,selected,parent,chosen,dates,current){
     const target=$("sectorSummary");if(!target)return;
     if(chosen.length===1){
@@ -115,10 +128,10 @@
     const highlightIds=new Set(selected==="all"?[...ranked.slice(0,3),...ranked.slice(-3)].map(x=>x.g.id):chosen.map(g=>g.id));
     const dashes=["","7 3","2 3","10 3 2 3","4 3"];
     const series=chosen.map((g,i)=>({id:g.id,name:g.name,color:g.color,values:dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.[metric]??null),emphasis:highlightIds.has(g.id),muted:selected==="all"&&!highlightIds.has(g.id),dash:selected!=="all"&&chosen.length>1?dashes[i%dashes.length]:""}));
-    $("sectorTrend").innerHTML=metric==="mainNet"&&chosen.length===1?flowComboChart(series[0],dates):chart(series,dates,{metric,includeZero:metric==="mainNet",labels:chosen.length===1,strokeWidth:1.4,dotRadius:2.2,bridgeMissing:true,aria:`板块${cfg.metrics.find(x=>x.id===metric)?.name||"资金"}趋势`});
+    $("sectorTrend").innerHTML=selected==="all"?sectorHeatmap(cfg.groups,dates,metric):metric==="mainNet"&&chosen.length===1?flowComboChart(series[0],dates):chart(series,dates,{metric,includeZero:metric==="mainNet",labels:chosen.length===1,strokeWidth:1.4,dotRadius:2.2,bridgeMissing:true,aria:`板块${cfg.metrics.find(x=>x.id===metric)?.name||"资金"}趋势`});
     const legendItems=selected==="all"?cfg.groups:selected===parent?.id?(parent.subgroups||[parent]):chosen;
     const current=legendItems.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.[metric]})).sort((a,b)=>(finite(b.v)?Number(b.v):-Infinity)-(finite(a.v)?Number(a.v):-Infinity));
-    sectorSummary(metric,selected,parent,chosen,dates,current);
+    if(selected==="all")$("sectorSummary").innerHTML="";else sectorSummary(metric,selected,parent,chosen,dates,current);
     const directionSnapshot=cfg.groups.map(g=>{
       const values=dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.mainNet??null),valid=values.filter(finite).map(Number),today=D.sectorFlow?.[d]?.[g.id]?.mainNet??null,recent=valid.slice(-3),sum3=recent.length===3?recent.reduce((a,v)=>a+v,0):null;
       const state=!finite(today)||!finite(sum3)?"数据不足":Number(today)>0&&Number(sum3)>0?"持续回流":Number(today)>0?"单日回流":Number(today)<0&&Number(sum3)<0?"持续流出":"分歧";
@@ -126,14 +139,12 @@
       return {g,v:today,sum3,state,tone};
     });
     const totalDirectionFlow=directionSnapshot.filter(item=>finite(item.v)).sort((a,b)=>Number(b.v)-Number(a.v));
-    const inflow=totalDirectionFlow.slice(0,2),outflow=totalDirectionFlow.slice(-2).reverse();
-    $("sectorFundPulse").innerHTML=totalDirectionFlow.length?`<div class="fund-pulse-side positive"><span>净流入</span>${inflow.map(item=>`<b>${esc(item.g.name)} <em>${esc(metricFormat(item.v,"mainNet"))}</em></b>`).join("")}</div><div class="fund-pulse-side negative"><span>净流出</span>${outflow.map(item=>`<b>${esc(item.g.name)} <em>${esc(metricFormat(item.v,"mainNet"))}</em></b>`).join("")}</div>`:"<span class=\"sector-insight-empty\">该日主力净额字段不可用</span>";
     const ongoing=directionSnapshot.filter(item=>item.state==="持续回流"),positive=directionSnapshot.filter(item=>finite(item.v)&&Number(item.v)>0),strongest=totalDirectionFlow[0];
     $("capitalDecision").innerHTML=totalDirectionFlow.length?`<div><span>当日流入</span><b>${positive.length}/${cfg.groups.length} 个</b></div><div><span>持续回流</span><b>${ongoing.length} 个</b></div><div><span>当日最强</span><b>${esc(strongest?.g.name||"—")}</b></div>`:"<span class=\"sector-insight-empty\">该日主力净额字段不可用</span>";
     $("sectorMatrix").innerHTML=directionSnapshot.map(item=>`<button type="button" class="sector-matrix-item ${item.tone} ${selected===item.g.id?"is-active":""}" data-direction="${item.g.id}"><i style="background:${item.g.color}"></i><span>${esc(item.g.name)}</span><b>${esc(metricFormat(item.v,"mainNet"))}</b><small>近3日 ${esc(metricFormat(item.sum3,"mainNet"))}</small><em>${esc(item.state)}</em></button>`).join("");
-    $("sectorLegend").innerHTML=current.map(({g,v})=>`<button type="button" data-sector="${g.id}" class="sector-key ${selected===g.id?"is-active":""}"><i style="background:${g.color}"></i><span>${g.name}</span><b>${metricFormat(v,metric)}</b></button>`).join("");
+    $("sectorLegend").innerHTML=selected!=="all"&&chosen.length>1?current.map(({g,v})=>`<button type="button" data-sector="${g.id}" class="sector-key ${selected===g.id?"is-active":""}"><i style="background:${g.color}"></i><span>${g.name}</span><b>${metricFormat(v,metric)}</b></button>`).join(""):"";
     const meta=cfg.metrics.find(x=>x.id===metric),missing=current.filter(x=>!finite(x.v)).length;
-    const scope=selected==="all"?"默认突出当日净流入前三与净流出前三；点击任一总方向可下钻细分。":selected===parent?.id?`${parent.name}已按细分方向拆解，并用线型辅助区分。`:`当前查看 ${chosen[0]?.name||"细分方向"}。${metric==="mainNet"?"柱体为当日净额，虚线为较前一交易日变化，分别使用左右纵轴。":""}`;
+    const scope=selected==="all"?"热力图呈现九大方向的资金轮动；点击上方任一方向卡片下钻单方向趋势。":selected===parent?.id?`${parent.name}已按细分方向拆解，并用线型辅助区分。`:`当前查看 ${chosen[0]?.name||"细分方向"}。${metric==="mainNet"?"柱体为当日净额，虚线为较前一交易日变化，分别使用左右纵轴。":""}`;
     const missingDates=dates.filter(date=>!chosen.some(g=>finite(D.sectorFlow?.[date]?.[g.id]?.[metric]))).map(date=>date.slice(5));
     $("sectorNote").textContent=`${meta.name} · ${meta.unit}；区间与市场评分日期一致。${metric==="mainNet"?"主力净额沿用全A数据源口径。":""}${scope}${missingDates.length?` ${missingDates.join("、")} 源数据缺失，图中虚线仅连接前后有效观测值。`:""}${missing?` 所选日有 ${missing} 个方向缺少有效源数据。`:""}`;
   }

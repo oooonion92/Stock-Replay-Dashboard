@@ -160,14 +160,12 @@
     $("shortTermLadder").innerHTML=ladder.map(row=>`<div class="ladder-chip"><b>${esc(row.level)}板</b><span>${esc(row.names?.length?row.names.join("、"):`${row.count}只`)}</span><em>${esc(row.count)}只</em></div>`).join("")||"<span class=\"short-term-empty\">暂无连板梯队</span>";
     const industries=item.industryRelay||[];
     if(!industries.some(row=>row.name===expandedShortIndustry))expandedShortIndustry=null;
-    $("shortTermIndustryRelay").innerHTML=industries.length?industries.map(row=>`<button type="button" class="short-term-industry-row ${row.name===expandedShortIndustry?"is-active":""}" data-short-industry="${esc(row.name)}" aria-expanded="${row.name===expandedShortIndustry}"><b>${esc(row.name)}</b><span>涨停 ${esc(row.limitUps)} · 首板 ${esc(row.firstBoards)} · 最高 ${esc(row.maxBoards)}板</span><em>炸 ${esc(row.brokenPool)}</em></button>`).join(""):"<span class=\"short-term-empty\">暂无行业扩散数据</span>";
-    const detail=$("shortTermIndustryDetail"),activeIndustry=industries.find(row=>row.name===expandedShortIndustry);
-    if(!activeIndustry){detail.hidden=true;detail.innerHTML="";}else{
-      detail.hidden=false;
-      const stocks=activeIndustry.stocks||[];
+    const detailMarkup=row=>{
+      const stocks=row.stocks||[];
       const rows=stocks.map(stock=>`<tr><td><span class="short-term-stock-kind ${stock.kind==='limitUp'?'limit-up':'broken'}">${stock.kind==='limitUp'?'涨停':'炸板'}</span></td><td><b>${esc(stock.name)}</b><small>${esc(stock.code)}</small></td><td>${esc(stock.boards?`${stock.boards}板`:"首板")}</td><td>${esc(stock.firstSeal||"—")}</td><td>${esc(stock.lastSeal||"—")}</td><td>${finite(stock.sealAmount)?`${(Number(stock.sealAmount)/1e8).toFixed(2)}亿`:"—"}</td><td>${esc(stock.breaks)}</td></tr>`).join("");
-      detail.innerHTML=`<div class="short-term-detail-head"><b>${esc(activeIndustry.name)} · ${esc(activeIndustry.limitUps)} 只涨停 / ${esc(activeIndustry.brokenPool)} 只炸板</b><button type="button" data-short-industry-close>收起</button></div><div class="short-term-detail-scroll"><table><thead><tr><th>状态</th><th>标的</th><th>梯队</th><th>首封</th><th>末封</th><th>封单</th><th>炸板</th></tr></thead><tbody>${rows||'<tr><td colspan="7">该行业暂无逐股明细</td></tr>'}</tbody></table></div>`;
-    }
+      return `<div class="short-term-industry-detail"><div class="short-term-detail-head"><b>${esc(row.name)} · ${esc(row.limitUps)} 只涨停 / ${esc(row.brokenPool)} 只炸板</b><button type="button" data-short-industry-close>收起</button></div><div class="short-term-detail-scroll"><table><thead><tr><th>状态</th><th>标的</th><th>梯队</th><th>首封</th><th>末封</th><th>封单</th><th>炸板</th></tr></thead><tbody>${rows||'<tr><td colspan="7">该行业暂无逐股明细</td></tr>'}</tbody></table></div></div>`;
+    };
+    $("shortTermIndustryRelay").innerHTML=industries.length?industries.map(row=>`<button type="button" class="short-term-industry-row ${row.name===expandedShortIndustry?"is-active":""}" data-short-industry="${esc(row.name)}" aria-expanded="${row.name===expandedShortIndustry}"><b>${esc(row.name)}</b><span>涨停 ${esc(row.limitUps)} · 首板 ${esc(row.firstBoards)} · 最高 ${esc(row.maxBoards)}板</span><em>炸 ${esc(row.brokenPool)}</em></button>${row.name===expandedShortIndustry?detailMarkup(row):""}`).join(""):"<span class=\"short-term-empty\">暂无行业扩散数据</span>";
     $("shortTermFeedback").innerHTML=[
       ["样本",`${f.sample}只`],["中位收益",signedPct(f.median)],["平均收益",signedPct(f.average)],["翻红率",pct(f.positiveRate)],["再涨停",pct(f.limitUpAgainRate)],["跌超5%",`${f.deepLoss5}只`],["最差",signedPct(f.worst)]
     ].map(([label,value])=>`<div><span>${esc(label)}</span><b>${esc(value)}</b></div>`).join("");
@@ -268,7 +266,6 @@
   }
   $("projectionTabs").addEventListener("click",event=>{const button=event.target.closest("[data-projection-timeframe]");if(!button)return;projectionTimeframe=button.dataset.projectionTimeframe;renderProjection($("dateSelect").value)});
   $("projectionDetail").addEventListener("click",event=>{const button=event.target.closest("[data-projection-checkpoint]");if(!button)return;projectionCheckpoint=button.dataset.projectionCheckpoint;renderProjection($("dateSelect").value)});
-  $("shortTermIndustryRelay").addEventListener("click",event=>{const button=event.target.closest("[data-short-industry]");if(!button)return;expandedShortIndustry=expandedShortIndustry===button.dataset.shortIndustry?null:button.dataset.shortIndustry;renderShortTerm($("dateSelect").value)});
-  $("shortTermIndustryDetail").addEventListener("click",event=>{if(event.target.closest("[data-short-industry-close]")){expandedShortIndustry=null;renderShortTerm($("dateSelect").value)}});
+  $("shortTermIndustryRelay").addEventListener("click",event=>{if(event.target.closest("[data-short-industry-close]")){expandedShortIndustry=null;renderShortTerm($("dateSelect").value);return;}const button=event.target.closest("[data-short-industry]");if(!button)return;expandedShortIndustry=expandedShortIndustry===button.dataset.shortIndustry?null:button.dataset.shortIndustry;renderShortTerm($("dateSelect").value)});
   $("dateSelect").addEventListener("change",e=>render(e.target.value));render(D.dates[D.dates.length-1]);
 })();

@@ -119,9 +119,18 @@
     const legendItems=selected==="all"?cfg.groups:selected===parent?.id?(parent.subgroups||[parent]):chosen;
     const current=legendItems.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.[metric]})).sort((a,b)=>(finite(b.v)?Number(b.v):-Infinity)-(finite(a.v)?Number(a.v):-Infinity));
     sectorSummary(metric,selected,parent,chosen,dates,current);
-    const totalDirectionFlow=cfg.groups.map(g=>({g,v:D.sectorFlow?.[d]?.[g.id]?.mainNet})).filter(item=>finite(item.v)).sort((a,b)=>Number(b.v)-Number(a.v));
+    const directionSnapshot=cfg.groups.map(g=>{
+      const values=dates.map(date=>D.sectorFlow?.[date]?.[g.id]?.mainNet??null),valid=values.filter(finite).map(Number),today=D.sectorFlow?.[d]?.[g.id]?.mainNet??null,recent=valid.slice(-3),sum3=recent.length===3?recent.reduce((a,v)=>a+v,0):null;
+      const state=!finite(today)||!finite(sum3)?"数据不足":Number(today)>0&&Number(sum3)>0?"持续回流":Number(today)>0?"单日回流":Number(today)<0&&Number(sum3)<0?"持续流出":"分歧";
+      const tone=state==="持续回流"?"inflow":state==="单日回流"?"pulse":state==="持续流出"?"outflow":"mixed";
+      return {g,v:today,sum3,state,tone};
+    });
+    const totalDirectionFlow=directionSnapshot.filter(item=>finite(item.v)).sort((a,b)=>Number(b.v)-Number(a.v));
     const inflow=totalDirectionFlow.slice(0,2),outflow=totalDirectionFlow.slice(-2).reverse();
     $("sectorFundPulse").innerHTML=totalDirectionFlow.length?`<div class="fund-pulse-side positive"><span>净流入</span>${inflow.map(item=>`<b>${esc(item.g.name)} <em>${esc(metricFormat(item.v,"mainNet"))}</em></b>`).join("")}</div><div class="fund-pulse-side negative"><span>净流出</span>${outflow.map(item=>`<b>${esc(item.g.name)} <em>${esc(metricFormat(item.v,"mainNet"))}</em></b>`).join("")}</div>`:"<span class=\"sector-insight-empty\">该日主力净额字段不可用</span>";
+    const ongoing=directionSnapshot.filter(item=>item.state==="持续回流"),positive=directionSnapshot.filter(item=>finite(item.v)&&Number(item.v)>0),strongest=totalDirectionFlow[0];
+    $("capitalDecision").innerHTML=totalDirectionFlow.length?`<div><span>当日流入</span><b>${positive.length}/${cfg.groups.length} 个</b></div><div><span>持续回流</span><b>${ongoing.length} 个</b></div><div><span>当日最强</span><b>${esc(strongest?.g.name||"—")}</b></div>`:"<span class=\"sector-insight-empty\">该日主力净额字段不可用</span>";
+    $("sectorMatrix").innerHTML=directionSnapshot.map(item=>`<button type="button" class="sector-matrix-item ${item.tone} ${selected===item.g.id?"is-active":""}" data-direction="${item.g.id}"><i style="background:${item.g.color}"></i><span>${esc(item.g.name)}</span><b>${esc(metricFormat(item.v,"mainNet"))}</b><small>近3日 ${esc(metricFormat(item.sum3,"mainNet"))}</small><em>${esc(item.state)}</em></button>`).join("");
     $("sectorLegend").innerHTML=current.map(({g,v})=>`<button type="button" data-sector="${g.id}" class="sector-key ${selected===g.id?"is-active":""}"><i style="background:${g.color}"></i><span>${g.name}</span><b>${metricFormat(v,metric)}</b></button>`).join("");
     const meta=cfg.metrics.find(x=>x.id===metric),missing=current.filter(x=>!finite(x.v)).length;
     const scope=selected==="all"?"默认突出当日净流入前三与净流出前三；点击任一总方向可下钻细分。":selected===parent?.id?`${parent.name}已按细分方向拆解，并用线型辅助区分。`:`当前查看 ${chosen[0]?.name||"细分方向"}。${metric==="mainNet"?"柱体为当日净额，虚线为较前一交易日变化，分别使用左右纵轴。":""}`;
@@ -263,6 +272,7 @@
     D.sectorFlowConfig.groups.forEach(g=>{const o=document.createElement("option");o.value=g.id;o.textContent=g.name;$("sectorSelect").appendChild(o);(g.subgroups||[]).forEach(s=>{const sub=document.createElement("option");sub.value=s.id;sub.textContent=`　${s.name}`;$("sectorSelect").appendChild(sub)})});$("sectorSelect").value="all";
     $("sectorMetricSelect").addEventListener("change",()=>renderSector($("dateSelect").value));$("sectorSelect").addEventListener("change",()=>renderSector($("dateSelect").value));
     $("sectorLegend").addEventListener("click",e=>{const b=e.target.closest("[data-sector]");if(b){$("sectorSelect").value=b.dataset.sector;renderSector($("dateSelect").value)}});
+    $("sectorMatrix").addEventListener("click",e=>{const b=e.target.closest("[data-direction]");if(b){$("sectorSelect").value=b.dataset.direction;renderSector($("dateSelect").value)}});
   }
   $("projectionTabs").addEventListener("click",event=>{const button=event.target.closest("[data-projection-timeframe]");if(!button)return;projectionTimeframe=button.dataset.projectionTimeframe;renderProjection($("dateSelect").value)});
   $("projectionDetail").addEventListener("click",event=>{const button=event.target.closest("[data-projection-checkpoint]");if(!button)return;projectionCheckpoint=button.dataset.projectionCheckpoint;renderProjection($("dateSelect").value)});

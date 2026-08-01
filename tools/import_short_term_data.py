@@ -41,6 +41,15 @@ def number(value: Any) -> int | float | None:
     return int(value) if value.is_integer() else value
 
 
+def seal_time(value: Any) -> str | None:
+    """Normalize collector time values such as 92500 / '092500' to HH:MM."""
+    value = clean(value)
+    if value is None:
+        return None
+    text = str(value).replace(".0", "").zfill(6)
+    return f"{text[:2]}:{text[2:4]}" if text.isdigit() and len(text) == 6 else None
+
+
 def summary_row(summary: pd.DataFrame, compact_date: str) -> pd.Series | None:
     if summary.empty or "交易日期" not in summary:
         return None
@@ -99,13 +108,39 @@ def load_day(day_dir: Path, summary: pd.DataFrame) -> tuple[str, dict[str, Any]]
             industry["brokenPool"] = 0
         industry["brokenPool"] = industry["brokenPool"].fillna(0).astype(int)
         industry = industry.sort_values(["limitUps", "maxBoards", "firstBoards"], ascending=[False, False, False]).head(6)
-        industry_relay = [{
-            "name": str(item["所属行业"]),
-            "limitUps": int(item["limitUps"]),
-            "firstBoards": int(item["firstBoards"]),
-            "maxBoards": int(item["maxBoards"]),
-            "brokenPool": int(item["brokenPool"]),
-        } for _, item in industry.iterrows()]
+        industry_relay = []
+        for _, item in industry.iterrows():
+            industry_name = str(item["所属行业"])
+            limit_ups = zt_pool.loc[zt_pool["所属行业"].eq(industry_name)].copy()
+            broken_pool = zb_pool.loc[zb_pool.get("所属行业", pd.Series(index=zb_pool.index, dtype="string")).eq(industry_name)].copy()
+
+            def stock_rows(frame: pd.DataFrame, kind: str) -> list[dict[str, Any]]:
+                rows: list[dict[str, Any]] = []
+                for _, stock in frame.iterrows():
+                    rows.append({
+                        "kind": kind,
+                        "code": str(stock.get("代码", "")),
+                        "name": str(stock.get("名称", "")),
+                        "boards": number(stock.get("连板数")),
+                        "firstSeal": seal_time(stock.get("首次封板时间")),
+                        "lastSeal": seal_time(stock.get("最后封板时间")),
+                        "sealAmount": number(stock.get("封板资金")),
+                        "breaks": number(stock.get("炸板次数")) or 0,
+                        "amount": number(stock.get("成交额")),
+                        "turnover": percent(stock.get("换手率")),
+                    })
+                return rows
+
+            stocks = stock_rows(limit_ups, "limitUp") + stock_rows(broken_pool, "broken")
+            stocks.sort(key=lambda stock: (stock["kind"] != "limitUp", -(stock["boards"] or 0), stock["firstSeal"] or "99:99"))
+            industry_relay.append({
+                "name": industry_name,
+                "limitUps": int(item["limitUps"]),
+                "firstBoards": int(item["firstBoards"]),
+                "maxBoards": int(item["maxBoards"]),
+                "brokenPool": int(item["brokenPool"]),
+                "stocks": stocks,
+            })
 
     success_states = {"success", "success_empty"}
     state = "complete" if status.get("state", pd.Series(dtype="string")).isin(success_states).all() else "partial"

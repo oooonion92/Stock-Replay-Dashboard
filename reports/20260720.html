@@ -172,6 +172,19 @@
     @media (max-width: 520px) {
       .levels { grid-template-columns: 1fr; }
     }
+
+    .market-score-dimension { border: 1px solid var(--line); border-radius: 8px; padding: 10px; background: #fbfcfe; }
+    .market-score-dimension > small { display:block; color:var(--muted); font-size:12px; }
+    .market-score-dimension > b { display:block; margin:4px 0 8px; font-size:22px; }
+    .score-component-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; }
+    .score-component { position:relative; display:flex; justify-content:space-between; gap:8px; padding:6px 7px; border:1px solid var(--line); border-radius:6px; background:#fff; cursor:help; }
+    .component-label { font-style:normal; font-size:12px; color:#475467; }
+    .component-value { font-size:14px; }
+    .score-tooltip { display:none; position:absolute; z-index:5; left:0; top:calc(100% + 5px); width:240px; padding:9px; border:1px solid var(--line); border-radius:7px; background:#fff; box-shadow:var(--shadow); font-size:12px; }
+    .score-tooltip b,.score-tooltip em { display:block; margin-top:3px; font-style:normal; }
+    .score-component:hover .score-tooltip,.score-component:focus .score-tooltip { display:block; }
+    @media (max-width:520px) { .score-component-list { grid-template-columns:1fr; } }
+
   </style>
 <style>/* Work responsive refinement: canonical layout matched to the 2026-07-10 report. */
 /* Mobile hierarchy is flat by design; keep this asset as the single source of truth. */
@@ -348,18 +361,14 @@
             <b>盘面与题材复盘</b>
             <span>结构、全市场题材、跟踪对象判断合并阅读。</span>
           </div>
-          
+
     <section class="market-score-panel">
       <div class="market-score-main">
-        <div><small>大盘总闸评分</small><strong>24</strong><span class="score-pill score-ban">风险释放</span></div>
-        <div><small>情绪面</small><b>13 / 50</b></div>
-        <div><small>技术面</small><b>11 / 50</b></div>
+        <div class="market-score-total"><div class="market-score-total-head"><small>大盘总闸评分</small><strong>22</strong><span class="score-pill score-ban">风险释放</span></div><div class="market-score-total-notes"><p><b>跨日情绪</b><span>样本33只，收盘中位+1.61%、收红51.5%；最终再封7只（21.2%）、炸板未回封7只（21.2%）、收益低于+2%占54.5%，再封中曾炸板占85.7%。 封板率58.24%、1进2 25.00%；最终封板中62.26%曾炸板，平均炸板2.23次。</span></p><p><b>评分结论</b><span>情绪面 12/50，技术面 10/50（结构与级别 0/20；30m动量 5/12；关键位 5/10；指数成交确认 0/8），总分 22/100。</span></p></div></div>
+        <div class="market-score-dimension sentiment-dimension"><small>情绪面</small><b>12 / 50</b><div class="score-component-list sentiment-components"><span class="score-component" tabindex="0" aria-label="强势股质量7分。25分：昨日涨停股的收盘溢价、收红率、再封比例、低收益比例与炸板未回封共同决定。 当日依据：样本33只，收盘中位+1.61%、收红51.5%；最终再封7只（21.2%）、炸板未回封7只（21.2%）、收益低于+2%占54.5%，再封中曾炸板占85.7%。"><i class="component-label">强势股质量</i><b class="component-value">7</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>25分：昨日涨停股的收盘溢价、收红率、再封比例、低收益比例与炸板未回封共同决定。</em><b>当日依据</b><em>样本33只，收盘中位+1.61%、收红51.5%；最终再封7只（21.2%）、炸板未回封7只（21.2%）、收益低于+2%占54.5%，再封中曾炸板占85.7%。</em></span></span><span class="score-component" tabindex="0" aria-label="封板质量5分。25分：封板率、1进2、最终封板前炸板比例、平均炸板次数与跌停环境共同决定。 当日依据：封板率58.24%、1进2 25.00%；最终封板中62.26%曾炸板，平均炸板2.23次。"><i class="component-label">封板质量</i><b class="component-value">5</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>25分：封板率、1进2、最终封板前炸板比例、平均炸板次数与跌停环境共同决定。</em><b>当日依据</b><em>封板率58.24%、1进2 25.00%；最终封板中62.26%曾炸板，平均炸板2.23次。</em></span></span></div></div>
+        <div class="market-score-dimension technical-dimension"><small>技术面</small><b>10 / 50</b><div class="score-component-list technical-components"><span class="score-component" tabindex="0" aria-label="结构与级别0分。20分：以30分钟结构为主，5分钟只作为执行位置；结构级别越清晰，得分越高。 当日依据：缠论30分钟决策层仍为向下离开确认：最新30分钟笔自3981.67向下延伸至3741.11，4019.22—4073.88旧中枢只作远端失败线；5分钟尾盘自3741.11反抽并收回3762.86，但仍受3820.77—3831.66压制。30分钟DIF为-37.74、MACD刚回正0.88且斜率微升，只能说明下跌动量暂时降速，不能据此确认反转。"><i class="component-label">结构与级别</i><b class="component-value">0</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>20分：以30分钟结构为主，5分钟只作为执行位置；结构级别越清晰，得分越高。</em><b>当日依据</b><em>缠论30分钟决策层仍为向下离开确认：最新30分钟笔自3981.67向下延伸至3741.11，4019.22—4073.88旧中枢只作远端失败线；5分钟尾盘自3741.11反抽并收回3762.86，但仍受3820.77—3831.66压制。30分钟DIF为-37.74、MACD刚回正0.88且斜率微升，只能说明下跌动量暂时降速，不能据此确认反转。</em></span></span><span class="score-component" tabindex="0" aria-label="30m动量5分。12分：依据30分钟DIF、DEA与MACD柱的方向、位置和扩张程度。 当日依据：依据当天30分钟 DIF、DEA、柱体方向及动量扩张或衰减。"><i class="component-label">30m动量</i><b class="component-value">5</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>12分：依据30分钟DIF、DEA与MACD柱的方向、位置和扩张程度。</em><b>当日依据</b><em>依据当天30分钟 DIF、DEA、柱体方向及动量扩张或衰减。</em></span></span><span class="score-component" tabindex="0" aria-label="关键位5分。10分：依据收盘对中枢、确认位和失效位的站上、受阻或跌破。 当日依据：依据当天收盘与中枢、确认位、失效位的相对位置。"><i class="component-label">关键位</i><b class="component-value">5</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>10分：依据收盘对中枢、确认位和失效位的站上、受阻或跌破。</em><b>当日依据</b><em>依据当天收盘与中枢、确认位、失效位的相对位置。</em></span></span><span class="score-component" tabindex="0" aria-label="指数成交确认0分。8分：只用指数成交额的历史分位确认，不混入全A宽度或资金流。 当日依据：依据当日指数成交额的可比历史分位。"><i class="component-label">指数成交确认</i><b class="component-value">0</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>8分：只用指数成交额的历史分位确认，不混入全A宽度或资金流。</em><b>当日依据</b><em>依据当日指数成交额的可比历史分位。</em></span></span></div></div>
       </div>
-      <p><b>跨日情绪：</b>昨日涨超5%共 69 只，今日开盘中位 -0.60%，收盘中位 +3.07%，57% 收红；昨日跌停 221 只，7% 收红，92% 盘中回到 -3% 以上，81% 再跌超5%。</p>
-      <p><b>评分结论：</b>强势股次日表现有所修复，但昨日跌停股今日收盘中位-9.98%，81%再跌超5%，亏钱效应维持-10分；指数30分钟仍处于向下离开，总闸维持24分。</p>
-      <div class="market-score-components"><span title="情绪基准：10（范围 10）">情绪基准 10</span><span title="宽度：1（范围 15）">宽度 1</span><span title="当日赚钱：2（范围 10）">当日赚钱 2</span><span title="强势股次日溢价：1（范围 -4~+4）">强势股次日溢价 1</span><span title="亏钱效应：-10（范围 -10~0）">亏钱效应 -10</span><span title="主线一致：5（范围 8）">主线一致 5</span><span title="高手情绪：4（范围 11）">高手情绪 4</span><span title="5m位置：0（范围 15）">5m位置 0</span><span title="30m动量：5（范围 12）">30m动量 5</span><span title="关键位：4（范围 8）">关键位 4</span><span title="量价：0（范围 8）">量价 0</span><span title="路径质量：2（范围 7）">路径质量 2</span></div>
     </section>
-          
     <div class="market-overview">
       <b>大盘总体分析</b>
       <div class="overview-grid">
@@ -382,12 +391,12 @@
               <strong>红：站稳3821并突破3832</strong>
               <span>要求上涨家数占比同步回到50%以上，科技容量核心收回VWAP，才把尾盘护盘升级为结构修复。；先等突破后的回踩确认；09:30—10:00不追第一波急拉，4019未收回前仍是下跌结构中的反弹。</span>
             </div>
-            
+
             <div class="path-mini gate-yellow">
               <strong>黄：守住3763并在3763—3821震荡</strong>
               <span>只按急跌后的弱修复处理，观察宽度是否改善以及科技跌停是否收敛。；只保留能守住VWAP、缩小指数跌幅并形成回踩确认的标的，验证优先于抄底。</span>
             </div>
-            
+
             <div class="path-mini gate-blue">
               <strong>蓝：跌破3741且不能快速收回</strong>
               <span>暂停所有新增试错，不在流动性出清阶段用补仓替代风险纪律。；PCB与半导体若继续放大指数跌幅，等待新5分钟中枢和30分钟降速证据出现。</span>
@@ -396,8 +405,8 @@
         </section>
       </div>
     </div>
-    
-          
+
+
     <div class="market-ecology">
       <b>题材生态</b>
       <div class="breadth-grid">
@@ -414,31 +423,31 @@
           <span>均涨 +7.70% · 涨停 2 · >=5% 3 · 成交 37.4亿</span>
           <span class="theme-leaders">领涨：通源石油、博迈科、中油工程、海油工程、惠博普</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>油气开采</strong>
           <span>均涨 +7.02% · 涨停 1 · >=5% 5 · 成交 97.2亿</span>
           <span class="theme-leaders">领涨：中国海油、首华燃气、蓝焰控股、ST洲际、中国石油、新天然气</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>火力发电</strong>
           <span>均涨 +6.66% · 涨停 11 · >=5% 18 · 成交 332.9亿</span>
           <span class="theme-leaders">领涨：华能蒙电、华银电力、建投能源、华电辽能、大唐发电、京能电力、豫能控股、上海电力</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>电能综合服务</strong>
           <span>均涨 +6.61% · 涨停 2 · >=5% 6 · 成交 55.4亿</span>
           <span class="theme-leaders">领涨：九洲集团、涪陵电力、郴电国际、协鑫能科、明星电力、福能股份</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>炼焦煤</strong>
           <span>均涨 +5.80% · 涨停 1 · >=5% 4 · 成交 37.4亿</span>
           <span class="theme-leaders">领涨：淮北矿业、辽宁能源、潞安环能、平煤股份、华阳股份、兰花科创</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>水力发电</strong>
           <span>均涨 +5.64% · 涨停 3 · >=5% 10 · 成交 172.3亿</span>
@@ -452,19 +461,19 @@
           <span>均涨 -2.46% · 涨停 0 · 成交 505.2亿</span>
           <span class="theme-leaders">领涨：中无人机、国睿科技、高德红外、中航沈飞、中航成飞、国博电子</span>
         </div>
-        
+
         <div class="theme-chip">
           <strong>小金属 / 有色资源</strong>
           <span>均涨 -3.09% · 涨停 0 · 成交 602.3亿</span>
           <span class="theme-leaders">领涨：西部超导、金诚信、盛龙股份、紫金矿业、洛阳钼业、金钼股份</span>
         </div>
-        
+
         <div class="theme-chip">
           <strong>磷化工 / 氟化工 / 化工材料</strong>
           <span>均涨 -3.17% · 涨停 0 · 成交 163.5亿</span>
           <span class="theme-leaders">领涨：联创股份、六国化工、云天化、川恒股份、湖北宜化、川发龙蟒</span>
         </div>
-        
+
         <div class="theme-chip">
           <strong>光通信 / CPO / 6G / AI硬件链</strong>
           <span>均涨 -3.77% · 涨停 0 · 成交 1866.0亿</span>
@@ -472,8 +481,8 @@
         </div>
         </div>
     </div>
-    
-          
+
+
     <div class="expert-digest">
       <b>跟踪对象发言精炼</b>
       <div class="expert-metrics">
@@ -482,19 +491,19 @@
           <strong>深蓝色：指数护盘与个股流动性出清并存</strong>
           <span>高质量观点普遍认为科技仍处右侧下跌或流动性收缩阶段，今日的高开和护盘没有形成普遍承接。共同执行结论是减少左侧抄底，等待指数与科技核心给出可验证的止跌结构。</span>
         </section>
-        
+
         <section class="expert-metric-card">
           <small>交易类型</small>
           <strong>急跌后的弱修复验证，生存优先</strong>
           <span>先分交易类型，再决定处理方式。</span>
         </section>
-        
+
         <section class="expert-metric-card">
           <small>主线焦点</small>
           <strong>红利与宽基承担护盘，科技、PCB和半导体继续承担主要亏钱效应</strong>
           <span>只看有板块合力和核心地位的方向。</span>
         </section>
-        
+
         <section class="expert-metric-card">
           <small>执行结论</small>
           <strong>不把尾盘拉升当反转；先等3821突破、宽度改善和科技核心收回VWAP，再看回踩确认</strong>
@@ -520,25 +529,25 @@
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
           <b>护盘载体</b>
         </div>
-        
+
         <div class="bar-line">
           <span>医药</span>
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
           <b>轮动相对强</b>
         </div>
-        
+
         <div class="bar-line">
           <span>PCB</span>
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
           <b>加速补跌</b>
         </div>
-        
+
         <div class="bar-line">
           <span>半导体设备</span>
           <div class="track"><div class="fill" style="width: 82%;"></div></div>
           <b>高贝塔出清</b>
         </div>
-        
+
         <div class="bar-line">
           <span>全市场宽度</span>
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
@@ -556,12 +565,12 @@
         </section>
       </div>
     </div>
-    
+
         </section>
       </div>
     </section>
 
-    
+
     <section class="expert-quotes-panel panel">
       <strong class="subhead">有用摘录</strong>
       <p class="quote-rule"></p>
@@ -574,7 +583,7 @@
           <p><b>明日动作：</b>未站稳3821前，只按轮动与护盘处理。</p>
           <a href="https://bbs.nga.cn/read.php?tid=47207407&amp;pid=875753111">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>科技结构</span><small>虎扑 / 希夏邦驴 · 11:51</small></div>
           <blockquote>“硅基现在是右侧，上方均线重重，全是套牢盘。”</blockquote>
@@ -583,7 +592,7 @@
           <p><b>明日动作：</b>科技核心收回VWAP并突破近期结构区后再提高评价。</p>
           <a href="https://my.hupu.com/89010186366175?tabKey=2#reply-71a587e7a61af505">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>反抽纪律</span><small>虎扑 / JYSF · 15:16</small></div>
           <blockquote>“今天是卖出点不是抄底点，再等等，企稳就在这两天。”</blockquote>
@@ -592,7 +601,7 @@
           <p><b>明日动作：</b>等待3821突破后回踩不破，再评估右侧机会。</p>
           <a href="https://my.hupu.com/226302241070405?tabKey=2#reply-0e908734b31c3ada">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>个股流动性</span><small>雪球 / 关注流 · 13:56</small></div>
           <blockquote>“很多科技小票丧失流动性，后面非常不乐观。”</blockquote>
@@ -601,7 +610,7 @@
           <p><b>明日动作：</b>优先检查跌停收敛和成交恢复，不做无承接标的左侧。</p>
           <a href="https://xueqiu.com/2256531790/401149871">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>护盘分层</span><small>雪球 / 关注流 · 10:20</small></div>
           <blockquote>“保指数的载体是央企国企红利，市场资金的载体是科技。”</blockquote>
@@ -610,7 +619,7 @@
           <p><b>明日动作：</b>同时验证指数点位、全市场宽度和科技VWAP承接。</p>
           <a href="https://xueqiu.com/9083122550/401084625">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>跟踪标的</span><small>虎扑 / hawk404 · 15:22</small></div>
           <blockquote>“东山的补跌刚开始，除非科技反转。”</blockquote>
@@ -621,9 +630,9 @@
         </article>
         </div>
     </section>
-    
 
-    
+
+
     <section class="scoreboard-panel">
       <div class="scoreboard-head">
         <h2 class="section-title">跟踪标的评分</h2>
@@ -687,7 +696,7 @@
         </section>
       </div>
     </article>
-    
+
 
     <article class="stock-card action-defense">
       <div class="card-head">
@@ -713,7 +722,7 @@
         </section>
       </div>
     </article>
-    
+
 
     <article class="stock-card action-defense">
       <div class="card-head">

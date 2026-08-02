@@ -172,6 +172,19 @@
     @media (max-width: 520px) {
       .levels { grid-template-columns: 1fr; }
     }
+
+    .market-score-dimension { border: 1px solid var(--line); border-radius: 8px; padding: 10px; background: #fbfcfe; }
+    .market-score-dimension > small { display:block; color:var(--muted); font-size:12px; }
+    .market-score-dimension > b { display:block; margin:4px 0 8px; font-size:22px; }
+    .score-component-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; }
+    .score-component { position:relative; display:flex; justify-content:space-between; gap:8px; padding:6px 7px; border:1px solid var(--line); border-radius:6px; background:#fff; cursor:help; }
+    .component-label { font-style:normal; font-size:12px; color:#475467; }
+    .component-value { font-size:14px; }
+    .score-tooltip { display:none; position:absolute; z-index:5; left:0; top:calc(100% + 5px); width:240px; padding:9px; border:1px solid var(--line); border-radius:7px; background:#fff; box-shadow:var(--shadow); font-size:12px; }
+    .score-tooltip b,.score-tooltip em { display:block; margin-top:3px; font-style:normal; }
+    .score-component:hover .score-tooltip,.score-component:focus .score-tooltip { display:block; }
+    @media (max-width:520px) { .score-component-list { grid-template-columns:1fr; } }
+
   </style>
 <style>
 /* Work responsive refinement: generated after the repository renderer completes. */
@@ -258,28 +271,14 @@
             <b>盘面与题材复盘</b>
             <span>结构、全市场题材、跟踪对象判断合并阅读。</span>
           </div>
-          
+
     <section class="market-score-panel">
       <div class="market-score-main">
-        <div>
-          <small>大盘总闸评分</small>
-          <strong>25</strong>
-          <span class="score-pill score-ban">风险释放</span>
-        </div>
-        <div>
-          <small>情绪面</small>
-          <b>11 / 50</b>
-        </div>
-        <div>
-          <small>技术面</small>
-          <b>14 / 50</b>
-        </div>
+        <div class="market-score-total"><div class="market-score-total-head"><small>大盘总闸评分</small><strong>22</strong><span class="score-pill score-ban">风险释放</span></div><div class="market-score-total-notes"><p><b>跨日情绪</b><span>样本93只，收盘中位-4.69%、收红29.0%；最终再封10只（10.8%）、炸板未回封1只（1.1%）、收益低于+2%占75.3%，再封中曾炸板占70.0%。 封板率67.44%、1进2 0.00%；最终封板中68.97%曾炸板，平均炸板2.10次。</span></p><p><b>评分结论</b><span>情绪面 6/50，技术面 16/50（结构与级别 11/20；30m动量 0/12；关键位 5/10；指数成交确认 0/8），总分 22/100。</span></p></div></div>
+        <div class="market-score-dimension sentiment-dimension"><small>情绪面</small><b>6 / 50</b><div class="score-component-list sentiment-components"><span class="score-component" tabindex="0" aria-label="强势股质量0分。25分：昨日涨停股的收盘溢价、收红率、再封比例、低收益比例与炸板未回封共同决定。 当日依据：样本93只，收盘中位-4.69%、收红29.0%；最终再封10只（10.8%）、炸板未回封1只（1.1%）、收益低于+2%占75.3%，再封中曾炸板占70.0%。"><i class="component-label">强势股质量</i><b class="component-value">0</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>25分：昨日涨停股的收盘溢价、收红率、再封比例、低收益比例与炸板未回封共同决定。</em><b>当日依据</b><em>样本93只，收盘中位-4.69%、收红29.0%；最终再封10只（10.8%）、炸板未回封1只（1.1%）、收益低于+2%占75.3%，再封中曾炸板占70.0%。</em></span></span><span class="score-component" tabindex="0" aria-label="封板质量6分。25分：封板率、1进2、最终封板前炸板比例、平均炸板次数与跌停环境共同决定。 当日依据：封板率67.44%、1进2 0.00%；最终封板中68.97%曾炸板，平均炸板2.10次。"><i class="component-label">封板质量</i><b class="component-value">6</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>25分：封板率、1进2、最终封板前炸板比例、平均炸板次数与跌停环境共同决定。</em><b>当日依据</b><em>封板率67.44%、1进2 0.00%；最终封板中68.97%曾炸板，平均炸板2.10次。</em></span></span></div></div>
+        <div class="market-score-dimension technical-dimension"><small>技术面</small><b>16 / 50</b><div class="score-component-list technical-components"><span class="score-component" tabindex="0" aria-label="结构与级别11分。20分：以30分钟结构为主，5分钟只作为执行位置；结构级别越清晰，得分越高。 当日依据：上证日内低点3900.67，收盘位于5分钟新中枢3902.61—3936.02内部；末段下跌面积收敛，但尚未形成可靠底背驰。30分钟DIF为-24.45、MACD为-21.78且斜率继续向下，原4019—4074结构已成为上方修复压力。"><i class="component-label">结构与级别</i><b class="component-value">11</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>20分：以30分钟结构为主，5分钟只作为执行位置；结构级别越清晰，得分越高。</em><b>当日依据</b><em>上证日内低点3900.67，收盘位于5分钟新中枢3902.61—3936.02内部；末段下跌面积收敛，但尚未形成可靠底背驰。30分钟DIF为-24.45、MACD为-21.78且斜率继续向下，原4019—4074结构已成为上方修复压力。</em></span></span><span class="score-component" tabindex="0" aria-label="30m动量0分。12分：依据30分钟DIF、DEA与MACD柱的方向、位置和扩张程度。 当日依据：依据当天30分钟 DIF、DEA、柱体方向及动量扩张或衰减。"><i class="component-label">30m动量</i><b class="component-value">0</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>12分：依据30分钟DIF、DEA与MACD柱的方向、位置和扩张程度。</em><b>当日依据</b><em>依据当天30分钟 DIF、DEA、柱体方向及动量扩张或衰减。</em></span></span><span class="score-component" tabindex="0" aria-label="关键位5分。10分：依据收盘对中枢、确认位和失效位的站上、受阻或跌破。 当日依据：依据当天收盘与中枢、确认位、失效位的相对位置。"><i class="component-label">关键位</i><b class="component-value">5</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>10分：依据收盘对中枢、确认位和失效位的站上、受阻或跌破。</em><b>当日依据</b><em>依据当天收盘与中枢、确认位、失效位的相对位置。</em></span></span><span class="score-component" tabindex="0" aria-label="指数成交确认0分。8分：只用指数成交额的历史分位确认，不混入全A宽度或资金流。 当日依据：依据当日指数成交额的可比历史分位。"><i class="component-label">指数成交确认</i><b class="component-value">0</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>8分：只用指数成交额的历史分位确认，不混入全A宽度或资金流。</em><b>当日依据</b><em>依据当日指数成交额的可比历史分位。</em></span></span></div></div>
       </div>
-      <p><b>AI修正：</b>情绪 0，技术 0。规则层已计入上涨占比15.1%、中位跌幅-4.08%、441家跌停、主力净流出约1584亿元以及30分钟弱势，暂不重复扣分。</p>
-      <div class="market-score-components"><span title="宽度：0 / 15">宽度 0/15</span><span title="亏钱效应：0 / 10">亏钱效应 0/10</span><span title="赚钱效应：2 / 10">赚钱效应 2/10</span><span title="主线一致：5 / 8">主线一致 5/8</span><span title="高手情绪：4 / 11">高手情绪 4/11</span><span title="5m位置：8 / 15">5m位置 8/15</span><span title="30m动量：0 / 12">30m动量 0/12</span><span title="关键位：4 / 8">关键位 4/8</span><span title="量价：0 / 8">量价 0/8</span><span title="路径质量：2 / 7">路径质量 2/7</span></div>
     </section>
-    
-          
     <div class="market-overview">
       <b>大盘总体分析</b>
       <div class="overview-grid">
@@ -302,12 +301,12 @@
               <strong>红：收复3936并进一步站上3972</strong>
               <span>同时观察上涨家数、科技容量核心和成交额是否同步修复，才把反抽升级为进攻观察。；只做核心回踩确认，09:30—10:00不追买。</span>
             </div>
-            
+
             <div class="path-mini gate-yellow">
               <strong>黄：守住3900并在3903—3936内震荡</strong>
               <span>视为风险释放后的筑底验证，只允许小仓观察，不预判日线底。；先看3927与3936能否稳定收回，再评估反弹持续性。</span>
             </div>
-            
+
             <div class="path-mini gate-blue">
               <strong>蓝：跌破3900或反抽不过3927</strong>
               <span>所有新增买点继续暂停，优先保护本金和已有利润。；PCB、半导体设备、电子化学品等高贝塔方向继续按弱势段处理。</span>
@@ -316,8 +315,8 @@
         </section>
       </div>
     </div>
-    
-          
+
+
     <div class="market-ecology">
       <b>题材生态</b>
       <div class="breadth-grid">
@@ -334,31 +333,31 @@
           <span>均涨 +3.22% · 涨停 0 · >=5% 1 · 成交 61.9亿</span>
           <span class="theme-leaders">领涨：ST洲际、新潮能源、中国石油、蓝焰控股、中国海油、首华燃气</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>中药</strong>
           <span>均涨 +2.68% · 涨停 4 · >=5% 16 · 成交 203.3亿</span>
           <span class="theme-leaders">领涨：陇神戎发、上海凯宝、九芝堂、天目药业、太极集团、新光药业、众生药业、片仔癀</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>国有大型银行</strong>
           <span>均涨 +2.57% · 涨停 0 · >=5% 0 · 成交 149.6亿</span>
           <span class="theme-leaders">领涨：XD建设银、工商银行、交通银行、农业银行、中国银行、XD邮储银</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>农商行</strong>
           <span>均涨 +2.23% · 涨停 0 · >=5% 0 · 成交 21.2亿</span>
           <span class="theme-leaders">领涨：渝农商行、无锡银行、沪农商行、苏农银行、张家港行、瑞丰银行</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>城商行</strong>
           <span>均涨 +2.22% · 涨停 0 · >=5% 2 · 成交 89.8亿</span>
           <span class="theme-leaders">领涨：苏州银行、宁波银行、厦门银行、齐鲁银行、长沙银行、重庆银行</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>股份制银行</strong>
           <span>均涨 +1.25% · 涨停 0 · >=5% 0 · 成交 95.3亿</span>
@@ -372,19 +371,19 @@
           <span>均涨 -3.17% · 涨停 0 · 成交 174.7亿</span>
           <span class="theme-leaders">领涨：*ST威领、融捷股份、中矿资源、天华新能、雅化集团、永兴材料</span>
         </div>
-        
+
         <div class="theme-chip">
           <strong>小金属 / 有色资源</strong>
           <span>均涨 -5.49% · 涨停 0 · 成交 644.3亿</span>
           <span class="theme-leaders">领涨：翔鹭钨业、西部矿业、金诚信、金钼股份、紫金矿业、金徽股份</span>
         </div>
-        
+
         <div class="theme-chip">
           <strong>磷化工 / 氟化工 / 化工材料</strong>
           <span>均涨 -5.84% · 涨停 0 · 成交 172.2亿</span>
           <span class="theme-leaders">领涨：三美股份、永和股份、川恒股份、巍华新材、川发龙蟒、云天化</span>
         </div>
-        
+
         <div class="theme-chip">
           <strong>机器人 / 具身智能 / 自动化设备</strong>
           <span>均涨 -6.22% · 涨停 2 · 成交 1534.5亿</span>
@@ -392,8 +391,8 @@
         </div>
         </div>
     </div>
-    
-          
+
+
     <div class="expert-digest">
       <b>跟踪对象发言精炼</b>
       <div class="expert-metrics">
@@ -402,19 +401,19 @@
           <strong>蓝色总闸：全面风险释放，尾盘弱平衡</strong>
           <span>多数有效观点承认市场仍未出现明确见底信号，科技高位筹码与全市场风险正在共同释放。即使有人开始用利润垫试错，也普遍强调轻仓、纪律和等待结构确认。</span>
         </section>
-        
+
         <section class="expert-metric-card">
           <small>交易类型</small>
           <strong>防守为主，等待明确止跌</strong>
           <span>先分交易类型，再决定处理方式。</span>
         </section>
-        
+
         <section class="expert-metric-card">
           <small>主线焦点</small>
           <strong>银行与中药相对抗跌；科技、PCB、半导体设备继续释放筹码</strong>
           <span>只看有板块合力和核心地位的方向。</span>
         </section>
-        
+
         <section class="expert-metric-card">
           <small>执行结论</small>
           <strong>不猜底、不抄急跌，先看3900—3936区间能否稳住</strong>
@@ -440,25 +439,25 @@
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
           <b>相对强</b>
         </div>
-        
+
         <div class="bar-line">
           <span>中药</span>
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
           <b>相对强</b>
         </div>
-        
+
         <div class="bar-line">
           <span>油气</span>
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
           <b>轮动</b>
         </div>
-        
+
         <div class="bar-line">
           <span>AI硬件/PCB</span>
           <div class="track"><div class="fill" style="width: 82%;"></div></div>
           <b>高风险</b>
         </div>
-        
+
         <div class="bar-line">
           <span>半导体设备</span>
           <div class="track"><div class="fill" style="width: 82%;"></div></div>
@@ -476,12 +475,12 @@
         </section>
       </div>
     </div>
-    
+
         </section>
       </div>
     </section>
 
-    
+
     <section class="expert-quotes-panel panel">
       <strong class="subhead">有用摘录</strong>
       <p class="quote-rule"></p>
@@ -494,7 +493,7 @@
           <p><b>明日动作：</b>先观察3900—3936能否形成有效承接。</p>
           <a href="https://bbs.nga.cn/read.php?tid=47002314&amp;pid=874961680">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>风险</span><small>NGA / 丶阿疯 · 13:02</small></div>
           <blockquote>“最糟糕的不是科技的下跌中继，而是带A的下跌中继。”</blockquote>
@@ -503,7 +502,7 @@
           <p><b>明日动作：</b>蓝色总闸下暂停无确认的新买点。</p>
           <a href="https://bbs.nga.cn/read.php?tid=44279886&amp;pid=874947159">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>底部</span><small>NGA / Plezl · 13:14</small></div>
           <blockquote>“可能有反抽但底今天应该出不来，我没动手，也没让你们抄底。”</blockquote>
@@ -512,7 +511,7 @@
           <p><b>明日动作：</b>不因跌幅大而主动左侧加仓。</p>
           <a href="https://bbs.nga.cn/read.php?tid=45974302&amp;pid=874948411">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>分歧</span><small>NGA / sora496 · 16:23</small></div>
           <blockquote>“3927破了然后补了缺口是好事，剩下的就是等止跌信号。”</blockquote>
@@ -521,7 +520,7 @@
           <p><b>明日动作：</b>先找后续主线，再评估指数反弹是否可交易。</p>
           <a href="https://bbs.nga.cn/read.php?tid=45974302&amp;pid=874972473">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>纪律</span><small>NGA / 枫叶翎雨 · 盘后</small></div>
           <blockquote>“破位的票一定要止损，底仓是底仓，活动仓位一定要按交易纪律执行。”</blockquote>
@@ -530,7 +529,7 @@
           <p><b>明日动作：</b>没有结构收复前，不把已减仓位冲动加回。</p>
           <a href="https://bbs.nga.cn/read.php?tid=45974302">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>仓位</span><small>NGA / 灰兔尾 · 16:27</small></div>
           <blockquote>“信心不能当饭吃，浮盈可以，本金不行；到了该撤的位置就说拜拜。”</blockquote>
@@ -541,9 +540,9 @@
         </article>
         </div>
     </section>
-    
 
-    
+
+
     <section class="scoreboard-panel">
       <div class="scoreboard-head">
         <h2 class="section-title">跟踪标的评分</h2>
@@ -563,7 +562,7 @@
               <td data-label="总分"><b>26</b></td>
               <td data-label="状态"><span class="score-pill score-ban">禁止左侧</span></td>
             </tr>
-            
+
             <tr>
               <td data-label="标的"><strong>沪电股份</strong><small>sz002463</small></td>
               <td data-label="结构分">7</td>
@@ -574,7 +573,7 @@
               <td data-label="总分"><b>20</b></td>
               <td data-label="状态"><span class="score-pill score-ban">禁止左侧</span></td>
             </tr>
-            
+
             <tr>
               <td data-label="标的"><strong>江化微</strong><small>sh603078</small></td>
               <td data-label="结构分">7</td>
@@ -585,7 +584,7 @@
               <td data-label="总分"><b>16</b></td>
               <td data-label="状态"><span class="score-pill score-ban">禁止左侧</span></td>
             </tr>
-            
+
             <tr>
               <td data-label="标的"><strong>东山精密</strong><small>sz002384</small></td>
               <td data-label="结构分">4</td>
@@ -596,7 +595,7 @@
               <td data-label="总分"><b>13</b></td>
               <td data-label="状态"><span class="score-pill score-ban">禁止左侧</span></td>
             </tr>
-            
+
             <tr>
               <td data-label="标的"><strong>科创半导体设备ETF</strong><small>sh588710</small></td>
               <td data-label="结构分">4</td>
@@ -611,7 +610,7 @@
         </table>
       </div>
     </section>
-    
+
 
     <h2 class="section-title">标的复盘</h2>
     <section class="cards">
@@ -639,7 +638,7 @@
         </section>
       </div>
     </article>
-    
+
 
     <article class="stock-card action-defense">
       <div class="card-head">
@@ -665,7 +664,7 @@
         </section>
       </div>
     </article>
-    
+
 
     <article class="stock-card action-defense">
       <div class="card-head">
@@ -691,7 +690,7 @@
         </section>
       </div>
     </article>
-    
+
 
     <article class="stock-card action-defense">
       <div class="card-head">
@@ -717,7 +716,7 @@
         </section>
       </div>
     </article>
-    
+
 
     <article class="stock-card action-defense">
       <div class="card-head">

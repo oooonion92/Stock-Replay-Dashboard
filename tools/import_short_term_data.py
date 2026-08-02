@@ -50,6 +50,15 @@ def seal_time(value: Any) -> str | None:
     return f"{text[:2]}:{text[2:4]}" if text.isdigit() and len(text) == 6 else None
 
 
+def normalize_code(value: Any) -> str | None:
+    """Return a six-digit A-share code or None for an unusable value."""
+    value = clean(value)
+    if value is None:
+        return None
+    digits = "".join(char for char in str(value) if char.isdigit())
+    return digits[-6:].zfill(6) if digits else None
+
+
 def summary_row(summary: pd.DataFrame, compact_date: str) -> pd.Series | None:
     if summary.empty or "交易日期" not in summary:
         return None
@@ -83,6 +92,54 @@ def load_day(day_dir: Path, summary: pd.DataFrame) -> tuple[str, dict[str, Any]]
     promo = {str(item["层级"]): item for _, item in promotion.iterrows()}
     feedback_change = pd.to_numeric(feedback.get("涨跌幅"), errors="coerce").dropna()
     feedback_status = feedback.get("反馈数据状态", pd.Series("接口返回", index=feedback.index)).astype("string")
+
+    # The feedback sheet records yesterday's sealed names and today's close.
+    # Joining it to today's final limit-up and broken-board pools captures the
+    # path quality that a close-only median cannot see.
+    feedback = feedback.copy()
+    zt_pool = zt_pool.copy()
+    zb_pool = zb_pool.copy()
+    for frame in (feedback, zt_pool, zb_pool):
+        frame["_code"] = frame.get("代码", pd.Series(index=frame.index, dtype="string")).map(normalize_code)
+    feedback_valid = feedback.loc[feedback["_code"].notna()].copy()
+    zt_codes = set(zt_pool.loc[zt_pool["_code"].notna(), "_code"])
+    zb_codes = set(zb_pool.loc[zb_pool["_code"].notna(), "_code"])
+    feedback_valid["_change"] = pd.to_numeric(feedback_valid.get("涨跌幅"), errors="coerce")
+    feedback_valid["_sealed_again"] = feedback_valid["_code"].isin(zt_codes)
+    feedback_valid["_broken_unsealed"] = feedback_valid["_code"].isin(zb_codes - zt_codes)
+    feedback_valid["_low_return"] = feedback_valid["_change"].lt(2)
+    zt_breaks = pd.to_numeric(zt_pool.get("炸板次数"), errors="coerce").fillna(0)
+    reclosed_codes = set(zt_pool.loc[zt_breaks.gt(0) & zt_pool["_code"].notna(), "_code"])
+
+    def bucket_summary(mask: pd.Series) -> dict[str, Any]:
+        bucket = feedback_valid.loc[mask, "_change"].dropna()
+        return {
+            "count": int(len(bucket)),
+            "median": percent(bucket.median()),
+            "positiveRate": percent((bucket.gt(0).mean() * 100) if len(bucket) else None),
+        }
+
+    sealed_again = feedback_valid["_sealed_again"]
+    broken_unsealed = feedback_valid["_broken_unsealed"]
+    sealed_count = int(sealed_again.sum())
+    feedback_quality = {
+        "sealedAgain": bucket_summary(sealed_again),
+        "brokenUnsealed": bucket_summary(broken_unsealed),
+        "other": bucket_summary(~sealed_again & ~broken_unsealed),
+        "lowReturnCount": int(feedback_valid["_low_return"].sum()),
+        "lowReturnRate": percent((feedback_valid["_low_return"].mean() * 100) if len(feedback_valid) else None),
+        "reclosedAfterBreakCount": int((feedback_valid["_code"].isin(reclosed_codes) & sealed_again).sum()),
+        "reclosedAfterBreakRate": percent(
+            ((feedback_valid["_code"].isin(reclosed_codes) & sealed_again).sum() / sealed_count * 100)
+            if sealed_count else None
+        ),
+    }
+    current_zt_breaks = pd.to_numeric(zt_pool.get("炸板次数"), errors="coerce").fillna(0)
+    current_quality = {
+        "sealedWithBreakCount": int(current_zt_breaks.gt(0).sum()),
+        "sealedWithBreakRate": percent((current_zt_breaks.gt(0).mean() * 100) if len(current_zt_breaks) else None),
+        "averageBreaksOnSealed": percent(current_zt_breaks.mean()),
+    }
     ladder_items = []
     if not ladder.empty and "连板数" in ladder:
         for level, group in ladder.groupby("连板数", sort=False):
@@ -174,7 +231,9 @@ def load_day(day_dir: Path, summary: pd.DataFrame) -> tuple[str, dict[str, Any]]
             "deepLoss7": int(feedback_change.le(-7).sum()),
             "worst": percent(feedback_change.min()),
             "missingFeedback": int(feedback_status.eq("反馈接口缺失").sum()),
+            "quality": feedback_quality,
         },
+        "sealQuality": current_quality,
         "ladder": ladder_items,
         "industryRelay": industry_relay,
     }

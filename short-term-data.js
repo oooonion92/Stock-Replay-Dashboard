@@ -30,7 +30,33 @@ window.REPLAY_DATA.shortTerm = {
       "deepLoss5": 14,
       "deepLoss7": 8,
       "worst": -11.49,
-      "missingFeedback": 1
+      "missingFeedback": 1,
+      "quality": {
+        "sealedAgain": {
+          "count": 10,
+          "median": 10.0,
+          "positiveRate": 100.0
+        },
+        "brokenUnsealed": {
+          "count": 5,
+          "median": 6.29,
+          "positiveRate": 80.0
+        },
+        "other": {
+          "count": 65,
+          "median": -2.43,
+          "positiveRate": 27.69
+        },
+        "lowReturnCount": 57,
+        "lowReturnRate": 70.37,
+        "reclosedAfterBreakCount": 2,
+        "reclosedAfterBreakRate": 20.0
+      }
+    },
+    "sealQuality": {
+      "sealedWithBreakCount": 23,
+      "sealedWithBreakRate": 44.23,
+      "averageBreaksOnSealed": 0.88
     },
     "ladder": [
       {
@@ -370,7 +396,33 @@ window.REPLAY_DATA.shortTerm = {
       "deepLoss5": 0,
       "deepLoss7": 0,
       "worst": -4.62,
-      "missingFeedback": 0
+      "missingFeedback": 0,
+      "quality": {
+        "sealedAgain": {
+          "count": 10,
+          "median": 10.01,
+          "positiveRate": 100.0
+        },
+        "brokenUnsealed": {
+          "count": 6,
+          "median": 5.21,
+          "positiveRate": 66.67
+        },
+        "other": {
+          "count": 36,
+          "median": -0.14,
+          "positiveRate": 47.22
+        },
+        "lowReturnCount": 27,
+        "lowReturnRate": 51.92,
+        "reclosedAfterBreakCount": 8,
+        "reclosedAfterBreakRate": 80.0
+      }
+    },
+    "sealQuality": {
+      "sealedWithBreakCount": 55,
+      "sealedWithBreakRate": 55.56,
+      "averageBreaksOnSealed": 3.46
     },
     "ladder": [
       {

@@ -267,12 +267,12 @@
   }
   function render(d){
     const R=D.reports[d],M=scoreDisplay(R.market,D.shortTerm?.[d]),A=D.dates.filter(x=>x<=d),recent=[d];
-    const hasMarketScore=Number.isFinite(M.total),scored=A.filter(x=>Number.isFinite(D.reports[x].market.total));
+    const hasMarketScore=Number.isFinite(M.total),scored=A.filter(x=>Number.isFinite(scoreDisplay(D.reports[x].market,D.shortTerm?.[x]).total));
     $("marketTotal").textContent=hasMarketScore?M.total:"—";$("marketStatus").textContent=M.status||"未纳入评分";$("marketSummary").textContent=M.summary||"该日已收录完整复盘 HTML，但当时尚未生成入口看板所需的市场评分字段。";
     $("sentimentScore").textContent=Number.isFinite(M.sentiment)?M.sentiment:"—";$("technicalScore").textContent=Number.isFinite(M.technical)?M.technical:"—";$("fullReportLink").href=R.fullReport;
     const sentimentCaption=document.querySelector(".split-scores > div:first-child em");if(sentimentCaption)sentimentCaption.textContent=M.shortTerm?"强势股次日溢价、封板与接力质量":"宽度、量能、主线扩散";
-    $("historyCount").textContent=`${scored.length}/${A.length} 个交易日有评分`;
-    $("marketTrend").innerHTML=chart([{values:A.map(x=>scoreDisplay(D.reports[x].market,D.shortTerm?.[x]).total)}],A,{labels:true,score:true,metric:"score",aria:"市场评分趋势"});
+    $("historyCount").textContent=`${scored.length} 个交易日有评分`;
+    $("marketTrend").innerHTML=chart([{values:scored.map(x=>scoreDisplay(D.reports[x].market,D.shortTerm?.[x]).total)}],scored,{labels:true,score:true,metric:"score",aria:"市场评分趋势"});
     $("trendNote").textContent=scored.length===A.length?"纵轴按当前可比区间自动缩放；总分越高代表环境越有利，但总闸与结构约束仍优先。":"早期复盘已纳入日期轴，但当时未生成总分；曲线只连接有评分的交易日。";
     renderShortTerm(d);
     renderProjection(d);

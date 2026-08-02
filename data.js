@@ -29,10 +29,10 @@ window.REPLAY_DATA={
   "reports": {
     "2026-07-03": {
       "market": {
-        "total": 44,
-        "sentiment": 39,
-        "technical": 5,
-        "status": "防守环境",
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
         "summary": "蓝色总闸。全市场宽度明显修复，但上证冲高回落并收在5分钟活跃中枢下方，30分钟动量继续走弱；题材轮动强不等于指数结构已经恢复。",
         "paths": [
           {
@@ -119,10 +119,10 @@ window.REPLAY_DATA={
     },
     "2026-07-08": {
       "market": {
-        "total": 38,
-        "sentiment": 26,
-        "technical": 12,
-        "status": "防守环境",
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
         "summary": "指数继续弱势探底，收盘跌破3971.71小中枢下沿；科技只有左侧修复讨论，没有形成右侧买点。",
         "paths": [
           {
@@ -217,10 +217,10 @@ window.REPLAY_DATA={
     },
     "2026-07-09": {
       "market": {
-        "total": 74,
-        "sentiment": 39,
-        "technical": 35,
-        "status": "可试错环境",
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
         "summary": "指数从弱势探底转为放量修复，重新站到5分钟中枢上方；但30分钟DIF仍在零轴下，全A中位数仍为负。",
         "paths": [
           {
@@ -325,10 +325,10 @@ window.REPLAY_DATA={
     },
     "2026-07-10": {
       "market": {
-        "total": 55,
-        "sentiment": 39,
-        "technical": 16,
-        "status": "震荡观察",
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
         "summary": "蓝色总闸。上涨家数占优，但上证冲高回落并失守4000；宽度修复不能覆盖近端结构破坏。",
         "paths": [
           {
@@ -442,10 +442,10 @@ window.REPLAY_DATA={
     },
     "2026-06-29": {
       "market": {
-        "total": 48,
-        "sentiment": 20,
-        "technical": 28,
-        "status": "震荡修复",
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
         "summary": "黄灯偏红转黄。指数从破位后修复并向上离开5分钟中枢，但日线下跌一笔未确认结束；全A宽度一般、中位涨幅仍为负，重点是等回踩承接而不是追涨。",
         "paths": [
           {
@@ -504,10 +504,10 @@ window.REPLAY_DATA={
     },
     "2026-06-30": {
       "market": {
-        "total": 66,
-        "sentiment": 31,
-        "technical": 35,
-        "status": "可试错环境",
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
         "summary": "有效修复。指数站回5分钟中枢上方，并回到30分钟投影中枢内部偏上；宽度和主力净额同步修复，但5分钟上攻面积衰减，仍要防短线顶背驰。",
         "paths": [
           {
@@ -566,10 +566,10 @@ window.REPLAY_DATA={
     },
     "2026-07-01": {
       "market": {
-        "total": 70,
-        "sentiment": 38,
-        "technical": 32,
-        "status": "可试错环境",
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
         "summary": "偏强确认。指数站上30分钟投影中枢上沿，宽度显著扩散；但午后从高位回落，科技核心分化，次日仍需要承接验证。",
         "paths": [
           {
@@ -628,10 +628,10 @@ window.REPLAY_DATA={
     },
     "2026-07-02": {
       "market": {
-        "total": 32,
-        "sentiment": 16,
-        "technical": 16,
-        "status": "防守环境",
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
         "summary": "确认失败后的破位回落。指数跌回30分钟投影中枢下方，30分钟DIF转负；尾盘虽有底背驰观察，但只代表下杀动能衰减，不等于反转。",
         "paths": [
           {
@@ -690,10 +690,10 @@ window.REPLAY_DATA={
     },
     "2026-07-06": {
       "market": {
-        "total": 34,
-        "sentiment": 14,
-        "technical": 20,
-        "status": "防守环境",
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
         "summary": "弱修复观察。指数没有继续跌破4000，30分钟MACD翻红显示下杀动能衰减；但仍低于5分钟中枢和30分钟投影中枢，宽度与中位涨幅偏弱。",
         "paths": [
           {
@@ -752,10 +752,10 @@ window.REPLAY_DATA={
     },
     "2026-07-07": {
       "market": {
-        "total": 26,
-        "sentiment": 8,
-        "technical": 18,
-        "status": "冰点防守",
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
         "summary": "冰点承接验证。指数跌破4000后在5分钟小中枢内横住，但30分钟DIF与MACD仍继续向下；全A上涨占比仅12.4%，新增信号必须降级。",
         "paths": [
           {
@@ -892,11 +892,11 @@ window.REPLAY_DATA={
     },
     "2026-07-13": {
       "market": {
-        "total": 25,
-        "sentiment": 11,
-        "technical": 14,
+        "total": 22,
+        "sentiment": 6,
+        "technical": 16,
         "status": "风险释放",
-        "summary": "蓝色总闸。全市场仅777家上涨、4377家下跌，中位跌幅-4.08%；上证尾盘守在3902.61—3936.02新中枢内，但30分钟下行动能仍在扩张。",
+        "summary": "强势股质量 0/25，封板质量 6/25；技术面 16/50。",
         "paths": [
           {
             "tone": "red",
@@ -1023,11 +1023,11 @@ window.REPLAY_DATA={
     },
     "2026-07-14": {
       "market": {
-        "total": 73,
-        "sentiment": 41,
-        "technical": 32,
-        "status": "可试错环境",
-        "summary": "黄偏红的强修复。全A上涨占比76.3%、中位涨幅1.51%，上证重新站上3902.61—3936.02中枢；但3972尚未有效突破，30分钟DIF仍在零轴下。",
+        "total": 54,
+        "sentiment": 24,
+        "technical": 30,
+        "status": "震荡观察",
+        "summary": "强势股质量 11/25，封板质量 13/25；技术面 30/50。",
         "paths": [
           {
             "tone": "red",
@@ -1158,11 +1158,11 @@ window.REPLAY_DATA={
     },
     "2026-07-15": {
       "market": {
-        "total": 53,
-        "sentiment": 33,
-        "technical": 20,
+        "total": 39,
+        "sentiment": 18,
+        "technical": 21,
         "status": "震荡观察",
-        "summary": "黄色偏蓝。上证收3955.58，仍在3948.56—3974.87最新5分钟中枢内；市场宽度偏强，但主力净流出，科技与半导体显著弱于指数。",
+        "summary": "强势股质量 6/25，封板质量 12/25；技术面 21/50。",
         "paths": [
           {
             "tone": "red",
@@ -1297,7 +1297,7 @@ window.REPLAY_DATA={
         "sentiment": 18,
         "technical": 3,
         "status": "风险释放",
-        "summary": "蓝色风险释放。上证收3882.41、跌1.85%，全天冲高后单边回落，跌破3943.70—3974.87的最新5分钟中枢；30分钟DIF、MACD与斜率均为负。全A中位跌0.19%，但81家跌停、570家跌超5%、主力净流出约741亿元，科技和半导体继续承担主要亏钱效应。",
+        "summary": "强势股质量 7/25，封板质量 11/25；技术面 3/50。",
         "paths": [
           {
             "tone": "red",
@@ -1408,11 +1408,11 @@ window.REPLAY_DATA={
     },
     "2026-07-17": {
       "market": {
-        "total": 9,
-        "sentiment": 7,
-        "technical": 2,
+        "total": 13,
+        "sentiment": 10,
+        "technical": 3,
         "status": "风险释放",
-        "summary": "深蓝色极端风险释放。上证收3764.16、跌3.05%，跌破3806.39—3820.77的最新5分钟中枢；全A仅405家上涨、4758家下跌，中位跌4.29%，635家跌停，市场仍处于加速出清而非右侧止跌。",
+        "summary": "强势股质量 0/25，封板质量 10/25；技术面 3/50。",
         "paths": [
           {
             "tone": "red",
@@ -1523,11 +1523,11 @@ window.REPLAY_DATA={
     },
     "2026-07-20": {
       "market": {
-        "total": 24,
-        "sentiment": 13,
-        "technical": 11,
+        "total": 22,
+        "sentiment": 12,
+        "technical": 10,
         "status": "风险释放",
-        "summary": "深蓝色风险释放。上证收3796.28、较前收涨0.85%，但盘中从3831.66回落至3741.11后才尾盘拉回；全A仅1709家上涨、3415家下跌，中位跌1.92%，按各板块涨跌幅限制统计有279家收于跌停幅度，指数红盘并未转化为多数个股的赚钱效应。",
+        "summary": "强势股质量 7/25，封板质量 5/25；技术面 10/50。",
         "paths": [
           {
             "tone": "red",
@@ -1638,11 +1638,11 @@ window.REPLAY_DATA={
     },
     "2026-07-21": {
       "market": {
-        "total": 63,
-        "sentiment": 40,
-        "technical": 23,
-        "status": "震荡观察",
-        "summary": "黄色可试错环境。上证收3864.37、较前收涨1.79%，早盘下探3743.36后V形回升并收近全天高点；全A上涨2871家、下跌2219家，中位涨0.52%，121家涨停、按各板块涨跌幅限制统计30家跌停，主力净流入约443亿元。指数上涨已转化为较广泛修复，但成交额仍低于近20日中位，暂不把单日急拉定义为趋势反转。",
+        "total": 28,
+        "sentiment": 13,
+        "technical": 15,
+        "status": "风险释放",
+        "summary": "强势股质量 2/25，封板质量 11/25；技术面 15/50。",
         "paths": [
           {
             "tone": "red",
@@ -1753,11 +1753,11 @@ window.REPLAY_DATA={
     },
     "2026-07-22": {
       "market": {
-        "total": 33,
-        "sentiment": 16,
-        "technical": 17,
+        "total": 25,
+        "sentiment": 7,
+        "technical": 18,
         "status": "风险释放",
-        "summary": "蓝色风险释放。上证收3867.03、较前收微涨0.07%，但全A仅1432家上涨、3649家下跌，中位跌1.27%；指数红盘没有转化为普遍赚钱效应，昨日强势股与科技高弹性方向下午集中回落。",
+        "summary": "强势股质量 3/25，封板质量 4/25；技术面 18/50。",
         "paths": [
           {
             "tone": "red",
@@ -1850,11 +1850,11 @@ window.REPLAY_DATA={
     },
     "2026-07-23": {
       "market": {
-        "total": 62,
-        "sentiment": 44,
-        "technical": 18,
+        "total": 47,
+        "sentiment": 33,
+        "technical": 14,
         "status": "震荡观察",
-        "summary": "黄色震荡观察。上证收3876.78、上涨0.25%，全A3997家上涨、1143家下跌，中位涨1.80%，127家按板块涨跌幅限制收于涨停；但成交额处于近20日最低分位，主力净额约流出181亿元，普涨更接近缩量修复而非增量主升。",
+        "summary": "强势股质量 16/25，封板质量 17/25；技术面 14/50。",
         "paths": [
           {
             "tone": "red",
@@ -1951,7 +1951,7 @@ window.REPLAY_DATA={
         "sentiment": 10,
         "technical": 0,
         "status": "风险释放",
-        "summary": "蓝色风险释放。上证收3814.20、下跌1.61%，全A仅534家上涨、4632家下跌，中位跌2.80%，主力净额约流出667亿元；成交额处于近20日最低分位，反映缩量普跌而非充分放量出清。",
+        "summary": "强势股质量 0/25，封板质量 10/25；技术面 0/50。",
         "paths": [
           {
             "tone": "red",
@@ -2053,11 +2053,11 @@ window.REPLAY_DATA={
     },
     "2026-07-27": {
       "market": {
-        "total": 66,
-        "sentiment": 45,
-        "technical": 21,
-        "status": "可试错环境",
-        "summary": "红色修复验证，但尚未完成30分钟反转。上证收3858.25、上涨1.15%，全A4885家上涨、中位涨2.78%，昨日强弱两组均获得明显修复；但成交额仅约2.08万亿元、处于近20日5%分位，且全市场主力净流入中约825亿元来自上市首日的N长鑫，普涨后的持续性仍需次日量能和溢价确认。",
+        "total": 39,
+        "sentiment": 26,
+        "technical": 13,
+        "status": "震荡观察",
+        "summary": "强势股质量 10/25，封板质量 16/25；技术面 13/50。",
         "paths": [
           {
             "tone": "red",
@@ -2159,11 +2159,11 @@ window.REPLAY_DATA={
     },
     "2026-07-28": {
       "market": {
-        "total": 18,
-        "sentiment": 17,
-        "technical": 1,
+        "total": 13,
+        "sentiment": 13,
+        "technical": 0,
         "status": "风险释放",
-        "summary": "蓝色风险释放。上证收3813.32、下跌1.16%，全A上涨2373家、下跌2673家、中位跌0.14%；但跌超5%达602家、57家跌停，昨日强势股收盘中位跌1.49%，全市场主力净流出约1066亿元，科技与高位容量方向的亏钱效应明显扩散。",
+        "summary": "强势股质量 0/25，封板质量 13/25；技术面 0/50。",
         "paths": [
           {
             "tone": "red",
@@ -2852,11 +2852,11 @@ window.REPLAY_DATA={
     },
     "2026-07-29": {
       "market": {
-        "total": 58,
-        "sentiment": 37,
-        "technical": 21,
+        "total": 38,
+        "sentiment": 21,
+        "technical": 17,
         "status": "震荡观察",
-        "summary": "黄色震荡观察。上证早盘下探3782.48后收回，午后30分钟四根MACD柱连续翻红并在零轴下形成DIF上穿DEA，收3828.47；全A上涨3968家、中位涨1.55%，但成交额处于近20日约21%分位、全市场主力净流出约22亿元，按低量修复而非趋势反转处理。",
+        "summary": "强势股质量 5/25，封板质量 16/25；技术面 17/50。",
         "paths": [
           {
             "tone": "red",
@@ -7739,11 +7739,11 @@ window.REPLAY_DATA={
     },
     "2026-07-30": {
       "market": {
-        "total": 14,
-        "sentiment": 11,
-        "technical": 3,
+        "total": 17,
+        "sentiment": 12,
+        "technical": 5,
         "status": "风险释放",
-        "summary": "蓝色风险释放。上证盘中跌破昨日3819与3782路径位，最低3767.50，尾盘虽收回3793并收3804.69，但仍在最新5分钟中枢3819.41—3839.34下方；全A仅1636家上涨、中位跌1.20%，95家跌停、981家跌超5%，全市场主力净流出约715亿元，反抽尚未转化为修复确认。",
+        "summary": "强势股质量 0/25，封板质量 12/25；技术面 5/50。",
         "paths": [
           {
             "tone": "red",
@@ -12628,11 +12628,11 @@ window.REPLAY_DATA={
     },
     "2026-07-31": {
       "market": {
-        "total": 78,
-        "sentiment": 47,
-        "technical": 31,
-        "status": "可试错环境",
-        "summary": "黄色震荡观察。全A普涨且主力净流入明显，但上证冲高回落、收盘仍在3819.41—3839.34的5分钟中枢内，也未收回30分钟中枢上沿3858.31；当前是下跌笔后的修复进入中枢换手，不是趋势反转确认。",
+        "total": 35,
+        "sentiment": 8,
+        "technical": 27,
+        "status": "震荡观察",
+        "summary": "强势股质量 5/25，封板质量 3/25；技术面 27/50。",
         "paths": [
           {
             "tone": "red",

@@ -95,7 +95,7 @@
     const rows=groups.flatMap(g=>[{g,parent:g.id,child:false},...(g.id===expandedId?(g.subgroups||[]).map(s=>({g:s,parent:g.id,child:true})):[])]),values=rows.flatMap(row=>dates.map(date=>D.sectorFlow?.[date]?.[row.g.id]?.[metric])).filter(finite).map(Number);
     if(!values.length)return `<div class="chart-empty">该日之前没有可用的板块资金数据</div>`;
     const signed=metric==="mainNet",max=Math.max(...values.map(v=>Math.abs(v)),1),w=760,rh=20,h=31+31+rows.length*rh,p={l:116,r:18,t:31,b:31},iw=w-p.l-p.r,cw=iw/Math.max(dates.length,1),dateStep=Math.max(1,Math.ceil(dates.length/8));
-    const cells=rows.map((row,rowIndex)=>{const {g,child,parent}=row,y=p.t+rowIndex*rh,clickable=!child?` data-heatmap-direction="${parent}" role="button" tabindex="0" aria-expanded="${expandedId===parent}"`:"",rowClass=child?"sector-heatmap-child":"sector-heatmap-parent",fade=expandedId&&!child&&parent!==expandedId?" opacity=\".26\"":"",isActive=activeCapitalObservation?.groupId===g.id;return `<g class="${rowClass}"${clickable}${fade}>${dates.map((date,col)=>{
+    const cells=rows.map((row,rowIndex)=>{const {g,child,parent}=row,y=p.t+rowIndex*rh,clickable=!child?` data-heatmap-direction="${parent}" role="button" tabindex="0" aria-expanded="${expandedId===parent}"`:"",rowClass=child?"sector-heatmap-child":"sector-heatmap-parent",fade=expandedId&&!child&&parent!==expandedId?" opacity=\".48\"":"",isActive=activeCapitalObservation?.groupId===g.id;return `<g class="${rowClass}"${clickable}${fade}>${dates.map((date,col)=>{
       const raw=D.sectorFlow?.[date]?.[g.id]?.[metric],activeCell=isActive&&activeCapitalObservation?.date===date?` stroke="#275d85" stroke-width="2"`:"";if(!finite(raw))return `<rect data-heatmap-observation data-heatmap-group="${g.id}" data-heatmap-date="${date}" x="${p.l+col*cw+1}" y="${y+1}" width="${Math.max(cw-2,1)}" height="${Math.max(rh-2,1)}" rx="2" fill="#f2f4f7"${activeCell}><title>${date} ${g.name} 数据缺失</title></rect>`;
       const v=Number(raw),strength=.16+.78*Math.sqrt(Math.abs(v)/max),fill=signed?(v>=0?"#C94A43":"#2F7D68"):"#2F77A8";
       return `<rect data-heatmap-observation data-heatmap-group="${g.id}" data-heatmap-date="${date}" x="${p.l+col*cw+1}" y="${y+1}" width="${Math.max(cw-2,1)}" height="${Math.max(rh-2,1)}" rx="2" fill="${fill}" opacity="${strength}"${activeCell}><title>${date} ${g.name} ${metricFormat(v,metric)}</title></rect>`;
@@ -272,6 +272,7 @@
   }
   D.dates.slice().reverse().forEach(d=>{const o=document.createElement("option");o.value=d;o.textContent=d;$("dateSelect").appendChild(o)});
   if(D.sectorFlowConfig){
+    const matrixHint=document.querySelector(".capital-matrix-card .sector-insight-head span");if(matrixHint)matrixHint.textContent="点击热力图行展开；近3日按有效观测累计";
     D.sectorFlowConfig.metrics.forEach(m=>{const o=document.createElement("option");o.value=m.id;o.textContent=m.name;$("sectorMetricSelect").appendChild(o)});$("sectorMetricSelect").value=D.sectorFlowConfig.defaultMetric;
     const directionControl=$("sectorSelect").closest("label");if(directionControl)directionControl.hidden=true;
     const all=document.createElement("option");all.value="all";all.textContent="全部方向";$("sectorSelect").appendChild(all);

@@ -273,7 +273,7 @@
     const sentimentCaption=document.querySelector(".split-scores > div:first-child em");if(sentimentCaption)sentimentCaption.textContent=M.shortTerm?"强势股次日溢价、封板与接力质量":"宽度、量能、主线扩散";
     $("historyCount").textContent=`${scored.length} 个交易日有评分`;
     $("marketTrend").innerHTML=chart([{values:scored.map(x=>scoreDisplay(D.reports[x].market,D.shortTerm?.[x]).total)}],scored,{labels:true,score:true,metric:"score",aria:"市场评分趋势"});
-    $("trendNote").textContent=scored.length===A.length?"纵轴按当前可比区间自动缩放；总分越高代表环境越有利，但总闸与结构约束仍优先。":"早期复盘已纳入日期轴，但当时未生成总分；曲线只连接有评分的交易日。";
+    $("trendNote").textContent=scored.length===A.length?"纵轴按当前可比区间自动缩放；总分越高代表环境越有利，但总闸与结构约束仍优先。":"早期复盘仍可在日期选择中查看；评分趋势仅展示有评分的交易日。";
     renderShortTerm(d);
     renderProjection(d);
     renderSector(d);

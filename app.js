@@ -9,7 +9,7 @@
   const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   let projectionTimeframe="30m";
   let projectionCheckpoint="close";
-  let expandedShortIndustry=null;
+  let expandedShortTheme=null;
   let expandedCapitalDirection=null;
   let activeCapitalObservation=null;
   const metricFormat=(v,id,axis=false)=>{
@@ -176,7 +176,7 @@
       empty.textContent="该历史日期尚未采集短线收盘池，不使用全市场阈值数据倒推。";
       return;
     }
-    content.hidden=false;empty.hidden=true;source.textContent=item.source||"收盘快照";
+    content.hidden=false;empty.hidden=true;source.textContent=D.themeRelay?.[d]?.source||item.source||"收盘快照";
     const {emotion:e,promotion:p,feedback:f,ladder=[]}=item,state=shortTermState(item);
     $("shortTermVerdict").className=`short-term-verdict ${state.tone}`;
     $("shortTermVerdict").innerHTML=`<b>${esc(state.title)}</b><span>${esc(state.detail)}</span>`;
@@ -189,16 +189,18 @@
     ];
     $("shortTermRelay").innerHTML=relayCards.map(([label,value])=>`<div><span>${esc(label)}</span><b>${esc(value)}</b></div>`).join("");
     $("shortTermLadder").innerHTML=ladder.map(row=>`<div class="ladder-chip"><b>${esc(row.level)}板</b><span>${esc(row.names?.length?row.names.join("、"):`${row.count}只`)}</span><em>${esc(row.count)}只</em></div>`).join("")||"<span class=\"short-term-empty\">暂无连板梯队</span>";
-    const industries=item.industryRelay||[];
-    if(!industries.some(row=>row.name===expandedShortIndustry))expandedShortIndustry=null;
+    const themeSnapshot=D.themeRelay?.[d],themes=themeSnapshot?.themes||[];
+    if(!themes.some(row=>row.name===expandedShortTheme))expandedShortTheme=null;
     const detailMarkup=row=>{
       const stocks=row.stocks||[];
       const sealAmount=stock=>finite(stock.sealAmount)?`${(Number(stock.sealAmount)/1e8).toFixed(2)}亿`:"—";
-      const rows=stocks.map(stock=>`<tr><td><span class="short-term-stock-kind ${stock.kind==='limitUp'?'limit-up':'broken'}">${stock.kind==='limitUp'?'涨停':'炸板'}</span></td><td><b>${esc(stock.name)}</b><small>${esc(stock.code)}</small></td><td>${esc(stock.boards?`${stock.boards}板`:"首板")}</td><td>${esc(stock.firstSeal||"—")}</td><td>${esc(stock.lastSeal||"—")}</td><td>${sealAmount(stock)}</td><td>${esc(stock.breaks)}</td></tr>`).join("");
-      const mobileRows=stocks.map(stock=>`<div class="short-term-mobile-stock"><div class="short-term-mobile-stock-head"><span class="short-term-stock-kind ${stock.kind==='limitUp'?'limit-up':'broken'}">${stock.kind==='limitUp'?'涨停':'炸板'}</span><span class="short-term-mobile-stock-name"><b>${esc(stock.name)}</b><small>${esc(stock.code)}</small></span><em>${esc(stock.boards?`${stock.boards}板`:"首板")}</em></div><div class="short-term-mobile-stock-meta"><span>首封 <b>${esc(stock.firstSeal||"—")}</b></span><span>末封 <b>${esc(stock.lastSeal||"—")}</b></span><span>封单 <b>${sealAmount(stock)}</b></span><span>炸板 <b>${esc(stock.breaks)}</b></span></div></div>`).join("");
-      return `<div class="short-term-industry-detail"><div class="short-term-detail-head"><b>${esc(row.name)} · ${esc(row.limitUps)} 只涨停 / ${esc(row.brokenPool)} 只炸板</b><button type="button" data-short-industry-close>收起</button></div><div class="short-term-detail-scroll"><table><thead><tr><th>状态</th><th>标的</th><th>梯队</th><th>首封</th><th>末封</th><th>封单</th><th>炸板</th></tr></thead><tbody>${rows||'<tr><td colspan="7">该行业暂无逐股明细</td></tr>'}</tbody></table></div><div class="short-term-detail-mobile">${mobileRows||'<span class="short-term-empty">该行业暂无逐股明细</span>'}</div></div>`;
+      const high=stocks.filter(stock=>Number(stock.boards)>=2).map(stock=>`${stock.boards}板 ${stock.name}`).join(" · ")||"暂无连板";
+      const rows=stocks.map(stock=>`<tr><td><span class="short-term-stock-kind limit-up">涨停</span></td><td><b>${esc(stock.name)}</b><small>${esc(stock.code)} · ${esc(stock.subtype||"其他")}</small></td><td>${esc(stock.boards?`${stock.boards}板`:"首板")}</td><td>${esc(stock.firstSeal||"—")}</td><td>${esc(stock.lastSeal||"—")}</td><td>${sealAmount(stock)}</td><td>${esc(stock.breaks)}次</td><td class="short-term-theme-reason">${esc(stock.reason||"—")}</td></tr>`).join("");
+      const mobileRows=stocks.map(stock=>`<div class="short-term-mobile-stock"><div class="short-term-mobile-stock-head"><span class="short-term-stock-kind limit-up">涨停</span><span class="short-term-mobile-stock-name"><b>${esc(stock.name)}</b><small>${esc(stock.code)} · ${esc(stock.subtype||"其他")}</small></span><em>${esc(stock.boards?`${stock.boards}板`:"首板")}</em></div><div class="short-term-mobile-stock-meta"><span>首封 <b>${esc(stock.firstSeal||"—")}</b></span><span>末封 <b>${esc(stock.lastSeal||"—")}</b></span><span>封单 <b>${sealAmount(stock)}</b></span><span>开板 <b>${esc(stock.breaks)}次</b></span></div><p class="short-term-mobile-reason">${esc(stock.reason||"—")}</p></div>`).join("");
+      const hidden=Math.max(0,Number(row.limitUps)-stocks.length);
+      return `<div class="short-term-industry-detail short-term-theme-detail"><div class="short-term-detail-head"><b>${esc(row.name)} · 高标：${esc(high)}</b><button type="button" data-short-theme-close>收起</button></div><div class="short-term-theme-detail-note">主线内收盘涨停股日内开板 ${esc(row.opened)} 只 / ${esc(row.openTimes)} 次；逐股题材串来自当日问财页面。</div><div class="short-term-detail-scroll"><table><thead><tr><th>状态</th><th>标的 / 子题材</th><th>梯队</th><th>首封</th><th>末封</th><th>封单</th><th>开板</th><th>原始题材串</th></tr></thead><tbody>${rows||'<tr><td colspan="8">该主线暂无逐股明细</td></tr>'}</tbody></table></div><div class="short-term-detail-mobile">${mobileRows||'<span class="short-term-empty">该主线暂无逐股明细</span>'}</div>${hidden?`<p class="short-term-theme-more">其余 ${hidden} 只首板已纳入统计，当前明细优先展示高标、连板与较早封板股。</p>`:""}</div>`;
     };
-    $("shortTermIndustryRelay").innerHTML=industries.length?industries.map(row=>`<button type="button" class="short-term-industry-row ${row.name===expandedShortIndustry?"is-active":""}" data-short-industry="${esc(row.name)}" aria-expanded="${row.name===expandedShortIndustry}"><b>${esc(row.name)}</b><span>涨停 ${esc(row.limitUps)} · 首板 ${esc(row.firstBoards)} · 最高 ${esc(row.maxBoards)}板</span><em>炸 ${esc(row.brokenPool)}</em></button>${row.name===expandedShortIndustry?detailMarkup(row):""}`).join(""):"<span class=\"short-term-empty\">暂无行业扩散数据</span>";
+    $("shortTermThemeRelay").innerHTML=themes.length?`${themes.map(row=>`<button type="button" class="short-term-industry-row short-term-theme-row ${row.name===expandedShortTheme?"is-active":""}" data-short-theme="${esc(row.name)}" aria-expanded="${row.name===expandedShortTheme}"><b>${esc(row.name)}</b><span>涨停 ${esc(row.limitUps)} · 首板 ${esc(row.firstBoards)} · 最高 ${esc(row.maxBoards)}板</span><em>开板 ${esc(row.opened)}只/${esc(row.openTimes)}次</em></button>${row.name===expandedShortTheme?detailMarkup(row):""}`).join("")}<p class="short-term-theme-note">其余 ${esc(themeSnapshot.unclustered)} 只涨停分散于消费、资源、医药等方向，未强行归为主线。题材统计不计入市场评分。</p>`:"<span class=\"short-term-empty\">该日期尚未接入问财题材快照，不以行业分类替代主线归因。</span>";
     $("shortTermFeedback").innerHTML=[
       ["样本",`${f.sample}只`],["中位收益",signedPct(f.median)],["平均收益",signedPct(f.average)],["翻红率",pct(f.positiveRate)],["再涨停",pct(f.limitUpAgainRate)],["跌超5%",`${f.deepLoss5}只`],["最差",signedPct(f.worst)]
     ].map(([label,value])=>`<div><span>${esc(label)}</span><b>${esc(value)}</b></div>`).join("");
@@ -304,6 +306,6 @@
   }
   $("projectionTabs").addEventListener("click",event=>{const button=event.target.closest("[data-projection-timeframe]");if(!button)return;projectionTimeframe=button.dataset.projectionTimeframe;renderProjection($("dateSelect").value)});
   $("projectionDetail").addEventListener("click",event=>{const button=event.target.closest("[data-projection-checkpoint]");if(!button)return;projectionCheckpoint=button.dataset.projectionCheckpoint;renderProjection($("dateSelect").value)});
-  $("shortTermIndustryRelay").addEventListener("click",event=>{if(event.target.closest("[data-short-industry-close]")){expandedShortIndustry=null;renderShortTerm($("dateSelect").value);return;}const button=event.target.closest("[data-short-industry]");if(!button)return;expandedShortIndustry=expandedShortIndustry===button.dataset.shortIndustry?null:button.dataset.shortIndustry;renderShortTerm($("dateSelect").value)});
+  $("shortTermThemeRelay").addEventListener("click",event=>{if(event.target.closest("[data-short-theme-close]")){expandedShortTheme=null;renderShortTerm($("dateSelect").value);return;}const button=event.target.closest("[data-short-theme]");if(!button)return;expandedShortTheme=expandedShortTheme===button.dataset.shortTheme?null:button.dataset.shortTheme;renderShortTerm($("dateSelect").value)});
   $("dateSelect").addEventListener("change",e=>render(e.target.value));render(D.dates[D.dates.length-1]);
 })();

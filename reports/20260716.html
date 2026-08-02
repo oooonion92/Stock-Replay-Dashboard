@@ -172,6 +172,19 @@
     @media (max-width: 520px) {
       .levels { grid-template-columns: 1fr; }
     }
+
+    .market-score-dimension { border: 1px solid var(--line); border-radius: 8px; padding: 10px; background: #fbfcfe; }
+    .market-score-dimension > small { display:block; color:var(--muted); font-size:12px; }
+    .market-score-dimension > b { display:block; margin:4px 0 8px; font-size:22px; }
+    .score-component-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; }
+    .score-component { position:relative; display:flex; justify-content:space-between; gap:8px; padding:6px 7px; border:1px solid var(--line); border-radius:6px; background:#fff; cursor:help; }
+    .component-label { font-style:normal; font-size:12px; color:#475467; }
+    .component-value { font-size:14px; }
+    .score-tooltip { display:none; position:absolute; z-index:5; left:0; top:calc(100% + 5px); width:240px; padding:9px; border:1px solid var(--line); border-radius:7px; background:#fff; box-shadow:var(--shadow); font-size:12px; }
+    .score-tooltip b,.score-tooltip em { display:block; margin-top:3px; font-style:normal; }
+    .score-component:hover .score-tooltip,.score-component:focus .score-tooltip { display:block; }
+    @media (max-width:520px) { .score-component-list { grid-template-columns:1fr; } }
+
   </style>
 <style>/* Work responsive refinement: canonical layout matched to the 2026-07-10 report. */
 /* Mobile hierarchy is flat by design; keep this asset as the single source of truth. */
@@ -348,18 +361,14 @@
             <b>盘面与题材复盘</b>
             <span>结构、全市场题材、跟踪对象判断合并阅读。</span>
           </div>
-          
+
     <section class="market-score-panel">
       <div class="market-score-main">
-        <div><small>大盘总闸评分</small><strong>21</strong><span class="score-pill score-ban">风险释放</span></div>
-        <div><small>情绪面</small><b>18 / 50</b></div>
-        <div><small>技术面</small><b>3 / 50</b></div>
+        <div class="market-score-total"><div class="market-score-total-head"><small>大盘总闸评分</small><strong>21</strong><span class="score-pill score-ban">风险释放</span></div><div class="market-score-total-notes"><p><b>跨日情绪</b><span>样本72只，收盘中位+2.00%、收红62.5%；最终再封10只（13.9%）、炸板未回封5只（6.9%）、收益低于+2%占50.0%，再封中曾炸板占50.0%。 封板率62.69%、1进2 12.50%；最终封板中42.86%曾炸板，平均炸板0.90次。</span></p><p><b>评分结论</b><span>情绪面 18/50，技术面 3/50（结构与级别 3/20；30m动量 0/12；关键位 0/10；指数成交确认 0/8），总分 21/100。</span></p></div></div>
+        <div class="market-score-dimension sentiment-dimension"><small>情绪面</small><b>18 / 50</b><div class="score-component-list sentiment-components"><span class="score-component" tabindex="0" aria-label="强势股质量7分。25分：昨日涨停股的收盘溢价、收红率、再封比例、低收益比例与炸板未回封共同决定。 当日依据：样本72只，收盘中位+2.00%、收红62.5%；最终再封10只（13.9%）、炸板未回封5只（6.9%）、收益低于+2%占50.0%，再封中曾炸板占50.0%。"><i class="component-label">强势股质量</i><b class="component-value">7</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>25分：昨日涨停股的收盘溢价、收红率、再封比例、低收益比例与炸板未回封共同决定。</em><b>当日依据</b><em>样本72只，收盘中位+2.00%、收红62.5%；最终再封10只（13.9%）、炸板未回封5只（6.9%）、收益低于+2%占50.0%，再封中曾炸板占50.0%。</em></span></span><span class="score-component" tabindex="0" aria-label="封板质量11分。25分：封板率、1进2、最终封板前炸板比例、平均炸板次数与跌停环境共同决定。 当日依据：封板率62.69%、1进2 12.50%；最终封板中42.86%曾炸板，平均炸板0.90次。"><i class="component-label">封板质量</i><b class="component-value">11</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>25分：封板率、1进2、最终封板前炸板比例、平均炸板次数与跌停环境共同决定。</em><b>当日依据</b><em>封板率62.69%、1进2 12.50%；最终封板中42.86%曾炸板，平均炸板0.90次。</em></span></span></div></div>
+        <div class="market-score-dimension technical-dimension"><small>技术面</small><b>3 / 50</b><div class="score-component-list technical-components"><span class="score-component" tabindex="0" aria-label="结构与级别3分。20分：以30分钟结构为主，5分钟只作为执行位置；结构级别越清晰，得分越高。 当日依据：上证低开后最高反抽3940.45，未触及中枢下沿3943.70，午后跌至3867.60，收盘仅小幅离开日低。最新5分钟下跌面积较前段扩大约53%，未形成底背驰；30分钟DIF为-17.12且斜率继续向下，当前仍是中枢下破后的加速段，而非右侧止跌。"><i class="component-label">结构与级别</i><b class="component-value">3</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>20分：以30分钟结构为主，5分钟只作为执行位置；结构级别越清晰，得分越高。</em><b>当日依据</b><em>上证低开后最高反抽3940.45，未触及中枢下沿3943.70，午后跌至3867.60，收盘仅小幅离开日低。最新5分钟下跌面积较前段扩大约53%，未形成底背驰；30分钟DIF为-17.12且斜率继续向下，当前仍是中枢下破后的加速段，而非右侧止跌。</em></span></span><span class="score-component" tabindex="0" aria-label="30m动量0分。12分：依据30分钟DIF、DEA与MACD柱的方向、位置和扩张程度。 当日依据：依据当天30分钟 DIF、DEA、柱体方向及动量扩张或衰减。"><i class="component-label">30m动量</i><b class="component-value">0</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>12分：依据30分钟DIF、DEA与MACD柱的方向、位置和扩张程度。</em><b>当日依据</b><em>依据当天30分钟 DIF、DEA、柱体方向及动量扩张或衰减。</em></span></span><span class="score-component" tabindex="0" aria-label="关键位0分。10分：依据收盘对中枢、确认位和失效位的站上、受阻或跌破。 当日依据：依据当天收盘与中枢、确认位、失效位的相对位置。"><i class="component-label">关键位</i><b class="component-value">0</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>10分：依据收盘对中枢、确认位和失效位的站上、受阻或跌破。</em><b>当日依据</b><em>依据当天收盘与中枢、确认位、失效位的相对位置。</em></span></span><span class="score-component" tabindex="0" aria-label="指数成交确认0分。8分：只用指数成交额的历史分位确认，不混入全A宽度或资金流。 当日依据：依据当日指数成交额的可比历史分位。"><i class="component-label">指数成交确认</i><b class="component-value">0</b><span class="score-tooltip" role="tooltip"><b>评分标准</b><em>8分：只用指数成交额的历史分位确认，不混入全A宽度或资金流。</em><b>当日依据</b><em>依据当日指数成交额的可比历史分位。</em></span></span></div></div>
       </div>
-      <p><b>跨日情绪：</b>昨日涨超5%共 294 只，今日开盘中位 -0.97%，收盘中位 +0.00%，49% 收红；昨日跌停 75 只，15% 收红，79% 盘中回到 -3% 以上，68% 再跌超5%。</p>
-      <p><b>AI修正：</b>情绪 0，技术 0。规则层已纳入跨日延续性：昨日强势股次日开盘中位-0.97%、收盘中位0%，追涨没有稳定溢价；昨日弱势股今日收盘中位-5.15%，昨日跌停股重复受损率68%，亏钱效应按-10分直接计入。指数跌破中枢且30分钟动量继续恶化，技术面3分不再额外修正。</p>
-      <div class="market-score-components"><span title="情绪基准：10（范围 10）">情绪基准 10</span><span title="宽度：5（范围 15）">宽度 5</span><span title="当日赚钱：3（范围 10）">当日赚钱 3</span><span title="强势股次日溢价：0（范围 -4~+4）">强势股次日溢价 0</span><span title="亏钱效应：-10（范围 -10~0）">亏钱效应 -10</span><span title="主线一致：6（范围 8）">主线一致 6</span><span title="高手情绪：4（范围 11）">高手情绪 4</span><span title="5m位置：2（范围 15）">5m位置 2</span><span title="30m动量：0（范围 12）">30m动量 0</span><span title="关键位：0（范围 8）">关键位 0</span><span title="量价：1（范围 8）">量价 1</span><span title="路径质量：0（范围 7）">路径质量 0</span></div>
     </section>
-          
     <div class="market-overview">
       <b>大盘总体分析</b>
       <div class="overview-grid">
@@ -382,12 +391,12 @@
               <strong>红：收回3903并进一步站上3944</strong>
               <span>要求成交与市场宽度同步改善，科技容量核心收回VWAP，才把反抽升级为修复。；先等回踩确认，09:30—10:00不追第一波反弹。</span>
             </div>
-            
+
             <div class="path-mini gate-yellow">
               <strong>黄：守住3868并在3868—3903弱修复</strong>
               <span>按下跌后的技术反抽处理，反弹受制于3903时仍以降波动和去弱留强为主。；只观察能逆指数、守VWAP并保持结构的核心，不把板块普反当反转。</span>
             </div>
-            
+
             <div class="path-mini gate-blue">
               <strong>蓝：失守3868并跌破3850</strong>
               <span>暂停新增试错，下一观察区下移至3794附近，避免在加速段左侧摊低成本。；半导体与高贝塔标的若继续放大指数跌幅，严格执行各自失败线。</span>
@@ -396,8 +405,8 @@
         </section>
       </div>
     </div>
-    
-          
+
+
     <div class="market-ecology">
       <b>题材生态</b>
       <div class="breadth-grid">
@@ -414,31 +423,31 @@
           <span>均涨 +5.38% · 涨停 2 · >=5% 4 · 成交 37.0亿</span>
           <span class="theme-leaders">领涨：儒意电影、上海电影、幸福蓝海、横店影视、金逸影视、博纳影业</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>影视制作</strong>
           <span>均涨 +4.68% · 涨停 2 · >=5% 5 · 成交 56.6亿</span>
           <span class="theme-leaders">领涨：华智数媒、欢瑞世纪、光线传媒、百纳千成、慈文传媒、中广天择</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>专业连锁</strong>
           <span>均涨 +4.64% · 涨停 2 · >=5% 2 · 成交 18.4亿</span>
           <span class="theme-leaders">领涨：博士眼镜、天音控股、孩子王、爱婴室、爱施德、吉峰科技</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>血液制品</strong>
           <span>均涨 +3.56% · 涨停 0 · >=5% 2 · 成交 21.5亿</span>
           <span class="theme-leaders">领涨：禾元生物-U、上海莱士、派林生物、天坛生物、博雅生物、华兰生物</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>医院</strong>
           <span>均涨 +3.44% · 涨停 1 · >=5% 4 · 成交 58.1亿</span>
           <span class="theme-leaders">领涨：创新医疗、盈康生命、普瑞眼科、三博脑科、美年健康、华厦眼科</span>
         </div>
-        
+
         <div class="theme-chip strong-theme">
           <strong>其他广告营销</strong>
           <span>均涨 +3.32% · 涨停 1 · >=5% 1 · 成交 29.0亿</span>
@@ -452,19 +461,19 @@
           <span>均涨 -1.23% · 涨停 0 · 成交 167.5亿</span>
           <span class="theme-leaders">领涨：天齐锂业、融捷股份、*ST威领、江特电机、中矿资源、永兴材料</span>
         </div>
-        
+
         <div class="theme-chip">
           <strong>军工 / 商业航天 / 低空装备</strong>
           <span>均涨 -1.28% · 涨停 1 · 成交 449.7亿</span>
           <span class="theme-leaders">领涨：星网宇达、国睿科技、华如科技、理工导航、七一二、航天电器</span>
         </div>
-        
+
         <div class="theme-chip">
           <strong>机器人 / 具身智能 / 自动化设备</strong>
           <span>均涨 -1.51% · 涨停 1 · 成交 1286.3亿</span>
           <span class="theme-leaders">领涨：凯尔达、*ST益通、亚联机械、开创电气、迈赫股份、大丰实业</span>
         </div>
-        
+
         <div class="theme-chip">
           <strong>小金属 / 有色资源</strong>
           <span>均涨 -1.63% · 涨停 0 · 成交 559.3亿</span>
@@ -472,8 +481,8 @@
         </div>
         </div>
     </div>
-    
-          
+
+
     <div class="expert-digest">
       <b>跟踪对象发言精炼</b>
       <div class="expert-metrics">
@@ -482,19 +491,19 @@
           <strong>蓝色：指数破位，科技与半导体风险继续释放</strong>
           <span>高质量观点集中在三点：指数和科技趋势尚未止跌，反抽仍有缺口与趋势线压制；弱市资金只愿抱少数核心，东山是科技内部最清晰的相对强弱锚；仓位控制和去杠杆优先于猜底。</span>
         </section>
-        
+
         <section class="expert-metric-card">
           <small>交易类型</small>
           <strong>下跌加速中的核心抱团与仓位防守</strong>
           <span>先分交易类型，再决定处理方式。</span>
         </section>
-        
+
         <section class="expert-metric-card">
           <small>主线焦点</small>
           <strong>影视、医药等低位方向轮动；PCB中的东山相对独立，半导体设备与材料最弱</strong>
           <span>只看有板块合力和核心地位的方向。</span>
         </section>
-        
+
         <section class="expert-metric-card">
           <small>执行结论</small>
           <strong>不追反抽，不抄半导体跌幅；只保留能逆指数、守VWAP和中枢的核心观察</strong>
@@ -520,25 +529,25 @@
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
           <b>低位轮动最强</b>
         </div>
-        
+
         <div class="bar-line">
           <span>医药/CXO</span>
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
           <b>分歧加大</b>
         </div>
-        
+
         <div class="bar-line">
           <span>PCB/东山</span>
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
           <b>科技内相对核心</b>
         </div>
-        
+
         <div class="bar-line">
           <span>指数权重</span>
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
           <b>尾盘放量待验证</b>
         </div>
-        
+
         <div class="bar-line">
           <span>半导体设备/材料</span>
           <div class="track"><div class="fill" style="width: 50%;"></div></div>
@@ -556,12 +565,12 @@
         </section>
       </div>
     </div>
-    
+
         </section>
       </div>
     </section>
 
-    
+
     <section class="expert-quotes-panel panel">
       <strong class="subhead">有用摘录</strong>
       <p class="quote-rule"></p>
@@ -574,7 +583,7 @@
           <p><b>明日动作：</b>以东山的VWAP和中枢承接作为科技回流锚。</p>
           <a href="https://bbs.nga.cn/read.php?tid=47002314&amp;pid=875334683">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>仓位纪律</span><small>NGA / Plezl · 12:43</small></div>
           <blockquote>“控仓参与，交易体系不健全的人请休息。”</blockquote>
@@ -583,7 +592,7 @@
           <p><b>明日动作：</b>仅用小仓验证右侧信号，不扩大左侧仓位。</p>
           <a href="https://bbs.nga.cn/read.php?tid=45974302&amp;pid=875317692">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>反弹供给</span><small>NGA / zippo578 · 16:07</small></div>
           <blockquote>“遇见反弹，最好真的跑了。”</blockquote>
@@ -592,7 +601,7 @@
           <p><b>明日动作：</b>先等反弹后的回踩确认，再判断能否升级。</p>
           <a href="https://bbs.nga.cn/read.php?tid=45974302&amp;pid=875342507">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>趋势状态</span><small>NGA / 夜骰2号机 · 15:12</small></div>
           <blockquote>“短期趋势线加速向下，想上大仓位等回踩。”</blockquote>
@@ -601,7 +610,7 @@
           <p><b>明日动作：</b>以3903和3944两级收复作为修复确认。</p>
           <a href="https://bbs.nga.cn/read.php?tid=45974302&amp;pid=875335358">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>弱市抱团</span><small>NGA / 进击的猫猫头选手 · 12:21</small></div>
           <blockquote>“分歧切核心，弱势切抱团。”</blockquote>
@@ -610,7 +619,7 @@
           <p><b>明日动作：</b>只保留逆指数且守住VWAP的核心，后排全部降级。</p>
           <a href="https://bbs.nga.cn/read.php?tid=45502551&amp;pid=875314960">查看原帖</a>
         </article>
-        
+
         <article class="quote-card">
           <div class="quote-meta"><span>生存优先</span><small>NGA / 灰兔尾 · 14:50</small></div>
           <blockquote>“优先保护自己生存，做垫子。”</blockquote>
@@ -621,9 +630,9 @@
         </article>
         </div>
     </section>
-    
 
-    
+
+
     <section class="scoreboard-panel">
       <div class="scoreboard-head">
         <h2 class="section-title">跟踪标的评分</h2>
@@ -687,7 +696,7 @@
         </section>
       </div>
     </article>
-    
+
 
     <article class="stock-card action-defense">
       <div class="card-head">
@@ -713,7 +722,7 @@
         </section>
       </div>
     </article>
-    
+
 
     <article class="stock-card action-defense">
       <div class="card-head">

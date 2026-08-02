@@ -9,6 +9,7 @@
   const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   let projectionTimeframe="30m";
   let projectionCheckpoint="close";
+  let projectionEvidenceOpen=false;
   let expandedShortTheme=null;
   let expandedCapitalDirection=null;
   let activeCapitalObservation=null;
@@ -212,8 +213,7 @@
   };
   const projectionScenarioTable=rows=>{
     if(!rows?.length)return `<div class="path-table-empty">该周期暂无可用路径条件</div>`;
-    const body=rows.map(row=>`<tr class="path-stage-${esc(row.tone||"neutral")}"><th scope="row">${esc(row.label||"—")}</th><td><span>点位</span>${esc(row.priceCondition||"—")}</td><td><span>笔结构</span>${esc(row.strokeCondition||"—")}</td><td><span>MACD</span>${esc(row.macdCondition||"—")}</td><td><span>判断</span>${esc(row.decision||"—")}</td></tr>`).join("");
-    return `<div class="dashboard-path-table-wrap"><table class="dashboard-path-table dashboard-path-table-v2"><thead><tr><th>路径</th><th>点位</th><th>笔结构</th><th>MACD面积与快慢线</th><th>判断</th></tr></thead><tbody>${body}</tbody></table></div>`;
+    return `<div class="dashboard-scenario-grid">${rows.map(row=>`<article class="dashboard-scenario-card ${esc(row.tone||"neutral")}"><header><b>${esc(row.label||"—")}</b><span>${esc(row.priceCondition||"—")}</span></header><p><small>结构确认</small>${esc(row.strokeCondition||"—")}</p><p><small>执行</small>${esc(row.decision||"—")}</p><details><summary>MACD 证据</summary><span>${esc(row.macdCondition||"—")}</span></details></article>`).join("")}</div>`;
   };
   function renderProjection(d){
     const projection=D.reports[d]?.market?.pathProjection;
@@ -227,39 +227,32 @@
     content.hidden=false;empty.hidden=true;
     const volume=projection.volume||{},review=projection.previousReview||{},paths=projection.nextSessionPaths||{},timeframes=projection.timeframes||{};
     if(!timeframes[projectionTimeframe])projectionTimeframe=Object.keys(timeframes)[0]||"30m";
+    const item=timeframes[projectionTimeframe]||{},current=item.current||{};
     $("projectionVolume").textContent=`基于${projection.date||d}收盘 · ${volume.label||"量能未知"} · 近20期量比 ${finite(volume.ratio20)?Math.round(Number(volume.ratio20)*100)+"%":"—"}`;
     $("projectionReview").className=`dashboard-projection-review ${esc(review.status||"first")}`;
-    $("projectionReview").innerHTML=`<b>${review.available?`昨日路径：${esc(review.primary||"待复核")}`:"首个路径快照"}</b><span>${esc(review.summary||"暂无上一交易日路径可供复核。")}</span>`;
-    const branchMeta=[
-      ["up","修复路径",paths.up?.label],
-      ["range","震荡路径",paths.range?.label],
-      ["down","破坏路径",paths.down?.label]
-    ];
-    $("projectionBranches").innerHTML=branchMeta.map(([tone,title,label])=>`<div class="dashboard-projection-branch ${tone}"><b>${title}</b><span>${esc(label||"—")}</span></div>`).join("");
-    $("projectionTabs").innerHTML=Object.entries(timeframes).map(([key,item])=>`<button type="button" class="${key===projectionTimeframe?"is-active":""}" data-projection-timeframe="${key}" aria-selected="${key===projectionTimeframe}">${esc(item.label||key)}</button>`).join("");
-    const item=timeframes[projectionTimeframe]||{},current=item.current||{};
+    $("projectionReview").innerHTML=`<details><summary><b>${review.available?`昨日路径复盘：${esc(review.primary||"待复核")}`:"首个路径快照"}</b><span>${review.available?"查看实际触发与收盘结果":""}</span></summary><p>${esc(review.summary||"暂无上一交易日路径可供复核。")}</p></details>`;
+    $("projectionTabs").innerHTML=Object.entries(timeframes).map(([key,timeframe])=>`<button type="button" class="${key===projectionTimeframe?"is-active":""}" data-projection-timeframe="${key}" aria-selected="${key===projectionTimeframe}">${esc(timeframe.label||key)}</button>`).join("");
     if(["multi-timeframe-path-v2","multi-timeframe-native-chan-v3"].includes(projection.schemaVersion)){
       const assessment=item.phaseAssessment||{},checkpoint=item.checkpoints?.[projectionCheckpoint]||item.checkpoints?.close||{};
       const progression=(projection.progression||[]).map(step=>`<li class="${esc(step.status||"")}"><span>${esc(step.label||"—")}</span><b>${esc(step.role||"—")}</b><small>${esc(step.phase||"—")}</small></li>`).join("");
       const levelPaths=item.paths||paths,structure=item.chanStructure||{},lastStroke=structure.lastStroke||{},activeCenter=structure.activeCenter||{};
-      const levelBranches=[["up","本级别修复",levelPaths.up?.label],["range","本级别区间",levelPaths.range?.label],["down","本级别破坏",levelPaths.down?.label]];
+      const levelBranches=[["up","修复",levelPaths.up?.label],["range","震荡",levelPaths.range?.label],["down","破坏",levelPaths.down?.label]];
       const centerText=finite(activeCenter.zd)&&finite(activeCenter.zg)?` · 中枢 ${Number(activeCenter.zd).toFixed(0)}—${Number(activeCenter.zg).toFixed(0)}`:"";
       const structurePanel=projection.schemaVersion==="multi-timeframe-native-chan-v3"?`
-        <div class="dashboard-chan-summary"><b>${esc(item.label||projectionTimeframe)}结构</b><span>${lastStroke.direction?`最近${lastStroke.direction==="up"?"上行":"下行"}笔${lastStroke.is_sure?"已确认":"未确认"}${esc(centerText)}`:"暂无足够确认笔"}</span></div>
-        <div class="dashboard-level-branches">${levelBranches.map(([tone,title,label])=>`<div class="${tone}"><b>${title}</b><span>${esc(label||"—")}</span></div>`).join("")}</div>`:"";
+        <div class="dashboard-chan-summary"><b>${esc(item.label||projectionTimeframe)}结构</b><span>${lastStroke.direction?`最近${lastStroke.direction==="up"?"上行":"下行"}笔${lastStroke.is_sure?"已确认":"未确认"}${esc(centerText)}`:"暂无足够确认笔"}</span></div>`:"";
+      $("projectionSummary").innerHTML=`<div class="dashboard-projection-current dashboard-projection-current-v2"><div><span>${esc(assessment.role||"当前交易状态")}</span><b>${esc(assessment.label||current.phase||"—")}</b><p>${esc(assessment.summary||"")}</p></div><button type="button" class="projection-evidence-toggle" data-projection-evidence>查看 ${esc(item.label||projectionTimeframe)} 指标证据</button></div>`;
+      $("projectionBranches").innerHTML=levelBranches.map(([tone,title,label])=>`<div class="dashboard-projection-branch ${tone}"><b>${title}路径</b><span>${esc(label||"—")}</span></div>`).join("");
       $("projectionDetail").innerHTML=`
-        <ol class="dashboard-projection-progression">${progression}</ol>
-        <div class="dashboard-projection-current dashboard-projection-current-v2">
-          <div><span>${esc(assessment.role||"当前状态")}</span><b>${esc(assessment.label||current.phase||"—")}</b><p>${esc(assessment.summary||"")}</p></div>
-          <dl><div><dt>DIF</dt><dd>${finite(current.dif)?Number(current.dif).toFixed(2):"—"}</dd></div><div><dt>DEA</dt><dd>${finite(current.dea)?Number(current.dea).toFixed(2):"—"}</dd></div><div><dt>柱</dt><dd>${finite(current.histogram)?Number(current.histogram).toFixed(2):"—"}</dd></div></dl>
-        </div>
-        ${structurePanel}
-        <div class="dashboard-checkpoint-tabs" role="tablist"><button type="button" data-projection-checkpoint="noon" class="${projectionCheckpoint==="noon"?"is-active":""}">明日午间</button><button type="button" data-projection-checkpoint="close" class="${projectionCheckpoint==="close"?"is-active":""}">明日收盘</button></div>
+        <div class="dashboard-scenario-head"><b>下一交易日观察条件</b><div class="dashboard-checkpoint-tabs" role="tablist"><button type="button" data-projection-checkpoint="noon" class="${projectionCheckpoint==="noon"?"is-active":""}">明日午间</button><button type="button" data-projection-checkpoint="close" class="${projectionCheckpoint==="close"?"is-active":""}">明日收盘</button></div></div>
         <p class="dashboard-checkpoint-note">${esc(checkpoint.note||"")}</p>
         ${projectionScenarioTable(checkpoint.scenarios)}
-        <details class="dashboard-projection-math"><summary>展开 MACD 数学推演说明</summary><p>默认以平滑推进作为可比基准。早段冲高后横盘通常累计面积更大、但收盘柱可能缩短；尾段加速通常收盘柱更强、累计面积反而较小。量能只约束路径持续性，不进入MACD公式。</p></details>`;
+        <details class="dashboard-projection-evidence" ${projectionEvidenceOpen?"open":""}><summary>多周期结构与指标证据</summary>${structurePanel}<ol class="dashboard-projection-progression">${progression}</ol><dl><div><dt>DIF</dt><dd>${finite(current.dif)?Number(current.dif).toFixed(2):"—"}</dd></div><div><dt>DEA</dt><dd>${finite(current.dea)?Number(current.dea).toFixed(2):"—"}</dd></div><div><dt>柱</dt><dd>${finite(current.histogram)?Number(current.histogram).toFixed(2):"—"}</dd></div></dl></details>
+        <details class="dashboard-projection-math"><summary>MACD 数学推演说明</summary><p>量能只约束路径持续性，不进入 MACD 公式；MACD 转好只代表反抽准备，必须由价格结构确认。</p></details>`;
       return;
     }
+    $("projectionSummary").innerHTML="";
+    const branchMeta=[["up","修复路径",paths.up?.label],["range","震荡路径",paths.range?.label],["down","破坏路径",paths.down?.label]];
+    $("projectionBranches").innerHTML=branchMeta.map(([tone,title,label])=>`<div class="dashboard-projection-branch ${tone}"><b>${title}</b><span>${esc(label||"—")}</span></div>`).join("");
     $("projectionDetail").innerHTML=`
       <div class="dashboard-projection-current">
         <div><span>当前状态</span><b>${esc(current.phase||"—")}</b></div>
@@ -306,6 +299,7 @@
   }
   $("projectionTabs").addEventListener("click",event=>{const button=event.target.closest("[data-projection-timeframe]");if(!button)return;projectionTimeframe=button.dataset.projectionTimeframe;renderProjection($("dateSelect").value)});
   $("projectionDetail").addEventListener("click",event=>{const button=event.target.closest("[data-projection-checkpoint]");if(!button)return;projectionCheckpoint=button.dataset.projectionCheckpoint;renderProjection($("dateSelect").value)});
+  $("projectionSummary").addEventListener("click",event=>{if(!event.target.closest("[data-projection-evidence]"))return;projectionEvidenceOpen=!projectionEvidenceOpen;renderProjection($("dateSelect").value)});
   $("shortTermThemeRelay").addEventListener("click",event=>{if(event.target.closest("[data-short-theme-close]")){expandedShortTheme=null;renderShortTerm($("dateSelect").value);return;}const button=event.target.closest("[data-short-theme]");if(!button)return;expandedShortTheme=expandedShortTheme===button.dataset.shortTheme?null:button.dataset.shortTheme;renderShortTerm($("dateSelect").value)});
   $("dateSelect").addEventListener("change",e=>render(e.target.value));render(D.dates[D.dates.length-1]);
 })();

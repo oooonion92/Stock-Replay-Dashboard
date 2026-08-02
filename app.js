@@ -145,6 +145,24 @@
   const pct=v=>finite(v)?`${Number(v).toFixed(2).replace(/\.00$/,"")}%`:"—";
   const signedPct=v=>finite(v)?`${Number(v)>0?"+":""}${Number(v).toFixed(2).replace(/\.00$/,"")}%`:"—";
   const shortMetric=(label,value,kind="normal")=>`<div class="short-term-metric ${kind}"><span>${esc(label)}</span><b>${esc(value)}</b></div>`;
+  function shortEmotionV2(item){
+    const e=item?.emotion||{},p=item?.promotion||{},f=item?.feedback||{},q=f.quality||{},sealed=q.sealedAgain||{},broken=q.brokenUnsealed||{},sealQ=item?.sealQuality||{};
+    const sample=Number(f.sample)||0,median=Number(f.median)||0,positive=Number(f.positiveRate)||0,sealedRate=sample?(Number(sealed.count)||0)/sample*100:0,brokenRate=sample?(Number(broken.count)||0)/sample*100:0,lowReturn=Number(q.lowReturnRate)||0,reclosed=Number(q.reclosedAfterBreakRate)||0;
+    let prior=0;
+    if(median>0&&positive>=50){
+      prior=(median>=4?2:median>=2?1:0)+(positive>=70?4:positive>=60?3:2)+(sealedRate>=30?5:sealedRate>=20?3:sealedRate>=15?2:sealedRate>=10?1:0)+(lowReturn<=30?4:lowReturn<=45?2:0)+(brokenRate<=5&&reclosed<=35?3:brokenRate<=10&&reclosed<=50?1:0)+(Number(p.oneToTwo)>=30?3:Number(p.oneToTwo)>=20?2:Number(p.oneToTwo)>=10?1:0);
+    }
+    const sealRate=Number(e.sealRate)||0,sealBreakRate=Number(sealQ.sealedWithBreakRate)||0,avgBreaks=Number(sealQ.averageBreaksOnSealed)||0,oneToTwo=Number(p.oneToTwo)||0,dt=Number(e.dt)||0;
+    const sealing=(sealRate>=80?10:sealRate>=70?8:sealRate>=60?6:sealRate>=50?3:0)+(sealBreakRate<=20?5:sealBreakRate<=35?3:sealBreakRate<=45?1:0)+(avgBreaks<=.5?5:avgBreaks<=1.2?3:avgBreaks<=2?1:0)+(oneToTwo>=30?3:oneToTwo>=20?2:oneToTwo>=10?1:0)+(dt===0?2:dt<=10?1:0);
+    return {prior:Math.min(25,prior),sealing:Math.min(25,sealing),total:Math.min(50,prior)+Math.min(25,sealing),detail:{sample,median,positive,sealedRate,brokenRate,lowReturn,reclosed,sealRate,sealBreakRate,avgBreaks,oneToTwo,dt}};
+  }
+  function scoreDisplay(market,item){
+    if(!item?.feedback?.quality||!item?.sealQuality)return {...market,v2:false};
+    const v2=shortEmotionV2(item),technical=Number(market.technical)||0;
+    const shortText=`短线情绪V2：强势股次日质量 ${v2.prior}/25，封板成功率与质量 ${v2.sealing}/25。`;
+    const status=v2.total>=32?"短线可试错":v2.total>=20?"短线观察":"短线防守";
+    return {...market,total:v2.total+technical,sentiment:v2.total,status,summary:`${shortText}${market.summary||""}`,v2:true,v2Detail:v2};
+  }
   function shortTermState(item){
     const {emotion:e,promotion:p,feedback:f}=item;
     if(Number(e.dt)>Number(e.zt)||Number(f.median)<=-1)return {tone:"risk",title:"短线风险释放",detail:"跌停或昨日强势股亏钱效应占主导，先看风险出清，不以盘中反抽替代接力修复。"};
@@ -247,12 +265,13 @@
       ${projectionPathTable(item.pathStages)}`;
   }
   function render(d){
-    const R=D.reports[d],M=R.market,A=D.dates.filter(x=>x<=d),recent=[d];
+    const R=D.reports[d],M=scoreDisplay(R.market,D.shortTerm?.[d]),A=D.dates.filter(x=>x<=d),recent=[d];
     const hasMarketScore=Number.isFinite(M.total),scored=A.filter(x=>Number.isFinite(D.reports[x].market.total));
     $("marketTotal").textContent=hasMarketScore?M.total:"—";$("marketStatus").textContent=M.status||"未纳入评分";$("marketSummary").textContent=M.summary||"该日已收录完整复盘 HTML，但当时尚未生成入口看板所需的市场评分字段。";
     $("sentimentScore").textContent=Number.isFinite(M.sentiment)?M.sentiment:"—";$("technicalScore").textContent=Number.isFinite(M.technical)?M.technical:"—";$("fullReportLink").href=R.fullReport;
+    const sentimentCaption=document.querySelector(".split-scores > div:first-child em");if(sentimentCaption)sentimentCaption.textContent=M.v2?`V2：强势股 ${M.v2Detail.prior}/25 · 封板质量 ${M.v2Detail.sealing}/25`:"宽度、量能、主线扩散";
     $("historyCount").textContent=`${scored.length}/${A.length} 个交易日有评分`;
-    $("marketTrend").innerHTML=chart([{values:A.map(x=>D.reports[x].market.total)}],A,{labels:true,score:true,metric:"score",aria:"市场评分趋势"});
+    $("marketTrend").innerHTML=chart([{values:A.map(x=>scoreDisplay(D.reports[x].market,D.shortTerm?.[x]).total)}],A,{labels:true,score:true,metric:"score",aria:"市场评分趋势"});
     $("trendNote").textContent=scored.length===A.length?"纵轴按当前可比区间自动缩放；总分越高代表环境越有利，但总闸与结构约束仍优先。":"早期复盘已纳入日期轴，但当时未生成总分；曲线只连接有评分的交易日。";
     renderShortTerm(d);
     renderProjection(d);

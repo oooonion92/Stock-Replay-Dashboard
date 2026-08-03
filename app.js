@@ -166,7 +166,10 @@
   function shortTermState(item){
     const {emotion:e,promotion:p,feedback:f}=item;
     if(Number(e.dt)>Number(e.zt)||Number(f.median)<=-1)return {tone:"risk",title:"短线风险释放",detail:"跌停或昨日强势股亏钱效应占主导，先看风险出清，不以盘中反抽替代接力修复。"};
-    if(Number(e.breakRate)>=50||Number(p.oneToTwo)<20)return {tone:"caution",title:"热度高 · 接力偏弱",detail:"涨停数量和全市场宽度可以改善，但封板与低位晋级尚未同步，优先观察核心承接，不追扩散首板。"};
+    if(Number(e.breakRate)>=50||Number(p.oneToTwo)<20){
+      const sealText=Number(e.sealRate)>=60?`封板率${pct(e.sealRate)}已稳定，但`:`封板稳定性不足，且`;
+      return {tone:"caution",title:"热度高 · 接力偏弱",detail:`${sealText}1进2仅${pct(p.oneToTwo)}；高度与首板数量未形成中低位梯队接力，优先观察核心承接，不追扩散首板。`};
+    }
     if(Number(f.median)>0&&Number(p.oneToTwo)>=20&&Number(e.sealRate)>=60)return {tone:"positive",title:"接力生态改善",detail:"封板、晋级与昨日强势股反馈同步转强，可把指数修复中的核心方向纳入进攻观察。"};
     return {tone:"neutral",title:"短线生态观察",detail:"热度、接力和反馈尚未形成一致方向，按个股承接与梯队完整度筛选。"};
   }
@@ -213,7 +216,7 @@
   };
   const projectionScenarioTable=rows=>{
     if(!rows?.length)return `<div class="path-table-empty">该周期暂无可用路径条件</div>`;
-    return `<div class="dashboard-scenario-grid">${rows.map(row=>`<article class="dashboard-scenario-card ${esc(row.tone||"neutral")}"><header><b>${esc(row.label||"—")}</b><span>${esc(row.priceCondition||"—")}</span></header><p><small>结构确认</small>${esc(row.strokeCondition||"—")}</p><p><small>执行</small>${esc(row.decision||"—")}</p><details><summary>MACD 证据</summary><span>${esc(row.macdCondition||"—")}</span></details></article>`).join("")}</div>`;
+    return `<div class="dashboard-scenario-grid">${rows.map(row=>`<article class="dashboard-scenario-card ${esc(row.tone||"neutral")}"><header><b>${esc(row.label||"—")}</b><span>${esc(row.priceCondition||"—")}</span></header><p><small>结构</small><span>${esc(row.strokeCondition||"—")}</span></p><p><small>执行</small><span>${esc(row.decision||"—")}</span></p><details><summary>MACD 证据</summary><span>${esc(row.macdCondition||"—")}</span></details></article>`).join("")}</div>`;
   };
   function renderProjection(d){
     const projection=D.reports[d]?.market?.pathProjection;

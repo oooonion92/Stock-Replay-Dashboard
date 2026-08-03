@@ -35,12 +35,12 @@ window.REPLAY_DATA.shortTerm = {
         "sealedAgain": {
           "count": 10,
           "median": 10.02,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 1,
           "median": 9.23,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "other": {
           "count": 82,
@@ -50,7 +50,7 @@ window.REPLAY_DATA.shortTerm = {
         "lowReturnCount": 70,
         "lowReturnRate": 75.27,
         "reclosedAfterBreakCount": 7,
-        "reclosedAfterBreakRate": 70.0
+        "reclosedAfterBreakRate": 70
       }
     },
     "sealQuality": {
@@ -112,7 +112,7 @@ window.REPLAY_DATA.shortTerm = {
             "sealAmount": 80657733,
             "breaks": 3,
             "amount": 737706224,
-            "turnover": 8.0
+            "turnover": 8
           },
           {
             "kind": "limitUp",
@@ -385,7 +385,7 @@ window.REPLAY_DATA.shortTerm = {
       "oneToTwoNumerator": 5,
       "oneToTwoDenominator": 19,
       "twoToThree": 16.67,
-      "threePlus": 0.0
+      "threePlus": 0
     },
     "feedback": {
       "sample": 28,
@@ -400,8 +400,8 @@ window.REPLAY_DATA.shortTerm = {
       "quality": {
         "sealedAgain": {
           "count": 6,
-          "median": 10.0,
-          "positiveRate": 100.0
+          "median": 10,
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 0,
@@ -606,7 +606,7 @@ window.REPLAY_DATA.shortTerm = {
             "sealAmount": null,
             "breaks": 1,
             "amount": 1636777744,
-            "turnover": 8.0
+            "turnover": 8
           }
         ]
       },
@@ -923,11 +923,11 @@ window.REPLAY_DATA.shortTerm = {
       "lianban": 16
     },
     "promotion": {
-      "oneToTwo": 16.0,
+      "oneToTwo": 16,
       "oneToTwoNumerator": 12,
       "oneToTwoDenominator": 75,
-      "twoToThree": 60.0,
-      "threePlus": 100.0
+      "twoToThree": 60,
+      "threePlus": 100
     },
     "feedback": {
       "sample": 81,
@@ -942,13 +942,13 @@ window.REPLAY_DATA.shortTerm = {
       "quality": {
         "sealedAgain": {
           "count": 16,
-          "median": 10.0,
-          "positiveRate": 100.0
+          "median": 10,
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 1,
           "median": 5.64,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "other": {
           "count": 64,
@@ -958,7 +958,7 @@ window.REPLAY_DATA.shortTerm = {
         "lowReturnCount": 47,
         "lowReturnRate": 58.02,
         "reclosedAfterBreakCount": 8,
-        "reclosedAfterBreakRate": 50.0
+        "reclosedAfterBreakRate": 50
       }
     },
     "sealQuality": {
@@ -1461,28 +1461,28 @@ window.REPLAY_DATA.shortTerm = {
       "oneToTwoNumerator": 7,
       "oneToTwoDenominator": 56,
       "twoToThree": 8.33,
-      "threePlus": 50.0
+      "threePlus": 50
     },
     "feedback": {
       "sample": 72,
-      "median": 2.0,
+      "median": 2,
       "average": 2.58,
       "positiveRate": 62.5,
       "limitUpAgainRate": 13.89,
       "deepLoss5": 8,
       "deepLoss7": 4,
-      "worst": -10.0,
+      "worst": -10,
       "missingFeedback": 0,
       "quality": {
         "sealedAgain": {
           "count": 10,
           "median": 10.02,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 5,
           "median": 5.35,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "other": {
           "count": 57,
@@ -1490,9 +1490,9 @@ window.REPLAY_DATA.shortTerm = {
           "positiveRate": 52.63
         },
         "lowReturnCount": 36,
-        "lowReturnRate": 50.0,
+        "lowReturnRate": 50,
         "reclosedAfterBreakCount": 5,
-        "reclosedAfterBreakRate": 50.0
+        "reclosedAfterBreakRate": 50
       }
     },
     "sealQuality": {
@@ -1879,12 +1879,12 @@ window.REPLAY_DATA.shortTerm = {
         "sealedAgain": {
           "count": 9,
           "median": 9.98,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 1,
           "median": 7.89,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "other": {
           "count": 33,
@@ -2212,11 +2212,11 @@ window.REPLAY_DATA.shortTerm = {
       "lianban": 7
     },
     "promotion": {
-      "oneToTwo": 25.0,
+      "oneToTwo": 25,
       "oneToTwoNumerator": 6,
       "oneToTwoDenominator": 24,
-      "twoToThree": 25.0,
-      "threePlus": 0.0
+      "twoToThree": 25,
+      "threePlus": 0
     },
     "feedback": {
       "sample": 33,
@@ -2232,7 +2232,7 @@ window.REPLAY_DATA.shortTerm = {
         "sealedAgain": {
           "count": 7,
           "median": 9.99,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 7,
@@ -2843,7 +2843,7 @@ window.REPLAY_DATA.shortTerm = {
       "oneToTwoNumerator": 3,
       "oneToTwoDenominator": 46,
       "twoToThree": 16.67,
-      "threePlus": 100.0
+      "threePlus": 100
     },
     "feedback": {
       "sample": 53,
@@ -2859,7 +2859,7 @@ window.REPLAY_DATA.shortTerm = {
         "sealedAgain": {
           "count": 5,
           "median": 10.06,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 0,
@@ -2874,7 +2874,7 @@ window.REPLAY_DATA.shortTerm = {
         "lowReturnCount": 29,
         "lowReturnRate": 54.72,
         "reclosedAfterBreakCount": 3,
-        "reclosedAfterBreakRate": 60.0
+        "reclosedAfterBreakRate": 60
       }
     },
     "sealQuality": {
@@ -3702,7 +3702,7 @@ window.REPLAY_DATA.shortTerm = {
       "oneToTwoNumerator": 9,
       "oneToTwoDenominator": 116,
       "twoToThree": 33.33,
-      "threePlus": 100.0
+      "threePlus": 100
     },
     "feedback": {
       "sample": 121,
@@ -3717,23 +3717,23 @@ window.REPLAY_DATA.shortTerm = {
       "quality": {
         "sealedAgain": {
           "count": 12,
-          "median": 10.0,
-          "positiveRate": 100.0
+          "median": 10,
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 8,
           "median": 7.42,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "other": {
           "count": 101,
-          "median": 0.0,
+          "median": 0,
           "positiveRate": 49.5
         },
         "lowReturnCount": 69,
         "lowReturnRate": 57.02,
         "reclosedAfterBreakCount": 6,
-        "reclosedAfterBreakRate": 50.0
+        "reclosedAfterBreakRate": 50
       }
     },
     "sealQuality": {
@@ -4097,7 +4097,7 @@ window.REPLAY_DATA.shortTerm = {
             "sealAmount": 42050055,
             "breaks": 23,
             "amount": 2606820320,
-            "turnover": 54.0
+            "turnover": 54
           },
           {
             "kind": "limitUp",
@@ -4266,12 +4266,12 @@ window.REPLAY_DATA.shortTerm = {
         "sealedAgain": {
           "count": 15,
           "median": 9.99,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 3,
           "median": 5.76,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "other": {
           "count": 29,
@@ -4281,7 +4281,7 @@ window.REPLAY_DATA.shortTerm = {
         "lowReturnCount": 20,
         "lowReturnRate": 42.55,
         "reclosedAfterBreakCount": 6,
-        "reclosedAfterBreakRate": 40.0
+        "reclosedAfterBreakRate": 40
       }
     },
     "sealQuality": {
@@ -5177,7 +5177,7 @@ window.REPLAY_DATA.shortTerm = {
         "sealedAgain": {
           "count": 17,
           "median": 9.99,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 6,
@@ -5564,14 +5564,14 @@ window.REPLAY_DATA.shortTerm = {
       "oneToTwoNumerator": 3,
       "oneToTwoDenominator": 23,
       "twoToThree": 15.38,
-      "threePlus": 75.0
+      "threePlus": 75
     },
     "feedback": {
       "sample": 40,
       "median": 3.49,
       "average": 3.25,
       "positiveRate": 67.5,
-      "limitUpAgainRate": 20.0,
+      "limitUpAgainRate": 20,
       "deepLoss5": 3,
       "deepLoss7": 0,
       "worst": -6.6,
@@ -5580,12 +5580,12 @@ window.REPLAY_DATA.shortTerm = {
         "sealedAgain": {
           "count": 8,
           "median": 10.03,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 4,
           "median": 1.42,
-          "positiveRate": 50.0
+          "positiveRate": 50
         },
         "other": {
           "count": 28,
@@ -5593,9 +5593,9 @@ window.REPLAY_DATA.shortTerm = {
           "positiveRate": 60.71
         },
         "lowReturnCount": 16,
-        "lowReturnRate": 40.0,
+        "lowReturnRate": 40,
         "reclosedAfterBreakCount": 6,
-        "reclosedAfterBreakRate": 75.0
+        "reclosedAfterBreakRate": 75
       }
     },
     "sealQuality": {
@@ -6120,28 +6120,28 @@ window.REPLAY_DATA.shortTerm = {
       "oneToTwoNumerator": 13,
       "oneToTwoDenominator": 103,
       "twoToThree": 33.33,
-      "threePlus": 40.0
+      "threePlus": 40
     },
     "feedback": {
       "sample": 111,
-      "median": 0.0,
+      "median": 0,
       "average": 0.6,
       "positiveRate": 47.75,
       "limitUpAgainRate": 14.41,
       "deepLoss5": 20,
       "deepLoss7": 13,
-      "worst": -10.0,
+      "worst": -10,
       "missingFeedback": 0,
       "quality": {
         "sealedAgain": {
           "count": 16,
-          "median": 10.0,
-          "positiveRate": 100.0
+          "median": 10,
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 8,
           "median": 5.43,
-          "positiveRate": 75.0
+          "positiveRate": 75
         },
         "other": {
           "count": 87,
@@ -6615,13 +6615,13 @@ window.REPLAY_DATA.shortTerm = {
       "quality": {
         "sealedAgain": {
           "count": 11,
-          "median": 10.0,
-          "positiveRate": 100.0
+          "median": 10,
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 3,
           "median": 3.57,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "other": {
           "count": 47,
@@ -7117,13 +7117,13 @@ window.REPLAY_DATA.shortTerm = {
       "oneToTwoNumerator": 6,
       "oneToTwoDenominator": 70,
       "twoToThree": 16.67,
-      "threePlus": 60.0
+      "threePlus": 60
     },
     "feedback": {
       "sample": 80,
       "median": -1.42,
       "average": -0.22,
-      "positiveRate": 40.0,
+      "positiveRate": 40,
       "limitUpAgainRate": 12.35,
       "deepLoss5": 14,
       "deepLoss7": 8,
@@ -7132,13 +7132,13 @@ window.REPLAY_DATA.shortTerm = {
       "quality": {
         "sealedAgain": {
           "count": 10,
-          "median": 10.0,
-          "positiveRate": 100.0
+          "median": 10,
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 5,
           "median": 6.29,
-          "positiveRate": 80.0
+          "positiveRate": 80
         },
         "other": {
           "count": 65,
@@ -7148,7 +7148,7 @@ window.REPLAY_DATA.shortTerm = {
         "lowReturnCount": 57,
         "lowReturnRate": 70.37,
         "reclosedAfterBreakCount": 2,
-        "reclosedAfterBreakRate": 20.0
+        "reclosedAfterBreakRate": 20
       }
     },
     "sealQuality": {
@@ -7483,7 +7483,7 @@ window.REPLAY_DATA.shortTerm = {
       "oneToTwoNumerator": 6,
       "oneToTwoDenominator": 42,
       "twoToThree": 16.67,
-      "threePlus": 75.0
+      "threePlus": 75
     },
     "feedback": {
       "sample": 52,
@@ -7499,7 +7499,7 @@ window.REPLAY_DATA.shortTerm = {
         "sealedAgain": {
           "count": 10,
           "median": 10.01,
-          "positiveRate": 100.0
+          "positiveRate": 100
         },
         "brokenUnsealed": {
           "count": 6,
@@ -7514,7 +7514,7 @@ window.REPLAY_DATA.shortTerm = {
         "lowReturnCount": 27,
         "lowReturnRate": 51.92,
         "reclosedAfterBreakCount": 8,
-        "reclosedAfterBreakRate": 80.0
+        "reclosedAfterBreakRate": 80
       }
     },
     "sealQuality": {
@@ -8204,6 +8204,565 @@ window.REPLAY_DATA.shortTerm = {
             "breaks": 1,
             "amount": 1189532912,
             "turnover": 9.87
+          }
+        ]
+      }
+    ]
+  },
+  "2026-08-03": {
+    "source": "东方财富收盘涨停/炸板/跌停池",
+    "state": "complete",
+    "emotion": {
+      "zt": 75,
+      "zb": 16,
+      "dt": 8,
+      "sealRate": 82.42,
+      "breakRate": 17.58,
+      "firstBoard": 58,
+      "maxBoards": 6,
+      "lianban": 17
+    },
+    "promotion": {
+      "oneToTwo": 14.61,
+      "oneToTwoNumerator": 13,
+      "oneToTwoDenominator": 89,
+      "twoToThree": 16.67,
+      "threePlus": 75
+    },
+    "feedback": {
+      "sample": 98,
+      "median": 0.91,
+      "average": 1.31,
+      "positiveRate": 57.14,
+      "limitUpAgainRate": 17.17,
+      "deepLoss5": 13,
+      "deepLoss7": 6,
+      "worst": -9.19,
+      "missingFeedback": 1,
+      "quality": {
+        "sealedAgain": {
+          "count": 17,
+          "median": 10,
+          "positiveRate": 100
+        },
+        "brokenUnsealed": {
+          "count": 3,
+          "median": 6.07,
+          "positiveRate": 100
+        },
+        "other": {
+          "count": 78,
+          "median": -0.5,
+          "positiveRate": 46.15
+        },
+        "lowReturnCount": 58,
+        "lowReturnRate": 58.59,
+        "reclosedAfterBreakCount": 8,
+        "reclosedAfterBreakRate": 47.06
+      }
+    },
+    "sealQuality": {
+      "sealedWithBreakCount": 24,
+      "sealedWithBreakRate": 32,
+      "averageBreaksOnSealed": 1.03
+    },
+    "ladder": [
+      {
+        "level": 6,
+        "count": 1,
+        "names": [
+          "传智教育"
+        ]
+      },
+      {
+        "level": 5,
+        "count": 1,
+        "names": [
+          "一鸣食品"
+        ]
+      },
+      {
+        "level": 4,
+        "count": 1,
+        "names": [
+          "高争民爆"
+        ]
+      },
+      {
+        "level": 3,
+        "count": 1,
+        "names": [
+          "神雾节能"
+        ]
+      },
+      {
+        "level": 2,
+        "count": 13,
+        "names": [
+          "德龙汇能",
+          "天娱数科",
+          "恒银科技",
+          "中岩大地",
+          "立航科技",
+          "中大力德",
+          "锦和商管",
+          "盈峰环境",
+          "豪尔赛",
+          "美利云",
+          "新能股份",
+          "利欧股份",
+          "欧克科技"
+        ]
+      }
+    ],
+    "industryRelay": [
+      {
+        "name": "电网设备",
+        "limitUps": 8,
+        "firstBoards": 8,
+        "maxBoards": 1,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "601700",
+            "name": "风范股份",
+            "boards": 1,
+            "firstSeal": "09:35",
+            "lastSeal": "09:35",
+            "sealAmount": 33144566,
+            "breaks": 0,
+            "amount": 190807720,
+            "turnover": 3.16
+          },
+          {
+            "kind": "limitUp",
+            "code": "603577",
+            "name": "汇金通",
+            "boards": 1,
+            "firstSeal": "09:38",
+            "lastSeal": "09:39",
+            "sealAmount": 46267204,
+            "breaks": 1,
+            "amount": 52267034,
+            "turnover": 1.59
+          },
+          {
+            "kind": "limitUp",
+            "code": "001208",
+            "name": "华菱线缆",
+            "boards": 1,
+            "firstSeal": "09:44",
+            "lastSeal": "09:47",
+            "sealAmount": 78741792,
+            "breaks": 1,
+            "amount": 377446320,
+            "turnover": 8.24
+          },
+          {
+            "kind": "limitUp",
+            "code": "600468",
+            "name": "百利电气",
+            "boards": 1,
+            "firstSeal": "09:49",
+            "lastSeal": "09:50",
+            "sealAmount": 95821196,
+            "breaks": 1,
+            "amount": 304162736,
+            "turnover": 4.61
+          },
+          {
+            "kind": "limitUp",
+            "code": "002879",
+            "name": "长缆科技",
+            "boards": 1,
+            "firstSeal": "09:53",
+            "lastSeal": "09:53",
+            "sealAmount": 84690408,
+            "breaks": 0,
+            "amount": 431019152,
+            "turnover": 18.39
+          },
+          {
+            "kind": "limitUp",
+            "code": "000533",
+            "name": "顺钠股份",
+            "boards": 1,
+            "firstSeal": "10:07",
+            "lastSeal": "10:07",
+            "sealAmount": 109482976,
+            "breaks": 0,
+            "amount": 1260901216,
+            "turnover": 16.88
+          },
+          {
+            "kind": "limitUp",
+            "code": "301082",
+            "name": "久盛电气",
+            "boards": 1,
+            "firstSeal": "10:21",
+            "lastSeal": "10:21",
+            "sealAmount": 46184117,
+            "breaks": 0,
+            "amount": 283779760,
+            "turnover": 10.45
+          },
+          {
+            "kind": "limitUp",
+            "code": "600192",
+            "name": "长城电工",
+            "boards": 1,
+            "firstSeal": "13:18",
+            "lastSeal": "13:18",
+            "sealAmount": 37546888,
+            "breaks": 0,
+            "amount": 160589334,
+            "turnover": 5.23
+          },
+          {
+            "kind": "broken",
+            "code": "002471",
+            "name": "中超控股",
+            "boards": null,
+            "firstSeal": "10:15",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 1,
+            "amount": 1193724800,
+            "turnover": 15.89
+          }
+        ]
+      },
+      {
+        "name": "通用设备",
+        "limitUps": 6,
+        "firstBoards": 4,
+        "maxBoards": 2,
+        "brokenPool": 2,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002896",
+            "name": "中大力德",
+            "boards": 2,
+            "firstSeal": "09:31",
+            "lastSeal": "09:32",
+            "sealAmount": 212022096,
+            "breaks": 1,
+            "amount": 535050048,
+            "turnover": 3.84
+          },
+          {
+            "kind": "limitUp",
+            "code": "002131",
+            "name": "利欧股份",
+            "boards": 2,
+            "firstSeal": "10:08",
+            "lastSeal": "13:42",
+            "sealAmount": 198366029,
+            "breaks": 22,
+            "amount": 7001012736,
+            "turnover": 24
+          },
+          {
+            "kind": "limitUp",
+            "code": "301596",
+            "name": "瑞迪智驱",
+            "boards": 1,
+            "firstSeal": "09:36",
+            "lastSeal": "09:41",
+            "sealAmount": 62758254,
+            "breaks": 1,
+            "amount": 181440751,
+            "turnover": 8.6
+          },
+          {
+            "kind": "limitUp",
+            "code": "002438",
+            "name": "江苏神通",
+            "boards": 1,
+            "firstSeal": "09:39",
+            "lastSeal": "09:39",
+            "sealAmount": 116919609,
+            "breaks": 0,
+            "amount": 184224459,
+            "turnover": 2.87
+          },
+          {
+            "kind": "limitUp",
+            "code": "603617",
+            "name": "君禾股份",
+            "boards": 1,
+            "firstSeal": "10:51",
+            "lastSeal": "10:51",
+            "sealAmount": 17241081,
+            "breaks": 0,
+            "amount": 110548995,
+            "turnover": 4.32
+          },
+          {
+            "kind": "limitUp",
+            "code": "605056",
+            "name": "咸亨国际",
+            "boards": 1,
+            "firstSeal": "10:54",
+            "lastSeal": "10:54",
+            "sealAmount": 44336682,
+            "breaks": 0,
+            "amount": 111329886,
+            "turnover": 1.92
+          },
+          {
+            "kind": "broken",
+            "code": "603278",
+            "name": "大业股份",
+            "boards": null,
+            "firstSeal": "09:36",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 2,
+            "amount": 358490976,
+            "turnover": 11.32
+          },
+          {
+            "kind": "broken",
+            "code": "301137",
+            "name": "哈焊华通",
+            "boards": null,
+            "firstSeal": "09:40",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 1,
+            "amount": 618416976,
+            "turnover": 9.46
+          }
+        ]
+      },
+      {
+        "name": "化学制品",
+        "limitUps": 4,
+        "firstBoards": 3,
+        "maxBoards": 4,
+        "brokenPool": 2,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002827",
+            "name": "高争民爆",
+            "boards": 4,
+            "firstSeal": "09:30",
+            "lastSeal": "09:30",
+            "sealAmount": 127242192,
+            "breaks": 0,
+            "amount": 316471936,
+            "turnover": 3.01
+          },
+          {
+            "kind": "limitUp",
+            "code": "603217",
+            "name": "元利科技",
+            "boards": 1,
+            "firstSeal": "10:09",
+            "lastSeal": "10:09",
+            "sealAmount": 48034498,
+            "breaks": 0,
+            "amount": 71366989,
+            "turnover": 1.66
+          },
+          {
+            "kind": "limitUp",
+            "code": "603192",
+            "name": "汇得科技",
+            "boards": 1,
+            "firstSeal": "10:09",
+            "lastSeal": "10:09",
+            "sealAmount": 53244980,
+            "breaks": 0,
+            "amount": 74913320,
+            "turnover": 2.54
+          },
+          {
+            "kind": "limitUp",
+            "code": "603823",
+            "name": "百合花",
+            "boards": 1,
+            "firstSeal": "13:04",
+            "lastSeal": "14:47",
+            "sealAmount": 26110656,
+            "breaks": 10,
+            "amount": 1542552112,
+            "turnover": 7.68
+          },
+          {
+            "kind": "broken",
+            "code": "603065",
+            "name": "宿迁联盛",
+            "boards": null,
+            "firstSeal": "09:34",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 3,
+            "amount": 740720256,
+            "turnover": 12.92
+          },
+          {
+            "kind": "broken",
+            "code": "002637",
+            "name": "赞宇科技",
+            "boards": null,
+            "firstSeal": "09:59",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 2,
+            "amount": 271246864,
+            "turnover": 5.64
+          }
+        ]
+      },
+      {
+        "name": "电力",
+        "limitUps": 4,
+        "firstBoards": 3,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "000595",
+            "name": "新能股份",
+            "boards": 2,
+            "firstSeal": "09:43",
+            "lastSeal": "09:45",
+            "sealAmount": 64944332,
+            "breaks": 2,
+            "amount": 326726592,
+            "turnover": 4.97
+          },
+          {
+            "kind": "limitUp",
+            "code": "000037",
+            "name": "深南电A",
+            "boards": 1,
+            "firstSeal": "09:58",
+            "lastSeal": "09:58",
+            "sealAmount": 79876944,
+            "breaks": 0,
+            "amount": 366879168,
+            "turnover": 11.06
+          },
+          {
+            "kind": "limitUp",
+            "code": "600396",
+            "name": "华电辽能",
+            "boards": 1,
+            "firstSeal": "10:20",
+            "lastSeal": "10:20",
+            "sealAmount": 313030575,
+            "breaks": 0,
+            "amount": 3410004640,
+            "turnover": 15.62
+          },
+          {
+            "kind": "limitUp",
+            "code": "600644",
+            "name": "乐山电力",
+            "boards": 1,
+            "firstSeal": "14:06",
+            "lastSeal": "14:06",
+            "sealAmount": 44447655,
+            "breaks": 0,
+            "amount": 591947664,
+            "turnover": 10.36
+          }
+        ]
+      },
+      {
+        "name": "IT服务Ⅱ",
+        "limitUps": 3,
+        "firstBoards": 2,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "000815",
+            "name": "美利云",
+            "boards": 2,
+            "firstSeal": "09:33",
+            "lastSeal": "10:03",
+            "sealAmount": 93840723,
+            "breaks": 6,
+            "amount": 1525701344,
+            "turnover": 13.33
+          },
+          {
+            "kind": "limitUp",
+            "code": "002421",
+            "name": "达实智能",
+            "boards": 1,
+            "firstSeal": "09:31",
+            "lastSeal": "09:31",
+            "sealAmount": 109407757,
+            "breaks": 1,
+            "amount": 244637905,
+            "turnover": 3.94
+          },
+          {
+            "kind": "limitUp",
+            "code": "600936",
+            "name": "北投科技",
+            "boards": 1,
+            "firstSeal": "13:09",
+            "lastSeal": "13:09",
+            "sealAmount": 69335984,
+            "breaks": 0,
+            "amount": 675526624,
+            "turnover": 7.15
+          }
+        ]
+      },
+      {
+        "name": "计算机设",
+        "limitUps": 3,
+        "firstBoards": 2,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "603106",
+            "name": "恒银科技",
+            "boards": 2,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 58202203,
+            "breaks": 0,
+            "amount": 71652655,
+            "turnover": 1.67
+          },
+          {
+            "kind": "limitUp",
+            "code": "301182",
+            "name": "凯旺科技",
+            "boards": 1,
+            "firstSeal": "09:31",
+            "lastSeal": "09:31",
+            "sealAmount": 64817898,
+            "breaks": 0,
+            "amount": 104412293,
+            "turnover": 2.02
+          },
+          {
+            "kind": "limitUp",
+            "code": "001229",
+            "name": "魅视科技",
+            "boards": 1,
+            "firstSeal": "09:32",
+            "lastSeal": "09:32",
+            "sealAmount": 81416649,
+            "breaks": 0,
+            "amount": 79240852,
+            "turnover": 3.13
           }
         ]
       }

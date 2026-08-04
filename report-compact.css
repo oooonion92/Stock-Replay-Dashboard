@@ -1,0 +1,8 @@
+/* Compact daily report: retain only score, market overview and theme ecology. */
+.path-engine,
+.expert-digest,
+.expert-quotes-panel,
+.scoreboard-panel,
+.cards,
+.stock-review,
+.stock-sections { display: none !important; }

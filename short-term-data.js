@@ -8767,5 +8767,788 @@ window.REPLAY_DATA.shortTerm = {
         ]
       }
     ]
+  },
+  "2026-08-04": {
+    "source": "东方财富收盘涨停/炸板/跌停池",
+    "state": "complete",
+    "emotion": {
+      "zt": 138,
+      "zb": 15,
+      "dt": 0,
+      "sealRate": 90.2,
+      "breakRate": 9.8,
+      "firstBoard": 119,
+      "maxBoards": 7,
+      "lianban": 19
+    },
+    "promotion": {
+      "oneToTwo": 18.97,
+      "oneToTwoNumerator": 11,
+      "oneToTwoDenominator": 58,
+      "twoToThree": 46.15,
+      "threePlus": 50
+    },
+    "feedback": {
+      "sample": 75,
+      "median": 4.39,
+      "average": 4.77,
+      "positiveRate": 82.67,
+      "limitUpAgainRate": 25.33,
+      "deepLoss5": 0,
+      "deepLoss7": 0,
+      "worst": -3.6,
+      "missingFeedback": 0,
+      "quality": {
+        "sealedAgain": {
+          "count": 19,
+          "median": 10.01,
+          "positiveRate": 100
+        },
+        "brokenUnsealed": {
+          "count": 2,
+          "median": 9.55,
+          "positiveRate": 100
+        },
+        "other": {
+          "count": 54,
+          "median": 2.89,
+          "positiveRate": 75.93
+        },
+        "lowReturnCount": 24,
+        "lowReturnRate": 32,
+        "reclosedAfterBreakCount": 8,
+        "reclosedAfterBreakRate": 42.11
+      }
+    },
+    "sealQuality": {
+      "sealedWithBreakCount": 65,
+      "sealedWithBreakRate": 47.1,
+      "averageBreaksOnSealed": 1.12
+    },
+    "ladder": [
+      {
+        "level": 7,
+        "count": 1,
+        "names": [
+          "传智教育"
+        ]
+      },
+      {
+        "level": 4,
+        "count": 1,
+        "names": [
+          "神雾节能"
+        ]
+      },
+      {
+        "level": 3,
+        "count": 6,
+        "names": [
+          "德龙汇能",
+          "恒银科技",
+          "新能股份",
+          "美利云",
+          "豪尔赛",
+          "天娱数科"
+        ]
+      },
+      {
+        "level": 2,
+        "count": 11,
+        "names": [
+          "欣天科技",
+          "利柏特",
+          "济民健康",
+          "风范股份",
+          "通宇通讯",
+          "胜通能源",
+          "达实智能",
+          "中国科传",
+          "顺钠股份",
+          "神剑股份",
+          "魅视科技"
+        ]
+      }
+    ],
+    "industryRelay": [
+      {
+        "name": "元件",
+        "limitUps": 15,
+        "firstBoards": 15,
+        "maxBoards": 1,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002579",
+            "name": "中京电子",
+            "boards": 1,
+            "firstSeal": "09:47",
+            "lastSeal": "09:47",
+            "sealAmount": 142548755,
+            "breaks": 0,
+            "amount": 412303216,
+            "turnover": 6.15
+          },
+          {
+            "kind": "limitUp",
+            "code": "002384",
+            "name": "东山精密",
+            "boards": 1,
+            "firstSeal": "09:50",
+            "lastSeal": "11:06",
+            "sealAmount": 919817522,
+            "breaks": 7,
+            "amount": 15329027584,
+            "turnover": 6.26
+          },
+          {
+            "kind": "limitUp",
+            "code": "603115",
+            "name": "海星股份",
+            "boards": 1,
+            "firstSeal": "10:47",
+            "lastSeal": "10:47",
+            "sealAmount": 44208204,
+            "breaks": 0,
+            "amount": 473396976,
+            "turnover": 2.86
+          },
+          {
+            "kind": "limitUp",
+            "code": "002552",
+            "name": "宝鼎科技",
+            "boards": 1,
+            "firstSeal": "10:47",
+            "lastSeal": "10:47",
+            "sealAmount": 35659872,
+            "breaks": 0,
+            "amount": 489360960,
+            "turnover": 3.86
+          },
+          {
+            "kind": "limitUp",
+            "code": "600183",
+            "name": "生益科技",
+            "boards": 1,
+            "firstSeal": "11:28",
+            "lastSeal": "11:28",
+            "sealAmount": 428511872,
+            "breaks": 0,
+            "amount": 6695397888,
+            "turnover": 2.53
+          },
+          {
+            "kind": "limitUp",
+            "code": "603186",
+            "name": "华正新材",
+            "boards": 1,
+            "firstSeal": "13:00",
+            "lastSeal": "13:00",
+            "sealAmount": 47279666,
+            "breaks": 0,
+            "amount": 1236407792,
+            "turnover": 7.55
+          },
+          {
+            "kind": "limitUp",
+            "code": "002916",
+            "name": "深南电路",
+            "boards": 1,
+            "firstSeal": "13:01",
+            "lastSeal": "13:02",
+            "sealAmount": 168891080,
+            "breaks": 2,
+            "amount": 3422051792,
+            "turnover": 1.58
+          },
+          {
+            "kind": "limitUp",
+            "code": "603459",
+            "name": "红板科技",
+            "boards": 1,
+            "firstSeal": "13:01",
+            "lastSeal": "13:01",
+            "sealAmount": 34108261,
+            "breaks": 0,
+            "amount": 1421204176,
+            "turnover": 21.13
+          },
+          {
+            "kind": "limitUp",
+            "code": "002484",
+            "name": "江海股份",
+            "boards": 1,
+            "firstSeal": "13:05",
+            "lastSeal": "13:05",
+            "sealAmount": 88573554,
+            "breaks": 0,
+            "amount": 2464813744,
+            "turnover": 5.21
+          },
+          {
+            "kind": "limitUp",
+            "code": "002199",
+            "name": "东晶电子",
+            "boards": 1,
+            "firstSeal": "13:32",
+            "lastSeal": "13:32",
+            "sealAmount": 25635291,
+            "breaks": 0,
+            "amount": 263394850,
+            "turnover": 8.86
+          },
+          {
+            "kind": "limitUp",
+            "code": "002913",
+            "name": "奥士康",
+            "boards": 1,
+            "firstSeal": "13:33",
+            "lastSeal": "13:33",
+            "sealAmount": 13189120,
+            "breaks": 0,
+            "amount": 257157944,
+            "turnover": 1.95
+          },
+          {
+            "kind": "limitUp",
+            "code": "603738",
+            "name": "泰晶科技",
+            "boards": 1,
+            "firstSeal": "13:34",
+            "lastSeal": "13:34",
+            "sealAmount": 46613037,
+            "breaks": 0,
+            "amount": 870576208,
+            "turnover": 7.36
+          },
+          {
+            "kind": "limitUp",
+            "code": "002938",
+            "name": "鹏鼎控股",
+            "boards": 1,
+            "firstSeal": "13:37",
+            "lastSeal": "14:50",
+            "sealAmount": 43761300,
+            "breaks": 10,
+            "amount": 2489714016,
+            "turnover": 1.25
+          },
+          {
+            "kind": "limitUp",
+            "code": "603936",
+            "name": "博敏电子",
+            "boards": 1,
+            "firstSeal": "13:53",
+            "lastSeal": "13:56",
+            "sealAmount": 20869981,
+            "breaks": 2,
+            "amount": 576514560,
+            "turnover": 7.04
+          },
+          {
+            "kind": "limitUp",
+            "code": "002463",
+            "name": "沪电股份",
+            "boards": 1,
+            "firstSeal": "13:53",
+            "lastSeal": "14:30",
+            "sealAmount": 87024122,
+            "breaks": 5,
+            "amount": 7322469120,
+            "turnover": 3.49
+          },
+          {
+            "kind": "broken",
+            "code": "002436",
+            "name": "兴森科技",
+            "boards": null,
+            "firstSeal": "13:40",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 3,
+            "amount": 3891082912,
+            "turnover": 9.15
+          }
+        ]
+      },
+      {
+        "name": "通信设备",
+        "limitUps": 9,
+        "firstBoards": 7,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "300615",
+            "name": "欣天科技",
+            "boards": 2,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 243806467,
+            "breaks": 0,
+            "amount": 10561121,
+            "turnover": 0.55
+          },
+          {
+            "kind": "limitUp",
+            "code": "002792",
+            "name": "通宇通讯",
+            "boards": 2,
+            "firstSeal": "09:38",
+            "lastSeal": "09:48",
+            "sealAmount": 116286907,
+            "breaks": 1,
+            "amount": 515545072,
+            "turnover": 5.42
+          },
+          {
+            "kind": "limitUp",
+            "code": "002796",
+            "name": "世嘉科技",
+            "boards": 1,
+            "firstSeal": "09:33",
+            "lastSeal": "09:33",
+            "sealAmount": 89390974,
+            "breaks": 0,
+            "amount": 129440822,
+            "turnover": 2.15
+          },
+          {
+            "kind": "limitUp",
+            "code": "600105",
+            "name": "永鼎股份",
+            "boards": 1,
+            "firstSeal": "10:45",
+            "lastSeal": "11:15",
+            "sealAmount": 358402509,
+            "breaks": 1,
+            "amount": 7010824960,
+            "turnover": 14.29
+          },
+          {
+            "kind": "limitUp",
+            "code": "001267",
+            "name": "汇绿生态",
+            "boards": 1,
+            "firstSeal": "11:18",
+            "lastSeal": "11:18",
+            "sealAmount": 82848772,
+            "breaks": 0,
+            "amount": 752887200,
+            "turnover": 3.98
+          },
+          {
+            "kind": "limitUp",
+            "code": "300620",
+            "name": "光库科技",
+            "boards": 1,
+            "firstSeal": "13:03",
+            "lastSeal": "13:03",
+            "sealAmount": 257444525,
+            "breaks": 0,
+            "amount": 4294898608,
+            "turnover": 7.21
+          },
+          {
+            "kind": "limitUp",
+            "code": "603083",
+            "name": "剑桥科技",
+            "boards": 1,
+            "firstSeal": "13:21",
+            "lastSeal": "13:21",
+            "sealAmount": 104419634,
+            "breaks": 0,
+            "amount": 3727772320,
+            "turnover": 9.35
+          },
+          {
+            "kind": "limitUp",
+            "code": "002281",
+            "name": "光迅科技",
+            "boards": 1,
+            "firstSeal": "13:26",
+            "lastSeal": "13:27",
+            "sealAmount": 246212883,
+            "breaks": 1,
+            "amount": 6587355904,
+            "turnover": 4.99
+          },
+          {
+            "kind": "limitUp",
+            "code": "003031",
+            "name": "中瓷电子",
+            "boards": 1,
+            "firstSeal": "14:00",
+            "lastSeal": "14:56",
+            "sealAmount": 4132360,
+            "breaks": 1,
+            "amount": 1161919104,
+            "turnover": 3.5
+          }
+        ]
+      },
+      {
+        "name": "IT服务Ⅱ",
+        "limitUps": 8,
+        "firstBoards": 6,
+        "maxBoards": 3,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "000815",
+            "name": "美利云",
+            "boards": 3,
+            "firstSeal": "09:30",
+            "lastSeal": "09:30",
+            "sealAmount": 298584620,
+            "breaks": 0,
+            "amount": 670304752,
+            "turnover": 5.31
+          },
+          {
+            "kind": "limitUp",
+            "code": "002421",
+            "name": "达实智能",
+            "boards": 2,
+            "firstSeal": "09:52",
+            "lastSeal": "09:52",
+            "sealAmount": 130648070,
+            "breaks": 0,
+            "amount": 1118889856,
+            "turnover": 16.75
+          },
+          {
+            "kind": "limitUp",
+            "code": "688316",
+            "name": "青云科技-U",
+            "boards": 1,
+            "firstSeal": "09:33",
+            "lastSeal": "09:33",
+            "sealAmount": 112858191,
+            "breaks": 0,
+            "amount": 150554758,
+            "turnover": 5.82
+          },
+          {
+            "kind": "limitUp",
+            "code": "600666",
+            "name": "奥瑞德",
+            "boards": 1,
+            "firstSeal": "09:37",
+            "lastSeal": "09:37",
+            "sealAmount": 104074040,
+            "breaks": 0,
+            "amount": 399252336,
+            "turnover": 4.3
+          },
+          {
+            "kind": "limitUp",
+            "code": "600410",
+            "name": "华胜天成",
+            "boards": 1,
+            "firstSeal": "09:40",
+            "lastSeal": "09:40",
+            "sealAmount": 166596812,
+            "breaks": 0,
+            "amount": 790738128,
+            "turnover": 4.73
+          },
+          {
+            "kind": "limitUp",
+            "code": "300052",
+            "name": "中青宝",
+            "boards": 1,
+            "firstSeal": "10:52",
+            "lastSeal": "13:07",
+            "sealAmount": 31063695,
+            "breaks": 3,
+            "amount": 581857008,
+            "turnover": 19.24
+          },
+          {
+            "kind": "limitUp",
+            "code": "301396",
+            "name": "宏景科技",
+            "boards": 1,
+            "firstSeal": "11:10",
+            "lastSeal": "11:10",
+            "sealAmount": 130306049,
+            "breaks": 0,
+            "amount": 3557850496,
+            "turnover": 14.99
+          },
+          {
+            "kind": "limitUp",
+            "code": "920092",
+            "name": "汉鑫科技",
+            "boards": 1,
+            "firstSeal": "11:28",
+            "lastSeal": "14:07",
+            "sealAmount": 22333276,
+            "breaks": 1,
+            "amount": 196941901,
+            "turnover": 22.01
+          }
+        ]
+      },
+      {
+        "name": "通用设备",
+        "limitUps": 7,
+        "firstBoards": 7,
+        "maxBoards": 1,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "603912",
+            "name": "佳力图",
+            "boards": 1,
+            "firstSeal": "09:40",
+            "lastSeal": "09:52",
+            "sealAmount": 49205408,
+            "breaks": 1,
+            "amount": 203888892,
+            "turnover": 4.91
+          },
+          {
+            "kind": "limitUp",
+            "code": "000811",
+            "name": "冰轮环境",
+            "boards": 1,
+            "firstSeal": "10:19",
+            "lastSeal": "10:19",
+            "sealAmount": 50356108,
+            "breaks": 0,
+            "amount": 1290780848,
+            "turnover": 3.77
+          },
+          {
+            "kind": "limitUp",
+            "code": "300720",
+            "name": "海川智能",
+            "boards": 1,
+            "firstSeal": "10:53",
+            "lastSeal": "10:53",
+            "sealAmount": 51414875,
+            "breaks": 0,
+            "amount": 793868672,
+            "turnover": 7.73
+          },
+          {
+            "kind": "limitUp",
+            "code": "603757",
+            "name": "大元泵业",
+            "boards": 1,
+            "firstSeal": "11:28",
+            "lastSeal": "11:28",
+            "sealAmount": 10001740,
+            "breaks": 0,
+            "amount": 518961680,
+            "turnover": 5.14
+          },
+          {
+            "kind": "limitUp",
+            "code": "603400",
+            "name": "华之杰",
+            "boards": 1,
+            "firstSeal": "13:19",
+            "lastSeal": "13:21",
+            "sealAmount": 6706182,
+            "breaks": 1,
+            "amount": 401016016,
+            "turnover": 25.39
+          },
+          {
+            "kind": "limitUp",
+            "code": "603269",
+            "name": "海鸥股份",
+            "boards": 1,
+            "firstSeal": "13:24",
+            "lastSeal": "14:09",
+            "sealAmount": 9518092,
+            "breaks": 3,
+            "amount": 321850832,
+            "turnover": 6.21
+          },
+          {
+            "kind": "limitUp",
+            "code": "688808",
+            "name": "联讯仪器",
+            "boards": 1,
+            "firstSeal": "14:11",
+            "lastSeal": "14:56",
+            "sealAmount": 60670041,
+            "breaks": 1,
+            "amount": 4126816352,
+            "turnover": 11.55
+          }
+        ]
+      },
+      {
+        "name": "计算机设",
+        "limitUps": 6,
+        "firstBoards": 4,
+        "maxBoards": 3,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "603106",
+            "name": "恒银科技",
+            "boards": 3,
+            "firstSeal": "09:25",
+            "lastSeal": "09:30",
+            "sealAmount": 87543360,
+            "breaks": 1,
+            "amount": 192368858,
+            "turnover": 4.09
+          },
+          {
+            "kind": "limitUp",
+            "code": "001229",
+            "name": "魅视科技",
+            "boards": 2,
+            "firstSeal": "10:45",
+            "lastSeal": "10:57",
+            "sealAmount": 8009227,
+            "breaks": 3,
+            "amount": 325235520,
+            "turnover": 11.99
+          },
+          {
+            "kind": "limitUp",
+            "code": "002990",
+            "name": "盛视科技",
+            "boards": 1,
+            "firstSeal": "09:52",
+            "lastSeal": "09:52",
+            "sealAmount": 62913240,
+            "breaks": 0,
+            "amount": 268473456,
+            "turnover": 4.47
+          },
+          {
+            "kind": "limitUp",
+            "code": "002912",
+            "name": "中新赛克",
+            "boards": 1,
+            "firstSeal": "11:09",
+            "lastSeal": "13:00",
+            "sealAmount": 16052199,
+            "breaks": 1,
+            "amount": 164605471,
+            "turnover": 4.99
+          },
+          {
+            "kind": "limitUp",
+            "code": "001339",
+            "name": "智微智能",
+            "boards": 1,
+            "firstSeal": "11:26",
+            "lastSeal": "11:26",
+            "sealAmount": 60687119,
+            "breaks": 0,
+            "amount": 692414176,
+            "turnover": 6.14
+          },
+          {
+            "kind": "limitUp",
+            "code": "300270",
+            "name": "中威电子",
+            "boards": 1,
+            "firstSeal": "13:39",
+            "lastSeal": "13:39",
+            "sealAmount": 27720000,
+            "breaks": 0,
+            "amount": 377660784,
+            "turnover": 12.33
+          }
+        ]
+      },
+      {
+        "name": "电网设备",
+        "limitUps": 6,
+        "firstBoards": 4,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "601700",
+            "name": "风范股份",
+            "boards": 2,
+            "firstSeal": "09:35",
+            "lastSeal": "09:35",
+            "sealAmount": 107802809,
+            "breaks": 0,
+            "amount": 351291920,
+            "turnover": 5.36
+          },
+          {
+            "kind": "limitUp",
+            "code": "000533",
+            "name": "顺钠股份",
+            "boards": 2,
+            "firstSeal": "10:09",
+            "lastSeal": "10:11",
+            "sealAmount": 92074210,
+            "breaks": 1,
+            "amount": 1674373728,
+            "turnover": 20
+          },
+          {
+            "kind": "limitUp",
+            "code": "001388",
+            "name": "信通电子",
+            "boards": 1,
+            "firstSeal": "09:35",
+            "lastSeal": "09:36",
+            "sealAmount": 35357236,
+            "breaks": 1,
+            "amount": 130292686,
+            "turnover": 4.74
+          },
+          {
+            "kind": "limitUp",
+            "code": "600379",
+            "name": "宝光股份",
+            "boards": 1,
+            "firstSeal": "09:37",
+            "lastSeal": "11:10",
+            "sealAmount": 69025385,
+            "breaks": 1,
+            "amount": 316081072,
+            "turnover": 7.94
+          },
+          {
+            "kind": "limitUp",
+            "code": "002980",
+            "name": "华盛昌",
+            "boards": 1,
+            "firstSeal": "10:38",
+            "lastSeal": "10:38",
+            "sealAmount": 59637183,
+            "breaks": 0,
+            "amount": 346060560,
+            "turnover": 5.13
+          },
+          {
+            "kind": "limitUp",
+            "code": "601126",
+            "name": "四方股份",
+            "boards": 1,
+            "firstSeal": "10:39",
+            "lastSeal": "10:39",
+            "sealAmount": 93494896,
+            "breaks": 1,
+            "amount": 846201104,
+            "turnover": 2.52
+          }
+        ]
+      }
+    ]
   }
 };

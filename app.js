@@ -160,8 +160,9 @@
   function scoreDisplay(market,item){
     if(!item?.feedback?.quality||!item?.sealQuality)return {...market,shortTerm:false};
     const shortScore=shortEmotionScore(item),technical=Number(market.technical)||0;
-    const status=shortScore.total>=32?"可试错环境":shortScore.total>=20?"震荡观察":"防守环境";
-    return {...market,total:shortScore.total+technical,sentiment:shortScore.total,status,shortTerm:true,shortTermDetail:shortScore};
+    const total=shortScore.total+technical;
+    const status=total>=60?"可试错环境":total>=40?"震荡观察":"防守环境";
+    return {...market,total,sentiment:shortScore.total,status,shortTerm:true,shortTermDetail:shortScore};
   }
   function shortTermState(item){
     const {emotion:e,promotion:p,feedback:f}=item;

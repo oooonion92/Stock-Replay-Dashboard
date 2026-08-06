@@ -1667,5 +1667,517 @@ window.REPLAY_DATA.themeRelay={
         ]
       }
     ]
+  },
+  "2026-08-06": {
+    "source": "AI归类 · 当日涨停池／炸板池／连板梯队",
+    "unclustered": 24,
+    "themes": [
+      {
+        "name": "AI硬件／通信电子",
+        "limitUps": 23,
+        "firstBoards": 18,
+        "maxBoards": 4,
+        "opened": 13,
+        "openTimes": 23,
+        "brokenPool": 3,
+        "stocks": [
+          {
+            "code": "300615",
+            "name": "欣天科技",
+            "boards": 4,
+            "firstSeal": "09:30",
+            "lastSeal": "09:37",
+            "sealAmount": 73002840,
+            "breaks": 1,
+            "subtype": "通信设备",
+            "reason": "通信设备按交易方向归入AI硬件／通信电子；4板，连板核心。"
+          },
+          {
+            "code": "002552",
+            "name": "宝鼎科技",
+            "boards": 3,
+            "firstSeal": "09:30",
+            "lastSeal": "09:47",
+            "sealAmount": 151786833,
+            "breaks": 2,
+            "subtype": "元件",
+            "reason": "元件按交易方向归入AI硬件／通信电子；3板，连板核心。"
+          },
+          {
+            "code": "603773",
+            "name": "沃格光电",
+            "boards": 3,
+            "firstSeal": "09:48",
+            "lastSeal": "09:49",
+            "sealAmount": 171883341,
+            "breaks": 1,
+            "subtype": "光学光电",
+            "reason": "光学光电按交易方向归入AI硬件／通信电子；3板，连板核心。"
+          },
+          {
+            "code": "001267",
+            "name": "汇绿生态",
+            "boards": 3,
+            "firstSeal": "13:06",
+            "lastSeal": "14:56",
+            "sealAmount": 82715753,
+            "breaks": 3,
+            "subtype": "通信设备",
+            "reason": "通信设备按交易方向归入AI硬件／通信电子；3板，连板核心。"
+          },
+          {
+            "code": "600206",
+            "name": "有研新材",
+            "boards": 2,
+            "firstSeal": "09:51",
+            "lastSeal": "13:12",
+            "sealAmount": 185582020,
+            "breaks": 4,
+            "subtype": "半导体",
+            "reason": "半导体按交易方向归入AI硬件／通信电子；2板，接力标的。"
+          },
+          {
+            "code": "002180",
+            "name": "奔图科技",
+            "boards": 1,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 432727602,
+            "breaks": 0,
+            "subtype": "计算机设",
+            "reason": "计算机设按交易方向归入AI硬件／通信电子；1板，首板扩散。"
+          },
+          {
+            "code": "688693",
+            "name": "锴威特",
+            "boards": 1,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 116254986,
+            "breaks": 0,
+            "subtype": "半导体",
+            "reason": "半导体按交易方向归入AI硬件／通信电子；1板，首板扩散。"
+          },
+          {
+            "code": "002376",
+            "name": "新北洋",
+            "boards": 1,
+            "firstSeal": "09:30",
+            "lastSeal": "09:34",
+            "sealAmount": 44216643,
+            "breaks": 1,
+            "subtype": "计算机设",
+            "reason": "计算机设按交易方向归入AI硬件／通信电子；1板，首板扩散。"
+          },
+          {
+            "code": "002792",
+            "name": "通宇通讯",
+            "boards": 1,
+            "firstSeal": "09:32",
+            "lastSeal": "09:32",
+            "sealAmount": 362430656,
+            "breaks": 0,
+            "subtype": "通信设备",
+            "reason": "通信设备按交易方向归入AI硬件／通信电子；1板，首板扩散。"
+          },
+          {
+            "code": "002369",
+            "name": "卓翼科技",
+            "boards": 1,
+            "firstSeal": "09:33",
+            "lastSeal": "09:33",
+            "sealAmount": 68795211,
+            "breaks": 1,
+            "subtype": "消费电子",
+            "reason": "消费电子按交易方向归入AI硬件／通信电子；1板，首板扩散。"
+          },
+          {
+            "code": "300386",
+            "name": "飞天诚信",
+            "boards": 1,
+            "firstSeal": "09:34",
+            "lastSeal": "09:34",
+            "sealAmount": 62562616,
+            "breaks": 0,
+            "subtype": "计算机设",
+            "reason": "计算机设按交易方向归入AI硬件／通信电子；1板，首板扩散。"
+          },
+          {
+            "code": "002104",
+            "name": "恒宝股份",
+            "boards": 1,
+            "firstSeal": "09:36",
+            "lastSeal": "09:36",
+            "sealAmount": 118656048,
+            "breaks": 0,
+            "subtype": "通信设备",
+            "reason": "通信设备按交易方向归入AI硬件／通信电子；1板，首板扩散。"
+          }
+        ]
+      },
+      {
+        "name": "智能汽车／机器人",
+        "limitUps": 5,
+        "firstBoards": 4,
+        "maxBoards": 3,
+        "opened": 1,
+        "openTimes": 1,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "code": "600397",
+            "name": "江钨装备",
+            "boards": 3,
+            "firstSeal": "09:30",
+            "lastSeal": "09:30",
+            "sealAmount": 279407554,
+            "breaks": 0,
+            "subtype": "专用设备",
+            "reason": "专用设备按交易方向归入智能汽车／机器人；3板，连板核心。"
+          },
+          {
+            "code": "600262",
+            "name": "北方股份",
+            "boards": 1,
+            "firstSeal": "09:42",
+            "lastSeal": "10:21",
+            "sealAmount": 47245426,
+            "breaks": 1,
+            "subtype": "专用设备",
+            "reason": "专用设备按交易方向归入智能汽车／机器人；1板，首板扩散。"
+          },
+          {
+            "code": "002686",
+            "name": "亿利达",
+            "boards": 1,
+            "firstSeal": "10:17",
+            "lastSeal": "10:17",
+            "sealAmount": 20019775,
+            "breaks": 0,
+            "subtype": "通用设备",
+            "reason": "通用设备按交易方向归入智能汽车／机器人；1板，首板扩散。"
+          },
+          {
+            "code": "003036",
+            "name": "泰坦股份",
+            "boards": 1,
+            "firstSeal": "10:53",
+            "lastSeal": "10:53",
+            "sealAmount": 89112375,
+            "breaks": 0,
+            "subtype": "专用设备",
+            "reason": "专用设备按交易方向归入智能汽车／机器人；1板，首板扩散。"
+          },
+          {
+            "code": "300540",
+            "name": "蜀道装备",
+            "boards": 1,
+            "firstSeal": "13:07",
+            "lastSeal": "13:07",
+            "sealAmount": 76107828,
+            "breaks": 0,
+            "subtype": "专用设备",
+            "reason": "专用设备按交易方向归入智能汽车／机器人；1板，首板扩散。"
+          }
+        ]
+      },
+      {
+        "name": "资源／化工材料",
+        "limitUps": 16,
+        "firstBoards": 13,
+        "maxBoards": 3,
+        "opened": 6,
+        "openTimes": 60,
+        "brokenPool": 7,
+        "stocks": [
+          {
+            "code": "002428",
+            "name": "云南锗业",
+            "boards": 3,
+            "firstSeal": "09:30",
+            "lastSeal": "11:18",
+            "sealAmount": 584931436,
+            "breaks": 5,
+            "subtype": "小金属",
+            "reason": "小金属按交易方向归入资源／化工材料；3板，连板核心。"
+          },
+          {
+            "code": "603823",
+            "name": "百合花",
+            "boards": 2,
+            "firstSeal": "09:36",
+            "lastSeal": "14:53",
+            "sealAmount": 16412760,
+            "breaks": 46,
+            "subtype": "化学制品",
+            "reason": "化学制品按交易方向归入资源／化工材料；2板，接力标的。"
+          },
+          {
+            "code": "002971",
+            "name": "和远气体",
+            "boards": 2,
+            "firstSeal": "10:43",
+            "lastSeal": "10:43",
+            "sealAmount": 130292250,
+            "breaks": 0,
+            "subtype": "化学制品",
+            "reason": "化学制品按交易方向归入资源／化工材料；2板，接力标的。"
+          },
+          {
+            "code": "002827",
+            "name": "高争民爆",
+            "boards": 1,
+            "firstSeal": "09:32",
+            "lastSeal": "09:41",
+            "sealAmount": 115573666,
+            "breaks": 2,
+            "subtype": "化学制品",
+            "reason": "化学制品按交易方向归入资源／化工材料；1板，首板扩散。"
+          },
+          {
+            "code": "603285",
+            "name": "键邦股份",
+            "boards": 1,
+            "firstSeal": "09:43",
+            "lastSeal": "09:43",
+            "sealAmount": 60965263,
+            "breaks": 0,
+            "subtype": "化学制品",
+            "reason": "化学制品按交易方向归入资源／化工材料；1板，首板扩散。"
+          },
+          {
+            "code": "601101",
+            "name": "昊华能源",
+            "boards": 1,
+            "firstSeal": "09:44",
+            "lastSeal": "09:44",
+            "sealAmount": 74807210,
+            "breaks": 0,
+            "subtype": "煤炭开采",
+            "reason": "煤炭开采按交易方向归入资源／化工材料；1板，首板扩散。"
+          },
+          {
+            "code": "601678",
+            "name": "滨化股份",
+            "boards": 1,
+            "firstSeal": "09:55",
+            "lastSeal": "13:34",
+            "sealAmount": 124129998,
+            "breaks": 4,
+            "subtype": "化学原料",
+            "reason": "化学原料按交易方向归入资源／化工材料；1板，首板扩散。"
+          },
+          {
+            "code": "605366",
+            "name": "宏柏新材",
+            "boards": 1,
+            "firstSeal": "10:26",
+            "lastSeal": "10:27",
+            "sealAmount": 58592072,
+            "breaks": 1,
+            "subtype": "化学制品",
+            "reason": "化学制品按交易方向归入资源／化工材料；1板，首板扩散。"
+          },
+          {
+            "code": "600403",
+            "name": "大有能源",
+            "boards": 1,
+            "firstSeal": "11:27",
+            "lastSeal": "11:27",
+            "sealAmount": 108023884,
+            "breaks": 0,
+            "subtype": "煤炭开采",
+            "reason": "煤炭开采按交易方向归入资源／化工材料；1板，首板扩散。"
+          },
+          {
+            "code": "002915",
+            "name": "中欣氟材",
+            "boards": 1,
+            "firstSeal": "13:35",
+            "lastSeal": "14:51",
+            "sealAmount": 64368610,
+            "breaks": 2,
+            "subtype": "化学制品",
+            "reason": "化学制品按交易方向归入资源／化工材料；1板，首板扩散。"
+          },
+          {
+            "code": "601666",
+            "name": "平煤股份",
+            "boards": 1,
+            "firstSeal": "13:52",
+            "lastSeal": "13:52",
+            "sealAmount": 78216804,
+            "breaks": 0,
+            "subtype": "煤炭开采",
+            "reason": "煤炭开采按交易方向归入资源／化工材料；1板，首板扩散。"
+          },
+          {
+            "code": "600985",
+            "name": "淮北矿业",
+            "boards": 1,
+            "firstSeal": "13:52",
+            "lastSeal": "13:52",
+            "sealAmount": 84779590,
+            "breaks": 0,
+            "subtype": "煤炭开采",
+            "reason": "煤炭开采按交易方向归入资源／化工材料；1板，首板扩散。"
+          }
+        ]
+      },
+      {
+        "name": "军工／商业航天",
+        "limitUps": 1,
+        "firstBoards": 0,
+        "maxBoards": 2,
+        "opened": 0,
+        "openTimes": 0,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "code": "002214",
+            "name": "大立科技",
+            "boards": 2,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 146211954,
+            "breaks": 0,
+            "subtype": "军工电子",
+            "reason": "军工电子按交易方向归入军工／商业航天；2板，接力标的。"
+          }
+        ]
+      },
+      {
+        "name": "AI应用／教育文娱",
+        "limitUps": 7,
+        "firstBoards": 4,
+        "maxBoards": 3,
+        "opened": 4,
+        "openTimes": 17,
+        "brokenPool": 2,
+        "stocks": [
+          {
+            "code": "002425",
+            "name": "凯撒文化",
+            "boards": 3,
+            "firstSeal": "09:25",
+            "lastSeal": "13:33",
+            "sealAmount": 81872092,
+            "breaks": 3,
+            "subtype": "游戏Ⅱ",
+            "reason": "游戏Ⅱ按交易方向归入AI应用／教育文娱；3板，连板核心。"
+          },
+          {
+            "code": "600892",
+            "name": "大晟文化",
+            "boards": 3,
+            "firstSeal": "09:25",
+            "lastSeal": "14:56",
+            "sealAmount": 8780776,
+            "breaks": 11,
+            "subtype": "游戏Ⅱ",
+            "reason": "游戏Ⅱ按交易方向归入AI应用／教育文娱；3板，连板核心。"
+          },
+          {
+            "code": "002649",
+            "name": "博彦科技",
+            "boards": 2,
+            "firstSeal": "09:31",
+            "lastSeal": "09:34",
+            "sealAmount": 113513306,
+            "breaks": 1,
+            "subtype": "IT服务Ⅱ",
+            "reason": "IT服务Ⅱ按交易方向归入AI应用／教育文娱；2板，接力标的。"
+          },
+          {
+            "code": "603039",
+            "name": "泛微网络",
+            "boards": 1,
+            "firstSeal": "09:35",
+            "lastSeal": "11:29",
+            "sealAmount": 108697187,
+            "breaks": 2,
+            "subtype": "软件开发",
+            "reason": "软件开发按交易方向归入AI应用／教育文娱；1板，首板扩散。"
+          },
+          {
+            "code": "002212",
+            "name": "天融信",
+            "boards": 1,
+            "firstSeal": "09:39",
+            "lastSeal": "09:39",
+            "sealAmount": 67256511,
+            "breaks": 0,
+            "subtype": "软件开发",
+            "reason": "软件开发按交易方向归入AI应用／教育文娱；1板，首板扩散。"
+          },
+          {
+            "code": "003029",
+            "name": "吉大正元",
+            "boards": 1,
+            "firstSeal": "13:46",
+            "lastSeal": "13:46",
+            "sealAmount": 19598572,
+            "breaks": 0,
+            "subtype": "软件开发",
+            "reason": "软件开发按交易方向归入AI应用／教育文娱；1板，首板扩散。"
+          },
+          {
+            "code": "300311",
+            "name": "任子行",
+            "boards": 1,
+            "firstSeal": "13:47",
+            "lastSeal": "13:47",
+            "sealAmount": 51557663,
+            "breaks": 0,
+            "subtype": "软件开发",
+            "reason": "软件开发按交易方向归入AI应用／教育文娱；1板，首板扩散。"
+          }
+        ]
+      },
+      {
+        "name": "电网／能源装备",
+        "limitUps": 3,
+        "firstBoards": 2,
+        "maxBoards": 4,
+        "opened": 2,
+        "openTimes": 6,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "code": "601700",
+            "name": "风范股份",
+            "boards": 4,
+            "firstSeal": "09:30",
+            "lastSeal": "13:15",
+            "sealAmount": 64873896,
+            "breaks": 5,
+            "subtype": "电网设备",
+            "reason": "电网设备按交易方向归入电网／能源装备；4板，连板核心。"
+          },
+          {
+            "code": "000692",
+            "name": "惠天热电",
+            "boards": 1,
+            "firstSeal": "09:30",
+            "lastSeal": "09:30",
+            "sealAmount": 30313456,
+            "breaks": 0,
+            "subtype": "电力",
+            "reason": "电力按交易方向归入电网／能源装备；1板，首板扩散。"
+          },
+          {
+            "code": "000720",
+            "name": "新能泰山",
+            "boards": 1,
+            "firstSeal": "09:34",
+            "lastSeal": "10:06",
+            "sealAmount": 40095428,
+            "breaks": 1,
+            "subtype": "电网设备",
+            "reason": "电网设备按交易方向归入电网／能源装备；1板，首板扩散。"
+          }
+        ]
+      }
+    ]
   }
 };

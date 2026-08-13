@@ -181,7 +181,7 @@
       empty.textContent="该历史日期尚未采集短线收盘池，不使用全市场阈值数据倒推。";
       return;
     }
-    content.hidden=false;empty.hidden=true;source.textContent=D.themeRelay?.[d]?.source||item.source||"收盘快照";
+    content.hidden=false;empty.hidden=true;source.textContent=D.themeRelay?.[d]?.source||item.aiThemes?.source||item.source||"收盘快照";
     const {emotion:e,promotion:p,feedback:f,ladder=[]}=item,state=shortTermState(item);
     $("shortTermVerdict").className=`short-term-verdict ${state.tone}`;
     $("shortTermVerdict").innerHTML=`<b>${esc(state.title)}</b><span>${esc(state.detail)}</span>`;
@@ -194,7 +194,7 @@
     ];
     $("shortTermRelay").innerHTML=relayCards.map(([label,value])=>`<div><span>${esc(label)}</span><b>${esc(value)}</b></div>`).join("");
     $("shortTermLadder").innerHTML=ladder.map(row=>`<div class="ladder-chip"><b>${esc(row.level)}板</b><span>${esc(row.names?.length?row.names.join("、"):`${row.count}只`)}</span><em>${esc(row.count)}只</em></div>`).join("")||"<span class=\"short-term-empty\">暂无连板梯队</span>";
-    const themeSnapshot=D.themeRelay?.[d],themes=themeSnapshot?.themes||[];
+    const themeSnapshot=D.themeRelay?.[d]||item.aiThemes,themes=themeSnapshot?.themes||[];
     if(!themes.some(row=>row.name===expandedShortTheme))expandedShortTheme=null;
     const detailMarkup=row=>{
       const stocks=row.stocks||[];

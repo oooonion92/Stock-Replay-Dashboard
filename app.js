@@ -274,20 +274,7 @@
     $("marketTrend").innerHTML=chart([{values:scored.map(x=>scoreDisplay(D.reports[x].market,D.shortTerm?.[x]).total)}],scored,{labels:true,score:true,metric:"score",aria:"市场评分趋势"});
     $("trendNote").textContent=scored.length===A.length?"纵轴按当前可比区间自动缩放；总分越高代表环境越有利，但总闸与结构约束仍优先。":"早期复盘仍可在日期选择中查看；评分趋势仅展示有评分的交易日。";
     renderShortTerm(d);
-    renderProjection(d);
     renderSector(d);
-    const prev=A.length>1?D.reports[A[A.length-2]]:null;
-    $("stockRows").innerHTML=R.stocks.map(s=>{
-      const q=prev?.stocks.find(x=>x.symbol===s.symbol&&Number.isFinite(x.total)),delta=q?s.total-q.total:null;
-      return `<tr><td data-label="标的"><span class="name-cell"><b>${s.name}</b><small>${s.symbol}</small></span></td><td data-label="总分"><span class="score-badge ${cls(s.total)}">${s.total}</span></td><td data-label="较前日" class="delta-flat">${delta===null?"—":`${delta>0?"+":""}${delta}`}</td><td data-label="结构">${s.structure}</td><td data-label="承接">${s.support}</td><td data-label="相对强弱">${s.relative}</td><td data-label="风险安全">${s.risk}</td><td data-label="状态">${s.status}</td></tr>`;
-    }).join("");
-    const claims=recent.flatMap(date=>D.reports[date].experts.map(q=>({...q,date}))),N=claims.reduce((a,q)=>(a[q.result]=(a[q.result]||0)+1,a),{});
-    $("validationStats").innerHTML=Object.entries(L).map(([k,v])=>`<span>${v} ${N[k]||0}</span>`).join("");
-    const expertCard=q=>{
-      const detail=q.result==="pending"?`验证条件：${q.test||"等待后续交易日数据。"}`:`后验结果：${q.evidence||"未记录可核验依据。"}`;
-      return `<article class="expert-card"><div class="expert-meta"><b>${q.tag}</b><span>${q.source}</span></div><blockquote>“${q.quote}”</blockquote><p><b>交易含义：</b>${q.meaning}</p><div class="validation-box"><strong>${L[q.result]||"待标注"}</strong><span>${detail}</span></div>${q.url?`<a href="${q.url}" target="_blank" rel="noopener noreferrer">查看原帖</a>`:""}</article>`;
-    };
-    $("expertCards").innerHTML=recent.map(date=>`<section class="expert-day-group ${date===d?"is-current":""}"><header class="expert-day-head"><h3>${date}</h3><span>所选日期 · ${D.reports[date].experts.length} 条</span></header><div class="expert-day-grid">${D.reports[date].experts.map(expertCard).join("")}</div></section>`).join("");
   }
   D.dates.slice().reverse().forEach(d=>{const o=document.createElement("option");o.value=d;o.textContent=d;$("dateSelect").appendChild(o)});
   if(D.sectorFlowConfig){
@@ -298,9 +285,6 @@
     $("sectorTrend").addEventListener("keydown",e=>{if(e.key!=="Enter"&&e.key!==" ")return;const row=e.target.closest("[data-heatmap-direction]");if(!row)return;e.preventDefault();expandedCapitalDirection=expandedCapitalDirection===row.dataset.heatmapDirection?null:row.dataset.heatmapDirection;renderSector($("dateSelect").value)});
     $("capitalDecision").addEventListener("click",e=>{const button=e.target.closest("[data-capital-branch]");if(!button)return;activeCapitalObservation={groupId:button.dataset.capitalBranch,date:$("dateSelect").value};renderSector($("dateSelect").value)});
   }
-  $("projectionTabs").addEventListener("click",event=>{const button=event.target.closest("[data-projection-timeframe]");if(!button)return;projectionTimeframe=button.dataset.projectionTimeframe;renderProjection($("dateSelect").value)});
-  $("projectionDetail").addEventListener("click",event=>{const button=event.target.closest("[data-projection-checkpoint]");if(!button)return;projectionCheckpoint=button.dataset.projectionCheckpoint;renderProjection($("dateSelect").value)});
-  $("projectionSummary").addEventListener("click",event=>{if(!event.target.closest("[data-projection-evidence]"))return;projectionEvidenceOpen=!projectionEvidenceOpen;renderProjection($("dateSelect").value)});
   $("shortTermThemeRelay").addEventListener("click",event=>{if(event.target.closest("[data-short-theme-close]")){expandedShortTheme=null;renderShortTerm($("dateSelect").value);return;}const button=event.target.closest("[data-short-theme]");if(!button)return;expandedShortTheme=expandedShortTheme===button.dataset.shortTheme?null:button.dataset.shortTheme;renderShortTerm($("dateSelect").value)});
   $("dateSelect").addEventListener("change",e=>render(e.target.value));render(D.dates[D.dates.length-1]);
 })();

@@ -14986,5 +14986,930 @@ window.REPLAY_DATA.shortTerm={
       ],
       "judgement": "创新药／医药健康形成当天最宽的涨停扩散，覆盖生物制品、化学制药、医疗服务与器械，但以首板为主；汉森制药2板是组内接力观察点。通信电子、高端装备和电网能源属于次级扩散。指数与宽度修复明显，但昨日强势股中位仍亏3.26%、1进2仅10.34%，说明新题材首日热度尚未转化为稳定接力。"
     }
+  },
+  "2026-08-21": {
+    "source": "东方财富收盘涨停/炸板/跌停池",
+    "state": "complete",
+    "emotion": {
+      "zt": 54,
+      "zb": 18,
+      "dt": 13,
+      "sealRate": 75,
+      "breakRate": 25,
+      "firstBoard": 43,
+      "maxBoards": 3,
+      "lianban": 11
+    },
+    "promotion": {
+      "oneToTwo": 13.33,
+      "oneToTwoNumerator": 10,
+      "oneToTwoDenominator": 75,
+      "twoToThree": 33.33,
+      "threePlus": 0
+    },
+    "feedback": {
+      "sample": 79,
+      "median": -1.96,
+      "average": -0.62,
+      "positiveRate": 35.44,
+      "limitUpAgainRate": 13.92,
+      "deepLoss5": 26,
+      "deepLoss7": 15,
+      "worst": -11.63,
+      "missingFeedback": 0,
+      "quality": {
+        "sealedAgain": {
+          "count": 11,
+          "median": 10.03,
+          "positiveRate": 100
+        },
+        "brokenUnsealed": {
+          "count": 5,
+          "median": -0.97,
+          "positiveRate": 40
+        },
+        "other": {
+          "count": 63,
+          "median": -3.52,
+          "positiveRate": 23.81
+        },
+        "lowReturnCount": 58,
+        "lowReturnRate": 73.42,
+        "reclosedAfterBreakCount": 8,
+        "reclosedAfterBreakRate": 72.73
+      }
+    },
+    "sealQuality": {
+      "sealedWithBreakCount": 32,
+      "sealedWithBreakRate": 59.26,
+      "averageBreaksOnSealed": 1.26
+    },
+    "ladder": [
+      {
+        "level": 3,
+        "count": 1,
+        "names": [
+          "汉森制药"
+        ]
+      },
+      {
+        "level": 2,
+        "count": 10,
+        "names": [
+          "深中华A",
+          "双鹭药业",
+          "键凯科技",
+          "中 关 村",
+          "贝瑞基因",
+          "哈森股份",
+          "科森科技",
+          "近岸蛋白",
+          "宇环数控",
+          "通鼎互联"
+        ]
+      }
+    ],
+    "industryRelay": [
+      {
+        "name": "通信设备",
+        "limitUps": 6,
+        "firstBoards": 5,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002491",
+            "name": "通鼎互联",
+            "boards": 2,
+            "firstSeal": "14:27",
+            "lastSeal": "14:49",
+            "sealAmount": 151230136,
+            "breaks": 2,
+            "amount": 7263185920,
+            "turnover": 30.46
+          },
+          {
+            "kind": "limitUp",
+            "code": "003040",
+            "name": "楚天龙",
+            "boards": 1,
+            "firstSeal": "09:30",
+            "lastSeal": "09:40",
+            "sealAmount": 86539698,
+            "breaks": 2,
+            "amount": 397633808,
+            "turnover": 6.82
+          },
+          {
+            "kind": "limitUp",
+            "code": "603803",
+            "name": "瑞斯康达",
+            "boards": 1,
+            "firstSeal": "09:43",
+            "lastSeal": "09:43",
+            "sealAmount": 77434312,
+            "breaks": 0,
+            "amount": 261119318,
+            "turnover": 5.58
+          },
+          {
+            "kind": "limitUp",
+            "code": "002396",
+            "name": "星网锐捷",
+            "boards": 1,
+            "firstSeal": "09:44",
+            "lastSeal": "10:44",
+            "sealAmount": 239018840,
+            "breaks": 1,
+            "amount": 2406313232,
+            "turnover": 9.8
+          },
+          {
+            "kind": "limitUp",
+            "code": "002017",
+            "name": "东信和平",
+            "boards": 1,
+            "firstSeal": "09:45",
+            "lastSeal": "10:41",
+            "sealAmount": 30427273,
+            "breaks": 3,
+            "amount": 470577312,
+            "turnover": 5.7
+          },
+          {
+            "kind": "limitUp",
+            "code": "003031",
+            "name": "中瓷电子",
+            "boards": 1,
+            "firstSeal": "13:12",
+            "lastSeal": "13:18",
+            "sealAmount": 134898370,
+            "breaks": 1,
+            "amount": 2202510032,
+            "turnover": 4.74
+          }
+        ]
+      },
+      {
+        "name": "消费电子",
+        "limitUps": 4,
+        "firstBoards": 3,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "603626",
+            "name": "科森科技",
+            "boards": 2,
+            "firstSeal": "09:34",
+            "lastSeal": "11:20",
+            "sealAmount": 144720270,
+            "breaks": 2,
+            "amount": 800520928,
+            "turnover": 7.87
+          },
+          {
+            "kind": "limitUp",
+            "code": "603052",
+            "name": "可川科技",
+            "boards": 1,
+            "firstSeal": "09:40",
+            "lastSeal": "09:40",
+            "sealAmount": 157220826,
+            "breaks": 0,
+            "amount": 271758768,
+            "turnover": 2.41
+          },
+          {
+            "kind": "limitUp",
+            "code": "002655",
+            "name": "共达电声",
+            "boards": 1,
+            "firstSeal": "09:57",
+            "lastSeal": "10:04",
+            "sealAmount": 112784997,
+            "breaks": 1,
+            "amount": 1201894592,
+            "turnover": 9.01
+          },
+          {
+            "kind": "limitUp",
+            "code": "002045",
+            "name": "国光电器",
+            "boards": 1,
+            "firstSeal": "14:26",
+            "lastSeal": "14:26",
+            "sealAmount": 110878037,
+            "breaks": 0,
+            "amount": 490236848,
+            "turnover": 9.89
+          }
+        ]
+      },
+      {
+        "name": "化学制药",
+        "limitUps": 4,
+        "firstBoards": 1,
+        "maxBoards": 2,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002038",
+            "name": "双鹭药业",
+            "boards": 2,
+            "firstSeal": "09:25",
+            "lastSeal": "09:39",
+            "sealAmount": 127471619,
+            "breaks": 1,
+            "amount": 414613840,
+            "turnover": 6.88
+          },
+          {
+            "kind": "limitUp",
+            "code": "688356",
+            "name": "键凯科技",
+            "boards": 2,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 472387024,
+            "breaks": 0,
+            "amount": 351028208,
+            "turnover": 5.39
+          },
+          {
+            "kind": "limitUp",
+            "code": "000931",
+            "name": "中 关 村",
+            "boards": 2,
+            "firstSeal": "09:30",
+            "lastSeal": "09:44",
+            "sealAmount": 28100948,
+            "breaks": 1,
+            "amount": 318517408,
+            "turnover": 8.35
+          },
+          {
+            "kind": "limitUp",
+            "code": "300016",
+            "name": "北陆药业",
+            "boards": 1,
+            "firstSeal": "14:30",
+            "lastSeal": "14:30",
+            "sealAmount": 56110750,
+            "breaks": 0,
+            "amount": 1230292512,
+            "turnover": 22.65
+          },
+          {
+            "kind": "broken",
+            "code": "001367",
+            "name": "海森药业",
+            "boards": null,
+            "firstSeal": "09:34",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 2,
+            "amount": 236157370,
+            "turnover": 9.05
+          }
+        ]
+      },
+      {
+        "name": "专用设备",
+        "limitUps": 4,
+        "firstBoards": 4,
+        "maxBoards": 1,
+        "brokenPool": 2,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002209",
+            "name": "达 意 隆",
+            "boards": 1,
+            "firstSeal": "09:25",
+            "lastSeal": "09:42",
+            "sealAmount": 23922248,
+            "breaks": 1,
+            "amount": 206290574,
+            "turnover": 9.94
+          },
+          {
+            "kind": "limitUp",
+            "code": "603095",
+            "name": "越剑智能",
+            "boards": 1,
+            "firstSeal": "09:35",
+            "lastSeal": "09:35",
+            "sealAmount": 65965378,
+            "breaks": 0,
+            "amount": 116838526,
+            "turnover": 3.03
+          },
+          {
+            "kind": "limitUp",
+            "code": "600397",
+            "name": "江钨装备",
+            "boards": 1,
+            "firstSeal": "09:48",
+            "lastSeal": "11:20",
+            "sealAmount": 115029368,
+            "breaks": 3,
+            "amount": 1812964032,
+            "turnover": 10.35
+          },
+          {
+            "kind": "limitUp",
+            "code": "688328",
+            "name": "深科达",
+            "boards": 1,
+            "firstSeal": "13:02",
+            "lastSeal": "13:54",
+            "sealAmount": 121109615,
+            "breaks": 1,
+            "amount": 1103203328,
+            "turnover": 13.53
+          },
+          {
+            "kind": "broken",
+            "code": "001277",
+            "name": "速达股份",
+            "boards": null,
+            "firstSeal": "09:32",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 5,
+            "amount": 529328784,
+            "turnover": 30.23
+          },
+          {
+            "kind": "broken",
+            "code": "300004",
+            "name": "南风股份",
+            "boards": null,
+            "firstSeal": "10:05",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 1,
+            "amount": 924804176,
+            "turnover": 19.62
+          }
+        ]
+      },
+      {
+        "name": "化学制品",
+        "limitUps": 4,
+        "firstBoards": 4,
+        "maxBoards": 1,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002971",
+            "name": "和远气体",
+            "boards": 1,
+            "firstSeal": "09:32",
+            "lastSeal": "09:32",
+            "sealAmount": 120107677,
+            "breaks": 0,
+            "amount": 323853600,
+            "turnover": 4.41
+          },
+          {
+            "kind": "limitUp",
+            "code": "603079",
+            "name": "圣达生物",
+            "boards": 1,
+            "firstSeal": "09:37",
+            "lastSeal": "09:37",
+            "sealAmount": 267394964,
+            "breaks": 0,
+            "amount": 160811789,
+            "turnover": 6.3
+          },
+          {
+            "kind": "limitUp",
+            "code": "603065",
+            "name": "宿迁联盛",
+            "boards": 1,
+            "firstSeal": "09:49",
+            "lastSeal": "10:02",
+            "sealAmount": 16865556,
+            "breaks": 2,
+            "amount": 585270272,
+            "turnover": 8.28
+          },
+          {
+            "kind": "limitUp",
+            "code": "300214",
+            "name": "日科化学",
+            "boards": 1,
+            "firstSeal": "10:17",
+            "lastSeal": "14:34",
+            "sealAmount": 33102690,
+            "breaks": 1,
+            "amount": 790411152,
+            "turnover": 14.17
+          },
+          {
+            "kind": "broken",
+            "code": "600500",
+            "name": "中化国际",
+            "boards": null,
+            "firstSeal": "11:10",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 1,
+            "amount": 1475695568,
+            "turnover": 7.59
+          }
+        ]
+      },
+      {
+        "name": "通用设备",
+        "limitUps": 3,
+        "firstBoards": 2,
+        "maxBoards": 2,
+        "brokenPool": 2,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002903",
+            "name": "宇环数控",
+            "boards": 2,
+            "firstSeal": "11:02",
+            "lastSeal": "11:02",
+            "sealAmount": 51301670,
+            "breaks": 0,
+            "amount": 857018768,
+            "turnover": 24.66
+          },
+          {
+            "kind": "limitUp",
+            "code": "601177",
+            "name": "杭齿前进",
+            "boards": 1,
+            "firstSeal": "09:30",
+            "lastSeal": "09:30",
+            "sealAmount": 38831220,
+            "breaks": 0,
+            "amount": 128693980,
+            "turnover": 2.29
+          },
+          {
+            "kind": "limitUp",
+            "code": "002686",
+            "name": "亿利达",
+            "boards": 1,
+            "firstSeal": "09:31",
+            "lastSeal": "09:45",
+            "sealAmount": 33017712,
+            "breaks": 2,
+            "amount": 237551515,
+            "turnover": 6.81
+          },
+          {
+            "kind": "broken",
+            "code": "688828",
+            "name": "国仪公司-U",
+            "boards": null,
+            "firstSeal": "09:56",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 6,
+            "amount": 1024157456,
+            "turnover": 42.62
+          },
+          {
+            "kind": "broken",
+            "code": "603757",
+            "name": "大元泵业",
+            "boards": null,
+            "firstSeal": "10:02",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 1,
+            "amount": 950210592,
+            "turnover": 8.16
+          }
+        ]
+      }
+    ],
+    "aiThemes": {
+      "source": "AI归类 · 当日涨停池／炸板池／连板梯队",
+      "unclustered": 21,
+      "themes": [
+        {
+          "name": "医药健康",
+          "limitUps": 7,
+          "firstBoards": 1,
+          "maxBoards": 3,
+          "opened": 4,
+          "openTimes": 6,
+          "brokenPool": 2,
+          "stocks": [
+            {
+              "code": "002412",
+              "name": "汉森制药",
+              "boards": 3,
+              "firstSeal": "09:25",
+              "lastSeal": "09:25",
+              "sealAmount": 150393618,
+              "breaks": 0,
+              "subtype": "中药Ⅱ",
+              "reason": "中药Ⅱ与同方向个股当日集中封板，归入医药健康；3板，属于高标核心。"
+            },
+            {
+              "code": "002038",
+              "name": "双鹭药业",
+              "boards": 2,
+              "firstSeal": "09:25",
+              "lastSeal": "09:39",
+              "sealAmount": 127471619,
+              "breaks": 1,
+              "subtype": "化学制药",
+              "reason": "化学制药与同方向个股当日集中封板，归入医药健康；2板，属于接力标的。"
+            },
+            {
+              "code": "688356",
+              "name": "键凯科技",
+              "boards": 2,
+              "firstSeal": "09:25",
+              "lastSeal": "09:25",
+              "sealAmount": 472387024,
+              "breaks": 0,
+              "subtype": "化学制药",
+              "reason": "化学制药与同方向个股当日集中封板，归入医药健康；2板，属于接力标的。"
+            },
+            {
+              "code": "000931",
+              "name": "中 关 村",
+              "boards": 2,
+              "firstSeal": "09:30",
+              "lastSeal": "09:44",
+              "sealAmount": 28100948,
+              "breaks": 1,
+              "subtype": "化学制药",
+              "reason": "化学制药与同方向个股当日集中封板，归入医药健康；2板，属于接力标的。"
+            },
+            {
+              "code": "000710",
+              "name": "贝瑞基因",
+              "boards": 2,
+              "firstSeal": "09:30",
+              "lastSeal": "09:48",
+              "sealAmount": 75897065,
+              "breaks": 2,
+              "subtype": "医疗服务",
+              "reason": "医疗服务与同方向个股当日集中封板，归入医药健康；2板，属于接力标的。"
+            },
+            {
+              "code": "688137",
+              "name": "近岸蛋白",
+              "boards": 2,
+              "firstSeal": "10:18",
+              "lastSeal": "10:26",
+              "sealAmount": 27153112,
+              "breaks": 2,
+              "subtype": "生物制品",
+              "reason": "生物制品与同方向个股当日集中封板，归入医药健康；2板，属于接力标的。"
+            },
+            {
+              "code": "300016",
+              "name": "北陆药业",
+              "boards": 1,
+              "firstSeal": "14:30",
+              "lastSeal": "14:30",
+              "sealAmount": 56110750,
+              "breaks": 0,
+              "subtype": "化学制药",
+              "reason": "化学制药与同方向个股当日集中封板，归入医药健康；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "通信／电子硬件",
+          "limitUps": 13,
+          "firstBoards": 11,
+          "maxBoards": 2,
+          "opened": 9,
+          "openTimes": 19,
+          "brokenPool": 2,
+          "stocks": [
+            {
+              "code": "603626",
+              "name": "科森科技",
+              "boards": 2,
+              "firstSeal": "09:34",
+              "lastSeal": "11:20",
+              "sealAmount": 144720270,
+              "breaks": 2,
+              "subtype": "消费电子",
+              "reason": "消费电子与同方向个股当日集中封板，归入通信／电子硬件；2板，属于接力标的。"
+            },
+            {
+              "code": "002491",
+              "name": "通鼎互联",
+              "boards": 2,
+              "firstSeal": "14:27",
+              "lastSeal": "14:49",
+              "sealAmount": 151230136,
+              "breaks": 2,
+              "subtype": "通信设备",
+              "reason": "通信设备与同方向个股当日集中封板，归入通信／电子硬件；2板，属于接力标的。"
+            },
+            {
+              "code": "003040",
+              "name": "楚天龙",
+              "boards": 1,
+              "firstSeal": "09:30",
+              "lastSeal": "09:40",
+              "sealAmount": 86539698,
+              "breaks": 2,
+              "subtype": "通信设备",
+              "reason": "通信设备与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "600460",
+              "name": "士兰微",
+              "boards": 1,
+              "firstSeal": "09:36",
+              "lastSeal": "09:36",
+              "sealAmount": 483488617,
+              "breaks": 0,
+              "subtype": "半导体",
+              "reason": "半导体与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "603052",
+              "name": "可川科技",
+              "boards": 1,
+              "firstSeal": "09:40",
+              "lastSeal": "09:40",
+              "sealAmount": 157220826,
+              "breaks": 0,
+              "subtype": "消费电子",
+              "reason": "消费电子与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "603803",
+              "name": "瑞斯康达",
+              "boards": 1,
+              "firstSeal": "09:43",
+              "lastSeal": "09:43",
+              "sealAmount": 77434312,
+              "breaks": 0,
+              "subtype": "通信设备",
+              "reason": "通信设备与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "002396",
+              "name": "星网锐捷",
+              "boards": 1,
+              "firstSeal": "09:44",
+              "lastSeal": "10:44",
+              "sealAmount": 239018840,
+              "breaks": 1,
+              "subtype": "通信设备",
+              "reason": "通信设备与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "002017",
+              "name": "东信和平",
+              "boards": 1,
+              "firstSeal": "09:45",
+              "lastSeal": "10:41",
+              "sealAmount": 30427273,
+              "breaks": 3,
+              "subtype": "通信设备",
+              "reason": "通信设备与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "600353",
+              "name": "旭光电子",
+              "boards": 1,
+              "firstSeal": "09:56",
+              "lastSeal": "10:51",
+              "sealAmount": 107624602,
+              "breaks": 4,
+              "subtype": "其他电子",
+              "reason": "其他电子与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "002655",
+              "name": "共达电声",
+              "boards": 1,
+              "firstSeal": "09:57",
+              "lastSeal": "10:04",
+              "sealAmount": 112784997,
+              "breaks": 1,
+              "subtype": "消费电子",
+              "reason": "消费电子与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "002449",
+              "name": "国星光电",
+              "boards": 1,
+              "firstSeal": "11:29",
+              "lastSeal": "13:19",
+              "sealAmount": 41063592,
+              "breaks": 3,
+              "subtype": "光学光电",
+              "reason": "光学光电与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "003031",
+              "name": "中瓷电子",
+              "boards": 1,
+              "firstSeal": "13:12",
+              "lastSeal": "13:18",
+              "sealAmount": 134898370,
+              "breaks": 1,
+              "subtype": "通信设备",
+              "reason": "通信设备与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "002045",
+              "name": "国光电器",
+              "boards": 1,
+              "firstSeal": "14:26",
+              "lastSeal": "14:26",
+              "sealAmount": 110878037,
+              "breaks": 0,
+              "subtype": "消费电子",
+              "reason": "消费电子与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "高端装备／自动化",
+          "limitUps": 7,
+          "firstBoards": 6,
+          "maxBoards": 2,
+          "opened": 4,
+          "openTimes": 7,
+          "brokenPool": 4,
+          "stocks": [
+            {
+              "code": "002903",
+              "name": "宇环数控",
+              "boards": 2,
+              "firstSeal": "11:02",
+              "lastSeal": "11:02",
+              "sealAmount": 51301670,
+              "breaks": 0,
+              "subtype": "通用设备",
+              "reason": "通用设备与同方向个股当日集中封板，归入高端装备／自动化；2板，属于接力标的。"
+            },
+            {
+              "code": "002209",
+              "name": "达 意 隆",
+              "boards": 1,
+              "firstSeal": "09:25",
+              "lastSeal": "09:42",
+              "sealAmount": 23922248,
+              "breaks": 1,
+              "subtype": "专用设备",
+              "reason": "专用设备与同方向个股当日集中封板，归入高端装备／自动化；1板，属于首板扩散。"
+            },
+            {
+              "code": "601177",
+              "name": "杭齿前进",
+              "boards": 1,
+              "firstSeal": "09:30",
+              "lastSeal": "09:30",
+              "sealAmount": 38831220,
+              "breaks": 0,
+              "subtype": "通用设备",
+              "reason": "通用设备与同方向个股当日集中封板，归入高端装备／自动化；1板，属于首板扩散。"
+            },
+            {
+              "code": "002686",
+              "name": "亿利达",
+              "boards": 1,
+              "firstSeal": "09:31",
+              "lastSeal": "09:45",
+              "sealAmount": 33017712,
+              "breaks": 2,
+              "subtype": "通用设备",
+              "reason": "通用设备与同方向个股当日集中封板，归入高端装备／自动化；1板，属于首板扩散。"
+            },
+            {
+              "code": "603095",
+              "name": "越剑智能",
+              "boards": 1,
+              "firstSeal": "09:35",
+              "lastSeal": "09:35",
+              "sealAmount": 65965378,
+              "breaks": 0,
+              "subtype": "专用设备",
+              "reason": "专用设备与同方向个股当日集中封板，归入高端装备／自动化；1板，属于首板扩散。"
+            },
+            {
+              "code": "600397",
+              "name": "江钨装备",
+              "boards": 1,
+              "firstSeal": "09:48",
+              "lastSeal": "11:20",
+              "sealAmount": 115029368,
+              "breaks": 3,
+              "subtype": "专用设备",
+              "reason": "专用设备与同方向个股当日集中封板，归入高端装备／自动化；1板，属于首板扩散。"
+            },
+            {
+              "code": "688328",
+              "name": "深科达",
+              "boards": 1,
+              "firstSeal": "13:02",
+              "lastSeal": "13:54",
+              "sealAmount": 121109615,
+              "breaks": 1,
+              "subtype": "专用设备",
+              "reason": "专用设备与同方向个股当日集中封板，归入高端装备／自动化；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "资源／金属材料",
+          "limitUps": 6,
+          "firstBoards": 6,
+          "maxBoards": 1,
+          "opened": 6,
+          "openTimes": 16,
+          "brokenPool": 0,
+          "stocks": [
+            {
+              "code": "601212",
+              "name": "白银有色",
+              "boards": 1,
+              "firstSeal": "09:41",
+              "lastSeal": "10:08",
+              "sealAmount": 138522531,
+              "breaks": 4,
+              "subtype": "工业金属",
+              "reason": "工业金属与同方向个股当日集中封板，归入资源／金属材料；1板，属于首板扩散。"
+            },
+            {
+              "code": "603045",
+              "name": "福达合金",
+              "boards": 1,
+              "firstSeal": "09:56",
+              "lastSeal": "10:08",
+              "sealAmount": 69409224,
+              "breaks": 1,
+              "subtype": "金属新材",
+              "reason": "金属新材与同方向个股当日集中封板，归入资源／金属材料；1板，属于首板扩散。"
+            },
+            {
+              "code": "002988",
+              "name": "豪美新材",
+              "boards": 1,
+              "firstSeal": "10:06",
+              "lastSeal": "10:18",
+              "sealAmount": 14796307,
+              "breaks": 3,
+              "subtype": "工业金属",
+              "reason": "工业金属与同方向个股当日集中封板，归入资源／金属材料；1板，属于首板扩散。"
+            },
+            {
+              "code": "002192",
+              "name": "融捷股份",
+              "boards": 1,
+              "firstSeal": "10:15",
+              "lastSeal": "13:26",
+              "sealAmount": 80008476,
+              "breaks": 4,
+              "subtype": "能源金属",
+              "reason": "能源金属与同方向个股当日集中封板，归入资源／金属材料；1板，属于首板扩散。"
+            },
+            {
+              "code": "002716",
+              "name": "湖南白银",
+              "boards": 1,
+              "firstSeal": "10:40",
+              "lastSeal": "13:23",
+              "sealAmount": 163236802,
+              "breaks": 1,
+              "subtype": "贵金属",
+              "reason": "贵金属与同方向个股当日集中封板，归入资源／金属材料；1板，属于首板扩散。"
+            },
+            {
+              "code": "000603",
+              "name": "盛达资源",
+              "boards": 1,
+              "firstSeal": "13:56",
+              "lastSeal": "14:00",
+              "sealAmount": 42009975,
+              "breaks": 3,
+              "subtype": "贵金属",
+              "reason": "贵金属与同方向个股当日集中封板，归入资源／金属材料；1板，属于首板扩散。"
+            }
+          ]
+        }
+      ],
+      "judgement": "通信／电子硬件形成当天最宽的涨停扩散，覆盖通信设备、消费电子、半导体与光学光电，通鼎互联、科森科技晋级2板；医药健康延续性更强，汉森制药3板领高度，双鹭药业、键凯科技、中关村、贝瑞基因、近岸蛋白均为2板。高端装备与资源材料属于次级扩散。封板率回升至75%，但昨日涨停平均仍为负、1进2仅13.33%，说明主线辨识度改善而接力溢价仍偏弱。"
+    }
   }
 };

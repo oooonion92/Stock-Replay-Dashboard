@@ -16639,5 +16639,1105 @@ window.REPLAY_DATA.shortTerm={
       ],
       "judgement": "能源／电力装备是当日覆盖最宽的首板扩散方向；医药健康的梯队辨识度更高，汉森制药4板、中关村3板维持高度。消费／商业和资源／金属材料也有连板，但内部题材较分散。封板率74.19%、2进3为30%，说明核心高标尚有承接；但昨日涨停中位亏1.63%、仅38.89%翻红，1进2只有13.95%，追涨溢价仍不足，当前更适合围绕核心辨识度而非扩散跟随。"
     }
+  },
+  "2026-08-25": {
+    "source": "东方财富收盘涨停/炸板/跌停池",
+    "state": "complete",
+    "emotion": {
+      "zt": 65,
+      "zb": 22,
+      "dt": 2,
+      "sealRate": 74.71,
+      "breakRate": 25.29,
+      "firstBoard": 56,
+      "maxBoards": 5,
+      "lianban": 9
+    },
+    "promotion": {
+      "oneToTwo": 11.11,
+      "oneToTwoNumerator": 4,
+      "oneToTwoDenominator": 36,
+      "twoToThree": 33.33,
+      "threePlus": 50
+    },
+    "feedback": {
+      "sample": 47,
+      "median": -0.27,
+      "average": 1.22,
+      "positiveRate": 44.68,
+      "limitUpAgainRate": 19.15,
+      "deepLoss5": 7,
+      "deepLoss7": 1,
+      "worst": -7.32,
+      "missingFeedback": 0,
+      "quality": {
+        "sealedAgain": {
+          "count": 9,
+          "median": 10.02,
+          "positiveRate": 100
+        },
+        "brokenUnsealed": {
+          "count": 2,
+          "median": 1.8,
+          "positiveRate": 50
+        },
+        "other": {
+          "count": 36,
+          "median": -0.96,
+          "positiveRate": 30.56
+        },
+        "lowReturnCount": 30,
+        "lowReturnRate": 63.83,
+        "reclosedAfterBreakCount": 4,
+        "reclosedAfterBreakRate": 44.44
+      }
+    },
+    "sealQuality": {
+      "sealedWithBreakCount": 28,
+      "sealedWithBreakRate": 43.08,
+      "averageBreaksOnSealed": 0.97
+    },
+    "ladder": [
+      {
+        "level": 5,
+        "count": 1,
+        "names": [
+          "汉森制药"
+        ]
+      },
+      {
+        "level": 4,
+        "count": 1,
+        "names": [
+          "深中华A"
+        ]
+      },
+      {
+        "level": 3,
+        "count": 2,
+        "names": [
+          "楚天龙",
+          "新华百货"
+        ]
+      },
+      {
+        "level": 2,
+        "count": 5,
+        "names": [
+          "海鸥住工",
+          "中南文化",
+          "建设机械",
+          "上海能源",
+          "登海种业"
+        ]
+      }
+    ],
+    "industryRelay": [
+      {
+        "name": "通用设备",
+        "limitUps": 4,
+        "firstBoards": 3,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002445",
+            "name": "中南文化",
+            "boards": 2,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 233229075,
+            "breaks": 0,
+            "amount": 20938572,
+            "turnover": 0.24
+          },
+          {
+            "kind": "limitUp",
+            "code": "002686",
+            "name": "亿利达",
+            "boards": 1,
+            "firstSeal": "10:19",
+            "lastSeal": "10:19",
+            "sealAmount": 36685462,
+            "breaks": 0,
+            "amount": 252138103,
+            "turnover": 7.33
+          },
+          {
+            "kind": "limitUp",
+            "code": "600172",
+            "name": "黄河旋风",
+            "boards": 1,
+            "firstSeal": "13:50",
+            "lastSeal": "13:55",
+            "sealAmount": 185911711,
+            "breaks": 1,
+            "amount": 2449812112,
+            "turnover": 14.43
+          },
+          {
+            "kind": "limitUp",
+            "code": "603912",
+            "name": "佳力图",
+            "boards": 1,
+            "firstSeal": "14:34",
+            "lastSeal": "14:34",
+            "sealAmount": 42120639,
+            "breaks": 0,
+            "amount": 361157856,
+            "turnover": 7.62
+          }
+        ]
+      },
+      {
+        "name": "一般零售",
+        "limitUps": 3,
+        "firstBoards": 2,
+        "maxBoards": 3,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "600785",
+            "name": "新华百货",
+            "boards": 3,
+            "firstSeal": "09:56",
+            "lastSeal": "14:00",
+            "sealAmount": 32046547,
+            "breaks": 1,
+            "amount": 783600368,
+            "turnover": 22.6
+          },
+          {
+            "kind": "limitUp",
+            "code": "600838",
+            "name": "上海九百",
+            "boards": 1,
+            "firstSeal": "09:36",
+            "lastSeal": "09:37",
+            "sealAmount": 44266646,
+            "breaks": 1,
+            "amount": 110387309,
+            "turnover": 3.48
+          },
+          {
+            "kind": "limitUp",
+            "code": "600605",
+            "name": "汇通能源",
+            "boards": 1,
+            "firstSeal": "14:41",
+            "lastSeal": "14:41",
+            "sealAmount": 9544878,
+            "breaks": 0,
+            "amount": 206951566,
+            "turnover": 3.9
+          },
+          {
+            "kind": "broken",
+            "code": "000759",
+            "name": "中百集团",
+            "boards": null,
+            "firstSeal": "10:12",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 2,
+            "amount": 615267344,
+            "turnover": 15.52
+          }
+        ]
+      },
+      {
+        "name": "农化制品",
+        "limitUps": 3,
+        "firstBoards": 3,
+        "maxBoards": 1,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "603360",
+            "name": "百傲化学",
+            "boards": 1,
+            "firstSeal": "09:35",
+            "lastSeal": "09:35",
+            "sealAmount": 34048321,
+            "breaks": 1,
+            "amount": 157842229,
+            "turnover": 1.65
+          },
+          {
+            "kind": "limitUp",
+            "code": "600470",
+            "name": "六国化工",
+            "boards": 1,
+            "firstSeal": "09:35",
+            "lastSeal": "09:37",
+            "sealAmount": 78405351,
+            "breaks": 1,
+            "amount": 206076496,
+            "turnover": 6.78
+          },
+          {
+            "kind": "limitUp",
+            "code": "603395",
+            "name": "红四方",
+            "boards": 1,
+            "firstSeal": "09:47",
+            "lastSeal": "09:47",
+            "sealAmount": 93508244,
+            "breaks": 0,
+            "amount": 375668736,
+            "turnover": 20.86
+          }
+        ]
+      },
+      {
+        "name": "包装印刷",
+        "limitUps": 3,
+        "firstBoards": 3,
+        "maxBoards": 1,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "603687",
+            "name": "大胜达",
+            "boards": 1,
+            "firstSeal": "13:01",
+            "lastSeal": "13:01",
+            "sealAmount": 62349188,
+            "breaks": 0,
+            "amount": 214250615,
+            "turnover": 2.87
+          },
+          {
+            "kind": "limitUp",
+            "code": "003018",
+            "name": "金富科技",
+            "boards": 1,
+            "firstSeal": "13:13",
+            "lastSeal": "13:13",
+            "sealAmount": 114700558,
+            "breaks": 0,
+            "amount": 882941184,
+            "turnover": 7.16
+          },
+          {
+            "kind": "limitUp",
+            "code": "000659",
+            "name": "珠海中富",
+            "boards": 1,
+            "firstSeal": "14:02",
+            "lastSeal": "14:02",
+            "sealAmount": 27258255,
+            "breaks": 0,
+            "amount": 105634481,
+            "turnover": 3.02
+          }
+        ]
+      },
+      {
+        "name": "汽车零部",
+        "limitUps": 3,
+        "firstBoards": 3,
+        "maxBoards": 1,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "600698",
+            "name": "湖南天雁",
+            "boards": 1,
+            "firstSeal": "09:34",
+            "lastSeal": "09:34",
+            "sealAmount": 44127428,
+            "breaks": 0,
+            "amount": 230836543,
+            "turnover": 3.87
+          },
+          {
+            "kind": "limitUp",
+            "code": "002703",
+            "name": "浙江世宝",
+            "boards": 1,
+            "firstSeal": "09:58",
+            "lastSeal": "10:22",
+            "sealAmount": 62815586,
+            "breaks": 5,
+            "amount": 1159846928,
+            "turnover": 12.89
+          },
+          {
+            "kind": "limitUp",
+            "code": "603758",
+            "name": "秦安股份",
+            "boards": 1,
+            "firstSeal": "13:13",
+            "lastSeal": "14:51",
+            "sealAmount": 5992128,
+            "breaks": 5,
+            "amount": 485242720,
+            "turnover": 9.6
+          }
+        ]
+      },
+      {
+        "name": "装修装饰",
+        "limitUps": 3,
+        "firstBoards": 3,
+        "maxBoards": 1,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002081",
+            "name": "金 螳 螂",
+            "boards": 1,
+            "firstSeal": "09:59",
+            "lastSeal": "09:59",
+            "sealAmount": 168428150,
+            "breaks": 0,
+            "amount": 1145819008,
+            "turnover": 8.31
+          },
+          {
+            "kind": "limitUp",
+            "code": "002713",
+            "name": "东易日盛",
+            "boards": 1,
+            "firstSeal": "10:11",
+            "lastSeal": "10:11",
+            "sealAmount": 38510340,
+            "breaks": 1,
+            "amount": 149460356,
+            "turnover": 2.99
+          },
+          {
+            "kind": "limitUp",
+            "code": "002963",
+            "name": "豪尔赛",
+            "boards": 1,
+            "firstSeal": "13:25",
+            "lastSeal": "13:25",
+            "sealAmount": 9889744,
+            "breaks": 0,
+            "amount": 212936519,
+            "turnover": 7.36
+          }
+        ]
+      }
+    ],
+    "aiThemes": {
+      "source": "AI归类 · 当日涨停池／炸板池／连板梯队",
+      "unclustered": 7,
+      "themes": [
+        {
+          "name": "医药健康",
+          "limitUps": 8,
+          "firstBoards": 7,
+          "maxBoards": 5,
+          "opened": 1,
+          "openTimes": 1,
+          "brokenPool": 3,
+          "stocks": [
+            {
+              "code": "002412",
+              "name": "汉森制药",
+              "boards": 5,
+              "firstSeal": "09:45",
+              "lastSeal": "09:45",
+              "sealAmount": 117349788,
+              "breaks": 0,
+              "subtype": "中药Ⅱ",
+              "reason": "中药Ⅱ与同方向个股当日集中封板，归入医药健康；5板，属于高标核心。"
+            },
+            {
+              "code": "002880",
+              "name": "卫光生物",
+              "boards": 1,
+              "firstSeal": "09:30",
+              "lastSeal": "09:30",
+              "sealAmount": 23159977,
+              "breaks": 0,
+              "subtype": "生物制品",
+              "reason": "生物制品与同方向个股当日集中封板，归入医药健康；1板，属于首板扩散。"
+            },
+            {
+              "code": "300642",
+              "name": "透景生命",
+              "boards": 1,
+              "firstSeal": "09:33",
+              "lastSeal": "09:33",
+              "sealAmount": 53800200,
+              "breaks": 0,
+              "subtype": "医疗器械",
+              "reason": "医疗器械与同方向个股当日集中封板，归入医药健康；1板，属于首板扩散。"
+            },
+            {
+              "code": "002742",
+              "name": "冀衡医药",
+              "boards": 1,
+              "firstSeal": "09:43",
+              "lastSeal": "09:43",
+              "sealAmount": 36986456,
+              "breaks": 0,
+              "subtype": "化学制药",
+              "reason": "化学制药与同方向个股当日集中封板，归入医药健康；1板，属于首板扩散。"
+            },
+            {
+              "code": "002907",
+              "name": "华森制药",
+              "boards": 1,
+              "firstSeal": "09:49",
+              "lastSeal": "09:49",
+              "sealAmount": 87843366,
+              "breaks": 0,
+              "subtype": "中药Ⅱ",
+              "reason": "中药Ⅱ与同方向个股当日集中封板，归入医药健康；1板，属于首板扩散。"
+            },
+            {
+              "code": "000566",
+              "name": "海南海药",
+              "boards": 1,
+              "firstSeal": "09:54",
+              "lastSeal": "09:54",
+              "sealAmount": 128748222,
+              "breaks": 0,
+              "subtype": "化学制药",
+              "reason": "化学制药与同方向个股当日集中封板，归入医药健康；1板，属于首板扩散。"
+            },
+            {
+              "code": "600829",
+              "name": "人民同泰",
+              "boards": 1,
+              "firstSeal": "10:59",
+              "lastSeal": "13:06",
+              "sealAmount": 108536146,
+              "breaks": 1,
+              "subtype": "医药商业",
+              "reason": "医药商业与同方向个股当日集中封板，归入医药健康；1板，属于首板扩散。"
+            },
+            {
+              "code": "002821",
+              "name": "凯莱英",
+              "boards": 1,
+              "firstSeal": "13:01",
+              "lastSeal": "13:01",
+              "sealAmount": 158255257,
+              "breaks": 0,
+              "subtype": "医疗服务",
+              "reason": "医疗服务与同方向个股当日集中封板，归入医药健康；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "消费／商业农业",
+          "limitUps": 13,
+          "firstBoards": 9,
+          "maxBoards": 4,
+          "opened": 9,
+          "openTimes": 22,
+          "brokenPool": 6,
+          "stocks": [
+            {
+              "code": "000017",
+              "name": "深中华A",
+              "boards": 4,
+              "firstSeal": "09:25",
+              "lastSeal": "09:58",
+              "sealAmount": 122828863,
+              "breaks": 1,
+              "subtype": "饰品",
+              "reason": "饰品与同方向个股当日集中封板，归入消费／商业农业；4板，属于高标核心。"
+            },
+            {
+              "code": "600785",
+              "name": "新华百货",
+              "boards": 3,
+              "firstSeal": "09:56",
+              "lastSeal": "14:00",
+              "sealAmount": 32046547,
+              "breaks": 1,
+              "subtype": "一般零售",
+              "reason": "一般零售与同方向个股当日集中封板，归入消费／商业农业；3板，属于高标核心。"
+            },
+            {
+              "code": "002084",
+              "name": "海鸥住工",
+              "boards": 2,
+              "firstSeal": "09:25",
+              "lastSeal": "09:25",
+              "sealAmount": 195710950,
+              "breaks": 0,
+              "subtype": "家居用品",
+              "reason": "家居用品与同方向个股当日集中封板，归入消费／商业农业；2板，属于接力标的。"
+            },
+            {
+              "code": "002041",
+              "name": "登海种业",
+              "boards": 2,
+              "firstSeal": "09:34",
+              "lastSeal": "14:44",
+              "sealAmount": 8143538,
+              "breaks": 3,
+              "subtype": "种植业",
+              "reason": "种植业与同方向个股当日集中封板，归入消费／商业农业；2板，属于接力标的。"
+            },
+            {
+              "code": "000428",
+              "name": "华天酒店",
+              "boards": 1,
+              "firstSeal": "09:31",
+              "lastSeal": "09:31",
+              "sealAmount": 93092302,
+              "breaks": 0,
+              "subtype": "酒店餐饮",
+              "reason": "酒店餐饮与同方向个股当日集中封板，归入消费／商业农业；1板，属于首板扩散。"
+            },
+            {
+              "code": "600127",
+              "name": "金健米业",
+              "boards": 1,
+              "firstSeal": "09:31",
+              "lastSeal": "14:55",
+              "sealAmount": 28919857,
+              "breaks": 7,
+              "subtype": "农产品加",
+              "reason": "农产品加与同方向个股当日集中封板，归入消费／商业农业；1板，属于首板扩散。"
+            },
+            {
+              "code": "000796",
+              "name": "凯撒旅业",
+              "boards": 1,
+              "firstSeal": "09:32",
+              "lastSeal": "09:33",
+              "sealAmount": 42638090,
+              "breaks": 1,
+              "subtype": "旅游及景",
+              "reason": "旅游及景与同方向个股当日集中封板，归入消费／商业农业；1板，属于首板扩散。"
+            },
+            {
+              "code": "600371",
+              "name": "万向德农",
+              "boards": 1,
+              "firstSeal": "09:33",
+              "lastSeal": "13:32",
+              "sealAmount": 46891660,
+              "breaks": 4,
+              "subtype": "种植业",
+              "reason": "种植业与同方向个股当日集中封板，归入消费／商业农业；1板，属于首板扩散。"
+            },
+            {
+              "code": "600838",
+              "name": "上海九百",
+              "boards": 1,
+              "firstSeal": "09:36",
+              "lastSeal": "09:37",
+              "sealAmount": 44266646,
+              "breaks": 1,
+              "subtype": "一般零售",
+              "reason": "一般零售与同方向个股当日集中封板，归入消费／商业农业；1板，属于首板扩散。"
+            },
+            {
+              "code": "688169",
+              "name": "石头科技",
+              "boards": 1,
+              "firstSeal": "09:54",
+              "lastSeal": "10:03",
+              "sealAmount": 98149860,
+              "breaks": 3,
+              "subtype": "小家电",
+              "reason": "小家电与同方向个股当日集中封板，归入消费／商业农业；1板，属于首板扩散。"
+            },
+            {
+              "code": "002418",
+              "name": "康盛股份",
+              "boards": 1,
+              "firstSeal": "10:00",
+              "lastSeal": "10:36",
+              "sealAmount": 51021944,
+              "breaks": 1,
+              "subtype": "家电零部",
+              "reason": "家电零部与同方向个股当日集中封板，归入消费／商业农业；1板，属于首板扩散。"
+            },
+            {
+              "code": "002094",
+              "name": "青岛金王",
+              "boards": 1,
+              "firstSeal": "10:36",
+              "lastSeal": "10:36",
+              "sealAmount": 28577886,
+              "breaks": 0,
+              "subtype": "家居用品",
+              "reason": "家居用品与同方向个股当日集中封板，归入消费／商业农业；1板，属于首板扩散。"
+            },
+            {
+              "code": "600605",
+              "name": "汇通能源",
+              "boards": 1,
+              "firstSeal": "14:41",
+              "lastSeal": "14:41",
+              "sealAmount": 9544878,
+              "breaks": 0,
+              "subtype": "一般零售",
+              "reason": "一般零售与同方向个股当日集中封板，归入消费／商业农业；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "通信／电子硬件",
+          "limitUps": 4,
+          "firstBoards": 3,
+          "maxBoards": 3,
+          "opened": 1,
+          "openTimes": 2,
+          "brokenPool": 1,
+          "stocks": [
+            {
+              "code": "003040",
+              "name": "楚天龙",
+              "boards": 3,
+              "firstSeal": "09:35",
+              "lastSeal": "09:35",
+              "sealAmount": 160849088,
+              "breaks": 0,
+              "subtype": "通信设备",
+              "reason": "通信设备与同方向个股当日集中封板，归入通信／电子硬件；3板，属于高标核心。"
+            },
+            {
+              "code": "000070",
+              "name": "特发信息",
+              "boards": 1,
+              "firstSeal": "10:15",
+              "lastSeal": "10:15",
+              "sealAmount": 121344570,
+              "breaks": 0,
+              "subtype": "通信设备",
+              "reason": "通信设备与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "002947",
+              "name": "恒铭达",
+              "boards": 1,
+              "firstSeal": "10:36",
+              "lastSeal": "10:51",
+              "sealAmount": 111229577,
+              "breaks": 2,
+              "subtype": "消费电子",
+              "reason": "消费电子与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            },
+            {
+              "code": "002855",
+              "name": "捷荣技术",
+              "boards": 1,
+              "firstSeal": "11:14",
+              "lastSeal": "11:14",
+              "sealAmount": 36550800,
+              "breaks": 0,
+              "subtype": "消费电子",
+              "reason": "消费电子与同方向个股当日集中封板，归入通信／电子硬件；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "周期化工／能源",
+          "limitUps": 13,
+          "firstBoards": 12,
+          "maxBoards": 2,
+          "opened": 6,
+          "openTimes": 7,
+          "brokenPool": 2,
+          "stocks": [
+            {
+              "code": "600508",
+              "name": "上海能源",
+              "boards": 2,
+              "firstSeal": "09:30",
+              "lastSeal": "10:25",
+              "sealAmount": 33752002,
+              "breaks": 1,
+              "subtype": "煤炭开采",
+              "reason": "煤炭开采与同方向个股当日集中封板，归入周期化工／能源；2板，属于接力标的。"
+            },
+            {
+              "code": "603360",
+              "name": "百傲化学",
+              "boards": 1,
+              "firstSeal": "09:35",
+              "lastSeal": "09:35",
+              "sealAmount": 34048321,
+              "breaks": 1,
+              "subtype": "农化制品",
+              "reason": "农化制品与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "600470",
+              "name": "六国化工",
+              "boards": 1,
+              "firstSeal": "09:35",
+              "lastSeal": "09:37",
+              "sealAmount": 78405351,
+              "breaks": 1,
+              "subtype": "农化制品",
+              "reason": "农化制品与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "603079",
+              "name": "圣达生物",
+              "boards": 1,
+              "firstSeal": "09:42",
+              "lastSeal": "09:42",
+              "sealAmount": 93712357,
+              "breaks": 0,
+              "subtype": "化学制品",
+              "reason": "化学制品与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "600103",
+              "name": "青山纸业",
+              "boards": 1,
+              "firstSeal": "09:45",
+              "lastSeal": "09:45",
+              "sealAmount": 33846772,
+              "breaks": 0,
+              "subtype": "造纸",
+              "reason": "造纸与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "603395",
+              "name": "红四方",
+              "boards": 1,
+              "firstSeal": "09:47",
+              "lastSeal": "09:47",
+              "sealAmount": 93508244,
+              "breaks": 0,
+              "subtype": "农化制品",
+              "reason": "农化制品与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "603113",
+              "name": "金能科技",
+              "boards": 1,
+              "firstSeal": "09:48",
+              "lastSeal": "09:48",
+              "sealAmount": 61131674,
+              "breaks": 0,
+              "subtype": "化学原料",
+              "reason": "化学原料与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "000695",
+              "name": "滨海能源",
+              "boards": 1,
+              "firstSeal": "09:53",
+              "lastSeal": "09:59",
+              "sealAmount": 89465924,
+              "breaks": 1,
+              "subtype": "电池",
+              "reason": "电池与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "603318",
+              "name": "水发燃气",
+              "boards": 1,
+              "firstSeal": "09:56",
+              "lastSeal": "10:05",
+              "sealAmount": 88163624,
+              "breaks": 2,
+              "subtype": "燃气Ⅱ",
+              "reason": "燃气Ⅱ与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "600714",
+              "name": "金瑞矿业",
+              "boards": 1,
+              "firstSeal": "13:01",
+              "lastSeal": "13:01",
+              "sealAmount": 72804233,
+              "breaks": 0,
+              "subtype": "化学原料",
+              "reason": "化学原料与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "603217",
+              "name": "元利科技",
+              "boards": 1,
+              "firstSeal": "13:36",
+              "lastSeal": "13:36",
+              "sealAmount": 84549309,
+              "breaks": 0,
+              "subtype": "化学制品",
+              "reason": "化学制品与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "002451",
+              "name": "摩恩电气",
+              "boards": 1,
+              "firstSeal": "13:36",
+              "lastSeal": "13:37",
+              "sealAmount": 63191238,
+              "breaks": 1,
+              "subtype": "电网设备",
+              "reason": "电网设备与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            },
+            {
+              "code": "002259",
+              "name": "升达林业",
+              "boards": 1,
+              "firstSeal": "13:46",
+              "lastSeal": "13:46",
+              "sealAmount": 26255378,
+              "breaks": 0,
+              "subtype": "燃气Ⅱ",
+              "reason": "燃气Ⅱ与同方向个股当日集中封板，归入周期化工／能源；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "制造／机器人",
+          "limitUps": 12,
+          "firstBoards": 10,
+          "maxBoards": 2,
+          "opened": 5,
+          "openTimes": 13,
+          "brokenPool": 1,
+          "stocks": [
+            {
+              "code": "002445",
+              "name": "中南文化",
+              "boards": 2,
+              "firstSeal": "09:25",
+              "lastSeal": "09:25",
+              "sealAmount": 233229075,
+              "breaks": 0,
+              "subtype": "通用设备",
+              "reason": "通用设备与同方向个股当日集中封板，归入制造／机器人；2板，属于接力标的。"
+            },
+            {
+              "code": "600984",
+              "name": "建设机械",
+              "boards": 2,
+              "firstSeal": "09:25",
+              "lastSeal": "09:25",
+              "sealAmount": 162802195,
+              "breaks": 0,
+              "subtype": "工程机械",
+              "reason": "工程机械与同方向个股当日集中封板，归入制造／机器人；2板，属于接力标的。"
+            },
+            {
+              "code": "600698",
+              "name": "湖南天雁",
+              "boards": 1,
+              "firstSeal": "09:34",
+              "lastSeal": "09:34",
+              "sealAmount": 44127428,
+              "breaks": 0,
+              "subtype": "汽车零部",
+              "reason": "汽车零部与同方向个股当日集中封板，归入制造／机器人；1板，属于首板扩散。"
+            },
+            {
+              "code": "603095",
+              "name": "越剑智能",
+              "boards": 1,
+              "firstSeal": "09:40",
+              "lastSeal": "10:03",
+              "sealAmount": 71651600,
+              "breaks": 1,
+              "subtype": "专用设备",
+              "reason": "专用设备与同方向个股当日集中封板，归入制造／机器人；1板，属于首板扩散。"
+            },
+            {
+              "code": "002703",
+              "name": "浙江世宝",
+              "boards": 1,
+              "firstSeal": "09:58",
+              "lastSeal": "10:22",
+              "sealAmount": 62815586,
+              "breaks": 5,
+              "subtype": "汽车零部",
+              "reason": "汽车零部与同方向个股当日集中封板，归入制造／机器人；1板，属于首板扩散。"
+            },
+            {
+              "code": "002837",
+              "name": "英维克",
+              "boards": 1,
+              "firstSeal": "10:05",
+              "lastSeal": "11:12",
+              "sealAmount": 326130693,
+              "breaks": 1,
+              "subtype": "专用设备",
+              "reason": "专用设备与同方向个股当日集中封板，归入制造／机器人；1板，属于首板扩散。"
+            },
+            {
+              "code": "002686",
+              "name": "亿利达",
+              "boards": 1,
+              "firstSeal": "10:19",
+              "lastSeal": "10:19",
+              "sealAmount": 36685462,
+              "breaks": 0,
+              "subtype": "通用设备",
+              "reason": "通用设备与同方向个股当日集中封板，归入制造／机器人；1板，属于首板扩散。"
+            },
+            {
+              "code": "300097",
+              "name": "智云股份",
+              "boards": 1,
+              "firstSeal": "13:09",
+              "lastSeal": "13:09",
+              "sealAmount": 30687210,
+              "breaks": 0,
+              "subtype": "自动化设",
+              "reason": "自动化设与同方向个股当日集中封板，归入制造／机器人；1板，属于首板扩散。"
+            },
+            {
+              "code": "603758",
+              "name": "秦安股份",
+              "boards": 1,
+              "firstSeal": "13:13",
+              "lastSeal": "14:51",
+              "sealAmount": 5992128,
+              "breaks": 5,
+              "subtype": "汽车零部",
+              "reason": "汽车零部与同方向个股当日集中封板，归入制造／机器人；1板，属于首板扩散。"
+            },
+            {
+              "code": "003021",
+              "name": "兆威机电",
+              "boards": 1,
+              "firstSeal": "13:19",
+              "lastSeal": "13:19",
+              "sealAmount": 76038797,
+              "breaks": 0,
+              "subtype": "电机Ⅱ",
+              "reason": "电机Ⅱ与同方向个股当日集中封板，归入制造／机器人；1板，属于首板扩散。"
+            },
+            {
+              "code": "600172",
+              "name": "黄河旋风",
+              "boards": 1,
+              "firstSeal": "13:50",
+              "lastSeal": "13:55",
+              "sealAmount": 185911711,
+              "breaks": 1,
+              "subtype": "通用设备",
+              "reason": "通用设备与同方向个股当日集中封板，归入制造／机器人；1板，属于首板扩散。"
+            },
+            {
+              "code": "603912",
+              "name": "佳力图",
+              "boards": 1,
+              "firstSeal": "14:34",
+              "lastSeal": "14:34",
+              "sealAmount": 42120639,
+              "breaks": 0,
+              "subtype": "通用设备",
+              "reason": "通用设备与同方向个股当日集中封板，归入制造／机器人；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "基建地产链",
+          "limitUps": 8,
+          "firstBoards": 8,
+          "maxBoards": 1,
+          "opened": 4,
+          "openTimes": 14,
+          "brokenPool": 0,
+          "stocks": [
+            {
+              "code": "605303",
+              "name": "园林股份",
+              "boards": 1,
+              "firstSeal": "09:32",
+              "lastSeal": "09:35",
+              "sealAmount": 76101925,
+              "breaks": 2,
+              "subtype": "基础建设",
+              "reason": "基础建设与同方向个股当日集中封板，归入基建地产链；1板，属于首板扩散。"
+            },
+            {
+              "code": "002949",
+              "name": "华阳国际",
+              "boards": 1,
+              "firstSeal": "09:33",
+              "lastSeal": "11:19",
+              "sealAmount": 7777488,
+              "breaks": 10,
+              "subtype": "工程咨询",
+              "reason": "工程咨询与同方向个股当日集中封板，归入基建地产链；1板，属于首板扩散。"
+            },
+            {
+              "code": "000779",
+              "name": "甘咨询",
+              "boards": 1,
+              "firstSeal": "09:58",
+              "lastSeal": "09:58",
+              "sealAmount": 181897495,
+              "breaks": 0,
+              "subtype": "工程咨询",
+              "reason": "工程咨询与同方向个股当日集中封板，归入基建地产链；1板，属于首板扩散。"
+            },
+            {
+              "code": "002081",
+              "name": "金 螳 螂",
+              "boards": 1,
+              "firstSeal": "09:59",
+              "lastSeal": "09:59",
+              "sealAmount": 168428150,
+              "breaks": 0,
+              "subtype": "装修装饰",
+              "reason": "装修装饰与同方向个股当日集中封板，归入基建地产链；1板，属于首板扩散。"
+            },
+            {
+              "code": "603637",
+              "name": "镇海股份",
+              "boards": 1,
+              "firstSeal": "10:01",
+              "lastSeal": "10:03",
+              "sealAmount": 82260696,
+              "breaks": 1,
+              "subtype": "专业工程",
+              "reason": "专业工程与同方向个股当日集中封板，归入基建地产链；1板，属于首板扩散。"
+            },
+            {
+              "code": "002713",
+              "name": "东易日盛",
+              "boards": 1,
+              "firstSeal": "10:11",
+              "lastSeal": "10:11",
+              "sealAmount": 38510340,
+              "breaks": 1,
+              "subtype": "装修装饰",
+              "reason": "装修装饰与同方向个股当日集中封板，归入基建地产链；1板，属于首板扩散。"
+            },
+            {
+              "code": "000560",
+              "name": "我爱我家",
+              "boards": 1,
+              "firstSeal": "11:12",
+              "lastSeal": "11:12",
+              "sealAmount": 67197414,
+              "breaks": 0,
+              "subtype": "房地产服",
+              "reason": "房地产服与同方向个股当日集中封板，归入基建地产链；1板，属于首板扩散。"
+            },
+            {
+              "code": "002963",
+              "name": "豪尔赛",
+              "boards": 1,
+              "firstSeal": "13:25",
+              "lastSeal": "13:25",
+              "sealAmount": 9889744,
+              "breaks": 0,
+              "subtype": "装修装饰",
+              "reason": "装修装饰与同方向个股当日集中封板，归入基建地产链；1板，属于首板扩散。"
+            }
+          ]
+        }
+      ],
+      "judgement": "消费／商业农业同时具备广度与梯队，深中华A 4板、新华百货3板，海鸥住工与登海种业2板，是当日辨识度最高的扩散方向；医药健康由汉森制药5板维持市场高度。制造／机器人、周期化工／能源和基建地产链以首板扩散为主，延续性仍待验证。封板率74.71%、跌停仅2家，2进3为33.33%、高位晋级50%，说明核心接力改善；但1进2仅11.11%、昨日涨停仅44.68%翻红，普遍追涨溢价仍未完全恢复。"
+    }
   }
 };

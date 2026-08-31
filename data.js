@@ -39,61 +39,10 @@ window.REPLAY_DATA={
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
-    "2026-08-28"
+    "2026-08-28",
+    "2026-08-31"
   ],
   "reports": {
-    "2026-07-03": {
-      "market": {
-        "total": null,
-        "sentiment": null,
-        "technical": null,
-        "status": "历史归档",
-        "summary": "蓝色总闸。全市场宽度明显修复，但上证冲高回落并收在5分钟活跃中枢下方，30分钟动量继续走弱；题材轮动强不等于指数结构已经恢复。",
-        "paths": []
-      },
-      "stocks": [],
-      "experts": [],
-      "fullReport": "reports/20260703.html"
-    },
-    "2026-07-08": {
-      "market": {
-        "total": null,
-        "sentiment": null,
-        "technical": null,
-        "status": "历史归档",
-        "summary": "指数继续弱势探底，收盘跌破3971.71小中枢下沿；科技只有左侧修复讨论，没有形成右侧买点。",
-        "paths": []
-      },
-      "stocks": [],
-      "experts": [],
-      "fullReport": "reports/20260708.html"
-    },
-    "2026-07-09": {
-      "market": {
-        "total": null,
-        "sentiment": null,
-        "technical": null,
-        "status": "历史归档",
-        "summary": "指数从弱势探底转为放量修复，重新站到5分钟中枢上方；但30分钟DIF仍在零轴下，全A中位数仍为负。",
-        "paths": []
-      },
-      "stocks": [],
-      "experts": [],
-      "fullReport": "reports/20260709.html"
-    },
-    "2026-07-10": {
-      "market": {
-        "total": null,
-        "sentiment": null,
-        "technical": null,
-        "status": "历史归档",
-        "summary": "蓝色总闸。上涨家数占优，但上证冲高回落并失守4000；宽度修复不能覆盖近端结构破坏。",
-        "paths": []
-      },
-      "stocks": [],
-      "experts": [],
-      "fullReport": "reports/20260710.html"
-    },
     "2026-06-29": {
       "market": {
         "total": null,
@@ -146,6 +95,19 @@ window.REPLAY_DATA={
       "experts": [],
       "fullReport": "reports/20260702.html"
     },
+    "2026-07-03": {
+      "market": {
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
+        "summary": "蓝色总闸。全市场宽度明显修复，但上证冲高回落并收在5分钟活跃中枢下方，30分钟动量继续走弱；题材轮动强不等于指数结构已经恢复。",
+        "paths": []
+      },
+      "stocks": [],
+      "experts": [],
+      "fullReport": "reports/20260703.html"
+    },
     "2026-07-06": {
       "market": {
         "total": null,
@@ -171,6 +133,45 @@ window.REPLAY_DATA={
       "stocks": [],
       "experts": [],
       "fullReport": "reports/20260707.html"
+    },
+    "2026-07-08": {
+      "market": {
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
+        "summary": "指数继续弱势探底，收盘跌破3971.71小中枢下沿；科技只有左侧修复讨论，没有形成右侧买点。",
+        "paths": []
+      },
+      "stocks": [],
+      "experts": [],
+      "fullReport": "reports/20260708.html"
+    },
+    "2026-07-09": {
+      "market": {
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
+        "summary": "指数从弱势探底转为放量修复，重新站到5分钟中枢上方；但30分钟DIF仍在零轴下，全A中位数仍为负。",
+        "paths": []
+      },
+      "stocks": [],
+      "experts": [],
+      "fullReport": "reports/20260709.html"
+    },
+    "2026-07-10": {
+      "market": {
+        "total": null,
+        "sentiment": null,
+        "technical": null,
+        "status": "历史归档",
+        "summary": "蓝色总闸。上涨家数占优，但上证冲高回落并失守4000；宽度修复不能覆盖近端结构破坏。",
+        "paths": []
+      },
+      "stocks": [],
+      "experts": [],
+      "fullReport": "reports/20260710.html"
     },
     "2026-07-13": {
       "market": {
@@ -1276,6 +1277,74 @@ window.REPLAY_DATA={
       "stocks": [],
       "experts": [],
       "fullReport": "reports/20260828.html"
+    },
+    "2026-08-31": {
+      "market": {
+        "total": 58,
+        "sentiment": 12,
+        "technical": 46,
+        "status": "震荡观察",
+        "summary": "上证上涨0.86%、收于日内最高并站上5/10/20日均线，30分钟零轴上金叉与红柱同步恢复；但昨日强势股中位收益转负、翻红率不足一半，指数强于短线溢价，按震荡观察处理。",
+        "paths": [],
+        "scoreDetails": {
+          "sentiment": [
+            {
+              "name": "强势股质量",
+              "score": 0,
+              "max": 25,
+              "standard": "昨日强势股需同时具备正收益、过半翻红与持续再封，才形成追涨溢价。",
+              "reason": "样本81只，收盘中位-0.30%、收红46.9%；最终再封18只（22.2%）、炸板未回封7只（8.6%）、收益低于+2%占62.2%，再封中曾炸板占55.6%。"
+            },
+            {
+              "name": "封板质量",
+              "score": 12,
+              "max": 25,
+              "standard": "综合封板率、开板回封质量、平均炸板次数、晋级率与跌停数。",
+              "reason": "封板率74.58%、1进2 15.62%；最终封板中48.86%曾炸板，平均炸板1.15次。 跌停11家。"
+            }
+          ],
+          "technical": [
+            {
+              "name": "结构趋势",
+              "score": 12,
+              "max": 12,
+              "standard": "只看指数收盘相对5/10/20日均线。",
+              "reason": "上证收3986.30，站上5日3939.40、10日3927.27和20日3924.94，均线结构完整。"
+            },
+            {
+              "name": "30分钟动量",
+              "score": 10,
+              "max": 12,
+              "standard": "只看30分钟DIF/DEA位置、交叉方向和柱体持续性。",
+              "reason": "DIF 13.10重新上穿DEA 11.75，红柱由前柱0.31扩大至2.71，零轴上方动量修复。"
+            },
+            {
+              "name": "关键位",
+              "score": 8,
+              "max": 8,
+              "standard": "看指数关键支撑与压力是否由收盘确认。",
+              "reason": "收盘3986.30等于日内高点并突破8月28日高点3970.31，关键位得到收盘确认。"
+            },
+            {
+              "name": "量价确认",
+              "score": 6,
+              "max": 8,
+              "standard": "只看指数成交额相对20日均量及涨跌方向。",
+              "reason": "指数成交约1.01万亿元，为近20日均量98.7%；价格上涨且量能接近均量，确认度中上。"
+            },
+            {
+              "name": "日内质量",
+              "score": 10,
+              "max": 10,
+              "standard": "只看指数收盘在日内区间的位置与尾盘方向。",
+              "reason": "最高3986.30、最低3926.50，收盘位于全天区间100.0%，午后逐级抬升并收于最高。"
+            }
+          ]
+        }
+      },
+      "stocks": [],
+      "experts": [],
+      "fullReport": "reports/20260831.html"
     }
   },
   "sectorFlowConfig": {
@@ -10623,6 +10692,233 @@ window.REPLAY_DATA={
         "turnoverShare": 3.05,
         "mainNet": -15.42
       }
+    },
+    "2026-08-31": {
+      "semi_equipment": {
+        "turnover": 383.69,
+        "turnoverShare": 1.8,
+        "mainNet": -23.81
+      },
+      "semi_materials": {
+        "turnover": 228.97,
+        "turnoverShare": 1.07,
+        "mainNet": -5.26
+      },
+      "semi_manufacturing": {
+        "turnover": 163.13,
+        "turnoverShare": 0.77,
+        "mainNet": -2.12
+      },
+      "semi_design": {
+        "turnover": 1567.21,
+        "turnoverShare": 7.36,
+        "mainNet": 35.47
+      },
+      "semi_packaging": {
+        "turnover": 217.61,
+        "turnoverShare": 1.02,
+        "mainNet": 1.03
+      },
+      "semiconductor": {
+        "turnover": 2560.61,
+        "turnoverShare": 12.02,
+        "mainNet": 5.31
+      },
+      "elec_pcb": {
+        "turnover": 894.93,
+        "turnoverShare": 4.2,
+        "mainNet": 22.47
+      },
+      "elec_passive": {
+        "turnover": 249.6,
+        "turnoverShare": 1.17,
+        "mainNet": -3.3
+      },
+      "elec_components": {
+        "turnover": 643.71,
+        "turnoverShare": 3.02,
+        "mainNet": 28.62
+      },
+      "electronics": {
+        "turnover": 1788.24,
+        "turnoverShare": 8.39,
+        "mainNet": 47.79
+      },
+      "comm_optical": {
+        "turnover": 1046.66,
+        "turnoverShare": 4.91,
+        "mainNet": -28.76
+      },
+      "comm_equipment": {
+        "turnover": 311.87,
+        "turnoverShare": 1.46,
+        "mainNet": 6.47
+      },
+      "comm_services": {
+        "turnover": 22.78,
+        "turnoverShare": 0.11,
+        "mainNet": -0.18
+      },
+      "optical": {
+        "turnover": 1381.31,
+        "turnoverShare": 6.48,
+        "mainNet": -22.47
+      },
+      "auto_robot": {
+        "turnover": 88.56,
+        "turnoverShare": 0.42,
+        "mainNet": -2.27
+      },
+      "auto_control": {
+        "turnover": 167.52,
+        "turnoverShare": 0.79,
+        "mainNet": 5.66
+      },
+      "auto_machine": {
+        "turnover": 225.77,
+        "turnoverShare": 1.06,
+        "mainNet": 16.51
+      },
+      "auto_components": {
+        "turnover": 257.4,
+        "turnoverShare": 1.21,
+        "mainNet": -0.63
+      },
+      "automation": {
+        "turnover": 739.25,
+        "turnoverShare": 3.47,
+        "mainNet": 19.27
+      },
+      "def_aerospace": {
+        "turnover": 41.66,
+        "turnoverShare": 0.2,
+        "mainNet": -0.01
+      },
+      "def_aviation": {
+        "turnover": 110.24,
+        "turnoverShare": 0.52,
+        "mainNet": 1.04
+      },
+      "def_electronics": {
+        "turnover": 203.46,
+        "turnoverShare": 0.95,
+        "mainNet": -2.41
+      },
+      "def_land_sea": {
+        "turnover": 103.28,
+        "turnoverShare": 0.48,
+        "mainNet": 0.61
+      },
+      "defense": {
+        "turnover": 458.64,
+        "turnoverShare": 2.15,
+        "mainNet": -0.77
+      },
+      "newenergy_lithium": {
+        "turnover": 431.17,
+        "turnoverShare": 2.02,
+        "mainNet": 5.81
+      },
+      "newenergy_materials": {
+        "turnover": 185.54,
+        "turnoverShare": 0.87,
+        "mainNet": -6.63
+      },
+      "newenergy_solar": {
+        "turnover": 353.44,
+        "turnoverShare": 1.66,
+        "mainNet": -20.85
+      },
+      "newenergy_wind": {
+        "turnover": 74.69,
+        "turnoverShare": 0.35,
+        "mainNet": 0.85
+      },
+      "newenergy_hydrogen": {
+        "turnover": 2.24,
+        "turnoverShare": 0.01,
+        "mainNet": 0
+      },
+      "battery": {
+        "turnover": 1047.08,
+        "turnoverShare": 4.91,
+        "mainNet": -20.82
+      },
+      "res_industrial": {
+        "turnover": 569.15,
+        "turnoverShare": 2.67,
+        "mainNet": -22.22
+      },
+      "res_minor": {
+        "turnover": 375.9,
+        "turnoverShare": 1.76,
+        "mainNet": -13.77
+      },
+      "res_precious": {
+        "turnover": 327.49,
+        "turnoverShare": 1.54,
+        "mainNet": -10.25
+      },
+      "resources": {
+        "turnover": 1272.54,
+        "turnoverShare": 5.97,
+        "mainNet": -46.24
+      },
+      "med_innovative": {
+        "turnover": 444.16,
+        "turnoverShare": 2.08,
+        "mainNet": -25.41
+      },
+      "med_cxo": {
+        "turnover": 219.94,
+        "turnoverShare": 1.03,
+        "mainNet": -10.92
+      },
+      "med_tcm": {
+        "turnover": 130.73,
+        "turnoverShare": 0.61,
+        "mainNet": -3.88
+      },
+      "med_device": {
+        "turnover": 178.71,
+        "turnoverShare": 0.84,
+        "mainNet": -2.77
+      },
+      "med_services": {
+        "turnover": 35.04,
+        "turnoverShare": 0.16,
+        "mainNet": -0.55
+      },
+      "medicine": {
+        "turnover": 1008.58,
+        "turnoverShare": 4.73,
+        "mainNet": -43.53
+      },
+      "fin_banks": {
+        "turnover": 419.63,
+        "turnoverShare": 1.97,
+        "mainNet": 23.41
+      },
+      "fin_insurance": {
+        "turnover": 75.89,
+        "turnoverShare": 0.36,
+        "mainNet": 1.67
+      },
+      "fin_brokers": {
+        "turnover": 331.95,
+        "turnoverShare": 1.56,
+        "mainNet": -1.43
+      },
+      "fin_other": {
+        "turnover": 42.3,
+        "turnoverShare": 0.2,
+        "mainNet": -2.25
+      },
+      "finance": {
+        "turnover": 869.77,
+        "turnoverShare": 4.08,
+        "mainNet": 21.4
+      }
     }
   },
   "sectorFlowSourceNotes": {
@@ -10637,6 +10933,7 @@ window.REPLAY_DATA={
     "2026-08-25": "成交额、成交占比与主力净额均来自全部Ａ股20260825.xlsx的命名字段；父方向为固定子方向之和。",
     "2026-08-26": "成交额、成交占比与主力净额均来自全部Ａ股20260826.xlsx的命名字段；父方向为固定子方向之和。",
     "2026-08-27": "成交额、成交占比与主力净额均来自全部Ａ股20260827.xlsx的命名字段；父方向为固定子方向之和。",
-    "2026-08-28": "成交额、成交占比与主力净额均来自全部Ａ股20260828.xlsx的命名字段；父方向为固定子方向之和。"
+    "2026-08-28": "成交额、成交占比与主力净额均来自全部Ａ股20260828.xlsx的命名字段；父方向为固定子方向之和。",
+    "2026-08-31": "成交额、成交占比与主力净额均来自全部Ａ股20260831.xlsx的命名字段；父方向为固定子方向之和。"
   }
 };

@@ -22224,5 +22224,905 @@ window.REPLAY_DATA.shortTerm={
       ],
       "judgement": "制造／机器人汽车与文化传媒／AI应用的涨停扩散最广；通信／电子硬件拥有捷荣技术5板、星网锐捷3板，梯队辨识度较高。地产／家居基建由海鸥住工6板维持高度，但该方向炸板明显；消费／商业农业有万向德农5板、新赛股份3板。整体封板率尚可，但昨日强势股中位收益转负，接力与普遍溢价仍不匹配。"
     }
+  },
+  "2026-09-02": {
+    "source": "东方财富收盘涨停/炸板/跌停池",
+    "state": "complete",
+    "emotion": {
+      "zt": 52,
+      "zb": 15,
+      "dt": 8,
+      "sealRate": 77.61,
+      "breakRate": 22.39,
+      "firstBoard": 39,
+      "maxBoards": 4,
+      "lianban": 13
+    },
+    "promotion": {
+      "oneToTwo": 10.77,
+      "oneToTwoNumerator": 7,
+      "oneToTwoDenominator": 65,
+      "twoToThree": 44.44,
+      "threePlus": 22.22
+    },
+    "feedback": {
+      "sample": 83,
+      "median": -2.12,
+      "average": -0.76,
+      "positiveRate": 37.35,
+      "limitUpAgainRate": 15.66,
+      "deepLoss5": 25,
+      "deepLoss7": 12,
+      "worst": -11.39,
+      "missingFeedback": 0,
+      "quality": {
+        "sealedAgain": {
+          "count": 13,
+          "median": 10.01,
+          "positiveRate": 100
+        },
+        "brokenUnsealed": {
+          "count": 7,
+          "median": 2.28,
+          "positiveRate": 57.14
+        },
+        "other": {
+          "count": 63,
+          "median": -3.77,
+          "positiveRate": 22.22
+        },
+        "lowReturnCount": 57,
+        "lowReturnRate": 68.67,
+        "reclosedAfterBreakCount": 5,
+        "reclosedAfterBreakRate": 38.46
+      }
+    },
+    "sealQuality": {
+      "sealedWithBreakCount": 25,
+      "sealedWithBreakRate": 48.08,
+      "averageBreaksOnSealed": 0.69
+    },
+    "ladder": [
+      {
+        "level": 4,
+        "count": 2,
+        "names": [
+          "竞业达",
+          "国芳集团"
+        ]
+      },
+      {
+        "level": 3,
+        "count": 4,
+        "names": [
+          "欢瑞世纪",
+          "集泰股份",
+          "大晟文化",
+          "龙版传媒"
+        ]
+      },
+      {
+        "level": 2,
+        "count": 7,
+        "names": [
+          "英 力 特",
+          "茂业商业",
+          "小方制药",
+          "香溢融通",
+          "九牧王",
+          "内蒙一机",
+          "恒宝股份"
+        ]
+      }
+    ],
+    "industryRelay": [
+      {
+        "name": "汽车零部",
+        "limitUps": 5,
+        "firstBoards": 5,
+        "maxBoards": 1,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002265",
+            "name": "建设工业",
+            "boards": 1,
+            "firstSeal": "09:32",
+            "lastSeal": "09:32",
+            "sealAmount": 81598496,
+            "breaks": 1,
+            "amount": 377639472,
+            "turnover": 1.73
+          },
+          {
+            "kind": "limitUp",
+            "code": "002536",
+            "name": "飞龙股份",
+            "boards": 1,
+            "firstSeal": "09:56",
+            "lastSeal": "10:26",
+            "sealAmount": 296064088,
+            "breaks": 2,
+            "amount": 3259697792,
+            "turnover": 10.6
+          },
+          {
+            "kind": "limitUp",
+            "code": "002708",
+            "name": "光洋股份",
+            "boards": 1,
+            "firstSeal": "10:47",
+            "lastSeal": "13:26",
+            "sealAmount": 95005104,
+            "breaks": 1,
+            "amount": 860937536,
+            "turnover": 12.23
+          },
+          {
+            "kind": "limitUp",
+            "code": "001278",
+            "name": "一彬科技",
+            "boards": 1,
+            "firstSeal": "13:19",
+            "lastSeal": "13:19",
+            "sealAmount": 52553768,
+            "breaks": 0,
+            "amount": 61707944,
+            "turnover": 4.14
+          },
+          {
+            "kind": "limitUp",
+            "code": "603701",
+            "name": "德宏股份",
+            "boards": 1,
+            "firstSeal": "13:35",
+            "lastSeal": "13:35",
+            "sealAmount": 15313623,
+            "breaks": 0,
+            "amount": 178621472,
+            "turnover": 3.34
+          }
+        ]
+      },
+      {
+        "name": "电网设备",
+        "limitUps": 4,
+        "firstBoards": 4,
+        "maxBoards": 1,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "600869",
+            "name": "远东股份",
+            "boards": 1,
+            "firstSeal": "09:39",
+            "lastSeal": "09:39",
+            "sealAmount": 429871455,
+            "breaks": 1,
+            "amount": 3431846864,
+            "turnover": 8.12
+          },
+          {
+            "kind": "limitUp",
+            "code": "002300",
+            "name": "太阳电缆",
+            "boards": 1,
+            "firstSeal": "09:46",
+            "lastSeal": "09:48",
+            "sealAmount": 117613382,
+            "breaks": 2,
+            "amount": 423822608,
+            "turnover": 7.86
+          },
+          {
+            "kind": "limitUp",
+            "code": "603530",
+            "name": "神马电力",
+            "boards": 1,
+            "firstSeal": "10:42",
+            "lastSeal": "10:42",
+            "sealAmount": 35765209,
+            "breaks": 0,
+            "amount": 393086560,
+            "turnover": 1.88
+          },
+          {
+            "kind": "limitUp",
+            "code": "603618",
+            "name": "杭电股份",
+            "boards": 1,
+            "firstSeal": "11:19",
+            "lastSeal": "11:19",
+            "sealAmount": 178175750,
+            "breaks": 0,
+            "amount": 4721844992,
+            "turnover": 19.13
+          }
+        ]
+      },
+      {
+        "name": "服装家纺",
+        "limitUps": 3,
+        "firstBoards": 2,
+        "maxBoards": 2,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "601566",
+            "name": "九牧王",
+            "boards": 2,
+            "firstSeal": "09:34",
+            "lastSeal": "13:12",
+            "sealAmount": 46319497,
+            "breaks": 2,
+            "amount": 492159520,
+            "turnover": 8.5
+          },
+          {
+            "kind": "limitUp",
+            "code": "603665",
+            "name": "康隆达",
+            "boards": 1,
+            "firstSeal": "13:50",
+            "lastSeal": "13:50",
+            "sealAmount": 72836945,
+            "breaks": 0,
+            "amount": 118037570,
+            "turnover": 3.44
+          },
+          {
+            "kind": "limitUp",
+            "code": "603958",
+            "name": "哈森股份",
+            "boards": 1,
+            "firstSeal": "14:09",
+            "lastSeal": "14:09",
+            "sealAmount": 112445547,
+            "breaks": 0,
+            "amount": 743688720,
+            "turnover": 14.88
+          },
+          {
+            "kind": "broken",
+            "code": "603001",
+            "name": "奥康国际",
+            "boards": null,
+            "firstSeal": "09:57",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 2,
+            "amount": 375199632,
+            "turnover": 9.86
+          }
+        ]
+      },
+      {
+        "name": "IT服务Ⅱ",
+        "limitUps": 2,
+        "firstBoards": 1,
+        "maxBoards": 4,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "003005",
+            "name": "竞业达",
+            "boards": 4,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 180729380,
+            "breaks": 0,
+            "amount": 87842620,
+            "turnover": 3.27
+          },
+          {
+            "kind": "limitUp",
+            "code": "600589",
+            "name": "大位科技",
+            "boards": 1,
+            "firstSeal": "13:52",
+            "lastSeal": "13:52",
+            "sealAmount": 149970878,
+            "breaks": 0,
+            "amount": 1364961120,
+            "turnover": 11.04
+          }
+        ]
+      },
+      {
+        "name": "一般零售",
+        "limitUps": 2,
+        "firstBoards": 0,
+        "maxBoards": 4,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "601086",
+            "name": "国芳集团",
+            "boards": 4,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 306061410,
+            "breaks": 0,
+            "amount": 64402200,
+            "turnover": 0.87
+          },
+          {
+            "kind": "limitUp",
+            "code": "600828",
+            "name": "茂业商业",
+            "boards": 2,
+            "firstSeal": "09:25",
+            "lastSeal": "09:45",
+            "sealAmount": 63942216,
+            "breaks": 1,
+            "amount": 218277726,
+            "turnover": 2.66
+          }
+        ]
+      },
+      {
+        "name": "化学原料",
+        "limitUps": 2,
+        "firstBoards": 1,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "000635",
+            "name": "英 力 特",
+            "boards": 2,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 93295000,
+            "breaks": 0,
+            "amount": 81932066,
+            "turnover": 2.81
+          },
+          {
+            "kind": "limitUp",
+            "code": "002274",
+            "name": "华昌化工",
+            "boards": 1,
+            "firstSeal": "09:25",
+            "lastSeal": "09:55",
+            "sealAmount": 82065860,
+            "breaks": 2,
+            "amount": 657312768,
+            "turnover": 9.9
+          }
+        ]
+      }
+    ],
+    "aiThemes": {
+      "source": "AI归类 · 当日涨停池／炸板池／连板梯队",
+      "unclustered": 3,
+      "themes": [
+        {
+          "name": "制造／汽车装备",
+          "limitUps": 16,
+          "firstBoards": 16,
+          "maxBoards": 1,
+          "opened": 9,
+          "openTimes": 14,
+          "brokenPool": 2,
+          "stocks": [
+            {
+              "code": "000852",
+              "name": "石化机械",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "专用设备",
+              "firstSeal": "09:32",
+              "reason": "专用设备当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002265",
+              "name": "建设工业",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "汽车零部",
+              "firstSeal": "09:32",
+              "reason": "汽车零部当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "600869",
+              "name": "远东股份",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "电网设备",
+              "firstSeal": "09:39",
+              "reason": "电网设备当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002300",
+              "name": "太阳电缆",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "电网设备",
+              "firstSeal": "09:46",
+              "reason": "电网设备当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002893",
+              "name": "京能热力",
+              "boards": 1,
+              "breaks": 3,
+              "industry": "电力",
+              "firstSeal": "09:48",
+              "reason": "电力当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002639",
+              "name": "雪人集团",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "通用设备",
+              "firstSeal": "09:53",
+              "reason": "通用设备当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002536",
+              "name": "飞龙股份",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "汽车零部",
+              "firstSeal": "09:56",
+              "reason": "汽车零部当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "603778",
+              "name": "国晟科技",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "光伏设备",
+              "firstSeal": "10:09",
+              "reason": "光伏设备当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "603530",
+              "name": "神马电力",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "电网设备",
+              "firstSeal": "10:42",
+              "reason": "电网设备当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002708",
+              "name": "光洋股份",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "汽车零部",
+              "firstSeal": "10:47",
+              "reason": "汽车零部当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "603618",
+              "name": "杭电股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "电网设备",
+              "firstSeal": "11:19",
+              "reason": "电网设备当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "603270",
+              "name": "金帝股份",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "通用设备",
+              "firstSeal": "13:02",
+              "reason": "通用设备当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "001326",
+              "name": "联域股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "照明设备",
+              "firstSeal": "13:12",
+              "reason": "照明设备当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "003039",
+              "name": "顺控发展",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "环境治理",
+              "firstSeal": "13:14",
+              "reason": "环境治理当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "001278",
+              "name": "一彬科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "汽车零部",
+              "firstSeal": "13:19",
+              "reason": "汽车零部当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "603701",
+              "name": "德宏股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "汽车零部",
+              "firstSeal": "13:35",
+              "reason": "汽车零部当日同方向集中封板；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "消费／商业",
+          "limitUps": 9,
+          "firstBoards": 6,
+          "maxBoards": 4,
+          "opened": 4,
+          "openTimes": 5,
+          "brokenPool": 2,
+          "stocks": [
+            {
+              "code": "601086",
+              "name": "国芳集团",
+              "boards": 4,
+              "breaks": 0,
+              "industry": "一般零售",
+              "firstSeal": "09:25",
+              "reason": "一般零售当日同方向集中封板；4板，属于高标核心。"
+            },
+            {
+              "code": "600828",
+              "name": "茂业商业",
+              "boards": 2,
+              "breaks": 1,
+              "industry": "一般零售",
+              "firstSeal": "09:25",
+              "reason": "一般零售当日同方向集中封板；2板，属于接力标的。"
+            },
+            {
+              "code": "601566",
+              "name": "九牧王",
+              "boards": 2,
+              "breaks": 2,
+              "industry": "服装家纺",
+              "firstSeal": "09:34",
+              "reason": "服装家纺当日同方向集中封板；2板，属于接力标的。"
+            },
+            {
+              "code": "002059",
+              "name": "云南旅游",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "旅游及景",
+              "firstSeal": "09:50",
+              "reason": "旅游及景当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "603216",
+              "name": "梦天家居",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "家居用品",
+              "firstSeal": "10:10",
+              "reason": "家居用品当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "920176",
+              "name": "维琪科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "化妆品",
+              "firstSeal": "10:41",
+              "reason": "化妆品当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "001366",
+              "name": "播恩集团",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "饲料",
+              "firstSeal": "13:08",
+              "reason": "饲料当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "603665",
+              "name": "康隆达",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "服装家纺",
+              "firstSeal": "13:50",
+              "reason": "服装家纺当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "603958",
+              "name": "哈森股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "服装家纺",
+              "firstSeal": "14:09",
+              "reason": "服装家纺当日同方向集中封板；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "周期化工／能源",
+          "limitUps": 9,
+          "firstBoards": 7,
+          "maxBoards": 3,
+          "opened": 5,
+          "openTimes": 10,
+          "brokenPool": 0,
+          "stocks": [
+            {
+              "code": "002909",
+              "name": "集泰股份",
+              "boards": 3,
+              "breaks": 0,
+              "industry": "化学制品",
+              "firstSeal": "09:25",
+              "reason": "化学制品当日同方向集中封板；3板，属于接力标的。"
+            },
+            {
+              "code": "000635",
+              "name": "英 力 特",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "化学原料",
+              "firstSeal": "09:25",
+              "reason": "化学原料当日同方向集中封板；2板，属于接力标的。"
+            },
+            {
+              "code": "002274",
+              "name": "华昌化工",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "化学原料",
+              "firstSeal": "09:25",
+              "reason": "化学原料当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002632",
+              "name": "道明光学",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "塑料",
+              "firstSeal": "09:30",
+              "reason": "塑料当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002999",
+              "name": "天禾股份",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "农化制品",
+              "firstSeal": "09:34",
+              "reason": "农化制品当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002886",
+              "name": "沃特股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "塑料",
+              "firstSeal": "09:38",
+              "reason": "塑料当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "605006",
+              "name": "山东玻纤",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "玻璃玻纤",
+              "firstSeal": "09:42",
+              "reason": "玻璃玻纤当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "600903",
+              "name": "贵州燃气",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "燃气Ⅱ",
+              "firstSeal": "09:44",
+              "reason": "燃气Ⅱ当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002201",
+              "name": "九鼎新材",
+              "boards": 1,
+              "breaks": 3,
+              "industry": "玻璃玻纤",
+              "firstSeal": "09:46",
+              "reason": "玻璃玻纤当日同方向集中封板；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "文化传媒／AI应用",
+          "limitUps": 5,
+          "firstBoards": 1,
+          "maxBoards": 4,
+          "opened": 0,
+          "openTimes": 0,
+          "brokenPool": 1,
+          "stocks": [
+            {
+              "code": "003005",
+              "name": "竞业达",
+              "boards": 4,
+              "breaks": 0,
+              "industry": "IT服务Ⅱ",
+              "firstSeal": "09:25",
+              "reason": "IT服务Ⅱ当日同方向集中封板；4板，属于高标核心。"
+            },
+            {
+              "code": "000892",
+              "name": "欢瑞世纪",
+              "boards": 3,
+              "breaks": 0,
+              "industry": "影视院线",
+              "firstSeal": "09:25",
+              "reason": "影视院线当日同方向集中封板；3板，属于接力标的。"
+            },
+            {
+              "code": "600892",
+              "name": "大晟文化",
+              "boards": 3,
+              "breaks": 0,
+              "industry": "游戏Ⅱ",
+              "firstSeal": "09:25",
+              "reason": "游戏Ⅱ当日同方向集中封板；3板，属于接力标的。"
+            },
+            {
+              "code": "605577",
+              "name": "龙版传媒",
+              "boards": 3,
+              "breaks": 0,
+              "industry": "出版",
+              "firstSeal": "09:38",
+              "reason": "出版当日同方向集中封板；3板，属于接力标的。"
+            },
+            {
+              "code": "600589",
+              "name": "大位科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "IT服务Ⅱ",
+              "firstSeal": "13:52",
+              "reason": "IT服务Ⅱ当日同方向集中封板；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "军工装备",
+          "limitUps": 4,
+          "firstBoards": 3,
+          "maxBoards": 2,
+          "opened": 1,
+          "openTimes": 1,
+          "brokenPool": 0,
+          "stocks": [
+            {
+              "code": "600967",
+              "name": "内蒙一机",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "地面兵装",
+              "firstSeal": "09:34",
+              "reason": "地面兵装当日同方向集中封板；2板，属于接力标的。"
+            },
+            {
+              "code": "601606",
+              "name": "长城军工",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "地面兵装",
+              "firstSeal": "09:35",
+              "reason": "地面兵装当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "002297",
+              "name": "博云新材",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "航空装备",
+              "firstSeal": "11:09",
+              "reason": "航空装备当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "920006",
+              "name": "晟楠科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "航空装备",
+              "firstSeal": "11:13",
+              "reason": "航空装备当日同方向集中封板；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "通信／电子硬件",
+          "limitUps": 4,
+          "firstBoards": 3,
+          "maxBoards": 2,
+          "opened": 2,
+          "openTimes": 2,
+          "brokenPool": 2,
+          "stocks": [
+            {
+              "code": "002104",
+              "name": "恒宝股份",
+              "boards": 2,
+              "breaks": 1,
+              "industry": "通信设备",
+              "firstSeal": "10:19",
+              "reason": "通信设备当日同方向集中封板；2板，属于接力标的。"
+            },
+            {
+              "code": "920212",
+              "name": "智新电子",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "消费电子",
+              "firstSeal": "09:58",
+              "reason": "消费电子当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "603375",
+              "name": "盛景微",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "半导体",
+              "firstSeal": "10:46",
+              "reason": "半导体当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "605118",
+              "name": "力鼎光电",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "计算机设",
+              "firstSeal": "13:29",
+              "reason": "计算机设当日同方向集中封板；1板，属于首板扩散。"
+            }
+          ]
+        },
+        {
+          "name": "地产基建",
+          "limitUps": 2,
+          "firstBoards": 2,
+          "maxBoards": 1,
+          "opened": 1,
+          "openTimes": 1,
+          "brokenPool": 1,
+          "stocks": [
+            {
+              "code": "000628",
+              "name": "高新发展",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "房屋建设",
+              "firstSeal": "10:43",
+              "reason": "房屋建设当日同方向集中封板；1板，属于首板扩散。"
+            },
+            {
+              "code": "600657",
+              "name": "信达地产",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "房地产开",
+              "firstSeal": "10:45",
+              "reason": "房地产开当日同方向集中封板；1板，属于首板扩散。"
+            }
+          ]
+        }
+      ],
+      "judgement": "制造／汽车装备与文化传媒／AI应用扩散最广；消费／商业中，国芳集团4板形成最高梯队，AI应用的竞业达4板、传媒3板群提供辨识度。电网设备多为首板扩散。短线封板率较高但昨日强势股亏钱效应明显，接力链条仍偏弱。"
+    }
   }
 };

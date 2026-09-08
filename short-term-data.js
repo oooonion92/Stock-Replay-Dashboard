@@ -26007,5 +26007,1065 @@ window.REPLAY_DATA.shortTerm={
       ],
       "judgement": "通信／电子硬件以元件和通信设备形成最大范围扩散；制造／汽车装备与农业／食品消费同步活跃。龙版传媒升至6板，消费农业方向形成多个2至3板节点，封板生态较上周五明显修复。"
     }
+  },
+  "2026-09-08": {
+    "source": "东方财富收盘涨停/炸板/跌停池",
+    "state": "complete",
+    "emotion": {
+      "zt": 73,
+      "zb": 37,
+      "dt": 0,
+      "sealRate": 66.36,
+      "breakRate": 33.64,
+      "firstBoard": 55,
+      "maxBoards": 4,
+      "lianban": 18
+    },
+    "promotion": {
+      "oneToTwo": 15,
+      "oneToTwoNumerator": 12,
+      "oneToTwoDenominator": 80,
+      "twoToThree": 33.33,
+      "threePlus": 75
+    },
+    "feedback": {
+      "sample": 93,
+      "median": 2.24,
+      "average": 2.89,
+      "positiveRate": 64.52,
+      "limitUpAgainRate": 19.35,
+      "deepLoss5": 3,
+      "deepLoss7": 0,
+      "worst": -6.98,
+      "missingFeedback": 0,
+      "quality": {
+        "sealedAgain": {
+          "count": 18,
+          "median": 9.99,
+          "positiveRate": 100
+        },
+        "brokenUnsealed": {
+          "count": 13,
+          "median": 6.48,
+          "positiveRate": 100
+        },
+        "other": {
+          "count": 62,
+          "median": -0.22,
+          "positiveRate": 46.77
+        },
+        "lowReturnCount": 46,
+        "lowReturnRate": 49.46,
+        "reclosedAfterBreakCount": 8,
+        "reclosedAfterBreakRate": 44.44
+      }
+    },
+    "sealQuality": {
+      "sealedWithBreakCount": 38,
+      "sealedWithBreakRate": 52.05,
+      "averageBreaksOnSealed": 1.7
+    },
+    "ladder": [
+      {
+        "level": 4,
+        "count": 3,
+        "names": [
+          "爱仕达",
+          "百大集团",
+          "亚盛集团"
+        ]
+      },
+      {
+        "level": 3,
+        "count": 3,
+        "names": [
+          "海欣食品",
+          "中国出版",
+          "敦煌种业"
+        ]
+      },
+      {
+        "level": 2,
+        "count": 12,
+        "names": [
+          "华脉科技",
+          "读者传媒",
+          "桂林旅游",
+          "中百集团",
+          "中京电子",
+          "百合花",
+          "华体科技",
+          "金正大",
+          "华盛昌",
+          "上海电影",
+          "集泰股份",
+          "澳洋健康"
+        ]
+      }
+    ],
+    "industryRelay": [
+      {
+        "name": "农化制品",
+        "limitUps": 8,
+        "firstBoards": 7,
+        "maxBoards": 2,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002470",
+            "name": "金正大",
+            "boards": 2,
+            "firstSeal": "09:52",
+            "lastSeal": "09:52",
+            "sealAmount": 120321375,
+            "breaks": 0,
+            "amount": 814441792,
+            "turnover": 10.12
+          },
+          {
+            "kind": "limitUp",
+            "code": "000912",
+            "name": "泸天化",
+            "boards": 1,
+            "firstSeal": "09:34",
+            "lastSeal": "09:34",
+            "sealAmount": 124946261,
+            "breaks": 0,
+            "amount": 227036275,
+            "turnover": 3.13
+          },
+          {
+            "kind": "limitUp",
+            "code": "002312",
+            "name": "川发龙蟒",
+            "boards": 1,
+            "firstSeal": "09:51",
+            "lastSeal": "09:51",
+            "sealAmount": 91008072,
+            "breaks": 0,
+            "amount": 421160176,
+            "turnover": 2.45
+          },
+          {
+            "kind": "limitUp",
+            "code": "600227",
+            "name": "赤天化",
+            "boards": 1,
+            "firstSeal": "10:03",
+            "lastSeal": "10:03",
+            "sealAmount": 96834576,
+            "breaks": 0,
+            "amount": 1381113360,
+            "turnover": 22.43
+          },
+          {
+            "kind": "limitUp",
+            "code": "603077",
+            "name": "和邦生物",
+            "boards": 1,
+            "firstSeal": "10:52",
+            "lastSeal": "10:54",
+            "sealAmount": 41469736,
+            "breaks": 1,
+            "amount": 1458194912,
+            "turnover": 6.72
+          },
+          {
+            "kind": "limitUp",
+            "code": "600691",
+            "name": "潞化科技",
+            "boards": 1,
+            "firstSeal": "10:59",
+            "lastSeal": "10:59",
+            "sealAmount": 62391840,
+            "breaks": 0,
+            "amount": 561832560,
+            "turnover": 7.33
+          },
+          {
+            "kind": "limitUp",
+            "code": "600596",
+            "name": "新安股份",
+            "boards": 1,
+            "firstSeal": "11:05",
+            "lastSeal": "14:37",
+            "sealAmount": 16796515,
+            "breaks": 3,
+            "amount": 1561505920,
+            "turnover": 9.83
+          },
+          {
+            "kind": "limitUp",
+            "code": "002999",
+            "name": "天禾股份",
+            "boards": 1,
+            "firstSeal": "11:08",
+            "lastSeal": "11:12",
+            "sealAmount": 36518010,
+            "breaks": 3,
+            "amount": 352047344,
+            "turnover": 14.41
+          },
+          {
+            "kind": "broken",
+            "code": "600470",
+            "name": "六国化工",
+            "boards": null,
+            "firstSeal": "13:07",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 4,
+            "amount": 578677264,
+            "turnover": 16.9
+          }
+        ]
+      },
+      {
+        "name": "出版",
+        "limitUps": 4,
+        "firstBoards": 2,
+        "maxBoards": 3,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "601949",
+            "name": "中国出版",
+            "boards": 3,
+            "firstSeal": "09:30",
+            "lastSeal": "09:30",
+            "sealAmount": 97957635,
+            "breaks": 0,
+            "amount": 378918384,
+            "turnover": 2.86
+          },
+          {
+            "kind": "limitUp",
+            "code": "603999",
+            "name": "读者传媒",
+            "boards": 2,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 129885638,
+            "breaks": 0,
+            "amount": 69140110,
+            "turnover": 1.65
+          },
+          {
+            "kind": "limitUp",
+            "code": "300788",
+            "name": "中信出版",
+            "boards": 1,
+            "firstSeal": "09:35",
+            "lastSeal": "09:35",
+            "sealAmount": 51069875,
+            "breaks": 0,
+            "amount": 474235856,
+            "turnover": 8.04
+          },
+          {
+            "kind": "limitUp",
+            "code": "601999",
+            "name": "出版传媒",
+            "boards": 1,
+            "firstSeal": "13:08",
+            "lastSeal": "14:56",
+            "sealAmount": 18098236,
+            "breaks": 2,
+            "amount": 606279264,
+            "turnover": 14.39
+          },
+          {
+            "kind": "broken",
+            "code": "605577",
+            "name": "龙版传媒",
+            "boards": null,
+            "firstSeal": "09:34",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 21,
+            "amount": 1248313296,
+            "turnover": 15.05
+          }
+        ]
+      },
+      {
+        "name": "农产品加",
+        "limitUps": 4,
+        "firstBoards": 4,
+        "maxBoards": 1,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "600737",
+            "name": "中粮糖业",
+            "boards": 1,
+            "firstSeal": "09:30",
+            "lastSeal": "09:37",
+            "sealAmount": 288829352,
+            "breaks": 1,
+            "amount": 1766589040,
+            "turnover": 4.55
+          },
+          {
+            "kind": "limitUp",
+            "code": "000930",
+            "name": "中粮科技",
+            "boards": 1,
+            "firstSeal": "09:31",
+            "lastSeal": "09:31",
+            "sealAmount": 119326632,
+            "breaks": 0,
+            "amount": 232696012,
+            "turnover": 2.17
+          },
+          {
+            "kind": "limitUp",
+            "code": "002286",
+            "name": "保龄宝",
+            "boards": 1,
+            "firstSeal": "11:07",
+            "lastSeal": "14:10",
+            "sealAmount": 53194900,
+            "breaks": 2,
+            "amount": 479799760,
+            "turnover": 14.23
+          },
+          {
+            "kind": "limitUp",
+            "code": "920371",
+            "name": "欧福蛋业",
+            "boards": 1,
+            "firstSeal": "11:20",
+            "lastSeal": "14:18",
+            "sealAmount": 4097816,
+            "breaks": 8,
+            "amount": 272779248,
+            "turnover": 14.58
+          },
+          {
+            "kind": "broken",
+            "code": "600127",
+            "name": "金健米业",
+            "boards": null,
+            "firstSeal": "13:05",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 7,
+            "amount": 4347812608,
+            "turnover": 46.62
+          }
+        ]
+      },
+      {
+        "name": "一般零售",
+        "limitUps": 3,
+        "firstBoards": 1,
+        "maxBoards": 4,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "600865",
+            "name": "百大集团",
+            "boards": 4,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 235053463,
+            "breaks": 0,
+            "amount": 58836892,
+            "turnover": 1.14
+          },
+          {
+            "kind": "limitUp",
+            "code": "000759",
+            "name": "中百集团",
+            "boards": 2,
+            "firstSeal": "09:30",
+            "lastSeal": "09:30",
+            "sealAmount": 173749013,
+            "breaks": 1,
+            "amount": 454765152,
+            "turnover": 9.02
+          },
+          {
+            "kind": "limitUp",
+            "code": "000679",
+            "name": "大连友谊",
+            "boards": 1,
+            "firstSeal": "14:14",
+            "lastSeal": "14:14",
+            "sealAmount": 60754307,
+            "breaks": 0,
+            "amount": 110322664,
+            "turnover": 4.47
+          }
+        ]
+      },
+      {
+        "name": "种植业",
+        "limitUps": 3,
+        "firstBoards": 1,
+        "maxBoards": 4,
+        "brokenPool": 2,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "600108",
+            "name": "亚盛集团",
+            "boards": 4,
+            "firstSeal": "09:25",
+            "lastSeal": "09:25",
+            "sealAmount": 555415132,
+            "breaks": 0,
+            "amount": 88953005,
+            "turnover": 0.87
+          },
+          {
+            "kind": "limitUp",
+            "code": "600354",
+            "name": "敦煌种业",
+            "boards": 3,
+            "firstSeal": "09:31",
+            "lastSeal": "09:33",
+            "sealAmount": 120265336,
+            "breaks": 2,
+            "amount": 513210736,
+            "turnover": 9.32
+          },
+          {
+            "kind": "limitUp",
+            "code": "601952",
+            "name": "苏垦农发",
+            "boards": 1,
+            "firstSeal": "09:51",
+            "lastSeal": "14:16",
+            "sealAmount": 31267875,
+            "breaks": 1,
+            "amount": 600615728,
+            "turnover": 4.21
+          },
+          {
+            "kind": "broken",
+            "code": "601118",
+            "name": "海南橡胶",
+            "boards": null,
+            "firstSeal": "10:06",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 2,
+            "amount": 2486098912,
+            "turnover": 7.52
+          },
+          {
+            "kind": "broken",
+            "code": "600371",
+            "name": "万向德农",
+            "boards": null,
+            "firstSeal": "13:06",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 3,
+            "amount": 1535853888,
+            "turnover": 32.7
+          }
+        ]
+      },
+      {
+        "name": "化学制品",
+        "limitUps": 3,
+        "firstBoards": 1,
+        "maxBoards": 2,
+        "brokenPool": 1,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "603823",
+            "name": "百合花",
+            "boards": 2,
+            "firstSeal": "09:30",
+            "lastSeal": "09:30",
+            "sealAmount": 169137696,
+            "breaks": 0,
+            "amount": 427711168,
+            "turnover": 1.62
+          },
+          {
+            "kind": "limitUp",
+            "code": "002909",
+            "name": "集泰股份",
+            "boards": 2,
+            "firstSeal": "10:28",
+            "lastSeal": "14:48",
+            "sealAmount": 18533488,
+            "breaks": 9,
+            "amount": 1142562560,
+            "turnover": 35.75
+          },
+          {
+            "kind": "limitUp",
+            "code": "605077",
+            "name": "华康股份",
+            "boards": 1,
+            "firstSeal": "11:04",
+            "lastSeal": "11:04",
+            "sealAmount": 57881658,
+            "breaks": 0,
+            "amount": 245906659,
+            "turnover": 6.77
+          },
+          {
+            "kind": "broken",
+            "code": "003002",
+            "name": "壶化股份",
+            "boards": null,
+            "firstSeal": "14:12",
+            "lastSeal": null,
+            "sealAmount": null,
+            "breaks": 2,
+            "amount": 359407552,
+            "turnover": 10.54
+          }
+        ]
+      }
+    ],
+    "aiThemes": {
+      "source": "AI归类 · 当日涨停池／炸板池／连板梯队",
+      "unclustered": 10,
+      "themes": [
+        {
+          "name": "农业／食品消费",
+          "limitUps": 16,
+          "firstBoards": 12,
+          "maxBoards": 4,
+          "opened": 9,
+          "openTimes": 23,
+          "brokenPool": 9,
+          "stocks": [
+            {
+              "code": "600108",
+              "name": "亚盛集团",
+              "boards": 4,
+              "breaks": 0,
+              "industry": "种植业"
+            },
+            {
+              "code": "600354",
+              "name": "敦煌种业",
+              "boards": 3,
+              "breaks": 2,
+              "industry": "种植业"
+            },
+            {
+              "code": "002702",
+              "name": "海欣食品",
+              "boards": 3,
+              "breaks": 2,
+              "industry": "食品加工"
+            },
+            {
+              "code": "002470",
+              "name": "金正大",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "农化制品"
+            },
+            {
+              "code": "000930",
+              "name": "中粮科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "农产品加"
+            },
+            {
+              "code": "600737",
+              "name": "中粮糖业",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "农产品加"
+            },
+            {
+              "code": "002286",
+              "name": "保龄宝",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "农产品加"
+            },
+            {
+              "code": "603077",
+              "name": "和邦生物",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "农化制品"
+            },
+            {
+              "code": "002999",
+              "name": "天禾股份",
+              "boards": 1,
+              "breaks": 3,
+              "industry": "农化制品"
+            },
+            {
+              "code": "002312",
+              "name": "川发龙蟒",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "农化制品"
+            },
+            {
+              "code": "600596",
+              "name": "新安股份",
+              "boards": 1,
+              "breaks": 3,
+              "industry": "农化制品"
+            },
+            {
+              "code": "920371",
+              "name": "欧福蛋业",
+              "boards": 1,
+              "breaks": 8,
+              "industry": "农产品加"
+            },
+            {
+              "code": "000912",
+              "name": "泸天化",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "农化制品"
+            },
+            {
+              "code": "600691",
+              "name": "潞化科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "农化制品"
+            },
+            {
+              "code": "601952",
+              "name": "苏垦农发",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "种植业"
+            },
+            {
+              "code": "600227",
+              "name": "赤天化",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "农化制品"
+            }
+          ]
+        },
+        {
+          "name": "周期化工／能源",
+          "limitUps": 12,
+          "firstBoards": 10,
+          "maxBoards": 2,
+          "opened": 5,
+          "openTimes": 16,
+          "brokenPool": 2,
+          "stocks": [
+            {
+              "code": "603823",
+              "name": "百合花",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "化学制品"
+            },
+            {
+              "code": "002909",
+              "name": "集泰股份",
+              "boards": 2,
+              "breaks": 9,
+              "industry": "化学制品"
+            },
+            {
+              "code": "603938",
+              "name": "三孚股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "化学原料"
+            },
+            {
+              "code": "603619",
+              "name": "中曼石油",
+              "boards": 1,
+              "breaks": 3,
+              "industry": "油服工程"
+            },
+            {
+              "code": "605077",
+              "name": "华康股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "化学制品"
+            },
+            {
+              "code": "002274",
+              "name": "华昌化工",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "化学原料"
+            },
+            {
+              "code": "000059",
+              "name": "华锦股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "炼化及贸"
+            },
+            {
+              "code": "603353",
+              "name": "和顺石油",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "炼化及贸"
+            },
+            {
+              "code": "002295",
+              "name": "精艺股份",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "工业金属"
+            },
+            {
+              "code": "603580",
+              "name": "艾艾精工",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "塑料"
+            },
+            {
+              "code": "600903",
+              "name": "贵州燃气",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "燃气Ⅱ"
+            },
+            {
+              "code": "600722",
+              "name": "金牛化工",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "化学原料"
+            }
+          ]
+        },
+        {
+          "name": "文化传媒／AI应用",
+          "limitUps": 10,
+          "firstBoards": 7,
+          "maxBoards": 3,
+          "opened": 5,
+          "openTimes": 9,
+          "brokenPool": 4,
+          "stocks": [
+            {
+              "code": "601949",
+              "name": "中国出版",
+              "boards": 3,
+              "breaks": 0,
+              "industry": "出版"
+            },
+            {
+              "code": "601595",
+              "name": "上海电影",
+              "boards": 2,
+              "breaks": 1,
+              "industry": "影视院线"
+            },
+            {
+              "code": "603999",
+              "name": "读者传媒",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "出版"
+            },
+            {
+              "code": "300788",
+              "name": "中信出版",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "出版"
+            },
+            {
+              "code": "601999",
+              "name": "出版传媒",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "出版"
+            },
+            {
+              "code": "600880",
+              "name": "博瑞传播",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "教育"
+            },
+            {
+              "code": "002093",
+              "name": "国脉科技",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "教育"
+            },
+            {
+              "code": "002343",
+              "name": "慈文传媒",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "影视院线"
+            },
+            {
+              "code": "002264",
+              "name": "新 华 都",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "广告营销"
+            },
+            {
+              "code": "002095",
+              "name": "生 意 宝",
+              "boards": 1,
+              "breaks": 4,
+              "industry": "数字媒体"
+            }
+          ]
+        },
+        {
+          "name": "地产基建",
+          "limitUps": 8,
+          "firstBoards": 8,
+          "maxBoards": 1,
+          "opened": 6,
+          "openTimes": 32,
+          "brokenPool": 1,
+          "stocks": [
+            {
+              "code": "002285",
+              "name": "世联行",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "房地产服"
+            },
+            {
+              "code": "000928",
+              "name": "中钢国际",
+              "boards": 1,
+              "breaks": 10,
+              "industry": "专业工程"
+            },
+            {
+              "code": "603163",
+              "name": "圣晖集成",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "专业工程"
+            },
+            {
+              "code": "002357",
+              "name": "富临运业",
+              "boards": 1,
+              "breaks": 10,
+              "industry": "铁路公路"
+            },
+            {
+              "code": "000560",
+              "name": "我爱我家",
+              "boards": 1,
+              "breaks": 3,
+              "industry": "房地产服"
+            },
+            {
+              "code": "000011",
+              "name": "深物业A",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "房地产开"
+            },
+            {
+              "code": "000620",
+              "name": "盈新发展",
+              "boards": 1,
+              "breaks": 7,
+              "industry": "房地产开"
+            },
+            {
+              "code": "600162",
+              "name": "香江控股",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "房地产开"
+            }
+          ]
+        },
+        {
+          "name": "消费／商业旅游",
+          "limitUps": 6,
+          "firstBoards": 2,
+          "maxBoards": 4,
+          "opened": 3,
+          "openTimes": 3,
+          "brokenPool": 1,
+          "stocks": [
+            {
+              "code": "002403",
+              "name": "爱仕达",
+              "boards": 4,
+              "breaks": 1,
+              "industry": "小家电"
+            },
+            {
+              "code": "600865",
+              "name": "百大集团",
+              "boards": 4,
+              "breaks": 0,
+              "industry": "一般零售"
+            },
+            {
+              "code": "000759",
+              "name": "中百集团",
+              "boards": 2,
+              "breaks": 1,
+              "industry": "一般零售"
+            },
+            {
+              "code": "000978",
+              "name": "桂林旅游",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "旅游及景"
+            },
+            {
+              "code": "000679",
+              "name": "大连友谊",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "一般零售"
+            },
+            {
+              "code": "002790",
+              "name": "瑞尔特",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "家居用品"
+            }
+          ]
+        },
+        {
+          "name": "通信／电子硬件",
+          "limitUps": 5,
+          "firstBoards": 2,
+          "maxBoards": 2,
+          "opened": 0,
+          "openTimes": 0,
+          "brokenPool": 7,
+          "stocks": [
+            {
+              "code": "002579",
+              "name": "中京电子",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "元件"
+            },
+            {
+              "code": "603679",
+              "name": "华体科技",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "光学光电"
+            },
+            {
+              "code": "603042",
+              "name": "华脉科技",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "通信设备"
+            },
+            {
+              "code": "002194",
+              "name": "武汉凡谷",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "通信设备"
+            },
+            {
+              "code": "000020",
+              "name": "深华发Ａ",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "光学光电"
+            }
+          ]
+        },
+        {
+          "name": "制造／汽车装备",
+          "limitUps": 3,
+          "firstBoards": 2,
+          "maxBoards": 2,
+          "opened": 3,
+          "openTimes": 32,
+          "brokenPool": 3,
+          "stocks": [
+            {
+              "code": "002980",
+              "name": "华盛昌",
+              "boards": 2,
+              "breaks": 27,
+              "industry": "电网设备"
+            },
+            {
+              "code": "000980",
+              "name": "众泰汽车",
+              "boards": 1,
+              "breaks": 4,
+              "industry": "汽车零部"
+            },
+            {
+              "code": "603075",
+              "name": "热威股份",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "家电零部"
+            }
+          ]
+        },
+        {
+          "name": "医药健康",
+          "limitUps": 3,
+          "firstBoards": 3,
+          "maxBoards": 1,
+          "opened": 2,
+          "openTimes": 2,
+          "brokenPool": 2,
+          "stocks": [
+            {
+              "code": "605177",
+              "name": "东亚药业",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "化学制药"
+            },
+            {
+              "code": "002365",
+              "name": "永安药业",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "化学制药"
+            },
+            {
+              "code": "002349",
+              "name": "精华制药",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "中药Ⅱ"
+            }
+          ]
+        }
+      ],
+      "judgement": "农业／食品消费以农化、种植和农产品加工形成最广扩散；文化传媒与周期化工构成次主线。亚盛集团、爱仕达和百大集团升至4板，封板率较昨日回落，但中高位梯队仍有延续。"
+    }
   }
 };

@@ -45,7 +45,8 @@ window.REPLAY_DATA={
     "2026-09-03",
     "2026-09-04",
     "2026-09-07",
-    "2026-09-08"
+    "2026-09-08",
+    "2026-09-09"
   ],
   "reports": {
     "2026-06-29": {
@@ -1690,6 +1691,74 @@ window.REPLAY_DATA={
       "stocks": [],
       "experts": [],
       "fullReport": "reports/20260908.html"
+    },
+    "2026-09-09": {
+      "market": {
+        "total": 41,
+        "sentiment": 8,
+        "technical": 33,
+        "status": "防守环境",
+        "summary": "上证按5Min最终收盘3951.51计，上涨0.25%，站上5日和20日均线，但仍低于10日线；由5Min完整数据重建的30分钟DIF、DEA已回到零轴上方，红柱由3.20略收窄至2.98。封板率为64.00%，昨日强势股中位收益转负，指数修复与个股亏钱效应背离，环境按防守处理。",
+        "paths": [],
+        "scoreDetails": {
+          "sentiment": [
+            {
+              "name": "强势股质量",
+              "score": 0,
+              "max": 25,
+              "standard": "昨日强势股须有正收益、过半翻红和持续再封。",
+              "reason": "样本73只，收盘中位-0.60%、收红49.3%；最终再封15只（20.5%）、炸板未回封5只（6.8%）、收益低于+2%占58.9%，再封中曾炸板占33.3%。"
+            },
+            {
+              "name": "封板质量",
+              "score": 8,
+              "max": 25,
+              "standard": "综合封板率、回封质量、炸板次数、晋级率和跌停数。",
+              "reason": "封板率64.00%、1进2 18.18%；最终封板中62.50%曾炸板，平均炸板2.50次。 跌停7家。"
+            }
+          ],
+          "technical": [
+            {
+              "name": "结构趋势",
+              "score": 8,
+              "max": 12,
+              "standard": "只看指数收盘相对5/10/20日均线。",
+              "reason": "5Min最终收盘3951.51高于5日3939.61和20日3936.48，但仍低于10日3951.44。"
+            },
+            {
+              "name": "30分钟动量",
+              "score": 10,
+              "max": 12,
+              "standard": "只看30分钟DIF/DEA位置、交叉方向和柱体持续性。",
+              "reason": "DIF 1.85高于DEA 0.36且两者回到零轴上方；红柱2.98仍为正，但较前柱3.20略收窄。"
+            },
+            {
+              "name": "关键位",
+              "score": 5,
+              "max": 8,
+              "standard": "看指数关键支撑与压力是否由收盘确认。",
+              "reason": "收盘重新站上5日、20日均线，但10日线仍构成上方压力，修复尚未完全确认。"
+            },
+            {
+              "name": "量价确认",
+              "score": 3,
+              "max": 8,
+              "standard": "只看指数成交额相对20日均量及涨跌方向。",
+              "reason": "成交约0.85万亿元，为近20日均量88.3%；上涨但量能继续低于均量。"
+            },
+            {
+              "name": "日内质量",
+              "score": 7,
+              "max": 10,
+              "standard": "只看指数收盘在日内区间的位置与尾盘方向。",
+              "reason": "最高3958.12、最低3933.47，5Min最终收盘处于全天区间73.2%，尾盘收在区间上部。"
+            }
+          ]
+        }
+      },
+      "stocks": [],
+      "experts": [],
+      "fullReport": "reports/20260909.html"
     }
   },
   "sectorFlowConfig": {
@@ -12399,6 +12468,233 @@ window.REPLAY_DATA={
         "turnoverShare": 3.22,
         "mainNet": -15.94
       }
+    },
+    "2026-09-09": {
+      "semi_equipment": {
+        "turnover": 234.45,
+        "turnoverShare": 1.26,
+        "mainNet": -15.8
+      },
+      "semi_materials": {
+        "turnover": 177.25,
+        "turnoverShare": 0.96,
+        "mainNet": -3.46
+      },
+      "semi_manufacturing": {
+        "turnover": 105.74,
+        "turnoverShare": 0.57,
+        "mainNet": -4.63
+      },
+      "semi_design": {
+        "turnover": 982.96,
+        "turnoverShare": 5.3,
+        "mainNet": -43.94
+      },
+      "semi_packaging": {
+        "turnover": 208.29,
+        "turnoverShare": 1.12,
+        "mainNet": 5.26
+      },
+      "semiconductor": {
+        "turnover": 1708.69,
+        "turnoverShare": 9.21,
+        "mainNet": -62.57
+      },
+      "elec_pcb": {
+        "turnover": 977.94,
+        "turnoverShare": 5.27,
+        "mainNet": 44.78
+      },
+      "elec_passive": {
+        "turnover": 191.34,
+        "turnoverShare": 1.03,
+        "mainNet": 4.38
+      },
+      "elec_components": {
+        "turnover": 467.7,
+        "turnoverShare": 2.52,
+        "mainNet": -0.63
+      },
+      "electronics": {
+        "turnover": 1636.98,
+        "turnoverShare": 8.82,
+        "mainNet": 48.53
+      },
+      "comm_optical": {
+        "turnover": 1240.81,
+        "turnoverShare": 6.69,
+        "mainNet": 66.82
+      },
+      "comm_equipment": {
+        "turnover": 301.67,
+        "turnoverShare": 1.63,
+        "mainNet": -10.66
+      },
+      "comm_services": {
+        "turnover": 24.53,
+        "turnoverShare": 0.13,
+        "mainNet": -0.67
+      },
+      "optical": {
+        "turnover": 1567.01,
+        "turnoverShare": 8.45,
+        "mainNet": 55.49
+      },
+      "auto_robot": {
+        "turnover": 59.23,
+        "turnoverShare": 0.32,
+        "mainNet": -5.38
+      },
+      "auto_control": {
+        "turnover": 124.17,
+        "turnoverShare": 0.67,
+        "mainNet": -8.69
+      },
+      "auto_machine": {
+        "turnover": 277.31,
+        "turnoverShare": 1.49,
+        "mainNet": 27.12
+      },
+      "auto_components": {
+        "turnover": 245.15,
+        "turnoverShare": 1.32,
+        "mainNet": 8.34
+      },
+      "automation": {
+        "turnover": 705.86,
+        "turnoverShare": 3.8,
+        "mainNet": 21.39
+      },
+      "def_aerospace": {
+        "turnover": 35.77,
+        "turnoverShare": 0.19,
+        "mainNet": 1.11
+      },
+      "def_aviation": {
+        "turnover": 183.94,
+        "turnoverShare": 0.99,
+        "mainNet": 0.77
+      },
+      "def_electronics": {
+        "turnover": 165.1,
+        "turnoverShare": 0.89,
+        "mainNet": 2.71
+      },
+      "def_land_sea": {
+        "turnover": 227.47,
+        "turnoverShare": 1.23,
+        "mainNet": 10.27
+      },
+      "defense": {
+        "turnover": 612.28,
+        "turnoverShare": 3.3,
+        "mainNet": 14.86
+      },
+      "newenergy_lithium": {
+        "turnover": 336.88,
+        "turnoverShare": 1.82,
+        "mainNet": 2.57
+      },
+      "newenergy_materials": {
+        "turnover": 130.52,
+        "turnoverShare": 0.7,
+        "mainNet": 0.9
+      },
+      "newenergy_solar": {
+        "turnover": 177.92,
+        "turnoverShare": 0.96,
+        "mainNet": -5.39
+      },
+      "newenergy_wind": {
+        "turnover": 51.11,
+        "turnoverShare": 0.28,
+        "mainNet": -1.42
+      },
+      "newenergy_hydrogen": {
+        "turnover": 2.41,
+        "turnoverShare": 0.01,
+        "mainNet": 0.05
+      },
+      "battery": {
+        "turnover": 698.84,
+        "turnoverShare": 3.77,
+        "mainNet": -3.29
+      },
+      "res_industrial": {
+        "turnover": 598.06,
+        "turnoverShare": 3.22,
+        "mainNet": 13.89
+      },
+      "res_minor": {
+        "turnover": 321.53,
+        "turnoverShare": 1.73,
+        "mainNet": 9.8
+      },
+      "res_precious": {
+        "turnover": 208.02,
+        "turnoverShare": 1.12,
+        "mainNet": 9.71
+      },
+      "resources": {
+        "turnover": 1127.61,
+        "turnoverShare": 6.08,
+        "mainNet": 33.4
+      },
+      "med_innovative": {
+        "turnover": 353.52,
+        "turnoverShare": 1.91,
+        "mainNet": -15.63
+      },
+      "med_cxo": {
+        "turnover": 207.88,
+        "turnoverShare": 1.12,
+        "mainNet": -0.41
+      },
+      "med_tcm": {
+        "turnover": 115.72,
+        "turnoverShare": 0.62,
+        "mainNet": -3.54
+      },
+      "med_device": {
+        "turnover": 130.51,
+        "turnoverShare": 0.7,
+        "mainNet": -4.6
+      },
+      "med_services": {
+        "turnover": 38.18,
+        "turnoverShare": 0.21,
+        "mainNet": -3.44
+      },
+      "medicine": {
+        "turnover": 845.81,
+        "turnoverShare": 4.56,
+        "mainNet": -27.62
+      },
+      "fin_banks": {
+        "turnover": 193.05,
+        "turnoverShare": 1.04,
+        "mainNet": -2.65
+      },
+      "fin_insurance": {
+        "turnover": 63.97,
+        "turnoverShare": 0.34,
+        "mainNet": -0.72
+      },
+      "fin_brokers": {
+        "turnover": 182.73,
+        "turnoverShare": 0.98,
+        "mainNet": -7.89
+      },
+      "fin_other": {
+        "turnover": 42.41,
+        "turnoverShare": 0.23,
+        "mainNet": -1.01
+      },
+      "finance": {
+        "turnover": 482.16,
+        "turnoverShare": 2.6,
+        "mainNet": -12.27
+      }
     }
   },
   "sectorFlowSourceNotes": {
@@ -12419,6 +12715,7 @@ window.REPLAY_DATA={
     "2026-09-03": "成交额、成交占比与主力净额均来自全部Ａ股20260903.xlsx的命名字段；父方向为固定子方向之和。",
     "2026-09-04": "成交额、成交占比与主力净额均来自全部Ａ股20260904.xlsx的命名字段；父方向为固定子方向之和。",
     "2026-09-07": "成交额、成交占比与主力净额均来自全部Ａ股20260907.xlsx的命名字段；父方向为固定子方向之和。",
-    "2026-09-08": "成交额、成交占比与主力净额均来自全部Ａ股20260908.xlsx的命名字段；父方向为固定子方向之和。"
+    "2026-09-08": "成交额、成交占比与主力净额均来自全部Ａ股20260908.xlsx的命名字段；父方向为固定子方向之和。",
+    "2026-09-09": "成交额、成交占比与主力净额均来自全部Ａ股20260909.xlsx的命名字段；父方向为固定子方向之和。"
   }
 };

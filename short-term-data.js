@@ -30978,5 +30978,1085 @@ window.REPLAY_DATA.shortTerm={
       ],
       "judgement": "能源／电力装备扩散最广，闽东电力升至5板，风电与电力首板共同扩散；通信／电子硬件由中新赛克4板、澳弘电子3板维持梯队，AI应用方向有博汇科技、启明信息2板。封板率仅57.14%，1进2仅6.82%，且跌停27家，主线内部回封反复，接力环境明显偏弱。"
     }
+  },
+  "2026-09-16": {
+    "source": "东方财富收盘涨停/炸板/跌停池",
+    "state": "complete",
+    "emotion": {
+      "zt": 89,
+      "zb": 11,
+      "dt": 4,
+      "sealRate": 89,
+      "breakRate": 11,
+      "firstBoard": 77,
+      "maxBoards": 6,
+      "lianban": 12
+    },
+    "promotion": {
+      "oneToTwo": 36,
+      "oneToTwoNumerator": 9,
+      "oneToTwoDenominator": 25,
+      "twoToThree": 33.33,
+      "threePlus": 50
+    },
+    "feedback": {
+      "sample": 32,
+      "median": 1.06,
+      "average": 3.65,
+      "positiveRate": 71.88,
+      "limitUpAgainRate": 37.5,
+      "deepLoss5": 2,
+      "deepLoss7": 1,
+      "worst": -9.98,
+      "missingFeedback": 0,
+      "quality": {
+        "sealedAgain": {
+          "count": 12,
+          "median": 10.01,
+          "positiveRate": 100
+        },
+        "brokenUnsealed": {
+          "count": 2,
+          "median": 0.45,
+          "positiveRate": 100
+        },
+        "other": {
+          "count": 18,
+          "median": 0.01,
+          "positiveRate": 50
+        },
+        "lowReturnCount": 18,
+        "lowReturnRate": 56.25,
+        "reclosedAfterBreakCount": 8,
+        "reclosedAfterBreakRate": 66.67
+      }
+    },
+    "sealQuality": {
+      "sealedWithBreakCount": 44,
+      "sealedWithBreakRate": 49.44,
+      "averageBreaksOnSealed": 1.39
+    },
+    "ladder": [
+      {
+        "level": 6,
+        "count": 1,
+        "names": [
+          "闽东电力"
+        ]
+      },
+      {
+        "level": 4,
+        "count": 1,
+        "names": [
+          "澳弘电子"
+        ]
+      },
+      {
+        "level": 3,
+        "count": 1,
+        "names": [
+          "博汇科技"
+        ]
+      },
+      {
+        "level": 2,
+        "count": 9,
+        "names": [
+          "华瓷股份",
+          "锡华科技",
+          "北自科技",
+          "英联股份",
+          "中晶科技",
+          "西陇科学",
+          "会稽山",
+          "德尔未来",
+          "通鼎互联"
+        ]
+      }
+    ],
+    "industryRelay": [
+      {
+        "name": "通信设备",
+        "limitUps": 6,
+        "firstBoards": 5,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002491",
+            "name": "通鼎互联",
+            "boards": 2,
+            "firstSeal": "11:24",
+            "lastSeal": "13:12",
+            "sealAmount": 156222565,
+            "breaks": 6,
+            "amount": 6719072768,
+            "turnover": 24.5
+          },
+          {
+            "kind": "limitUp",
+            "code": "003031",
+            "name": "中瓷电子",
+            "boards": 1,
+            "firstSeal": "09:35",
+            "lastSeal": "09:35",
+            "sealAmount": 256364678,
+            "breaks": 0,
+            "amount": 825492912,
+            "turnover": 1.36
+          },
+          {
+            "kind": "limitUp",
+            "code": "603042",
+            "name": "华脉科技",
+            "boards": 1,
+            "firstSeal": "09:35",
+            "lastSeal": "09:35",
+            "sealAmount": 97875886,
+            "breaks": 0,
+            "amount": 339419824,
+            "turnover": 9.72
+          },
+          {
+            "kind": "limitUp",
+            "code": "600105",
+            "name": "永鼎股份",
+            "boards": 1,
+            "firstSeal": "10:07",
+            "lastSeal": "10:07",
+            "sealAmount": 641975316,
+            "breaks": 0,
+            "amount": 6607503872,
+            "turnover": 10.22
+          },
+          {
+            "kind": "limitUp",
+            "code": "002281",
+            "name": "光迅科技",
+            "boards": 1,
+            "firstSeal": "10:35",
+            "lastSeal": "10:35",
+            "sealAmount": 339861090,
+            "breaks": 0,
+            "amount": 7404579840,
+            "turnover": 5.24
+          },
+          {
+            "kind": "limitUp",
+            "code": "002396",
+            "name": "星网锐捷",
+            "boards": 1,
+            "firstSeal": "13:12",
+            "lastSeal": "14:46",
+            "sealAmount": 126536951,
+            "breaks": 2,
+            "amount": 5194746624,
+            "turnover": 18.34
+          }
+        ]
+      },
+      {
+        "name": "半导体",
+        "limitUps": 5,
+        "firstBoards": 4,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "003026",
+            "name": "中晶科技",
+            "boards": 2,
+            "firstSeal": "09:32",
+            "lastSeal": "09:34",
+            "sealAmount": 106535357,
+            "breaks": 2,
+            "amount": 509792032,
+            "turnover": 10.74
+          },
+          {
+            "kind": "limitUp",
+            "code": "600206",
+            "name": "有研新材",
+            "boards": 1,
+            "firstSeal": "10:07",
+            "lastSeal": "10:07",
+            "sealAmount": 386042673,
+            "breaks": 0,
+            "amount": 3758513072,
+            "turnover": 8.97
+          },
+          {
+            "kind": "limitUp",
+            "code": "688432",
+            "name": "有研硅",
+            "boards": 1,
+            "firstSeal": "10:09",
+            "lastSeal": "10:19",
+            "sealAmount": 214910502,
+            "breaks": 1,
+            "amount": 3913865952,
+            "turnover": 6.15
+          },
+          {
+            "kind": "limitUp",
+            "code": "688478",
+            "name": "晶升股份",
+            "boards": 1,
+            "firstSeal": "11:00",
+            "lastSeal": "11:00",
+            "sealAmount": 68937509,
+            "breaks": 0,
+            "amount": 379156128,
+            "turnover": 6.16
+          },
+          {
+            "kind": "limitUp",
+            "code": "605358",
+            "name": "立昂微",
+            "boards": 1,
+            "firstSeal": "13:10",
+            "lastSeal": "13:33",
+            "sealAmount": 132873531,
+            "breaks": 4,
+            "amount": 2166284400,
+            "turnover": 6.44
+          }
+        ]
+      },
+      {
+        "name": "化学制品",
+        "limitUps": 5,
+        "firstBoards": 5,
+        "maxBoards": 1,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "605566",
+            "name": "福莱蒽特",
+            "boards": 1,
+            "firstSeal": "09:37",
+            "lastSeal": "09:39",
+            "sealAmount": 60731160,
+            "breaks": 1,
+            "amount": 92962496,
+            "turnover": 2.57
+          },
+          {
+            "kind": "limitUp",
+            "code": "603155",
+            "name": "新亚强",
+            "boards": 1,
+            "firstSeal": "09:43",
+            "lastSeal": "10:10",
+            "sealAmount": 33258486,
+            "breaks": 2,
+            "amount": 394758640,
+            "turnover": 5.74
+          },
+          {
+            "kind": "limitUp",
+            "code": "603276",
+            "name": "恒兴新材",
+            "boards": 1,
+            "firstSeal": "13:03",
+            "lastSeal": "14:48",
+            "sealAmount": 4466250,
+            "breaks": 5,
+            "amount": 156341609,
+            "turnover": 11.8
+          },
+          {
+            "kind": "limitUp",
+            "code": "603255",
+            "name": "鼎际得",
+            "boards": 1,
+            "firstSeal": "13:04",
+            "lastSeal": "13:04",
+            "sealAmount": 13547840,
+            "breaks": 0,
+            "amount": 68627370,
+            "turnover": 3.66
+          },
+          {
+            "kind": "limitUp",
+            "code": "600500",
+            "name": "中化国际",
+            "boards": 1,
+            "firstSeal": "13:09",
+            "lastSeal": "13:09",
+            "sealAmount": 51563736,
+            "breaks": 0,
+            "amount": 868479792,
+            "turnover": 4.19
+          }
+        ]
+      },
+      {
+        "name": "元件",
+        "limitUps": 4,
+        "firstBoards": 3,
+        "maxBoards": 4,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "605058",
+            "name": "澳弘电子",
+            "boards": 4,
+            "firstSeal": "09:34",
+            "lastSeal": "09:37",
+            "sealAmount": 68033251,
+            "breaks": 1,
+            "amount": 462543456,
+            "turnover": 7.6
+          },
+          {
+            "kind": "limitUp",
+            "code": "301251",
+            "name": "威尔高",
+            "boards": 1,
+            "firstSeal": "10:09",
+            "lastSeal": "10:29",
+            "sealAmount": 25799954,
+            "breaks": 1,
+            "amount": 1197598368,
+            "turnover": 8.79
+          },
+          {
+            "kind": "limitUp",
+            "code": "002913",
+            "name": "奥士康",
+            "boards": 1,
+            "firstSeal": "11:25",
+            "lastSeal": "11:25",
+            "sealAmount": 115553318,
+            "breaks": 0,
+            "amount": 838634656,
+            "turnover": 3.43
+          },
+          {
+            "kind": "limitUp",
+            "code": "603328",
+            "name": "依顿电子",
+            "boards": 1,
+            "firstSeal": "14:29",
+            "lastSeal": "14:52",
+            "sealAmount": 110647338,
+            "breaks": 1,
+            "amount": 1126925616,
+            "turnover": 8.34
+          }
+        ]
+      },
+      {
+        "name": "包装印刷",
+        "limitUps": 4,
+        "firstBoards": 3,
+        "maxBoards": 2,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "002846",
+            "name": "英联股份",
+            "boards": 2,
+            "firstSeal": "09:31",
+            "lastSeal": "09:31",
+            "sealAmount": 41162380,
+            "breaks": 0,
+            "amount": 305941904,
+            "turnover": 8.89
+          },
+          {
+            "kind": "limitUp",
+            "code": "603607",
+            "name": "京华激光",
+            "boards": 1,
+            "firstSeal": "13:00",
+            "lastSeal": "13:00",
+            "sealAmount": 55078724,
+            "breaks": 0,
+            "amount": 296590896,
+            "turnover": 6.95
+          },
+          {
+            "kind": "limitUp",
+            "code": "002787",
+            "name": "华源控股",
+            "boards": 1,
+            "firstSeal": "13:05",
+            "lastSeal": "13:32",
+            "sealAmount": 32445960,
+            "breaks": 6,
+            "amount": 748929744,
+            "turnover": 12.22
+          },
+          {
+            "kind": "limitUp",
+            "code": "002303",
+            "name": "美盈森",
+            "boards": 1,
+            "firstSeal": "13:43",
+            "lastSeal": "14:06",
+            "sealAmount": 19885176,
+            "breaks": 1,
+            "amount": 717947456,
+            "turnover": 11.89
+          }
+        ]
+      },
+      {
+        "name": "其他电子",
+        "limitUps": 4,
+        "firstBoards": 4,
+        "maxBoards": 1,
+        "brokenPool": 0,
+        "stocks": [
+          {
+            "kind": "limitUp",
+            "code": "000670",
+            "name": "盈方微",
+            "boards": 1,
+            "firstSeal": "09:51",
+            "lastSeal": "09:51",
+            "sealAmount": 80667786,
+            "breaks": 0,
+            "amount": 601680384,
+            "turnover": 9.29
+          },
+          {
+            "kind": "limitUp",
+            "code": "002161",
+            "name": "远 望 谷",
+            "boards": 1,
+            "firstSeal": "10:20",
+            "lastSeal": "11:05",
+            "sealAmount": 12509499,
+            "breaks": 6,
+            "amount": 726951152,
+            "turnover": 14.7
+          },
+          {
+            "kind": "limitUp",
+            "code": "002388",
+            "name": "新亚制程",
+            "boards": 1,
+            "firstSeal": "10:51",
+            "lastSeal": "11:24",
+            "sealAmount": 23699490,
+            "breaks": 2,
+            "amount": 180100927,
+            "turnover": 5.43
+          },
+          {
+            "kind": "limitUp",
+            "code": "300656",
+            "name": "民德电子",
+            "boards": 1,
+            "firstSeal": "11:14",
+            "lastSeal": "11:14",
+            "sealAmount": 139076699,
+            "breaks": 0,
+            "amount": 358227616,
+            "turnover": 9.57
+          }
+        ]
+      }
+    ],
+    "aiThemes": {
+      "source": "AI归类 · 当日涨停池／炸板池／连板梯队",
+      "unclustered": 18,
+      "themes": [
+        {
+          "name": "通信／电子硬件",
+          "limitUps": 25,
+          "firstBoards": 21,
+          "maxBoards": 4,
+          "opened": 13,
+          "openTimes": 33,
+          "brokenPool": 1,
+          "stocks": [
+            {
+              "code": "605058",
+              "name": "澳弘电子",
+              "boards": 4,
+              "breaks": 1,
+              "industry": "元件"
+            },
+            {
+              "code": "003026",
+              "name": "中晶科技",
+              "boards": 2,
+              "breaks": 2,
+              "industry": "半导体"
+            },
+            {
+              "code": "002584",
+              "name": "西陇科学",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "电子化学"
+            },
+            {
+              "code": "002491",
+              "name": "通鼎互联",
+              "boards": 2,
+              "breaks": 6,
+              "industry": "通信设备"
+            },
+            {
+              "code": "003031",
+              "name": "中瓷电子",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "通信设备"
+            },
+            {
+              "code": "603328",
+              "name": "依顿电子",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "元件"
+            },
+            {
+              "code": "002281",
+              "name": "光迅科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "通信设备"
+            },
+            {
+              "code": "002655",
+              "name": "共达电声",
+              "boards": 1,
+              "breaks": 3,
+              "industry": "消费电子"
+            },
+            {
+              "code": "603042",
+              "name": "华脉科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "通信设备"
+            },
+            {
+              "code": "603052",
+              "name": "可川科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "消费电子"
+            },
+            {
+              "code": "002913",
+              "name": "奥士康",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "元件"
+            },
+            {
+              "code": "301251",
+              "name": "威尔高",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "元件"
+            },
+            {
+              "code": "002137",
+              "name": "实益达",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "光学光电"
+            },
+            {
+              "code": "002388",
+              "name": "新亚制程",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "其他电子"
+            },
+            {
+              "code": "002396",
+              "name": "星网锐捷",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "通信设备"
+            },
+            {
+              "code": "688478",
+              "name": "晶升股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "半导体"
+            },
+            {
+              "code": "600206",
+              "name": "有研新材",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "半导体"
+            },
+            {
+              "code": "688432",
+              "name": "有研硅",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "半导体"
+            },
+            {
+              "code": "300656",
+              "name": "民德电子",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "其他电子"
+            },
+            {
+              "code": "600105",
+              "name": "永鼎股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "通信设备"
+            },
+            {
+              "code": "000670",
+              "name": "盈方微",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "其他电子"
+            },
+            {
+              "code": "605358",
+              "name": "立昂微",
+              "boards": 1,
+              "breaks": 4,
+              "industry": "半导体"
+            },
+            {
+              "code": "301486",
+              "name": "致尚科技",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "消费电子"
+            },
+            {
+              "code": "002161",
+              "name": "远 望 谷",
+              "boards": 1,
+              "breaks": 6,
+              "industry": "其他电子"
+            },
+            {
+              "code": "002577",
+              "name": "雷柏科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "计算机设"
+            }
+          ]
+        },
+        {
+          "name": "制造／汽车装备",
+          "limitUps": 11,
+          "firstBoards": 10,
+          "maxBoards": 2,
+          "opened": 6,
+          "openTimes": 13,
+          "brokenPool": 3,
+          "stocks": [
+            {
+              "code": "603082",
+              "name": "北自科技",
+              "boards": 2,
+              "breaks": 5,
+              "industry": "自动化设"
+            },
+            {
+              "code": "605100",
+              "name": "华丰股份",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "通用设备"
+            },
+            {
+              "code": "002806",
+              "name": "华锋股份",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "汽车零部"
+            },
+            {
+              "code": "600545",
+              "name": "卓郎智能",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "专用设备"
+            },
+            {
+              "code": "603023",
+              "name": "威帝股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "汽车零部"
+            },
+            {
+              "code": "603956",
+              "name": "威派格",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "专用设备"
+            },
+            {
+              "code": "002903",
+              "name": "宇环数控",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "通用设备"
+            },
+            {
+              "code": "300992",
+              "name": "泰福泵业",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "通用设备"
+            },
+            {
+              "code": "002976",
+              "name": "瑞玛精密",
+              "boards": 1,
+              "breaks": 3,
+              "industry": "汽车零部"
+            },
+            {
+              "code": "002730",
+              "name": "电光科技",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "专用设备"
+            },
+            {
+              "code": "002957",
+              "name": "科瑞技术",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "自动化设"
+            }
+          ]
+        },
+        {
+          "name": "周期化工",
+          "limitUps": 11,
+          "firstBoards": 11,
+          "maxBoards": 1,
+          "opened": 6,
+          "openTimes": 18,
+          "brokenPool": 1,
+          "stocks": [
+            {
+              "code": "601208",
+              "name": "东材科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "塑料"
+            },
+            {
+              "code": "600500",
+              "name": "中化国际",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "化学制品"
+            },
+            {
+              "code": "600135",
+              "name": "乐凯胶片",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "塑料"
+            },
+            {
+              "code": "001378",
+              "name": "德冠新材",
+              "boards": 1,
+              "breaks": 4,
+              "industry": "塑料"
+            },
+            {
+              "code": "603276",
+              "name": "恒兴新材",
+              "boards": 1,
+              "breaks": 5,
+              "industry": "化学制品"
+            },
+            {
+              "code": "603155",
+              "name": "新亚强",
+              "boards": 1,
+              "breaks": 2,
+              "industry": "化学制品"
+            },
+            {
+              "code": "300243",
+              "name": "瑞丰高材",
+              "boards": 1,
+              "breaks": 5,
+              "industry": "塑料"
+            },
+            {
+              "code": "605566",
+              "name": "福莱蒽特",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "化学制品"
+            },
+            {
+              "code": "002068",
+              "name": "黑猫股份",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "橡胶"
+            },
+            {
+              "code": "603255",
+              "name": "鼎际得",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "化学制品"
+            },
+            {
+              "code": "002442",
+              "name": "龙星科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "橡胶"
+            }
+          ]
+        },
+        {
+          "name": "消费／商业旅游",
+          "limitUps": 9,
+          "firstBoards": 6,
+          "maxBoards": 2,
+          "opened": 4,
+          "openTimes": 9,
+          "brokenPool": 1,
+          "stocks": [
+            {
+              "code": "001216",
+              "name": "华瓷股份",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "家居用品"
+            },
+            {
+              "code": "002631",
+              "name": "德尔未来",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "家居用品"
+            },
+            {
+              "code": "002846",
+              "name": "英联股份",
+              "boards": 2,
+              "breaks": 0,
+              "industry": "包装印刷"
+            },
+            {
+              "code": "002780",
+              "name": "三夫户外",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "服装家纺"
+            },
+            {
+              "code": "603607",
+              "name": "京华激光",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "包装印刷"
+            },
+            {
+              "code": "002787",
+              "name": "华源控股",
+              "boards": 1,
+              "breaks": 6,
+              "industry": "包装印刷"
+            },
+            {
+              "code": "001209",
+              "name": "洪兴股份",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "服装家纺"
+            },
+            {
+              "code": "002489",
+              "name": "浙江永强",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "家居用品"
+            },
+            {
+              "code": "002303",
+              "name": "美盈森",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "包装印刷"
+            }
+          ]
+        },
+        {
+          "name": "能源／电力装备",
+          "limitUps": 6,
+          "firstBoards": 4,
+          "maxBoards": 6,
+          "opened": 3,
+          "openTimes": 22,
+          "brokenPool": 3,
+          "stocks": [
+            {
+              "code": "000993",
+              "name": "闽东电力",
+              "boards": 6,
+              "breaks": 20,
+              "industry": "电力"
+            },
+            {
+              "code": "603248",
+              "name": "锡华科技",
+              "boards": 2,
+              "breaks": 1,
+              "industry": "风电设备"
+            },
+            {
+              "code": "600644",
+              "name": "乐山电力",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "电力"
+            },
+            {
+              "code": "002300",
+              "name": "太阳电缆",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "电网设备"
+            },
+            {
+              "code": "000720",
+              "name": "新能泰山",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "电网设备"
+            },
+            {
+              "code": "002617",
+              "name": "露笑科技",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "电力"
+            }
+          ]
+        },
+        {
+          "name": "农业／食品消费",
+          "limitUps": 4,
+          "firstBoards": 4,
+          "maxBoards": 1,
+          "opened": 1,
+          "openTimes": 1,
+          "brokenPool": 0,
+          "stocks": [
+            {
+              "code": "600371",
+              "name": "万向德农",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "种植业"
+            },
+            {
+              "code": "000731",
+              "name": "四川美丰",
+              "boards": 1,
+              "breaks": 1,
+              "industry": "农化制品"
+            },
+            {
+              "code": "000592",
+              "name": "平潭发展",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "林业Ⅱ"
+            },
+            {
+              "code": "002679",
+              "name": "福建金森",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "林业Ⅱ"
+            }
+          ]
+        },
+        {
+          "name": "文化传媒／AI应用",
+          "limitUps": 3,
+          "firstBoards": 2,
+          "maxBoards": 3,
+          "opened": 1,
+          "openTimes": 2,
+          "brokenPool": 0,
+          "stocks": [
+            {
+              "code": "688004",
+              "name": "博汇科技",
+              "boards": 3,
+              "breaks": 2,
+              "industry": "IT服务Ⅱ"
+            },
+            {
+              "code": "603230",
+              "name": "内蒙新华",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "出版"
+            },
+            {
+              "code": "002095",
+              "name": "生 意 宝",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "数字媒体"
+            }
+          ]
+        },
+        {
+          "name": "基建／材料",
+          "limitUps": 2,
+          "firstBoards": 2,
+          "maxBoards": 1,
+          "opened": 0,
+          "openTimes": 0,
+          "brokenPool": 2,
+          "stocks": [
+            {
+              "code": "003001",
+              "name": "中岩大地",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "专业工程"
+            },
+            {
+              "code": "000055",
+              "name": "方大集团",
+              "boards": 1,
+              "breaks": 0,
+              "industry": "装修建材"
+            }
+          ]
+        }
+      ],
+      "judgement": "通信／电子硬件以25家涨停成为最强扩散方向，澳弘电子4板，中晶科技、西陇科学、通鼎互联2板，半导体与通信设备首板同步扩散；能源／电力装备由闽东电力6板维持市场高度，锡华科技2板跟随。制造／汽车装备与周期化工各有11家涨停但以首板为主。封板率89%、1进2为36%，接力与封板质量显著修复。"
+    }
   }
 };
